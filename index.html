@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>SecStreams</title>
+	
+	<link type="text/css" rel="stylesheet" href="style.css" media="screen"/>
+    <link type="text/css" rel="stylesheet" href="SecStream.css" media="screen"/>
+    
+    <!-- libraries-->
+    <script type="text/javascript" src="libs/vue.js"></script>
+	<script type="text/javascript" src="libs/d3_5.7.0.js"></script>
+	
+	<!-- modules -->
+    <script type="text/javascript" src="SecStream.js"></script>
+	
+    <!-- general -->
+	<script type="text/javascript" src="functions.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="controls">
+      
+            <div>
+                <label>Chart width</label>
+                <input type="range" v-model="size" min="0" max="1920" />
+            </div>
+           
+            <div>
+                <label>Stroke color</label>
+                <input type="color" v-model="settings.bgColor" />
+            </div>
+            
+            <div>
+                <label>Search…</label>
+                <input type="text" v-model="search" />
+            </div>
+            
+            <button v-on:click="add">Add node</button>
+             
+            <div>
+                Selected: {{ selected }}
+            </div>
+        </div>
+
+        <div id="wrapper" v-bind:style="{width: settings.width + 'px', height: settings.height + 'px', backgroundColor: settings.bgColor}"></div>
+    </div>
+</body>
+</html>

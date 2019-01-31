@@ -1,0 +1,36 @@
+html, body{
+	background-color: #222222;
+	font-family: monospace;
+	height: 100%;
+	overflow: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+}
+
+#app {
+	height: 100%;
+	width: 100%;
+}
+
+#wrapper {
+	/*height: 100%;*/
+	width: fit-content;
+}
+
+.controls {
+	position: fixed;
+	top: 16px; 
+	left: 16px;
+	background: #f8f8f8;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.controls > * + * {
+	margin-top: 1rem;
+}

@@ -1,0 +1,54 @@
+svg.gitgraph
+{
+}
+
+.gitgraph .image-border
+{
+	fill: red;
+	stroke: black;
+}
+
+.gitgraph .node circle
+{
+	fill: #999;
+	/*stroke: lightblue;*/
+	stroke-width: 3px;
+	/*transition: fill 500ms;
+	transition: stroke 500ms;*/
+}
+
+.gitgraph .node.latest circle
+{
+	stroke: orange;
+}
+
+.gitgraph .node.currentBranch circle
+{
+	fill: steelblue;
+	/*transition: stroke 500ms;*/
+}
+
+.gitgraph .node circle.mergeBorder
+{
+	fill: darkgreen;
+	r: 18px;
+	stroke-width: 0px;
+}
+
+.gitgraph .link path
+{
+	fill: none;
+	stroke: #999;
+	stroke-width: 4px;
+}
+.gitgraph .link.currentBranch path
+{
+	stroke: steelblue;
+}
+
+.gitgraph .link path.mergeBorder
+{
+	fill: none;
+	stroke: darkgreen;
+	stroke-width: 18px;
+}
