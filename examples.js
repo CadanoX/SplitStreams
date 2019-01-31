@@ -2944,6 +2944,322 @@ const examples = {
 			}
 		]
 	},
+	"gumtreeParentSwitch": {
+		"timesteps": [
+			{
+				"root": {
+					"type": "137",
+					"typeLabel": "SCRIPT",
+					"pos": "0",
+					"length": "44",
+					"children": [
+						{
+							"type": "120",
+							"typeLabel": "FOR",
+							"pos": "0",
+							"length": "44",
+							"children": [
+								{
+									"type": "123",
+									"typeLabel": "VAR",
+									"pos": "5",
+									"length": "9",
+									"children": [
+										{
+											"type": "123",
+											"typeLabel": "VAR",
+											"pos": "9",
+											"length": "5",
+											"children": [
+												{
+													"type": "39",
+													"label": "a",
+													"typeLabel": "NAME",
+													"pos": "9",
+													"length": "1",
+													"children": []
+												},
+												{
+													"type": "40",
+													"label": "0",
+													"typeLabel": "NUMBER",
+													"pos": "13",
+													"length": "1",
+													"children": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "14",
+									"typeLabel": "LT",
+									"pos": "16",
+									"length": "5",
+									"children": [
+										{
+											"type": "39",
+											"label": "a",
+											"typeLabel": "NAME",
+											"pos": "16",
+											"length": "1",
+											"children": []
+										},
+										{
+											"type": "40",
+											"label": "5",
+											"typeLabel": "NUMBER",
+											"pos": "20",
+											"length": "1",
+											"children": []
+										}
+									]
+								},
+								{
+									"type": "107",
+									"typeLabel": "INC",
+									"pos": "23",
+									"length": "3",
+									"children": [
+										{
+											"type": "39",
+											"label": "a",
+											"typeLabel": "NAME",
+											"pos": "23",
+											"length": "1",
+											"children": []
+										}
+									]
+								},
+								{
+									"type": "113",
+									"typeLabel": "IF",
+									"pos": "30",
+									"length": "14",
+									"children": [
+										{
+											"type": "44",
+											"typeLabel": "FALSE",
+											"pos": "33",
+											"length": "5",
+											"children": []
+										},
+										{
+											"type": "129",
+											"typeLabel": "EMPTY",
+											"pos": "43",
+											"length": "1",
+											"children": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"root": {
+					"type": "137",
+					"typeLabel": "SCRIPT",
+					"pos": "0",
+					"length": "44",
+					"children": [
+						{
+							"type": "113",
+							"typeLabel": "IF",
+							"pos": "0",
+							"length": "44",
+							"children": [
+								{
+									"type": "44",
+									"typeLabel": "FALSE",
+									"pos": "3",
+									"length": "5",
+									"children": []
+								},
+								{
+									"type": "120",
+									"typeLabel": "FOR",
+									"pos": "12",
+									"length": "32",
+									"children": [
+										{
+											"type": "123",
+											"typeLabel": "VAR",
+											"pos": "17",
+											"length": "9",
+											"children": [
+												{
+													"type": "123",
+													"typeLabel": "VAR",
+													"pos": "21",
+													"length": "5",
+													"children": [
+														{
+															"type": "39",
+															"label": "a",
+															"typeLabel": "NAME",
+															"pos": "21",
+															"length": "1",
+															"children": []
+														},
+														{
+															"type": "40",
+															"label": "0",
+															"typeLabel": "NUMBER",
+															"pos": "25",
+															"length": "1",
+															"children": []
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "14",
+											"typeLabel": "LT",
+											"pos": "28",
+											"length": "5",
+											"children": [
+												{
+													"type": "39",
+													"label": "a",
+													"typeLabel": "NAME",
+													"pos": "28",
+													"length": "1",
+													"children": []
+												},
+												{
+													"type": "40",
+													"label": "5",
+													"typeLabel": "NUMBER",
+													"pos": "32",
+													"length": "1",
+													"children": []
+												}
+											]
+										},
+										{
+											"type": "107",
+											"typeLabel": "INC",
+											"pos": "35",
+											"length": "3",
+											"children": [
+												{
+													"type": "39",
+													"label": "a",
+													"typeLabel": "NAME",
+													"pos": "35",
+													"length": "1",
+													"children": []
+												}
+											]
+										},
+										{
+											"type": "129",
+											"typeLabel": "EMPTY",
+											"pos": "43",
+											"length": "1",
+											"children": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			}	
+		],
+		"changes": [
+			{
+				"matches": [
+				  {
+					"src": 2,
+					"dest": 3
+				  },
+				  {
+					"src": 8,
+					"dest": 9
+				  },
+				  {
+					"src": 4,
+					"dest": 5
+				  },
+				  {
+					"src": 3,
+					"dest": 4
+				  },
+				  {
+					"src": 12,
+					"dest": 11
+				  },
+				  {
+					"src": 6,
+					"dest": 7
+				  },
+				  {
+					"src": 7,
+					"dest": 8
+				  },
+				  {
+					"src": 1,
+					"dest": 2
+				  },
+				  {
+					"src": 5,
+					"dest": 6
+				  },
+				  {
+					"src": 13,
+					"dest": 13
+				  },
+				  {
+					"src": 0,
+					"dest": 1
+				  }
+				],
+				"actions": [
+				  {
+					"action": "insert",
+					"tree": 12,
+					"parent": 13,
+					"at": 0
+				  },
+				  {
+					"action": "insert",
+					"tree": 0,
+					"parent": 12,
+					"at": 0
+				  },
+				  {
+					"action": "move",
+					"tree": 12,
+					"parent": 12,
+					"at": 1
+				  },
+				  {
+					"action": "insert",
+					"tree": 10,
+					"parent": 11,
+					"at": 3
+				  },
+				  {
+					"action": "delete",
+					"tree": 9
+				  },
+				  {
+					"action": "delete",
+					"tree": 10
+				  },
+				  {
+					"action": "delete",
+					"tree": 11
+				  }
+				]
+			  }			  
+		]
+	},
 	"viscious": {
 		"N": {
 			"0": {

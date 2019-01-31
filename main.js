@@ -32,13 +32,13 @@ function transformGumtreeFormat(data)
 		;
 	};*/
 
-	// Copy the trees for each timetep
+	// Copy the trees for each timetep from input data to our data format
 	let traverse = (src, dest) => {
 		// we follow the  data's depth-first post-order traversal
 		dest.children = [];
-		for (c in src.children) {
-			dest.children[c] = {};
-			traverse(src.children[c], dest.children[c]);
+		for (let i = 0; i < src.children.length; i++) {
+			dest.children[i] = { parent: dest };
+			traverse(src.children[i], dest.children[i]);
 		}
 
 		dest.id = idx;
@@ -60,14 +60,12 @@ function transformGumtreeFormat(data)
 			previousTimestep = format.timesteps[t-1];
 
 			// Find matching nodes
-			for (m in data.changes[t-1].matches) {
-				let match = data.changes[t-1].matches[m];
+			for (match of data.changes[t-1].matches) {
 				currentTimestep.references[match.dest].origin = previousTimestep.references[match.src];
 			}
 
 			// find added, deleted nodes
-			for (a in data.changes[t-1].actions) {
-				let action = data.changes[t-1].actions[a];
+			for (action of data.changes[t-1].actions) {
 				if (action.action == "delete")
 					currentTimestep.deleted[action.tree] = true;
 				if (action.action == "insert")
