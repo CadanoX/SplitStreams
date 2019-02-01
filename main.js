@@ -61,15 +61,17 @@ function transformGumtreeFormat(data)
 
 			// Find matching nodes
 			for (match of data.changes[t-1].matches) {
-				currentTimestep.references[match.dest].origin = previousTimestep.references[match.src];
+				let o = previousTimestep.references[match.src];
+				if (o !== -1)
+					currentTimestep.references[match.dest].origin = o;
 			}
 
 			// find added, deleted nodes
 			for (action of data.changes[t-1].actions) {
 				if (action.action == "delete")
 					currentTimestep.deleted[action.tree] = true;
-				if (action.action == "insert")
-					currentTimestep.references[action.tree].origin = -1;
+				/*if (action.action == "insert")
+					currentTimestep.references[action.tree].origin = -1;*/
 			}
 		}
 	}
