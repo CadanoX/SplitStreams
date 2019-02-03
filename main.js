@@ -52,9 +52,7 @@ function transformGumtreeFormat(data)
 	{
 		idx = 0;
 		currentTimestep = format.timesteps[t] = { deleted: {}, references: {}, tree: {} };
-		let a = currentTimestep;
-		let b = data.timesteps[t].root;
-		traverse(b, a.tree);
+		traverse(data.timesteps[t].root, currentTimestep.tree);
 		
 		if (t != 0) {
 			previousTimestep = format.timesteps[t-1];
@@ -62,16 +60,18 @@ function transformGumtreeFormat(data)
 			// Find matching nodes
 			for (match of data.changes[t-1].matches) {
 				let o = previousTimestep.references[match.src];
-				if (o !== -1)
-					currentTimestep.references[match.dest].origin = o;
+				currentTimestep.references[match.dest].origin = o;
+				o.future = currentTimestep.references[match.dest];
 			}
 
 			// find added, deleted nodes
 			for (action of data.changes[t-1].actions) {
 				if (action.action == "delete")
-					currentTimestep.deleted[action.tree] = true;
-				/*if (action.action == "insert")
-					currentTimestep.references[action.tree].origin = -1;*/
+					currentTimestep.deleted[action.tree] = previousTimestep.references[action.tree];
+				
+				/*if (action.action == "insert") {
+					currentTimestep.references[action.tree].insertAt = action.at;
+				}*/
 			}
 		}
 	}
@@ -82,7 +82,7 @@ function transformGumtreeFormat(data)
 document.addEventListener("DOMContentLoaded", function(event)
 {
 	//transformVisciousIntoFormat(examples.Viscous);
-	let data = transformGumtreeFormat(examples.gumtreeMin);
+	let data = transformGumtreeFormat(examples.gumtree);
 
 	let app = new Vue({
 		el: '#app',

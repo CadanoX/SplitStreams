@@ -78,10 +78,21 @@ class SecStreamData {
 				.domain([0, 1]).nice()
 				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
 				
+				/*
+				d3.curveLinear,
+    {"			d3.curveStep,
+    {"			d3.curveStepBefore,
+    {"			d3.curveStepAfter,
+    {"			d3.curveBasis,
+    {"			d3.curveCardinal.tension(0.5),
+    {"			d3.curveMonotoneX,
+    {"			d3.curveCatmullRomOpen.alpha(0.5)
+				*/
 			let area = d3.area()
 				.x(d => xScale(d[0]))
 				.y0(d => yScale(d[1]))
-				.y1(d => yScale(d[2]));
+				.y1(d => yScale(d[2]))
+				.curve(d3.curveCatmullRomOpen)
 			
 			// insert new layers
 			this._pathContainer.selectAll('g')
@@ -91,13 +102,15 @@ class SecStreamData {
 
 			let layers = this._pathContainer.selectAll('g')
 
-			layers.each(function (layer)  {
+			layers.each(function (layer, i)  {
+				//console.log("Layer " + i);
 				d3.select(this).selectAll('path.stream')
 				.data(layer)
 				.enter().append('path')
 					.classed('stream', true)
 					.attr('d', area)
 					.style('fill', getRandomColor())
+					//.each((d) => console.log (d))
 			});
 
 			let streams = d3.selectAll('path.stream')
@@ -161,9 +174,10 @@ class SecStreamData {
 						node.margin = margin;
 					}
 					else {
-						node.y0 = node.parent.y0 + node.pos / maxSize;
-						let size = (node.size / maxSize - node.parent.margin)
-						node.y1 = (size > 0) ? node.y0 + size : node.y0;
+						node.y0 = /* node.parent.y0 + */ node.pos / maxSize;
+						let size = node.size / maxSize - node.parent.margin;
+						if (size < 0) size = 0;
+						node.y1 = node.y0 + size;
 						node.margin = margin;
 					}
 				});
@@ -177,54 +191,75 @@ class SecStreamData {
 				for (let n in t[i].references) { // for all nodes build stream to origin of node
 					let node = t[i].references[n];
 					let stream;
+					//*
+					if (!!node.origin) // move
+						stream = [
+							[i-2, node.origin.y0, node.origin.y1],
+							[i-1, node.origin.y0, node.origin.y1],
+							[i, node.y0, node.y1],
+							[i+1, node.y0, node.y1]
+						];
+					else { // insert
+						let pos;
+						// if parent didnt exist in last step, use parents startpos
+						// else if my center existed in the last step, use it, otherwise use parents origin y0/y1
+						let p = node;
+						do { p = p.parent }
+						while(!p.origin);
+
+						let o = p.origin;
+						let mid = (node.y0 + node.y1) /2;
+						if (o.y1 >= mid)
+							pos = mid;
+						else {
+							let p = 0.75;
+							pos = p * o.y1 + (1-p) * node.parent.y1;
+							pos = node.y0;
+							pos = (o.y1 + node.y0) /2;
+							pos = o.y1;
+						}
+					
+						stream = [
+							[i-2, pos, pos],
+							[i-1, pos, pos],
+							[i, node.y0, node.y1],
+							[i+1, node.y0, node.y1]
+						];
+					}
+
 					if (!this._streamData[node.depth])
 						this._streamData[node.depth] = [];
-						
-					if (!!node.origin)
-						stream = [
-							[i-1, node.origin.y0, node.origin.y1],
-							[i, node.y0, node.y1]
-						];
-					else
-						stream = [
-							[i-1, 0, 0],
-							[i-1, node.y0, node.y1]
-						];
-						/*
-					if (node.origin)
-						stream = {
-							path: [
-								[i-1, node.origin.y0, node.origin.y1],
-								[i, node.y0, node.y1]
-							]
-						};
-					else
-						stream = {
-							path: [
-								[i-1, 0, 0],
-								[i-1, node.y0, node.y1]
-							]
-						};
-						*/
-
-					/*
-					if (node.origin)
-						stream = {
-							t: i-1,
-							y0: [ node.origin.y0, node.y0 ],
-							y1: [ node.origin.y1, node.y1 ]
-						};
-					else
-						stream = {
-							t: i-1,
-							y0: [ 0, node.y0 ],
-							y1: [ 0, node.y1 ]
-						};
-						*/
-
 					this._streamData[node.depth].push(stream);
 				}
-				// TODO: handle deleted nodes (make them 0)
+
+				// make deleted nodes 0
+				for (let n in t[i].deleted) {
+					let node = t[i].deleted[n];
+					let p = node;
+					do { p = p.parent }
+					while(!p.future);
+
+					let pos;
+					let f = p.future;
+					let mid = (node.y0 + node.y1) /2;
+					if (f.y1 >= mid)
+						pos = mid;
+					else {
+						pos = f.y1;
+					}
+				
+					let stream = [
+						[i-2, node.y0, node.y1],
+						[i-1, node.y0, node.y1],
+						[i, pos, pos],
+						[i+1, pos, pos]
+					];
+
+					// TODO: actually this depth should always exist, but it doesn't
+					if (!this._streamData[node.depth])
+						this._streamData[node.depth] = [];
+					this._streamData[node.depth].push(stream);
+				}
 			}
 		}
 
