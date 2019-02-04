@@ -49,6 +49,8 @@ class SecStreamData {
 			this._maxTime;
 			this._maxValue;
 			
+			this._separationMethod = this.marginFixed;
+			this._separationValue = 0;
 			
 			this._streamline = d3.area()
 				.x(d => d[0])
@@ -62,71 +64,9 @@ class SecStreamData {
 
         data(d) { return d == null ? this._data : (this._setData(d), this); }
         
-
-		render() {
-			const { animDuration } = this._opts;
-			let t = 0;
-			let allStreams = [];
-
-			
-			
-			let xScale = d3.scaleLinear()
-				.domain([0, this._maxTime]).nice()
-				.range([this._opts.margin.left, this._opts.width - this._opts.margin.right]);
-
-			let yScale = d3.scaleLinear()
-				.domain([0, 1]).nice()
-				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
-				
-				/*
-				d3.curveLinear,
-    {"			d3.curveStep,
-    {"			d3.curveStepBefore,
-    {"			d3.curveStepAfter,
-    {"			d3.curveBasis,
-    {"			d3.curveCardinal.tension(0.5),
-    {"			d3.curveMonotoneX,
-    {"			d3.curveCatmullRomOpen.alpha(0.5)
-				*/
-			let area = d3.area()
-				.x(d => xScale(d[0]))
-				.y0(d => yScale(d[1]))
-				.y1(d => yScale(d[2]))
-				.curve(d3.curveCatmullRomOpen)
-			
-			// insert new layers
-			this._pathContainer.selectAll('g')
-				.data(this._streamData)
-				.enter().append('g')
-					.classed('layer', true);
-
-			let layers = this._pathContainer.selectAll('g')
-
-			layers.each(function (layer, i)  {
-				//console.log("Layer " + i);
-				d3.select(this).selectAll('path.stream')
-				.data(layer)
-				.enter().append('path')
-					.classed('stream', true)
-					.attr('d', area)
-					.style('fill', getRandomColor())
-					//.each((d) => console.log (d))
-			});
-
-			let streams = d3.selectAll('path.stream')
-			.attr('d', area)
-
-			return this;
-        }
-        
         _setData(d) {
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
 			this._data = d;
-			this._applyOrdering();
-			this._calculatePositions();
-			this._calculateStreamData();
-			this.render();
-
 			this._update();
 		}
 
@@ -163,22 +103,20 @@ class SecStreamData {
 			this._maxTime = this._data.timesteps.length;
 			this._maxValue = maxSize;
 
-			let margin = 0 / maxSize;
-
 			for (let i = 0; i < t.length; i++) {
 				this._traversePreOrder(t[i].tree, (node, depth) => {
 					node.depth = depth;
 					if (!node.parent) {
 						node.y0 = 0;
 						node.y1 = node.size / maxSize;
-						node.margin = margin;
+						node.margin = 0;
 					}
 					else {
 						node.y0 = /* node.parent.y0 + */ node.pos / maxSize;
 						let size = node.size / maxSize - node.parent.margin;
 						if (size < 0) size = 0;
 						node.y1 = node.y0 + size;
-						node.margin = margin;
+						node.margin = node.parent.margin + this._separationMethod(node) / maxSize;;
 					}
 				});
 			}
@@ -190,16 +128,28 @@ class SecStreamData {
 			for (let i = 1; i < t.length; i++) { // for all timesteps
 				for (let n in t[i].references) { // for all nodes build stream to origin of node
 					let node = t[i].references[n];
+						
 					let stream;
 					//*
 					if (!!node.origin) // move
-						stream = [
-							[i-2, node.origin.y0, node.origin.y1],
-							[i-1, node.origin.y0, node.origin.y1],
-							[i, node.y0, node.y1],
-							[i+1, node.y0, node.y1]
-						];
+						if (2*node.margin < (node.y1 - node.y0))
+							stream = [
+								[i-2, node.origin.y0 + node.origin.margin, node.origin.y1 - node.origin.margin],
+								[i-1, node.origin.y0 + node.origin.margin, node.origin.y1 - node.origin.margin],
+								[i, node.y0 + node.margin, node.y1 - node.margin],
+								[i+1, node.y0 + node.margin, node.y1 - node.margin]
+							];
+						else
+							stream = [
+								[i-2, node.origin.y1 - node.origin.y0],
+								[i-1, node.origin.y1 - node.origin.y0],
+								[i, node.y0 + node.margin, node.y1 - node.margin],
+								[i+1, node.y0 + node.margin, node.y1 - node.margin]
+							];
 					else { // insert
+						if (2*node.margin >= (node.y1 - node.y0))
+							continue;
+
 						let pos;
 						// if parent didnt exist in last step, use parents startpos
 						// else if my center existed in the last step, use it, otherwise use parents origin y0/y1
@@ -222,8 +172,8 @@ class SecStreamData {
 						stream = [
 							[i-2, pos, pos],
 							[i-1, pos, pos],
-							[i, node.y0, node.y1],
-							[i+1, node.y0, node.y1]
+							[i, node.y0 + node.margin, node.y1 - node.margin],
+							[i+1, node.y0 + node.margin, node.y1 - node.margin]
 						];
 					}
 
@@ -263,8 +213,65 @@ class SecStreamData {
 			}
 		}
 
-        _update() {
+		render() {
+			const { animDuration } = this._opts;
+
+			let xScale = d3.scaleLinear()
+				.domain([0, this._maxTime]).nice()
+				.range([this._opts.margin.left, this._opts.width - this._opts.margin.right]);
+
+			let yScale = d3.scaleLinear()
+				.domain([0, 1]).nice()
+				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
+				
+				/*
+				d3.curveLinear,
+    {"			d3.curveStep,
+    {"			d3.curveStepBefore,
+    {"			d3.curveStepAfter,
+    {"			d3.curveBasis,
+    {"			d3.curveCardinal.tension(0.5),
+    {"			d3.curveMonotoneX,
+    {"			d3.curveCatmullRomOpen.alpha(0.5)
+				*/
+			let area = d3.area()
+				.x(d => xScale(d[0]))
+				.y0(d => yScale(d[1]))
+				.y1(d => yScale(d[2]))
+				.curve(d3.curveCatmullRomOpen)
 			
+			// insert new layers
+			this._pathContainer.selectAll('g')
+				.data(this._streamData)
+				.enter().append('g')
+					.classed('layer', true);
+
+			let layers = this._pathContainer.selectAll('g')
+
+			layers.each(function (layer, i)  {
+				//console.log("Layer " + i);
+				let streams = d3.select(this).selectAll('path.stream')
+					.data(layer);
+				streams.enter().append('path')
+					.classed('stream', true)
+					.attr('d', area)
+					.style('fill', getRandomColor())
+					//.each((d) => console.log (d))
+
+				streams.exit().remove();
+			});
+
+			let streams = d3.selectAll('path.stream')
+			.attr('d', area)
+
+			return this;
+		}
+		
+        _update() {
+			this._applyOrdering();
+			this._calculatePositions();
+			this._calculateStreamData();
+			this.render();
         }
         
         _myStreamLayout(d) {
@@ -276,7 +283,25 @@ class SecStreamData {
 			this._opts.height = height;
 			d3.select("svg").attr('width', width).attr('height', height);
 			this.render();
-        }
+		}
+		
+		separation(callback, parameter) {
+			this._separationMethod = callback;
+			this._separationValue = parameter;
+			this._update();
+		}
+
+		marginFixed(node) {
+			return this._separationValue;
+		}
+
+		marginPercentage(node) {
+			return node.size * this._separationValue / 100;
+		}
+
+		marginHierarchical(node) {
+			return 1/node.depth * this._separationValue;
+		}
 	}
 
 	d3.SecStream = (...args) => new SecStream(...args);

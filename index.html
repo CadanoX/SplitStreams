@@ -32,6 +32,22 @@
             </div>
            
             <div>
+                <span>Separation</span>
+                <br>
+                <input type="radio" id="fixed" value="Fixed" selected v-model="separation">
+                <label for="fixed">Fixed</label>
+                <br>
+                <input type="radio" id="percentage" value="Percentage" v-model="separation">
+                <label for="percentage">Percentage</label>
+                <br>
+                <input type="radio" id="hierarchy" value="Hierarchical" v-model="separation">
+                <label for="hierarchy">Hierarchical</label>
+                <br>
+                <label>Value</label>
+                <input type="range" v-model="separationValue" step= "0.1" min="0" max="10" />
+                <label> {{ separationValue }} </label>
+            </div>
+            <div>
                 <label>Stroke color</label>
                 <input type="color" v-model="settings.bgColor" />
             </div>

@@ -1,3 +1,5 @@
+var stream;
+
 function transformVisciousIntoFormat(data)
 {
 	let SecStreamInput = { reference: [], timesteps: []};
@@ -79,6 +81,15 @@ function transformGumtreeFormat(data)
 	return format;
 }
 
+function changeSeparation(func, value) {
+	if (func == "Fixed")
+		stream.separation(stream.marginFixed, value);
+	else if (func == "Percentage")
+		stream.separation(stream.marginPercentage, value);
+	else if (func == "Hierarchical")
+		stream.separation(stream.marginHierarchical, value);
+}
+
 document.addEventListener("DOMContentLoaded", function(event)
 {
 	//transformVisciousIntoFormat(examples.Viscous);
@@ -90,12 +101,16 @@ document.addEventListener("DOMContentLoaded", function(event)
 			selected: null,
 			search: "force",
 			size: window.innerWidth,
+			separation: "Fixed",
+			separationValue: 0,
 			settings: {
 				bgColor: "#757575",
 				width: window.innerWidth,
 				height: window.innerHeight
 			},
 			test: 1
+		},
+		computed: {
 		},
 		methods: {
 			add: function () {
@@ -109,15 +124,21 @@ document.addEventListener("DOMContentLoaded", function(event)
 			}
 		},
 		watch: {
-			size: function () {
+			size: function() {
 				this.settings.width = this.size * 1.0;
 				this.settings.height = this.size * window.innerHeight/window.innerWidth;
 				stream.resize(this.settings.width, this.settings.height);
+			},
+			separation: function() {
+				changeSeparation(this.separation, this.separationValue)
+			},
+			separationValue: function() {
+				changeSeparation(this.separation, this.separationValue)
 			}
 		}
 	});
 
 	let div = document.querySelector('#wrapper');
-	const stream = d3.SecStream(div)
+	stream = d3.SecStream(div)
 		.data(data);
 });
