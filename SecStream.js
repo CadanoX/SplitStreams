@@ -128,19 +128,18 @@ class SecStreamData {
 			for (let i = 1; i < t.length; i++) { // for all timesteps
 				for (let n in t[i].references) { // for all nodes build stream to origin of node
 					let node = t[i].references[n];
-						
-					let stream;
-					//*
+					let stream = {};
+					
 					if (!!node.origin) // move
 						if (2*node.margin < (node.y1 - node.y0))
-							stream = [
+							stream.path = [
 								[i-2, node.origin.y0 + node.origin.margin, node.origin.y1 - node.origin.margin],
 								[i-1, node.origin.y0 + node.origin.margin, node.origin.y1 - node.origin.margin],
 								[i, node.y0 + node.margin, node.y1 - node.margin],
 								[i+1, node.y0 + node.margin, node.y1 - node.margin]
 							];
 						else
-							stream = [
+							stream.path = [
 								[i-2, node.origin.y1 - node.origin.y0],
 								[i-1, node.origin.y1 - node.origin.y0],
 								[i, node.y0 + node.margin, node.y1 - node.margin],
@@ -169,7 +168,7 @@ class SecStreamData {
 							pos = o.y1;
 						}
 					
-						stream = [
+						stream.path = [
 							[i-2, pos, pos],
 							[i-1, pos, pos],
 							[i, node.y0 + node.margin, node.y1 - node.margin],
@@ -185,6 +184,7 @@ class SecStreamData {
 				// make deleted nodes 0
 				for (let n in t[i].deleted) {
 					let node = t[i].deleted[n];
+					let stream = {};
 					let p = node;
 					do { p = p.parent }
 					while(!p.future);
@@ -198,7 +198,7 @@ class SecStreamData {
 						pos = f.y1;
 					}
 				
-					let stream = [
+					stream.path = [
 						[i-2, node.y0, node.y1],
 						[i-1, node.y0, node.y1],
 						[i, pos, pos],
@@ -254,7 +254,7 @@ class SecStreamData {
 					.data(layer);
 				streams.enter().append('path')
 					.classed('stream', true)
-					.attr('d', area)
+					.attr('d', (d,i) => area(d.path,i))
 					.style('fill', getRandomColor())
 					//.each((d) => console.log (d))
 
@@ -262,7 +262,7 @@ class SecStreamData {
 			});
 
 			let streams = d3.selectAll('path.stream')
-			.attr('d', area)
+				.attr('d', (d,i) => area(d.path,i))
 
 			return this;
 		}
