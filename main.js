@@ -1,6 +1,6 @@
 var stream;
 
-function transformVisciousIntoFormat(data)
+function transformVisciousFormat(data)
 {
 	let SecStreamInput = { reference: [], timesteps: []};
 	for (t in data.EN)
@@ -61,9 +61,9 @@ function transformGumtreeFormat(data)
 
 			// Find matching nodes
 			for (match of data.changes[t-1].matches) {
-				let o = previousTimestep.references[match.src];
-				currentTimestep.references[match.dest].origin = o;
-				o.future = currentTimestep.references[match.dest];
+				let prev = previousTimestep.references[match.src];
+				currentTimestep.references[match.dest].prev = prev;
+				prev.next = currentTimestep.references[match.dest];
 			}
 
 			// find added, deleted nodes
