@@ -25,12 +25,11 @@
 <body>
     <div id="app">
         <div class="controls">
-      
             <div>
                 <label>Chart width</label>
                 <input type="range" v-model="size" min="0" max="1920" />
             </div>
-           
+
             <div>
                 <span>Separation</span>
                 <br>
@@ -44,7 +43,7 @@
                 <label for="hierarchy">Hierarchical</label>
                 <br>
                 <label>Value</label>
-                <input type="range" v-model="separationValue" step= "0.1" min="0" max="10" />
+                <input type="range" v-model="separationValue" step= "0.1" min="0" max="100" />
                 <label> {{ separationValue }} </label>
             </div>
             <div>

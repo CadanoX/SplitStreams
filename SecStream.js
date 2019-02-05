@@ -90,7 +90,6 @@ class SecStreamData {
 		}
 
 		_normalizeData() {
-
 			let t = this._data.timesteps;
 			let maxSize = 0;
 			for (let i = 0; i < t.length - 1; i++)
@@ -109,41 +108,36 @@ class SecStreamData {
 					node.rpos = (node.pos - node.parent.pos) / node.parent.size;
 					node.rsize = node.size / node.parent.size;
 				}
+				
+				node.children.forEach( (child) => traverse(child, depth));
 			}
 
-			for (let i = 0; i < t.length; i++) {
+			for (let i = 0; i < t.length; i++)
 				traverse(t[i].tree, 0);
-			}
 		}
 
 		_calculatePositions() {
 			let t = this._data.timesteps;
 
-			let traverse = (node, pos = 0, size = 0, n = 0) => {
-				pos = pos + size * node.pos;
-
-				console.log(n);
-
+			let traverse = (node, nChild = 0) => {
 				if (!node.parent) {
-					node.y0 = node.rpos;
-					node.y1 = node.rsize;
+					node.y0 = 0;
+					node.y1 = node.size;
 					node.margin = 0;
 				}
 				else {
-					node.y0 = pos;
-					node.y1 = size
+					let size = node.parent.y1 - node.parent.y0 - 2*node.parent.margin;
+					if (size <= 0) size = 0;
+					node.y0 = node.parent.y0 + node.parent.margin + size * node.rpos;
+					node.y1 = node.y0 + size * node.rsize;
 					node.margin = this._separationMethod(node);
 				}
-				
-				size = size * node.rsize
 
-				node.children.forEach( (child) => traverse(child, pos, size, n++));
+				node.children.forEach( (child) => traverse(child, nChild++));
 			}
 
-			for (let i = 0; i < t.length; i++) {
+			for (let i = 0; i < t.length; i++)
 				traverse(t[i].tree);
-					
-			}
 		}
 
 		_calculateStreamData() {
@@ -153,50 +147,43 @@ class SecStreamData {
 				for (let n in t[i].references) { // for all nodes build stream to prev of node
 					let node = t[i].references[n];
 					let stream = {};
-					
+					//console.log(i + " " + node.id + " " + node.depth)
+
 					if (!!node.prev) // move
-						if (2*node.margin < (node.y1 - node.y0))
-							stream.path = [
-								[i-2, node.prev.y0 + node.prev.margin, node.prev.y1 - node.prev.margin],
-								[i-1, node.prev.y0 + node.prev.margin, node.prev.y1 - node.prev.margin],
-								[i, node.y0 + node.margin, node.y1 - node.margin],
-								[i+1, node.y0 + node.margin, node.y1 - node.margin]
-							];
-						else
-							stream.path = [
-								[i-2, node.prev.y1 - node.prev.y0],
-								[i-1, node.prev.y1 - node.prev.y0],
-								[i, node.y0 + node.margin, node.y1 - node.margin],
-								[i+1, node.y0 + node.margin, node.y1 - node.margin]
-							];
+					{
+						stream.path = [
+							[i-2, node.prev.y0, node.prev.y1],
+							[i-1, node.prev.y0, node.prev.y1],
+							[i, node.y0, node.y1],
+							[i+1, node.y0, node.y1]
+						];
+					}
 					else { // insert
-						if (2*node.margin >= (node.y1 - node.y0))
-							continue;
-
 						let pos;
-						// if parent didnt exist in last step, use parents startpos
-						// else if my center existed in the last step, use it, otherwise use parents prev y0/y1
+						// find an ancestor who existed in the previous timestep
 						let p = node;
-						do { p = p.parent }
-						while(!p.prev);
+						while(!p.prev)
+							p = p.parent;
 
-						let o = p.prev;
+						// try to use the center of the stream as beginning
+						// if the previous node was not big enough to have this mid point, use the outside of the previous node
 						let mid = (node.y0 + node.y1) /2;
-						if (o.y1 >= mid)
+						if (p.prev.y1 >= mid)
 							pos = mid;
 						else {
-							let p = 0.75;
-							pos = p * o.y1 + (1-p) * node.parent.y1;
+							/*let p = 0.75;
+							pos = p * p.prev.y1 + (1-p) * node.parent.y1;
 							pos = node.y0;
-							pos = (o.y1 + node.y0) /2;
-							pos = o.y1;
+							pos = (p.prev.y1 + node.y0) /2;
+							*/
+							pos = p.prev.y1;
 						}
 					
 						stream.path = [
 							[i-2, pos, pos],
 							[i-1, pos, pos],
-							[i, node.y0 + node.margin, node.y1 - node.margin],
-							[i+1, node.y0 + node.margin, node.y1 - node.margin]
+							[i, node.y0, node.y1],
+							[i+1, node.y0, node.y1]
 						];
 					}
 
@@ -214,12 +201,11 @@ class SecStreamData {
 					while(!p.next);
 
 					let pos;
-					let f = p.next;
 					let mid = (node.y0 + node.y1) /2;
-					if (f.y1 >= mid)
+					if (p.next.y1 >= mid)
 						pos = mid;
 					else {
-						pos = f.y1;
+						pos = p.next.y1;
 					}
 				
 					stream.path = [
@@ -245,7 +231,7 @@ class SecStreamData {
 				.range([this._opts.margin.left, this._opts.width - this._opts.margin.right]);
 
 			let yScale = d3.scaleLinear()
-				.domain([0, 1]).nice()
+				.domain([0, this._maxValue]).nice()
 				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
 				
 				/*
@@ -279,7 +265,7 @@ class SecStreamData {
 				streams.enter().append('path')
 					.classed('stream', true)
 					.attr('d', (d,i) => area(d.path,i))
-					.style('fill', getRandomColor())
+					.style('fill', getRandomColor)
 					//.each((d) => console.log (d))
 
 				streams.exit().remove();
@@ -317,11 +303,11 @@ class SecStreamData {
 		}
 
 		marginFixed(node) {
-			return this._separationValue;
+			return this._separationValue/100 * this._maxValue;
 		}
 
 		marginPercentage(node) {
-			return node.size * this._separationValue / 100;
+			return (node.y1-node.y0) * this._separationValue / 100;
 		}
 
 		marginHierarchical(node) {

@@ -93,7 +93,7 @@ function changeSeparation(func, value) {
 document.addEventListener("DOMContentLoaded", function(event)
 {
 	//transformVisciousIntoFormat(examples.Viscous);
-	let data = transformGumtreeFormat(examples.gumtreeMin);
+	let data = transformGumtreeFormat(examples.gumtree);
 
 	let app = new Vue({
 		el: '#app',
