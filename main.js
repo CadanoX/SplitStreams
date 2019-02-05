@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			separation: "Fixed",
 			separationValue: 0,
 			sizeThreshold: 0,
+			proportion: 1,
 			settings: {
 				bgColor: "#757575",
 				width: window.innerWidth,
@@ -138,6 +139,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			sizeThreshold: function() {
 				stream.setMinSizeThreshold(this.sizeThreshold)
+			},
+			proportion: function() {
+				stream.setProportion(this.proportion)
 			}
 		}
 	});

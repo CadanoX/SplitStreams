@@ -26,6 +26,70 @@ class SecStreamData {
 
 //const d3 = require('d3');
 {
+	class Stream {
+		constructor({
+			// x-aligned, same amount of vertices on top and bottom
+			// Time steps for cutting MUST be between two int indices
+			// (Have sensible number of vertices to not cause index rounding problems)
+			// Any number between 0 and (N timesteps - 1) must "nicely land" on valid indices
+			// of the array.
+			vertices
+		}) {
+			this._vertices = vertices;
+			this._splitVertices = []; // Array of areas + metadata
+	
+			this._splits = {}; // index : is split
+		}
+	
+		_calculate() {
+			// calculate _splitVertices
+			// x-align indices etc
+	
+		}
+	
+		unsplit(timestepIndex) {
+			this._splits[timestepIndex] = false;
+			return this;
+		}
+	
+		split(timeStepIndex) {
+			// apply the split to vertices
+			this._splits[timestepIndex] = true;
+			return this;
+		}
+	}
+	
+	class StreamData {
+		constructor(timesteps) {
+			this._timesteps = timesteps;
+		}
+	
+		get streams() { return this._streams; }
+
+		data(d) { return d == null ? this._timesteps : (this.add(d), this); }
+
+		add(d) {
+			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
+			
+			if (!!d.id)
+				this._addObject(d);
+			else if (Array.isArray(d))
+				d.forEach(n => this._addObject(n));
+			else // object of objects
+				for (n in d) this._addObject(n)
+
+			this._update();
+		}
+
+		_addObject(d) {
+			this._timesteps.push(d);
+		}
+
+		_update() {
+
+		}
+	}
+
 	class SecStream {
 		constructor(container, opts = {})
         {
@@ -52,6 +116,8 @@ class SecStreamData {
 			this._minSizeThreshold = 0;
 			this._separationMethod = this.marginFixed;
 			this._separationValue = 0;
+			this._minSizeThreshold = 0;
+			this._proportion = 1;
 			
 			this._streamline = d3.area()
 				.x(d => d[0])
@@ -165,10 +231,10 @@ class SecStreamData {
 					if (!!node.prev) // move
 					{
 						stream.path = [
-							[i-2, node.prev.y0, node.prev.y1],
 							[i-1, node.prev.y0, node.prev.y1],
-							[i, node.y0, node.y1],
-							[i+1, node.y0, node.y1]
+							[i-this._proportion, node.prev.y0, node.prev.y1],
+							[i-(1-this._proportion), node.y0, node.y1],
+							[i, node.y0, node.y1]
 						];
 					}
 					else { // insert
@@ -193,10 +259,10 @@ class SecStreamData {
 						}
 					
 						stream.path = [
-							[i-2, pos, pos],
 							[i-1, pos, pos],
-							[i, node.y0, node.y1],
-							[i+1, node.y0, node.y1]
+							[i-this._proportion, pos, pos],
+							[i-(1-this._proportion), node.y0, node.y1],
+							[i, node.y0, node.y1]
 						];
 					}
 
@@ -222,10 +288,10 @@ class SecStreamData {
 					}
 				
 					stream.path = [
-						[i-2, node.y0, node.y1],
 						[i-1, node.y0, node.y1],
-						[i, pos, pos],
-						[i+1, pos, pos]
+						[i-this._proportion, node.y0, node.y1],
+						[i-(1-this._proportion), pos, pos],
+						[i, pos, pos]
 					];
 
 					// TODO: actually this depth should always exist, but it doesn't
@@ -261,7 +327,7 @@ class SecStreamData {
 				.x(d => xScale(d[0]))
 				.y0(d => yScale(d[1]))
 				.y1(d => yScale(d[2]))
-				.curve(d3.curveCatmullRomOpen)
+				.curve(d3.curveMonotoneX)
 			
 			// insert new layers
 			this._pathContainer.selectAll('g')
@@ -329,6 +395,11 @@ class SecStreamData {
 
 		setMinSizeThreshold(value) {
 			this._minSizeThreshold = value / 100;
+			this._update();
+		}
+
+		setProportion(value) {
+			this._proportion = (value / 2) + 0.5; // map from 0-1 to 0.5-1
 			this._update();
 		}
 	}
