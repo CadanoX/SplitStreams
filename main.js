@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			size: window.innerWidth,
 			separation: "Fixed",
 			separationValue: 0,
+			sizeThreshold: 0,
 			settings: {
 				bgColor: "#757575",
 				width: window.innerWidth,
@@ -134,6 +135,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			separationValue: function() {
 				changeSeparation(this.separation, this.separationValue)
+			},
+			sizeThreshold: function() {
+				stream.setMinSizeThreshold(this.sizeThreshold)
 			}
 		}
 	});

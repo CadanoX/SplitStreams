@@ -47,6 +47,11 @@
                 <label> {{ separationValue }} </label>
             </div>
             <div>
+                <label>Size Threshold</label>
+                <input type="range" v-model="sizeThreshold" step= "0.1" min="0" max="5" />
+                <label> {{ sizeThreshold }}% </label>
+            </div>
+            <div>
                 <label>Stroke color</label>
                 <input type="color" v-model="settings.bgColor" />
             </div>

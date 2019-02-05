@@ -48,7 +48,8 @@ class SecStreamData {
 			this._streamData;
 			this._maxTime;
 			this._maxValue;
-			
+
+			this._minSizeThreshold = 0;
 			this._separationMethod = this.marginFixed;
 			this._separationValue = 0;
 			
@@ -123,13 +124,25 @@ class SecStreamData {
 				if (!node.parent) {
 					node.y0 = 0;
 					node.y1 = node.size;
-					node.margin = 0;
+					node.margin = this._separationMethod(node);
 				}
 				else {
-					let size = node.parent.y1 - node.parent.y0 - 2*node.parent.margin;
-					if (size <= 0) size = 0;
-					node.y0 = node.parent.y0 + node.parent.margin + size * node.rpos;
-					node.y1 = node.y0 + size * node.rsize;
+					let pSize = node.parent.y1 - node.parent.y0 - 2*node.parent.margin;
+					if (pSize <= 0) {
+						node.y0 = 0.5 * (node.parent.y0 + node.parent.y1);
+						node.y1 = 0.5 * (node.parent.y0 + node.parent.y1);
+					} else {
+						node.y0 = node.parent.y0 + node.parent.margin + pSize * node.rpos;
+						node.y1 = node.y0 + pSize * node.rsize;
+
+						let size = node.y1 - node.y0;
+						if ((size / this._maxValue) <= this._minSizeThreshold) {
+							node.y0 = 0.5 * (node.parent.y0 + node.parent.y1);
+							node.y1 = 0.5 * (node.parent.y0 + node.parent.y1);
+						}
+					}
+
+
 					node.margin = this._separationMethod(node);
 				}
 
@@ -311,7 +324,12 @@ class SecStreamData {
 		}
 
 		marginHierarchical(node) {
-			return 1/node.depth * this._separationValue;
+			return 1 / (node.depth + 1) * this._separationValue;
+		}
+
+		setMinSizeThreshold(value) {
+			this._minSizeThreshold = value / 100;
+			this._update();
 		}
 	}
 
