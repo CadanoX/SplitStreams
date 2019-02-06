@@ -31,26 +31,42 @@
             </div>
 
             <div>
-                <span>Separation</span>
+                <span>Separation Y</span>
                 <br>
-                <input type="radio" id="fixed" value="Fixed" selected v-model="separation">
-                <label for="fixed">Fixed</label>
+                <input type="radio" id="sepYfixed" value="Fixed" selected v-model="separationY">
+                <label for="sepYfixed">Fixed</label>
                 <br>
-                <input type="radio" id="percentage" value="Percentage" v-model="separation">
-                <label for="percentage">Percentage</label>
+                <input type="radio" id="sepYpercentage" value="Percentage" v-model="separationY">
+                <label for="sepYpercentage">Percentage</label>
                 <br>
-                <input type="radio" id="hierarchy" value="Hierarchical" v-model="separation">
-                <label for="hierarchy">Hierarchical</label>
+                <input type="radio" id="sepYhierarchy" value="Hierarchical" v-model="separationY">
+                <label for="sepYhierarchy">Hierarchical</label>
                 <br>
                 <label>Value</label>
-                <input type="range" v-model="separationValue" step= "0.1" min="0" max="100" />
-                <label> {{ separationValue }} </label>
+                <input type="range" v-model="separationYValue" step= "0.1" min="0" max="100" />
+                <label> {{ separationYValue }} </label>
             </div>
             <div>
                 <label>Tree/Time</label>
                 <input type="range" v-model="proportion" step= "0.01" min="0" max="1" />
                 <label> {{ proportion }} </label>
             </div>
+            <div>
+                    <span>Separation X</span>
+                    <br>
+                    <input type="radio" id="sepXfixed" value="Fixed" selected v-model="separationX">
+                    <label for="sepXfixed">Fixed</label>
+                    <br>
+                    <input type="radio" id="sepXpercentage" value="Percentage" v-model="separationX">
+                    <label for="sepXpercentage">Percentage</label>
+                    <br>
+                    <input type="radio" id="sepXhierarchy" value="Hierarchical" v-model="separationX">
+                    <label for="sepXhierarchy">Hierarchical</label>
+                    <br>
+                    <label>Value</label>
+                    <input type="range" v-model="separationXValue" step= "0.1" min="0" max="100" />
+                    <label> {{ separationXValue }} </label>
+                </div>
             <div>
                 <label>Threshold</label>
                 <input type="range" v-model="sizeThreshold" step= "0.1" min="0" max="5" />

@@ -114,8 +114,10 @@ class SecStreamData {
 			this._maxValue;
 
 			this._minSizeThreshold = 0;
-			this._separationMethod = this.marginFixed;
-			this._separationValue = 0;
+			this._separationXMethod = this.marginXFixed;
+			this._separationXValue = 0;
+			this._separationYMethod = this.marginYFixed;
+			this._separationYValue = 0;
 			this._minSizeThreshold = 0;
 			this._proportion = 1;
 			
@@ -190,15 +192,17 @@ class SecStreamData {
 				if (!node.parent) {
 					node.y0 = 0;
 					node.y1 = node.size;
-					node.margin = this._separationMethod(node);
+					node.marginX = this._separationXMethod(node);
+					node.marginY = this._separationYMethod(node);
 				}
 				else {
-					let pSize = node.parent.y1 - node.parent.y0 - 2*node.parent.margin;
+					node.x = node.parent.x;
+					let pSize = node.parent.y1 - node.parent.y0 - 2*node.parent.marginY;
 					if (pSize <= 0) {
 						node.y0 = 0.5 * (node.parent.y0 + node.parent.y1);
 						node.y1 = 0.5 * (node.parent.y0 + node.parent.y1);
 					} else {
-						node.y0 = node.parent.y0 + node.parent.margin + pSize * node.rpos;
+						node.y0 = node.parent.y0 + node.parent.marginY + pSize * node.rpos;
 						node.y1 = node.y0 + pSize * node.rsize;
 
 						let size = node.y1 - node.y0;
@@ -208,33 +212,36 @@ class SecStreamData {
 						}
 					}
 
-
-					node.margin = this._separationMethod(node);
+					node.marginX = this._separationXMethod(node);
+					node.marginY = this._separationYMethod(node);
 				}
 
 				node.children.forEach( (child) => traverse(child, nChild++));
 			}
 
 			for (let i = 0; i < t.length; i++)
+			{
+				t[i].tree.x = i;
 				traverse(t[i].tree);
+			}
 		}
 
 		_calculateStreamData() {
 			this._streamData = [];
 			let t = this._data.timesteps;
+			let prop = this._proportion;
 			for (let i = 1; i < t.length; i++) { // for all timesteps
 				for (let n in t[i].references) { // for all nodes build stream to prev of node
 					let node = t[i].references[n];
 					let stream = {};
 					//console.log(i + " " + node.id + " " + node.depth)
-
 					if (!!node.prev) // move
 					{
 						stream.path = [
-							[i-1, node.prev.y0, node.prev.y1],
-							[i-this._proportion, node.prev.y0, node.prev.y1],
-							[i-(1-this._proportion), node.y0, node.y1],
-							[i, node.y0, node.y1]
+							[node.prev.marginX + node.prev.x, node.prev.y0, node.prev.y1],
+							[node.prev.marginX + prop * node.prev.x + (1-prop) * node.x, node.prev.y0, node.prev.y1],
+							[-node.marginX + (1-prop) * node.prev.x + prop * node.x, node.y0, node.y1],
+							[-node.marginX + node.x, node.y0, node.y1]
 						];
 					}
 					else { // insert
@@ -259,10 +266,10 @@ class SecStreamData {
 						}
 					
 						stream.path = [
-							[i-1, pos, pos],
-							[i-this._proportion, pos, pos],
-							[i-(1-this._proportion), node.y0, node.y1],
-							[i, node.y0, node.y1]
+							[p.prev.marginX + p.prev.x, pos, pos],
+							[p.prev.marginX + prop * p.prev.x + (1-prop) * node.x, pos, pos],
+							[-node.marginX + (1-prop) * p.prev.x + prop * node.x, node.y0, node.y1],
+							[-node.marginX + node.x, node.y0, node.y1]
 						];
 					}
 
@@ -288,10 +295,10 @@ class SecStreamData {
 					}
 				
 					stream.path = [
-						[i-1, node.y0, node.y1],
-						[i-this._proportion, node.y0, node.y1],
-						[i-(1-this._proportion), pos, pos],
-						[i, pos, pos]
+						[node.marginX + node.x, node.y0, node.y1],
+						[node.marginX + prop * node.x + (1-prop) * p.next.x, node.y0, node.y1],
+						[-p.next.marginX + (1-prop) * node.x + prop * p.next.x, pos, pos],
+						[-p.next.marginX + p.next.x, pos, pos]
 					];
 
 					// TODO: actually this depth should always exist, but it doesn't
@@ -375,22 +382,40 @@ class SecStreamData {
 			this.render();
 		}
 		
-		separation(callback, parameter) {
-			this._separationMethod = callback;
-			this._separationValue = parameter;
+		separationY(callback, parameter) {
+			this._separationYMethod = callback;
+			this._separationYValue = parameter;
 			this._update();
 		}
 
-		marginFixed(node) {
-			return this._separationValue/100 * this._maxValue;
+		separationX(callback, parameter) {
+			this._separationXMethod = callback;
+			this._separationXValue = parameter;
+			this._update();
 		}
 
-		marginPercentage(node) {
-			return (node.y1-node.y0) * this._separationValue / 100;
+		marginYFixed(node) {
+			return this._separationYValue / 100 * this._maxValue;
 		}
 
-		marginHierarchical(node) {
-			return 1 / (node.depth + 1) * this._separationValue;
+		marginYPercentage(node) {
+			return (node.y1-node.y0) * this._separationYValue / 100;
+		}
+
+		marginYHierarchical(node) {
+			return 1 / (node.depth + 1) * this._separationYValue;
+		}
+
+		marginXFixed(node) {
+			return this._separationXValue / 100 * this._maxTime;
+		}
+
+		marginXPercentage(node) {
+			return (node.y1-node.y0) * this._separationXValue / 100;
+		}
+
+		marginXHierarchical(node) {
+			return 1 / (node.depth + 1) * this._separationXValue;
 		}
 
 		setMinSizeThreshold(value) {

@@ -81,13 +81,22 @@ function transformGumtreeFormat(data)
 	return format;
 }
 
-function changeSeparation(func, value) {
+function changeSeparationY(func, value) {
 	if (func == "Fixed")
-		stream.separation(stream.marginFixed, value);
+		stream.separationY(stream.marginYFixed, value);
 	else if (func == "Percentage")
-		stream.separation(stream.marginPercentage, value);
+		stream.separationY(stream.marginYPercentage, value);
 	else if (func == "Hierarchical")
-		stream.separation(stream.marginHierarchical, value);
+		stream.separationY(stream.marginYHierarchical, value);
+}
+
+function changeSeparationX(func, value) {
+	if (func == "Fixed")
+		stream.separationX(stream.marginXFixed, value);
+	else if (func == "Percentage")
+		stream.separationX(stream.marginXPercentage, value);
+	else if (func == "Hierarchical")
+		stream.separationX(stream.marginXHierarchical, value);
 }
 
 document.addEventListener("DOMContentLoaded", function(event)
@@ -101,10 +110,12 @@ document.addEventListener("DOMContentLoaded", function(event)
 			selected: null,
 			search: "force",
 			size: window.innerWidth,
-			separation: "Fixed",
-			separationValue: 0,
+			separationX: "Fixed",
+			separationXValue: 0,
+			separationY: "Fixed",
+			separationYValue: 0,
 			sizeThreshold: 0,
-			proportion: 1,
+			proportion: 0.99,
 			settings: {
 				bgColor: "#757575",
 				width: window.innerWidth,
@@ -131,11 +142,17 @@ document.addEventListener("DOMContentLoaded", function(event)
 				this.settings.height = this.size * window.innerHeight/window.innerWidth;
 				stream.resize(this.settings.width, this.settings.height);
 			},
-			separation: function() {
-				changeSeparation(this.separation, this.separationValue)
+			separationY: function() {
+				changeSeparationY(this.separationY, this.separationYValue)
 			},
-			separationValue: function() {
-				changeSeparation(this.separation, this.separationValue)
+			separationYValue: function() {
+				changeSeparationY(this.separationY, this.separationYValue)
+			},
+			separationX: function() {
+				changeSeparationX(this.separationX, this.separationXValue)
+			},
+			separationXValue: function() {
+				changeSeparationX(this.separationX, this.separationXValue)
 			},
 			sizeThreshold: function() {
 				stream.setMinSizeThreshold(this.sizeThreshold)
