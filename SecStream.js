@@ -112,6 +112,7 @@ class SecStreamData {
 			this._streamData;
 			this._maxTime;
 			this._maxValue;
+			this._maxDepth = 0;
 
 			this._minSizeThreshold = 0;
 			this._separationXMethod = this.marginXFixed;
@@ -168,6 +169,7 @@ class SecStreamData {
 			this._maxValue = maxSize;
 			
 			let traverse = (node, depth) => {
+				this._maxDepth = Math.max(this._maxDepth, depth);
 				node.depth = depth++;
 				if (!node.parent) {
 					node.rpos = 0;
@@ -234,6 +236,8 @@ class SecStreamData {
 				for (let n in t[i].references) { // for all nodes build stream to prev of node
 					let node = t[i].references[n];
 					let stream = {};
+					stream.depth = node.depth;
+
 					//console.log(i + " " + node.id + " " + node.depth)
 					if (!!node.prev) // move
 					{
@@ -287,6 +291,7 @@ class SecStreamData {
 				for (let n in t[i].deleted) {
 					let node = t[i].deleted[n];
 					let stream = {};
+					stream.depth = node.depth;
 					let p = node;
 					do { p = p.parent }
 					while(!p.next);
@@ -328,6 +333,10 @@ class SecStreamData {
 				.domain([0, this._maxValue]).nice()
 				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
 				
+			let color = d3.scaleOrdinal(d3.schemePaired);
+			//let color = d3.scaleSequential(d3.interpolateCubehelixDefault).domain([this._maxDepth, 0]);
+			//let color = d3.scaleSequential(d3.interpolateCubehelixDefault).domain([0, this._maxDepth]);
+
 				/*
 				d3.curveLinear,
     {"			d3.curveStep,
@@ -359,7 +368,7 @@ class SecStreamData {
 				streams.enter().append('path')
 					.classed('stream', true)
 					.attr('d', (d,i) => area(d.path,i))
-					.style('fill', getRandomColor)
+					.style('fill', d => color(d.depth))
 					//.each((d) => console.log (d))
 
 				streams.exit().remove();
