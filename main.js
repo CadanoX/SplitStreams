@@ -97,6 +97,8 @@ function changeSeparationX(func, value) {
 		stream.separationX(stream.marginXFixed, value);
 	else if (func == "Hierarchical")
 		stream.separationX(stream.marginXHierarchical, value);
+	else if (func == "HierarchicalReverse")
+		stream.separationX(stream.marginXHierarchicalReverse, value);
 }
 
 document.addEventListener("DOMContentLoaded", function(event)

@@ -63,6 +63,9 @@
                     <input type="radio" id="sepXhierarchy" value="Hierarchical" v-model="separationX">
                     <label for="sepXhierarchy">Hierarchical</label>
                     <br>
+                    <input type="radio" id="sepXhierarchyReverse" value="HierarchicalReverse" v-model="separationX">
+                    <label for="sepXhierarchyReverse">Hierarchical Reverse</label>
+                    <br>
                     <label>Value</label>
                     <input type="range" v-model="separationXValue" step= "0.1" min="0" max="100" />
                     <label> {{ separationXValue }} </label>

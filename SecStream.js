@@ -432,6 +432,10 @@ class SecStreamData {
 		}
 
 		marginXHierarchical(node) {
+			return (node.depth + 1) / this._maxDepth * this._separationXValue / 100;
+		}
+
+		marginXHierarchicalReverse(node) {
 			return 1 / (node.depth + 1) * this._separationXValue / 100;
 		}
 
