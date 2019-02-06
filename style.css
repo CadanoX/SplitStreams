@@ -14,21 +14,20 @@ html, body{
 #app {
 	height: 100%;
 	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
 #wrapper {
 	/*height: 100%;*/
-	width: fit-content;
 }
 
 .controls {
-	position: fixed;
 	top: 16px; 
 	left: 16px;
 	background: #f8f8f8;
 	padding: 0.5rem;
-	display: flex;
-	flex-direction: column;
+	flex-basis: 20%;
 }
 
 .controls > * + * {

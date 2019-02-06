@@ -88,13 +88,13 @@ function changeSeparationY(func, value) {
 		stream.separationY(stream.marginYPercentage, value);
 	else if (func == "Hierarchical")
 		stream.separationY(stream.marginYHierarchical, value);
+	else if (func == "HierarchicalReverse")
+		stream.separationY(stream.marginYHierarchicalReverse, value);
 }
 
 function changeSeparationX(func, value) {
 	if (func == "Fixed")
 		stream.separationX(stream.marginXFixed, value);
-	else if (func == "Percentage")
-		stream.separationX(stream.marginXPercentage, value);
 	else if (func == "Hierarchical")
 		stream.separationX(stream.marginXHierarchical, value);
 }
