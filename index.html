@@ -31,7 +31,7 @@
             </div>
 
             <div>
-                <span>Separation Y</span>
+                <span><b>Separation Y</b></span>
                 <br>
                 <input type="radio" id="sepYfixed" value="Fixed" selected v-model="separationY">
                 <label for="sepYfixed">Fixed</label>
@@ -45,36 +45,57 @@
                 <input type="radio" id="sepYhierarchyReverse" value="HierarchicalReverse" v-model="separationY">
                 <label for="sepYhierarchyReverse">Hierarchical Reverse</label>
                 <br>
-                <label>Value</label>
+                <label>Value: {{ separationYValue }}</label>
+                <br>
                 <input type="range" v-model="separationYValue" step= "0.1" min="0" max="100" />
-                <label> {{ separationYValue }} </label>
             </div>
+            <hr>
             <div>
-                <label>Tree/Time</label>
+                <label><b>Tree/Time</b>: {{ proportion }}</label>
+                <br>
                 <input type="range" v-model="proportion" step= "0.01" min="0" max="1" />
-                <label> {{ proportion }} </label>
             </div>
+            <hr>
             <div>
-                    <span>Separation X</span>
-                    <br>
-                    <input type="radio" id="sepXfixed" value="Fixed" selected v-model="separationX">
-                    <label for="sepXfixed">Fixed</label>
-                    <br>
-                    <input type="radio" id="sepXhierarchy" value="Hierarchical" v-model="separationX">
-                    <label for="sepXhierarchy">Hierarchical</label>
-                    <br>
-                    <input type="radio" id="sepXhierarchyReverse" value="HierarchicalReverse" v-model="separationX">
-                    <label for="sepXhierarchyReverse">Hierarchical Reverse</label>
-                    <br>
-                    <label>Value</label>
-                    <input type="range" v-model="separationXValue" step= "0.1" min="0" max="100" />
-                    <label> {{ separationXValue }} </label>
-                </div>
+                <span><b>Separation X</b></span>
+                <br>
+                <input type="radio" id="sepXfixed" value="Fixed" selected v-model="separationX">
+                <label for="sepXfixed">Fixed</label>
+                <br>
+                <input type="radio" id="sepXhierarchy" value="Hierarchical" v-model="separationX">
+                <label for="sepXhierarchy">Hierarchical</label>
+                <br>
+                <input type="radio" id="sepXhierarchyReverse" value="HierarchicalReverse" v-model="separationX">
+                <label for="sepXhierarchyReverse">Hierarchical Reverse</label>
+                <br>
+                <label>Value: {{ separationXValue }}</label>
+                <br>
+                <input type="range" v-model="separationXValue" step= "0.1" min="0" max="100" />
+            </div>
+            <hr>
             <div>
-                <label>Threshold</label>
+                <label><b>Threshold:</b> {{ sizeThreshold }}%</label>
+                <br>
                 <input type="range" v-model="sizeThreshold" step= "0.1" min="0" max="5" />
-                <label> {{ sizeThreshold }}% </label>
             </div>
+            <hr>
+            <div>
+                <label><b>Drop Shadow 1:</b></label>
+                <br>
+                <label>dx: {{ filters[0].dx }} </label>
+                <br>
+                <input type="range" v-model="filters[0].dx" step= "0.1" min="0" max="5" />
+                <br>
+                <label>dy: {{ filters[0].dy }} </label>
+                <br>
+                <input type="range" v-model="filters[0].dy" step= "0.1" min="0" max="5" />
+                <br>
+                <label>stdDeviation: {{ filters[0].stdDeviation }} </label>
+                <br>
+                <input type="range" v-model="filters[0].stdDeviation" step= "0.2" min="0" max="20" />
+            </div>
+
+        <!--
             <div>
                 <label>Stroke color</label>
                 <input type="color" v-model="settings.bgColor" />
@@ -90,6 +111,7 @@
             <div>
                 Selected: {{ selected }}
             </div>
+        -->
         </div>
 
         <div id="wrapper" v-bind:style="{width: settings.width + 'px', height: settings.height + 'px', backgroundColor: settings.bgColor}"></div>

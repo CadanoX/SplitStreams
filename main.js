@@ -118,6 +118,10 @@ document.addEventListener("DOMContentLoaded", function(event)
 			separationYValue: 0,
 			sizeThreshold: 0,
 			proportion: 0.99,
+			filters: [
+				{ dx: 0, dy: 0, stdDeviation: 0 },
+				{ dx: 0, dy: 0, stdDeviation: 0 }
+			],
 			settings: {
 				bgColor: "#757575",
 				width: window.innerWidth,
@@ -161,6 +165,12 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			proportion: function() {
 				stream.setProportion(this.proportion)
+			},
+			filters: {
+				handler: function(filters) {
+					stream.filters(filters)
+				},
+				deep: true
 			}
 		}
 	});

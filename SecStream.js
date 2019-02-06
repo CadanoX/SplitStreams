@@ -108,6 +108,8 @@ class SecStreamData {
 			this._data;
             this._pathContainer;
 			this._svg;
+			this._svgFilters;
+			this._filters;
 			
 			this._streamData;
 			this._maxTime;
@@ -133,11 +135,19 @@ class SecStreamData {
         static get a(){}
 
         data(d) { return d == null ? this._data : (this._setData(d), this); }
-        
+		
+		filters(d) { return d == null ? this._filters : (this._setFilters(d), this); }
+
         _setData(d) {
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
 			this._data = d;
 			this._update();
+		}
+
+		_setFilters(d) {
+			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
+			this._filters = d;
+			this._applyFilters();
 		}
 
 		_init() {
@@ -152,11 +162,16 @@ class SecStreamData {
 					.attr('id', 'svg-drawn')
 					.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
+					
+			this._svgFilters = d3.select("svg").append("defs");
 			this._pathContainer = this._svg.append('g').classed('pathContainer', true);
         }
 
 		_applyOrdering() {
 			// change the order of siblings in the data for less edge crossings
+
+			// TEST: RANDOM ORDER OF LEAF NODES
+
 		}
 
 		_normalizeData() {
@@ -333,8 +348,8 @@ class SecStreamData {
 				.domain([0, this._maxValue]).nice()
 				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
 				
-			let color = d3.scaleOrdinal(d3.schemePaired);
-			//let color = d3.scaleSequential(d3.interpolateCubehelixDefault).domain([this._maxDepth, 0]);
+			//let color = d3.scaleOrdinal(d3.schemePaired);
+			let color = d3.scaleSequential(d3.interpolateBlues).domain([this._maxDepth, 0]);
 			//let color = d3.scaleSequential(d3.interpolateCubehelixDefault).domain([0, this._maxDepth]);
 
 				/*
@@ -379,6 +394,26 @@ class SecStreamData {
 
 			return this;
 		}
+
+		_applyFilters() {
+			// remove existing filter
+			let filters = this._svgFilters.selectAll(".dropShadow")
+				.data(this._filters);
+
+			filters.enter().append("filter")
+					.classed("dropShadow", true)
+					.attr("id", (d, i) => "filter_" + i)
+					.append("feDropShadow");
+			
+			d3.selectAll('.dropShadow > feDropShadow')
+						.attr("stdDeviation", d => d.stdDeviation)
+						.attr("dx", d => d.dx)
+						.attr("dy", d => d.dy);
+
+			d3.selectAll('path.stream').attr("filter", "url(#filter_0)");
+
+			filters.exit().remove();
+		}
 		
         _update() {
 			this._normalizeData();
@@ -386,10 +421,6 @@ class SecStreamData {
 			this._calculatePositions();
 			this._calculateStreamData();
 			this.render();
-        }
-        
-        _myStreamLayout(d) {
-            return d;
         }
         
         resize(width, height) {
