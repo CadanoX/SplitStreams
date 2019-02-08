@@ -163,7 +163,7 @@ class SecStreamData {
 					.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
 					
-			this._svgFilters = d3.select("svg").append("defs");
+			this._svgFilters = d3.select('svg').append('defs');
 			this._pathContainer = this._svg.append('g').classed('pathContainer', true);
         }
 
@@ -397,22 +397,28 @@ class SecStreamData {
 
 		_applyFilters() {
 			// remove existing filter
-			let filters = this._svgFilters.selectAll(".dropShadow")
+			let filtersData = this._svgFilters.selectAll("filter")
 				.data(this._filters);
 
-			filters.enter().append("filter")
-					.classed("dropShadow", true)
+			filtersData.enter().append("filter")
 					.attr("id", (d, i) => "filter_" + i)
-					.append("feDropShadow");
+					.attr('width', '1000%')
+					.attr('height', '1000%')
+					.attr('x', '-500%')
+					.attr('y', '-500%')
+
+			filtersData.exit().remove();
 			
-			d3.selectAll('.dropShadow > feDropShadow')
-						.attr("stdDeviation", d => d.stdDeviation)
-						.attr("dx", d => d.dx)
-						.attr("dy", d => d.dy);
+			this._svgFilters.selectAll("filter").each(function (effects, i) {
+				let html = "";
+				for (let i = 0; i < effects.length; i++) {
+					let d = effects[i];
+					html += "<" + d.type + " dx='" + d.dx + "' dy='" + d.dy + "' stdDeviation='" + d.stdDeviation + "'/>";
+				}
+				this.innerHTML = html;
+			});
 
 			d3.selectAll('path.stream').attr("filter", "url(#filter_0)");
-
-			filters.exit().remove();
 		}
 		
         _update() {

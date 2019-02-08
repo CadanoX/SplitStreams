@@ -112,18 +112,20 @@ document.addEventListener("DOMContentLoaded", function(event)
 			selected: null,
 			search: "force",
 			size: window.innerWidth,
-			separationX: "Fixed",
+			separationX: 'Fixed',
 			separationXValue: 0,
-			separationY: "Fixed",
+			separationY: 'Fixed',
 			separationYValue: 0,
 			sizeThreshold: 0,
 			proportion: 0.99,
 			filters: [
-				{ dx: 0, dy: 0, stdDeviation: 0 },
-				{ dx: 0, dy: 0, stdDeviation: 0 }
+				[
+					{ type: 'feDropShadow', dx: 0, dy: 0, stdDeviation: 0 },
+					{ type: 'feDropShadow', dx: 0, dy: 0, stdDeviation: 0 }
+				]
 			],
 			settings: {
-				bgColor: "#757575",
+				bgColor: '#757575',
 				width: window.innerWidth,
 				height: window.innerHeight
 			},

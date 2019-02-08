@@ -79,21 +79,71 @@
                 <input type="range" v-model="sizeThreshold" step= "0.1" min="0" max="5" />
             </div>
             <hr>
-            <div>
+            <div style="display: inline-block">
                 <label><b>Drop Shadow 1:</b></label>
                 <br>
-                <label>dx: {{ filters[0].dx }} </label>
+                <label>dx: {{ filters[0][0].dx }} </label>
                 <br>
-                <input type="range" v-model="filters[0].dx" step= "0.1" min="0" max="5" />
+                <input type="range" v-model="filters[0][0].dx" step= "1" min="-10" max="10" />
                 <br>
-                <label>dy: {{ filters[0].dy }} </label>
+                <label>dy: {{ filters[0][0].dy }} </label>
                 <br>
-                <input type="range" v-model="filters[0].dy" step= "0.1" min="0" max="5" />
+                <input type="range" v-model="filters[0][0].dy" step= "1" min="-10" max="10" />
                 <br>
-                <label>stdDeviation: {{ filters[0].stdDeviation }} </label>
+                <label>stdDeviation: {{ filters[0][0].stdDeviation }} </label>
                 <br>
-                <input type="range" v-model="filters[0].stdDeviation" step= "0.2" min="0" max="20" />
+                <input type="range" v-model="filters[0][0].stdDeviation" step= "0.2" min="0" max="10" />
             </div>
+            </vr>
+            <div style="display: inline-block; border-left: 1px solid #000; padding-left: 15px">
+                <label><b>Drop Shadow 2:</b></label>
+                <br>
+                <label>dx: {{ filters[0][1].dx }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].dx" step= "1" min="-10" max="10" />
+                <br>
+                <label>dy: {{ filters[0][1].dy }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].dy" step= "1" min="-10" max="10" />
+                <br>
+                <label>stdDeviation: {{ filters[0][1].stdDeviation }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].stdDeviation" step= "0.2" min="0" max="10" />
+            </div>
+            <hr>
+        <!--
+            <div style="display: inline-block">
+                <label><b>Cushion 1:</b></label>
+                <br>
+                <label>dx: {{ filters[0][0].dx }} </label>
+                <br>
+                <input type="range" v-model="filters[0][0].dx" step= "1" min="-10" max="10" />
+                <br>
+                <label>dy: {{ filters[0][0].dy }} </label>
+                <br>
+                <input type="range" v-model="filters[0][0].dy" step= "1" min="-10" max="10" />
+                <br>
+                <label>stdDeviation: {{ filters[0][0].stdDeviation }} </label>
+                <br>
+                <input type="range" v-model="filters[0][0].stdDeviation" step= "0.2" min="0" max="20" />
+            </div>
+            </vr>
+            <div style="display: inline-block; border-left: 1px solid #000; padding-left: 15px">
+                <label><b>Cushion 2:</b></label>
+                <br>
+                <label>dx: {{ filters[0][1].dx }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].dx" step= "1" min="-10" max="10" />
+                <br>
+                <label>dy: {{ filters[0][1].dy }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].dy" step= "1" min="-10" max="10" />
+                <br>
+                <label>stdDeviation: {{ filters[0][1].stdDeviation }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].stdDeviation" step= "0.2" min="0" max="20" />
+            </div>
+        -->
 
         <!--
             <div>
