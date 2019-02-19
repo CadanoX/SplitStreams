@@ -25,18 +25,36 @@
         }
 
         #app {
+            align-content: flex-start;
             height: 100%;
             width: 100%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
         }
 
         .test {
             background-color: grey;
-            width: 200px;
-            height: 200px;
             display: block;
+            height: 215px;
+            margin: 5px;
+            text-align: center;
+            width: 200px;
         }
+
+        .test > .name {
+            /*position: absolute;*/
+            font-weight: bold;
+        }
+
+        .test > .result {
+            height: 100%;
+        }
+        
+        path.stream {
+            stroke: black;
+        }
+
     </style>
 
     <!-- libraries-->
@@ -67,8 +85,17 @@
             div.id = test;
             wrapper.appendChild(div);
 
+            let testName = document.createElement('div');
+            testName.innerHTML = test
+            testName.className = "name";
+            div.appendChild(testName);
+
+            let testResult = document.createElement('div');
+            testResult.className = "result";
+            div.appendChild(testResult);
+
             let data = transformGumtreeFormat(examples.tests[test]);
-            d3.SecStream(div, {width: 200, height: 200, margin: {top: 5, bottom: 5, right: 5, left: 5}})
+            d3.SecStream(testResult, {width: 200, height: 200, margin: {top: 5, bottom: 5, right: 5, left: 5}})
                 .data(data);
         }
     </script>

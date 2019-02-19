@@ -1,17 +1,15 @@
 const examples = {
 	"tests": {
-		"1": {
+		"valueChange": {
 			"timesteps": [
 				{
 					"root": {
-						"id": 0,
 						"length": "10",
 						"pos": "0"
 					}
 				},
 				{
 					"root": {
-						"id": 0,
 						"length": "5",
 						"pos": "0"
 					}
@@ -27,7 +25,322 @@ const examples = {
 					]
 				}
 			]
-		}
+		},
+		"nesting": {
+			"timesteps": [
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "3"
+							}
+						]
+					}
+				},
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "3"
+							}
+						]
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 0,
+							"dest": 0
+						},
+						{
+							"src": 1,
+							"dest": 1
+						}
+					]
+				}
+			]
+		},
+		"posChange": {
+			"timesteps": [
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "2"
+							}
+						]
+					}
+				},
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "6"
+							}
+						]
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 0,
+							"dest": 0
+						},
+						{
+							"src": 1,
+							"dest": 1
+						}
+					]
+				}
+			]
+		},
+		"add": {
+			"timesteps": [
+				{
+					"root": {
+						"length": "10",
+						"pos": "0"
+					}
+				},
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "3"
+							}
+						]
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 0,
+							"dest": 1
+						}
+					],
+					"actions": [
+						{
+							"action": "insert",
+							"tree": 0,
+							"parent": 0,
+							"at": 0
+						}
+					]
+				}
+			]
+		},
+		"delete": {
+			"timesteps": [
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "3"
+							}
+						]
+					}
+				},
+				{
+					"root": {
+						"length": "10",
+						"pos": "0"
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 1,
+							"dest": 0
+						}
+					],
+					"actions": [
+						{
+							"action": "delete",
+							"tree": 0
+						}
+					]
+				}
+			]
+		},
+		"moveAlong": {
+			"timesteps": [
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "1"
+							},
+							{
+								"length": "2",
+								"pos": "7"
+							}
+						]
+					}
+				},
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "5"
+							},
+							{
+								"length": "2",
+								"pos": "1"
+							}
+						]
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 0,
+							"dest": 0
+						},
+						{
+							"src": 1,
+							"dest": 1
+						},
+						{
+							"src": 2,
+							"dest": 2
+						}
+					]
+				}
+			]
+		},
+		"moveAcross": {
+			"timesteps": [
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "1",
+								"children": [
+									{
+										"length": "2",
+										"pos": "2"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "1"
+							},
+							{
+								"length": "2",
+								"pos": "7"
+							}
+						]
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 0,
+							"dest": 1
+						},
+						{
+							"src": 1,
+							"dest": 0
+						},
+						{
+							"src": 2,
+							"dest": 2
+						}
+					]
+				}
+			]
+		},
+		"parentSwitch": {
+			"timesteps": [
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "3"
+							}
+						]
+					}
+				},
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "3"
+							}
+						]
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 0,
+							"dest": 1
+						},
+						{
+							"src": 1,
+							"dest": 0
+						}
+					]
+				}
+			]
+		},
+		
 	},
 	"gumtree": {
 		"timesteps": [
