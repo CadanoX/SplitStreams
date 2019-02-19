@@ -1,3 +1,55 @@
+class svgPath {
+	constructor() {
+		this._path = "";
+	}
+
+	get() { return this._path; }
+
+	move(x,y) {
+		this._path += "M " + x + " " + y + " ";
+	}
+	
+	moveD(dx,dy) {
+		this._path += "m " + dx + " " + dy + " ";
+	}
+
+	line(x,y) {
+		this._path += "L " + x + " " + y + " ";
+	}
+
+	lineD(dx,dy) {
+		this._path += "l " + dx + " " + dy + " ";
+	}
+
+	horizontal(x) {
+		this._path += "H " + x + " ";
+	}
+
+	horizontalD(dx) {
+		this._path += "h " + dx + " ";
+	}
+
+	vertical(y) {
+		this._path += "V " + y + " ";
+	}
+
+	verticalD(dy) {
+		this._path += "v " + dy + " ";
+	}
+
+	bezier(x1, y1, x2, y2, x, y) {
+		this._path += "C " + x1 + " " + y1 + ", " + x2 + " " + y2 + ", " + x + " " + y + " ";
+	}
+
+	bezierD(dx1, dy1, dx2, dy2, dx, dy) {
+		this._path += "c " + dx1 + " " + dy1 + ", " + dx2 + " " + dy2 + ", " + dx + " " + dy + " ";
+	}
+
+	close() {
+		this._path += "Z"
+	}
+}
+
 class SecStreamData {
 	/*
 	// drawing order
@@ -26,7 +78,7 @@ class SecStreamData {
 
 //const d3 = require('d3');
 {
-	class Stream {
+	class StreamPaths {
 		constructor({
 			// x-aligned, same amount of vertices on top and bottom
 			// Time steps for cutting MUST be between two int indices
@@ -60,33 +112,93 @@ class SecStreamData {
 	}
 	
 	class StreamData {
-		constructor(timesteps) {
-			this._timesteps = timesteps;
+		// array of streams
+		// every stream has a unique ID
+		// every stream contains references to all nodes which belong to that stream
+
+
+		// if parent never changes, draw stream after parent
+		// if parent changes, draw after both parents.
+		// if special case, split path in 2 and draw before and after
+		constructor() {
+			this._streamNodes = [];
+			this._streams = [];
+			this._xScale = d => d;
+			this._yScale = d => d;
+
+			this._xCurve = "bezier";
 		}
 	
 		get streams() { return this._streams; }
 
-		data(d) { return d == null ? this._timesteps : (this.add(d), this); }
-
-		add(d) {
-			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
-			
-			if (!!d.id)
-				this._addObject(d);
-			else if (Array.isArray(d))
-				d.forEach(n => this._addObject(n));
-			else // object of objects
-				for (n in d) this._addObject(n)
-
-			this._update();
+		set xScale(callback) {
+			this._xScale = callback;
 		}
 
-		_addObject(d) {
-			this._timesteps.push(d);
+		set yScale(callback) {
+			this._yScale = callback;
 		}
 
-		_update() {
+		add(node) {
+			this._streamNodes.push(node);
+		}
 
+		clear() {
+			this._streamNodes = [];
+			this._streams = [];
+		}
+
+		calculatePaths() {
+			let x = this._xScale;
+			let y = this._yScale;
+
+			for(let stream of this._streamNodes) {
+				let queue = [];
+				let d = new svgPath();
+				d.move(x(stream.x), y(stream.y0));
+
+				let traverse = (node, branch = 0) => {
+					// draw bottom line (forwards)
+					if (!!node.prev) {
+						if (this._xCurve == "linear")
+							d.line(x(node.x), y(node.y0))
+						else if (this._xCurve == "bezier") {
+								d.bezier(x(0.5 * (node.prev[0].x + node.x)), y(node.prev[0].y0),
+										x(0.5 * (node.prev[0].x + node.x)), y(node.y0),
+										x(node.x), y(node.y0));
+						}
+					}
+					if (!!node.next) {
+						// traverse through children
+						for (let i = 0; i < node.next.length; i++) {
+							traverse(node.next[i], branch + i);
+						}
+						// draw top line (backwards)
+						if (this._xCurve == "linear")
+							d.line(x(node.x), y(node.y1))
+						else if (this._xCurve == "bezier") {
+							let lastChild = node.next[node.next.length-1];
+							d.bezier(x(0.5 * (lastChild.x + node.x)), y(lastChild.y1),
+								x(0.5 * (lastChild.x + node.x)), y(node.y1),
+								x(node.x), y(node.y1));
+						}
+					}
+					else // end stream
+						d.line(x(node.x), y(node.y1))
+				};
+
+				traverse(stream);
+
+				d.close();
+				console.log(d.get());
+
+				this._streams.push({
+					path: d.get(),
+					depth: stream.depth
+				});
+			}
+
+			this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)
 		}
 	}
 
@@ -111,10 +223,13 @@ class SecStreamData {
 			this._svgFilters;
 			this._filters;
 			
+			this._newStreamData = new StreamData();
 			this._streamData;
 			this._maxTime;
 			this._maxValue;
 			this._maxDepth = 0;
+			this._indices = {};
+			this._maxIndex = 0;
 
 			this._minSizeThreshold = 0;
 			this._separationXMethod = this.marginXFixed;
@@ -160,7 +275,7 @@ class SecStreamData {
                 //.on("contextmenu", () => d3.event.preventDefault());
                 .append('g')
 					.attr('id', 'svg-drawn')
-					.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
+					//.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
 					
 			this._svgFilters = d3.select('svg').append('defs');
@@ -174,18 +289,49 @@ class SecStreamData {
 
 		}
 
+		// returns if node builds a new stream
+		_findStreamId(node) {
+			if (!node.prev) { // new node
+				// check if id is already in use
+				if (!this._indices[node.id]) {
+					// if not, use this id for the stream
+					this._indices[node.id] = true;
+					node.streamId = node.id;
+				}
+				else {
+					// find a new ID
+					do { this._maxIndex++; }
+					while(!!this._indices[this._maxIndex])
+					// ID is now in use
+					this._indices[this._maxIndex] = true;
+					node.streamId = this._maxIndex;
+				}
+				return true;
+			}
+			else {
+				// use id of prev node
+				node.streamId = node.prev[0].streamId;
+				return false;
+			}
+		}
+
 		_normalizeData() {
+			this._newStreamData.clear();
 			let t = this._data.timesteps;
-			let maxSize = 0;
-			for (let i = 0; i < t.length - 1; i++)
-				maxSize = Math.max(maxSize, t[i].tree.size);
+			let maxValue = 0;
+			for (let i = 0; i < t.length; i++)
+				maxValue = Math.max(maxValue, t[i].tree.size);
 			
-			this._maxTime = this._data.timesteps.length;
-			this._maxValue = maxSize;
+			this._maxTime = this._data.timesteps.length - 1;
+			this._maxValue = maxValue;
 			
 			let traverse = (node, depth) => {
 				this._maxDepth = Math.max(this._maxDepth, depth);
 				node.depth = depth++;
+				let isNew = this._findStreamId(node);
+				if (isNew)
+					this._newStreamData.add(node)
+
 				if (!node.parent) {
 					node.rpos = 0;
 					node.rsize = 1;
@@ -198,8 +344,17 @@ class SecStreamData {
 				node.children.forEach( (child) => traverse(child, depth));
 			}
 
-			for (let i = 0; i < t.length; i++)
+			for (let i = 0; i < t.length; i++) {
 				traverse(t[i].tree, 0);
+			}
+
+			this._newStreamData.xScale = d3.scaleLinear()
+				.domain([0, this._maxTime]).nice()
+				.range([this._opts.margin.left, this._opts.width - this._opts.margin.right]);
+
+			this._newStreamData.yScale = d3.scaleLinear()
+				.domain([0, this._maxValue]).nice()
+				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
 		}
 
 		_calculatePositions() {
@@ -256,13 +411,13 @@ class SecStreamData {
 					//console.log(i + " " + node.id + " " + node.depth)
 					if (!!node.prev) // move
 					{
-						if (0 >= (-node.marginX + node.x) - (node.prev.marginX + node.prev.x))
+						if (0 >= (-node.marginX + node.x) - (node.prev[0].marginX + node.prev[0].x))
 							stream.path = [[0,0,0],[0,0,0],[0,0,0],[0,0,0]];
 						else
 							stream.path = [
-								[node.prev.marginX + node.prev.x, node.prev.y0, node.prev.y1],
-								[node.prev.marginX + prop * node.prev.x + (1-prop) * node.x, node.prev.y0, node.prev.y1],
-								[-node.marginX + (1-prop) * node.prev.x + prop * node.x, node.y0, node.y1],
+								[node.prev[0].marginX + node.prev[0].x, node.prev[0].y0, node.prev[0].y1],
+								[node.prev[0].marginX + prop * node.prev[0].x + (1-prop) * node.x, node.prev[0].y0, node.prev[0].y1],
+								[-node.marginX + (1-prop) * node.prev[0].x + prop * node.x, node.y0, node.y1],
 								[-node.marginX + node.x, node.y0, node.y1]
 							];
 					}
@@ -276,23 +431,23 @@ class SecStreamData {
 						// try to use the center of the stream as beginning
 						// if the previous node was not big enough to have this mid point, use the outside of the previous node
 						let mid = (node.y0 + node.y1) /2;
-						if (p.prev.y1 >= mid)
+						if (p.prev[0].y1 >= mid)
 							pos = mid;
 						else {
 							/*let p = 0.75;
-							pos = p * p.prev.y1 + (1-p) * node.parent.y1;
+							pos = p * p.prev[0].y1 + (1-p) * node.parent.y1;
 							pos = node.y0;
-							pos = (p.prev.y1 + node.y0) /2;
+							pos = (p.prev[0].y1 + node.y0) /2;
 							*/
-							pos = p.prev.y1;
+							pos = p.prev[0].y1;
 						}
-						if (0 >= (-node.marginX + node.x) - (p.prev.marginX + p.prev.x))
+						if (0 >= (-node.marginX + node.x) - (p.prev[0].marginX + p.prev[0].x))
 							stream.path = [[0,0,0],[0,0,0],[0,0,0],[0,0,0]];
 						else
 							stream.path = [
-								[p.prev.marginX + p.prev.x, pos, pos],
-								[p.prev.marginX + prop * p.prev.x + (1-prop) * node.x, pos, pos],
-								[-node.marginX + (1-prop) * p.prev.x + prop * node.x, node.y0, node.y1],
+								[p.prev[0].marginX + p.prev[0].x, pos, pos],
+								[p.prev[0].marginX + prop * p.prev[0].x + (1-prop) * node.x, pos, pos],
+								[-node.marginX + (1-prop) * p.prev[0].x + prop * node.x, node.y0, node.y1],
 								[-node.marginX + node.x, node.y0, node.y1]
 							];
 					}
@@ -313,20 +468,20 @@ class SecStreamData {
 
 					let pos;
 					let mid = (node.y0 + node.y1) /2;
-					if (p.next.y1 >= mid)
+					if (p.next[0].y1 >= mid)
 						pos = mid;
 					else {
-						pos = p.next.y1;
+						pos = p.next[0].y1;
 					}
 				
-					if (0 >= (-p.next.marginX + p.next.x) - (node.marginX + node.x))
+					if (0 >= (-p.next[0].marginX + p.next[0].x) - (node.marginX + node.x))
 						stream.path = [[0,0,0],[0,0,0],[0,0,0],[0,0,0]];
 					else
 						stream.path = [
 							[node.marginX + node.x, node.y0, node.y1],
-							[node.marginX + prop * node.x + (1-prop) * p.next.x, node.y0, node.y1],
-							[-p.next.marginX + (1-prop) * node.x + prop * p.next.x, pos, pos],
-							[-p.next.marginX + p.next.x, pos, pos]
+							[node.marginX + prop * node.x + (1-prop) * p.next[0].x, node.y0, node.y1],
+							[-p.next[0].marginX + (1-prop) * node.x + prop * p.next[0].x, pos, pos],
+							[-p.next[0].marginX + p.next[0].x, pos, pos]
 						];
 
 					// TODO: actually this depth should always exist, but it doesn't
@@ -382,7 +537,7 @@ class SecStreamData {
 					.data(layer);
 				streams.enter().append('path')
 					.classed('stream', true)
-					.attr('d', (d,i) => area(d.path,i))
+					//.attr('d', (d,i) => area(d.path,i))
 					.style('fill', d => color(d.depth))
 					//.each((d) => console.log (d))
 
@@ -393,6 +548,22 @@ class SecStreamData {
 				.attr('d', (d,i) => area(d.path,i))
 
 			return this;
+		}
+
+		render2() {
+			let color = d3.scaleSequential(d3.interpolateBlues).domain([this._maxDepth, 0]);
+			
+			let streams = this._pathContainer.selectAll('path.stream')
+				.data(this._newStreamData.streams);
+
+			streams.enter().append('path')
+				.classed('stream', true)
+				.style('fill', d => color(d.depth))
+			
+			streams.exit().remove();
+
+			d3.selectAll('path.stream')
+				.attr('d', d => d.path);
 		}
 
 		_applyFilters() {
@@ -425,8 +596,12 @@ class SecStreamData {
 			this._normalizeData();
 			this._applyOrdering();
 			this._calculatePositions();
+
 			this._calculateStreamData();
 			this.render();
+
+			this._newStreamData.calculatePaths();
+			//this.render2();
         }
         
         resize(width, height) {

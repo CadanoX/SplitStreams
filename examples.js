@@ -1,4 +1,34 @@
 const examples = {
+	"tests": {
+		"1": {
+			"timesteps": [
+				{
+					"root": {
+						"id": 0,
+						"length": "10",
+						"pos": "0"
+					}
+				},
+				{
+					"root": {
+						"id": 0,
+						"length": "5",
+						"pos": "0"
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 0,
+							"dest": 0
+						}
+					]
+				}
+			]
+		}
+	},
 	"gumtree": {
 		"timesteps": [
 			{
@@ -3169,95 +3199,95 @@ const examples = {
 						}
 					]
 				}
-			}	
+			}
 		],
 		"changes": [
 			{
 				"matches": [
-				  {
-					"src": 2,
-					"dest": 3
-				  },
-				  {
-					"src": 8,
-					"dest": 9
-				  },
-				  {
-					"src": 4,
-					"dest": 5
-				  },
-				  {
-					"src": 3,
-					"dest": 4
-				  },
-				  {
-					"src": 12,
-					"dest": 11
-				  },
-				  {
-					"src": 6,
-					"dest": 7
-				  },
-				  {
-					"src": 7,
-					"dest": 8
-				  },
-				  {
-					"src": 1,
-					"dest": 2
-				  },
-				  {
-					"src": 5,
-					"dest": 6
-				  },
-				  {
-					"src": 13,
-					"dest": 13
-				  },
-				  {
-					"src": 0,
-					"dest": 1
-				  }
+					{
+						"src": 2,
+						"dest": 3
+					},
+					{
+						"src": 8,
+						"dest": 9
+					},
+					{
+						"src": 4,
+						"dest": 5
+					},
+					{
+						"src": 3,
+						"dest": 4
+					},
+					{
+						"src": 12,
+						"dest": 11
+					},
+					{
+						"src": 6,
+						"dest": 7
+					},
+					{
+						"src": 7,
+						"dest": 8
+					},
+					{
+						"src": 1,
+						"dest": 2
+					},
+					{
+						"src": 5,
+						"dest": 6
+					},
+					{
+						"src": 13,
+						"dest": 13
+					},
+					{
+						"src": 0,
+						"dest": 1
+					}
 				],
 				"actions": [
-				  {
-					"action": "insert",
-					"tree": 12,
-					"parent": 13,
-					"at": 0
-				  },
-				  {
-					"action": "insert",
-					"tree": 0,
-					"parent": 12,
-					"at": 0
-				  },
-				  {
-					"action": "move",
-					"tree": 12,
-					"parent": 12,
-					"at": 1
-				  },
-				  {
-					"action": "insert",
-					"tree": 10,
-					"parent": 11,
-					"at": 3
-				  },
-				  {
-					"action": "delete",
-					"tree": 9
-				  },
-				  {
-					"action": "delete",
-					"tree": 10
-				  },
-				  {
-					"action": "delete",
-					"tree": 11
-				  }
+					{
+						"action": "insert",
+						"tree": 12,
+						"parent": 13,
+						"at": 0
+					},
+					{
+						"action": "insert",
+						"tree": 0,
+						"parent": 12,
+						"at": 0
+					},
+					{
+						"action": "move",
+						"tree": 12,
+						"parent": 12,
+						"at": 1
+					},
+					{
+						"action": "insert",
+						"tree": 10,
+						"parent": 11,
+						"at": 3
+					},
+					{
+						"action": "delete",
+						"tree": 9
+					},
+					{
+						"action": "delete",
+						"tree": 10
+					},
+					{
+						"action": "delete",
+						"tree": 11
+					}
 				]
-			  }			  
+			}
 		]
 	},
 	"viscious": {

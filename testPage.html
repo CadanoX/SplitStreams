@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>SecStreams</title>
+	
+	<link type="text/css" rel="stylesheet" href="style.css" media="screen"/>
+    <link type="text/css" rel="stylesheet" href="SecStream.css" media="screen"/>
+    
+    <style>
+        html, body{
+            background-color: #222222;
+            font-family: monospace;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        *{
+        margin: 0;
+        padding: 0;
+        list-style-type:none;
+        }
+
+        #app {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .test {
+            background-color: grey;
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+    </style>
+
+    <!-- libraries-->
+    <script type="text/javascript" src="libs/vue.js"></script>
+	<script type="text/javascript" src="libs/d3_5.7.0.js"></script>
+	
+	<!-- modules -->
+    <script type="text/javascript" src="SecStream.js"></script>
+	
+    <!-- general -->
+	<script type="text/javascript" src="functions.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+</head>
+<body>
+    <div id="app">
+    </div>
+
+    <script>
+        function formatData(data) {
+
+        }
+
+        const wrapper = document.querySelector('#app');
+
+        for(let test in examples.tests) {
+            let div = document.createElement('div');
+            div.className = "test";
+            div.id = test;
+            wrapper.appendChild(div);
+
+            let data = transformGumtreeFormat(examples.tests[test]);
+            d3.SecStream(div, {width: 200, height: 200, margin: {top: 5, bottom: 5, right: 5, left: 5}})
+                .data(data);
+        }
+    </script>
+</body>
+</html>
