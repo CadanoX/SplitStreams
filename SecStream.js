@@ -155,7 +155,93 @@ class SecStreamData {
 			for(let stream of this._streamNodes) {
 				let queue = [];
 				let d = new svgPath();
-				d.move(x(stream.x), y(stream.y0));
+
+				let drawStart = (node) => { // insert node
+					// find position to insert node
+					let pos;
+					// find an ancestor who existed in the previous timestep
+					let p = node;
+					while(!!p && !p.prev)
+						p = p.parent;
+
+					if (!p || !p.prev)
+						return false;
+
+					// try to use the center of the stream as beginning
+					// if the previous node was not big enough to have this mid point, use the outside of the previous node
+					let mid = 0.5 * (node.y0 + node.y1);
+					if ((p.prev[0].y0 <= mid) && (p.prev[p.prev.length-1].y1 >= mid))
+						pos = mid;
+					else {
+						/*let p = 0.75;
+						pos = p * p.prev[0].y1 + (1-p) * node.parent.y1;
+						pos = node.y0;
+						pos = (p.prev[0].y1 + node.y0) /2;
+						*/
+
+						// choose closest side of the ancestor
+						if ((p.prev[p.prev.length-1].y1 - mid) < Math.abs(p.prev[0].y0 - mid))
+							pos = p.prev[p.prev.length-1].y1;
+						else
+							pos = p.prev[0].y0;
+					}
+
+					d.move(x(node.x), y(node.y1));
+					if (this._xCurve == "linear") {
+						d.line(x(p.prev[0].x), y(pos));
+						d.line(x(node.x), y(node.y0))
+					}
+					else if (this._xCurve == "bezier") {
+						d.bezier(x(0.5 * (p.prev[0].x + node.x)), y(node.y1),
+								x(0.5 * (p.prev[0].x + node.x)), y(pos),
+								x(p.prev[0].x), y(pos));
+						d.bezier(x(0.5 * (p.prev[0].x + node.x)), y(pos),
+								x(0.5 * (p.prev[0].x + node.x)), y(node.y0),
+								x(node.x), y(node.y0));
+					}
+					return true;
+				};
+
+				let drawEnd = (node) => {
+					// find position to delete node to
+					let pos;
+					// find an ancestor who exists in the next timestep
+					let p = node;
+					while(!!p && !p.next)
+						p = p.parent;
+
+					if (!p || !p.next) {
+						d.line(x(node.x), y(node.y1))
+						return;
+					}
+
+					// try to use the center of the stream as ending
+					// if the previous node was not big enough to have this mid point, use the outside of the previous node
+					let mid = 0.5 * (node.y0 + node.y1);
+					if ((p.next[0].y0 <= mid) && (p.next[p.next.length-1].y1 >= mid))
+						pos = mid;
+					else {
+						// choose closest side of the ancestor
+						if ((p.next[p.next.length-1].y1 - mid) < Math.abs(p.next[0].y0 - mid))
+							pos = p.next[p.next.length-1].y1;
+						else
+							pos = p.next[0].y0;
+					}
+
+					d.move(x(node.x), y(node.y1));
+					if (this._xCurve == "linear") {
+						d.line(x(p.next[0].x), y(pos));
+						d.line(x(node.x), y(node.y0))
+					}
+					else if (this._xCurve == "bezier") {
+						d.bezier(x(0.5 * (p.next[0].x + node.x)), y(node.y1),
+								x(0.5 * (p.next[0].x + node.x)), y(pos),
+								x(p.next[0].x), y(pos));
+						d.bezier(x(0.5 * (p.next[0].x + node.x)), y(pos),
+								x(0.5 * (p.next[0].x + node.x)), y(node.y0),
+								x(node.x), y(node.y0));
+					}
+				};
 
 				let traverse = (node, branch = 0) => {
 					// draw bottom line (forwards)
@@ -168,6 +254,7 @@ class SecStreamData {
 										x(node.x), y(node.y0));
 						}
 					}
+
 					if (!!node.next) {
 						// traverse through children
 						for (let i = 0; i < node.next.length; i++) {
@@ -184,12 +271,14 @@ class SecStreamData {
 						}
 					}
 					else // end stream
-						d.line(x(node.x), y(node.y1))
+						drawEnd(node);
 				};
 
+				if (!drawStart(stream))
+					d.move(x(stream.x), y(stream.y0));
 				traverse(stream);
 
-				d.close();
+				//d.close();
 				console.log(d.get());
 
 				this._streams.push({
@@ -430,8 +519,8 @@ class SecStreamData {
 
 						// try to use the center of the stream as beginning
 						// if the previous node was not big enough to have this mid point, use the outside of the previous node
-						let mid = (node.y0 + node.y1) /2;
-						if (p.prev[0].y1 >= mid)
+						let mid = 0.5 * (node.y0 + node.y1);
+						if ((p.prev[0].y0 <= mid) && (p.prev[0].y1 >= mid))
 							pos = mid;
 						else {
 							/*let p = 0.75;
@@ -598,10 +687,10 @@ class SecStreamData {
 			this._calculatePositions();
 
 			this._calculateStreamData();
-			this.render();
+			//this.render();
 
 			this._newStreamData.calculatePaths();
-			//this.render2();
+			this.render2();
         }
         
         resize(width, height) {

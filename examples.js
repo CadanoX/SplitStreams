@@ -298,7 +298,7 @@ const examples = {
 				}
 			]
 		},
-		"parentSwitch": {
+		"parentSwap": {
 			"timesteps": [
 				{
 					"root": {
