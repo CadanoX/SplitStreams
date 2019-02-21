@@ -47,7 +47,7 @@
                 <br>
                 <label>Value: {{ separationYValue }}</label>
                 <br>
-                <input type="range" v-model="separationYValue" step= "0.1" min="0" max="100" />
+                <input type="range" v-model="separationYValue" step= "0.001" min="0" max="1" />
             </div>
             <hr>
             <div>
@@ -77,6 +77,29 @@
                 <label><b>Threshold:</b> {{ sizeThreshold }}%</label>
                 <br>
                 <input type="range" v-model="sizeThreshold" step= "0.1" min="0" max="5" />
+            </div>
+            <hr>
+            <div>
+                <label><b>Start / End Encoding:</b></label>
+                <br>
+                <select v-model="startEndEncoding.value">
+                    <option v-for="option in startEndEncoding.options" v-bind:value="option.value">
+                    {{ option.text }}
+                    </option>
+                </select>
+                <br>
+                <label>x:</label><input type="range" v-model="startEndEncoding.x" step= "0.01" min="0" max="2" />
+                <br>
+                <label>y:</label><input type="range" v-model="startEndEncoding.y" step= "0.01" min="-1" max="2" />
+            </div>
+            <div>
+                <label><b>Offset:</b></label>
+                <br>
+                <select v-model="offset.value">
+                    <option v-for="option in offset.options" v-bind:value="option.value">
+                    {{ option.text }}
+                    </option>
+                </select>
             </div>
             <hr>
             <div style="display: inline-block">
@@ -111,6 +134,8 @@
                 <input type="range" v-model="filters[0][1].stdDeviation" step= "0.2" min="0" max="10" />
             </div>
             <hr>
+            
+
         <!--
             <div style="display: inline-block">
                 <label><b>Cushion 1:</b></label>

@@ -37,6 +37,25 @@ document.addEventListener("DOMContentLoaded", function(event)
 			separationYValue: 0,
 			sizeThreshold: 0,
 			proportion: 0.99,
+			startEndEncoding: {
+				value: 'plug',
+				x: 0.85,
+				y: 0,
+				options: [
+					{ value: 'circle', text: "Circle"},
+					{ value: 'plug', text: "Plug"},
+					{ value: 'default', text: "Default"}
+				]
+			},
+			offset: {
+				value: 'zero',
+				options: [
+					{ value: 'zero', text: "Zero"},
+					{ value: 'expand', text: "Expand"},
+					// silhouette
+					// wiggle
+				]
+			},
 			filters: [
 				[
 					{ type: 'feDropShadow', dx: 0, dy: 0, stdDeviation: 0 },
@@ -90,6 +109,20 @@ document.addEventListener("DOMContentLoaded", function(event)
 			filters: {
 				handler: function(filters) {
 					stream.filters(filters)
+				},
+				deep: true
+			},
+			startEndEncoding: {
+				handler: function(encoding) {
+					stream.startEndEncoding(encoding.value);
+					stream.startEndEncodingX(encoding.x);
+					stream.startEndEncodingY(encoding.y);
+				},
+				deep: true
+			},
+			offset: {
+				handler: function(offset) {
+					stream.offset(offset.value);
 				},
 				deep: true
 			}

@@ -26,8 +26,10 @@ html, body{
 	top: 16px; 
 	left: 16px;
 	background: #f8f8f8;
-	padding: 0.5rem;
+	min-width: 160px;
 	flex-basis: 20%;
+	overflow: auto;
+	padding: 0.5rem;
 }
 
 .controls > * + * {
