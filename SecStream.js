@@ -127,8 +127,10 @@ class SecStreamData {
 		constructor() {
 			this._streamNodes = [];
 			this._streams = [];
+			this._splits = []
 			this._xScale = d => d;
 			this._yScale = d => d;
+			this._proportion = 1;
 
 			this._xCurve = "bezier";
 			this._startEnd = {
@@ -140,31 +142,38 @@ class SecStreamData {
 	
 		get streams() { return this._streams; }
 
-		set xScale(callback) {
-			this._xScale = callback;
-		}
-
-		set yScale(callback) {
-			this._yScale = callback;
-		}
-
-		set startEndEncoding(encoding) {
-			this._startEnd.encoding = encoding;
-		}
-		set startEndEncodingX(x) {
-			this._startEnd.x = x;
-		}
-		set startEndEncodingY(y) {
-			this._startEnd.y = y;
-		}
+		set xScale(callback) { this._xScale = callback; }
+		set yScale(callback) { this._yScale = callback; }
+		set startEndEncoding(encoding) { this._startEnd.encoding = encoding; }
+		set startEndEncodingX(x) { this._startEnd.x = x; }
+		set startEndEncodingY(y) { this._startEnd.y = y; }
+		set proportion(p) { this._proportion = p; }
 
 		add(node) {
 			this._streamNodes.push(node);
 		}
 
+		addSplits(splits) {
+			if(Array.isArray(splits))
+				splits.forEach((d) => {
+					this._splits[d] = true;
+				})
+			else
+				this._splits[d] = true;
+		}
+
 		clear() {
 			this._streamNodes = [];
 			this._streams = [];
+		}
+
+		removeSplits(splits) {
+			if (!splits)
+				this._splits = [];
+			else
+				splits.forEach((d) => {
+					this._splits[d].remove();
+				})
 		}
 
 		_checkForNullStreams() {
@@ -325,31 +334,53 @@ class SecStreamData {
 
 				let drawStartPlug = (node) => {
 					d.move(x(node.x), y(node.y1));
+					let t = node.x - 0.5*(1-prop);
+					d.horizontal(x(t));
+					
 					let height = node.y1 - node.y0;
-					d.bezier(x(node.x - this._startEnd.x * height), y(node.y1 + this._startEnd.y * height),
-							 x(node.x - this._startEnd.x * height), y(node.y0 - this._startEnd.y * height), 
-							 x(node.x), y(node.y0));
+					d.bezier(x(t - prop * this._startEnd.x * height), y(node.y1 + this._startEnd.y * height),
+							 x(t - prop * this._startEnd.x * height), y(node.y0 - this._startEnd.y * height), 
+							 x(t), y(node.y0));
+
+					d.horizontal(x(node.x));
 					return true;
 				};
 
 				let drawEndPlug = (node) => {
+					let t = node.x + 0.5*(1-prop);
+					d.horizontal(x(t));
+
 					let height = node.y1 - node.y0;
-					d.bezier(x(node.x + this._startEnd.x * height), y(node.y0 - this._startEnd.y * height),
-							 x(node.x + this._startEnd.x * height), y(node.y1 + this._startEnd.y * height), 
-							 x(node.x), y(node.y1));
+					d.bezier(x(t + prop * this._startEnd.x * height), y(node.y0 - this._startEnd.y * height),
+							 x(t + prop * this._startEnd.x * height), y(node.y1 + this._startEnd.y * height), 
+							 x(t), y(node.y1));
+							 
+					d.horizontal(x(node.x));
 					return true;
 				};
 
+				let prop = this._proportion;
 				let traverse = (node, branch = 0) => {
 					// draw bottom line (forwards)
 					if (!!node.prev) {
-						if (this._xCurve == "linear")
-							d.line(x(node.x), y(node.y0))
-						else if (this._xCurve == "bezier") {
-								d.bezier(x(0.5 * (node.prev[0].x + node.x)), y(node.prev[0].y0),
-										x(0.5 * (node.prev[0].x + node.x)), y(node.y0),
-										x(node.x), y(node.y0));
+						let dt = node.x - node.prev[0].x;
+						let t0 = x(node.prev[0].x);
+						let t1 = x(node.prev[0].x + 0.5 * (1-prop) * dt);
+						let t2 = x(node.x - 0.5 * (1-prop) * dt);
+						let t3 = x(node.x);
+						let t12 = 0.5 * (t1 + t2) // mid between t0 and t1
+						// alternative for t12: x(0.5 * (node.prev[0].x + node.x))
+
+						d.horizontal(t1)
+						if (this._xCurve == "linear") {
+							d.line(t2, y(node.y0))
 						}
+						else if (this._xCurve == "bezier") {
+							d.bezier(t12, y(node.prev[0].y0),
+										t12, y(node.y0),
+										t2, y(node.y0));
+						}
+						d.horizontal(t3)
 					}
 
 					if (!!node.next) {
@@ -358,14 +389,23 @@ class SecStreamData {
 							traverse(node.next[i], branch + i);
 						}
 						// draw top line (backwards)
+						let dt = (node.next[0].x - node.x);
+						let t0 = x(node.next[0].x);
+						let t1 = x(node.next[0].x - 0.5 * (1-prop) * dt);
+						let t2 = x(node.x + 0.5 * (1-prop) * dt);
+						let t3 = x(node.x);
+						let t12 = 0.5 * (t1 + t2) // mid between t0 and t1
+
+						d.horizontal(t1);
 						if (this._xCurve == "linear")
-							d.line(x(node.x), y(node.y1))
+							d.line(t2, y(node.y1))
 						else if (this._xCurve == "bezier") {
 							let lastChild = node.next[node.next.length-1];
-							d.bezier(x(0.5 * (lastChild.x + node.x)), y(lastChild.y1),
-								x(0.5 * (lastChild.x + node.x)), y(node.y1),
-								x(node.x), y(node.y1));
+							d.bezier(t12, y(lastChild.y1),
+									 t12, y(node.y1),
+									 t2, y(node.y1));
 						}
+						d.horizontal(t3);
 					}
 					else // end stream
 						drawEnd(node);
@@ -583,7 +623,7 @@ class SecStreamData {
 			}
 
 			this._newStreamData.xScale = d3.scaleLinear()
-				.domain([0, this._maxTime]).nice()
+				.domain([-0.5, this._maxTime+0.5]).nice()
 				.range([this._opts.margin.left, this._opts.width - this._opts.margin.right]);
 
 			this._newStreamData.yScale = d3.scaleLinear()
@@ -747,7 +787,7 @@ class SecStreamData {
 			let color = d3.scaleSequential(d3.interpolateBlues).domain([this._maxDepth, 0]);
 			
 			let streams = this._pathContainer.selectAll('path.stream')
-				.data(this._newStreamData.streams, d => d.streamId);
+				.data(this._newStreamData.streams);
 
 			streams.enter().append('path')
 				.classed('stream', true)
@@ -851,6 +891,7 @@ class SecStreamData {
 
 		setProportion(value) {
 			this._proportion = (value / 2) + 0.5; // map from 0-1 to 0.5-1
+			this._newStreamData.proportion = value
 			this._update();
 		}
 
@@ -872,6 +913,28 @@ class SecStreamData {
 		offset(offset) {
 			this._offset = offset;
 			this._update();
+		}
+
+		addSplits(splits) {
+			this._newStreamData.addSplits(splits);
+		}
+
+		addSplitsAtTimepoints() {
+			let splits = []
+			for (let i = 0; i <= this._data.timesteps.length; i++)
+				splits.push(i);
+			this._newStreamData.addSplits(splits);
+		}
+
+		addSplitsBetweenTimepoints() {
+			let splits = []
+			for (let i = 0; i < this._data.timesteps.length; i++)
+				splits.push(i + 0.5);
+			this._newStreamData.addSplits(splits);
+		}
+
+		removeSplits(splits) {
+			this._newStreamData.removeSplits(splits);
 		}
 	}
 
