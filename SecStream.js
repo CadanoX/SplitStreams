@@ -142,6 +142,7 @@ class SecStreamData {
 	
 		get streams() { return this._streams; }
 		get clipPaths() { return this._clipPaths; }
+		get splits() { return  Object.keys(this._splits); }
 
 		set xScale(callback) { this._xScale = callback; }
 		set yScale(callback) { this._yScale = callback; }
@@ -1032,9 +1033,25 @@ class SecStreamData {
 			this.addSplits(splits);
 		}
 
+		addSplitsRandomly(num = 1) {
+			let t0 = -1;
+			let t1 = this._data.timesteps.length +1;
+			let splits = [];
+			for (let i = 0; i < num; i++) {
+				let r = t0 + Math.random() * (t1-t0)
+				splits.push(r.toString());
+				splits.sort()
+			}
+			this.addSplits(splits);
+		}
+
 		removeSplits(splits) {
 			this._newStreamData.removeSplits(splits);
 			this._update();
+		}
+
+		getSplits() {
+			return this._newStreamData.splits;
 		}
 	}
 

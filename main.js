@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 			selected: null,
 			search: "force",
 			size: window.innerWidth,
+			split: 'at',
+			randomSplits: [],
 			separationX: 'Fixed',
 			separationXValue: 0,
 			separationY: 'Fixed',
@@ -72,11 +74,10 @@ document.addEventListener("DOMContentLoaded", function(event)
 		computed: {
 		},
 		methods: {
-			add: function () {
-				this.csv.push({
-					id: "flare.physics.Dummy",
-					value: 0
-				})
+			randomizeSplits: function() {
+				stream.removeSplits();
+				stream.addSplitsRandomly(10);
+				this.randomSplits = stream.getSplits();
 			},
 			select: function(index, node) {
 				this.selected = index;
@@ -125,6 +126,24 @@ document.addEventListener("DOMContentLoaded", function(event)
 					stream.offset(offset.value);
 				},
 				deep: true
+			},
+			split: function(option) {
+				if (option == "at") {
+					stream.removeSplits();
+					stream.addSplitsAtTimepoints();
+				}
+				else if (option == "between") {
+					stream.removeSplits();
+					stream.addSplitsBetweenTimepoints();
+				}
+				else if (option == "random") {
+					if (this.randomSplits.length == 0)
+						this.randomizeSplits();
+					else {
+						stream.removeSplits();
+						stream.addSplits(this.randomSplits);
+					}
+				}
 			}
 		}
 	});
@@ -133,6 +152,5 @@ document.addEventListener("DOMContentLoaded", function(event)
 	stream = d3.SecStream(div)
 		.data(data);
 
-	//stream.addSplitsAtTimepoints();
-	stream.addSplitsBetweenTimepoints();
+	stream.addSplitsAtTimepoints();
 });
