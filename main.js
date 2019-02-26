@@ -133,5 +133,6 @@ document.addEventListener("DOMContentLoaded", function(event)
 	stream = d3.SecStream(div)
 		.data(data);
 
-	stream.addSplitsAtTimepoints();
+	//stream.addSplitsAtTimepoints();
+	stream.addSplitsBetweenTimepoints();
 });

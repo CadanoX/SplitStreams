@@ -127,7 +127,7 @@ class SecStreamData {
 		constructor() {
 			this._streamNodes = [];
 			this._streams = [];
-			this._splits = []
+			this._splits = {};
 			this._xScale = d => d;
 			this._yScale = d => d;
 			this._proportion = 1;
@@ -141,6 +141,7 @@ class SecStreamData {
 		}
 	
 		get streams() { return this._streams; }
+		get clipPaths() { return this._clipPaths; }
 
 		set xScale(callback) { this._xScale = callback; }
 		set yScale(callback) { this._yScale = callback; }
@@ -162,18 +163,30 @@ class SecStreamData {
 				this._splits[d] = true;
 		}
 
-		clear() {
-			this._streamNodes = [];
-			this._streams = [];
-		}
-
 		removeSplits(splits) {
 			if (!splits)
-				this._splits = [];
+				this._splits = {};
 			else
 				splits.forEach((d) => {
 					this._splits[d].remove();
 				})
+		}
+
+		//TODO: find more elaborate solution
+		_findSplits(t0, t1) {
+			let splits = [];
+			for (let split in this._splits) {
+				if (split >= t0 && split <= t1)
+					splits.push(split);
+			}
+			return splits;
+		}
+
+		clear() {
+			console.log('clear');
+			this._streamNodes = [];
+			this._streams = [];
+			this._clipPaths = [];
 		}
 
 		_checkForNullStreams() {
@@ -360,27 +373,48 @@ class SecStreamData {
 				};
 
 				let prop = this._proportion;
+				let lastTimepoint = 0;
 				let traverse = (node, branch = 0) => {
+					if (node.x > lastTimepoint)
+						lastTimepoint = node.x;
+
 					// draw bottom line (forwards)
 					if (!!node.prev) {
 						let dt = node.x - node.prev[0].x;
-						let t0 = x(node.prev[0].x);
-						let t1 = x(node.prev[0].x + 0.5 * (1-prop) * dt);
-						let t2 = x(node.x - 0.5 * (1-prop) * dt);
-						let t3 = x(node.x);
+						let t0 = node.prev[0].x;
+						let t1 = node.prev[0].x + 0.5 * (1-prop) * dt;
+						let t2 = node.x - 0.5 * (1-prop) * dt;
+						let t3 = node.x;
 						let t12 = 0.5 * (t1 + t2) // mid between t0 and t1
 						// alternative for t12: x(0.5 * (node.prev[0].x + node.x))
 
-						d.horizontal(t1)
+						
+						let splits = this._findSplits(t0 - node.marginX, t1 + node.marginX);
+						/*
+						// shrink left
+						let i = 0;
+						while (Math.abs(t0 - splits[i]) <= node.marginX) {
+							t0 = splits[i] + node.marginX;
+							i++;
+						}
+						// shrink right
+						let j = splits.length - 1;
+						while (Math.abs(t1 - splits[j]) <= node.marginX) {
+							t0 = splits[i] + node.marginX;
+							i++;
+						}
+						*/
+
+						d.horizontal(x(t1));
 						if (this._xCurve == "linear") {
-							d.line(t2, y(node.y0))
+							d.line(x(t2), y(node.y0))
 						}
 						else if (this._xCurve == "bezier") {
-							d.bezier(t12, y(node.prev[0].y0),
-										t12, y(node.y0),
-										t2, y(node.y0));
+							d.bezier(x(t12), y(node.prev[0].y0),
+										x(t12), y(node.y0),
+										x(t2), y(node.y0));
 						}
-						d.horizontal(t3)
+						d.horizontal(x(t3));
 					}
 
 					if (!!node.next) {
@@ -415,13 +449,43 @@ class SecStreamData {
 					d.move(x(stream.x), y(stream.y0));
 				traverse(stream);
 
+				// add splits
+
 				//d.close();
 				//console.log(d.get());
 
 				this._streams.push({
 					path: d.get(),
-					depth: stream.depth
+					depth: stream.depth,
+					id: stream.streamId
 				});
+
+				let clipPath = new svgPath();
+				let splits = this._findSplits(stream.x - 0.5, lastTimepoint + 0.5);
+
+				let lastX = x(-1);
+				for (let split of splits) {
+					let x0 = x(Number(split) - 0.5 * stream.marginX);
+					let x1 = x(Number(split) + 0.5 * stream.marginX);
+					if (x0 - lastX > 0) {
+						clipPath.move(lastX, y(0));
+						clipPath.horizontal(x0);
+						clipPath.vertical(y(1));
+						clipPath.horizontal(lastX);
+						clipPath.vertical(y(0));
+					}
+					lastX = x1;
+				}
+				clipPath.move(lastX, y(0));
+				clipPath.horizontal(x(lastTimepoint+1));
+				clipPath.vertical(y(1));
+				clipPath.horizontal(lastX);
+				clipPath.vertical(y(0));
+
+				this._clipPaths[stream.streamId] = {
+					id: stream.streamId,
+					path: clipPath.get()
+				}
 			}
 
 			this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)
@@ -448,8 +512,10 @@ class SecStreamData {
 			this._svg;
 			this._svgFilters;
 			this._filters;
+			this._clipPaths;
 			
 			this._newStreamData = new StreamData();
+
 			this._streamData;
 			this._maxTime;
 			this._maxValue;
@@ -543,8 +609,14 @@ class SecStreamData {
 			}
 		}
 
-		_normalizeData() {
+		_clearStreamIds() {
 			this._newStreamData.clear();
+			this._indices = {};
+			this._maxIndex = 0;
+		}
+
+		_normalizeData() {
+			this._clearStreamIds();
 			let t = this._data.timesteps;
 			let maxValue = 0;
 			for (let i = 0; i < t.length; i++)
@@ -792,11 +864,37 @@ class SecStreamData {
 			streams.enter().append('path')
 				.classed('stream', true)
 				.style('fill', d => color(d.depth))
+				.attr('clip-path', d => 'url(#' + d.id + ')')
 			
 			streams.exit().remove();
 
 			d3.selectAll('path.stream')
 				.attr('d', d => d.path);
+
+			/*
+			let splitData = this._svgFilters.selectAll("clipPath")
+				.data(this._newStreamData.clipPaths, function(d) { return d.id });
+
+			splitData.enter().append("clipPath")
+				.attr('id', d => d.id)
+				.append('path')
+				
+			splitData.exit().remove();
+
+			this._svgFilters.selectAll("clipPath > path")
+				.attr('d', d => d.path)
+			*/
+			let splitData = this._svgFilters.selectAll("clipPath")
+				.data(this._newStreamData.clipPaths, function(d) { return d.id });
+
+			splitData.enter().append("clipPath")
+				.attr('id', d => d.id)
+				
+			splitData.exit().remove();
+
+			this._svgFilters.selectAll("clipPath")
+				.html(d => "<path d=\"" + d.path + "\">")
+
 		}
 
 		_applyFilters() {
@@ -917,24 +1015,26 @@ class SecStreamData {
 
 		addSplits(splits) {
 			this._newStreamData.addSplits(splits);
+			this._update();
 		}
 
 		addSplitsAtTimepoints() {
 			let splits = []
 			for (let i = 0; i <= this._data.timesteps.length; i++)
 				splits.push(i);
-			this._newStreamData.addSplits(splits);
+			this.addSplits(splits);
 		}
 
 		addSplitsBetweenTimepoints() {
 			let splits = []
-			for (let i = 0; i < this._data.timesteps.length; i++)
+			for (let i = -1; i < this._data.timesteps.length +1; i++)
 				splits.push(i + 0.5);
-			this._newStreamData.addSplits(splits);
+			this.addSplits(splits);
 		}
 
 		removeSplits(splits) {
 			this._newStreamData.removeSplits(splits);
+			this._update();
 		}
 	}
 
