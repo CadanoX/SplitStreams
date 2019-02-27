@@ -255,7 +255,7 @@ class SecStreamData {
 
 					// try to use the center of the stream as beginning
 					// if the previous node was not big enough to have this mid point, use the outside of the previous node
-					let mid = 0.5 * (p.y0 + p.y1);
+					let mid = 0.5 * (node.y0 + node.y1);
 					if ((p.prev[0].y0 <= mid) && (p.prev[p.prev.length-1].y1 >= mid))
 						pos = mid;
 					else {
@@ -303,7 +303,7 @@ class SecStreamData {
 
 					// try to use the center of the stream as ending
 					// if the previous node was not big enough to have this mid point, use the outside of the previous node
-					let mid = 0.5 * (p.y0 + p.y1);
+					let mid = 0.5 * (node.y0 + node.y1);
 					if ((p.next[0].y0 <= mid) && (p.next[p.next.length-1].y1 >= mid))
 						pos = mid;
 					else {
