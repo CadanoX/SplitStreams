@@ -132,7 +132,7 @@ class SecStreamData {
 			this._yScale = d => d;
 			this._proportion = 1;
 
-			this._xCurve = "bezier";
+			this._xCurve = "bezier"; // linear, bezier
 			this._startEnd = {
 				encoding: "plug", // circle, plug, default
 				x: 0.85,
@@ -222,155 +222,288 @@ class SecStreamData {
 				let d = new svgPath();
 
 				let drawStart = (node) => {
-					if (this._startEnd.encoding == "circle")
-						return drawStartCircle(node);
+					// extend to left
+					d.move(x(node.x), y(node.y1));
+					let t = node.x - 0.5*(1-prop);
+					d.horizontal(x(t));
 
-					if (this._startEnd.encoding == "plug")
-						return drawStartPlug(node);
+					// connect top and bottom
+					let root = node;
+					while(!!root.parent)
+						root = root.parent
+					if (!root.prev) {
+						d.vertical(y(node.y0));
+					}
+					else {
+						if (this._startEnd.encoding == "circle")
+							drawStartCircle(node);
+						else if (this._startEnd.encoding == "plug")
+							drawStartPlug(node);
+						else
+							drawStartDefault(node);
+					}
 
-					return drawStartDefault(node);
+					// connect back
+					d.horizontal(x(node.x));
 				}
 
 				let drawEnd = (node) => {
-					if (this._startEnd.encoding == "circle")
-						return drawEndCircle(node);
+					// extend to right
+					let t = node.x + 0.5*(1-prop);
+					d.horizontal(x(t));
 
-					if (this._startEnd.encoding == "plug")
-						return drawEndPlug(node);
+					// connect bottom and top
+					let root = node;
+					while(!!root.parent)
+						root = root.parent
+					if (!root.next) {
+						d.vertical(y(node.y1));
+					}
+					else {
+						if (this._startEnd.encoding == "circle")
+							drawEndCircle(node);
+						else if (this._startEnd.encoding == "plug")
+							drawEndPlug(node);
+						else
+							drawEndDefault(node);
+					}
 					
-					return drawEndDefault(node);
+					// connect back
+					d.horizontal(x(node.x));
 				}
 
 
 				let drawStartDefault = (node) => { // insert node
 					// find position to insert node
 					let pos;
-					// find an ancestor who existed in the previous timestep
-					let p = node;
-					while(!!p && !p.prev)
-						p = p.parent;
+					// find the oldest parent of node, which does not exist in the previous step
+					let parentNoPrev = node;
+					while(!!parentNoPrev.parent && !parentNoPrev.parent.prev)
+						parentNoPrev = parentNoPrev.parent;
 
-					if (!p || !p.prev)
-						return false;
-
-					// try to use the center of the stream as beginning
-					// if the previous node was not big enough to have this mid point, use the outside of the previous node
-					let mid = 0.5 * (node.y0 + node.y1);
-					if ((p.prev[0].y0 <= mid) && (p.prev[p.prev.length-1].y1 >= mid))
-						pos = mid;
+					// p is an ancestor who existed in the previous timestep
+					let p = parentNoPrev.parent;
+					if (!p) {
+						d.vertical(y(node.y0))
+					}
 					else {
-						/*let p = 0.75;
-						pos = p * p.prev[0].y1 + (1-p) * node.parent.y1;
-						pos = node.y0;
-						pos = (p.prev[0].y1 + node.y0) /2;
-						*/
+						// use the center of the stream as reference point
+						let mid = 0.5 * (parentNoPrev.y0 + parentNoPrev.y1);
+						
+						// if the nodes parent has multiple previous nodes, find the one closest to mid
+						let refPrevId = -1;
+						for (let n = 0; n < p.prev.length && refPrevId == -1; n++) {
+							let prev = p.prev[n];
+							// if mid lies within a prev node
+							if (prev.y0 <= mid && prev.y1 >= mid) {
+								// if node has children
+								if (!!prev.children && prev.children.length > 0) {
+									let refChildId = -1;// find two children to put the mid in between
+									for (let i = 0; i < prev.children.length && refChildId == -1; i++) {
+										let child = prev.children[i];
+										if (mid <= 0.5 * (child.y0 + child.y1))
+											refChildId = i; // setting ID breaks the loop
+									}
+									if (refChildId == 0) // before first child
+										pos = 0.5 * (prev.y0 + prev.children[0].y0);
+									else if (refChildId == -1) // after last child
+										pos = 0.5 * (prev.y1 + prev.children[prev.children.length-1].y1);
+									else
+										pos = 0.5 * (prev.children[refChildId-1].y1 + prev.children[refChildId].y0);
+								}
+								else // node has no children
+									pos = 0.5 * (prev.y0 + prev.y1);
+								refPrevId = -2; // setting ID breaks the loop
+							}
+							// if it lies outside, find two nodes to put it inbetween
+							else {
+								if (mid <= 0.5 * (prev.y0 + prev.y1))
+									refPrevId = i; // setting ID breaks the loop
+							}
+						}
 
-						// choose closest side of the ancestor
-						if ((p.prev[p.prev.length-1].y1 - mid) < Math.abs(p.prev[0].y0 - mid))
-							pos = p.prev[p.prev.length-1].y1;
-						else
-							pos = p.prev[0].y0;
-					}
+						if (refPrevId != -2) { // if -2, then pos was already set
+							let node; // define the node to draw inside
+							let first; // boolean to define if it should be drawn before the first or after the last child
+							if (refPrevId == 0) { // before first child
+								node = p.prev[0];
+								first = true;
+							}
+							else if (refPrevId == -1) { // after last child
+								node = p.prev[p.prev.length-1];
+								first = false;
+							}
+							else {
+								// find which node is closer
+								if (Math.abs(p.prev[refPrevId].y0 - mid) < Math.abs(p.prev[refPrevId-1].y1)) {
+									node = p.prev[refPrevId];
+									first = true;
+								}
+								else {
+									node = p.prev[refPrevId-1];
+									first = false;
+								}
+							}
 
-					d.move(x(node.x), y(node.y1));
-					if (this._xCurve == "linear") {
-						d.line(x(p.prev[0].x), y(pos));
-						d.line(x(node.x), y(node.y0))
+							if (!!node.children && node.children.length > 0) {
+								if (first)
+									pos = 0.5 * (node.y0 + node.children[0].y0);
+								else
+									pos = 0.5 * (node.y1 + node.children[node.children.length-1].y1);
+							}
+							else
+								pos = 0.5 * (node.y0 + node.y1);
+						}
+
+						let tdiff = node.x - p.prev[0].x;
+						let t0 = node.x - 0.5 * (1-prop) * tdiff;
+						let t1 = t0 - 0.5 * prop * tdiff;
+
+						if (this._xCurve == "linear") {
+							d.line(x(p.prev[0].x), y(pos));
+							d.line(x(t0), y(node.y0))
+						}
+						else if (this._xCurve == "bezier") {
+							d.bezier(x(t1), y(node.y1),
+									x(t1), y(pos),
+									x(p.prev[0].x), y(pos));
+							d.bezier(x(t1), y(pos),
+									x(t1), y(node.y0),
+									x(t0), y(node.y0));
+						}
 					}
-					else if (this._xCurve == "bezier") {
-						d.bezier(x(0.5 * (p.prev[0].x + node.x)), y(node.y1),
-								x(0.5 * (p.prev[0].x + node.x)), y(pos),
-								x(p.prev[0].x), y(pos));
-						d.bezier(x(0.5 * (p.prev[0].x + node.x)), y(pos),
-								x(0.5 * (p.prev[0].x + node.x)), y(node.y0),
-								x(node.x), y(node.y0));
-					}
-					return true;
 				};
 
 				let drawEndDefault = (node) => {
 					// find position to delete node to
 					let pos;
-					// find an ancestor who exists in the next timestep
-					let p = node;
-					while(!!p && !p.next)
-						p = p.parent;
+					// find the oldest parent of node, which does not exist in the next step
+					let parentNoNext = node;
+					while(!!parentNoNext.parent && !parentNoNext.parent.next)
+						parentNoNext = parentNoNext.parent; // p is the oldest parent of node, which does not exist in the next step
 
-					if (!p || !p.next) {
-						d.line(x(node.x), y(node.y1))
-						return;
+					// p is an ancestor who exists in the next timestep
+					let p = parentNoNext.parent;
+					if (!p) {
+						d.vertical(y(node.y1))
 					}
-
-					// try to use the center of the stream as ending
-					// if the previous node was not big enough to have this mid point, use the outside of the previous node
-					let mid = 0.5 * (node.y0 + node.y1);
-					if ((p.next[0].y0 <= mid) && (p.next[p.next.length-1].y1 >= mid))
-						pos = mid;
 					else {
-						// choose closest side of the ancestor
-						if ((p.next[p.next.length-1].y1 - mid) < Math.abs(p.next[0].y0 - mid))
-							pos = p.next[p.next.length-1].y1;
-						else
-							pos = p.next[0].y0;
-					}
+						// use the center of the stream as reference point
+						let mid = 0.5 * (parentNoNext.y0 + parentNoNext.y1);
+						// if the nodes parent has multiple next nodes, find the one closest to mid
+						let refNextId = -1;
+						for (let n = 0; n < p.next.length && refNextId == -1; n++) {
+							let next = p.next[n];
+							// if mid lies within a next node
+							if (next.y0 <= mid && next.y1 >= mid) {
+								// if node has children
+								if (!!next.children && next.children.length > 0) {
+									let refChildId = -1;// find two children to put the mid in between
+									for (let i = 0; i < next.children.length && refChildId == -1; i++) {
+										let child = next.children[i];
+										if (mid <= 0.5 * (child.y0 + child.y1))
+											refChildId = i; // setting ID breaks the loop
+									}
+									if (refChildId == 0) // before first child
+										pos = 0.5 * (next.y0 + next.children[0].y0);
+									else if (refChildId == -1) // after last child
+										pos = 0.5 * (next.y1 + next.children[next.children.length-1].y1);
+									else
+										pos = 0.5 * (prev.children[refChildId-1].y1 + prev.children[refChildId].y0);
+								}
+								else // node has no children
+									pos = 0.5 * (next.y0 + next.y1);
+								refNextId = -2; // setting ID breaks the loop
+							}
+							// if it lies outside, find two nodes to put it inbetween
+							else {
+								if (mid <= 0.5 * (next.y0 + next.y1))
+									refNextId = i; // setting ID breaks the loop
+							}
+						}
 
-					d.move(x(node.x), y(node.y1));
-					if (this._xCurve == "linear") {
-						d.line(x(p.next[0].x), y(pos));
-						d.line(x(node.x), y(node.y0))
-					}
-					else if (this._xCurve == "bezier") {
-						d.bezier(x(0.5 * (p.next[0].x + node.x)), y(node.y1),
-								x(0.5 * (p.next[0].x + node.x)), y(pos),
-								x(p.next[0].x), y(pos));
-						d.bezier(x(0.5 * (p.next[0].x + node.x)), y(pos),
-								x(0.5 * (p.next[0].x + node.x)), y(node.y0),
-								x(node.x), y(node.y0));
+						if (refNextId != -2) { // if -2, then pos was already set
+							let node; // define the node to draw inside
+							let first; // boolean to define if it should be drawn before the first or after the last child
+							if (refNextId == 0) { // before first child
+								node = p.next[0];
+								first = true;
+							}
+							else if (refNextId == -1) { // after last child
+								node = p.next[p.next.length-1];
+								first = false;
+							}
+							else {
+								// find which node is closer
+								if (Math.abs(p.next[refNextId].y0 - mid) < Math.abs(p.next[refNextId-1].y1)) {
+									node = p.next[refNextId];
+									first = true;
+								}
+								else {
+									node = p.next[refNextId-1];
+									first = false;
+								}
+							}
+
+							if (!!node.children && node.children.length > 0) {
+								if (first)
+									pos = 0.5 * (node.y0 + node.children[0].y0);
+								else
+									pos = 0.5 * (node.y1 + node.children[node.children.length-1].y1);
+							}
+							else
+								pos = 0.5 * (node.y0 + node.y1);
+								
+						}
+
+						let tdiff = p.next[0].x - node.x;
+						let t0 = node.x + 0.5 * (1-prop) * tdiff;
+						let t1 = t0 + 0.5 * prop * tdiff;
+
+						if (this._xCurve == "linear") {
+							d.line(x(p.next[0].x), y(pos));
+							d.line(x(t0), y(node.y1))
+						}
+						else if (this._xCurve == "bezier") {
+							d.bezier(x(t1), y(node.y0),
+									x(t1), y(pos),
+									x(p.next[0].x), y(pos));
+							d.bezier(x(t1), y(pos),
+									x(t1), y(node.y1),
+									x(t0), y(node.y1));
+						}
 					}
 				};
 
 				let drawStartCircle = (node) => {
 					let height = node.y1 - node.y0;
-					d.move(x(node.x), y(node.y1));
+					let t = node.x - 0.5*(1-prop);	
+					d.move(x(t), y(node.y1));
 					//d.arc(Math.log(height), 1, 0, 0, 0, x(node.x), y(node.y0));
-					d.arc(1, 1, 0, 0, 0, x(node.x), y(node.y0));
-
-					return true;
+					d.arc(prop, 1, 0, 0, 0, x(t), y(node.y0));
 				};
 
 				let drawEndCircle = (node) => {
 					let height = node.y1 - node.y0;
+					let t = node.x + 0.5*(1-prop);
 					//d.arc(Math.log(height), 1, 0, 0, 0, x(node.x), y(node.y1));
-					d.arc(1, 1, 0, 0, 0, x(node.x), y(node.y1));
-
-					return true;
+					d.arc(prop, 1, 0, 0, 0, x(t), y(node.y1));
 				};
 
-				let drawStartPlug = (node) => {
-					d.move(x(node.x), y(node.y1));
-					let t = node.x - 0.5*(1-prop);
-					d.horizontal(x(t));
-					
+				let drawStartPlug = (node) => {	
+					let t = node.x - 0.5*(1-prop);				
 					let height = node.y1 - node.y0;
 					d.bezier(x(t - prop * this._startEnd.x * height), y(node.y1 + this._startEnd.y * height),
 							 x(t - prop * this._startEnd.x * height), y(node.y0 - this._startEnd.y * height), 
 							 x(t), y(node.y0));
-
-					d.horizontal(x(node.x));
-					return true;
 				};
 
 				let drawEndPlug = (node) => {
 					let t = node.x + 0.5*(1-prop);
-					d.horizontal(x(t));
-
 					let height = node.y1 - node.y0;
 					d.bezier(x(t + prop * this._startEnd.x * height), y(node.y0 - this._startEnd.y * height),
 							 x(t + prop * this._startEnd.x * height), y(node.y1 + this._startEnd.y * height), 
 							 x(t), y(node.y1));
-							 
-					d.horizontal(x(node.x));
-					return true;
 				};
 
 				let prop = this._proportion;
@@ -446,8 +579,7 @@ class SecStreamData {
 						drawEnd(node);
 				};
 
-				if (!drawStart(stream))
-					d.move(x(stream.x), y(stream.y0));
+				drawStart(stream)
 				traverse(stream);
 
 				// add splits
@@ -458,7 +590,8 @@ class SecStreamData {
 				this._streams.push({
 					path: d.get(),
 					depth: stream.depth,
-					id: stream.streamId
+					id: stream.streamId,
+					data: stream.data
 				});
 
 				let clipPath = new svgPath();
@@ -489,6 +622,7 @@ class SecStreamData {
 				}
 			}
 
+			// TODO: apply an order in which children are drawn right
 			this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)
 		}
 	}
@@ -859,12 +993,21 @@ class SecStreamData {
 		render2() {
 			let color = d3.scaleSequential(d3.interpolateBlues).domain([this._maxDepth, 0]);
 			
+			let onMouseOver = (d) => {
+				console.log("id: " + d.id + " - ")
+				console.log(d.data)
+			}
+			let onMouseOut = (d) => {
+				console.log("mouse out")
+			}
 			let streams = this._pathContainer.selectAll('path.stream')
 				.data(this._newStreamData.streams);
 
 			streams.enter().append('path')
 				.classed('stream', true)
 				.style('fill', d => color(d.depth))
+				.on("mouseover", onMouseOver)
+				.on("mouseout", onMouseOut)
 				.attr('clip-path', d => 'url(#' + d.id + ')')
 			
 			streams.exit().remove();
