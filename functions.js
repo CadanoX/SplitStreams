@@ -22,11 +22,89 @@ function getRandomColor() {
 
 function transformVisciousFormat(data)
 {
-	let SecStreamInput = { reference: [], timesteps: []};
-	for (t in data.EN)
-	{
-		format.timesteps[t]
+	// init
+	let format = { timesteps: []};
+	for (let t in data.EN) {
+		format.timesteps[t] = {
+			deleted: {},
+			references: {},
+			tree: {
+				id: "fakeRoot",
+				children: []
+			}
+		};
 	}
+
+	// build history of root node
+	for (let t in data.EN) {
+		let time = format.timesteps[t];
+		let next = format.timesteps[Number(t)+1];
+		time.references["fakeRoot"] = time.tree;
+		if (next) {
+			time.tree.next = [ next.tree ];
+			next.tree.prev = [ time.tree ];
+		}
+	}
+
+	// add all nodes to references
+	let minDepth = Infinity; // viscious might have depths of 25, 30 and 35
+	for (let id in data.N) {
+		minDepth = Math.min(minDepth, data.N[id].l)
+	}
+	for (let id in data.N) {
+		let node = data.N[id];
+		let time = format.timesteps[node.t];
+		let ref = time.references[id] = { id: id, size: node.w };
+		if (node.l == minDepth) { // add roots to fakeRoot
+			time.tree.children.push(ref)
+			ref.parent = time.tree;
+		}
+	}
+
+	// build tree structure
+	for (let t in data.EN) {
+		let time = format.timesteps[t];
+
+		/*// set tree root
+		let nodes = Object.keys(data.EN[t]);
+		let last = nodes[nodes.length-1];
+		time.tree = time.references[last];
+		*/
+
+		// connect all children
+		for (let id in data.EN[t]) {
+			let node = time.references[id];
+			let childArray = data.EN[t][id];
+			if (childArray.length > 0)
+				node.children = [];
+			for (let childId of childArray) {
+				node.children.push(time.references[childId])
+				time.references[childId].parent = node;
+			}
+		}
+	}
+
+	// set prev, next nodes
+	for (let stream in data.ET) {
+		for (let nodeId in data.ET[stream]) {
+			let t = data.N[nodeId].t;
+			let node = format.timesteps[t].references[nodeId];
+
+			for (let nextId of data.ET[stream][nodeId]) {
+				let next = format.timesteps[Number(t)+1].references[nextId];
+				if (!node.next)
+					node.next = [];
+				node.next.push(next)
+
+				if (!next.prev)
+					next.prev = [];
+				next.prev.push(node)
+			}
+		}
+
+	}
+
+    return format
 }
 
 function transformGumtreeFormat(data)
@@ -60,8 +138,10 @@ function transformGumtreeFormat(data)
 		dest.children = [];
 		if (!!src.children)
 			for (let i = 0; i < src.children.length; i++) {
-				dest.children[i] = { parent: dest };
-				traverse(src.children[i], dest.children[i]);
+				//if (src.children[i].type != 162) { // remove comments
+					dest.children[i] = { parent: dest };
+					traverse(src.children[i], dest.children[i]);
+				//}
 			}
 
 		dest.id = idx;
@@ -69,7 +149,16 @@ function transformGumtreeFormat(data)
 		idx++;
 		dest.size = src.length;
 		dest.pos = src.pos;
+		dest.data = {
+			label: src.label,
+			type: src.type,
+			typeLabel: src.typeLabel,
+			pos: src.pos,
+			length: src.length
+		}
 	};
+
+	
 
 	for (t in data.timesteps)
 	{

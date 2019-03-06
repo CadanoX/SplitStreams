@@ -188,6 +188,66 @@ const examples = {
 				}
 			]
 		},
+		"merge": {
+			"timesteps": [
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "4",
+								"pos": "3"
+							}
+						]
+					}
+				},
+				{
+					"root": {
+						"length": "10",
+						"pos": "0",
+						"children": [
+							{
+								"length": "2",
+								"pos": "2"
+							},
+							{
+								"length": "2",
+								"pos": "6"
+							}
+						]
+					}
+				}
+			],
+			"changes": [
+				{
+					"matches": [
+						{
+							"src": 1,
+							"dest": 2
+						},
+						{
+							"src": 0,
+							"dest": 0
+						}
+					],
+					"actions": [
+						{
+							"action": "insert",
+							"tree": 0,
+							"parent": 0,
+							"at": 0
+						},
+						{
+							"action": "insert",
+							"tree": 0,
+							"parent": 0,
+							"at": 1
+						}
+					]
+				}
+			]
+		},
 		"moveAlong": {
 			"timesteps": [
 				{
@@ -3603,7 +3663,7 @@ const examples = {
 			}
 		]
 	},
-	"viscious": {
+	"viscous": {
 		"N": {
 			"0": {
 				"l": 25,
@@ -9372,7 +9432,7 @@ const examples = {
 			}
 		}
 	},
-	"visciousMin": {
+	"viscousMin": {
 		N: {
 			'A': { l: 2, t: 0 },
 			'B': { l: 1, t: 0 },
@@ -9388,7 +9448,20 @@ const examples = {
 			'J': { l: 0, t: 2 },
 			'K': { l: 0, t: 2 },
 		},
-
+		EN: {
+			0: {
+				'B': ['A'],
+				'C': ['B']
+			},
+			1: {
+				'G': ['F'],
+				'F': ['D', 'E']
+			},
+			2: {
+				'J': ['I'],
+				'I': ['H']
+			},
+		},
 		ET: {
 			0: {
 				'C': ['G'],
@@ -9402,21 +9475,6 @@ const examples = {
 				'A': ['D', 'E'],
 				'D': ['H'],
 				'E': ['H']
-			},
-		},
-
-		EN: {
-			0: {
-				'B': ['A'],
-				'C': ['B']
-			},
-			1: {
-				'G': ['F'],
-				'F': ['D', 'E']
-			},
-			2: {
-				'J': ['I'],
-				'I': ['H']
 			},
 		},
 	}

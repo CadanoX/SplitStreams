@@ -1,5 +1,10 @@
 var stream;
 
+examples.viscousMin = transformVisciousFormat(examples.viscousMin);
+examples.viscous = transformVisciousFormat(examples.viscous);
+examples.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
+examples.gumtree = transformGumtreeFormat(examples.gumtree);
+
 function changeSeparationY(func, value) {
 	if (func == "Fixed")
 		stream.separationY(stream.marginYFixed, value);
@@ -22,9 +27,6 @@ function changeSeparationX(func, value) {
 
 document.addEventListener("DOMContentLoaded", function(event)
 {
-	//transformVisciousIntoFormat(examples.Viscous);
-	let data = transformGumtreeFormat(examples.gumtree);
-
 	let app = new Vue({
 		el: '#app',
 		data: {
@@ -47,6 +49,15 @@ document.addEventListener("DOMContentLoaded", function(event)
 					{ value: 'circle', text: "Circle"},
 					{ value: 'plug', text: "Plug"},
 					{ value: 'default', text: "Default"}
+				]
+			},
+			dataset: {
+				value: 'gumtree',
+				options: [
+					{ value: 'viscous', text: "Viscous Fingers"},
+					{ value: 'viscousMin', text: "Minimal Viscous"},
+					{ value: 'gumtree', text: "Source Code"},
+					{ value: 'gumtreeMin', text: "Minimal Source Code"}
 				]
 			},
 			offset: {
@@ -78,6 +89,24 @@ document.addEventListener("DOMContentLoaded", function(event)
 				stream.removeSplits();
 				stream.addSplitsRandomly(10);
 				this.randomSplits = stream.getSplits();
+			},
+			applySplits: function(option) {
+				if (option == "at") {
+					stream.removeSplits();
+					stream.addSplitsAtTimepoints();
+				}
+				else if (option == "between") {
+					stream.removeSplits();
+					stream.addSplitsBetweenTimepoints();
+				}
+				else if (option == "random") {
+					if (this.randomSplits.length == 0)
+						this.randomizeSplits();
+					else {
+						stream.removeSplits();
+						stream.addSplits(this.randomSplits);
+					}
+				}
 			},
 			select: function(index, node) {
 				this.selected = index;
@@ -121,6 +150,33 @@ document.addEventListener("DOMContentLoaded", function(event)
 				},
 				deep: true
 			},
+			dataset: {
+				handler: function(dataset) {
+					// TODO: get .data to replace the data properly
+					stream.data(examples[dataset.value])
+					//delete stream;
+					
+					// let div = document.querySelector('#wrapper');
+
+					// div.innerHTML = "";
+					// stream = d3.SecStream(div, { automaticUpdate: false })
+					// 	.data(examples[dataset.value]);
+					// stream.startEndEncoding(this.startEndEncoding.value);
+					// stream.startEndEncodingX(this.startEndEncoding.x);
+					// stream.startEndEncodingY(this.startEndEncoding.y);
+					// changeSeparationY(this.separationY, this.separationYValue);
+					// changeSeparationX(this.separationX, this.separationXValue);
+					// stream.setMinSizeThreshold(this.sizeThreshold);
+					// stream.setProportion(this.proportion);
+					// stream.filters(this.filters);
+					// stream.update();
+					// this.applySplits(this.split);
+					// stream.options({ automaticUpdate: true });
+					// stream.update();
+
+				},
+				deep: true
+			},
 			offset: {
 				handler: function(offset) {
 					stream.offset(offset.value);
@@ -128,29 +184,14 @@ document.addEventListener("DOMContentLoaded", function(event)
 				deep: true
 			},
 			split: function(option) {
-				if (option == "at") {
-					stream.removeSplits();
-					stream.addSplitsAtTimepoints();
-				}
-				else if (option == "between") {
-					stream.removeSplits();
-					stream.addSplitsBetweenTimepoints();
-				}
-				else if (option == "random") {
-					if (this.randomSplits.length == 0)
-						this.randomizeSplits();
-					else {
-						stream.removeSplits();
-						stream.addSplits(this.randomSplits);
-					}
-				}
+				this.applySplits(option);
 			}
 		}
 	});
 
 	let div = document.querySelector('#wrapper');
 	stream = d3.SecStream(div)
-		.data(data);
+		.data(examples[app.dataset.value]);
 
 	stream.addSplitsAtTimepoints();
 });

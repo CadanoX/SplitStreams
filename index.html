@@ -25,11 +25,22 @@
 <body>
     <div id="app">
         <div class="controls">
+            <!--
             <div>
                 <label>Chart width</label>
                 <input type="range" v-model="size" min="0" max="1920" />
             </div>
-
+            -->
+            <div>
+                <label><b>Data:</b></label>
+                <br>
+                <select v-model="dataset.value">
+                    <option v-for="option in dataset.options" v-bind:value="option.value">
+                    {{ option.text }}
+                    </option>
+                </select>
+            </div>
+            <hr>
             <div>
                 <label><b>Tree/Time</b>: {{ proportion }}</label>
                 <br>
@@ -55,21 +66,6 @@
                 <br>
                 <input type="range" v-model="separationYValue" step= "0.001" min="0" max="1" />
             </div>
-            <hr>
-            <div>
-                <span><b>Splits</b></span>
-                <br>
-                <input type="radio" id="splitAtTime" value="at" selected v-model="split">
-                <label for="splitAtTime">at timepoints</label>
-                <br>
-                <input type="radio" id="splitBetweenTime" value="between" v-model="split">
-                <label for="splitBetweenTime">between timepoints</label>
-                <br>
-                <input type="radio" id="splitRandom" value="random" v-model="split">
-                <label for="splitRandom">randomly</label>
-                <button value='randomize' v-on:click="randomizeSplits">randomize</button>
-                <br>
-            </div>
             <div>
                 <span><b>Separation X</b></span>
                 <br>
@@ -85,6 +81,21 @@
                 <label>Value: {{ separationXValue }}</label>
                 <br>
                 <input type="range" v-model="separationXValue" step= "0.1" min="0" max="100" />
+            </div>
+            <hr>
+            <div>
+                <span><b>Splits</b></span>
+                <br>
+                <input type="radio" id="splitAtTime" value="at" selected v-model="split">
+                <label for="splitAtTime">at timepoints</label>
+                <br>
+                <input type="radio" id="splitBetweenTime" value="between" v-model="split">
+                <label for="splitBetweenTime">between timepoints</label>
+                <br>
+                <input type="radio" id="splitRandom" value="random" v-model="split">
+                <label for="splitRandom">randomly</label>
+                <button value='randomize' v-on:click="randomizeSplits">randomize</button>
+                <br>
             </div>
             <hr>
             <div>
@@ -131,6 +142,7 @@
                 <br>
                 <input type="range" v-model="filters[0][0].stdDeviation" step= "0.2" min="0" max="10" />
             </div>
+            <!--
             </vr>
             <div style="display: inline-block; border-left: 1px solid #000; padding-left: 15px">
                 <label><b>Drop Shadow 2:</b></label>
@@ -147,6 +159,7 @@
                 <br>
                 <input type="range" v-model="filters[0][1].stdDeviation" step= "0.2" min="0" max="10" />
             </div>
+             -->
             <hr>
             
 
