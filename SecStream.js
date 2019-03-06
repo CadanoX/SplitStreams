@@ -791,7 +791,7 @@ class SecStreamData {
 							checkSizes(child);
 							aggregate += child.size;
 						}
-						node.size = aggregate;
+						node.size = aggregate + 1;
 					}
 					else {
 						node.size = 1;
@@ -800,16 +800,21 @@ class SecStreamData {
 			}
 
 			let checkPositions = function(node, pos = 0) {
-				if (!!node.pos) {
-					console.log("node positions are defined");
-					return;
-				}
+				if (!node.pos) {
+					node.pos = pos;
 
-				node.pos = pos;
-				if (!!node.children) {
-					for (let child of node.children) {
-						checkPositions(child, pos);
-						pos += child.size;
+					if (!!node.children) {
+						let aggregate = 0;
+						for (let child of node.children) {
+							aggregate += child.size;
+						}
+						let spacing = (node.size - aggregate) / (node.children.length + 1);
+
+						for (let [i, child] of node.children.entries()) {
+							pos += spacing;
+							checkPositions(child, pos);
+							pos += child.size;
+						}
 					}
 				}
 			}
