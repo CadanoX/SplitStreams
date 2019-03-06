@@ -40,6 +40,15 @@
                     </option>
                 </select>
             </div>
+            <div>
+                <label><b>Offset:</b></label>
+                <br>
+                <select v-model="offset.value">
+                    <option v-for="option in offset.options" v-bind:value="option.value">
+                    {{ option.text }}
+                    </option>
+                </select>
+            </div>
             <hr>
             <div>
                 <label><b>Tree/Time</b>: {{ proportion }}</label>
@@ -116,15 +125,6 @@
                 <label>x:</label><input type="range" v-model="startEndEncoding.x" step= "0.01" min="0" max="2" />
                 <br>
                 <label>y:</label><input type="range" v-model="startEndEncoding.y" step= "0.01" min="-1" max="2" />
-            </div>
-            <div>
-                <label><b>Offset:</b></label>
-                <br>
-                <select v-model="offset.value">
-                    <option v-for="option in offset.options" v-bind:value="option.value">
-                    {{ option.text }}
-                    </option>
-                </select>
             </div>
             <hr>
             <div style="display: inline-block">

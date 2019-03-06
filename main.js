@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			separationY: 'Fixed',
 			separationYValue: 0,
 			sizeThreshold: 0,
-			proportion: 0.99,
+			proportion: 1,
 			startEndEncoding: {
 				value: 'plug',
 				x: 0.85,
@@ -61,11 +61,11 @@ document.addEventListener("DOMContentLoaded", function(event)
 				]
 			},
 			offset: {
-				value: 'zero',
+				value: 'silhouette',
 				options: [
 					{ value: 'zero', text: "Zero"},
 					{ value: 'expand', text: "Expand"},
-					// silhouette
+					{ value: 'silhouette', text: "Silhouette"}
 					// wiggle
 				]
 			},

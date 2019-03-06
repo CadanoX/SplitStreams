@@ -643,7 +643,14 @@ class SecStreamData {
 				margin: { top: 20, right: 20, bottom: 20, left: 20 },
 				height: 600,
 				width: 1000,
-				automaticUpdate: true
+				automaticUpdate: true,
+				minSizeThreshold: 0,
+				separationXMethod: SecStream.marginXFixed,
+				separationXValue: 0,
+				separationYMethod: SecStream.marginYFixed,
+				separationYValue: 0,
+				proportion: 0.99,
+				offset: "silhouette" // zero, expand, silhouette
             }
 			Object.assign(this._opts, opts);
 
@@ -664,24 +671,12 @@ class SecStreamData {
 			this._minTime;
 			this._maxTime;
 			this._maxValue;
-			this._maxDepth = 0;
+			this._maxDepth;
 			this._indices = {};
 			this._maxIndex = 0;
 
-			this._minSizeThreshold = 0;
 			this._separationXMethod = this.marginXFixed;
-			this._separationXValue = 0;
 			this._separationYMethod = this.marginYFixed;
-			this._separationYValue = 0;
-			this._minSizeThreshold = 0;
-			this._proportion = 0.99;
-			
-			this._offset = "zero"; // zero, expand
-			
-			this._streamline = d3.area()
-				.x(d => d[0])
-				.y0(d => d[1])
-				.y1(d => d[2]);
 
             this._init();
         }
@@ -779,6 +774,10 @@ class SecStreamData {
 			this._newStreamData.clear();
 			this._indices = {};
 			this._maxIndex = 0;
+
+			
+			let streams = this._pathContainer.selectAll('path.stream')
+				.data([]).exit().remove();
 		}
 
 		_normalizeData() {
@@ -859,15 +858,33 @@ class SecStreamData {
 		}
 
 		_calculatePositions() {
+			let {
+				height,
+				width,
+				margin,
+				minSizeThreshold,
+				separationXValue,
+				separationYValue,
+				proportion,
+				offset
+			 } = this._opts;
+
 			let traverse = (node, childX = 0) => {
 				let p = node.parent;
 				if (!p) {
-					node.y0 = 0;
 
-					if (this._offset == "zero")
+					if (offset == "zero") {
+						node.y0 = 0;
 						node.y1 = node.size / this._maxValue;
-					else if (this._offset == "expand")
+					}
+					else if (offset == "expand") {
+						node.y0 = 0;
 						node.y1 = 1;
+					}
+					else if (offset == "silhouette") {
+						node.y0 = 0.5 - 0.5 * node.size / this._maxValue;
+						node.y1 = 0.5 + 0.5 * node.size / this._maxValue;
+					}
 
 					node.marginX = 0;
 					node.marginY = this._separationYMethod(node);
@@ -884,7 +901,7 @@ class SecStreamData {
 						node.y1 = node.y0 + pSize * node.rsize;
 
 						let size = node.y1 - node.y0;
-						if ((size) <= this._minSizeThreshold) {
+						if ((size) <= minSizeThreshold) {
 							node.y0 = 0.5 * (node.y0 + node.y1);
 							node.y1 = 0.5 * (node.y0 + node.y1);
 						}
@@ -907,11 +924,11 @@ class SecStreamData {
 
 			this._newStreamData.xScale = d3.scaleLinear()
 				.domain([this._minTime - 0.5, this._maxTime + 0.5]).nice()
-				.range([this._opts.margin.left, this._opts.width - this._opts.margin.right]);
+				.range([margin.left, width - margin.right]);
 
 			this._newStreamData.yScale = d3.scaleLinear()
 				.domain([0, 1]).nice()
-				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
+				.range([height - margin.bottom, margin.top]);
 		}
 
 		_calculateStreamData() {
@@ -1169,51 +1186,51 @@ class SecStreamData {
 		
 		separationY(callback, parameter) {
 			this._separationYMethod = callback;
-			this._separationYValue = parameter / 2;
+			this._opts.separationYValue = parameter / 2;
 			this._update();
 		}
 
 		separationX(callback, parameter) {
 			this._separationXMethod = callback;
-			this._separationXValue = parameter;
+			this._opts.separationXValue = parameter;
 			this._update();
 		}
 
 		marginYFixed(node) {
-			return this._separationYValue;
+			return this._opts.separationYValue;
 		}
 
 		marginYPercentage(node) {
-			return (node.y1-node.y0) * this._separationYValue;
+			return (node.y1-node.y0) * this._opts.separationYValue;
 		}
 
 		marginYHierarchical(node) {
-			return (node.depth + 1) * this._separationYValue;
+			return (node.depth + 1) * this._opts.separationYValue;
 		}
 
 		marginYHierarchicalReverse(node) {
-			return 1 / (node.depth + 1) * this._separationYValue;
+			return 1 / (node.depth + 1) * this._opts.separationYValue;
 		}
 
 		marginXFixed(node) {
-			return this._separationXValue / 100;
+			return this._opts.separationXValue / 100;
 		}
 
 		marginXHierarchical(node) {
-			return (node.depth + 1) / this._maxDepth * this._separationXValue / 100;
+			return (node.depth + 1) / this._maxDepth * this._opts.separationXValue / 100;
 		}
 
 		marginXHierarchicalReverse(node) {
-			return 1 / (node.depth + 1) * this._separationXValue / 100;
+			return 1 / (node.depth + 1) * this._opts.separationXValue / 100;
 		}
 
 		setMinSizeThreshold(value) {
-			this._minSizeThreshold = value / 100;
+			this._opts.minSizeThreshold = value / 100;
 			this._update();
 		}
 
 		setProportion(value) {
-			this._proportion = (value / 2) + 0.5; // map from 0-1 to 0.5-1
+			this._opts.proportion = (value / 2) + 0.5; // map from 0-1 to 0.5-1
 			this._newStreamData.proportion = value
 			this._update();
 		}
@@ -1234,7 +1251,7 @@ class SecStreamData {
 		}
 
 		offset(offset) {
-			this._offset = offset;
+			this._opts.offset = offset;
 			this._update();
 		}
 
