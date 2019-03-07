@@ -20,14 +20,15 @@ html, body{
 
 #wrapper {
 	/*height: 100%;*/
+	flex: 1 1 auto;
+	overflow: hidden;
 }
 
 .controls {
 	top: 16px; 
 	left: 16px;
 	background: #f8f8f8;
-	min-width: 160px;
-	flex-basis: 20%;
+	flex: 0 0 165px;
 	overflow: auto;
 	padding: 0.5rem;
 }

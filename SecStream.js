@@ -39,8 +39,8 @@
 			this._opts = {
 				animDuration: 1000,
 				margin: { top: 20, right: 20, bottom: 20, left: 20 },
-				height: 600,
-				width: 1000,
+				height: container.clientHeight,
+				width: container.clientWidth,
 				automaticUpdate: true,
 				minSizeThreshold: 0,
 				//separationXMethod: "",
@@ -52,7 +52,6 @@
             }
 			Object.assign(this._opts, opts);
 
-			
 			this._container = container;
             this._id = "id";
             this._layout;
@@ -490,11 +489,11 @@
 			let color = d3.scaleSequential(d3.interpolateBlues).domain([this._maxDepth, 0]);
 			
 			let onMouseOver = (d) => {
-				console.log("id: " + d.id + " - ")
-				console.log(d.data)
+				console.log("id: " + d.id);
+				console.log(d.data);
 			}
 			let onMouseOut = (d) => {
-				console.log("mouse out")
+				//console.log("mouse out")
 			}
 			let streams = this._pathContainer.selectAll('path.stream')
 				.data(this._newStreamData.streams, function(d) { return d.id });
@@ -580,11 +579,13 @@
 			this.render2();
         }
         
-        resize(width, height) {
+        resize(width = this._container.clientWidth, height = this._container.clientHeight) {
 			this._opts.width = width;
 			this._opts.height = height;
 			d3.select("svg").attr('width', width).attr('height', height);
-			this.render2();
+			//this._svg.attr('width', width).attr('height', height);
+
+			this._update();
 		}
 		
 		separationY(callback, parameter) {

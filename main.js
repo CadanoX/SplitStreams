@@ -108,6 +108,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 					}
 				}
 			},
+			wrapperResize(...args) {
+				stream.resize();
+			},
 			select: function(index, node) {
 				this.selected = index;
 			}
