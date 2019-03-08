@@ -45,6 +45,16 @@
                 </select>
             </div>
             <div>
+                <input type="checkbox" id="unifySize" v-model="unifySize" :disabled="disableNormSizeButton">
+                <label for="unifySize">norm. size</label>
+                <input type="checkbox" id="unifySizePlusOne" v-model="unifySizePlusOne" :disabled="disableNormSizePlusOneButton">
+                <label for="unifySizePlusOne">+1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="unifyPosition" v-model="unifyPosition" :disabled="disableNormPosButton">
+                <label for="unifyPosition">norm. position</label>
+            </div>
+            <div>
                 <label><b>Offset:</b></label>
                 <br>
                 <select v-model="offset.value">

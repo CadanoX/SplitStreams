@@ -48,7 +48,10 @@
 				//separationYMethod: "",
 				separationYValue: 0,
 				zoomTimeFactor: 1,
-				proportion: 0.99,
+				proportion: 1,
+				unifySize: false,
+				unifyPosition: false,
+				nodeSizeAddOne: true,
 				offset: "silhouette" // zero, expand, silhouette
             }
 			Object.assign(this._opts, opts);
@@ -87,10 +90,51 @@
 
 		options(opts) { Object.assign(this._opts, opts); }
 		
+		set unifySize(unify) { this._opts.unifySize = unify; this._update() }
+		set nodeSizeAddOne(option) { this._opts.nodeSizeAddOne = option; this._update() }
+		set unifyPosition(unify) { this._opts.unifyPosition = unify; this._update() }
+
         _setData(d) {
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
 			this._data = d;
+
+			let initSizesAndPositions = (node) => {
+				node.dataSize = +node.size;
+				node.dataPos = +node.pos;
+				if (!!node.children)
+					node.children.forEach(initSizesAndPositions);
+			}
+
+			this._data.timesteps.forEach((d) => {
+				initSizesAndPositions(d.tree);
+				this._checkData(d.tree);
+			})
+			
 			this._update();
+		}
+
+		_checkData(node) {
+			// check if size of parent elements is bigger than the aggregate of the sizes of its children
+			let aggregate = 0;
+			let pos = 0;
+			if (!!node.children) {
+				for (let child of node.children) {
+					this._checkData(child);
+					aggregate = child.size;
+					if (child.pos >= 0) {
+						if(pos > child.pos) {
+							console.log("Error: Children positions overlap each other.")
+							console.log(node);
+						}
+						pos = child.pos + child.size;
+					}
+				}
+			}
+			
+			if (!!node.size && node.size < aggregate) {
+				console.log("Error: Node has a smaller size than its children.")
+				console.log(node);
+			}
 		}
 
 		_setFilters(d) {
@@ -176,46 +220,53 @@
 			this._indices = {};
 			this._maxIndex = 0;
 
-			
-			let streams = this._pathContainer.selectAll('path.stream')
+			this._pathContainer.selectAll('path.stream')
 				.data([]).exit().remove();
 		}
 
 		_normalizeData() {
 			// if node does not have a size, set it's size to the sum of the sizes of its children
 			// if a node does not have a size and does not have children, give it size 1
-			let checkSizes = function(node) {
-				if (!node.size) {
-					if (!!node.children) {
-						let aggregate = 0;
-						for (let child of node.children) {
-							checkSizes(child);
-							aggregate += child.size;
-						}
-						node.size = aggregate + 1;
+
+
+			let checkSizes = (node) => {
+				if (!!node.children && node.children.length > 0) {
+					node.aggregate = 0;
+					for (let child of node.children) {
+						checkSizes(child);
+						node.aggregate += child.size;
 					}
-					else {
+					if (this._opts.unifySize || Number.isNaN(node.dataSize))
+						node.size = node.aggregate + this._opts.nodeSizeAddOne;
+					else
+						node.size = node.dataSize;				
+				}
+				else {
+					if (this._opts.unifySize || Number.isNaN(node.dataSize))
 						node.size = 1;
-					}
+					else
+						node.size = node.dataSize;
 				}
 			}
 
-			let checkPositions = function(node, pos = 0) {
-				if (!node.pos) {
+			// positions must be unified, if sizes are unified
+			let checkPositions = (node, pos = 0) => {
+				if (this._opts.unifySize || this._opts.unifyPosition || Number.isNaN(node.dataPos))
 					node.pos = pos;
-
-					if (!!node.children) {
-						let aggregate = 0;
-						for (let child of node.children) {
-							aggregate += child.size;
-						}
-						let spacing = (node.size - aggregate) / (node.children.length + 1);
-
-						for (let [i, child] of node.children.entries()) {
-							pos += spacing;
-							checkPositions(child, pos);
-							pos += child.size;
-						}
+				else
+					node.pos = node.dataPos;
+					
+				if (!!node.children && node.children.length > 0) {
+					let aggregate = 0;
+					for (let child of node.children) {
+						aggregate += child.size;
+					}
+					let spacing = (node.size - aggregate) / (node.children.length + 1);
+					
+					for (let [i, child] of node.children.entries()) {
+						pos += spacing;
+						checkPositions(child, pos);
+						pos += child.size;
 					}
 				}
 			}
@@ -229,8 +280,8 @@
 				checkSizes(time[i].tree);
 				checkPositions(time[i].tree);
 				maxValue = Math.max(maxValue, time[i].tree.size);
-				minTime = Math.min(minTime, Number(i));
-				maxTime = Math.max(maxTime, Number(i));
+				minTime = Math.min(minTime, +i);
+				maxTime = Math.max(maxTime, +i);
 			}
 			
 			this._maxTime = maxTime;
@@ -324,7 +375,7 @@
 			let time = this._data.timesteps;
 			for (let i in time)
 			{
-				time[i].tree.x = Number(i);
+				time[i].tree.x = +i;
 				traverse(time[i].tree);
 			}
 
@@ -647,6 +698,7 @@
 			this._opts.zoomTimeFactor = factor;
 			this._update();
 		};
+
 
 		startEndEncoding(encoding) {
 			this._newStreamData.startEndEncoding = encoding;

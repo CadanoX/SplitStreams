@@ -86,8 +86,7 @@
 						return;
 					}
 
-					for(let child of node.next)
-						traverse(child);
+					node.next.forEach(traverse);
 				}
 
 				traverse(this._streamNodes[i]);
@@ -458,8 +457,8 @@
 
 				let lastX = x(-1);
 				for (let split of splits) {
-					let x0 = x(Number(split) - 0.5 * stream.marginX);
-					let x1 = x(Number(split) + 0.5 * stream.marginX);
+					let x0 = x(+split - 0.5 * stream.marginX);
+					let x1 = x(+split + 0.5 * stream.marginX);
 					if (x0 - lastX > 0) {
 						clipPath.move(lastX, y(0));
 						clipPath.horizontal(x0);

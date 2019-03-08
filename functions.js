@@ -38,7 +38,7 @@ function transformVisciousFormat(data)
 	// build history of root node
 	for (let t in data.EN) {
 		let time = format.timesteps[t];
-		let next = format.timesteps[Number(t)+1];
+		let next = format.timesteps[+t+1];
 		time.references["fakeRoot"] = time.tree;
 		if (next) {
 			time.tree.next = [ next.tree ];
@@ -91,7 +91,7 @@ function transformVisciousFormat(data)
 			let node = format.timesteps[t].references[nodeId];
 
 			for (let nextId of data.ET[stream][nodeId]) {
-				let next = format.timesteps[Number(t)+1].references[nextId];
+				let next = format.timesteps[+t+1].references[nextId];
 				if (!node.next)
 					node.next = [];
 				node.next.push(next)

@@ -42,6 +42,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 			sizeThreshold: 0,
 			proportion: 1,
 			zoomTime: 1,
+			unifySize: false,
+			unifySizePlusOne: true,
+			unifyPosition: false,
 			startEndEncoding: {
 				value: 'plug',
 				x: 0.85,
@@ -84,6 +87,16 @@ document.addEventListener("DOMContentLoaded", function(event)
 			test: 1
 		},
 		computed: {
+			disableNormSizeButton() {
+				return this.dataset.value == "viscousMin";
+			},
+			disableNormSizePlusOneButton() {
+				return !this.unifySize && !this.disableNormSizeButton;
+			},
+			disableNormPosButton() {
+				return this.unifySize ||
+					(this.dataset.value != "gumtree" && this.dataset.value != "gumtreeMin");
+			},
 		},
 		methods: {
 			randomizeSplits: function() {
@@ -142,7 +155,15 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			zoomTime: function() {
 				stream.setZoomTime(this.zoomTime);
-
+			},
+			unifySize() {
+				stream.unifySize = this.unifySize;
+			},
+			unifyPosition() {
+				stream.unifyPosition = this.unifyPosition;
+			},
+			unifySizePlusOne() {
+				stream.nodeSizeAddOne = this.unifySizePlusOne;
 			},
 			filters: {
 				handler: function(filters) {
