@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			separationYValue: 0,
 			sizeThreshold: 0,
 			proportion: 1,
+			zoomTime: 1,
 			startEndEncoding: {
 				value: 'plug',
 				x: 0.85,
@@ -138,6 +139,10 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			proportion: function() {
 				stream.setProportion(this.proportion)
+			},
+			zoomTime: function() {
+				stream.setZoomTime(this.zoomTime);
+
 			},
 			filters: {
 				handler: function(filters) {

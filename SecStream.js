@@ -47,6 +47,7 @@
 				separationXValue: 0,
 				//separationYMethod: "",
 				separationYValue: 0,
+				zoomTimeFactor: 1,
 				proportion: 0.99,
 				offset: "silhouette" // zero, expand, silhouette
             }
@@ -105,9 +106,12 @@
 				.classed('secstream', 'true')
 				.attr('height', this._container.clientHeight)
 				.attr('width', this._container.clientWidth)
+				.call(d3.zoom().on('zoom', () => {
+					this._pathContainer.attr('transform', d3.event.transform);
+				}));
                 //.on("contextmenu", () => d3.event.preventDefault());
-                .append('g')
-					.attr('id', 'svg-drawn')
+                //.append('g')
+				//	.attr('id', 'svg-drawn')
 					//.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
 					
@@ -326,7 +330,7 @@
 
 			this._newStreamData.xScale = d3.scaleLinear()
 				.domain([this._minTime - 0.5, this._maxTime + 0.5]).nice()
-				.range([margin.left, width - margin.right]);
+				.range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
 
 			this._newStreamData.yScale = d3.scaleLinear()
 				.domain([0, 1]).nice()
@@ -638,6 +642,11 @@
 			this._newStreamData.proportion = value
 			this._update();
 		}
+
+		setZoomTime(factor) {
+			this._opts.zoomTimeFactor = factor;
+			this._update();
+		};
 
 		startEndEncoding(encoding) {
 			this._newStreamData.startEndEncoding = encoding;
