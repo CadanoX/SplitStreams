@@ -203,7 +203,7 @@
 							// if it lies outside, find two nodes to put it inbetween
 							else {
 								if (mid <= 0.5 * (prev.y0 + prev.y1))
-									refPrevId = i; // setting ID breaks the loop
+									refPrevId = n; // setting ID breaks the loop
 							}
 						}
 
@@ -294,7 +294,7 @@
 									else if (refChildId == -1) // after last child
 										pos = 0.5 * (next.y1 + next.children[next.children.length-1].y1);
 									else
-										pos = 0.5 * (prev.children[refChildId-1].y1 + prev.children[refChildId].y0);
+										pos = 0.5 * (next.children[refChildId-1].y1 + next.children[refChildId].y0);
 								}
 								else // node has no children
 									pos = 0.5 * (next.y0 + next.y1);
@@ -303,7 +303,7 @@
 							// if it lies outside, find two nodes to put it inbetween
 							else {
 								if (mid <= 0.5 * (next.y0 + next.y1))
-									refNextId = i; // setting ID breaks the loop
+									refNextId = n; // setting ID breaks the loop
 							}
 						}
 

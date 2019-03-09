@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			dataset: {
 				handler: function(dataset) {
 					// TODO: get .data to replace the data properly
-					stream.data(examples[dataset.value])
+					stream.data(examples[dataset.value]).filters(this.filters)
 					//delete stream;
 					
 					// let div = document.querySelector('#wrapper');

@@ -78,6 +78,10 @@
             <div>
                 <span><b>Separation Y</b></span>
                 <br>
+                <label>Value: {{ separationYValue }}</label>
+                <br>
+                <input type="range" v-model="separationYValue" step= "0.001" min="0" max="1" />
+                <br>
                 <input type="radio" id="sepYfixed" value="Fixed" selected v-model="separationY">
                 <label for="sepYfixed">Fixed</label>
                 <br>
@@ -89,13 +93,13 @@
                 <br>
                 <input type="radio" id="sepYhierarchyReverse" value="HierarchicalReverse" v-model="separationY">
                 <label for="sepYhierarchyReverse">Hierarchical Reverse</label>
-                <br>
-                <label>Value: {{ separationYValue }}</label>
-                <br>
-                <input type="range" v-model="separationYValue" step= "0.001" min="0" max="1" />
             </div>
             <div>
                 <span><b>Separation X</b></span>
+                <br>
+                <label>Value: {{ separationXValue }}</label>
+                <br>
+                <input type="range" v-model="separationXValue" step= "0.1" min="0" max="100" />
                 <br>
                 <input type="radio" id="sepXfixed" value="Fixed" selected v-model="separationX">
                 <label for="sepXfixed">Fixed</label>
@@ -105,10 +109,6 @@
                 <br>
                 <input type="radio" id="sepXhierarchyReverse" value="HierarchicalReverse" v-model="separationX">
                 <label for="sepXhierarchyReverse">Hierarchical Reverse</label>
-                <br>
-                <label>Value: {{ separationXValue }}</label>
-                <br>
-                <input type="range" v-model="separationXValue" step= "0.1" min="0" max="100" />
             </div>
             <hr>
             <div>

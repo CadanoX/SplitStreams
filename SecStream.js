@@ -110,6 +110,9 @@
 				this._checkData(d.tree);
 			})
 			
+			this._pathContainer.selectAll('path.stream')
+				.data([]).exit().remove();
+
 			this._update();
 		}
 
@@ -219,9 +222,6 @@
 			this._newStreamData.clear();
 			this._indices = {};
 			this._maxIndex = 0;
-
-			this._pathContainer.selectAll('path.stream')
-				.data([]).exit().remove();
 		}
 
 		_normalizeData() {
@@ -559,6 +559,7 @@
 				.on("mouseover", onMouseOver)
 				.on("mouseout", onMouseOut)
 				.attr('clip-path', d => 'url(#clip' + d.id + ')')
+				.attr('id', d => 'stream' + d.id)
 			
 			streams.exit().remove();
 
