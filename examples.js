@@ -188,66 +188,6 @@ const examples = {
 				}
 			]
 		},
-		"merge": {
-			"timesteps": [
-				{
-					"root": {
-						"length": "10",
-						"pos": "0",
-						"children": [
-							{
-								"length": "4",
-								"pos": "3"
-							}
-						]
-					}
-				},
-				{
-					"root": {
-						"length": "10",
-						"pos": "0",
-						"children": [
-							{
-								"length": "2",
-								"pos": "2"
-							},
-							{
-								"length": "2",
-								"pos": "6"
-							}
-						]
-					}
-				}
-			],
-			"changes": [
-				{
-					"matches": [
-						{
-							"src": 1,
-							"dest": 2
-						},
-						{
-							"src": 0,
-							"dest": 0
-						}
-					],
-					"actions": [
-						{
-							"action": "insert",
-							"tree": 0,
-							"parent": 0,
-							"at": 0
-						},
-						{
-							"action": "insert",
-							"tree": 0,
-							"parent": 0,
-							"at": 1
-						}
-					]
-				}
-			]
-		},
 		"moveAlong": {
 			"timesteps": [
 				{

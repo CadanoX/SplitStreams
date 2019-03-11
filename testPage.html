@@ -7,6 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>SecStreams</title>
 	
+    <link type="text/css" rel="stylesheet" href="libs/vue-resize/dist/vue-resize.css" media="screen"/>
 	<link type="text/css" rel="stylesheet" href="style.css" media="screen"/>
     <link type="text/css" rel="stylesheet" href="SecStream.css" media="screen"/>
     
@@ -59,9 +60,12 @@
 
     <!-- libraries-->
     <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue-resize/dist/vue-resize.min.js"></script>
 	<script type="text/javascript" src="libs/d3_5.7.0.js"></script>
 	
 	<!-- modules -->
+    <script type="text/javascript" src="SvgPath.js"></script>
+    <script type="text/javascript" src="SecStreamData.js"></script>
     <script type="text/javascript" src="SecStream.js"></script>
 	
     <!-- general -->
@@ -95,7 +99,7 @@
             div.appendChild(testResult);
 
             let data = transformGumtreeFormat(examples.tests[test]);
-            d3.SecStream(testResult, {width: 200, height: 200, margin: {top: 5, bottom: 5, right: 5, left: 5}})
+            d3.SecStream(testResult, {zoomTimeFactor: 2, width: 200, height: 200, margin: {top: 5, bottom: 5, right: 100, left: -100}})
                 .data(data);
         }
     </script>
