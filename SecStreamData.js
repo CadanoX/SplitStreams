@@ -484,7 +484,8 @@
 					depth: stream.depth,
 					id: stream.streamId,
 					data: stream.data,
-					clipPath: clipPath.get()
+					clipPath: clipPath.get(),
+					textPos: { x: x(stream.x), y: y(stream.y0) }
 				});
 
 			}

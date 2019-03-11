@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 			unifySize: false,
 			unifySizePlusOne: true,
 			unifyPosition: false,
+			drawStroke: false,
+			showLabels: false,
 			startEndEncoding: {
 				value: 'plug',
 				x: 0.85,
@@ -164,6 +166,12 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			unifySizePlusOne() {
 				stream.nodeSizeAddOne = this.unifySizePlusOne;
+			},
+			drawStroke() {
+				stream.drawStroke(this.drawStroke);
+			},
+			showLabels() {
+				stream.showLabels(this.showLabels);
 			},
 			filters: {
 				handler: function(filters) {

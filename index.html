@@ -146,6 +146,14 @@
                 <label>y:</label><input type="range" v-model="startEndEncoding.y" step= "0.01" min="-1" max="2" />
             </div>
             <hr>
+            <div>
+                <input type="checkbox" id="drawStroke" v-model="drawStroke">
+                <label for="drawStroke">Stroke line</label>
+            </div>
+            <div>
+                <input type="checkbox" id="showLabels" v-model="showLabels">
+                <label for="showLabels">Labels</label>
+            </div>
             <div style="display: inline-block">
                 <label><b>Drop Shadow 1:</b></label>
                 <br>

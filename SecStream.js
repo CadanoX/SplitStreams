@@ -52,6 +52,8 @@
 				unifySize: false,
 				unifyPosition: false,
 				nodeSizeAddOne: true,
+				drawStroke: false,
+				showLabels: false,
 				offset: "silhouette" // zero, expand, silhouette
             }
 			Object.assign(this._opts, opts);
@@ -60,7 +62,8 @@
             this._id = "id";
             this._layout;
 			this._data;
-            this._pathContainer;
+			this._pathContainer;
+			this._textContainer;
 			this._svg;
 			this._svgFilters;
 			this._filters;
@@ -111,6 +114,8 @@
 			})
 			
 			this._pathContainer.selectAll('path.stream')
+				.data([]).exit().remove();
+			this._textContainer.selectAll('text')
 				.data([]).exit().remove();
 
 			this._update();
@@ -164,6 +169,7 @@
 					
 			this._svgFilters = d3.select('svg').append('defs');
 			this._pathContainer = this._svg.append('g').classed('pathContainer', true);
+			this._textContainer = this._svg.append('g').classed('textContainer', true);
         }
 
 		_applyOrdering() {
@@ -560,11 +566,13 @@
 				.on("mouseout", onMouseOut)
 				.attr('clip-path', d => 'url(#clip' + d.id + ')')
 				.attr('id', d => 'stream' + d.id)
+				.merge(streams)
+					.attr('d', d => d.path)
 			
 			streams.exit().remove();
 
-			d3.selectAll('path.stream')
-				.attr('d', d => d.path);
+			this.showLabels(this._opts.showLabels);
+			this.drawStroke(this._opts.drawStroke);
 
 			/*
 			let splitData = this._svgFilters.selectAll("clipPath")
@@ -584,12 +592,33 @@
 
 			splitData.enter().append("clipPath")
 				.attr('id', d => "clip" + d.id)
+				.merge(splitData)
+					.html(d => "<path d=\"" + d.path + "\">")
 				
 			splitData.exit().remove();
+		}
 
-			this._svgFilters.selectAll("clipPath")
-				.html(d => "<path d=\"" + d.path + "\">")
+		showLabels(show = true) {
+			this._opts.showLabels = show;
+			let labelData = this._opts.showLabels ? this._newStreamData.streams : [];
 
+			let labels = this._textContainer.selectAll('text')
+				.data(labelData, function(d) { return d.id });
+
+			labels.enter().append('text')
+				.text(d => !!d.data ? d.data.typeLabel : "")
+				.merge(labels)
+					.attr('x', d => d.textPos.x)
+					.attr('y', d => d.textPos.y)
+			
+			labels.exit().remove();
+		}
+		
+		drawStroke(draw = true) {
+			this._opts.drawStroke = draw;
+			let color = this._opts.drawStroke ? 'black' : '';
+			this._pathContainer.selectAll('path.stream')
+				.style('stroke', color)
 		}
 
 		_applyFilters() {
