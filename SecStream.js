@@ -94,10 +94,12 @@
 
 		options(opts) { Object.assign(this._opts, opts); }
 		
+		set automaticUpdate(auto) { this._opts.automaticUpdate = auto; }
 		set unifySize(unify) { this._opts.unifySize = unify; this._update() }
 		set nodeSizeAddOne(option) { this._opts.nodeSizeAddOne = option; this._update() }
 		set unifyPosition(unify) { this._opts.unifyPosition = unify; this._update() }
 		set mirror(mirror) { this._opts.mirror = mirror; this._update() }
+		set splitRoot(splitRoot) { this._opts.splitRoot = splitRoot; this._update() }
 
         _setData(d) {
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
@@ -329,9 +331,6 @@
 				width,
 				margin,
 				minSizeThreshold,
-				separationXValue,
-				separationYValue,
-				proportion,
 				offset
 			 } = this._opts;
 
@@ -352,7 +351,10 @@
 						node.y1 = 0.5 + 0.5 * node.size / this._maxValue;
 					}
 
-					node.marginX = 0;
+					if (this._opts.splitRoot)
+						node.marginX = this._separationXMethod(node);
+					else
+						node.marginX = 0;
 					node.marginY = this._separationYMethod(node);
 				}
 				else {
@@ -389,7 +391,8 @@
 			}
 
 			this._newStreamData.xScale = d3.scaleLinear()
-				.domain([this._minTime - 0.5, this._maxTime + 0.5]).nice()
+				.domain([this._minTime - 0.5, this._maxTime + 0.5])
+				//.domain([this._minTime - 0.5*(1-this._opts.proportion), this._maxTime + 0.5*(1-this._opts.proportion)])
 				.range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
 
 			let domain = this._opts.mirror ? [1, 0] : [0, 1];
@@ -399,159 +402,7 @@
 				//.range(margin.top, height - margin.bottom);
 		}
 
-		_calculateStreamData() {
-			this._streamData = [];
-			let t = this._data.timesteps;
-			let prop = this._proportion;
-			for (let i = 1; i < t.length; i++) { // for all timesteps
-				for (let n in t[i].references) { // for all nodes build stream to prev of node
-					let node = t[i].references[n];
-					let stream = {};
-					stream.depth = node.depth;
-
-					//console.log(i + " " + node.id + " " + node.depth)
-					if (!!node.prev) // move
-					{
-						if (0 >= (-node.marginX + node.x) - (node.prev[0].marginX + node.prev[0].x))
-							stream.path = [[0,0,0],[0,0,0],[0,0,0],[0,0,0]];
-						else
-							stream.path = [
-								[node.prev[0].marginX + node.prev[0].x, node.prev[0].y0, node.prev[0].y1],
-								[node.prev[0].marginX + prop * node.prev[0].x + (1-prop) * node.x, node.prev[0].y0, node.prev[0].y1],
-								[-node.marginX + (1-prop) * node.prev[0].x + prop * node.x, node.y0, node.y1],
-								[-node.marginX + node.x, node.y0, node.y1]
-							];
-					}
-					else { // insert
-						let pos;
-						// find an ancestor who existed in the previous timestep
-						let p = node;
-						while(!p.prev)
-							p = p.parent;
-
-						// try to use the center of the stream as beginning
-						// if the previous node was not big enough to have this mid point, use the outside of the previous node
-						let mid = 0.5 * (node.y0 + node.y1);
-						if ((p.prev[0].y0 <= mid) && (p.prev[0].y1 >= mid))
-							pos = mid;
-						else {
-							/*let p = 0.75;
-							pos = p * p.prev[0].y1 + (1-p) * node.parent.y1;
-							pos = node.y0;
-							pos = (p.prev[0].y1 + node.y0) /2;
-							*/
-							pos = p.prev[0].y1;
-						}
-						if (0 >= (-node.marginX + node.x) - (p.prev[0].marginX + p.prev[0].x))
-							stream.path = [[0,0,0],[0,0,0],[0,0,0],[0,0,0]];
-						else
-							stream.path = [
-								[p.prev[0].marginX + p.prev[0].x, pos, pos],
-								[p.prev[0].marginX + prop * p.prev[0].x + (1-prop) * node.x, pos, pos],
-								[-node.marginX + (1-prop) * p.prev[0].x + prop * node.x, node.y0, node.y1],
-								[-node.marginX + node.x, node.y0, node.y1]
-							];
-					}
-
-					if (!this._streamData[node.depth])
-						this._streamData[node.depth] = [];
-					this._streamData[node.depth].push(stream);
-				}
-
-				// make deleted nodes 0
-				for (let n in t[i].deleted) {
-					let node = t[i].deleted[n];
-					let stream = {};
-					stream.depth = node.depth;
-					let p = node;
-					do { p = p.parent }
-					while(!p.next);
-
-					let pos;
-					let mid = (node.y0 + node.y1) /2;
-					if (p.next[0].y1 >= mid)
-						pos = mid;
-					else {
-						pos = p.next[0].y1;
-					}
-				
-					if (0 >= (-p.next[0].marginX + p.next[0].x) - (node.marginX + node.x))
-						stream.path = [[0,0,0],[0,0,0],[0,0,0],[0,0,0]];
-					else
-						stream.path = [
-							[node.marginX + node.x, node.y0, node.y1],
-							[node.marginX + prop * node.x + (1-prop) * p.next[0].x, node.y0, node.y1],
-							[-p.next[0].marginX + (1-prop) * node.x + prop * p.next[0].x, pos, pos],
-							[-p.next[0].marginX + p.next[0].x, pos, pos]
-						];
-
-					// TODO: actually this depth should always exist, but it doesn't
-					if (!this._streamData[node.depth])
-						this._streamData[node.depth] = [];
-					this._streamData[node.depth].push(stream);
-				}
-			}
-		}
-
 		render() {
-			const { animDuration } = this._opts;
-
-			let xScale = d3.scaleLinear()
-				.domain([0, this._maxTime]).nice()
-				.range([this._opts.margin.left, this._opts.width - this._opts.margin.right]);
-
-			let yScale = d3.scaleLinear()
-				.domain([0, 1]).nice()
-				.range([this._opts.height - this._opts.margin.bottom, this._opts.margin.top]);
-				
-			//let color = d3.scaleOrdinal(d3.schemePaired);
-			let color = d3.scaleSequential(d3.interpolateBlues).domain([this._maxDepth, 0]);
-			//let color = d3.scaleSequential(d3.interpolateCubehelixDefault).domain([0, this._maxDepth]);
-
-				/*
-				d3.curveLinear,
-    {"			d3.curveStep,
-    {"			d3.curveStepBefore,
-    {"			d3.curveStepAfter,
-    {"			d3.curveBasis,
-    {"			d3.curveCardinal.tension(0.5),
-    {"			d3.curveMonotoneX,
-    {"			d3.curveCatmullRomOpen.alpha(0.5)
-				*/
-			let area = d3.area()
-				.x(d => xScale(d[0]))
-				.y0(d => yScale(d[1]))
-				.y1(d => yScale(d[2]))
-				.curve(d3.curveMonotoneX)
-			
-			// insert new layers
-			this._pathContainer.selectAll('g')
-				.data(this._streamData)
-				.enter().append('g')
-					.classed('layer', true);
-
-			let layers = this._pathContainer.selectAll('g')
-
-			layers.each(function (layer, i)  {
-				//console.log("Layer " + i);
-				let streams = d3.select(this).selectAll('path.stream')
-					.data(layer);
-				streams.enter().append('path')
-					.classed('stream', true)
-					//.attr('d', (d,i) => area(d.path,i))
-					.style('fill', d => color(d.depth))
-					//.each((d) => console.log (d))
-
-				streams.exit().remove();
-			});
-
-			let streams = d3.selectAll('path.stream')
-				.attr('d', (d,i) => area(d.path,i))
-
-			return this;
-		}
-
-		render2() {
 			let color = d3.scaleSequential(d3.interpolateBlues).domain([this._maxDepth, 0]);
 			
 			let onMouseOver = (d) => {
@@ -582,21 +433,8 @@
 			this.showLabels(this._opts.showLabels);
 			this.drawStroke(this._opts.drawStroke);
 
-			/*
 			let splitData = this._svgFilters.selectAll("clipPath")
 				.data(this._newStreamData.clipPaths, function(d) { return d.id });
-
-			splitData.enter().append("clipPath")
-				.attr('id', d => d.id)
-				.append('path')
-				
-			splitData.exit().remove();
-			this._svgFilters.selectAll("clipPath > path")
-				.attr('d', d => d.path)
-			*/
-			let splitData = this._svgFilters.selectAll("clipPath")
-				.data(this._newStreamData.clipPaths, function(d) { return d.id });
-				// .data(this._newStreamData.clipPaths);
 
 			splitData.enter().append("clipPath")
 				.attr('id', d => "clip" + d.id)
@@ -665,11 +503,8 @@
 			this._applyOrdering();
 			this._calculatePositions();
 
-			//this._calculateStreamData();
-			//this.render();
-
 			this._newStreamData.calculatePaths();
-			this.render2();
+			this.render();
         }
         
         resize(width = this._container.clientWidth, height = this._container.clientHeight) {
@@ -727,8 +562,8 @@
 		}
 
 		setProportion(value) {
-			this._opts.proportion = (value / 2) + 0.5; // map from 0-1 to 0.5-1
-			this._newStreamData.proportion = value
+			this._opts.proportion = +value;
+			this._newStreamData.proportion = +value
 			this._update();
 		}
 

@@ -5,6 +5,7 @@ examples.viscous = transformVisciousFormat(examples.viscous);
 examples.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
 examples.gumtree = transformGumtreeFormat(examples.gumtree);
 examples.filetree = transformVisciousFormat(examples.filetree);
+examples.filetree2 = transformVisciousFormat(examples.filetree2);
 
 function changeSeparationY(func, value) {
 	if (func == "Fixed")
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			unifyPosition: false,
 			drawStroke: false,
 			showLabels: false,
+			splitRoot: false,
 			mirror: false,
 			startEndEncoding: {
 				value: 'plug',
@@ -67,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 					{ value: 'gumtree', text: "Source Code"},
 					{ value: 'gumtreeMin', text: "Minimal Source Code"},
 					{ value: 'filetree', text: "Filetree"},
+					{ value: 'filetree2', text: "Filetree2"},
 				]
 			},
 			offset: {
@@ -179,6 +182,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 			mirror() {
 				stream.mirror = this.mirror;
 			},
+			splitRoot() {
+				stream.splitRoot = this.splitRoot;
+			},
 			filters: {
 				handler: function(filters) {
 					stream.filters(filters)
@@ -195,28 +201,13 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			dataset: {
 				handler: function(dataset) {
-					// TODO: get .data to replace the data properly
+					// TODO: deactivate update. it requires normalizeData to run on .data()
+					//in order to not introduce errors (like not setting correct split values)
+					//stream.automaticUpdate = false;
 					stream.data(examples[dataset.value]).filters(this.filters)
-					//delete stream;
-					
-					// let div = document.querySelector('#wrapper');
-
-					// div.innerHTML = "";
-					// stream = d3.SecStream(div, { automaticUpdate: false })
-					// 	.data(examples[dataset.value]);
-					// stream.startEndEncoding(this.startEndEncoding.value);
-					// stream.startEndEncodingX(this.startEndEncoding.x);
-					// stream.startEndEncodingY(this.startEndEncoding.y);
-					// changeSeparationY(this.separationY, this.separationYValue);
-					// changeSeparationX(this.separationX, this.separationXValue);
-					// stream.setMinSizeThreshold(this.sizeThreshold);
-					// stream.setProportion(this.proportion);
-					// stream.filters(this.filters);
-					// stream.update();
-					// this.applySplits(this.split);
-					// stream.options({ automaticUpdate: true });
-					// stream.update();
-
+					this.applySplits(this.split);
+					//stream.automaticUpdate = true;
+					stream.update();
 				},
 				deep: true
 			},

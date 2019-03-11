@@ -101,10 +101,11 @@
 
 			let x = this._xScale;
 			let y = this._yScale;
+			let prop = this._proportion;
 
 			for(let stream of this._streamNodes) {
-				let queue = [];
 				let d = SvgPath();
+				let lastTimepoint = 0;
 
 				let drawStart = (node) => {
 					// extend to left
@@ -391,8 +392,6 @@
 							 x(t), y(node.y1));
 				};
 
-				let prop = this._proportion;
-				let lastTimepoint = 0;
 				let traverse = (node) => {
 					if (node.x > lastTimepoint)
 						lastTimepoint = node.x;
