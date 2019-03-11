@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			unifyPosition: false,
 			drawStroke: false,
 			showLabels: false,
+			mirror: false,
 			startEndEncoding: {
 				value: 'plug',
 				x: 0.85,
@@ -172,6 +173,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			showLabels() {
 				stream.showLabels(this.showLabels);
+			},
+			mirror() {
+				stream.mirror = this.mirror;
 			},
 			filters: {
 				handler: function(filters) {

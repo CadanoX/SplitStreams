@@ -485,7 +485,7 @@
 					id: stream.streamId,
 					data: stream.data,
 					clipPath: clipPath.get(),
-					textPos: { x: x(stream.x), y: y(stream.y0) }
+					textPos: { x: x(stream.x - 0.5*(1-this._proportion) + 0.5* stream.marginX), y: y(stream.y0) }
 				});
 
 			}

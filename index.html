@@ -55,6 +55,10 @@
                 <label for="unifyPosition">norm. position</label>
             </div>
             <div>
+                <input type="checkbox" id="mirror" v-model="mirror">
+                <label for="mirror">mirror</label>
+            </div>
+            <div>
                 <label><b>Offset:</b></label>
                 <br>
                 <select v-model="offset.value">
@@ -146,6 +150,9 @@
                 <label>y:</label><input type="range" v-model="startEndEncoding.y" step= "0.01" min="-1" max="2" />
             </div>
             <hr>
+            <div>
+                <label><b>EXPERIMENTAL:</b></label>
+            </div>
             <div>
                 <input type="checkbox" id="drawStroke" v-model="drawStroke">
                 <label for="drawStroke">Stroke line</label>

@@ -54,6 +54,7 @@
 				nodeSizeAddOne: true,
 				drawStroke: false,
 				showLabels: false,
+				mirror: false,
 				offset: "silhouette" // zero, expand, silhouette
             }
 			Object.assign(this._opts, opts);
@@ -96,6 +97,7 @@
 		set unifySize(unify) { this._opts.unifySize = unify; this._update() }
 		set nodeSizeAddOne(option) { this._opts.nodeSizeAddOne = option; this._update() }
 		set unifyPosition(unify) { this._opts.unifyPosition = unify; this._update() }
+		set mirror(mirror) { this._opts.mirror = mirror; this._update() }
 
         _setData(d) {
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
@@ -389,9 +391,11 @@
 				.domain([this._minTime - 0.5, this._maxTime + 0.5]).nice()
 				.range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
 
+			let domain = this._opts.mirror ? [1, 0] : [0, 1];
 			this._newStreamData.yScale = d3.scaleLinear()
-				.domain([0, 1]).nice()
+				.domain(domain).nice()
 				.range([height - margin.bottom, margin.top]);
+				//.range(margin.top, height - margin.bottom);
 		}
 
 		_calculateStreamData() {
