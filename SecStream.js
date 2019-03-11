@@ -162,6 +162,7 @@
 				.attr('width', this._container.clientWidth)
 				.call(d3.zoom().on('zoom', () => {
 					this._pathContainer.attr('transform', d3.event.transform);
+					this._textContainer.attr('transform', d3.event.transform);
 				}));
                 //.on("contextmenu", () => d3.event.preventDefault());
                 //.append('g')
@@ -570,6 +571,9 @@
 				.on("mouseout", onMouseOut)
 				.attr('clip-path', d => 'url(#clip' + d.id + ')')
 				.attr('id', d => 'stream' + d.id)
+				.attr('shape-rendering', 'geometricPrecision')
+				.attr('paint-order', 'stroke')
+				.attr('stroke-width', 3)
 				.merge(streams)
 					.attr('d', d => d.path)
 			
@@ -610,7 +614,7 @@
 				.data(labelData, function(d) { return d.id });
 
 			labels.enter().append('text')
-				.text(d => !!d.data ? d.data.typeLabel : "")
+				.text(d => !!d.data ? d.data.typeLabel : d.id)
 				.merge(labels)
 					.attr('x', d => d.textPos.x)
 					.attr('y', d => d.textPos.y)

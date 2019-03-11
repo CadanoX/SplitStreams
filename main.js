@@ -4,6 +4,7 @@ examples.viscousMin = transformVisciousFormat(examples.viscousMin);
 examples.viscous = transformVisciousFormat(examples.viscous);
 examples.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
 examples.gumtree = transformGumtreeFormat(examples.gumtree);
+examples.filetree = transformVisciousFormat(examples.filetree);
 
 function changeSeparationY(func, value) {
 	if (func == "Fixed")
@@ -64,7 +65,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 					{ value: 'viscous', text: "Viscous Fingers"},
 					{ value: 'viscousMin', text: "Minimal Viscous"},
 					{ value: 'gumtree', text: "Source Code"},
-					{ value: 'gumtreeMin', text: "Minimal Source Code"}
+					{ value: 'gumtreeMin', text: "Minimal Source Code"},
+					{ value: 'filetree', text: "Filetree"},
 				]
 			},
 			offset: {

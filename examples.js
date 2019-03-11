@@ -342,6 +342,45 @@ const examples = {
 		},
 		
 	},
+	"filetree": {
+		N: {
+			'My folder': { l: 0, t: 0 },
+			'Documents': { l: 1, t: 0 },
+			'Pictures': { l: 1, t: 0 },
+			'doc1.txt': { l: 2, t: 0 },
+			'doc2.txt': { l: 2, t: 0 },
+			'pic1.png': { l: 2, t: 0 },
+
+			'2My folder': { l: 0, t: 1 },
+			'2Documents': { l: 1, t: 1 },
+			'2Pictures': { l: 1, t: 1 },
+			'2doc1.txt': { l: 2, t: 1 },
+			'2doc2.txt': { w: 2, l: 2, t: 1 },
+			'2pic1.png': { l: 2, t: 1 }
+		},
+		EN: {
+			0: {
+				'My folder': ['Documents', 'Pictures'],
+				'Documents': ['doc1.txt', 'doc2.txt'],
+				'Pictures': ['pic1.png']
+			},
+			1: {
+				'2My folder': ['2Documents', '2Pictures'],
+				'2Documents': ['2doc1.txt', '2doc2.txt'],
+				'2Pictures': ['2pic1.png']
+			}
+		},
+		ET: {
+			0: {
+				'My folder': ['2My folder'],
+				'Documents': ['2Documents'],
+				'Pictures': ['2Pictures'],
+				'doc1.txt': ['2doc1.txt'],
+				'doc2.txt': ['2doc2.txt'],
+				'pic1.png': ['2pic1.png'],
+			},
+		}
+	},
 	"gumtree": {
 		"timesteps": [
 			{

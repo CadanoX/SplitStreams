@@ -479,13 +479,25 @@
 					path: clipPath.get()
 				}
 
+
+				let textPos;
+				if (Math.abs(y(stream.y1) - y(stream.y0)) < 25)
+					textPos = -1;
+				else {
+					if (y(stream.y1) > y(stream.y0))
+						textPos = y(stream.y0) + 15
+					else
+						textPos = y(stream.y1) + 15;
+				}
+
 				this._streams.push({
 					path: d.get(),
 					depth: stream.depth,
 					id: stream.streamId,
 					data: stream.data,
 					clipPath: clipPath.get(),
-					textPos: { x: x(stream.x - 0.5*(1-this._proportion) + 0.5* stream.marginX), y: y(stream.y0) }
+					textPos: { x: x(stream.x - 0.5*(1-this._proportion) + 0.5* stream.marginX),
+										 y: textPos }
 				});
 
 			}
