@@ -77,10 +77,6 @@
     </div>
 
     <script>
-        function formatData(data) {
-
-        }
-
         const wrapper = document.querySelector('#app');
 
         for(let test in examples.tests) {
@@ -98,7 +94,14 @@
             testResult.className = "result";
             div.appendChild(testResult);
 
-            let data = transformGumtreeFormat(examples.tests[test]);
+            let data = examples.tests[test];
+            if (data.format == "gumtree")
+                data = transformGumtreeFormat(data);
+            else if (data.format == "viscous")
+                data = transformViscousFormat(data);
+            else
+                console.log("Data format \"" + data.format + "\" is not supported.");
+
             d3.SecStream(testResult, {zoomTimeFactor: 2, width: 200, height: 200, margin: {top: 5, bottom: 5, right: 100, left: -100}})
                 .data(data);
         }

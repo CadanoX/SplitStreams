@@ -1,6 +1,7 @@
 const examples = {
 	"tests": {
 		"valueChange": {
+			"format": "gumtree",
 			"timesteps": [
 				{
 					"root": {
@@ -27,6 +28,7 @@ const examples = {
 			]
 		},
 		"nesting": {
+			"format": "gumtree",
 			"timesteps": [
 				{
 					"root": {
@@ -69,6 +71,7 @@ const examples = {
 			]
 		},
 		"posChange": {
+			"format": "gumtree",
 			"timesteps": [
 				{
 					"root": {
@@ -111,6 +114,7 @@ const examples = {
 			]
 		},
 		"add": {
+			"format": "gumtree",
 			"timesteps": [
 				{
 					"root": {
@@ -151,6 +155,7 @@ const examples = {
 			]
 		},
 		"delete": {
+			"format": "gumtree",
 			"timesteps": [
 				{
 					"root": {
@@ -189,6 +194,7 @@ const examples = {
 			]
 		},
 		"moveAlong": {
+			"format": "gumtree",
 			"timesteps": [
 				{
 					"root": {
@@ -243,6 +249,7 @@ const examples = {
 			]
 		},
 		"moveAcross": {
+			"format": "gumtree",
 			"timesteps": [
 				{
 					"root": {
@@ -299,6 +306,7 @@ const examples = {
 			]
 		},
 		"parentSwap": {
+			"format": "gumtree",
 			"timesteps": [
 				{
 					"root": {
@@ -340,7 +348,55 @@ const examples = {
 				}
 			]
 		},
-		
+		"split": {
+			format: "viscous",
+			N: {
+				'1': { l: 0, t: 0 },
+	
+				'2': { l: 0, t: 1 },
+				'3': { l: 0, t: 1 },
+			},
+			EN: {
+				0: {
+					'1': []
+				},
+				1: {
+					'2': [],
+					'3': []
+				}
+			},
+			ET: {
+				0: {
+					'1': ['2', '3']
+				},
+			}
+		},
+		"merge": {
+			format: "viscous",
+			N: {
+				'1': { l: 0, t: 0 },
+				'2': { l: 0, t: 0 },
+
+				'3': { l: 0, t: 1 },
+			},
+			EN: {
+				0: {
+					'1': [],
+					'2': []
+				},
+				1: {
+					'3': []
+				}
+			},
+			ET: {
+				0: {
+					'1': ['3']
+				},
+				1: {
+					'2': ['3']
+				}
+			}
+		},
 	},
 	"filetree": {
 		N: {

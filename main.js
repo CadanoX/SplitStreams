@@ -1,11 +1,11 @@
 var stream;
 
-examples.viscousMin = transformVisciousFormat(examples.viscousMin);
-examples.viscous = transformVisciousFormat(examples.viscous);
+examples.viscousMin = transformViscousFormat(examples.viscousMin);
+examples.viscous = transformViscousFormat(examples.viscous);
 examples.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
 examples.gumtree = transformGumtreeFormat(examples.gumtree);
-examples.filetree = transformVisciousFormat(examples.filetree);
-examples.filetree2 = transformVisciousFormat(examples.filetree2);
+examples.filetree = transformViscousFormat(examples.filetree);
+examples.filetree2 = transformViscousFormat(examples.filetree2);
 
 function changeSeparationY(func, value) {
 	if (func == "Fixed")

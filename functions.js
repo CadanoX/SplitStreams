@@ -20,7 +20,7 @@ function getRandomColor() {
 	return color;
 }
 
-function transformVisciousFormat(data)
+function transformViscousFormat(data)
 {
 	// init
 	let format = { timesteps: []};
@@ -101,7 +101,6 @@ function transformVisciousFormat(data)
 				next.prev.push(node)
 			}
 		}
-
 	}
 
     return format
