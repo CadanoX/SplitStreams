@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>SecStream Generator</title>
+	
+    <link type="text/css" rel="stylesheet" href="libs/vue-resize/dist/vue-resize.css" media="screen"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css" media="screen"/>
+    <link type="text/css" rel="stylesheet" href="css/SecStream.css" media="screen"/>
+
+    <!-- libraries-->
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue-resize/dist/vue-resize.min.js"></script>
+	<script type="text/javascript" src="libs/d3_5.7.0.js"></script>
+	
+	<!-- modules -->
+    <script type="text/javascript" src="js/SvgPath.js"></script>
+    <script type="text/javascript" src="js/SecStreamData.js"></script>
+    <script type="text/javascript" src="js/SecStream.js"></script>
+    <script type="text/javascript" src="js/DataGenerator.js"></script>
+	
+    <!-- general -->
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+</head>
+<body>
+    <div id="app">
+            <div class="controls">
+                <div>
+                    <label><b>Timesteps:</b></label>
+                    <br>
+                    <input type="range" v-model="timesteps" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <label><b>Num Streams:</b></label>
+                    <br>
+                    <input type="range" v-model="numStreams" step= "1" min="2" max="100" />
+                </div>
+                <div>
+                    <label><b>Max Depth:</b></label>
+                    <br>
+                    <input type="range" v-model="maxDepth" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <label><b>Max Children:</b></label>
+                    <br>
+                    <input type="range" v-model="maxChildren" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <label><b>Num Merges:</b></label>
+                    <br>
+                    <input type="range" v-model="numMerges" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <label><b>Num Splits:</b></label>
+                    <br>
+                    <input type="range" v-model="numSplits" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <label><b>Num Move Across:</b></label>
+                    <br>
+                    <input type="range" v-model="numMoveAcross" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <label><b>Num Move Along:</b></label>
+                    <br>
+                    <input type="range" v-model="numMoveAlong" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <label><b>Num Adds:</b></label>
+                    <br>
+                    <input type="range" v-model="numAdds" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <label><b>Num Deleted:</b></label>
+                    <br>
+                    <input type="range" v-model="numDeleted" step= "1" min="2" max="10" />
+                </div>
+                <div>
+                    <button v-on:click="generate">Generate</button>
+                </div>
+            </div>
+
+            <div id="wrapper">
+                <resize-observer @notify="wrapperResize" />
+            </div>
+    </div>
+
+    <script>
+        var stream;
+        const generator = DataGenerator();
+
+        document.addEventListener("DOMContentLoaded", function(event)
+        {
+            let app = new Vue({
+                el: '#app',
+                data: {
+                    timesteps: 3,
+                    numStreams: 5,
+                    maxDepth: 0,
+                    maxChildren: 0,
+                    numMerges: 0,
+                    numSplits: 0,
+                    numMoveAcross: 0,
+                    numMoveAlong: 0,
+                    numAdds: 0,
+                    numDeleted: 0,
+                },
+                watch: {
+                    timesteps: function(val) {
+                        generator.options({ timesteps: val });
+                        this.draw();
+                    },
+                    numStreams: function(val) {
+                        generator.options({ numStreams: val });
+                        this.draw();
+                    },
+                    maxDepth: function(val) {
+                        generator.options({ maxDepth: val });
+                        this.draw();
+                    },
+                    maxChildren: function(val) {
+                        generator.options({ maxChildren: val });
+                        this.draw();
+                    },
+                    numMerges: function(val) {
+                        generator.options({ numMerges: val });
+                        this.draw();
+                    },
+                    numSplits: function(val) {
+                        generator.options({ numSplits: val });
+                        this.draw();
+                    },
+                    numMoveAcross: function(val) {
+                        generator.options({ numMoveAcross: val });
+                        this.draw();
+                    },
+                    numMoveAlong: function(val) {
+                        generator.options({ numMoveAlong: val });
+                        this.draw();
+                    },
+                    numgenerators: function(val) {
+                        generator.options({ numStreams: val });
+                        this.draw();
+                    },
+                    numAdds: function(val) {
+                        generator.options({ numAdds: val });
+                        this.draw();
+                    },
+                    numDeleted: function(val) {
+                        generator.options({ numDeleted: val });
+                        this.draw();
+                    },
+                },
+                methods: {
+                    generate: function() {
+                        generator.options({
+                            timesteps: this.timesteps,
+                            numStreams: this.numStreams,
+                            maxDepth: this.maxDepth,
+                            maxChildren: this.maxChildren,
+                            numMerges: this.numMerges,
+                            numSplits: this.numSplits,
+                            numMoveAcross: this.numMoveAcross,
+                            numMoveAlong: this.numMoveAlong,
+                            numAdds: this.numAdds,
+                            numDeleted: this.numDeleted,
+                        });
+                        this.draw();
+                    },
+                    draw: function() {
+                        generator.generate();
+                        let data = transformViscousFormat(generator.get())
+                        stream.data(data)
+                    },
+                    wrapperResize(...args) {
+                        stream.resize();
+                    },
+                }
+            });
+
+            let div = document.querySelector('#wrapper');
+            stream = d3.SecStream(div);
+        });
+
+    </script>
+</body>
+</html>

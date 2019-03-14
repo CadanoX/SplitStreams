@@ -143,9 +143,8 @@ function transformGumtreeFormat(data)
 				//}
 			}
 
-		dest.id = idx;
-		currentTimestep.references[idx] = dest;
-		idx++;
+		dest.id = idx++;
+		currentTimestep.references[dest.id] = dest;
 		dest.size = src.length;
 		dest.pos = src.pos;
 		dest.data = {

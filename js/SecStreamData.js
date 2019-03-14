@@ -503,7 +503,9 @@
 			this._clipPaths = this._streams.map(({id, clipPath}) => ({id, path: clipPath}));
 
 			// TODO: apply an order in which children are drawn right
-			this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)
+            this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)
+            //this._streams.sort((a,b) => a.id < b.id ? -1: 1)
+            //this._streams.reverse();
 		}
     }
     

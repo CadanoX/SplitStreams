@@ -400,19 +400,19 @@ const examples = {
 	},
 	"filetree": {
 		N: {
-			'MyFolder': { l: 0, t: 0 },
-			'Documents': { l: 1, t: 0 },
-			'Pictures': { l: 1, t: 0 },
-			'doc1.txt': { l: 2, t: 0 },
-			'doc2.txt': { l: 2, t: 0 },
-			'pic1.png': { l: 2, t: 0 },
+			'MyFolder': { l: 0, t: 0, w: 50},
+			'Documents': { l: 1, t: 0, w: 20 },
+			'Pictures': { l: 1, t: 0, w: 20 },
+			'doc1.txt': { l: 2, t: 0, w: 5 },
+			'doc2.txt': { l: 2, t: 0, w: 5 },
+			'pic1.png': { l: 2, t: 0, w: 5 },
 
-			'2MyFolder': { l: 0, t: 1 },
-			'2Documents': { l: 1, t: 1 },
-			'2Pictures': { l: 1, t: 1 },
-			'2doc1.txt': { l: 2, t: 1 },
-			'2doc2.txt': { w: 2, l: 2, t: 1 },
-			'2pic1.png': { l: 2, t: 1 }
+			'2MyFolder': { l: 0, t: 1, w: 50 },
+			'2Documents': { l: 1, t: 1, w: 20 },
+			'2Pictures': { l: 1, t: 1, w: 20 },
+			'2doc1.txt': { l: 2, t: 1, w: 5 },
+			'2doc2.txt': { l: 2, t: 1, w: 10 },
+			'2pic1.png': { l: 2, t: 1, w: 5 },
 		},
 		EN: {
 			0: {

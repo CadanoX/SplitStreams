@@ -423,6 +423,7 @@
 				.attr('clip-path', d => 'url(#clip' + d.id + ')')
 				.attr('id', d => 'stream' + d.id)
 				.attr('shape-rendering', 'geometricPrecision')
+				//.attr('shape-rendering', 'optimizeSpeed')
 				.attr('paint-order', 'stroke')
 				.attr('stroke-width', 3)
 				.merge(streams)
