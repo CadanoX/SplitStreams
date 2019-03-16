@@ -225,7 +225,7 @@
                     }
                 }   
                 let newChildren = EN[time][newParent];
-                if (movePos = -1)
+                if (movePos == -1)
                     movePos = Math.round(Math.random() * (newChildren.length - 1));
                 else if (movePos > newChildren.length-1)
                     movePos = newChildren.length-1;
@@ -245,11 +245,15 @@
                 // the new parent can not be in the subtree of the current node and should not be the current parent
                 let subtree = this.__subtree(nodeToMove);
                 let parent = this.__parent(nodeToMove);
-                let possibleNewParents = Object.entries(EN[time]).filter(([key, val]) => !(subtree.includes(key) && key != parent));
-                let rand = Math.round(Math.random() * (possibleNewParents.length - 1));
-                let newParent = possibleNewParents[rand][0];
-                // move node in all following timesteps
-                moveFollowingNodes(nodeToMove, time, parent, newParent);
+                if (typeof parent != 'undefined') { // TODO: this should only be the root node, which should have been filtered out by .modified
+                    let possibleNewParents = Object.entries(EN[time]).filter(([key, val]) => !(subtree.includes(key) && key != parent));
+                    if (possibleNewParents.length == 0)
+                        debugger;
+                    let rand = Math.round(Math.random() * (possibleNewParents.length - 1));
+                    let newParent = possibleNewParents[rand][0];
+                    // move node in all following timesteps
+                    moveFollowingNodes(nodeToMove, time, parent, newParent);
+                }
             }
         }
 
