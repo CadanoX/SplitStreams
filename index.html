@@ -59,6 +59,15 @@
                 <label for="mirror">mirror</label>
             </div>
             <div>
+                <label><b>Color:</b></label>
+                <br>
+                <select v-model="color.value">
+                    <option v-for="option in color.options" v-bind:value="option.value">
+                    {{ option.text }}
+                    </option>
+                </select>
+            </div>
+            <div>
                 <label><b>Offset:</b></label>
                 <br>
                 <select v-model="offset.value">

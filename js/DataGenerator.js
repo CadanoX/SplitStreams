@@ -74,7 +74,7 @@
         }
 
         __uniqueID() {
-            return this._id++;
+            return (this._id++).toString();
         }
 
         __parent(node) {
@@ -86,6 +86,19 @@
                         return parent;
             }
             return undefined;
+        }
+
+        __children(node) {
+            let {N,EN,ET} = this._data;
+            return EN[N[node].t][node];
+        }
+
+        __subtree(node) {
+            let children = this.__children(node);
+            let subtree = [node];
+            for (let child in children)
+                subtree.push(...this.__subtree(children[child]))
+            return subtree;
         }
         
         _genStreams() {
@@ -100,7 +113,7 @@
                 for (let t = 0; t < timesteps; t++) {
                     let id = this.__uniqueID();
                     // create Node
-                    N[id] = { t: t, l: 0 }
+                    N[id] = { t: t, l: 0, modified: false }
                     this._numNodes++;
                     // create history
                     if (t != timesteps - 1)
@@ -136,6 +149,9 @@
                     // find a random node in the hierarchy to assign to
                     let rand2 = Math.round(Math.random() * (nodesAssigned - 1));
                     EN[0][Object.keys(nodesInHierarchy)[rand2]].push(node[0]);
+                }
+                else {
+                    N[node[0]].modified = true; // we later don't want to change the root node
                 }
 
                 // flag the node to say it is in the hierarchy
@@ -190,7 +206,8 @@
         _genMoveAcross() {
             let {numMoveAcross} = this._opts;
             let {N,EN,ET} = this._data;
-            let nodes = Object.entries(N).filter(([id, node]) => node.t != 0);
+
+            let nodes = Object.entries(N).filter(([id, node]) => node.t > 0 && node.modified == false);
 
             let numMoves = numMoveAcross;
             if (nodes.length < numMoveAcross) {
@@ -210,7 +227,9 @@
                 let newChildren = EN[time][newParent];
                 if (movePos = -1)
                     movePos = Math.round(Math.random() * (newChildren.length - 1));
-                
+                else if (movePos > newChildren.length-1)
+                    movePos = newChildren.length-1;
+                    
                 newChildren.splice(movePos, 0, node);
                 
                 if (!!ET[time])
@@ -221,12 +240,16 @@
             for (let i = 0; i < numMoves; i++) {
                 let nodeToMove = random.pop()[0];
                 let time = N[nodeToMove].t;
+                N[nodeToMove].modified = true;
                 // choose a new parent
-                let possibleNewParents = Object.entries(EN[time]);
+                // the new parent can not be in the subtree of the current node and should not be the current parent
+                let subtree = this.__subtree(nodeToMove);
+                let parent = this.__parent(nodeToMove);
+                let possibleNewParents = Object.entries(EN[time]).filter(([key, val]) => !(subtree.includes(key) && key != parent));
                 let rand = Math.round(Math.random() * (possibleNewParents.length - 1));
                 let newParent = possibleNewParents[rand][0];
                 // move node in all following timesteps
-                moveFollowingNodes(nodeToMove, time, this.__parent(nodeToMove), newParent);
+                moveFollowingNodes(nodeToMove, time, parent, newParent);
             }
         }
 

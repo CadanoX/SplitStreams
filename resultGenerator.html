@@ -30,6 +30,15 @@
     <div id="app">
             <div class="controls">
                 <div>
+                    <label><b>Color:</b></label>
+                    <br>
+                    <select v-model="color.value">
+                        <option v-for="option in color.options" v-bind:value="option.value">
+                        {{ option.text }}
+                        </option>
+                    </select>
+                </div>
+                <div>
                     <label><b>Timesteps:</b> {{timesteps}}</label>
                     <br>
                     <input type="range" v-model="timesteps" step= "1" min="2" max="10" />
@@ -98,6 +107,46 @@
             let app = new Vue({
                 el: '#app',
                 data: {
+                    color: {
+                        value: 'interpolateBlues',
+                        options: [
+                            { value: 'random', text: 'random' },
+                            { value: 'schemeCategory10', text: 'schemeCategory10' },
+                            { value: 'schemeAccent', text: 'schemeAccent' },
+                            { value: 'schemeDark2', text: 'schemeDark2' },
+                            { value: 'schemePaired', text: 'schemePaired' },
+                            { value: 'schemePastel1', text: 'schemePastel1' },
+                            { value: 'schemePastel2', text: 'schemePastel2' },
+                            { value: 'schemeSet1', text: 'schemeSet1' },
+                            { value: 'schemeSet2', text: 'schemeSet2' },
+                            { value: 'schemeSet3', text: 'schemeSet3' },
+                            { value: 'interpolateBlues', text: 'interpolateBlues' },
+                            { value: 'interpolateGreens', text: 'interpolateGreens' },
+                            { value: 'interpolateGreys', text: 'interpolateGreys' },
+                            { value: 'interpolateOranges', text: 'interpolateOranges' },
+                            { value: 'interpolatePurples', text: 'interpolatePurples' },
+                            { value: 'interpolateReds', text: 'interpolateReds' },
+                            { value: 'interpolateViridis', text: 'interpolateViridis' },
+                            { value: 'interpolateInferno', text: 'interpolateInferno' },
+                            { value: 'interpolateMagma', text: 'interpolateMagma' },
+                            { value: 'interpolatePlasma', text: 'interpolatePlasma' },
+                            { value: 'interpolateWarm', text: 'interpolateWarm' },
+                            { value: 'interpolateCool', text: 'interpolateCool' },
+                            { value: 'interpolateCubehelixDefault', text: 'interpolateCubehelixDefault' },
+                            { value: 'interpolateBuGn', text: 'interpolateBuGn' },
+                            { value: 'interpolateBuPu', text: 'interpolateBuPu' },
+                            { value: 'interpolateGnBu', text: 'interpolateGnBu' },
+                            { value: 'interpolateOrRd', text: 'interpolateOrRd' },
+                            { value: 'interpolatePuBuGn', text: 'interpolatePuBuGn' },
+                            { value: 'interpolatePuBu', text: 'interpolatePuBu' },
+                            { value: 'interpolatePuRd', text: 'interpolatePuRd' },
+                            { value: 'interpolateRdPu', text: 'interpolateRdPu' },
+                            { value: 'interpolateYlGnBu', text: 'interpolateYlGnBu' },
+                            { value: 'interpolateYlGn', text: 'interpolateYlGn' },
+                            { value: 'interpolateYlOrBr', text: 'interpolateYlOrBr' },
+                            { value: 'interpolateYlOrRd', text: 'interpolateYlOrRd' },
+                        ]
+                    },
                     timesteps: 3,
                     numStreams: 5,
                     maxDepth: 0,
@@ -109,7 +158,7 @@
                     numAdds: 0,
                     numDeleted: 0,
                 },
-                watch: {
+			    watch: {
                     timesteps: function(val) {
                         generator.options({ timesteps: val });
                         this.draw();
@@ -153,6 +202,121 @@
                     numDeleted: function(val) {
                         generator.options({ numDeleted: val });
                         this.draw();
+                    },
+                    color: {
+                        handler: function(color) {
+                            stream.colorRandom = false;
+                            switch (color.value) {
+                                case 'random':
+                                    stream.colorRandom = true;
+                                    break;							
+                                case 'schemeCategory10':
+                                    stream.color = d3.scaleOrdinal(d3.schemeCategory10);
+                                    break;
+                                case 'schemeAccent':
+                                    stream.color = d3.scaleOrdinal(d3.schemeAccent);
+                                    break;
+                                case 'schemeDark2':
+                                    stream.color = d3.scaleOrdinal(d3.schemeDark2);
+                                    break;
+                                case 'schemePaired':
+                                    stream.color = d3.scaleOrdinal(d3.schemePaired);
+                                    break;
+                                case 'schemePastel1':
+                                    stream.color = d3.scaleOrdinal(d3.schemePastel1);
+                                    break;
+                                case 'schemePastel2':
+                                    stream.color = d3.scaleOrdinal(d3.schemePastel2);
+                                    break;
+                                case 'schemeSet1':
+                                    stream.color = d3.scaleOrdinal(d3.schemeSet1);
+                                    break;
+                                case 'schemeSet2':
+                                    stream.color = d3.scaleOrdinal(d3.schemeSet2);
+                                    break;
+                                case 'schemeSet3':
+                                    stream.color = d3.scaleOrdinal(d3.schemeSet3);
+                                    break;
+                                case 'interpolateBlues':
+                                    stream.color = d3.scaleSequential(d3.interpolateBlues);
+                                    break;
+                                case 'interpolateGreens':
+                                    stream.color = d3.scaleSequential(d3.interpolateGreens);
+                                    break;
+                                case 'interpolateGreys':
+                                    stream.color = d3.scaleSequential(d3.interpolateGreys);
+                                    break;
+                                case 'interpolateOranges':
+                                    stream.color = d3.scaleSequential(d3.interpolateOranges);
+                                    break;
+                                case 'interpolatePurples':
+                                    stream.color = d3.scaleSequential(d3.interpolatePurples);
+                                    break;
+                                case 'interpolateReds':
+                                    stream.color = d3.scaleSequential(d3.interpolateReds);
+                                    break;
+                                case 'interpolateViridis':
+                                    stream.color = d3.scaleSequential(d3.interpolateViridis);
+                                    break;
+                                case 'interpolateInferno':
+                                    stream.color = d3.scaleSequential(d3.interpolateInferno);
+                                    break;
+                                case 'interpolateMagma':
+                                    stream.color = d3.scaleSequential(d3.interpolateMagma);
+                                    break;
+                                case 'interpolatePlasma':
+                                    stream.color = d3.scaleSequential(d3.interpolatePlasma);
+                                    break;
+                                case 'interpolateWarm':
+                                    stream.color = d3.scaleSequential(d3.interpolateWarm);
+                                    break;
+                                case 'interpolateCool':
+                                    stream.color = d3.scaleSequential(d3.interpolateCool);
+                                    break;
+                                case 'interpolateCubehelixDefault':
+                                    stream.color = d3.scaleSequential(d3.interpolateCubehelixDefault);
+                                    break;
+                                case 'interpolateBuGn':
+                                    stream.color = d3.scaleSequential(d3.interpolateBuGn);
+                                    break;
+                                case 'interpolateBuPu':
+                                    stream.color = d3.scaleSequential(d3.interpolateBuPu);
+                                    break;
+                                case 'interpolateGnBu':
+                                    stream.color = d3.scaleSequential(d3.interpolateGnBu);
+                                    break;
+                                case 'interpolateOrRd':
+                                    stream.color = d3.scaleSequential(d3.interpolateOrRd);
+                                    break;
+                                case 'interpolatePuBuGn':
+                                    stream.color = d3.scaleSequential(d3.interpolatePuBuGn);
+                                    break;
+                                case 'interpolatePuBu':
+                                    stream.color = d3.scaleSequential(d3.interpolatePuBu);
+                                    break;
+                                case 'interpolatePuRd':
+                                    stream.color = d3.scaleSequential(d3.interpolatePuRd);
+                                    break;
+                                case 'interpolateRdPu':
+                                    stream.color = d3.scaleSequential(d3.interpolateRdPu);
+                                    break;
+                                case 'interpolateYlGnBu':
+                                    stream.color = d3.scaleSequential(d3.interpolateYlGnBu);
+                                    break;
+                                case 'interpolateYlGn':
+                                    stream.color = d3.scaleSequential(d3.interpolateYlGn);
+                                    break;
+                                case 'interpolateYlOrBr':
+                                    stream.color = d3.scaleSequential(d3.interpolateYlOrBr);
+                                    break;
+                                case 'interpolateYlOrRd':
+                                    stream.color = d3.scaleSequential(d3.interpolateYlOrRd);
+                                    break;
+                                default:
+                                    stream.color = d3.scaleSequential(d3.interpolateBlues);
+                            }
+                        },
+                        deep: true
                     },
                 },
                 methods: {

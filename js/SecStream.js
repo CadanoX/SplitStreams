@@ -83,6 +83,9 @@
 			this._separationXMethod = this.marginXFixed;
 			this._separationYMethod = this.marginYFixed;
 
+			this._color = d3.scaleSequential(d3.interpolateBlues);
+			this._colorRandom = false;
+
             this._init();
         }
         
@@ -100,6 +103,8 @@
 		set unifyPosition(unify) { this._opts.unifyPosition = unify; this._update() }
 		set mirror(mirror) { this._opts.mirror = mirror; this._update() }
 		set splitRoot(splitRoot) { this._opts.splitRoot = splitRoot; this._update() }
+		set color(colorFunction) { this._color = colorFunction; this.render() }
+		set colorRandom(random) { this._colorRandom = random; this.render() }
 
         _setData(d) {
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
@@ -403,7 +408,7 @@
 		}
 
 		render() {
-			let color = d3.scaleSequential(d3.interpolateBlues).domain([this._maxDepth, 0]);
+			let color = this._colorRandom ? getRandomColor : this._color.domain([this._maxDepth, 0]);
 			
 			let onMouseOver = (d) => {
 				console.log("id: " + d.id);
@@ -417,7 +422,6 @@
 
 			streams.enter().append('path')
 				.classed('stream', true)
-				.style('fill', d => color(d.depth))
 				.on("mouseover", onMouseOver)
 				.on("mouseout", onMouseOut)
 				.attr('clip-path', d => 'url(#clip' + d.id + ')')
@@ -428,6 +432,7 @@
 				.attr('stroke-width', 3)
 				.merge(streams)
 					.attr('d', d => d.path)
+					.style('fill', d => color(d.depth))
 			
 			streams.exit().remove();
 
