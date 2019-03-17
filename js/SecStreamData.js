@@ -105,7 +105,8 @@
 
 			for(let stream of this._streamNodes) {
 				let d = SvgPath();
-				let lastTimepoint = 0;
+                let lastTimepoint = 0;
+                let deepestDepth = 0; // find the deepest depth each stream has over the whole timeseries
 
 				let drawStart = (node) => {
 					// extend to left
@@ -134,6 +135,29 @@
 				}
 
 				let drawEnd = (node) => {
+                    
+                    /* TEST CODE FOR DATA GENERATOR */
+					// extend to right
+					let t = node.x + 0.5*(1-prop);
+                    d.horizontal(x(t));
+                    
+                    // find infinite loop
+                    let root = node;
+                    let i = 0;
+					while(!!root.parent && i < 10) {
+                        root = root.parent;
+                        i++;
+                    }
+                    if (i == 10)
+                        console.log("infinite loop")
+                    
+                    // draw ending
+                    d.vertical(y(node.y1));
+
+					// connect back
+                    d.horizontal(x(node.x));
+                    
+                    /*
 					// extend to right
 					let t = node.x + 0.5*(1-prop);
 					d.horizontal(x(t));
@@ -155,7 +179,8 @@
 					}
 					
 					// connect back
-					d.horizontal(x(node.x));
+                    d.horizontal(x(node.x)
+                    */
 				}
 
 
@@ -394,7 +419,10 @@
 
 				let traverse = (node) => {
 					if (node.x > lastTimepoint)
-						lastTimepoint = node.x;
+                        lastTimepoint = node.x;
+                    
+                    if (node.depth > deepestDepth)
+                        deepestDepth = node.depth;
 
 					if (!!node.next) {
 						let dt = node.next[0].x - node.x;
@@ -491,7 +519,8 @@
 
 				this._streams.push({
 					path: d.get(),
-					depth: stream.depth,
+                    depth: stream.depth,
+                    deepestDepth: deepestDepth,
 					id: stream.streamId,
 					data: stream.data,
 					clipPath: clipPath.get(),
@@ -502,8 +531,9 @@
 			}
 			this._clipPaths = this._streams.map(({id, clipPath}) => ({id, path: clipPath}));
 
-			// TODO: apply an order in which children are drawn right
-            this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)
+			// TODO: apply an order in which children are drawn correctly
+            // this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)
+            this._streams.sort((a,b) => (a.deepestDepth < b.deepestDepth) ? -1 : 1)
             //this._streams.sort((a,b) => a.id < b.id ? -1: 1)
             //this._streams.reverse();
 		}

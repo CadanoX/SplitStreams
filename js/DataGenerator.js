@@ -78,7 +78,7 @@
         }
 
         __parent(node) {
-            let {N,EN,ET} = this._data;
+            let {N,EN} = this._data;
             let time = N[node].t;
             for (let parent in EN[time]) {
                 for (let child in EN[time][parent])
@@ -89,8 +89,14 @@
         }
 
         __children(node) {
-            let {N,EN,ET} = this._data;
+            let {N,EN} = this._data;
             return EN[N[node].t][node];
+        }
+
+        // return an array of the nodes in the next timestep, this node maps to
+        __next(node) {
+            let {N,ET} = this._data;
+            return ET[N[node].streamId][node];
         }
 
         __subtree(node) {
@@ -105,21 +111,25 @@
             let {numStreams, timesteps} = this._opts;
             let {N,EN,ET} = this._data;
 
-            for (let t = 0; t < timesteps-1; t++)
-                ET[t] = {};
-
             for (let n = 0; n < numStreams; n++) {
+                ET[n] = {};
                 let lastId;
                 for (let t = 0; t < timesteps; t++) {
                     let id = this.__uniqueID();
                     // create Node
-                    N[id] = { t: t, l: 0, modified: false }
+                    N[id] = {
+                        t: t,
+                        l: 0, // initialize depth
+                        modified: false,
+                        streamId: n // set ID in ET array
+                    }
                     this._numNodes++;
                     // create history
-                    if (t != timesteps - 1)
-                         ET[t][id] = [];
-                    if (t != 0)
-                        ET[t-1][lastId].push(id);
+                    // last timestep does not define a next node
+                    if (t > 0) {
+                        ET[n][lastId] = [id];
+                    }
+                    
                     lastId = id;
                 }
             }
@@ -128,7 +138,7 @@
         _genHierarchy() {
             // push complete streams into other streams as their child
             let {numStreams, timesteps} = this._opts;
-            let {N,EN,ET} = this._data;
+            let {N,EN} = this._data;
             for (let t = 0; t < timesteps; t++) {
                 EN[t] = {};
             }
@@ -172,19 +182,25 @@
             }
 
             // apply the same hierarchy throughout the whole timeline
-            let traverseTime = function(node, time = 0) {
-                let next = ET[time][node][0];
-                let nextTime = time + 1;
-                if (typeof next != 'undefined') {
+            let traverseTime = (node, time = 0) => {
+                let nextNodes = this.__next(node);
+                // next is either undefined or an array
+                if (typeof nextNodes != 'undefined') {
+                    //take first element, because at this moment only one next element exists
+                    let next = nextNodes[0];
+                    // apply same properties
                     N[next].l = N[node].l;
+                    N[next].modified = N[node].modified;
+                    
+                    // apply same hierarchy
+                    let nextTime = time + 1;
                     EN[nextTime][next] = [];
                     for (let child of EN[time][node]) {
-                        let childNext = ET[time][child][0];
+                        let childNext = this.__next(child)[0];
                         EN[nextTime][next].push(childNext);
                     }
                     
-                    if (!!ET[nextTime])
-                        traverseTime(next, nextTime);
+                    traverseTime(next, nextTime);
                 }
             }
             for (let node in EN[0]) {
@@ -205,70 +221,109 @@
 
         _genMoveAcross() {
             let {numMoveAcross} = this._opts;
-            let {N,EN,ET} = this._data;
+            // Nodes, Tree of Trees with timestamp, Reference which maps current node to future node in the timestamp.
+            let {N,EN} = this._data;
 
+            // get all nodes that can be moved (not modified yet and not from timestep 0)
             let nodes = Object.entries(N).filter(([id, node]) => node.t > 0 && node.modified == false);
 
+            // if user requests more moves than are possible in the data, do only as many as possible
             let numMoves = numMoveAcross;
             if (nodes.length < numMoveAcross) {
                 console.log("Move across: Not enough nodes to move.");
                 numMoves = nodes.length;
             }
 
+            let moveFollowingNodes = (node, time, parent, newParent, movePos = -1) => {
+                // make sure not to create loops
+                if (this.__subtree(node).includes(newParent))
+                    return;
 
-            let moveFollowingNodes = function(node, time, parent, newParent, movePos = -1) {
+                // find the current node in its parent's children array
                 let children = EN[time][parent];
                 for (let pos = 0; pos < children.length; pos++) {
                     if (children[pos] == node) {
+                        // remove the node from its parent
                         children.splice(pos, 1);
                         break;
                     }
-                }   
+                }
+            
+                // find the new parent's children array
                 let newChildren = EN[time][newParent];
+                // include the node randomly in the new parent's children array
                 if (movePos == -1)
                     movePos = Math.round(Math.random() * (newChildren.length - 1));
+                // since we update following timesteps, previous moves might have reduced the children array
                 else if (movePos > newChildren.length-1)
                     movePos = newChildren.length-1;
                     
+                // add the node as child to the new parent
                 newChildren.splice(movePos, 0, node);
                 
-                if (!!ET[time])
-                    moveFollowingNodes(ET[time][node][0], time + 1, ET[time][parent][0], ET[time][newParent][0], movePos);
+                // if the next timestep exists
+                let next = this.__next(node);
+                if (!!next)
+                    moveFollowingNodes(next[0], time + 1, this.__next(parent)[0], this.__next(newParent)[0], movePos);
             }
 
+            // randomize the array of movable nodes
             let random = nodes.sort(() => Math.random() - 0.5);
+            // only move the first "numMoves" nodes from the random array
             for (let i = 0; i < numMoves; i++) {
+                // get node from array
                 let nodeToMove = random.pop()[0];
+                // get the timestep in which the node is defined
                 let time = N[nodeToMove].t;
-                N[nodeToMove].modified = true;
-                // choose a new parent
-                // the new parent can not be in the subtree of the current node and should not be the current parent
+
+                // choose a new parent in the same timestep in which the node shall move into
+                // the new parent can not be in the subtree of the current node
                 let subtree = this.__subtree(nodeToMove);
+                // the node should not be the current parent, because that would be a moveAlong
                 let parent = this.__parent(nodeToMove);
-                if (typeof parent != 'undefined') { // TODO: this should only be the root node, which should have been filtered out by .modified
-                    let possibleNewParents = Object.entries(EN[time]).filter(([key, val]) => !(subtree.includes(key) && key != parent));
-                    if (possibleNewParents.length == 0)
-                        debugger;
+                if (typeof parent == 'undefined') {
+                    // this should never occur, because the root node was initially flagged as modified
+                    console.log("ERROR Move across: node has no parent. this state should not be reached")
+                    continue;
+                }
+                // the node should not be modified, to not create infinite loops
+                let possibleNewParents = Object.entries(EN[time]).filter(([key, val]) => !subtree.includes(key) && key != parent && !N[key].modified);
+                
+                if (possibleNewParents.length > 0) {
+                    // choose one of the possible new parents randomly
                     let rand = Math.round(Math.random() * (possibleNewParents.length - 1));
                     let newParent = possibleNewParents[rand][0];
-                    // move node in all following timesteps
+                    // move node to its new parent and do this for all following timesteps as well
                     moveFollowingNodes(nodeToMove, time, parent, newParent);
+                    
+                    // flag as modified, to not modify by other actions
+                    N[nodeToMove].modified = true;
                 }
+                else
+                    console.log("Move across: not enough possible parents to move to")
             }
         }
 
+        // move position within a parent
         _genMoveAlong() {
             let {numMoveAlong} = this._opts;
-            let {N,EN,ET} = this._data;
-            let nodesWithMoreThanOneChild = [];
-            for (let t in EN)
-                if (t != 0) // moves at timepoint 0 would not be visible
-                nodesWithMoreThanOneChild = nodesWithMoreThanOneChild.concat(Object.entries(EN[t]).filter(([id, children]) => children.length > 1));
-
+            let {N,EN} = this._data;
+            // only nodes with more than one child are interesting
             let possibleMoves = [];
-            for (let node of nodesWithMoreThanOneChild) {
-                for (let child of node[1])
-                    possibleMoves.push(child);
+            for (let t in EN) {
+                // moves at timepoint 0 would not be visible
+                if (t != 0) {
+                    for (let node in EN[t]) {
+                        let children = EN[t][node];
+                        if (children.length > 1) {
+                            for (let child of children) {
+                                // only move nodes which were not already modified at this timepoint
+                                if (!N[child].modified)
+                                    possibleMoves.push(child);
+                            }
+                        }
+                    }
+                }
             }
 
             let numMoves = numMoveAlong;
@@ -277,8 +332,11 @@
                 numMoves = possibleMoves.length;
             }
 
+            let moveFollowingNodes = (nodeToMove, time, parent, movePos = -1) => {
+                // make sure no previoursly applied movements are overwritten
+                if (N[nodeToMove].modified)
+                    return;
 
-            let moveFollowingNodes = function(nodeToMove, time, parent, movePos = -1) {
                 let children = EN[time][parent];
                 for (let pos = 0; pos < children.length; pos++) {
                     if (children[pos] == nodeToMove) {
@@ -294,8 +352,11 @@
                         break;
                     }
                 }
-                if (!!ET[time])
-                    moveFollowingNodes(ET[time][nodeToMove][0], time + 1, ET[time][parent][0], movePos);
+                
+                // if the next timestep exists
+                let next = this.__next(nodeToMove);
+                if (!!next)
+                    moveFollowingNodes(next[0], time + 1, this.__next(parent)[0], movePos);
             }
 
             let random = possibleMoves.sort(() => Math.random() - 0.5);
