@@ -135,29 +135,6 @@
 				}
 
 				let drawEnd = (node) => {
-                    
-                    /* TEST CODE FOR DATA GENERATOR */
-					// extend to right
-					let t = node.x + 0.5*(1-prop);
-                    d.horizontal(x(t));
-                    
-                    // find infinite loop
-                    let root = node;
-                    let i = 0;
-					while(!!root.parent && i < 10) {
-                        root = root.parent;
-                        i++;
-                    }
-                    if (i == 10)
-                        console.log("infinite loop")
-                    
-                    // draw ending
-                    d.vertical(y(node.y1));
-
-					// connect back
-                    d.horizontal(x(node.x));
-                    
-                    /*
 					// extend to right
 					let t = node.x + 0.5*(1-prop);
 					d.horizontal(x(t));
@@ -179,9 +156,8 @@
 					}
 					
 					// connect back
-                    d.horizontal(x(node.x)
-                    */
-				}
+                    d.horizontal(x(node.x));
+				};
 
 
 				let drawStartDefault = (node) => { // insert node

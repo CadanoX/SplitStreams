@@ -51,12 +51,12 @@
             this._clear();
             this._genStreams();
             this._genHierarchy();
-            this._genMerges();
-            this._genSplits();
-            this._genMoveAcross();
-            this._genMoveAlong();
             this._genAdds();
             this._genDeleted();
+            this._genMoveAcross();
+            this._genMoveAlong();
+            this._genMerges();
+            this._genSplits();
         }
 
         get() {
@@ -209,6 +209,105 @@
 
             // copy object
             this._basis = JSON.parse(JSON.stringify(this._data));
+        }
+
+        // create adds by removing the beginning of a stream
+        _genAdds() {
+            
+                // choose a random position to cut the stream
+                // this method will not choose the last nodes of a stream, which is why we will delete the chosen node as well
+                
+        }
+
+        _genDeleted() {
+            let {numDeleted} = this._opts;
+            let {N,EN,ET} = this._data;
+
+            // only nodes without children are interesting
+            let possibleNodes = [];
+            for (let t in EN) {
+                for (let node in EN[t]) {
+                    let children = EN[t][node];
+                    if (children.length == 0 && !N[node].modified) {
+                        possibleNodes.push(node);
+                    }
+                }
+            }
+            //find random order
+            let random = possibleNodes.sort(() => Math.random() - 0.5);
+
+            // make sure that every stream is only represented once
+            let streams = {};
+            let remainingNodes = [];
+            for (let node of random) {
+                let streamId = N[node].streamId;
+                if (!streams[streamId]) {
+                    streams[streamId] = true;
+                    remainingNodes.push(node);
+                }
+            }
+
+            let deleteNode = (node) => {
+                let time = N[node].t;
+                let stream = N[node].streamId;
+
+                // don't delete node if the node has children
+                if (EN[time][node].length > 0) {
+                    console.log("ERROR deleting node: node has children");
+                    return;
+                }
+                // delete in tree
+                // delete in children array of parent
+                let parent = this.__parent(node);
+                let children = EN[time][parent];
+                for (let pos = 0; pos < children.length; pos++) {
+                    if (children[pos] == node) {
+                        children.splice(pos, 1);
+                        break;
+                    }
+                }
+                // delete node itself
+                delete EN[time][node];
+
+                // delete in stream
+                // find prev node of the stream and delete node as next
+                for (let streamNode in ET[stream]) {
+                    let next = ET[stream][streamNode];
+                    for (let pos = 0; pos < next.length; pos++) {
+                        if (next[pos] == node) {
+                            next.splice(pos, 1);
+                            break;
+                        }
+                    }
+                }
+                
+                // delete in nodes
+                delete N[node];
+
+                if (!!ET[stream][node])
+                    delete ET[stream][node];
+            };
+
+            let deleteFollowing = (node) => {
+                let next = this.__next(node);
+                deleteNode(node);
+                if (!!next)
+                    for (let n of next)
+                        deleteFollowing(n);
+            };
+
+            // if user requests more deletes than are possible in the data, do only as many as possible
+            let numDelete = numDeleted;
+            if (remainingNodes.length < numDeleted) {
+                console.log("Delete: Not enough streams to delete.");
+                numDelete = remainingNodes.length;
+            }
+
+            // take all streams and apply a random order
+            for (let i = 0; i < numDelete; i++) {
+                let node = remainingNodes.pop();
+                deleteFollowing(node);
+            }
         }
 
         _genMerges() {
@@ -366,14 +465,6 @@
                 // move node in all following timesteps
                 moveFollowingNodes(nodeToMove, time, this.__parent(nodeToMove));
             }
-        }
-
-        _genAdds() {
-
-        }
-
-        _genDeleted() {
-
         }
     }
 	window.DataGenerator = (...args) => new DataGenerator(...args);
