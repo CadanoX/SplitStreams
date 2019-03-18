@@ -84,9 +84,9 @@
                     <input type="range" v-model="numAdds" step= "1" min="0" max="10" />
                 </div>
                 <div>
-                    <label><b>Num Deleted:</b> {{numDeleted}}</label>
+                    <label><b>Num Deletes:</b> {{numDeletes}}</label>
                     <br>
-                    <input type="range" v-model="numDeleted" step= "1" min="0" max="10" />
+                    <input type="range" v-model="numDeletes" step= "1" min="0" max="10" />
                 </div>
                 <div>
                     <button v-on:click="generate">Generate</button>
@@ -156,7 +156,7 @@
                     numMoveAcross: 0,
                     numMoveAlong: 0,
                     numAdds: 0,
-                    numDeleted: 0,
+                    numDeletes: 0,
                 },
 			    watch: {
                     timesteps: function(val) {
@@ -199,8 +199,8 @@
                         generator.options({ numAdds: val });
                         this.draw();
                     },
-                    numDeleted: function(val) {
-                        generator.options({ numDeleted: val });
+                    numDeletes: function(val) {
+                        generator.options({ numDeletes: val });
                         this.draw();
                     },
                     color: {
@@ -331,7 +331,7 @@
                             numMoveAcross: this.numMoveAcross,
                             numMoveAlong: this.numMoveAlong,
                             numAdds: this.numAdds,
-                            numDeleted: this.numDeleted,
+                            numDeletes: this.numDeletes,
                         });
                         this.draw();
                     },
