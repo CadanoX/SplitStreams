@@ -101,16 +101,22 @@
                 <div>
                     <button v-on:click="generate">Generate</button>
                 </div>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <button v-on:click='download'>Download</button>
+                </div>
             </div>
 
             <div id='wrapper'>
-                <div id='treemap'class='streamContainer'>
+                <div id='treemap' class='streamContainer'>
                     <resize-observer @notify='treemapResize'/>
                 </div>
                 <div id='stream' class='streamContainer'>
                     <resize-observer @notify='streamResize'/>
                 </div>
-                <div id='secstream'class='streamContainer'>
+                <div id='secstream' class='streamContainer'>
                     <resize-observer @notify='secstreamResize'/>
                 </div>
             </div>
@@ -384,6 +390,11 @@
                         secstream.setProportion(0.7);
                         secstream.separationX(secstream.marginXFixed, 6);
                         secstream.addSplitsAtTimepoints();
+                    },
+                    download: function() {
+                        saveSvg(document.querySelector('#treemap > svg'), 'treemap.svg');
+                        saveSvg(document.querySelector('#stream > svg'), 'stream.svg');
+                        saveSvg(document.querySelector('#secstream > svg'), 'secstream.svg');
                     },
                     streamResize(...args) {
                         stream.resize();
