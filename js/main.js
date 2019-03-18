@@ -32,9 +32,6 @@ document.addEventListener("DOMContentLoaded", function(event)
 	let app = new Vue({
 		el: '#app',
 		data: {
-			selected: null,
-			search: "force",
-			size: window.innerWidth,
 			split: 'at',
 			randomSplits: [],
 			separationX: 'Fixed',
@@ -126,13 +123,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 					{ type: 'feDropShadow', dx: 0, dy: 0, stdDeviation: 0 },
 					{ type: 'feDropShadow', dx: 0, dy: 0, stdDeviation: 0 }
 				]
-			],
-			settings: {
-				bgColor: '#757575',
-				width: window.innerWidth,
-				height: window.innerHeight
-			},
-			test: 1
+			]
 		},
 		computed: {
 			disableNormSizeButton() {

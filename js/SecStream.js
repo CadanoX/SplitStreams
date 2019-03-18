@@ -54,11 +54,13 @@
 				nodeSizeAddOne: true,
 				drawStroke: false,
 				showLabels: false,
-				mirror: false,
+                mirror: false,
+                splitRoot: false,
 				offset: "silhouette" // zero, expand, silhouette
             }
 			Object.assign(this._opts, opts);
 
+            this._name = container.id
 			this._container = container;
             this._id = "id";
             this._layout;
@@ -177,7 +179,7 @@
 					//.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
 					
-			this._svgFilters = d3.select('svg').append('defs');
+			this._svgFilters = this._svg.append('defs');
 			this._pathContainer = this._svg.append('g').classed('pathContainer', true);
 			this._textContainer = this._svg.append('g').classed('textContainer', true);
         }
@@ -424,8 +426,8 @@
 				.classed('stream', true)
 				.on("mouseover", onMouseOver)
 				.on("mouseout", onMouseOut)
-				.attr('clip-path', d => 'url(#clip' + d.id + ')')
-				.attr('id', d => 'stream' + d.id)
+				.attr('clip-path', d => 'url(#clip' + d.id + this._name +')')
+				.attr('id', d => 'stream' + d.id + this._name)
 				.attr('shape-rendering', 'geometricPrecision')
 				//.attr('shape-rendering', 'optimizeSpeed')
 				.attr('paint-order', 'stroke')
@@ -443,7 +445,7 @@
 				.data(this._newStreamData.clipPaths, function(d) { return d.id });
 
 			splitData.enter().append("clipPath")
-				.attr('id', d => "clip" + d.id)
+				.attr('id', d => "clip" + d.id + this._name)
 				.merge(splitData)
 					.html(d => "<path d=\"" + d.path + "\">")
 				
@@ -496,11 +498,14 @@
 				this.innerHTML = html;
 			});
 
-			d3.selectAll('path.stream').attr("filter", "url(#filter_0)");
+			this._pathContainer.selectAll('path.stream').attr("filter", "url(#filter_0)");
 		}
 		
 		update() { this._update(true) }
         _update(manuallyTriggered = false) {
+            if (!this._data)
+                return;
+
 			if (!this._opts.automaticUpdate)
 				if (!manuallyTriggered)
 					return;
@@ -516,8 +521,7 @@
         resize(width = this._container.clientWidth, height = this._container.clientHeight) {
 			this._opts.width = width;
 			this._opts.height = height;
-			d3.select("svg").attr('width', width).attr('height', height);
-			//this._svg.attr('width', width).attr('height', height);
+			this._svg.attr('width', width).attr('height', height);
 
 			this._update();
 		}
@@ -612,7 +616,8 @@
 		}
 
 		addSplitsBetweenTimepoints() {
-			let splits = []
+            let splits = []
+            
 			for (let i = this._minTime - 1; i <= this._maxTime; i++)
 				splits.push(i + 0.5);
 			this.addSplits(splits);

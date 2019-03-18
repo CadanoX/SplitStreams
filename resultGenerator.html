@@ -11,6 +11,16 @@
 	<link type="text/css" rel="stylesheet" href="css/style.css" media="screen"/>
     <link type="text/css" rel="stylesheet" href="css/SecStream.css" media="screen"/>
 
+    <style>
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .streamContainer {
+            flex-basis: 100%
+        }
+     </style>
+
     <!-- libraries-->
     <script type="text/javascript" src="libs/vue.js"></script>
     <script type="text/javascript" src="libs/vue-resize/dist/vue-resize.min.js"></script>
@@ -93,13 +103,24 @@
                 </div>
             </div>
 
-            <div id="wrapper">
-                <resize-observer @notify="wrapperResize" />
+            <div id='wrapper'>
+                <div id='treemap'class='streamContainer'>
+                    <resize-observer @notify='treemapResize'/>
+                </div>
+                <div id='stream' class='streamContainer'>
+                    <resize-observer @notify='streamResize'/>
+                </div>
+                <div id='secstream'class='streamContainer'>
+                    <resize-observer @notify='secstreamResize'/>
+                </div>
             </div>
     </div>
 
     <script>
         var stream;
+        var treemap;
+        var secstream;
+
         const generator = DataGenerator();
 
         document.addEventListener("DOMContentLoaded", function(event)
@@ -147,16 +168,16 @@
                             { value: 'interpolateYlOrRd', text: 'interpolateYlOrRd' }, */
                         ]
                     },
-                    timesteps: 3,
-                    numStreams: 5,
+                    timesteps: 5,
+                    numStreams: 10,
                     maxDepth: 0,
                     maxChildren: 0,
                     numMerges: 0,
                     numSplits: 0,
-                    numMoveAcross: 0,
-                    numMoveAlong: 0,
-                    numAdds: 0,
-                    numDeletes: 0,
+                    numMoveAcross: 1,
+                    numMoveAlong: 4,
+                    numAdds: 3,
+                    numDeletes: 3,
                 },
 			    watch: {
                     timesteps: function(val) {
@@ -206,120 +227,129 @@
                     color: {
                         handler: function(color) {
                             stream.colorRandom = false;
+                            treemap.colorRandom = false;
+                            secstream.colorRandom = false;
                             switch (color.value) {
                                 case 'random':
                                     stream.colorRandom = true;
+                                    treemap.colorRandom = true;
+                                    secstream.colorRandom = true;
                                     break;							
                                 case 'schemeCategory10':
-                                    stream.color = d3.scaleOrdinal(d3.schemeCategory10);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemeCategory10));
                                     break;
                                 case 'schemeAccent':
-                                    stream.color = d3.scaleOrdinal(d3.schemeAccent);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemeAccent));
                                     break;
                                 case 'schemeDark2':
-                                    stream.color = d3.scaleOrdinal(d3.schemeDark2);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemeDark2));
                                     break;
                                 case 'schemePaired':
-                                    stream.color = d3.scaleOrdinal(d3.schemePaired);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemePaired));
                                     break;
                                 case 'schemePastel1':
-                                    stream.color = d3.scaleOrdinal(d3.schemePastel1);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemePastel1));
                                     break;
                                 case 'schemePastel2':
-                                    stream.color = d3.scaleOrdinal(d3.schemePastel2);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemePastel2));
                                     break;
                                 case 'schemeSet1':
-                                    stream.color = d3.scaleOrdinal(d3.schemeSet1);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemeSet1));
                                     break;
                                 case 'schemeSet2':
-                                    stream.color = d3.scaleOrdinal(d3.schemeSet2);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemeSet2));
                                     break;
                                 case 'schemeSet3':
-                                    stream.color = d3.scaleOrdinal(d3.schemeSet3);
+                                    this.applyColor(d3.scaleOrdinal(d3.schemeSet3));
                                     break;
                                 case 'interpolateBlues':
-                                    stream.color = d3.scaleSequential(d3.interpolateBlues);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateBlues));
                                     break;
                                 case 'interpolateGreens':
-                                    stream.color = d3.scaleSequential(d3.interpolateGreens);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateGreens));
                                     break;
                                 case 'interpolateGreys':
-                                    stream.color = d3.scaleSequential(d3.interpolateGreys);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateGreys));
                                     break;
                                 case 'interpolateOranges':
-                                    stream.color = d3.scaleSequential(d3.interpolateOranges);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateOranges));
                                     break;
                                 case 'interpolatePurples':
-                                    stream.color = d3.scaleSequential(d3.interpolatePurples);
+                                    this.applyColor(d3.scaleSequential(d3.interpolatePurples));
                                     break;
                                 case 'interpolateReds':
-                                    stream.color = d3.scaleSequential(d3.interpolateReds);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateReds));
                                     break;
                                 case 'interpolateViridis':
-                                    stream.color = d3.scaleSequential(d3.interpolateViridis);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateViridis));
                                     break;
                                 case 'interpolateInferno':
-                                    stream.color = d3.scaleSequential(d3.interpolateInferno);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateInferno));
                                     break;
                                 case 'interpolateMagma':
-                                    stream.color = d3.scaleSequential(d3.interpolateMagma);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateMagma));
                                     break;
                                 case 'interpolatePlasma':
-                                    stream.color = d3.scaleSequential(d3.interpolatePlasma);
+                                    this.applyColor(d3.scaleSequential(d3.interpolatePlasma));
                                     break;
                                 case 'interpolateWarm':
-                                    stream.color = d3.scaleSequential(d3.interpolateWarm);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateWarm));
                                     break;
                                 case 'interpolateCool':
-                                    stream.color = d3.scaleSequential(d3.interpolateCool);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateCool));
                                     break;
                                 case 'interpolateCubehelixDefault':
-                                    stream.color = d3.scaleSequential(d3.interpolateCubehelixDefault);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateCubehelixDefault));
                                     break;
                                 case 'interpolateBuGn':
-                                    stream.color = d3.scaleSequential(d3.interpolateBuGn);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateBuGn));
                                     break;
                                 case 'interpolateBuPu':
-                                    stream.color = d3.scaleSequential(d3.interpolateBuPu);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateBuPu));
                                     break;
                                 case 'interpolateGnBu':
-                                    stream.color = d3.scaleSequential(d3.interpolateGnBu);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateGnBu));
                                     break;
                                 case 'interpolateOrRd':
-                                    stream.color = d3.scaleSequential(d3.interpolateOrRd);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateOrRd));
                                     break;
                                 case 'interpolatePuBuGn':
-                                    stream.color = d3.scaleSequential(d3.interpolatePuBuGn);
+                                    this.applyColor(d3.scaleSequential(d3.interpolatePuBuGn));
                                     break;
                                 case 'interpolatePuBu':
-                                    stream.color = d3.scaleSequential(d3.interpolatePuBu);
+                                    this.applyColor(d3.scaleSequential(d3.interpolatePuBu));
                                     break;
                                 case 'interpolatePuRd':
-                                    stream.color = d3.scaleSequential(d3.interpolatePuRd);
+                                    this.applyColor(d3.scaleSequential(d3.interpolatePuRd));
                                     break;
                                 case 'interpolateRdPu':
-                                    stream.color = d3.scaleSequential(d3.interpolateRdPu);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateRdPu));
                                     break;
                                 case 'interpolateYlGnBu':
-                                    stream.color = d3.scaleSequential(d3.interpolateYlGnBu);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateYlGnBu));
                                     break;
                                 case 'interpolateYlGn':
-                                    stream.color = d3.scaleSequential(d3.interpolateYlGn);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateYlGn));
                                     break;
                                 case 'interpolateYlOrBr':
-                                    stream.color = d3.scaleSequential(d3.interpolateYlOrBr);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateYlOrBr));
                                     break;
                                 case 'interpolateYlOrRd':
-                                    stream.color = d3.scaleSequential(d3.interpolateYlOrRd);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateYlOrRd));
                                     break;
                                 default:
-                                    stream.color = d3.scaleSequential(d3.interpolateBlues);
+                                    this.applyColor(d3.scaleSequential(d3.interpolateBlues));
                             }
                         },
                         deep: true
                     },
                 },
                 methods: {
+                    applyColor: function(colorFunction) {
+                        stream.color = colorFunction;
+                        treemap.color = colorFunction;
+                        secstream.color = colorFunction;
+                    },
                     generate: function() {
                         generator.options({
                             timesteps: this.timesteps,
@@ -337,17 +367,40 @@
                     },
                     draw: function() {
                         generator.generate();
-                        let data = transformViscousFormat(generator.get())
-                        stream.data(data)
+                        // need individual objects
+                        let data1 = transformViscousFormat(JSON.parse(JSON.stringify(generator.get())));
+                        let data2 = transformViscousFormat(JSON.parse(JSON.stringify(generator.get())));
+                        let data3 = transformViscousFormat(JSON.parse(JSON.stringify(generator.get())));
+
+                        treemap.data(data1);
+                        treemap.setProportion(0);
+                        treemap.separationX(treemap.marginXFixed, 10);
+                        treemap.splitRoot = true;
+                        treemap.addSplitsBetweenTimepoints();
+
+                        stream.data(data2);
+
+                        secstream.data(data3);
+                        secstream.setProportion(0.7);
+                        secstream.separationX(secstream.marginXFixed, 6);
+                        secstream.addSplitsAtTimepoints();
                     },
-                    wrapperResize(...args) {
+                    streamResize(...args) {
                         stream.resize();
                     },
+                    treemapResize(...args) {
+                        treemap.resize();
+                    },
+                    secstreamResize(...args) {
+                        secstream.resize();
+                    }
                 }
             });
 
-            let div = document.querySelector('#wrapper');
-            stream = d3.SecStream(div);
+            treemap = d3.SecStream(document.querySelector('#treemap'));
+            stream = d3.SecStream(document.querySelector('#stream'));
+            secstream = d3.SecStream(document.querySelector('#secstream'));
+            document.querySelector('button').click();
         });
 
     </script>
