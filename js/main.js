@@ -86,23 +86,23 @@ document.addEventListener("DOMContentLoaded", function(event)
 				options: [
 					{ value: 'random', text: 'random' },
 					{ value: 'schemeCategory10', text: 'schemeCategory10' },
-					{ value: 'schemeAccent', text: 'schemeAccent' },
+					/* { value: 'schemeAccent', text: 'schemeAccent' },
 					{ value: 'schemeDark2', text: 'schemeDark2' },
 					{ value: 'schemePaired', text: 'schemePaired' },
 					{ value: 'schemePastel1', text: 'schemePastel1' },
 					{ value: 'schemePastel2', text: 'schemePastel2' },
 					{ value: 'schemeSet1', text: 'schemeSet1' },
 					{ value: 'schemeSet2', text: 'schemeSet2' },
-					{ value: 'schemeSet3', text: 'schemeSet3' },
+					{ value: 'schemeSet3', text: 'schemeSet3' }, */
 					{ value: 'interpolateBlues', text: 'interpolateBlues' },
-					{ value: 'interpolateGreens', text: 'interpolateGreens' },
+					/* { value: 'interpolateGreens', text: 'interpolateGreens' },
 					{ value: 'interpolateGreys', text: 'interpolateGreys' },
 					{ value: 'interpolateOranges', text: 'interpolateOranges' },
 					{ value: 'interpolatePurples', text: 'interpolatePurples' },
 					{ value: 'interpolateReds', text: 'interpolateReds' },
-					{ value: 'interpolateViridis', text: 'interpolateViridis' },
+					{ value: 'interpolateViridis', text: 'interpolateViridis' }, */
 					{ value: 'interpolateInferno', text: 'interpolateInferno' },
-					{ value: 'interpolateMagma', text: 'interpolateMagma' },
+					/* { value: 'interpolateMagma', text: 'interpolateMagma' },
 					{ value: 'interpolatePlasma', text: 'interpolatePlasma' },
 					{ value: 'interpolateWarm', text: 'interpolateWarm' },
 					{ value: 'interpolateCool', text: 'interpolateCool' },
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 					{ value: 'interpolateYlGnBu', text: 'interpolateYlGnBu' },
 					{ value: 'interpolateYlGn', text: 'interpolateYlGn' },
 					{ value: 'interpolateYlOrBr', text: 'interpolateYlOrBr' },
-					{ value: 'interpolateYlOrRd', text: 'interpolateYlOrRd' },
+					{ value: 'interpolateYlOrRd', text: 'interpolateYlOrRd' }, */
 				]
 			},
 			filters: [
