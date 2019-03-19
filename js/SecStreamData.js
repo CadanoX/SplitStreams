@@ -70,7 +70,6 @@
 		}
 
 		clear() {
-			console.log('clear');
 			this._streamNodes = [];
 			this._streams = [];
 			this._clipPaths = [];

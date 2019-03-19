@@ -603,7 +603,31 @@
         // delete all next nodes
         // every stream can only merge once
         _genMerges() {
-            
+            let {numMerges} = this._opts;
+            let {N,EN} = this._data;
+
+            // get all nodes that can be merged (not modified yet and not from last timestep)
+            let nodes = Object.entries(N).filter(([id, node]) => !(node.t == Object.keys(EN).length) && node.modified == false);
+
+
+            let random = nodes.sort(() => Math.random() - 0.5);
+            let numMerged = 0;
+            for (let i = 0; i < numMerges; i++) {
+                let node = random.pop();
+                // if user requests more moves than are possible in the data, do only as many as possible
+                if (typeof node == 'undefined') {
+                    console.log("Merge: Not enough streams to merge. (Merged " + numMerged + ")");
+                    break;
+                }
+                let node = node[0];
+                let time = N[node].t;
+                let possibleMerges = Object.keys(EN[time]);
+                
+                // merge
+
+
+                numMerged++;
+            }
         }
 
         _genSplits() {

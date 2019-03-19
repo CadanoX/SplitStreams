@@ -49,6 +49,10 @@
                     </select>
                 </div>
                 <div>
+                    <input type="checkbox" id="secstreamSplits" v-model="secstreamSplits">
+                    <label for="secstreamSplits">Split between timestep</label>
+                </div>
+                <div>
                     <label><b>Timesteps:</b> {{timesteps}}</label>
                     <br>
                     <input type="range" v-model="timesteps" step= "1" min="2" max="10" />
@@ -174,6 +178,8 @@
                             { value: 'interpolateYlOrRd', text: 'interpolateYlOrRd' }, */
                         ]
                     },
+                    secstreamSplits: true,
+
                     timesteps: 5,
                     numStreams: 10,
                     maxDepth: 0,
@@ -189,6 +195,7 @@
                     timesteps: function(val) {
                         generator.options({ timesteps: val });
                         this.draw();
+                        this.applySplits(this.secstreamSplits);
                     },
                     numStreams: function(val) {
                         generator.options({ numStreams: val });
@@ -349,8 +356,20 @@
                         },
                         deep: true
                     },
+                    secstreamSplits: function(between) {
+				        this.applySplits(between);
+                    }
                 },
                 methods: {
+                    applySplits: function(between) {
+                        secstream.removeSplits();
+                        if (between)
+                            secstream.addSplitsBetweenTimepoints();
+                        else
+                            secstream.addSplitsAtTimepoints();
+
+                        secstream.update();
+                    },
                     applyColor: function(colorFunction) {
                         stream.color = colorFunction;
                         treemap.color = colorFunction;
@@ -389,12 +408,13 @@
                         secstream.data(data3);
                         secstream.setProportion(0.7);
                         secstream.separationX(secstream.marginXFixed, 6);
-                        secstream.addSplitsAtTimepoints();
+                        secstream.addSplitsBetweenTimepoints();
                     },
                     download: function() {
-                        saveSvg(document.querySelector('#treemap > svg'), 'treemap.svg');
-                        saveSvg(document.querySelector('#stream > svg'), 'stream.svg');
-                        saveSvg(document.querySelector('#secstream > svg'), 'secstream.svg');
+                        saveSvg(document.querySelector('#treemap > svg'), 'treemap');
+                        saveSvg(document.querySelector('#stream > svg'), 'stream');
+                        saveSvg(document.querySelector('#secstream > svg'), 'secstream');
+                        saveJson(generator.get(), 'data');
                     },
                     streamResize(...args) {
                         stream.resize();
