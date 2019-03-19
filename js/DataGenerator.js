@@ -138,7 +138,7 @@
 
             return false;
         }
-        
+
         __deleteNode(node) {
             let {N,EN,ET} = this._data;
             let time = N[node].t;
@@ -482,7 +482,7 @@
                     // don't use already modified nodes
                     if (N[node].modified || N[node].t == timesteps-1)
                         delete possibleNodes[node];
-                    else if(this.__nodeOrFollowingNodesHaveChildren(node))
+                    else if(this.__children(node).length > 0)
                         removeNodeAndFollowing(node);
                 }
             }
@@ -522,18 +522,23 @@
                 numAdded++;
 
                 // check if the nodes parent is now free of children
-                /* if (!this.__nodeOrFollowingNodesHaveChildren(parent)) {
-                    // add parent and all its succeeding nodes to possible nodes to delete
-                    let streamNodesOfParent = [];
-                    let next = [parent];
-                    do {
-                        streamNodesOfParent.push(next[0]);
-                    } while (next == this.__next(next));
-                    // choose random node of the parents stream
-                    let randomNodeOfParentStream = streamNodesOfParent[Math.round(Math.random() * (streamNodesOfParent.length-1))];
-                    // add at random position in our random array
+                possibleNodes = {...ET[N[parent].streamId]};
+                // if a node has children, delete it and all following nodes from possible nodes
+                for (let node in possibleNodes) {
+                    // don't use already modified nodes
+                    if (N[node].modified || N[node].t == timesteps-1)
+                        delete possibleNodes[node];
+                    else if(this.__children(node).length > 0)
+                        removeNodeAndFollowing(node);
+                }
+
+                possibleNodes = Object.keys(possibleNodes);
+                if (possibleNodes.length > 0) {
+                    // choose random node of the parents stream (because every stream can only be deleted at one point)
+                    let randomNodeOfParentStream = possibleNodes[Math.round(Math.random() * (possibleNodes.length-1))];
+                    // add this random node of the stream to our random array at a random position
                     remainingNodes.splice(Math.round(Math.random() * remainingNodes), 0, randomNodeOfParentStream);
-                } */
+                }
             }
         }
 
@@ -591,9 +596,9 @@
                     do {
                         streamNodesOfParent.push(next[0]);
                     } while (next == this.__next(next));
-                    // choose random node of the parents stream
+                    // choose random node of the parents stream (because every stream can only be deleted at one point)
                     let randomNodeOfParentStream = streamNodesOfParent[Math.round(Math.random() * (streamNodesOfParent.length-1))];
-                    // add at random position in our random array
+                    // add this random node of the stream to our random array at a random position
                     remainingNodes.splice(Math.round(Math.random() * remainingNodes), 0, randomNodeOfParentStream);
                 }
             }

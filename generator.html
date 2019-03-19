@@ -64,7 +64,7 @@
                 <div>
                     <label><b>Num Streams:</b> {{numStreams}}</label>
                     <br>
-                    <input type="range" v-model="numStreams" step= "1" min="1" max="100" />
+                    <input type="range" v-model="numStreams" step= "1" min="1" max="30" />
                 </div>
                 <!-- <div>
                     <label><b>Max Depth:</b> {{maxDepth}}</label>
@@ -76,16 +76,6 @@
                     <br>
                     <input type="range" v-model="maxChildren" step= "1" min="0" max="10" />
                 </div> -->
-                <div>
-                    <label><b>Num Merges:</b> {{numMerges}}</label>
-                    <br>
-                    <input type="range" v-model="numMerges" step= "1" min="0" max="10" />
-                </div>
-                <div>
-                    <label><b>Num Splits:</b> {{numSplits}}</label>
-                    <br>
-                    <input type="range" v-model="numSplits" step= "1" min="0" max="10" />
-                </div>
                 <div>
                     <label><b>Num Move Across:</b> {{numMoveAcross}}</label>
                     <br>
@@ -99,13 +89,24 @@
                 <div>
                     <label><b>Num Adds:</b> {{numAdds}}</label>
                     <br>
-                    <input type="range" v-model="numAdds" step= "1" min="0" max="10" />
+                    <input type="range" v-model="numAdds" step= "1" min="0" v-bind:max="numStreams" />
                 </div>
                 <div>
                     <label><b>Num Deletes:</b> {{numDeletes}}</label>
                     <br>
-                    <input type="range" v-model="numDeletes" step= "1" min="0" max="10" />
+                    <input type="range" v-model="numDeletes" step= "1" min="0" v-bind:max="numStreams" />
                 </div>
+                <div>
+                    <label><b>Num Merges:</b> {{numMerges}}</label>
+                    <br>
+                    <input type="range" v-model="numMerges" step= "1" min="0" max="10" />
+                </div>
+                <div>
+                    <label><b>Num Splits:</b> {{numSplits}}</label>
+                    <br>
+                    <input type="range" v-model="numSplits" step= "1" min="0" max="10" />
+                </div>
+
                 <div>
                     <button id='generate' v-on:click="generate">Generate</button>
                 </div>
