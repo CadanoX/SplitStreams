@@ -57,6 +57,9 @@
             //console.log(Object.keys(this._data.N).length);
             this._genMoveAlong();
             //console.log(Object.keys(this._data.N).length);
+            
+            //this._genMerges();
+
             this._genAdds();
             //console.log(Object.keys(this._data.N).length);
             this._genDeletes();
@@ -476,7 +479,7 @@
                 if (!!next)
                     removeNodeAndFollowing(next);
             };
-            // if a node has children, delete it and all following nodes from possible nodes
+            // if a node has children, do not consider them or any following nodes for adds
             for (let node in N) {
                 if (!!possibleNodes[node]) {
                     // don't use already modified nodes
@@ -609,29 +612,69 @@
         // every stream can only merge once
         _genMerges() {
             let {numMerges} = this._opts;
-            let {N,EN} = this._data;
+            let {N,EN,ET} = this._data;
 
             // get all nodes that can be merged (not modified yet and not from last timestep)
-            let nodes = Object.entries(N).filter(([id, node]) => !(node.t == Object.keys(EN).length) && node.modified == false);
-
-
+            let nodes = Object.entries(N).filter(([id, node]) =>
+                !(node.t == Object.keys(EN).length)
+                && node.modified == false
+                && this.__next(id)
+            );
+           
             let random = nodes.sort(() => Math.random() - 0.5);
+            // make sure that every stream is only represented once
+            let streams = {};
+            let remainingNodes = [];
+            for (let node of random) {
+                let streamId = N[node[0]].streamId;
+                if (!streams[streamId]) {
+                    streams[streamId] = true;
+                    remainingNodes.push(node[0]);
+                }
+            }
+
+            let merge = (node, mergeNode) => {
+                let time = N[node].t;
+                // change the children's parent
+                let children = this.__children(node);
+                EN[time][mergeNode].push(...children);
+                EN[time][node] = [];
+                let next = this.__next(node)
+                // delete node
+                this.__deleteNode(node);
+
+                if (!!next)
+                    for(let nextNode of next)
+                        merge(nextNode, this.__next(mergeNode)[0])
+            }
+
             let numMerged = 0;
             for (let i = 0; i < numMerges; i++) {
-                let node = random.pop();
+                let node = remainingNodes.pop();
                 // if user requests more moves than are possible in the data, do only as many as possible
                 if (typeof node == 'undefined') {
                     console.log("Merge: Not enough streams to merge. (Merged " + numMerged + ")");
                     break;
                 }
-                let node = node[0];
-                let time = N[node].t;
-                let possibleMerges = Object.keys(EN[time]);
+                let next = this.__next(node)[0];
+                let time = N[next].t;
+                let possibleMerges = [];
+                let subtree = this.__subtree(next);
+
+                // node can not merge with its children
+                for (let mergeNode in EN[time])
+                    if (!subtree.includes(mergeNode))
+                        possibleMerges.push(mergeNode);
                 
-                // merge
+                if (possibleMerges.length > 0) {
+                    // merge
+                    let mergeNode = possibleMerges[Math.round(Math.random() * (possibleMerges.length-1))];
+                    // set node's next node to merge node
+                    ET[N[node].streamId][node] = [mergeNode];
+                    merge(next, mergeNode);
 
-
-                numMerged++;
+                    numMerged++;
+                }
             }
         }
 
