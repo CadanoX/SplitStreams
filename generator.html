@@ -59,7 +59,7 @@
                 <div>
                     <label><b>Timesteps:</b> {{timesteps}}</label>
                     <br>
-                    <input type="range" v-model="timesteps" step= "1" min="2" max="10" />
+                    <input type="range" v-model="timesteps" step= "1" min="1" max="10" />
                 </div>
                 <div>
                     <label><b>Num Streams:</b> {{numStreams}}</label>
@@ -176,7 +176,7 @@
                             { value: 'interpolateYlOrRd', text: 'interpolateYlOrRd' }, */
                         ]
                     },
-                    secstreamSplits: true,
+                    secstreamSplits: false,
 
                     timesteps: 5,
                     numStreams: 10,
@@ -192,6 +192,14 @@
 			    watch: {
                     timesteps: function(val) {
                         generator.options({ timesteps: val });
+                        if (val == 1) {
+                            stream.setProportion(0.6);
+                            secstream.setProportion(0.4);
+                        }
+                        else  {
+                            stream.setProportion(1);
+                            secstream.setProportion(0.7);
+                        }
                         this.draw();
                         this.applySplits(this.secstreamSplits);
                     },
@@ -396,17 +404,12 @@
                         let data3 = transformViscousFormat(JSON.parse(JSON.stringify(generator.get())));
 
                         treemap.data(data1);
-                        treemap.setProportion(0);
-                        treemap.separationX(treemap.marginXFixed, 10);
-                        treemap.splitRoot = true;
                         treemap.addSplitsBetweenTimepoints();
 
                         stream.data(data2);
 
                         secstream.data(data3);
-                        secstream.setProportion(0.7);
-                        secstream.separationX(secstream.marginXFixed, 6);
-                        secstream.addSplitsBetweenTimepoints();
+                        this.applySplits(this.secstreamSplits);
                     },
                     download: function() {
                         saveSvg(document.querySelector('#treemap > svg'), 'treemap');
@@ -427,8 +430,19 @@
             });
 
             treemap = d3.SecStream(document.querySelector('#treemap'));
+            treemap.automaticUpdate = false;
+            treemap.setProportion(0);
+            treemap.separationX(treemap.marginXFixed, 10);
+            treemap.splitRoot = true;
+            treemap.automaticUpdate = true;
+
             stream = d3.SecStream(document.querySelector('#stream'));
+            treemap.automaticUpdate = false;
             secstream = d3.SecStream(document.querySelector('#secstream'));
+            secstream.setProportion(0.7);
+            secstream.separationX(secstream.marginXFixed, 6);
+            treemap.automaticUpdate = true;
+
             document.querySelector('#generate').click();
         });
 
