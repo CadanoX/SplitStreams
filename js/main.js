@@ -164,9 +164,10 @@ document.addEventListener("DOMContentLoaded", function(event)
 			wrapperResize(...args) {
 				stream.resize();
 			},
-			select: function(index, node) {
-				this.selected = index;
-			}
+            download: function() {
+                saveSvg(document.querySelector('svg'), 'secstream');
+                saveJson(generator.get(), 'data');
+            },
 		},
 		watch: {
 			size: function() {

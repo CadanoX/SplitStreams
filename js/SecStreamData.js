@@ -64,10 +64,28 @@
 			let splits = [];
 			for (let split in this._splits) {
 				if (split >= t0 && split <= t1)
-					splits.push(split);
+					splits.push(+split);
 			}
 			return splits;
-		}
+        }
+        
+        _findClosestNode(stream, x) {
+            let traverseTime = function(node) {
+                let distance = Math.abs(node.x - x);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestNode = node;
+                    // if distance is greater than minDistance, it will only increase with following nodes
+                    if (!!node.next) {
+                        node.next.forEach(traverseTime);
+                    }
+                }
+            }
+            let minDistance = Infinity;
+            let closestNode;
+            traverseTime(stream);
+            return closestNode;
+        }
 
 		clear() {
 			this._streamNodes = [];
@@ -457,31 +475,34 @@
 				let clipPath = SvgPath();
 				let splits = this._findSplits(stream.x - 0.5, lastTimepoint + 0.5);
 
-				let lastX = x(-1);
-				for (let split of splits) {
-					let x0 = x(+split - 0.5 * stream.marginX);
-					let x1 = x(+split + 0.5 * stream.marginX);
-					if (x0 - lastX > 0) {
-						clipPath.move(lastX, y(0));
-						clipPath.horizontal(x0);
-						clipPath.vertical(y(1));
-						clipPath.horizontal(lastX);
-						clipPath.vertical(y(0));
+                let clipStart = x(-1);
+                let y0 = y(0);
+                let y1 = y(1);
+				for (let split of splits) {                    
+                    // we move by 0.0001 to avoid cases in which the split is in the middle of 2 nodes
+                    let clipEnd = x(split - 0.5 * this._findClosestNode(stream, split-0.0001).marginX);
+                    
+					if (clipEnd - clipStart > 0) {
+						clipPath.move(clipStart, y0);
+						clipPath.horizontal(clipEnd);
+						clipPath.vertical(y1);
+						clipPath.horizontal(clipStart);
+						clipPath.vertical(y0);
 					}
-					lastX = x1;
+                    clipStart = x(split + 0.5 * this._findClosestNode(stream, split+0.0001).marginX);
 				}
-				clipPath.move(lastX, y(0));
+				clipPath.move(clipStart, y0);
 				clipPath.horizontal(x(lastTimepoint+1));
-				clipPath.vertical(y(1));
-				clipPath.horizontal(lastX);
-				clipPath.vertical(y(0));
+				clipPath.vertical(y1);
+				clipPath.horizontal(clipStart);
+				clipPath.vertical(y0);
 
 				this._clipPaths[stream.streamId] = {
 					id: stream.streamId,
 					path: clipPath.get()
 				}
 
-
+                // find position to put a text label
 				let textPos;
 				if (Math.abs(y(stream.y1) - y(stream.y0)) < 25)
 					textPos = -1;

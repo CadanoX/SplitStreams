@@ -39,6 +39,10 @@
 <body>
     <div id="app">
             <div class="controls">
+                <div id='download'>
+                    <button v-on:click='download'>Download</button>
+                </div>
+                <br>
                 <div>
                     <label><b>Color:</b></label>
                     <br>
@@ -103,13 +107,7 @@
                     <input type="range" v-model="numDeletes" step= "1" min="0" max="10" />
                 </div>
                 <div>
-                    <button v-on:click="generate">Generate</button>
-                </div>
-                <br>
-                <hr>
-                <br>
-                <div>
-                    <button v-on:click='download'>Download</button>
+                    <button id='generate' v-on:click="generate">Generate</button>
                 </div>
             </div>
 
@@ -431,7 +429,7 @@
             treemap = d3.SecStream(document.querySelector('#treemap'));
             stream = d3.SecStream(document.querySelector('#stream'));
             secstream = d3.SecStream(document.querySelector('#secstream'));
-            document.querySelector('button').click();
+            document.querySelector('#generate').click();
         });
 
     </script>
