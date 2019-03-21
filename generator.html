@@ -17,7 +17,7 @@
             flex-direction: column;
         }
         .streamContainer {
-            flex-basis: 100%
+            height: 33vh;
         }
      </style>
 
@@ -113,15 +113,10 @@
             </div>
 
             <div id='wrapper'>
-                <div id='treemap' class='streamContainer'>
-                    <resize-observer @notify='treemapResize'/>
-                </div>
-                <div id='stream' class='streamContainer'>
-                    <resize-observer @notify='streamResize'/>
-                </div>
-                <div id='secstream' class='streamContainer'>
-                    <resize-observer @notify='secstreamResize'/>
-                </div>
+                <div id='treemap' class='streamContainer'></div>
+                <div id='stream' class='streamContainer'></div>
+                <div id='secstream' class='streamContainer'></div>
+                <resize-observer @notify='wrapperResize'/>
             </div>
     </div>
 
@@ -186,7 +181,7 @@
                     numMerges: 0,
                     numSplits: 0,
                     numMoveAcross: 1,
-                    numMoveAlong: 4,
+                    numMoveAlong: 0,
                     numAdds: 3,
                     numDeletes: 3,
                 },
@@ -195,11 +190,11 @@
                         generator.options({ timesteps: val });
                         if (val == 1) {
                             stream.setProportion(0.6);
-                            secstream.setProportion(0.4);
+                            secstream.setProportion(0.6);
                         }
                         else  {
                             stream.setProportion(1);
-                            secstream.setProportion(0.7);
+                            secstream.setProportion(1);
                         }
                         this.draw();
                         this.applySplits(this.secstreamSplits);
@@ -418,31 +413,29 @@
                         saveSvg(document.querySelector('#secstream > svg'), 'secstream');
                         saveJson(generator.get(), 'data');
                     },
-                    streamResize(...args) {
+                    wrapperResize(...args) {
                         stream.resize();
+                        treemap.resize();
+                        secstream.resize();
                     },
                     treemapResize(...args) {
-                        treemap.resize();
                     },
                     secstreamResize(...args) {
-                        secstream.resize();
                     }
                 }
             });
 
             treemap = d3.SecStream(document.querySelector('#treemap'));
-            treemap.automaticUpdate = false;
             treemap.setProportion(0);
             treemap.separationX(treemap.marginXFixed, 10);
             treemap.splitRoot = true;
-            treemap.automaticUpdate = true;
 
             stream = d3.SecStream(document.querySelector('#stream'));
-            treemap.automaticUpdate = false;
+            //stream.showLabels(this.showLabels);
+            
             secstream = d3.SecStream(document.querySelector('#secstream'));
-            secstream.setProportion(0.7);
+            secstream.setProportion(1);
             secstream.separationX(secstream.marginXFixed, 6);
-            treemap.automaticUpdate = true;
 
             document.querySelector('#generate').click();
         });

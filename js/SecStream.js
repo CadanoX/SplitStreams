@@ -398,8 +398,8 @@
 			}
 
 			this._newStreamData.xScale = d3.scaleLinear()
-				.domain([this._minTime - 0.5, this._maxTime + 0.5])
-				//.domain([this._minTime - 0.5*(1-this._opts.proportion), this._maxTime + 0.5*(1-this._opts.proportion)])
+				//.domain([this._minTime - 0.5, this._maxTime + 0.5])
+				.domain([this._minTime - 0.5*(1-this._opts.proportion), this._maxTime + 0.5*(1-this._opts.proportion)])
 				.range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
 
 			let domain = this._opts.mirror ? [1, 0] : [0, 1];

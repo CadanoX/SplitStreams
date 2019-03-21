@@ -64,6 +64,8 @@
             //console.log(Object.keys(this._data.N).length);
             this._genDeletes();
             //console.log(Object.keys(this._data.N).length);
+
+            this._applyWeights();
         }
 
         get() {
@@ -156,7 +158,7 @@
             // delete in children array of parent
             let parent;
             let numParents = 0;
-            while (parent = this.__parent(node)) {
+            while (parent = this.__parent(node)) { // we do this because of a bug, normally there should only be one parent
                 numParents++;
                 if (numParents > 1)
                     console.log ("WARNING: a node got assigned more than one parent --> this should never have happened")
@@ -245,7 +247,17 @@
                 let rand = Math.round(Math.random() * (nodesUnassigned.length - 1));
                 let node = nodesUnassigned[rand];
                 nodesUnassigned.splice(rand, 1);
+                
+                
+                // find a random node in the hierarchy to assign to
+                let rand2 = Math.round(Math.random() * (nodesAssigned));
+                if (rand2 < nodesAssigned)
+                    // add node as child to its parent
+                    EN[0][Object.keys(nodesInHierarchy)[rand2]].push(node[0]);
+                else // new root node
+                    N[node[0]].modified = true;
 
+/*
                 if (nodesAssigned > 0) {
                     // find a random node in the hierarchy to assign to
                     let rand2 = Math.round(Math.random() * (nodesAssigned - 1));
@@ -254,6 +266,7 @@
                 else {
                     N[node[0]].modified = true; // we later don't want to change the root node
                 }
+                */
 
                 // flag the node to say it is in the hierarchy
                 EN[0][node[0]] = [];
@@ -680,6 +693,37 @@
 
         _genSplits() {
 
+        }
+
+        _applyWeights() {
+            let {} = this._opts;
+            let {N,EN,ET} = this._data;
+
+            let nodesWithoutSize = {...N};
+            while (Object.keys(nodesWithoutSize).length > 0) {
+                for (let node in nodesWithoutSize) {
+                    let children = this.__children(node);
+                    // set size for leaf nodes
+                    if (children.length == 0) {
+                        N[node].w = 1;
+                        delete nodesWithoutSize[node];
+                    }
+                    else {
+                        let allChildrenHaveSize = true;
+                        let aggregate = 0;
+                        for (let child of children) {
+                            if (typeof N[child].w === 'undefined')
+                                allChildrenHaveSize = false;
+                            else
+                                aggregate += N[child].w;
+                        }
+                        if (allChildrenHaveSize) {
+                            N[node].w = aggregate + 1;
+                            delete nodesWithoutSize[node];
+                        }
+                    }
+                }
+            }
         }
     }
 	window.DataGenerator = (...args) => new DataGenerator(...args);
