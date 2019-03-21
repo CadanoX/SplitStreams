@@ -51,7 +51,7 @@
 				proportion: 1,
 				unifySize: false,
 				unifyPosition: false,
-				nodeSizeAddOne: true,
+				nodeSizeAddX: 1,
 				drawStroke: false,
 				showLabels: false,
                 mirror: false,
@@ -101,7 +101,7 @@
 		
 		set automaticUpdate(auto) { this._opts.automaticUpdate = auto; }
 		set unifySize(unify) { this._opts.unifySize = unify; this._update() }
-		set nodeSizeAddOne(option) { this._opts.nodeSizeAddOne = option; this._update() }
+		set nodeSizeAddX(x) { this._opts.nodeSizeAddX = x; this._update() }
 		set unifyPosition(unify) { this._opts.unifyPosition = unify; this._update() }
 		set mirror(mirror) { this._opts.mirror = mirror; this._update() }
 		set splitRoot(splitRoot) { this._opts.splitRoot = splitRoot; this._update() }
@@ -255,7 +255,7 @@
 						node.aggregate += child.size;
 					}
 					if (this._opts.unifySize || Number.isNaN(node.dataSize))
-						node.size = node.aggregate + this._opts.nodeSizeAddOne;
+						node.size = node.aggregate + this._opts.nodeSizeAddX;
 					else
 						node.size = node.dataSize;				
 				}

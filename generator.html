@@ -106,6 +106,11 @@
                     <br>
                     <input type="range" v-model="numSplits" step= "1" min="0" max="10" />
                 </div> -->
+                <div>
+                    <label><b>Value Range:</b> {{maxValue}}</label>
+                    <br>
+                    <input type="range" v-model="maxValue" step= "0.1" min="1" max="100"/>
+                </div>
 
                 <div>
                     <button id='generate' v-on:click="generate">Generate</button>
@@ -184,6 +189,7 @@
                     numMoveAlong: 0,
                     numAdds: 3,
                     numDeletes: 3,
+                    maxValue: 1
                 },
 			    watch: {
                     timesteps: function(val) {
@@ -237,6 +243,13 @@
                     },
                     numDeletes: function(val) {
                         generator.options({ numDeletes: val });
+                        this.draw();
+                    },
+                    maxValue: function(val) {
+                        generator.options({ maxValue: val });
+                        treemap.nodeSizeAddX = Number(this.maxValue);
+                        stream.nodeSizeAddX = Number(this.maxValue);
+                        secstream.nodeSizeAddX = Number(this.maxValue);
                         this.draw();
                     },
                     color: {

@@ -26,7 +26,9 @@
                     numMoveAlong: 0,
                     numStreams: 0,
                     numAdds: 0,
-                    numDeletes: 0
+                    numDeletes: 0,
+                    minValue: 1,
+                    maxValue: 1
                 }
             } = {})
         {
@@ -696,7 +698,7 @@
         }
 
         _applyWeights() {
-            let {} = this._opts;
+            let {minValue, maxValue} = this._opts;
             let {N,EN,ET} = this._data;
 
             let nodesWithoutSize = {...N};
@@ -705,7 +707,7 @@
                     let children = this.__children(node);
                     // set size for leaf nodes
                     if (children.length == 0) {
-                        N[node].w = 1;
+                        N[node].w = minValue + Math.random() * (maxValue - minValue);
                         delete nodesWithoutSize[node];
                     }
                     else {
@@ -718,7 +720,7 @@
                                 aggregate += N[child].w;
                         }
                         if (allChildrenHaveSize) {
-                            N[node].w = aggregate + 1;
+                            N[node].w = aggregate + minValue + Math.random() * (maxValue - minValue);
                             delete nodesWithoutSize[node];
                         }
                     }

@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 				stream.unifyPosition = this.unifyPosition;
 			},
 			unifySizePlusOne() {
-				stream.nodeSizeAddOne = this.unifySizePlusOne;
+				stream.nodeSizeAddX = this.unifySizePlusOne;
 			},
 			drawStroke() {
 				stream.drawStroke(this.drawStroke);
