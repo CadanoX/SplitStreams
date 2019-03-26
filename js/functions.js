@@ -79,8 +79,9 @@ function transformViscousFormat(data)
 	for (let id in data.N) {
 		let node = data.N[id];
 		let time = format.timesteps[node.t];
-		let ref = time.references[id] = { id: id, size: node.w };
-		if (node.l == minDepth) { // add roots to fakeRoot
+        let ref = time.references[id] = { id: id, size: node.w };
+        // add roots to fakeRoot
+		if (node.l == minDepth) {
 			time.tree.children.push(ref)
 			ref.parent = time.tree;
 		}

@@ -46,10 +46,11 @@
         .test > .name {
             /*position: absolute;*/
             font-weight: bold;
+            height: 15px;
         }
 
         .test > .result {
-            height: 100%;
+            height: calc(100% - 15px);
         }
         
         path.stream {
@@ -74,10 +75,16 @@
 </head>
 <body>
     <div id="app">
+        <button id="download">Download</button>
     </div>
 
     <script>
         const wrapper = document.querySelector('#app');
+        document.querySelector('#download').onclick = function() {
+            let svgs = document.querySelectorAll('svg');
+            for (let svg of svgs)
+            saveSvg(svg, svg.parentNode.parentNode.id);
+        }
 
         for(let test in examples.tests) {
             let div = document.createElement('div');
@@ -102,8 +109,10 @@
             else
                 console.log("Data format \"" + data.format + "\" is not supported.");
 
-            d3.SecStream(testResult, {zoomTimeFactor: 2, width: 200, height: 200, margin: {top: 5, bottom: 5, right: 100, left: -100}})
+            let stream = d3.SecStream(testResult, {zoomTimeFactor: 1, width: 200, height: 200, margin: {top: 5, bottom: 5, right: 5, left: 5}})
                 .data(data);
+
+            stream.color = d3.scaleSequential(d3.interpolateViridis);
         }
     </script>
 </body>

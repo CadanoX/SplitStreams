@@ -80,7 +80,7 @@ const examples = {
 						"children": [
 							{
 								"length": "4",
-								"pos": "2"
+								"pos": "1"
 							}
 						]
 					}
@@ -92,7 +92,7 @@ const examples = {
 						"children": [
 							{
 								"length": "4",
-								"pos": "6"
+								"pos": "5"
 							}
 						]
 					}
@@ -202,12 +202,12 @@ const examples = {
 						"pos": "0",
 						"children": [
 							{
-								"length": "4",
-								"pos": "1"
+								"length": "2",
+								"pos": "2"
 							},
 							{
 								"length": "2",
-								"pos": "7"
+								"pos": "6"
 							}
 						]
 					}
@@ -218,12 +218,12 @@ const examples = {
 						"pos": "0",
 						"children": [
 							{
-								"length": "4",
-								"pos": "5"
+								"length": "2",
+								"pos": "6"
 							},
 							{
 								"length": "2",
-								"pos": "1"
+								"pos": "2"
 							}
 						]
 					}
