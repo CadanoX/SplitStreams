@@ -6,6 +6,8 @@ examples.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
 examples.gumtree = transformGumtreeFormat(examples.gumtree);
 examples.filetree = transformViscousFormat(examples.filetree);
 examples.filetree2 = transformViscousFormat(examples.filetree2);
+examples.explanation = transformViscousFormat(examples.explanation);
+examples.gumtreeDFT = transformGumtreeFormat(examples.gumtreeDFT);
 
 function changeSeparationY(func, value) {
 	if (func == "Fixed")
@@ -67,6 +69,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 					{ value: 'gumtreeMin', text: "Minimal Source Code"},
 					{ value: 'filetree', text: "Filetree"},
 					{ value: 'filetree2', text: "Filetree2"},
+                    { value: 'explanation', text: "Figure 3"},
+                    { value: 'gumtreeDFT', text: 'Figure 5'}
 				]
 			},
 			offset: {
@@ -372,7 +376,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 
 	let div = document.querySelector('#wrapper');
 	stream = d3.SecStream(div)
-		.data(examples[app.dataset.value]);
+        .data(examples[app.dataset.value]);
+    stream.nodeSizeAddX = 0;
 
 	stream.addSplitsAtTimepoints();
 });
