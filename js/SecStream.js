@@ -80,7 +80,8 @@
 			this._maxValue;
 			this._maxDepth;
 			this._indices = {};
-			this._maxIndex = 0;
+            this._maxIndex = 0;
+            this._treemapSpace;
 
 			this._separationXMethod = this.marginXFixed;
 			this._separationYMethod = this.marginYFixed;
@@ -305,7 +306,7 @@
 			this._maxTime = maxTime;
 			this._minTime = minTime;
 			this._maxValue = maxValue;
-			this._maxDepth = 0;
+            this._maxDepth = 0;
 			
 			let traverse = (node, depth) => {
 				this._maxDepth = Math.max(this._maxDepth, depth);
@@ -392,8 +393,8 @@
 			}
 
 			this._newStreamData.xScale = d3.scaleLinear()
-				//.domain([this._minTime - 0.5, this._maxTime + 0.5])
-				.domain([this._minTime - 0.5*(1-this._opts.proportion), this._maxTime + 0.5*(1-this._opts.proportion)])
+				.domain([this._minTime - 0.5, this._maxTime + 0.5])
+				//.domain([this._minTime - 0.5*(1-this._opts.proportion), this._maxTime + 0.5*(1-this._opts.proportion)])
 				.range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
 
 			let domain = this._opts.mirror ? [1, 0] : [0, 1];
@@ -482,7 +483,7 @@
 					.attr('y', '-500%')
 
 			filtersData.exit().remove();
-			
+			/*
 			this._svgFilters.selectAll("filter").each(function (effects, i) {
 				let html = "";
 				for (let i = 0; i < effects.length; i++) {
@@ -490,9 +491,10 @@
 					html += "<" + d.type + " dx='" + d.dx + "' dy='" + d.dy + "' stdDeviation='" + d.stdDeviation + "'/>";
 				}
 				this.innerHTML = html;
-			});
+            });
+            */
 
-			this._pathContainer.selectAll('path.stream').attr("filter", "url(#filter_0)");
+			//this._pathContainer.selectAll('path.stream').attr("filter", "url(#filter_0)");
 		}
 		
 		update() { this._update(true) }
@@ -549,15 +551,16 @@
 		}
 
 		marginXFixed(node) {
-			return this._opts.separationXValue / 100;
+			return this._opts.separationXValue / 10;
 		}
 
+        // TODO: use the max depth at that timepoint instead
 		marginXHierarchical(node) {
-			return (node.depth + 1) / this._maxDepth * this._opts.separationXValue / 100;
+			return (node.depth+1) / this._maxDepth * this._opts.separationXValue;
 		}
 
 		marginXHierarchicalReverse(node) {
-			return 1 / (node.depth + 1) * this._opts.separationXValue / 100;
+			return 1 / (node.depth+1) * this._opts.separationXValue;
 		}
 
 		setMinSizeThreshold(value) {
