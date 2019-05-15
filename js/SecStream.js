@@ -313,15 +313,6 @@
 				let isNew = this._findStreamId(node);
 				if (isNew)
 					this._newStreamData.add(node)
-
-				if (!node.parent) {
-					node.rpos = 0;
-					node.rsize = 1;
-				}
-				else {
-					node.rpos = (node.pos - node.parent.pos) / node.parent.size;
-					node.rsize = node.size / node.parent.size;
-				}
 				
 				if (!!node.children)
 					node.children.forEach( (child) => traverse(child, depth));
@@ -372,6 +363,9 @@
 						node.y0 = 0.5 * (p.y0 + p.y1);
 						node.y1 = 0.5 * (p.y0 + p.y1);
 					} else {
+                        // normalize
+                        node.rpos = (node.pos - node.parent.pos) / node.parent.size;
+                        node.rsize = node.size / node.parent.size;
 						node.y0 = p.y0 + (childX+1) * p.marginY + pSize * node.rpos;
 						node.y1 = node.y0 + pSize * node.rsize;
 
