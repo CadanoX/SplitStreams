@@ -513,7 +513,7 @@
 						textPos = y(stream.y1) + 15;
 				}
 
-				this._streams.push({
+                let streamObj = {
 					path: d.get(),
                     depth: stream.depth,
                     deepestDepth: deepestDepth,
@@ -522,7 +522,13 @@
 					clipPath: clipPath.get(),
 					textPos: { x: x(stream.x - 0.5*(1-this._proportion) + 0.5* stream.marginX),
 										 y: textPos }
-				});
+                };
+                
+                this._streams.push(streamObj);
+                /*if (!this._streams[stream.depth])
+                    this._streams[stream.depth] = [];
+                this._streams[stream.depth].push(streamObj);
+                */
 
 			}
 			this._clipPaths = this._streams.map(({id, clipPath}) => ({id, path: clipPath}));

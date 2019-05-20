@@ -413,9 +413,28 @@
 			}
 			let onMouseOut = (d) => {
 				//console.log("mouse out")
-			}
-			let streams = this._pathContainer.selectAll('path.stream')
-				.data(this._newStreamData.streams, function(d) { return d.id });
+            }
+            
+            let streamsByDepth = d3.nest().key(d => d.depth).entries(this._newStreamData.streams);
+
+            let depthLayers = this._pathContainer.selectAll('g.depthLayer')
+                .data(streamsByDepth);
+
+            depthLayers.exit().remove();
+
+            depthLayers.enter().append('g')
+                .classed('depthLayer', true)
+                .each(function(d) {
+                    this.classList.add('depth-' + d.key);
+                });
+
+
+            let streams = depthLayers.selectAll('path.stream')
+                .data(d => d.values, d => d.id);
+
+
+			//let streams = this._pathContainer.selectAll('path.stream')
+			//	.data(this._newStreamData.streams, d => d.id);
 
 			streams.enter().append('path')
 				.classed('stream', true)
@@ -483,7 +502,7 @@
 					.attr('y', '-500%')
 
 			filtersData.exit().remove();
-			/*
+			
 			this._svgFilters.selectAll("filter").each(function (effects, i) {
 				let html = "";
 				for (let i = 0; i < effects.length; i++) {
@@ -492,9 +511,8 @@
 				}
 				this.innerHTML = html;
             });
-            */
 
-			//this._pathContainer.selectAll('path.stream').attr("filter", "url(#filter_0)");
+			this._pathContainer.selectAll('g.depthLayer').attr("filter", "url(#filter_0)");
 		}
 		
 		update() { this._update(true) }
