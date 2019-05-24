@@ -31,6 +31,12 @@ function changeSeparationX(func, value) {
 
 document.addEventListener("DOMContentLoaded", function(event)
 {
+    /*
+    let text = ontologies.ICD9CM_2014AB;
+    let doc = $rdf.sym("https://example.com/alice/card");
+    let store = $rdf.graph();
+    $rdf.parse(text, store, doc.uri, 'text/turtle');  // pass base URI
+*/
 	let app = new Vue({
 		el: '#app',
 		data: {

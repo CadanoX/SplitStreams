@@ -484,10 +484,23 @@
                     
 					if (clipEnd - clipStart > 0) {
 						clipPath.move(clipStart, y0);
-						clipPath.horizontal(clipEnd);
-						clipPath.vertical(y1);
+                        clipPath.horizontal(clipEnd);
+                        clipPath.vertical(y1);
+                        /*let dist = y1-y0;
+                        let zigzags = 300;
+                        let zigzagWidth = 5;
+                        for (let z = 0; z < zigzags; z++) {
+                            let dir = (z % 2 * 2 - 1);
+                            clipPath.lineD(dir * zigzagWidth, dist/zigzags)
+                        }*/
+
+                        
 						clipPath.horizontal(clipStart);
 						clipPath.vertical(y0);
+                        /*for (let z = 0; z < zigzags; z++) {
+                            let dir = (z % 2 * 2 - 1);
+                            clipPath.lineD(dir * zigzagWidth, -dist/zigzags)
+                        }*/
 					}
                     clipStart = x(split + 0.5 * this._findClosestNode(stream, split+0.0001).marginX);
 				}

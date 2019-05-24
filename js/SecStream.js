@@ -442,10 +442,10 @@
 				.on("mouseout", onMouseOut)
 				.attr('clip-path', d => 'url(#clip' + d.id + this._name +')')
 				.attr('id', d => 'stream' + d.id + this._name)
-				.attr('shape-rendering', 'geometricPrecision')
+				//.attr('shape-rendering', 'geometricPrecision')
 				//.attr('shape-rendering', 'optimizeSpeed')
-				.attr('paint-order', 'stroke')
-				.attr('stroke-width', 3)
+				//.attr('paint-order', 'stroke')
+				//.attr('stroke-width', 3)
 				.merge(streams)
 					.attr('d', d => d.path)
 					.style('fill', d => color(d.deepestDepth))
@@ -484,9 +484,8 @@
 		
 		drawStroke(draw = true) {
 			this._opts.drawStroke = draw;
-			let color = this._opts.drawStroke ? 'black' : '';
-			this._pathContainer.selectAll('path.stream')
-				.style('stroke', color)
+			let color = this._opts.drawStroke ? 'black' : null;
+			this._pathContainer.style('stroke', color)
 		}
 
 		_applyFilters() {
