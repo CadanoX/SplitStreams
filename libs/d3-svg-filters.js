@@ -1,13 +1,4 @@
-const d3 = (typeof require == "function") ? require('d3') : window.d3;
-
-class SVGFilter {
-    constructor(spec) {
-
-    }
-
-    set id(id) { this._id = id; }
-    get id() { return this._id; }
-}
+const d3 = (typeof require) === 'function' ? require('d3') : window.d3;
 
 class SVGFilterManagerLibrary {
     constructor() {
@@ -38,13 +29,9 @@ class SVGFilterManagerLibrary {
     }
 }
 
-const GenSVGFilters = (...filters) => {
-
-}
-
 const Lib = new SVGFilterManagerLibrary();
 Lib.addFilter('drop-shadow', {
-    generate: function ({ color='black', dx, dy, blur }) {
+    generate: function ({ color, dx, dy, blur }) {
         const key = this.signature;
         const existing = this.defs.select(`#${key}`);
 
@@ -62,6 +49,23 @@ Lib.addFilter('drop-shadow', {
         return theDropShadow;
     },
     signature: ({ color, dx, dy, blur }) => `ds_${color}_${blur}_${dx}_${dy}`,
+});
+
+Lib.addFilter('blur', {
+    generate: function ({ blur }) {
+        const key = this.signature;
+        const existing = this.defs.select(`#${key}`);
+
+        if (!existing.empty()) return existing;
+
+        const theBlur =
+            this.defs.append('feGaussianBlur')
+            .attr('stdDeviation', blur);
+
+
+        return theBlur;
+    },
+    signature: ({ blur }) => `gbl_${blur}`
 });
 
 Lib.addFilter('inner-shadow', {
@@ -147,7 +151,7 @@ class SVGFilterManager {
 
         if (this.hasFilter(signature)) return this.getFilterID(signature);
 
-        const theID = this._ids[signature] = this._genID();
+        const theID = this._ids[signature] = SVGFilterManager._genID();
         const filterEntry = this._defs
             .append('filter')
             .attr('id', theID)
@@ -158,18 +162,21 @@ class SVGFilterManager {
 
         filterEntry.node().__filters__ = [];
 
-        const filters = args.forEach((arg, i) => {
+        args.each((arg, i) => {
             if (i % 2 === 0) return Lib.generate(filterEntry, arg, args[i + 1]);
-            // return false;
         });
 
         return theID;
     }
 
-    _genID() {
+    static _genID() {
         if (!this.__idc__) this.__idc__ = 0;
         return `FILTER_${this.__idc__++}`;
+
     }
+
+    // _genID() {
+    // }
 
     getFilterID(signature) { return this._ids[signature]; }
 }
@@ -197,10 +204,15 @@ d3.selection.prototype.svgFilter = function (...filters) { // name, args, name1,
     // const ids = GenSVGFilters(filters);
 }
 
+d3.selection.prototype.clearFilter = function () {
+    const id = this.attr('filter');
+    // TODO!
+}
+
 // d3.svgFilter = (name, args) => lib.filter(name)(args);
 
 // Example usage
-const selection = {};
+// const selection = {};
 
 // selection
 //     .svgFilter(

@@ -1,0 +1,28 @@
+{
+  "name": "secstream-browserify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Cadanox@github.com/cadanox/secstreams.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cadanox/secstreams/issues"
+  },
+  "homepage": "https://github.com/cadanox/secstreams#readme",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "grunt": "^1.0.4",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^4.0.0",
+    "n3": "^1.1.1"
+  }
+}

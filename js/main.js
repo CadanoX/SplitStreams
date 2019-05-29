@@ -1,3 +1,5 @@
+const {OntologyLoader} = require('./Ont');
+
 var stream;
 
 examples.viscousMin = transformViscousFormat(examples.viscousMin);
@@ -29,6 +31,7 @@ function changeSeparationX(func, value) {
 		stream.separationX(stream.marginXHierarchicalReverse, value);
 }
 
+
 document.addEventListener("DOMContentLoaded", function(event)
 {
     /*
@@ -36,7 +39,10 @@ document.addEventListener("DOMContentLoaded", function(event)
     let doc = $rdf.sym("https://example.com/alice/card");
     let store = $rdf.graph();
     $rdf.parse(text, store, doc.uri, 'text/turtle');  // pass base URI
-*/
+    */
+    ont = new OntologyLoader();
+    ont.loadOntologies();
+
 	let app = new Vue({
 		el: '#app',
 		data: {
