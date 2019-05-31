@@ -45,91 +45,34 @@ function saveJson(exportObj, exportName){
     downloadAnchorNode.remove();
   }
 
-function transformViscousFormat(data)
-{
-	// init
-	let format = { timesteps: []};
-	for (let t in data.EN) {
-		format.timesteps[t] = {
-			deleted: {},
-			references: {},
-			tree: {
-				id: "fakeRoot",
-				children: []
-			}
-		};
-	}
-
-	// build history of root node
-	for (let t in data.EN) {
-		let time = format.timesteps[t];
-		let next = format.timesteps[+t+1];
-		time.references["fakeRoot"] = time.tree;
-		if (next) {
-			time.tree.next = [ next.tree ];
-			next.tree.prev = [ time.tree ];
-		}
-	}
-
-	// add all nodes to references
-	let minDepth = Infinity; // viscious might have depths of 25, 30 and 35
+function transformViscousFormat(data) {
+    let format = d3.SecStreamInputData({forceFakeRoot: true});
+    // add nodes
 	for (let id in data.N) {
-		minDepth = Math.min(minDepth, data.N[id].l)
-	}
-	for (let id in data.N) {
-		let node = data.N[id];
-		let time = format.timesteps[node.t];
-        let ref = time.references[id] = { id: id, size: node.w };
-        // add roots to fakeRoot
-		if (node.l == minDepth) {
-			time.tree.children.push(ref)
-			ref.parent = time.tree;
-		}
-	}
-
-	// build tree structure
+        let node = data.N[id];
+        format.addNode(node.t, id, node.w)
+    }
+    // add tree structure
 	for (let t in data.EN) {
-		let time = format.timesteps[t];
-
-		/*// set tree root
-		let nodes = Object.keys(data.EN[t]);
-		let last = nodes[nodes.length-1];
-		time.tree = time.references[last];
-		*/
-
-		// connect all children
-		for (let id in data.EN[t]) {
-			let node = time.references[id];
-			let childArray = data.EN[t][id];
-			if (childArray.length > 0)
-				node.children = [];
-			for (let childId of childArray) {
-				node.children.push(time.references[childId])
-				time.references[childId].parent = node;
-			}
-		}
-	}
-
-	// set prev, next nodes
+        for (let id in data.EN[t]) {
+            let childArray = data.EN[t][id];
+            for (let childId of childArray) {
+                format.addParent(t, childId, id);
+            }
+        }
+    }
+    // add timeline
 	for (let stream in data.ET) {
 		for (let nodeId in data.ET[stream]) {
 			let t = data.N[nodeId].t;
-			let node = format.timesteps[t].references[nodeId];
-
 			for (let nextId of data.ET[stream][nodeId]) {
-				let next = format.timesteps[+t+1].references[nextId];
-				if (!node.next)
-					node.next = [];
-				node.next.push(next)
-
-				if (!next.prev)
-					next.prev = [];
-				next.prev.push(node)
+                format.addNext(t, nodeId, nextId);
 			}
 		}
-	}
+    }
 
-    return format
+    format.finalize();
+    return format.data;
 }
 
 function transformGumtreeFormat(data)

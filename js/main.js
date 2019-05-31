@@ -2,14 +2,15 @@ const {OntologyLoader} = require('./Ont');
 
 var stream;
 
-examples.viscousMin = transformViscousFormat(examples.viscousMin);
-examples.viscous = transformViscousFormat(examples.viscous);
-examples.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
-examples.gumtree = transformGumtreeFormat(examples.gumtree);
-examples.filetree = transformViscousFormat(examples.filetree);
-examples.filetree2 = transformViscousFormat(examples.filetree2);
-examples.explanation = transformViscousFormat(examples.explanation);
-examples.gumtreeDFT = transformGumtreeFormat(examples.gumtreeDFT);
+var datasets = {};
+datasets.viscous = transformViscousFormat(examples.viscous);
+datasets.viscousMin = transformViscousFormat(examples.viscousMin);
+datasets.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
+datasets.gumtree = transformGumtreeFormat(examples.gumtree);
+datasets.filetree = transformViscousFormat(examples.filetree);
+datasets.filetree2 = transformViscousFormat(examples.filetree2);
+datasets.explanation = transformViscousFormat(examples.explanation);
+datasets.gumtreeDFT = transformGumtreeFormat(examples.gumtreeDFT);
 
 function changeSeparationY(func, value) {
 	if (func == "Fixed")
@@ -34,12 +35,6 @@ function changeSeparationX(func, value) {
 
 document.addEventListener("DOMContentLoaded", function(event)
 {
-    /*
-    let text = ontologies.ICD9CM_2014AB;
-    let doc = $rdf.sym("https://example.com/alice/card");
-    let store = $rdf.graph();
-    $rdf.parse(text, store, doc.uri, 'text/turtle');  // pass base URI
-    */
     ont = new OntologyLoader();
     ont.loadOntologies();
 
@@ -252,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 					// TODO: deactivate update. it requires normalizeData to run on .data()
 					//in order to not introduce errors (like not setting correct split values)
 					//stream.automaticUpdate = false;
-					stream.data(examples[dataset.value]).filters(this.filters)
+					stream.data(datasets[dataset.value]).filters(this.filters)
 					this.applySplits(this.split);
 					//stream.automaticUpdate = true;
 					stream.update();
@@ -388,7 +383,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 
 	let div = document.querySelector('#wrapper');
 	stream = d3.SecStream(div)
-        .data(examples[app.dataset.value]);
+        .data(datasets[app.dataset.value]);
     stream.nodeSizeAddX = 0;
 
 	stream.addSplitsAtTimepoints();

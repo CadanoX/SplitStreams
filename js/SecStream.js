@@ -56,9 +56,10 @@
 				showLabels: false,
                 mirror: false,
                 splitRoot: false,
-				offset: "silhouette" // zero, expand, silhouette
-            }
-			Object.assign(this._opts, opts);
+                offset: "silhouette", // zero, expand, silhouette
+                
+                ...opts // overwrite default settings with user settings
+            };
 
             this._name = container.id
 			this._container = container;
