@@ -271,7 +271,9 @@
 
 			// positions must be unified, if sizes are unified
 			let checkPositions = (node, pos = 0) => {
-				if (this._opts.unifySize || this._opts.unifyPosition || Number.isNaN(node.dataPos))
+                if (this._opts.unifySize || this._opts.unifyPosition
+                    || Number.isNaN(node.dataPos)
+                    || (!!node.parent && node.parent.id == 'fakeRoot'))
 					node.pos = pos;
 				else
 					node.pos = node.dataPos;

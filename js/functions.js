@@ -77,7 +77,7 @@ function transformViscousFormat(data) {
 
 function transformGumtreeFormat(data)
 {
-    let format = d3.SecStreamInputData({forceFakeRoot: true});
+    let format = d3.SecStreamInputData();
     let idx = 0;
 
     // follow the data format's post-order DFS approach
