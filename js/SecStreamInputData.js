@@ -6,21 +6,19 @@
                 forceFakeRoot: false,
                 ...options // overwrite default settings with user settings
             }
+            // hold a tree (root node) for each timestep
+            // hold a reference array which includes all nodes present in a single timestep
             this._timesteps = [];
         }
 
         get data() { return { timesteps: this._timesteps }};;
 
-        addNode(t, id = -1, size = undefined, pos = undefined) {
+        addNode(t, id, size = undefined, pos = undefined, data = undefined) {
             if (!this._timesteps[t])
                 this._createTimestep(t);
             
             if (!this._timesteps[t].references[id])
-                this._timesteps[t].references[id] = {
-                    id: id,
-                    size: size,
-                    pos: pos
-                }
+                this._timesteps[t].references[id] = { id, size, pos, data }
         }
 
         addParent(t, id, pId) {
@@ -36,7 +34,7 @@
         }
 
         addNext(t, id, nextId) {
-            if (!this._timesteps[+t+1]) { console.log(`Error 'addNext': Timestep '${t}' does not exist.`); return; }
+            if (!this._timesteps[+t+1]) { console.log(`Error 'addNext': Timestep '${+t+1}' does not exist.`); return; }
             let node = this._timesteps[t].references[id];
             if (!node) { console.log(`Error 'addNext': Node '${id}' does not exist.`); return; }
             let nextNode = this._timesteps[+t+1].references[nextId];
@@ -100,8 +98,6 @@
                     this._timesteps[t].tree = nodesWithoutParents[t][0];
                 }
             }
-
-
         }
 
         _createTimestep(t) {

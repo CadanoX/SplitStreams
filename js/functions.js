@@ -46,7 +46,7 @@ function saveJson(exportObj, exportName){
   }
 
 function transformViscousFormat(data) {
-    let format = d3.SecStreamInputData({forceFakeRoot: true});
+    let format = d3.SecStreamInputData();
     // add nodes
 	for (let id in data.N) {
         let node = data.N[id];
@@ -77,85 +77,54 @@ function transformViscousFormat(data) {
 
 function transformGumtreeFormat(data)
 {
-	// we use references instead of hierarchical ids
-	// timesteps holds for each timestime the corresponding tree
-	// reference keeps for each node its pointers to all timesteps where it exists
-	let format = {timesteps: []};
-	let idx = 0;
-	let currentTimestep,
-		previousTimestep;
+    let format = d3.SecStreamInputData({forceFakeRoot: true});
+    let idx = 0;
 
-	/*let getUniqueID = (pointer) => {
-		// initiate IDs
-		if (timestep == 0)
-			return idx++;
+    // follow the data format's post-order DFS approach
+    let traverse = (t, node) => {
+		if (!!node.children)
+			for (let i = 0; i < node.children.length; i++)
+				traverse(t, node.children[i]);
 
-		if (data.changes.matches)
-		;
-		
-		// look if this node has a matching node
-		// if it has, use this nodes id, otherwise use new id
-		// careful, because later nodes might refer to the data id, not ours
-		if (!!format.reference[id][timestep])
-		;
-	};*/
+        node.id = idx++;
+        format.addNode(t, node.id, node.length, node.pos, {
+            label: node.label,
+            type: node.type,
+            typeLabel: node.typeLabel
+        });
 
-	// Copy the trees for each timetep from input data to our data format
-	let traverse = (src, dest) => {
-		// we follow the  data's depth-first post-order traversal
-		dest.children = [];
-		if (!!src.children)
-			for (let i = 0; i < src.children.length; i++) {
-				//if (src.children[i].type != 162) { // remove comments
-					dest.children[i] = { parent: dest };
-					traverse(src.children[i], dest.children[i]);
-				//}
-			}
-
-		dest.id = idx++;
-		currentTimestep.references[dest.id] = dest;
-		dest.size = src.length;
-		dest.pos = src.pos;
-		dest.data = {
-			label: src.label,
-			type: src.type,
-			typeLabel: src.typeLabel,
-			pos: src.pos,
-			length: src.length
-		}
+        // children need to be added in a second step, becaues ID is not known beforehand
+        if (!!node.children)
+            for (let i = 0; i < node.children.length; i++)
+                format.addParent(t, node.children[i].id, node.id);
 	};
-
-	
 
 	for (t in data.timesteps)
 	{
-		idx = 0;
-		currentTimestep = format.timesteps[t] = { deleted: {}, references: {}, tree: {} };
-		traverse(data.timesteps[t].root, currentTimestep.tree);
-		
-		if (t != 0) {
-			previousTimestep = format.timesteps[t-1];
-
-			// Find matching nodes
-			if (!!data.changes[t-1].matches)
-				for (let match of data.changes[t-1].matches) {
-					let prev = previousTimestep.references[match.src];
-					currentTimestep.references[match.dest].prev = [ prev ];
-					prev.next = [ currentTimestep.references[match.dest] ];
-				}
+        idx = 0;
+        // add nodes and tree structure
+		traverse(t, data.timesteps[t].root);
+        
+        // add timeline (start with second, because data needs to be written before being modified)
+        if (t > 0) {
+            if (!!data.changes[t-1].matches)
+                for (let match of data.changes[t-1].matches) {
+                    format.addNext(t-1, match.src, match.dest);
+                }
 
 			// find added, deleted nodes
-			if (!!data.changes[t-1].actions)
-				for (let action of data.changes[t-1].actions) {
-					if (action.action == "delete")
-						currentTimestep.deleted[action.tree] = previousTimestep.references[action.tree];
+			// if (!!data.changes[t-1].actions)
+			// 	for (let action of data.changes[t-1].actions) {
+			// 		if (action.action == "delete")
+			// 			currentTimestep.deleted[action.tree] = previousTimestep.references[action.tree];
 					
-					/*if (action.action == "insert") {
-						currentTimestep.references[action.tree].insertAt = action.at;
-					}*/
-				}
-		}
+			// 		/*if (action.action == "insert") {
+			// 			currentTimestep.references[action.tree].insertAt = action.at;
+			// 		}*/
+            //     }
+        }
 	}
 
-	return format;
+    format.finalize();
+    return format.data;
 }
