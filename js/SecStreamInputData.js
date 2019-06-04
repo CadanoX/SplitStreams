@@ -11,7 +11,7 @@
             this._timesteps = [];
         }
 
-        get data() { return { timesteps: this._timesteps }};;
+        get data() { return { timesteps: this._timesteps }};
 
         addNode(t, id, size = undefined, pos = undefined, data = undefined) {
             if (!this._timesteps[t])
@@ -117,24 +117,6 @@
                             nodes[id].next = [ nodes2[id] ] ;
                             nodes2.prev = [ nodes[id] ];
                         }
-                    }
-                }
-            }
-        }
-
-        _buildTreeConnections() {
-            for (let t in this._timesteps) {
-                let nodes = this._timesteps[t].references;
-                for (let id in nodes) {
-                    let node = nodes[id];
-                    let p = nodes[node.pId];
-                    if(!p)
-                        console.log(`Parent ${pId} of node ${id} does not exist.`)
-                    else {
-                        if (!p.children)
-                            p.children = [];
-                        p.children.append(node);
-                        node.parent = p;
                     }
                 }
             }

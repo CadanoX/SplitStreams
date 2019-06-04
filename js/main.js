@@ -1,4 +1,4 @@
-const {OntologyLoader} = require('./Ont');
+const {OntologyLoader} = require('./OntologyLoader');
 
 var stream;
 
@@ -36,7 +36,11 @@ function changeSeparationX(func, value) {
 document.addEventListener("DOMContentLoaded", function(event)
 {
     ont = new OntologyLoader();
-    ont.loadOntologies();
+    ont.loadOntology(ontologies.ICD9CM_2013AB);
+    ont.loadOntology(ontologies.ICD9CM_2014AB);
+    ont.transformOntologiesToTree();
+
+    datasets.ontology = ont.data;
 
 	let app = new Vue({
 		el: '#app',
@@ -77,7 +81,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 					{ value: 'filetree', text: "Filetree"},
 					{ value: 'filetree2', text: "Filetree2"},
                     { value: 'explanation', text: "Figure 3"},
-                    { value: 'gumtreeDFT', text: 'Figure 5'}
+                    { value: 'gumtreeDFT', text: 'Figure 5'},
+                    { value: 'ontology', text: 'Ontology'}
 				]
 			},
 			offset: {
