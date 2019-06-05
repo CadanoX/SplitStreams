@@ -71,11 +71,10 @@
 			this._svg;
 			this._svgFilters;
 			this._filters;
-			this._clipPaths;
+            this._clipPaths;
+            this._datasetsLoaded = 0
 			
-			this._newStreamData = d3.SecStreamData();
-
-			this._streamData;
+			this._streamData = d3.SecStreamData();
 			this._minTime;
 			this._maxTime;
 			this._maxValue;
@@ -111,6 +110,8 @@
 		set colorRandom(random) { this._colorRandom = random; this.render() }
 
         _setData(d) {
+            this._datasetsLoaded++;
+
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
 			this._data = d;
 
@@ -239,7 +240,7 @@
 		}*/
 
 		_clearStreamIds() {
-			this._newStreamData.clear();
+			this._streamData.clear();
 			this._indices = {};
 			this._maxIndex = 0;
 		}
@@ -316,7 +317,7 @@
 				node.depth = depth++;
 				let isNew = this._findStreamId(node);
 				if (isNew)
-					this._newStreamData.add(node)
+					this._streamData.add(node)
 				
 				if (!!node.children)
 					node.children.forEach( (child) => traverse(child, depth));
@@ -395,13 +396,13 @@
 				traverse(time[i].tree);
 			}
 
-			this._newStreamData.xScale = d3.scaleLinear()
+			this._streamData.xScale = d3.scaleLinear()
 				.domain([this._minTime - 0.5, this._maxTime + 0.5])
 				//.domain([this._minTime - 0.5*(1-this._opts.proportion), this._maxTime + 0.5*(1-this._opts.proportion)])
 				.range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
 
 			let domain = this._opts.mirror ? [1, 0] : [0, 1];
-			this._newStreamData.yScale = d3.scaleLinear()
+			this._streamData.yScale = d3.scaleLinear()
 				.domain(domain).nice()
 				.range([height - margin.bottom, margin.top]);
 				//.range(margin.top, height - margin.bottom);
@@ -418,26 +419,22 @@
 				//console.log("mouse out")
             }
             
-            let streamsByDepth = d3.nest().key(d => d.depth).entries(this._newStreamData.streams);
+            let streamsByDepth = d3.nest().key(d => d.depth).entries(this._streamData.streams);
 
-            let depthLayers = this._pathContainer.selectAll('g.depthLayer')
-                .data(streamsByDepth);
+            let depthLayers = this._pathContainer.selectAll('g.depthLayer > g.clipLayer')
+                .data(streamsByDepth, d => this._datasetsLoaded + d.key);
 
             depthLayers.exit().remove();
+            d3.selectAll('.depthLayer:empty').remove()
 
             depthLayers.enter().append('g')
                 .classed('depthLayer', true)
-                .each(function(d) {
-                    this.classList.add('depth-' + d.key);
-                });
-
+                .each(function(d) { this.classList.add('depth-' + d.key); })
+                .append('g')
+                    .classed('clipLayer', true);
 
             let streams = depthLayers.selectAll('path.stream')
                 .data(d => d.values, d => d.id);
-
-
-			//let streams = this._pathContainer.selectAll('path.stream')
-			//	.data(this._newStreamData.streams, d => d.id);
 
 			streams.enter().append('path')
 				.classed('stream', true)
@@ -459,7 +456,7 @@
 			this.drawStroke(this._opts.drawStroke);
 
 			let splitData = this._svgFilters.selectAll("clipPath")
-				.data(this._newStreamData.clipPaths, function(d) { return d.id });
+				.data(this._streamData.clipPaths, function(d) { return d.id });
 
 			splitData.enter().append("clipPath")
 				.attr('id', d => "clip" + d.id + this._name)
@@ -471,7 +468,7 @@
 
 		showLabels(show = true) {
 			this._opts.showLabels = show;
-			let labelData = this._opts.showLabels ? this._newStreamData.streams : [];
+			let labelData = this._opts.showLabels ? this._streamData.streams : [];
 
 			let labels = this._textContainer.selectAll('text')
 				.data(labelData, function(d) { return d.id });
@@ -530,7 +527,7 @@
 			this._applyOrdering();
 			this._calculatePositions();
 
-			this._newStreamData.calculatePaths();
+			this._streamData.calculatePaths();
 			this.render();
         }
         
@@ -590,7 +587,7 @@
 
 		setProportion(value) {
 			this._opts.proportion = +value;
-			this._newStreamData.proportion = +value
+			this._streamData.proportion = +value
 			this._update();
 		}
 
@@ -601,17 +598,17 @@
 
 
 		startEndEncoding(encoding) {
-			this._newStreamData.startEndEncoding = encoding;
+			this._streamData.startEndEncoding = encoding;
 			this._update();
 		}
 
 		startEndEncodingX(x) {
-			this._newStreamData.startEndEncodingX = x;
+			this._streamData.startEndEncodingX = x;
 			this._update();
 		}
 
 		startEndEncodingY(y) {
-			this._newStreamData.startEndEncodingY = y;
+			this._streamData.startEndEncodingY = y;
 			this._update();
 		}
 
@@ -621,7 +618,7 @@
 		}
 
 		addSplits(splits) {
-			this._newStreamData.addSplits(splits);
+			this._streamData.addSplits(splits);
 			this._update();
 		}
 
@@ -653,12 +650,12 @@
 		}
 
 		removeSplits(splits) {
-			this._newStreamData.removeSplits(splits);
+			this._streamData.removeSplits(splits);
 			this._update();
 		}
 
 		getSplits() {
-			return this._newStreamData.splits;
+			return this._streamData.splits;
 		}
 	}
 

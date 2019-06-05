@@ -35,12 +35,12 @@ function changeSeparationX(func, value) {
 
 document.addEventListener("DOMContentLoaded", function(event)
 {
-    ont = new OntologyLoader();
+    /*ont = new OntologyLoader();
     ont.loadOntology(ontologies.ICD9CM_2013AB);
     ont.loadOntology(ontologies.ICD9CM_2014AB);
     ont.transformOntologiesToTree();
 
-    datasets.ontology = ont.data;
+    datasets.ontology = ont.data;*/
 
 	let app = new Vue({
 		el: '#app',
