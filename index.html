@@ -98,57 +98,70 @@
             <hr>
             <div>
                 <span><b>Separation Y</b></span>
-                <br>
-                <label>Value: {{ separationYValue }}</label>
-                <br>
-                <input type="range" v-model="separationYValue" step= "0.001" min="0" max="1" />
-                <br>
-                <input type="radio" id="sepYfixed" value="Fixed" selected v-model="separationY">
-                <label for="sepYfixed">Fixed</label>
-                <br>
-                <input type="radio" id="sepYpercentage" value="Percentage" v-model="separationY">
-                <label for="sepYpercentage">Percentage</label>
-                <br>
-                <input type="radio" id="sepYhierarchy" value="Hierarchical" v-model="separationY">
-                <label for="sepYhierarchy">Hierarchical</label>
-                <br>
-                <input type="radio" id="sepYhierarchyReverse" value="HierarchicalReverse" v-model="separationY">
-                <label for="sepYhierarchyReverse">Hier. Reverse</label>
+                <div>
+                    <label>Value: {{ separationYValue }}</label>
+                </div>
+                <div>
+                    <input type="range" v-model="separationYValue" step= "0.001" min="0" max="1" />
+                </div>
+                <div>
+                    <input type="radio" id="sepYfixed" value="Fixed" selected v-model="separationY">
+                    <label for="sepYfixed">Fixed</label>
+                </div>
+                <div>
+                    <input type="radio" id="sepYpercentage" value="Percentage" v-model="separationY">
+                    <label for="sepYpercentage">Percentage</label>
+                </div>
+                <div>
+                    <input type="radio" id="sepYhierarchy" value="Hierarchical" v-model="separationY">
+                    <label for="sepYhierarchy">Hierarchical</label>
+                </div>
+                <div>
+                    <input type="radio" id="sepYhierarchyReverse" value="HierarchicalReverse" v-model="separationY">
+                    <label for="sepYhierarchyReverse">Hier. Reverse</label>
+                </div>
             </div>
             <div>
                 <span><b>Separation X</b></span>
-                <br>
-                <label>Value: {{ separationXValue }}</label>
-                <br>
-                <input type="range" v-model="separationXValue" step= "0.001" min="0" max="1" />
-                <br>
-                <input type="radio" id="sepXfixed" value="Fixed" selected v-model="separationX">
-                <label for="sepXfixed">Fixed</label>
-                <br>
-                <input type="radio" id="sepXhierarchy" value="Hierarchical" v-model="separationX">
-                <label for="sepXhierarchy">Hierarchical</label>
-                <br>
-                <input type="radio" id="sepXhierarchyReverse" value="HierarchicalReverse" v-model="separationX">
-                <label for="sepXhierarchyReverse">Hier. Reverse</label>
-
-                <br>
-                <input type="checkbox" id="splitRoot" v-model="splitRoot">
-                <label for="splitRoot">Split Root</label>
+                <div>
+                    <label>Value: {{ separationXValue }}</label>
+                </div>
+                <div>
+                    <input type="range" v-model="separationXValue" step= "0.001" min="0" max="1" />
+                </div>
+                <div>
+                    <input type="radio" id="sepXfixed" value="Fixed" selected v-model="separationX">
+                    <label for="sepXfixed">Fixed</label>
+                </div>
+                <div>
+                    <input type="radio" id="sepXhierarchy" value="Hierarchical" v-model="separationX">
+                    <label for="sepXhierarchy">Hierarchical</label>
+                </div>
+                <div>
+                    <input type="radio" id="sepXhierarchyReverse" value="HierarchicalReverse" v-model="separationX">
+                    <label for="sepXhierarchyReverse">Hier. Reverse</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="splitRoot" v-model="splitRoot">
+                    <label for="splitRoot">Split Root</label>
+                </div>
             </div>
             <hr>
             <div>
                 <span><b>Splits</b></span>
-                <br>
-                <input type="radio" id="splitAtTime" value="at" selected v-model="split">
-                <label for="splitAtTime">at timepoints</label>
-                <br>
-                <input type="radio" id="splitBetweenTime" value="between" v-model="split">
-                <label for="splitBetweenTime">between timep.</label>
-                <br>
-                <input type="radio" id="splitRandom" value="random" v-model="split">
-                <label for="splitRandom">randomly</label>
-                <button value='randomize' v-on:click="randomizeSplits">randomize</button>
-                <br>
+                <div>
+                    <input type="radio" id="splitAtTime" value="at" selected v-model="split">
+                    <label for="splitAtTime">at timepoints</label>
+                </div>
+                <div>
+                    <input type="radio" id="splitBetweenTime" value="between" v-model="split">
+                    <label for="splitBetweenTime">between timep.</label>
+                </div>
+                <div>
+                    <input type="radio" id="splitRandom" value="random" v-model="split">
+                    <label for="splitRandom">randomly</label>
+                    <button value='randomize' v-on:click="randomizeSplits">randomize</button>
+                </div>
             </div>
             <hr>
             <div>
@@ -165,10 +178,14 @@
                     {{ option.text }}
                     </option>
                 </select>
-                <br>
-                <label>x:</label><input type="range" v-model="startEndEncoding.x" step= "0.01" min="0" max="2" />
-                <br>
-                <label>y:</label><input type="range" v-model="startEndEncoding.y" step= "0.01" min="-1" max="2" />
+                <div v-if="startEndEncoding.value == 'plug'">
+                    <label>y:</label>
+                    <input type="range" v-model="startEndEncoding.y" step= "0.01" min="-1" max="2" />
+                </div>
+                <div v-if="startEndEncoding.value == 'plug'">
+                    <label>x:</label>
+                    <input type="range" v-model="startEndEncoding.x" step= "0.01" min="0" max="2" />
+                </div>
             </div>
             <hr>
             <div>
@@ -184,18 +201,24 @@
             </div>
             <div style="display: inline-block">
                 <label><b>Drop Shadow 1:</b></label>
-                <br>
-                <label>dx: {{ filters[0][0].dx }} </label>
-                <br>
-                <input type="range" v-model="filters[0][0].dx" step= "1" min="-10" max="10" />
-                <br>
-                <label>dy: {{ filters[0][0].dy }} </label>
-                <br>
-                <input type="range" v-model="filters[0][0].dy" step= "1" min="-10" max="10" />
-                <br>
-                <label>stdDeviation: {{ filters[0][0].stdDeviation }} </label>
-                <br>
-                <input type="range" v-model="filters[0][0].stdDeviation" step= "0.2" min="0" max="20" />
+                <div>
+                    <label>dx: {{ filters[0][0].dx }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[0][0].dx" step= "1" min="-10" max="10" />
+                </div>
+                <div>
+                    <label>dy: {{ filters[0][0].dy }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[0][0].dy" step= "1" min="-10" max="10" />
+                </div>
+                <div>
+                    <label>stdDeviation: {{ filters[0][0].stdDeviation }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[0][0].stdDeviation" step= "0.2" min="0" max="20" />
+                </div>
             </div>
             <!--
             </vr>

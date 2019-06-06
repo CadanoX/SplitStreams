@@ -12,27 +12,6 @@ datasets.filetree2 = transformViscousFormat(examples.filetree2);
 datasets.explanation = transformViscousFormat(examples.explanation);
 datasets.gumtreeDFT = transformGumtreeFormat(examples.gumtreeDFT);
 
-function changeSeparationY(func, value) {
-	if (func == "Fixed")
-		stream.separationY(stream.marginYFixed, value);
-	else if (func == "Percentage")
-		stream.separationY(stream.marginYPercentage, value);
-	else if (func == "Hierarchical")
-		stream.separationY(stream.marginYHierarchical, value);
-	else if (func == "HierarchicalReverse")
-		stream.separationY(stream.marginYHierarchicalReverse, value);
-}
-
-function changeSeparationX(func, value) {
-	if (func == "Fixed")
-		stream.separationX(stream.marginXFixed, value);
-	else if (func == "Hierarchical")
-		stream.separationX(stream.marginXHierarchical, value);
-	else if (func == "HierarchicalReverse")
-		stream.separationX(stream.marginXHierarchicalReverse, value);
-}
-
-
 document.addEventListener("DOMContentLoaded", function(event)
 {
     /*ont = new OntologyLoader();
@@ -157,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			randomizeSplits: function() {
 				stream.removeSplits();
 				stream.addSplitsRandomly(10);
-				this.randomSplits = stream.getSplits();
+				this.randomSplits = stream.splits;
 			},
 			applySplits: function(option) {
 				if (option == "at") {
@@ -192,25 +171,37 @@ document.addEventListener("DOMContentLoaded", function(event)
 				stream.resize(this.settings.width, this.settings.height);
 			},
 			separationY: function() {
-				changeSeparationY(this.separationY, this.separationYValue)
+				if (this.separationY == "Fixed")
+                    stream.separationYFunction = stream.marginYFixed;
+                else if (this.separationY == "Percentage")
+                    stream.separationYFunction = stream.marginYPercentage;
+                else if (this.separationY == "Hierarchical")
+                    stream.separationYFunction = stream.marginYHierarchical;
+                else if (this.separationY == "HierarchicalReverse")
+                    stream.separationYFunction = stream.marginYHierarchicalReverse;
 			},
 			separationYValue: function() {
-				changeSeparationY(this.separationY, this.separationYValue)
+				stream.separationYValue = this.separationYValue;
 			},
 			separationX: function() {
-				changeSeparationX(this.separationX, this.separationXValue)
+                if (this.separationX == "Fixed")
+                    stream.separationXFunction = stream.marginXFixed;
+                else if (this.separationX == "Hierarchical")
+                    stream.separationXFunction = stream.marginXHierarchical;
+                else if (this.separationX == "HierarchicalReverse")
+                    stream.separationXFunction = stream.marginXHierarchicalReverse;
 			},
 			separationXValue: function() {
-				changeSeparationX(this.separationX, this.separationXValue)
+				stream.separationXValue = this.separationXValue;
 			},
 			sizeThreshold: function() {
-				stream.setMinSizeThreshold(this.sizeThreshold)
+				stream.minSizeThreshold = this.sizeThreshold;
 			},
 			proportion: function() {
-				stream.setProportion(this.proportion)
+				stream.proportion = this.proportion;
 			},
 			zoomTime: function() {
-				stream.setZoomTime(this.zoomTime);
+				stream.zoomTime = this.zoomTime;
 			},
 			unifySize() {
 				stream.unifySize = this.unifySize;
@@ -241,9 +232,9 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			startEndEncoding: {
 				handler: function(encoding) {
-					stream.startEndEncoding(encoding.value);
-					stream.startEndEncodingX(encoding.x);
-					stream.startEndEncodingY(encoding.y);
+					stream.startEndEncoding = encoding.value;
+					stream.startEndEncodingX = encoding.x;
+					stream.startEndEncodingY = encoding.y;
 				},
 				deep: true
 			},
@@ -261,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			offset: {
 				handler: function(offset) {
-					stream.offset(offset.value);
+					stream.offset = offset.value;
 				},
 				deep: true
 			},

@@ -98,7 +98,7 @@
 		
 		filters(d) { return d == null ? this._filters : (this._setFilters(d), this); }
 
-		options(opts) { Object.assign(this._opts, opts); }
+        options(opts) { Object.assign(this._opts, opts); }
 		
 		set automaticUpdate(auto) { this._opts.automaticUpdate = auto; }
 		set unifySize(unify) { this._opts.unifySize = unify; this._update() }
@@ -106,8 +106,22 @@
 		set unifyPosition(unify) { this._opts.unifyPosition = unify; this._update() }
 		set mirror(mirror) { this._opts.mirror = mirror; this._update() }
 		set splitRoot(splitRoot) { this._opts.splitRoot = splitRoot; this._update() }
+        set minSizeThreshold(threshold) { this._opts.minSizeThreshold = threshold / 100; this._update(); }
+        set proportion(value) { this._opts.proportion = this._streamData.proportion = +value; this._update(); }
+		set zoomTime(factor) { this._opts.zoomTimeFactor = factor; this._update(); }
+        set offset(offset) { this._opts.offset = offset; this._update(); }
+        set separationXValue(value) { this._opts.separationXValue = value / 2; this._update(); }
+        set separationYValue(value) { this._opts.separationYValue = value / 2; this._update(); }
+
 		set color(colorFunction) { this._color = colorFunction; this.render() }
 		set colorRandom(random) { this._colorRandom = random; this.render() }
+		set startEndEncoding(encoding) { this._streamData.startEndEncoding = encoding; this._update(); }
+		set startEndEncodingX(x) { this._streamData.startEndEncodingX = x; this._update(); }
+        set startEndEncodingY(y) { this._streamData.startEndEncodingY = y; this._update(); }
+        set separationXFunction(callback) { this._separationXMethod = callback; this._update(); }
+        set separationYFunction(callback) { this._separationYMethod = callback; this._update(); }
+        
+        get splits() { this._streamData.splits };
 
         _setData(d) {
             this._datasetsLoaded++;
@@ -538,18 +552,6 @@
 
 			this._update();
 		}
-		
-		separationY(callback, parameter) {
-			this._separationYMethod = callback;
-			this._opts.separationYValue = parameter / 2;
-			this._update();
-		}
-
-		separationX(callback, parameter) {
-			this._separationXMethod = callback;
-			this._opts.separationXValue = parameter;
-			this._update();
-		}
 
 		marginYFixed(node) {
 			return this._opts.separationYValue;
@@ -578,45 +580,8 @@
 
 		marginXHierarchicalReverse(node) {
 			return 1 / (node.depth+1) * this._opts.separationXValue;
-		}
-
-		setMinSizeThreshold(value) {
-			this._opts.minSizeThreshold = value / 100;
-			this._update();
-		}
-
-		setProportion(value) {
-			this._opts.proportion = +value;
-			this._streamData.proportion = +value
-			this._update();
-		}
-
-		setZoomTime(factor) {
-			this._opts.zoomTimeFactor = factor;
-			this._update();
-		};
-
-
-		startEndEncoding(encoding) {
-			this._streamData.startEndEncoding = encoding;
-			this._update();
-		}
-
-		startEndEncodingX(x) {
-			this._streamData.startEndEncodingX = x;
-			this._update();
-		}
-
-		startEndEncodingY(y) {
-			this._streamData.startEndEncodingY = y;
-			this._update();
-		}
-
-		offset(offset) {
-			this._opts.offset = offset;
-			this._update();
-		}
-
+        }
+        
 		addSplits(splits) {
 			this._streamData.addSplits(splits);
 			this._update();
@@ -652,10 +617,6 @@
 		removeSplits(splits) {
 			this._streamData.removeSplits(splits);
 			this._update();
-		}
-
-		getSplits() {
-			return this._streamData.splits;
 		}
 	}
 
