@@ -93,6 +93,7 @@
             return closestNode;
         }
 
+        // WARNING: work in process
 		_checkForNullStreams() {
 			for (let i = 0; i < this._streamNodes.length; i++) {
 				let isNull = true;
@@ -103,13 +104,16 @@
 						return;
 					}
 
-					node.next.forEach(traverse);
+                    if (!!node.next)
+					    node.next.forEach(traverse);
 				}
 
 				traverse(this._streamNodes[i]);
 
-				if (isNull)
-					delete this._streamNodes[i];//delete stream;
+				if (isNull) {
+                    delete this._streamNodes[i];//delete stream;
+                    i--;
+                }
 			}
 		}
 

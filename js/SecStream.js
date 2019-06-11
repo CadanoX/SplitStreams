@@ -110,8 +110,8 @@
         set proportion(value) { this._opts.proportion = this._streamData.proportion = +value; this._update(); }
 		set zoomTime(factor) { this._opts.zoomTimeFactor = factor; this._update(); }
         set offset(offset) { this._opts.offset = offset; this._update(); }
-        set separationXValue(value) { this._opts.separationXValue = value / 2; this._update(); }
-        set separationYValue(value) { this._opts.separationYValue = value / 2; this._update(); }
+        set separationXValue(value) { this._opts.separationXValue = value; this._update(); }
+        set separationYValue(value) { this._opts.separationYValue = value; this._update(); }
 
 		set color(colorFunction) { this._color = colorFunction; this.render() }
 		set colorRandom(random) { this._colorRandom = random; this.render() }
@@ -120,7 +120,7 @@
         set startEndEncodingY(y) { this._streamData.startEndEncodingY = y; this._update(); }
         set separationXFunction(callback) { this._separationXMethod = callback; this._update(); }
         set separationYFunction(callback) { this._separationYMethod = callback; this._update(); }
-        
+
         get splits() { this._streamData.splits };
 
         _setData(d) {
@@ -422,6 +422,12 @@
 				//.range(margin.top, height - margin.bottom);
 		}
 
+
+        setRootNodeById(Id) {
+            let root = this._streamData.streams.find(d => d.id == id);
+
+        }
+
 		render() {
 			let color = this._colorRandom ? getRandomColor : this._color.domain([this._maxDepth, 0]);
 			
@@ -456,7 +462,7 @@
 				.on("mouseout", onMouseOut)
 				.attr('clip-path', d => 'url(#clip' + d.id + this._name +')')
 				.attr('id', d => 'stream' + d.id + this._name)
-				//.attr('shape-rendering', 'geometricPrecision')
+				.attr('shape-rendering', 'geometricPrecision')
 				//.attr('shape-rendering', 'optimizeSpeed')
 				//.attr('paint-order', 'stroke')
 				//.attr('stroke-width', 3)
@@ -554,19 +560,19 @@
 		}
 
 		marginYFixed(node) {
-			return this._opts.separationYValue;
+			return this._opts.separationYValue/4;
 		}
 
 		marginYPercentage(node) {
-			return (node.y1-node.y0) * this._opts.separationYValue;
+			return (node.y1-node.y0) * this._opts.separationYValue/2;
 		}
 
 		marginYHierarchical(node) {
-			return (node.depth + 1) * this._opts.separationYValue;
+			return (node.depth + 1) * this._opts.separationYValue/4;
 		}
 
 		marginYHierarchicalReverse(node) {
-			return 1 / (node.depth + 1) * this._opts.separationYValue;
+			return 1 / (node.depth + 1) * this._opts.separationYValue/4;
 		}
 
 		marginXFixed(node) {
