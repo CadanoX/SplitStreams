@@ -468,7 +468,8 @@
 				//.attr('stroke-width', 3)
 				.merge(streams)
 					.attr('d', d => d.path)
-					.style('fill', d => color(d.deepestDepth))
+                    .style('fill', d => color(d.deepestDepth))
+                    .filter(d => d.path.length < 20).remove();
 			
 			streams.exit().remove();
 

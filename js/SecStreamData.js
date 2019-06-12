@@ -122,6 +122,11 @@
             
             // extend to left
             d.move(x(node.x), y(node.y1));
+
+            // don't draw start for zero values
+            if ((node.y1 - node.y0) <= 0)
+                return;
+
             let t = node.x - 0.5*(1-prop);
             d.horizontal(x(t));
 
@@ -129,7 +134,8 @@
             let root = node;
             while(!!root.parent)
                 root = root.parent
-            if (!root.prev) {
+
+            if (!root.prev) { // make first timestep flat
                 d.vertical(y(node.y0));
             }
             else {
@@ -148,6 +154,9 @@
         _drawEnd = (path, node) => {
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
+            if ((node.y1 - node.y0) <= 0)
+                return;
+
             // extend to right
             let t = node.x + 0.5*(1-prop);
             d.horizontal(x(t));
@@ -156,7 +165,7 @@
             let root = node;
             while(!!root.parent)
                 root = root.parent
-            if (!root.next) {
+            if (!root.next) { // make last timestep flat
                 d.vertical(y(node.y1));
             }
             else {
@@ -431,12 +440,13 @@
                     deepestDepth = node.depth;
 
                 if (!!node.next) {
+
                     let dt = node.next[0].x - node.x;
                     let t0 = x(node.x);
                     let t1 = x(node.x + 0.5 * (1-prop) * dt);
                     let t2 = x(node.next[0].x - 0.5 * (1-prop) * dt);
                     let t3 = x(node.next[0].x);
-                    let t12 = 0.5 * (t1 + t2) // mid between t0 and t1
+                    let t12 = 0.5 * (t1 + t2) // mid between t1 and t2
 
                     for (let i = 0; i < node.next.length; i++) {
                         //let y0 = node.y0 + i * (node.y1 - node.y0) / node.next.length;
@@ -445,31 +455,39 @@
                         let y1 = node.y1;
                         let dest = node.next[i];
 
-                        // draw bottom line (forwards)
-                        d.horizontal(t1);
-                        if (this._xCurve == "linear") {
-                            d.line(t2, y(dest.y0))
+                        // don't draw anything for streams with zero height
+                        if ((y1 - y0) <= 0 && (dest.y1 - dest.y0) <= 0) {
+                            d.move(t3, y(dest.y0));
+                            traverse(dest);
+                            d.move(t0, y(y0));
                         }
-                        else if (this._xCurve == "bezier") {
-                            d.bezier(t12, y(y0),
-                                        t12, y(node.next[i].y0),
-                                        t2, y(node.next[i].y0));
-                        }
-                        d.horizontal(t3);
+                        else {
+                            // draw bottom line (forwards)
+                            d.horizontal(t1);
+                            if (this._xCurve == "linear") {
+                                d.line(t2, y(dest.y0))
+                            }
+                            else if (this._xCurve == "bezier") {
+                                d.bezier(t12, y(y0),
+                                            t12, y(dest.y0),
+                                            t2, y(dest.y0));
+                            }
+                            d.horizontal(t3);
 
-                        // traverse
-                        traverse(dest);
+                            // traverse
+                            traverse(dest);
 
-                        // draw top line (backwards)
-                        d.horizontal(t2);
-                        if (this._xCurve == "linear")
-                            d.line(t1, y(y1))
-                        else if (this._xCurve == "bezier") {
-                            d.bezier(t12, y(node.next[i].y1),
-                                    t12, y(y1),
-                                    t1, y(y1));
+                            // draw top line (backwards)
+                            d.horizontal(t2);
+                            if (this._xCurve == "linear")
+                                d.line(t1, y(y1))
+                            else if (this._xCurve == "bezier") {
+                                d.bezier(t12, y(dest.y1),
+                                        t12, y(y1),
+                                        t1, y(y1));
+                            }
+                            d.horizontal(t0);
                         }
-                        d.horizontal(t0);
                     }
                 }
                 else // end stream
