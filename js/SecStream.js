@@ -469,7 +469,8 @@
 				.merge(streams)
 					.attr('d', d => d.path)
                     .style('fill', d => color(d.deepestDepth))
-                    .filter(d => d.path.length < 20).remove();
+                    // remove empty streams (they do not include a single bezier curve)
+                    .filter(d => d.path.indexOf('C') == -1).remove();
 			
 			streams.exit().remove();
 
