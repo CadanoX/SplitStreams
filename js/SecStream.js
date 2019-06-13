@@ -71,11 +71,10 @@
 			this._svg;
 			this._svgFilters;
 			this._filters;
-			this._clipPaths;
+            this._clipPaths;
+            this._datasetsLoaded = 0
 			
-			this._newStreamData = d3.SecStreamData();
-
-			this._streamData;
+			this._streamData = d3.SecStreamData();
 			this._minTime;
 			this._maxTime;
 			this._maxValue;
@@ -99,7 +98,7 @@
 		
 		filters(d) { return d == null ? this._filters : (this._setFilters(d), this); }
 
-		options(opts) { Object.assign(this._opts, opts); }
+        options(opts) { Object.assign(this._opts, opts); }
 		
 		set automaticUpdate(auto) { this._opts.automaticUpdate = auto; }
 		set unifySize(unify) { this._opts.unifySize = unify; this._update() }
@@ -107,10 +106,26 @@
 		set unifyPosition(unify) { this._opts.unifyPosition = unify; this._update() }
 		set mirror(mirror) { this._opts.mirror = mirror; this._update() }
 		set splitRoot(splitRoot) { this._opts.splitRoot = splitRoot; this._update() }
+        set minSizeThreshold(threshold) { this._opts.minSizeThreshold = threshold / 100; this._update(); }
+        set proportion(value) { this._opts.proportion = this._streamData.proportion = +value; this._update(); }
+		set zoomTime(factor) { this._opts.zoomTimeFactor = factor; this._update(); }
+        set offset(offset) { this._opts.offset = offset; this._update(); }
+        set separationXValue(value) { this._opts.separationXValue = value; this._update(); }
+        set separationYValue(value) { this._opts.separationYValue = value; this._update(); }
+
 		set color(colorFunction) { this._color = colorFunction; this.render() }
 		set colorRandom(random) { this._colorRandom = random; this.render() }
+		set startEndEncoding(encoding) { this._streamData.startEndEncoding = encoding; this._update(); }
+		set startEndEncodingX(x) { this._streamData.startEndEncodingX = x; this._update(); }
+        set startEndEncodingY(y) { this._streamData.startEndEncodingY = y; this._update(); }
+        set separationXFunction(callback) { this._separationXMethod = callback; this._update(); }
+        set separationYFunction(callback) { this._separationYMethod = callback; this._update(); }
+
+        get splits() { this._streamData.splits };
 
         _setData(d) {
+            this._datasetsLoaded++;
+
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
 			this._data = d;
 
@@ -239,7 +254,7 @@
 		}*/
 
 		_clearStreamIds() {
-			this._newStreamData.clear();
+			this._streamData.clear();
 			this._indices = {};
 			this._maxIndex = 0;
 		}
@@ -316,7 +331,7 @@
 				node.depth = depth++;
 				let isNew = this._findStreamId(node);
 				if (isNew)
-					this._newStreamData.add(node)
+					this._streamData.add(node)
 				
 				if (!!node.children)
 					node.children.forEach( (child) => traverse(child, depth));
@@ -395,17 +410,23 @@
 				traverse(time[i].tree);
 			}
 
-			this._newStreamData.xScale = d3.scaleLinear()
+			this._streamData.xScale = d3.scaleLinear()
 				.domain([this._minTime - 0.5, this._maxTime + 0.5])
 				//.domain([this._minTime - 0.5*(1-this._opts.proportion), this._maxTime + 0.5*(1-this._opts.proportion)])
 				.range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
 
 			let domain = this._opts.mirror ? [1, 0] : [0, 1];
-			this._newStreamData.yScale = d3.scaleLinear()
+			this._streamData.yScale = d3.scaleLinear()
 				.domain(domain).nice()
 				.range([height - margin.bottom, margin.top]);
 				//.range(margin.top, height - margin.bottom);
 		}
+
+
+        setRootNodeById(Id) {
+            let root = this._streamData.streams.find(d => d.id == id);
+
+        }
 
 		render() {
 			let color = this._colorRandom ? getRandomColor : this._color.domain([this._maxDepth, 0]);
@@ -418,26 +439,22 @@
 				//console.log("mouse out")
             }
             
-            let streamsByDepth = d3.nest().key(d => d.depth).entries(this._newStreamData.streams);
+            let streamsByDepth = d3.nest().key(d => d.depth).entries(this._streamData.streams);
 
-            let depthLayers = this._pathContainer.selectAll('g.depthLayer')
-                .data(streamsByDepth);
+            let depthLayers = this._pathContainer.selectAll('g.depthLayer > g.clipLayer')
+                .data(streamsByDepth, d => this._datasetsLoaded + d.key);
 
             depthLayers.exit().remove();
+            d3.selectAll('.depthLayer:empty').remove()
 
             depthLayers.enter().append('g')
                 .classed('depthLayer', true)
-                .each(function(d) {
-                    this.classList.add('depth-' + d.key);
-                });
-
+                .each(function(d) { this.classList.add('depth-' + d.key); })
+                .append('g')
+                    .classed('clipLayer', true);
 
             let streams = depthLayers.selectAll('path.stream')
                 .data(d => d.values, d => d.id);
-
-
-			//let streams = this._pathContainer.selectAll('path.stream')
-			//	.data(this._newStreamData.streams, d => d.id);
 
 			streams.enter().append('path')
 				.classed('stream', true)
@@ -445,13 +462,15 @@
 				.on("mouseout", onMouseOut)
 				.attr('clip-path', d => 'url(#clip' + d.id + this._name +')')
 				.attr('id', d => 'stream' + d.id + this._name)
-				//.attr('shape-rendering', 'geometricPrecision')
+				.attr('shape-rendering', 'geometricPrecision')
 				//.attr('shape-rendering', 'optimizeSpeed')
 				//.attr('paint-order', 'stroke')
 				//.attr('stroke-width', 3)
 				.merge(streams)
 					.attr('d', d => d.path)
-					.style('fill', d => color(d.deepestDepth))
+                    .style('fill', d => color(d.deepestDepth))
+                    // remove empty streams (they do not include a single bezier curve)
+                    .filter(d => d.path.indexOf('C') == -1).remove();
 			
 			streams.exit().remove();
 
@@ -459,7 +478,7 @@
 			this.drawStroke(this._opts.drawStroke);
 
 			let splitData = this._svgFilters.selectAll("clipPath")
-				.data(this._newStreamData.clipPaths, function(d) { return d.id });
+				.data(this._streamData.clipPaths, function(d) { return d.id });
 
 			splitData.enter().append("clipPath")
 				.attr('id', d => "clip" + d.id + this._name)
@@ -471,7 +490,7 @@
 
 		showLabels(show = true) {
 			this._opts.showLabels = show;
-			let labelData = this._opts.showLabels ? this._newStreamData.streams : [];
+			let labelData = this._opts.showLabels ? this._streamData.streams : [];
 
 			let labels = this._textContainer.selectAll('text')
 				.data(labelData, function(d) { return d.id });
@@ -530,7 +549,7 @@
 			this._applyOrdering();
 			this._calculatePositions();
 
-			this._newStreamData.calculatePaths();
+			this._streamData.calculatePaths();
 			this.render();
         }
         
@@ -541,33 +560,21 @@
 
 			this._update();
 		}
-		
-		separationY(callback, parameter) {
-			this._separationYMethod = callback;
-			this._opts.separationYValue = parameter / 2;
-			this._update();
-		}
-
-		separationX(callback, parameter) {
-			this._separationXMethod = callback;
-			this._opts.separationXValue = parameter;
-			this._update();
-		}
 
 		marginYFixed(node) {
-			return this._opts.separationYValue;
+			return this._opts.separationYValue/4;
 		}
 
 		marginYPercentage(node) {
-			return (node.y1-node.y0) * this._opts.separationYValue;
+			return (node.y1-node.y0) * this._opts.separationYValue/2;
 		}
 
 		marginYHierarchical(node) {
-			return (node.depth + 1) * this._opts.separationYValue;
+			return (node.depth + 1) * this._opts.separationYValue/4;
 		}
 
 		marginYHierarchicalReverse(node) {
-			return 1 / (node.depth + 1) * this._opts.separationYValue;
+			return 1 / (node.depth + 1) * this._opts.separationYValue/4;
 		}
 
 		marginXFixed(node) {
@@ -581,47 +588,10 @@
 
 		marginXHierarchicalReverse(node) {
 			return 1 / (node.depth+1) * this._opts.separationXValue;
-		}
-
-		setMinSizeThreshold(value) {
-			this._opts.minSizeThreshold = value / 100;
-			this._update();
-		}
-
-		setProportion(value) {
-			this._opts.proportion = +value;
-			this._newStreamData.proportion = +value
-			this._update();
-		}
-
-		setZoomTime(factor) {
-			this._opts.zoomTimeFactor = factor;
-			this._update();
-		};
-
-
-		startEndEncoding(encoding) {
-			this._newStreamData.startEndEncoding = encoding;
-			this._update();
-		}
-
-		startEndEncodingX(x) {
-			this._newStreamData.startEndEncodingX = x;
-			this._update();
-		}
-
-		startEndEncodingY(y) {
-			this._newStreamData.startEndEncodingY = y;
-			this._update();
-		}
-
-		offset(offset) {
-			this._opts.offset = offset;
-			this._update();
-		}
-
+        }
+        
 		addSplits(splits) {
-			this._newStreamData.addSplits(splits);
+			this._streamData.addSplits(splits);
 			this._update();
 		}
 
@@ -653,12 +623,8 @@
 		}
 
 		removeSplits(splits) {
-			this._newStreamData.removeSplits(splits);
+			this._streamData.removeSplits(splits);
 			this._update();
-		}
-
-		getSplits() {
-			return this._newStreamData.splits;
 		}
 	}
 
