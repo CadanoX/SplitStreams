@@ -155,3 +155,30 @@ function loadTitanFormat(data) {
     format.finalize();
     return format.data;
 }
+
+function loadAllenFormat(data) {
+    let format = d3.SecStreamInputData();
+    let timesteps = {
+        "2": 0,
+        "3": 1,
+        "5": 2,
+        "6": 3,
+        "7": 4,
+        "8": 5
+    };
+    let time = (t) => timesteps[t];
+
+    for (let structureId in data) {
+        let structure = data[structureId];
+        for (let step in structure.timesteps) {
+            let { id, timesteps, name, acronym, color, parent } = structure;
+            let t = time(step);
+            format.addNode(t, id, timesteps[step], undefined, {name, acronym, color});
+            format.addParent(t, id, parent);
+        }
+    }
+
+    //format._buildTimeConnections();
+    format.finalize();
+    return format.data;
+}

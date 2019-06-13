@@ -12,6 +12,7 @@ datasets.filetree2 = transformViscousFormat(examples.filetree2);
 datasets.explanation = transformViscousFormat(examples.explanation);
 datasets.gumtreeDFT = transformGumtreeFormat(examples.gumtreeDFT);
 datasets.TITAN = loadTitanFormat(d3.csvParse(storms));
+datasets.mouseBrain = loadAllenFormat(mouse_brain);
 
 document.addEventListener("DOMContentLoaded", function(event)
 {
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event)
                     { value: 'explanation', text: "Figure 3"},
                     { value: 'gumtreeDFT', text: 'Figure 5'},
                     { value: 'TITAN', text: 'TITAN'},
+                    { value: 'mouseBrain', text: 'Mouse Brain'},
                     { value: 'ontology', text: 'Ontology'}
 				]
 			},

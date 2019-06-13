@@ -468,7 +468,7 @@
 				//.attr('stroke-width', 3)
 				.merge(streams)
 					.attr('d', d => d.path)
-                    .style('fill', d => color(d.deepestDepth))
+                    .style('fill', d => (!!d.data ? d.data.color : null) || color(d.deepestDepth))
                     // remove empty streams (they do not include a single bezier curve)
                     .filter(d => d.path.indexOf('C') == -1).remove();
 			
