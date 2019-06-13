@@ -128,3 +128,30 @@ function transformGumtreeFormat(data)
     format.finalize();
     return format.data;
 }
+
+function loadTitanFormat(data) {
+    let format = d3.SecStreamInputData();
+    let t = -1;
+    let lastDate;
+    for (let entry of data) {
+        if (entry['observation_time'] != lastDate) {
+            lastDate = entry['observation_time'];
+            t++;
+        }
+        format.addNode(t, entry.id, +entry['cell_volume (km3)'])
+    }
+
+    t = -1;
+    for (let entry of data) {
+        if (entry['observation_time'] != lastDate) {
+            lastDate = entry['observation_time'];
+            t++;
+        }
+        let next = entry['IDs of children '].split(", ");
+        if (next[0] != "")
+            next.forEach((nextId) => format.addNext(t, entry.id, nextId));
+    }
+    
+    format.finalize();
+    return format.data;
+}
