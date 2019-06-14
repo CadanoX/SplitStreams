@@ -157,7 +157,7 @@ function loadTitanFormat(data) {
 }
 
 function loadAllenFormat(data) {
-    let format = d3.SecStreamInputData();
+    let format = d3.SecStreamInputData(/*{forceFakeRoot: true}*/);
     let timesteps = {
         "2": 0,
         "3": 1,
@@ -174,11 +174,19 @@ function loadAllenFormat(data) {
             let { id, timesteps, name, acronym, color, parent } = structure;
             let t = time(step);
             format.addNode(t, id, timesteps[step], undefined, {name, acronym, color});
+        }
+    }
+
+    for (let structureId in data) {
+        let structure = data[structureId];
+        for (let step in structure.timesteps) {
+            let { id, timesteps, name, acronym, color, parent } = structure;
+            let t = time(step);
             format.addParent(t, id, parent);
         }
     }
 
-    //format._buildTimeConnections();
+    format._buildTimeConnections();
     format.finalize();
     return format.data;
 }

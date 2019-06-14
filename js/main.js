@@ -3,26 +3,37 @@ const {OntologyLoader} = require('./OntologyLoader');
 var stream;
 
 var datasets = {};
-datasets.viscous = transformViscousFormat(examples.viscous);
-datasets.viscousMin = transformViscousFormat(examples.viscousMin);
-datasets.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
-datasets.gumtree = transformGumtreeFormat(examples.gumtree);
-datasets.filetree = transformViscousFormat(examples.filetree);
-datasets.filetree2 = transformViscousFormat(examples.filetree2);
-datasets.explanation = transformViscousFormat(examples.explanation);
-datasets.gumtreeDFT = transformGumtreeFormat(examples.gumtreeDFT);
-datasets.TITAN = loadTitanFormat(d3.csvParse(storms));
-datasets.mouseBrain = loadAllenFormat(mouse_brain);
+function loadDataset(name) {
+    if (!datasets[name]) {
+        switch(name) {
+            case "viscous": datasets.viscous = transformViscousFormat(examples.viscous); break;
+            case "viscousMin": datasets.viscousMin = transformViscousFormat(examples.viscousMin); break;
+            case "filetree": datasets.filetree = transformViscousFormat(examples.filetree); break;
+            case "filetree2": datasets.filetree2 = transformViscousFormat(examples.filetree2); break;
+            case "explanation": datasets.explanation = transformViscousFormat(examples.explanation); break;
+
+            case "gumtreeMin": datasets.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin); break;
+            case "gumtree": datasets.gumtree = transformGumtreeFormat(examples.gumtree); break;
+            case "gumtreeDFT": datasets.gumtreeDFT = transformGumtreeFormat(examples.gumtreeDFT); break;
+
+            case "TITAN": datasets.TITAN = loadTitanFormat(d3.csvParse(storms)); break;
+            case "mouseBrain": datasets.mouseBrain = loadAllenFormat(mouse_brain); break;
+
+            case "ontology": 
+                ont = new OntologyLoader();
+                ont.loadOntology(ontologies.ICD9CM_2013AB);
+                ont.loadOntology(ontologies.ICD9CM_2014AB);
+                ont.transformOntologiesToTree();
+                datasets.ontology = ont.data;
+                break;
+
+            default: break;
+        }
+    }
+}
 
 document.addEventListener("DOMContentLoaded", function(event)
 {
-    ont = new OntologyLoader();
-    ont.loadOntology(ontologies.ICD9CM_2013AB);
-    ont.loadOntology(ontologies.ICD9CM_2014AB);
-    ont.transformOntologiesToTree();
-
-    datasets.ontology = ont.data;
-
 	let app = new Vue({
 		el: '#app',
 		data: {
@@ -244,6 +255,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			dataset: {
 				handler: function(dataset) {
+                    loadDataset(dataset.value);
 					// TODO: deactivate update. it requires normalizeData to run on .data()
 					//in order to not introduce errors (like not setting correct split values)
 					//stream.automaticUpdate = false;
@@ -381,7 +393,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 		}
 	});
 
-	let div = document.querySelector('#wrapper');
+    let div = document.querySelector('#wrapper');
+    loadDataset(app.dataset.value);
 	stream = d3.SecStream(div)
         .data(datasets[app.dataset.value]);
     stream.nodeSizeAddX = 0;

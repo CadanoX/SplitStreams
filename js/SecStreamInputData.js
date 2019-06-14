@@ -22,6 +22,7 @@
         }
 
         addParent(t, id, pId) {
+            if (!pId) return;
             let nodes = this._timesteps[t].references;
             let node = nodes[id];
             let parent = nodes[pId];

@@ -1,38 +1,5 @@
 //const d3 = require('d3');
 {
-	class StreamPaths {
-		constructor({
-			// x-aligned, same amount of vertices on top and bottom
-			// Time steps for cutting MUST be between two int indices
-			// (Have sensible number of vertices to not cause index rounding problems)
-			// Any number between 0 and (N timesteps - 1) must "nicely land" on valid indices
-			// of the array.
-			vertices
-		}) {
-			this._vertices = vertices;
-			this._splitVertices = []; // Array of areas + metadata
-	
-			this._splits = {}; // index : is split
-		}
-	
-		_calculate() {
-			// calculate _splitVertices
-			// x-align indices etc
-	
-		}
-	
-		unsplit(timestepIndex) {
-			this._splits[timestepIndex] = false;
-			return this;
-		}
-	
-		split(timeStepIndex) {
-			// apply the split to vertices
-			this._splits[timestepIndex] = true;
-			return this;
-		}
-	}	
-
 	class SecStream {
 		constructor(container, opts = {})
         {
@@ -140,13 +107,14 @@
 				initSizesAndPositions(d.tree);
 				this._checkData(d.tree);
 			})
-			
+			/*
 			this._pathContainer.selectAll('path.stream')
 				.data([]).exit().remove();
 			this._textContainer.selectAll('text')
 				.data([]).exit().remove();
 
-			this._update();
+            this._update();
+            */
 		}
 
 		_checkData(node) {
@@ -507,7 +475,7 @@
 		drawStroke(draw = true) {
 			this._opts.drawStroke = draw;
 			let color = this._opts.drawStroke ? 'black' : null;
-			this._pathContainer.style('stroke', color)
+			this._pathContainer.attr('stroke', color);
 		}
 
 		_applyFilters() {
