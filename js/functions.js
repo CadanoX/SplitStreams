@@ -172,8 +172,7 @@ function loadAllenFormat(data) {
         let structure = data[structureId];
         for (let step in structure.timesteps) {
             let { id, timesteps, name, acronym, color, parent } = structure;
-            let t = time(step);
-            format.addNode(t, id, timesteps[step], undefined, {name, acronym, color});
+            format.addNode(time(step), id, timesteps[step], undefined, {name, acronym, color});
         }
     }
 
@@ -181,8 +180,7 @@ function loadAllenFormat(data) {
         let structure = data[structureId];
         for (let step in structure.timesteps) {
             let { id, timesteps, name, acronym, color, parent } = structure;
-            let t = time(step);
-            format.addParent(t, id, parent);
+            format.addParent(time(step), id, parent);
         }
     }
 

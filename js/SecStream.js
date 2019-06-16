@@ -90,55 +90,12 @@
 
         get splits() { this._streamData.splits };
 
+        // expects SecStreamInputData as input
         _setData(d) {
             this._datasetsLoaded++;
 
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
 			this._data = d;
-
-			let initSizesAndPositions = (node) => {
-				node.dataSize = +node.size;
-				node.dataPos = +node.pos;
-				if (!!node.children)
-					node.children.forEach(initSizesAndPositions);
-			}
-
-			this._data.timesteps.forEach((d) => {
-				initSizesAndPositions(d.tree);
-				this._checkData(d.tree);
-			})
-			/*
-			this._pathContainer.selectAll('path.stream')
-				.data([]).exit().remove();
-			this._textContainer.selectAll('text')
-				.data([]).exit().remove();
-
-            this._update();
-            */
-		}
-
-		_checkData(node) {
-			// check if size of parent elements is bigger than the aggregate of the sizes of its children
-			let aggregate = 0;
-			let pos = 0;
-			if (!!node.children) {
-				for (let child of node.children) {
-					this._checkData(child);
-					aggregate = child.size;
-					if (child.pos >= 0) {
-						if(pos > child.pos) {
-							console.log("Error: Children positions overlap each other.")
-							console.log(node);
-						}
-						pos = child.pos + child.size;
-					}
-				}
-			}
-			
-			if (!!node.size && node.size < aggregate) {
-				console.log("Error: Node has a smaller size than its children.")
-				console.log(node);
-			}
 		}
 
 		_setFilters(d) {
@@ -179,7 +136,12 @@
 		// returns if node builds a new stream
 		//*
 		_findStreamId(node) {
-			if (!node.prev) { // new node
+			if (node.prev) {
+				// use id of prev node
+				node.streamId = node.prev[0].streamId;
+				return false;
+			}
+			else { // new node
 				// check if id is already in use
 				if (!this._indices[node.id]) {
 					// if not, use this id for the stream
@@ -195,11 +157,6 @@
 					node.streamId = this._maxIndex;
 				}
 				return true;
-			}
-			else {
-				// use id of prev node
-				node.streamId = node.prev[0].streamId;
-				return false;
 			}
 		}
 		//*/
@@ -233,19 +190,19 @@
 
 
 			let checkSizes = (node) => {
-				if (!!node.children && node.children.length > 0) {
-					node.aggregate = 0;
+				if (!!node.children) {
+					let aggregate = 0;
 					for (let child of node.children) {
 						checkSizes(child);
-						node.aggregate += child.size;
+						aggregate += child.size;
 					}
-					if (this._opts.unifySize || Number.isNaN(node.dataSize))
-						node.size = node.aggregate + this._opts.nodeSizeAddX;
+					if (this._opts.unifySize)
+						node.size = aggregate + this._opts.nodeSizeAddX;
 					else
 						node.size = node.dataSize;				
 				}
 				else {
-					if (this._opts.unifySize || Number.isNaN(node.dataSize))
+					if (this._opts.unifySize)
 						node.size = 1;
 					else
 						node.size = node.dataSize;
@@ -281,12 +238,12 @@
 			let maxValue = 0;
 			let maxTime = 0;
 			let minTime = Infinity;
-			for (let i in time) {
-				checkSizes(time[i].tree);
-				checkPositions(time[i].tree);
-				maxValue = Math.max(maxValue, time[i].tree.size);
-				minTime = Math.min(minTime, +i);
-				maxTime = Math.max(maxTime, +i);
+			for (let t in time) {
+				checkSizes(time[t].tree);
+				checkPositions(time[t].tree);
+				maxValue = Math.max(maxValue, time[t].tree.size);
+				minTime = Math.min(minTime, +t);
+				maxTime = Math.max(maxTime, +t);
 			}
 			
 			this._maxTime = maxTime;
@@ -432,7 +389,7 @@
 				.attr('id', d => 'stream' + d.id + this._name)
 				.attr('shape-rendering', 'geometricPrecision')
 				//.attr('shape-rendering', 'optimizeSpeed')
-				//.attr('paint-order', 'stroke')
+				.attr('paint-order', 'stroke')
 				//.attr('stroke-width', 3)
 				.merge(streams)
 					.attr('d', d => d.path)
@@ -475,7 +432,9 @@
 		drawStroke(draw = true) {
 			this._opts.drawStroke = draw;
 			let color = this._opts.drawStroke ? 'black' : null;
-			this._pathContainer.attr('stroke', color);
+            this._pathContainer.attr('stroke', color);
+            //this._pathContainer.attr('stroke-width', 0.001);
+            // d3.selectAll('path').attr('stroke-width', 0.001)
 		}
 
 		_applyFilters() {

@@ -12,7 +12,9 @@
 
         get data() { return this._fitleredData};
 
-        select(nodeId)
+        select(nodeId) {
+            
+        }
     }
 
     d3.SecStreamFilter = (...args) => new SecStreamFilter(...args);

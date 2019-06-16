@@ -17,8 +17,15 @@
             if (!this._timesteps[t])
                 this._createTimestep(t);
             
-            if (!this._timesteps[t].references[id])
-                this._timesteps[t].references[id] = { id, size, pos, data }
+            if (!this._timesteps[t].references[id]) {
+                let dataSize = +size;
+                let dataPos = +pos;
+                // size = +size;
+                // pos = +pos;
+                this._timesteps[t].references[id] = { id, dataSize, dataPos, size, pos, data }
+            }
+            else
+                console.log(`Warning AddNode: Node ${id} at timestep ${t} exists already.`)
         }
 
         addParent(t, id, pId) {
@@ -50,6 +57,12 @@
 
         finalize() {
             this._checkParents();
+
+            this.__forEachNodeDepthFirst((node) => {
+                this._setSizeAndAggregate(node);
+                this._checkSize(node);
+                this._checkPositions(node);
+            });
         }
 
         // check if all nodes except the root have a parent
@@ -79,17 +92,14 @@
             if (fakeRootNeeded || this._opts.forceFakeRoot) {
                 let prevT;
                 for (let t in nodesWithoutParents) {
-                    this._timesteps[t].tree = this._timesteps[t].references['fakeRoot'] = {
-                        id: "fakeRoot",
-                        children: [...nodesWithoutParents[t]]
-                    };
+                    this.addNode(t, 'fakeRoot');
                     nodesWithoutParents[t].forEach((node) => {
-                        node.parent = this._timesteps[t].tree;
+                        this.addParent(t, node.id, 'fakeRoot');
+                        this._timesteps[t].tree = this._timesteps[t].references['fakeRoot'];
                     });
                     // connect fake roots
                     if (!!prevT) {
-                        this._timesteps[t].tree.prev = [this._timesteps[prevT].tree];
-                        this._timesteps[prevT].tree.next = [this._timesteps[t].tree];
+                        this.addNext(prevT, 'fakeRoot', 'fakeRoot');
                     }
                     prevT = t;
                 }
@@ -99,6 +109,55 @@
                     this._timesteps[t].tree = nodesWithoutParents[t][0];
                 }
             }
+        }
+
+        _setSizeAndAggregate(node) {
+            if (!!node.children) {
+                node.aggregate = 0;
+                for (let child of node.children)
+                    node.aggregate += child.dataSize;
+                if (Number.isNaN(node.dataSize))
+                    node.dataSize = node.aggregate;
+            }
+            else {
+                if(Number.isNaN(node.dataSize))
+                    dataSize = 1;
+                node.aggregate = node.dataSize;
+            }
+        }
+
+        _checkSize(node) {
+            if (node.dataSize < node.aggregate) {
+				console.log("Error: Node has a smaller size than its children.")
+				console.log(node);
+			}
+        }
+
+		// check if size of parent elements is bigger than the aggregate of the sizes of its children
+        _checkPositions(node) {
+			if (!!node.children) {
+                let minPos = 0;
+				for (let child of node.children) {
+					if (child.pos >= 0) {
+						if(minPos > child.pos) {
+							console.log("Error: Children positions overlap each other.")
+							console.log(node);
+						}
+						minPos = child.pos + child.dataSize;
+					}
+				}
+			}
+        }
+
+        __forEachNodeDepthFirst(callback) {
+            let traverse = function(node) {
+                if (!!node.children)
+                    node.children.forEach(traverse);
+                callback(node);
+            }
+
+            for (let t in this._timesteps)
+                traverse(this._timesteps[t].tree);
         }
 
         _createTimestep(t) {
@@ -115,8 +174,8 @@
                     let nodes2 = this._timesteps[+t+1].references;
                     for (let id in nodes) {
                         if (!!nodes2[id]) {
-                            nodes[id].next = [ nodes2[id] ] ;
-                            nodes2.prev = [ nodes[id] ];
+                            nodes[id].next = [ nodes2[id] ];
+                            nodes2[id].prev = [ nodes[id] ];
                         }
                     }
                 }
