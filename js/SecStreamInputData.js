@@ -121,7 +121,7 @@
             }
             else {
                 if(Number.isNaN(node.dataSize))
-                    dataSize = 1;
+                    node.dataSize = 1;
                 node.aggregate = node.dataSize;
             }
         }

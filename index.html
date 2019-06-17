@@ -12,10 +12,11 @@
     <link type="text/css" rel="stylesheet" href="css/SecStream.css" media="screen"/>
     
     <!-- libraries-->
-    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue.min.js"></script>
     <script type="text/javascript" src="libs/vue-resize/dist/vue-resize.min.js"></script>
-	<script type="text/javascript" src="libs/d3_5.7.0.js"></script>
+	<script type="text/javascript" src="libs/d3_5.7.0.min.js"></script>
 	<script type="text/javascript" src="libs/rdflib.min.js"></script>
+	<script type="text/javascript" src="libs/d3svgfilters/src/d3-svg-filters.js"></script>
 	
 	<!-- modules -->
     <script type="text/javascript" src="js/SvgPath.js"></script>
@@ -202,46 +203,48 @@
                 <input type="checkbox" id="showLabels" v-model="showLabels">
                 <label for="showLabels">Labels</label>
             </div>
-            <div style="display: inline-block">
-                <label><b>Drop Shadow 1:</b></label>
+            <div>
+                <label><b>Drop Shadow:</b></label>
                 <div>
-                    <label>dx: {{ filters[0][0].dx }} </label>
+                    <label>dx: {{ filters[1].dx }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[0][0].dx" step= "1" min="-10" max="10" />
+                    <input type="range" v-model="filters[1].dx" step= "1" min="-10" max="10" />
                 </div>
                 <div>
-                    <label>dy: {{ filters[0][0].dy }} </label>
+                    <label>dy: {{ filters[1].dy }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[0][0].dy" step= "1" min="-10" max="10" />
+                    <input type="range" v-model="filters[1].dy" step= "1" min="-10" max="10" />
                 </div>
                 <div>
-                    <label>stdDeviation: {{ filters[0][0].stdDeviation }} </label>
+                    <label>stdDeviation: {{ filters[1].stdDeviation }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[0][0].stdDeviation" step= "0.2" min="0" max="20" />
+                    <input type="range" v-model="filters[1].stdDeviation" step= "0.2" min="0" max="20" />
                 </div>
             </div>
-            <!--
-            </vr>
-            <div style="display: inline-block; border-left: 1px solid #000; padding-left: 15px">
-                <label><b>Drop Shadow 2:</b></label>
-                <br>
-                <label>dx: {{ filters[0][1].dx }} </label>
-                <br>
-                <input type="range" v-model="filters[0][1].dx" step= "1" min="-10" max="10" />
-                <br>
-                <label>dy: {{ filters[0][1].dy }} </label>
-                <br>
-                <input type="range" v-model="filters[0][1].dy" step= "1" min="-10" max="10" />
-                <br>
-                <label>stdDeviation: {{ filters[0][1].stdDeviation }} </label>
-                <br>
-                <input type="range" v-model="filters[0][1].stdDeviation" step= "0.2" min="0" max="10" />
+            <div>
+                <label><b>Inner Shadow:</b></label>
+                <div>
+                    <label>dx: {{ filters[0].dx }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[0].dx" step= "1" min="-10" max="10" />
+                </div>
+                <div>
+                    <label>dy: {{ filters[0].dy }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[0].dy" step= "1" min="-10" max="10" />
+                </div>
+                <div>
+                    <label>stdDeviation: {{ filters[0].stdDeviation }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[0].stdDeviation" step= "0.2" min="0" max="10" />
+                </div>
             </div>
-             -->
-            <hr>
             
 
         <!--

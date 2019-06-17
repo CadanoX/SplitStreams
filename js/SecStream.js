@@ -438,29 +438,11 @@
 		}
 
 		_applyFilters() {
-			// remove existing filter
-			let filtersData = this._svgFilters.selectAll("filter")
-				.data(this._filters);
+            let filters = [];
+            for (let filter of this._filters)
+                filters.push(filter.type, {color:"black", dx: filter.dx, dy: filter.dy, blur: filter.stdDeviation});
 
-			filtersData.enter().append("filter")
-					.attr("id", (d, i) => "filter_" + i)
-					.attr('width', '1000%')
-					.attr('height', '1000%')
-					.attr('x', '-500%')
-					.attr('y', '-500%')
-
-			filtersData.exit().remove();
-			
-			this._svgFilters.selectAll("filter").each(function (effects, i) {
-				let html = "";
-				for (let i = 0; i < effects.length; i++) {
-					let d = effects[i];
-					html += "<" + d.type + " dx='" + d.dx + "' dy='" + d.dy + "' stdDeviation='" + d.stdDeviation + "'/>";
-				}
-				this.innerHTML = html;
-            });
-
-			this._pathContainer.selectAll('g.depthLayer').attr("filter", "url(#filter_0)");
+            d3.selectAll('.depthLayer').svgFilter(...filters);
 		}
 		
 		update() { this._update(true) }

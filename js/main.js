@@ -129,10 +129,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 				]
 			},
 			filters: [
-				[
-					{ type: 'feDropShadow', dx: 0, dy: 0, stdDeviation: 0 },
-					{ type: 'feDropShadow', dx: 0, dy: 0, stdDeviation: 0 }
-				]
+                { type: 'inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
+                { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0 }
 			]
 		},
 		computed: {
@@ -241,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			filters: {
 				handler: function(filters) {
-					stream.filters(filters)
+					stream.filters(this.filters)
 				},
 				deep: true
 			},
@@ -256,13 +254,8 @@ document.addEventListener("DOMContentLoaded", function(event)
 			dataset: {
 				handler: function(dataset) {
                     loadDataset(dataset.value);
-					// TODO: deactivate update. it requires normalizeData to run on .data()
-					//in order to not introduce errors (like not setting correct split values)
-					//stream.automaticUpdate = false;
 					stream.data(datasets[dataset.value]).filters(this.filters)
 					this.applySplits(this.split);
-					//stream.automaticUpdate = true;
-					stream.update();
 				},
 				deep: true
 			},

@@ -117,7 +117,7 @@
 			}
 		}
 
-        _drawStart = (path, node) => {
+        _drawStart(path, node) {
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
             // extend to left
@@ -151,7 +151,7 @@
             d.horizontal(x(node.x));
         }
 
-        _drawEnd = (path, node) => {
+        _drawEnd(path, node) {
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
             if ((node.y1 - node.y0) <= 0)
@@ -181,7 +181,7 @@
             d.horizontal(x(node.x));
         };
 
-        _drawStartDefault = (path, node) => { // insert node
+        _drawStartDefault(path, node) { // insert node
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
             // find position to insert node
@@ -284,7 +284,7 @@
             }
         };
 
-        _drawEndDefault = (path, node) => {
+        _drawEndDefault(path, node) {
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
             // find position to delete node to
@@ -387,7 +387,7 @@
             }
         };
 
-        _drawStartCircle = (path, node) => {
+        _drawStartCircle(path, node) {
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
             let height = node.y1 - node.y0;
@@ -397,7 +397,7 @@
             d.arc(prop, 1, 0, 0, 0, x(t), y(node.y0));
         };
 
-        _drawEndCircle = (path, node) => {
+        _drawEndCircle(path, node) {
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
             let height = node.y1 - node.y0;
@@ -406,7 +406,7 @@
             d.arc(prop, 1, 0, 0, 0, x(t), y(node.y1));
         };
 
-        _drawStartPlug = (path, node) => {	
+        _drawStartPlug(path, node) {	
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
             let t = node.x - 0.5*(1-prop);				
@@ -416,7 +416,7 @@
                      x(t), y(node.y0));
         };
 
-        _drawEndPlug = (path, node) => {
+        _drawEndPlug(path, node) {
             const d = path, prop = this._proportion, x = this._xScale, y = this._yScale;
             
             let t = node.x + 0.5*(1-prop);
