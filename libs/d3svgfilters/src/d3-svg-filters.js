@@ -14,6 +14,13 @@ class SVGFilterManagerLibrary {
         this._library = {}; // name : { generate: (defs) => (args) => {  appends filter to defs }, signature: (args) => key}
     }
 
+    static GenerateID() {
+        if (!this.__ID)
+            this.__ID = 0;
+
+        return ++this.__ID;
+    }
+
     addFilter(name, fns) {
         this._library[name] = fns;
     }
@@ -32,7 +39,7 @@ class SVGFilterManagerLibrary {
     generate(defs, filterName, args) {
         const signature = this.signature(filterName, args);
         const ctx = { signature, defs };
-        const theFilter = this._library[filterName].generate.call(ctx, args);
+        const theFilter = this._library[filterName].generate.call(ctx, {...args, id: SVGFilterManagerLibrary.GenerateID()});
 
         defs.node().__filters__.push({ signature, filter: theFilter });
     }
@@ -62,13 +69,14 @@ Lib.addFilter('drop-shadow', {
         if (!existing.empty()) return existing;
 
         const theDropShadow =
-            this.defs
-            .append('feDropShadow')
-            .attr('id', key)
-            .attr('dx', dx)
-            .attr('dy', dy)
-            .attr('stdDeviation', blur)
-            .attr('flood-color', color);
+        this.defs.html(this.defs.html() + `
+            <feDropShadow
+                id='${key}'
+                dx='${dx}'
+                dy='${dy}'
+                stdDeviation='${blur}'
+                flood-color=${color} />
+        `);
 
         return theDropShadow;
     },
@@ -92,47 +100,46 @@ Lib.addFilter('blur', {
 });
 
 Lib.addFilter('inner-shadow', {
-    generate: function ({ color, dx, dy, blur }) {
+    generate: function ({ id, color, dx, dy, blur }) {
         const key = this.signature;
         const existing = this.defs.select(`#${key}`);
 
         if (!existing.empty()) return existing;
 
-        this.defs.append('feGaussianBlur')
-            .attr('in', 'SourceAlpha')
-            .attr('stdDeviation', blur)
-            .attr('result', 'blur');
+        this.defs.html(this.defs.html() + `
+            <feGaussianBlur
+                in='SourceAlpha'
+                stdDeviation='${blur}'
+                result='blur${id}' />
 
-        this.defs.append('feOffset')
-            .attr('dy', dy)
-            .attr('dx', dx);
+            <feOffset dx=${dx} dy=${dy} />
 
-        this.defs.append('feComposite')
-            .attr('in2', 'SourceAlpha')
-            .attr('operator', 'arithmetic')
-            .attr('k2', -1)
-            .attr('k3', 1)
-            .attr('result', 'shadowDiff');
+            <feComposite
+                in2='SourceAlpha'
+                operator='arithmetic'
+                k2=-1
+                k3=1
+                result='shadowDiff${id}' />
 
-        this.defs.append('feFlood').attr('flood-color', color);
+            <feFlood flood-color=${color} />
 
-        this.defs.append('feComposite')
-            .attr('in2', 'shadowDiff')
-            .attr('operator', 'in')
+            <feComposite
+                in2='shadowDiff${id}'
+                operator='in' />
 
-        this.defs.append('feComposite')
-            .attr('in2', 'SourceGraphic')
-            .attr('operator', 'over')
-            .attr('result', 'firstFilter')
+            <feComposite
+                in2='SourceGraphic'
+                operator='over'
+                result='firstFilter${id}' />
 
-        this.defs.append('feComposite')
-            .attr('in2', 'shadowDiff')
-            .attr('operator', 'in')
+            <feComposite
+                in2='shadowDiff${id}'
+                operator='in' />
 
-        this.defs.append('feComposite')
-            .attr('in2', 'firstFilter')
-            .attr('operator', 'over')
-
+            <feComposite
+                in2='firstFilter${id}'
+                operator='over' />
+        `);
     },
     signature: ({ color, dx, dy, blur }) => `ids_${color}_${blur}_${dx}_${dy}`
 });
