@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 				]
 			},
 			filters: [
-                { type: 'inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
+                { type: 'double-inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
                 { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0 }
 			]
 		},

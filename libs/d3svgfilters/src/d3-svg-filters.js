@@ -144,6 +144,35 @@ Lib.addFilter('inner-shadow', {
     signature: ({ color, dx, dy, blur }) => `ids_${color}_${blur}_${dx}_${dy}`
 });
 
+Lib.addFilter('double-inner-shadow', {
+    generate: function ({ id, color, dx, dy, blur }) {
+        const key = this.signature;
+        const existing = this.defs.select(`#${key}`);
+
+        if (!existing.empty()) return existing;
+
+        this.defs.html(this.defs.html() + `
+            <feComponentTransfer in=SourceAlpha result="invert${id}">
+                <feFuncA type="table" tableValues="1 0" />
+            </feComponentTransfer>
+            <feGaussianBlur in="invert${id}" stdDeviation="${blur}" result="blur${id}"/>
+            <feOffset in="blur${id}" dx="${dx}" dy="${dy}" result="offsetblur1${id}"/>
+            <feOffset in="blur${id}" dy="${-dy}" result="offsetblur2${id}"/>
+            <feFlood flood-color="${color}"/> 
+            <feComposite in2="offsetblur1${id}" operator="in" result="offsetblur1cut${id}"/>
+            <feFlood flood-color="${color}"/> 
+            <feComposite in2="offsetblur2${id}" operator="in" result="offsetblur2cut${id}"/>
+            <feMerge>
+                <feMergeNode in="SourceGraphic" />
+                <feMergeNode in="offsetblur1${id}" />
+                <feMergeNode in="offsetblur2${id}" />
+            </feMerge>
+            <feComposite in2="SourceAlpha" operator="in" />
+        `);
+    },
+    signature: ({ color, dx, dy, blur }) => `dids_${color}_${blur}_${dx}_${dy}`
+});
+
 class SVGFilterManager {
     constructor(defs) {
         this._filters = {

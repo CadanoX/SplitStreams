@@ -218,7 +218,7 @@
                     <input type="range" v-model="filters[1].dy" step= "1" min="-10" max="10" />
                 </div>
                 <div>
-                    <label>stdDeviation: {{ filters[1].stdDeviation }} </label>
+                    <label>blur: {{ filters[1].stdDeviation }} </label>
                 </div>
                 <div>
                     <input type="range" v-model="filters[1].stdDeviation" step= "0.2" min="0" max="20" />
@@ -233,16 +233,16 @@
                     <input type="range" v-model="filters[0].dx" step= "1" min="-10" max="10" />
                 </div>
                 <div>
-                    <label>dy: {{ filters[0].dy }} </label>
+                    <label>strength: {{ filters[0].dy }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[0].dy" step= "1" min="-10" max="10" />
+                    <input type="range" v-model="filters[0].dy" step= "1" min="0" max="30" />
                 </div>
                 <div>
-                    <label>stdDeviation: {{ filters[0].stdDeviation }} </label>
+                    <label>blur: {{ filters[0].stdDeviation }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[0].stdDeviation" step= "0.2" min="0" max="10" />
+                    <input type="range" v-model="filters[0].stdDeviation" step= "0.2" min="0" max="20" />
                 </div>
             </div>
             
