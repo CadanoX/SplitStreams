@@ -196,12 +196,12 @@
                     timesteps: function(val) {
                         generator.options({ timesteps: val });
                         if (val == 1) {
-                            stream.setProportion(0.6);
-                            secstream.setProportion(0.6);
+                            stream.proportion = 0.6;
+                            secstream.proportion = 0.6;
                         }
                         else  {
-                            stream.setProportion(1);
-                            secstream.setProportion(1);
+                            stream.proportion = 1;
+                            secstream.proportion = 1;
                         }
                         this.draw();
                         this.applySplits(this.secstreamSplits);
@@ -369,16 +369,18 @@
             });
 
             treemap = d3.SecStream(document.querySelector('#treemap'));
-            treemap.setProportion(0);
-            treemap.separationX(treemap.marginXFixed, 1);
+            treemap.proportion = 0;
+            treemap.separationXFunction = treemap.marginXFixed;
+            treemap.separationXValue = 1;
             treemap.splitRoot = true;
 
             stream = d3.SecStream(document.querySelector('#stream'));
             //stream.showLabels(this.showLabels);
             
             secstream = d3.SecStream(document.querySelector('#secstream'));
-            secstream.setProportion(1);
-            secstream.separationX(secstream.marginXFixed, 1);
+            secstream.proportion = 1;
+            secstream.separationXFunction = secstream.marginXFixed;
+            secstream.separationXValue = 1;
 
             document.querySelector('#generate').click();
         });

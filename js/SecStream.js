@@ -11,14 +11,14 @@
 				automaticUpdate: true,
 				minSizeThreshold: 0,
 				//separationXMethod: "",
-				separationXValue: 0,
+				xMargin: 0,
 				//separationYMethod: "",
-				separationYValue: 0,
+				yMargin: 0,
+				yPadding: 0,
 				zoomTimeFactor: 1,
 				proportion: 1,
 				unifySize: false,
 				unifyPosition: false,
-				nodeSizeAddX: 1,
 				drawStroke: false,
 				showLabels: false,
                 mirror: false,
@@ -30,15 +30,12 @@
 
             this._name = container.id
 			this._container = container;
-            this._id = "id";
-            this._layout;
 			this._data;
 			this._pathContainer;
 			this._textContainer;
 			this._svg;
 			this._svgFilters;
 			this._filters;
-            this._clipPaths;
             this._datasetsLoaded = 0
 			
 			this._streamData = d3.SecStreamData();
@@ -48,10 +45,9 @@
 			this._maxDepth;
 			this._indices = {};
             this._maxIndex = 0;
-            this._treemapSpace;
 
-			this._separationXMethod = this.marginXFixed;
-			this._separationYMethod = this.marginYFixed;
+			this._xSpacing = this.xSpacingFixed;
+			this._ySpacing = this.ySpacingFixed;
 
 			this._color = d3.scaleSequential(d3.interpolateBlues);
 			this._colorRandom = false;
@@ -69,24 +65,24 @@
 		
 		set automaticUpdate(auto) { this._opts.automaticUpdate = auto; }
 		set unifySize(unify) { this._opts.unifySize = unify; this._update() }
-		set nodeSizeAddX(x) { this._opts.nodeSizeAddX = x; this._update() }
+		set yPadding(value) { this._opts.yPadding = +value; this._update() }
 		set unifyPosition(unify) { this._opts.unifyPosition = unify; this._update() }
 		set mirror(mirror) { this._opts.mirror = mirror; this._update() }
 		set splitRoot(splitRoot) { this._opts.splitRoot = splitRoot; this._update() }
-        set minSizeThreshold(threshold) { this._opts.minSizeThreshold = threshold / 100; this._update(); }
+        set minSizeThreshold(threshold) { this._opts.minSizeThreshold = +threshold / 100; this._update(); }
         set proportion(value) { this._opts.proportion = this._streamData.proportion = +value; this._update(); }
-		set zoomTime(factor) { this._opts.zoomTimeFactor = factor; this._update(); }
-        set offset(offset) { this._opts.offset = offset; this._update(); }
-        set separationXValue(value) { this._opts.separationXValue = value; this._update(); }
-        set separationYValue(value) { this._opts.separationYValue = value; this._update(); }
+		set zoomTime(factor) { this._opts.zoomTimeFactor = +factor; this._update(); }
+        set offset(offset) { this._opts.offset = +offset; this._update(); }
+        set xMargin(value) { this._opts.xMargin = +value; this._update(); }
+        set yMargin(value) { this._opts.yMargin = +value; this._update(); }
 
 		set color(colorFunction) { this._color = colorFunction; this.render() }
 		set colorRandom(random) { this._colorRandom = random; this.render() }
 		set startEndEncoding(encoding) { this._streamData.startEndEncoding = encoding; this._update(); }
 		set startEndEncodingX(x) { this._streamData.startEndEncodingX = x; this._update(); }
         set startEndEncodingY(y) { this._streamData.startEndEncodingY = y; this._update(); }
-        set separationXFunction(callback) { this._separationXMethod = callback; this._update(); }
-        set separationYFunction(callback) { this._separationYMethod = callback; this._update(); }
+        set xSpacing(callback) { this._xSpacing = callback; this._update(); }
+        set ySpacing(callback) { this._ySpacing = callback; this._update(); }
 
         get splits() { this._streamData.splits };
 
@@ -96,6 +92,8 @@
 
 			if (!d || (typeof d !== "object")) return console.log(`ERROR: Added data "${d}" is not an object.`);
 			this._data = d;
+			this._normalizeData();
+            this.update(); // TODO: for some reason, streams won't include any data if update is not called twice. that's why we call it here
 		}
 
 		_setFilters(d) {
@@ -196,17 +194,11 @@
 						checkSizes(child);
 						aggregate += child.size;
 					}
-					if (this._opts.unifySize)
-						node.size = aggregate + this._opts.nodeSizeAddX;
-					else
-						node.size = node.dataSize;				
+					node.size = this._opts.unifySize ? aggregate : node.dataSize;
+                    node.size += this._opts.yPadding;		
 				}
-				else {
-					if (this._opts.unifySize)
-						node.size = 1;
-					else
-						node.size = node.dataSize;
-				}
+				else
+					node.size = this._opts.unifySize ? 1 : node.dataSize;
 			}
 
 			// positions must be unified, if sizes are unified
@@ -294,10 +286,10 @@
 					}
 
 					if (this._opts.splitRoot)
-						node.marginX = this._separationXMethod(node);
+						node.marginX = this._xSpacing(node);
 					else
 						node.marginX = 0;
-					node.marginY = this._separationYMethod(node);
+					node.marginY = this._ySpacing(node);
 				}
 				else {
 					node.x = p.x;
@@ -320,8 +312,8 @@
 						}
 					}
 
-					node.marginX = p.marginX + this._separationXMethod(node);
-					node.marginY = this._separationYMethod(node);
+					node.marginX = p.marginX + this._xSpacing(node);
+					node.marginY = this._ySpacing(node);
 				}
 
 				if (!!node.children)
@@ -367,10 +359,10 @@
             let streamsByDepth = d3.nest().key(d => d.depth).entries(this._streamData.streams);
 
             let depthLayers = this._pathContainer.selectAll('g.depthLayer > g.clipLayer')
-                .data(streamsByDepth, d => this._datasetsLoaded + d.key);
+                .data(streamsByDepth, d => this._name + this._datasetsLoaded + d.key);
 
             depthLayers.exit().remove();
-            d3.selectAll('.depthLayer:empty').remove()
+            // this._pathContainer.selectAll('.depthLayer:empty').remove()
 
             depthLayers.enter().append('g')
                 .classed('depthLayer', true)
@@ -379,7 +371,7 @@
                     .classed('clipLayer', true);
 
             let streams = depthLayers.selectAll('path.stream')
-                .data(d => d.values, d => d.id);
+                .data(function(d) { return d.values }, d => this._name + this._datasetsLoaded + d.id);
 
 			streams.enter().append('path')
 				.classed('stream', true)
@@ -403,7 +395,7 @@
 			this.drawStroke(this._opts.drawStroke);
 
 			let splitData = this._svgFilters.selectAll("clipPath")
-				.data(this._streamData.clipPaths, function(d) { return d.id });
+				.data(this._streamData.clipPaths, d => this._name + this._datasetsLoaded + d.id );
 
 			splitData.enter().append("clipPath")
 				.attr('id', d => "clip" + d.id + this._name)
@@ -454,6 +446,8 @@
 				if (!manuallyTriggered)
 					return;
 
+            console.log('update');
+            
 			this._normalizeData();
 			this._applyOrdering();
 			this._calculatePositions();
@@ -470,33 +464,33 @@
 			this._update();
 		}
 
-		marginYFixed(node) {
-			return this._opts.separationYValue/4;
+		ySpacingFixed(node) {
+			return this._opts.yMargin/4;
 		}
 
-		marginYPercentage(node) {
-			return (node.y1-node.y0) * this._opts.separationYValue/2;
+		ySpacingPercentage(node) {
+			return (node.y1-node.y0) * this._opts.yMargin/2;
 		}
 
-		marginYHierarchical(node) {
-			return (node.depth + 1) * this._opts.separationYValue/4;
+		ySpacingHierarchical(node) {
+			return (node.depth + 1) * this._opts.yMargin/4;
 		}
 
-		marginYHierarchicalReverse(node) {
-			return 1 / (node.depth + 1) * this._opts.separationYValue/4;
+		ySpacingHierarchicalReverse(node) {
+			return 1 / (node.depth + 1) * this._opts.yMargin/4;
 		}
 
-		marginXFixed(node) {
-			return this._opts.separationXValue / 10;
+		xSpacingFixed(node) {
+			return this._opts.xMargin / 10;
 		}
 
         // TODO: use the max depth at that timepoint instead
-		marginXHierarchical(node) {
-			return (node.depth+1) / this._maxDepth * this._opts.separationXValue;
+		xSpacingHierarchical(node) {
+			return (node.depth+1) / this._maxDepth * this._opts.xMargin;
 		}
 
-		marginXHierarchicalReverse(node) {
-			return 1 / (node.depth+1) * this._opts.separationXValue;
+		xSpacingHierarchicalReverse(node) {
+			return 1 / (node.depth+1) * this._opts.xMargin;
         }
         
 		addSplits(splits) {
@@ -505,15 +499,14 @@
 		}
 
 		addSplitsAtTimepoints() {
-			let splits = []
+			let splits = [];
 			for (let i = this._minTime; i <= this._maxTime; i++)
 				splits.push(i);
 			this.addSplits(splits);
 		}
 
 		addSplitsBetweenTimepoints() {
-            let splits = []
-            
+            let splits = [];
 			for (let i = this._minTime - 1; i <= this._maxTime; i++)
 				splits.push(i + 0.5);
 			this.addSplits(splits);

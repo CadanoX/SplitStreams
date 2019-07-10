@@ -568,7 +568,6 @@
                     deepestDepth: deepestDepth,
 					id: stream.streamId,
 					data: stream.data,
-					clipPath: clipPath.get(),
 					textPos: { x: x(stream.x - 0.5*(1-this._proportion) + 0.5* stream.marginX),
 										 y: textPos }
                 };
@@ -580,7 +579,9 @@
                 */
 
 			}
-			this._clipPaths = this._streams.map(({id, clipPath}) => ({id, path: clipPath}));
+
+            // if stream IDs are strings, the clipPath array has an empty value in the beginning --> remove
+            this._clipPaths = this._clipPaths.filter(d => d)
 
 			// TODO: apply an order in which children are drawn correctly
             // this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)

@@ -39,15 +39,15 @@ document.addEventListener("DOMContentLoaded", function(event)
 		data: {
 			split: 'at',
 			randomSplits: [],
-			separationX: 'Fixed',
-			separationXValue: 0,
-			separationY: 'Fixed',
-			separationYValue: 0,
+			xSpacing: 'Fixed',
+			xMargin: 0,
+			ySpacing: 'Fixed',
+			yMargin: 0,
+			yPadding: 0,
 			sizeThreshold: 0,
 			proportion: 1,
 			zoomTime: 1,
 			unifySize: false,
-			unifySizePlusOne: true,
 			unifyPosition: false,
 			drawStroke: false,
 			showLabels: false,
@@ -137,9 +137,6 @@ document.addEventListener("DOMContentLoaded", function(event)
 			disableNormSizeButton() {
 				return this.dataset.value == "viscousMin";
 			},
-			disableNormSizePlusOneButton() {
-				return !this.unifySize && !this.disableNormSizeButton;
-			},
 			disableNormPosButton() {
 				return this.unifySize ||
 					(this.dataset.value != "gumtree" && this.dataset.value != "gumtreeMin");
@@ -183,29 +180,32 @@ document.addEventListener("DOMContentLoaded", function(event)
 				this.settings.height = this.size * window.innerHeight/window.innerWidth;
 				stream.resize(this.settings.width, this.settings.height);
 			},
-			separationY: function() {
-				if (this.separationY == "Fixed")
-                    stream.separationYFunction = stream.marginYFixed;
-                else if (this.separationY == "Percentage")
-                    stream.separationYFunction = stream.marginYPercentage;
-                else if (this.separationY == "Hierarchical")
-                    stream.separationYFunction = stream.marginYHierarchical;
-                else if (this.separationY == "HierarchicalReverse")
-                    stream.separationYFunction = stream.marginYHierarchicalReverse;
+			ySpacing: function() {
+				if (this.ySpacing == "Fixed")
+                    stream.ySpacing = stream.ySpacingFixed;
+                else if (this.ySpacing == "Percentage")
+                    stream.ySpacing = stream.ySpacingPercentage;
+                else if (this.ySpacing == "Hierarchical")
+                    stream.ySpacing = stream.ySpacingHierarchical;
+                else if (this.ySpacing == "HierarchicalReverse")
+                    stream.ySpacing = stream.ySpacingHierarchicalReverse;
 			},
-			separationYValue: function() {
-				stream.separationYValue = this.separationYValue;
+			yMargin: function() {
+				stream.yMargin = this.yMargin;
 			},
-			separationX: function() {
-                if (this.separationX == "Fixed")
-                    stream.separationXFunction = stream.marginXFixed;
-                else if (this.separationX == "Hierarchical")
-                    stream.separationXFunction = stream.marginXHierarchical;
-                else if (this.separationX == "HierarchicalReverse")
-                    stream.separationXFunction = stream.marginXHierarchicalReverse;
+			yPadding: function() {
+				stream.yPadding = this.yPadding;
 			},
-			separationXValue: function() {
-				stream.separationXValue = this.separationXValue;
+			xSpacing: function() {
+                if (this.xSpacing == "Fixed")
+                    stream.xSpacing = stream.xSpacingFixed;
+                else if (this.xSpacing == "Hierarchical")
+                    stream.xSpacing = stream.xSpacingHierarchical;
+                else if (this.xSpacing == "HierarchicalReverse")
+                    stream.xSpacing = stream.xSpacingHierarchicalReverse;
+			},
+			xMargin: function() {
+				stream.xMargin = this.xMargin;
 			},
 			sizeThreshold: function() {
 				stream.minSizeThreshold = this.sizeThreshold;
@@ -221,9 +221,6 @@ document.addEventListener("DOMContentLoaded", function(event)
 			},
 			unifyPosition() {
 				stream.unifyPosition = this.unifyPosition;
-			},
-			unifySizePlusOne() {
-				stream.nodeSizeAddX = this.unifySizePlusOne;
 			},
 			drawStroke() {
 				stream.drawStroke(this.drawStroke);
@@ -390,7 +387,6 @@ document.addEventListener("DOMContentLoaded", function(event)
     loadDataset(app.dataset.value);
 	stream = d3.SecStream(div)
         .data(datasets[app.dataset.value]);
-    stream.nodeSizeAddX = 0;
 
 	stream.addSplitsAtTimepoints();
 });

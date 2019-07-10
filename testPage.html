@@ -100,20 +100,26 @@
 
             let testResult = document.createElement('div');
             testResult.className = "result";
+            testResult.id = test + "result";
             div.appendChild(testResult);
 
             let data = examples.tests[test];
-            if (data.format == "gumtree")
+            let format = data.format;
+            if (format == "gumtree")
                 data = transformGumtreeFormat(data);
-            else if (data.format == "viscous")
+            else if (format == "viscous")
                 data = transformViscousFormat(data);
             else
-                console.log("Data format \"" + data.format + "\" is not supported.");
+                console.log("Data format \"" + format + "\" is not supported.");
 
             let stream = d3.SecStream(testResult, {zoomTimeFactor: 1, width: 200, height: 200, margin: {top: 5, bottom: 5, right: 5, left: 5}})
                 .data(data);
 
-            stream.color = d3.scaleSequential(d3.interpolateViridis);
+            if (format == "viscous")
+                stream.nodeSizeAddX = 1;
+
+            stream.update();
+            // stream.color = d3.scaleSequential(d3.interpolateViridis);
         }
     </script>
 </body>
