@@ -248,9 +248,9 @@
                     },
                     maxValue: function(val) {
                         generator.options({ maxValue: val });
-                        treemap.nodeSizeAddX = Number(this.maxValue);
-                        stream.nodeSizeAddX = Number(this.maxValue);
-                        secstream.nodeSizeAddX = Number(this.maxValue);
+                        treemap.yPadding = Number(this.maxValue);
+                        stream.yPadding = Number(this.maxValue);
+                        secstream.yPadding = Number(this.maxValue);
                         this.draw();
                     },
                     color: {

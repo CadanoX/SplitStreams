@@ -112,12 +112,12 @@
             else
                 console.log("Data format \"" + format + "\" is not supported.");
 
-            let stream = d3.SecStream(testResult, {zoomTimeFactor: 1, width: 200, height: 200, margin: {top: 5, bottom: 5, right: 5, left: 5}})
+            let stream = d3.SecStream(testResult, {drawStroke: true, zoomTimeFactor: 1, width: 200, height: 200, margin: {top: 5, bottom: 5, right: 5, left: 5}})
                 .data(data);
 
             if (format == "viscous")
-                stream.nodeSizeAddX = 1;
-
+                stream.yPadding = 1;
+                
             stream.update();
             // stream.color = d3.scaleSequential(d3.interpolateViridis);
         }

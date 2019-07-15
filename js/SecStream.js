@@ -425,7 +425,7 @@
 			this._opts.drawStroke = draw;
 			let color = this._opts.drawStroke ? 'black' : null;
             this._pathContainer.attr('stroke', color);
-            //this._pathContainer.attr('stroke-width', 0.001);
+            this._pathContainer.attr('stroke-width', 3);
             // d3.selectAll('path').attr('stroke-width', 0.001)
 		}
 
