@@ -432,6 +432,20 @@
 			const prop = this._proportion, x = this._xScale, y = this._yScale;
             let d, lastTimepoint, deepestDepth; // find the deepest depth each stream has over the whole timeseries
 
+            let drawLine = (t1, t2, t3, ySource, yDest) => {
+                let t12 = 0.5 * (t1 + t2) // mid between t1 and t2
+                d.horizontal(t1);
+                if (this._xCurve == "linear") {
+                    d.line(t2, y(yDest))
+                }
+                else if (this._xCurve == "bezier") {
+                    d.bezier(t12, y(ySource),
+                                t12, y(yDest),
+                                t2, y(yDest));
+                }
+                d.horizontal(t3);
+            };
+
             let traverse = (node) => {
                 if (node.x > lastTimepoint)
                     lastTimepoint = node.x;
@@ -446,7 +460,6 @@
                     let t1 = x(node.x + 0.5 * (1-prop) * dt);
                     let t2 = x(node.next[0].x - 0.5 * (1-prop) * dt);
                     let t3 = x(node.next[0].x);
-                    let t12 = 0.5 * (t1 + t2) // mid between t1 and t2
 
                     for (let i = 0; i < node.next.length; i++) {
                         //let y0 = node.y0 + i * (node.y1 - node.y0) / node.next.length;
@@ -462,31 +475,9 @@
                             d.move(t0, y(y0));
                         }
                         else {
-                            // draw bottom line (forwards)
-                            d.horizontal(t1);
-                            if (this._xCurve == "linear") {
-                                d.line(t2, y(dest.y0))
-                            }
-                            else if (this._xCurve == "bezier") {
-                                d.bezier(t12, y(y0),
-                                            t12, y(dest.y0),
-                                            t2, y(dest.y0));
-                            }
-                            d.horizontal(t3);
-
-                            // traverse
+                            drawLine(t1, t2, t3, y0, dest.y0); // bottom line (forwards)
                             traverse(dest);
-
-                            // draw top line (backwards)
-                            d.horizontal(t2);
-                            if (this._xCurve == "linear")
-                                d.line(t1, y(y1))
-                            else if (this._xCurve == "bezier") {
-                                d.bezier(t12, y(dest.y1),
-                                        t12, y(y1),
-                                        t1, y(y1));
-                            }
-                            d.horizontal(t0);
+                            drawLine(t2, t1, t0, dest.y1, y1); // top line (backwards)
                         }
                     }
                 }
