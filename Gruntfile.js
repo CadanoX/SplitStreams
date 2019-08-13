@@ -53,7 +53,8 @@ module.exports = function (grunt) {
             dev: {
                 options: {
                     external: extLibs,
-                    debug: true
+                    debug: true,
+                    // transform: 'brfs'
                 },
                 files: {
                     'build/app.js': ['js/main.js'],

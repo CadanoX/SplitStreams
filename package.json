@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/cadanox/secstreams#readme",
   "dependencies": {
+    "brfs": "^2.0.2",
     "browserify": "^16.2.3",
+    "fs": "0.0.1-security",
     "grunt": "^1.0.4",
     "grunt-browserify": "^5.3.0",
     "grunt-contrib-connect": "^2.0.0",

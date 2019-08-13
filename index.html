@@ -29,7 +29,7 @@
 	<script type="text/javascript" src="examples.js"></script>
 	<script type="text/javascript" src="storms.js"></script>
 	<script type="text/javascript" src="mouse_brain.js"></script>
-	<script type="text/javascript" src="ontologies.js"></script>
+	<script type="text/javascript" src="build/ontologies.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="build/app.js"></script>
 	<!-- <script type="text/javascript" src="js/main.js"></script> -->
@@ -206,22 +206,22 @@
             <div>
                 <label><b>Drop Shadow:</b></label>
                 <div>
-                    <label>dx: {{ filters[1].dx }} </label>
+                    <label>dx: {{ filters[2].dx }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[1].dx" step= "1" min="-10" max="10" />
+                    <input type="range" v-model="filters[2].dx" step= "1" min="-10" max="10" />
                 </div>
                 <div>
-                    <label>dy: {{ filters[1].dy }} </label>
+                    <label>dy: {{ filters[2].dy }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[1].dy" step= "1" min="-10" max="10" />
+                    <input type="range" v-model="filters[2].dy" step= "1" min="-10" max="10" />
                 </div>
                 <div>
-                    <label>stdDeviation: {{ filters[1].stdDeviation }} </label>
+                    <label>stdDeviation: {{ filters[2].stdDeviation }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[1].stdDeviation" step= "0.2" min="0" max="20" />
+                    <input type="range" v-model="filters[2].stdDeviation" step= "0.2" min="0" max="20" />
                 </div>
             </div>
             <div>
@@ -242,7 +242,28 @@
                     <label>stdDeviation: {{ filters[0].stdDeviation }} </label>
                 </div>
                 <div>
-                    <input type="range" v-model="filters[0].stdDeviation" step= "0.2" min="0" max="10" />
+                    <input type="range" v-model="filters[0].stdDeviation" step= "0.2" min="0" max="20" />
+                </div>
+            </div>
+            <div>
+                <label><b>Inner Shadow 2:</b></label>
+                <div>
+                    <label>dx: {{ filters[1].dx }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[1].dx" step= "1" min="-10" max="50" />
+                </div>
+                <div>
+                    <label>dy: {{ filters[1].dy }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[1].dy" step= "1" min="-10" max="50" />
+                </div>
+                <div>
+                    <label>stdDeviation: {{ filters[1].stdDeviation }} </label>
+                </div>
+                <div>
+                    <input type="range" v-model="filters[1].stdDeviation" step= "0.2" min="0" max="50" />
                 </div>
             </div>
             

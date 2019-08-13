@@ -1,4 +1,5 @@
 const {OntologyLoader} = require('./OntologyLoader');
+const ontologies = require('./ontologies');
 
 var stream;
 
@@ -23,6 +24,7 @@ function loadDataset(name) {
                 ont = new OntologyLoader();
                 ont.loadOntology(ontologies.ICD9CM_2013AB);
                 ont.loadOntology(ontologies.ICD9CM_2014AB);
+                ont.loadOntology(ontologies.ICD9CM_2015AB);
                 ont.transformOntologiesToTree();
                 datasets.ontology = ont.data;
                 break;
@@ -129,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function(event)
 				]
 			},
 			filters: [
+                { type: 'inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
                 { type: 'inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
                 { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0 }
 			]
