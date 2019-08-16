@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>SecStreams</title>
+
+  <link type="text/css" rel="stylesheet" href="../css/style.css" media="screen" />
+  <link type="text/css" rel="stylesheet" href="../css/SecStream.css" media="screen" />
+
+  <script type="text/javascript" src="bundle.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="controls">
+      <!--
+            <div>
+                <label>Chart width</label>
+                <input type="range" v-model="size" min="0" max="1920" />
+            </div>
+            -->
+      <div id='download'>
+        <button v-on:click='download'>Download</button>
+      </div>
+      <br>
+      <div>
+        <label><b>Data:</b></label>
+        <br>
+        <select v-model="dataset.value">
+          <option v-for="option in dataset.options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" id="unifySize" v-model="unifySize" :disabled="disableNormSizeButton">
+        <label for="unifySize">normalize size</label>
+      </div>
+      <div>
+        <input type="checkbox" id="unifyPosition" v-model="unifyPosition" :disabled="disableNormPosButton">
+        <label for="unifyPosition">norm. position</label>
+      </div>
+      <div>
+        <input type="checkbox" id="mirror" v-model="mirror">
+        <label for="mirror">mirror</label>
+      </div>
+      <div>
+        <label><b>Color:</b></label>
+        <br>
+        <select v-model="color.value">
+          <option v-for="option in color.options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+      </div>
+      <div>
+        <label><b>Offset:</b></label>
+        <br>
+        <select v-model="offset.value">
+          <option v-for="option in offset.options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+      </div>
+      <div>
+        <label><b>Zoom Time</b>: {{ zoomTime }}x</label>
+        <br>
+        <input type="range" v-model="zoomTime" step="0.01" min="1" max="10" />
+      </div>
+      <hr>
+      <div>
+        <label><b>Tree/Time</b>: {{ proportion }}</label>
+        <br>
+        <input type="range" v-model="proportion" step="0.01" min="0" max="1" />
+      </div>
+      <hr>
+      <div>
+        <span><b>Y-Padding</b></span>
+        <div>
+          <label>Value: {{ yPadding }}</label>
+        </div>
+        <div>
+          <input type="range" v-model="yPadding" step="0.05" min="0" max="10" />
+        </div>
+      </div>
+      <hr>
+      <div>
+        <span><b>Y-Margin</b></span>
+        <div>
+          <label>Value: {{ yMargin }}</label>
+        </div>
+        <div>
+          <input type="range" v-model="yMargin" step="0.001" min="0" max="1" />
+        </div>
+        <div>
+          <input type="radio" id="ySpacingFixed" value="Fixed" selected v-model="ySpacing">
+          <label for="ySpacingFixed">Fixed</label>
+        </div>
+        <div>
+          <input type="radio" id="ySpacingPercentage" value="Percentage" v-model="ySpacing">
+          <label for="ySpacingPercentage">Percentage</label>
+        </div>
+        <div>
+          <input type="radio" id="ySpacingHierarchy" value="Hierarchical" v-model="ySpacing">
+          <label for="ySpacingHierarchy">Hierarchical</label>
+        </div>
+        <div>
+          <input type="radio" id="ySpacingHierarchyReverse" value="HierarchicalReverse" v-model="ySpacing">
+          <label for="ySpacingHierarchyReverse">Hier. Reverse</label>
+        </div>
+      </div>
+      <div>
+        <span><b>X-Margin</b></span>
+        <div>
+          <label>Value: {{ xMargin }}</label>
+        </div>
+        <div>
+          <input type="range" v-model="xMargin" step="0.001" min="0" max="1" />
+        </div>
+        <div>
+          <input type="radio" id="xSpacingFixed" value="Fixed" selected v-model="xSpacing">
+          <label for="xSpacingFixed">Fixed</label>
+        </div>
+        <div>
+          <input type="radio" id="xSpacingHierarchy" value="Hierarchical" v-model="xSpacing">
+          <label for="xSpacingHierarchy">Hierarchical</label>
+        </div>
+        <div>
+          <input type="radio" id="xSpacingHierarchyReverse" value="HierarchicalReverse" v-model="xSpacing">
+          <label for="xSpacingHierarchyReverse">Hier. Reverse</label>
+        </div>
+        <div>
+          <input type="checkbox" id="splitRoot" v-model="splitRoot">
+          <label for="splitRoot">Split Root</label>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <span><b>Splits</b></span>
+        <div>
+          <input type="radio" id="splitAtTime" value="at" selected v-model="split">
+          <label for="splitAtTime">at timepoints</label>
+        </div>
+        <div>
+          <input type="radio" id="splitBetweenTime" value="between" v-model="split">
+          <label for="splitBetweenTime">between timep.</label>
+        </div>
+        <div>
+          <input type="radio" id="splitRandom" value="random" v-model="split">
+          <label for="splitRandom">randomly</label>
+          <button value='randomize' v-on:click="randomizeSplits">randomize</button>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <label><b>Threshold:</b> {{ sizeThreshold }}%</label>
+        <br>
+        <input type="range" v-model="sizeThreshold" step="0.1" min="0" max="5" />
+      </div>
+      <hr>
+      <div>
+        <label><b>Start / End Encoding:</b></label>
+        <br>
+        <select v-model="startEndEncoding.value">
+          <option v-for="option in startEndEncoding.options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+        <div v-if="startEndEncoding.value == 'plug'">
+          <label>y:</label>
+          <input type="range" v-model="startEndEncoding.y" step="0.01" min="-1" max="2" />
+        </div>
+        <div v-if="startEndEncoding.value == 'plug'">
+          <label>x:</label>
+          <input type="range" v-model="startEndEncoding.x" step="0.01" min="0" max="2" />
+        </div>
+      </div>
+      <hr>
+      <div>
+        <label><b>EXPERIMENTAL:</b></label>
+      </div>
+      <div>
+        <input type="checkbox" id="drawStroke" v-model="drawStroke">
+        <label for="drawStroke">Stroke line</label>
+      </div>
+      <div>
+        <input type="checkbox" id="showLabels" v-model="showLabels">
+        <label for="showLabels">Labels</label>
+      </div>
+      <div>
+        <label><b>Drop Shadow:</b></label>
+        <div>
+          <label>dx: {{ filters[1].dx }} </label>
+        </div>
+        <div>
+          <input type="range" v-model="filters[1].dx" step="1" min="-10" max="10" />
+        </div>
+        <div>
+          <label>dy: {{ filters[1].dy }} </label>
+        </div>
+        <div>
+          <input type="range" v-model="filters[1].dy" step="1" min="-10" max="10" />
+        </div>
+        <div>
+          <label>blur: {{ filters[1].stdDeviation }} </label>
+        </div>
+        <div>
+          <input type="range" v-model="filters[1].stdDeviation" step="0.2" min="0" max="20" />
+        </div>
+      </div>
+      <div>
+        <label><b>Inner Shadow:</b></label>
+        <div>
+          <label>dx: {{ filters[0].dx }} </label>
+        </div>
+        <div>
+          <input type="range" v-model="filters[0].dx" step="1" min="-10" max="10" />
+        </div>
+        <div>
+          <label>strength: {{ filters[0].dy }} </label>
+        </div>
+        <div>
+          <input type="range" v-model="filters[0].dy" step="1" min="0" max="30" />
+        </div>
+        <div>
+          <label>blur: {{ filters[0].stdDeviation }} </label>
+        </div>
+        <div>
+          <input type="range" v-model="filters[0].stdDeviation" step="0.2" min="0" max="20" />
+        </div>
+      </div>
+
+
+      <!--
+            <div style="display: inline-block">
+                <label><b>Cushion 1:</b></label>
+                <br>
+                <label>dx: {{ filters[0][0].dx }} </label>
+                <br>
+                <input type="range" v-model="filters[0][0].dx" step= "1" min="-10" max="10" />
+                <br>
+                <label>dy: {{ filters[0][0].dy }} </label>
+                <br>
+                <input type="range" v-model="filters[0][0].dy" step= "1" min="-10" max="10" />
+                <br>
+                <label>stdDeviation: {{ filters[0][0].stdDeviation }} </label>
+                <br>
+                <input type="range" v-model="filters[0][0].stdDeviation" step= "0.2" min="0" max="20" />
+            </div>
+            </vr>
+            <div style="display: inline-block; border-left: 1px solid #000; padding-left: 15px">
+                <label><b>Cushion 2:</b></label>
+                <br>
+                <label>dx: {{ filters[0][1].dx }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].dx" step= "1" min="-10" max="10" />
+                <br>
+                <label>dy: {{ filters[0][1].dy }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].dy" step= "1" min="-10" max="10" />
+                <br>
+                <label>stdDeviation: {{ filters[0][1].stdDeviation }} </label>
+                <br>
+                <input type="range" v-model="filters[0][1].stdDeviation" step= "0.2" min="0" max="20" />
+            </div>
+        -->
+    </div>
+
+    <div id="wrapper">
+      <resize-observer @notify="wrapperResize" />
+    </div>
+  </div>
+</body>
+
+</html>

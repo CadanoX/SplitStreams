@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>SecStreams</title>
+
+  <link type="text/css" rel="stylesheet" href="../css/style.css" media="screen" />
+  <link type="text/css" rel="stylesheet" href="../css/SecStream.css" media="screen" />
+
+  <style>
+    html,
+    body {
+      background-color: #222222;
+      font-family: monospace;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    #app {
+      align-content: flex-start;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .test {
+      background-color: grey;
+      display: block;
+      height: 215px;
+      margin: 5px;
+      text-align: center;
+      width: 200px;
+    }
+
+    .test>.name {
+      /*position: absolute;*/
+      font-weight: bold;
+      height: 15px;
+    }
+
+    .test>.result {
+      height: calc(100% - 15px);
+    }
+
+    path.stream {
+      stroke: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <button id="download">Download</button>
+  </div>
+</body>
+<script type="text/javascript" src="bundle_testPage.js"></script>
+
+</html>

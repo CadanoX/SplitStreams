@@ -1,0 +1,55 @@
+{
+  "format": "gumtree",
+  "timesteps": [
+    {
+      "root": {
+        "length": "10",
+        "pos": "0",
+        "children": [
+          {
+            "length": "2",
+            "pos": "2"
+          },
+          {
+            "length": "2",
+            "pos": "6"
+          }
+        ]
+      }
+    },
+    {
+      "root": {
+        "length": "10",
+        "pos": "0",
+        "children": [
+          {
+            "length": "2",
+            "pos": "6"
+          },
+          {
+            "length": "2",
+            "pos": "2"
+          }
+        ]
+      }
+    }
+  ],
+  "changes": [
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 0
+        },
+        {
+          "src": 1,
+          "dest": 1
+        },
+        {
+          "src": 2,
+          "dest": 2
+        }
+      ]
+    }
+  ]
+}

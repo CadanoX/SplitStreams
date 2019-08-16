@@ -1,2 +1,1 @@
-grunt watch
-grunt browserify:dev
+npm run build
