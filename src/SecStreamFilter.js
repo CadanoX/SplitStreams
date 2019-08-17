@@ -9,7 +9,21 @@ export default class SecStreamFilter {
   }
 
   get data() {
-    return this._fitleredData;
+    this._filteredData.references = [...this._inputData];
+    return this._filteredData;
+  }
+
+  maxDepth(maxDepth) {
+    let traverse = node => {
+      if (node.depth == maxDepth) {
+      } else {
+        if (!!node.children) for (let child of node.children) traverse(child);
+      }
+    };
+
+    for (let time of this._inputData._timesteps) {
+      traverse(time.tree);
+    }
   }
 
   select(nodeId) {}
