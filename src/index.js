@@ -15,7 +15,8 @@ import {
   transformViscousFormat,
   transformGumtreeFormat,
   loadTitanFormat,
-  loadAllenFormat
+  loadAllenFormat,
+  loadStorylineFormat
 } from '../src/functions.js';
 
 Vue.use(VueResize);
@@ -31,6 +32,8 @@ const examples = {
   gumtreeDFT: require('../data/gumtreeDFT.json'),
   TITAN: require('../data/storms.csv'),
   mouse_brain: require('../data/mouse_brain.json'),
+  starwars: require('../data/starwars.json'),
+  matrix: require('../data/matrix.json'),
   ontologies: {
     ICD9CM_2013AB: require('../data/ICD9CM/ICD9CM-2013AB.ttl'),
     ICD9CM_2014AB: require('../data/ICD9CM/ICD9CM-2014AB.ttl')
@@ -74,6 +77,13 @@ function loadDataset(name) {
         break;
       case 'mouseBrain':
         datasets.mouseBrain = loadAllenFormat(examples.mouse_brain);
+        break;
+
+      case 'starwars':
+        datasets.starwars = loadStorylineFormat(examples.starwars);
+        break;
+      case 'matrix':
+        datasets.matrix = loadStorylineFormat(examples.matrix);
         break;
 
       case 'ontology':
@@ -133,6 +143,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
           { value: 'gumtreeDFT', text: 'Figure 5' },
           { value: 'TITAN', text: 'TITAN' },
           { value: 'mouseBrain', text: 'Mouse Brain' },
+          { value: 'starwars', text: 'Star Wars' },
+          { value: 'matrix', text: 'Matrix' },
           { value: 'ontology', text: 'Ontology' }
         ]
       },

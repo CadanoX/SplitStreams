@@ -4,6 +4,8 @@ import SecStreamFilter from './SecStreamFilter.js';
 import SecStreamData from './SecStreamData.js';
 import '../libs/d3svgfilters/src/d3-svg-filters.js';
 
+import { getRandomColor } from './functions.js';
+
 export default class SecStream {
   constructor(container, opts = {}) {
     this._opts = {
@@ -200,10 +202,9 @@ export default class SecStream {
     // TEST: RANDOM ORDER OF LEAF NODES
   }
 
-  // returns if node builds a new stream
-  //*
+  // returns true if node id did not exist before
   _findStreamId(node) {
-    if (node.prev) {
+    if (!!node.prev) {
       // use id of prev node
       node.streamId = node.prev[0].streamId;
       return false;
@@ -216,9 +217,11 @@ export default class SecStream {
         node.streamId = node.id;
       } else {
         // find a new ID
-        do {
-          this._maxIndex++;
-        } while (!!this._indices[this._maxIndex]);
+        do this._maxIndex++;
+        while (!!this._indices[this._maxIndex]);
+        console.log(
+          `ID '${node.id}' is already in use. Use '${this._maxIndex}' instead.`
+        );
         // ID is now in use
         this._indices[this._maxIndex] = true;
         node.streamId = this._maxIndex;
@@ -262,8 +265,10 @@ export default class SecStream {
           checkSizes(child);
           aggregate += child.size;
         }
-        node.size = this._opts.unifySize ? aggregate : node.dataSize;
-        node.size += this._opts.yPadding;
+        if (aggregate > node.dataSize || this._opts.unifySize)
+          node.size = aggregate;
+        else node.size = node.dataSize;
+        node.size += this._opts.yPadding * node.children.length;
       } else node.size = this._opts.unifySize ? 1 : node.dataSize;
     };
 
@@ -295,22 +300,18 @@ export default class SecStream {
 
     this._clearStreamIds();
     let time = this._data.timesteps;
-    let maxValue = 0;
-    let maxTime = 0;
-    let minTime = Infinity;
+    this._maxValue = 0;
+    this._maxTime = 0;
+    this._minTime = Infinity;
     for (let t in time) {
       checkSizes(time[t].tree);
       checkPositions(time[t].tree);
-      maxValue = Math.max(maxValue, time[t].tree.size);
-      minTime = Math.min(minTime, +t);
-      maxTime = Math.max(maxTime, +t);
+      this._maxValue = Math.max(this._maxValue, time[t].tree.size);
+      this._minTime = Math.min(this._minTime, +t);
+      this._maxTime = Math.max(this._maxTime, +t);
     }
 
-    this._maxTime = maxTime;
-    this._minTime = minTime;
-    this._maxValue = maxValue;
     this._maxDepth = 0;
-
     let traverse = (node, depth) => {
       this._maxDepth = Math.max(this._maxDepth, depth);
       node.depth = depth++;
@@ -321,9 +322,7 @@ export default class SecStream {
         node.children.forEach(child => traverse(child, depth));
     };
 
-    for (let i in time) {
-      traverse(time[i].tree, 0);
-    }
+    for (let i in time) traverse(time[i].tree, 0);
   }
 
   _calculatePositions() {
@@ -435,6 +434,7 @@ export default class SecStream {
       })
       .append('g')
       .classed('clipLayer', true);
+    // .attr('clip-path', d => 'url(#clip' + d.key + 'wrapper)');
 
     let streams = depthLayers.selectAll('path.stream').data(
       function(d) {

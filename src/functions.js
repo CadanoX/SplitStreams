@@ -21,6 +21,7 @@ export function getRandomColor() {
   }
   return color;
 }
+
 /* Modified from https://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an */
 export function saveSvg(svgEl, name) {
   svgEl.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
@@ -196,6 +197,30 @@ export function loadAllenFormat(data) {
     for (let step in structure.timesteps) {
       let { id, timesteps, name, acronym, color, parent } = structure;
       format.addParent(time(step), id, parent);
+    }
+  }
+
+  format._buildTimeConnections();
+  format.finalize();
+  return format.data;
+}
+
+export function loadStorylineFormat(data) {
+  let format = new SecStreamInputData();
+  const characters = [];
+  const locations = [];
+  for (let char of data.characters)
+    characters[char.id] = char.name.replace(/\s+/g, '');
+  for (let loc of data.locations)
+    locations[loc.id] = loc.name.replace(/\s+/g, '');
+
+  for (let session of data.sessions) {
+    for (let t = session.start; t < session.end; t++) {
+      format.addNode(t, locations[session.location]);
+      for (let member of session.members) {
+        format.addNode(t, characters[member]);
+        format.addParent(t, characters[member], locations[session.location]);
+      }
     }
   }
 

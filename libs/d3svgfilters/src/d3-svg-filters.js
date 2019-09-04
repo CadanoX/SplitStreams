@@ -1,4 +1,4 @@
-const d3 = typeof require === "function" ? require("d3") : window.d3;
+const d3 = typeof require === 'function' ? require('d3') : window.d3;
 
 class SVGFilter {
   constructor(spec) {}
@@ -29,11 +29,11 @@ class SVGFilterManagerLibrary {
   signature(filterName, args) {
     return this._library[filterName]
       .signature(args)
-      .replace(/\:|\,|\.|\;/g, "_")
-      .replace(/ /g, "")
-      .replace(/\#/g, "h")
-      .replace(/\(/g, "l")
-      .replace(/\)/g, "r");
+      .replace(/\:|\,|\.|\;/g, '_')
+      .replace(/ /g, '')
+      .replace(/\#/g, 'h')
+      .replace(/\(/g, 'l')
+      .replace(/\)/g, 'r');
   }
 
   generate(defs, filterName, args) {
@@ -60,7 +60,7 @@ class SVGFilterManagerLibrary {
 const GenSVGFilters = (...filters) => {};
 
 const Lib = new SVGFilterManagerLibrary();
-Lib.addFilter("drop-shadow", {
+Lib.addFilter('drop-shadow', {
   generate: function({ color, dx, dy, blur }) {
     const key = this.signature;
     const existing = this.defs.select(`#${key}`);
@@ -84,7 +84,7 @@ Lib.addFilter("drop-shadow", {
   signature: ({ color, dx, dy, blur }) => `ds_${color}_${blur}_${dx}_${dy}`
 });
 
-Lib.addFilter("blur", {
+Lib.addFilter('blur', {
   generate: function({ blur }) {
     const key = this.signature;
     const existing = this.defs.select(`#${key}`);
@@ -92,15 +92,15 @@ Lib.addFilter("blur", {
     if (!existing.empty()) return existing;
 
     const theBlur = this.defs
-      .append("feGaussianBlur")
-      .attr("stdDeviation", blur);
+      .append('feGaussianBlur')
+      .attr('stdDeviation', blur);
 
     return theBlur;
   },
   signature: ({ blur }) => `gbl_${blur}`
 });
 
-Lib.addFilter("inner-shadow", {
+Lib.addFilter('inner-shadow', {
   generate: function({ id, color, dx, dy, blur }) {
     const key = this.signature;
     const existing = this.defs.select(`#${key}`);
@@ -148,7 +148,7 @@ Lib.addFilter("inner-shadow", {
   signature: ({ color, dx, dy, blur }) => `ids_${color}_${blur}_${dx}_${dy}`
 });
 
-Lib.addFilter("double-inner-shadow", {
+Lib.addFilter('double-inner-shadow', {
   generate: function({ id, color, dx, dy, blur }) {
     const key = this.signature;
     const existing = this.defs.select(`#${key}`);
@@ -224,7 +224,7 @@ class SVGFilterManager {
 
     delete this._ids[toDelete];
     delete this._bindings[id];
-    this._defs.select("#" + id).remove();
+    this._defs.select('#' + id).remove();
   }
 
   hasFilter(signature) {
@@ -236,11 +236,11 @@ class SVGFilterManager {
     // ['name', arg, 'name2', arg]
     // ['', ]
     return (
-      "F_" +
+      'F_' +
       args
-        .map((arg, i) => (i % 2 === 0 ? "" : Lib.signature(args[i - 1], arg)))
-        .filter(v => v !== "")
-        .join("_")
+        .map((arg, i) => (i % 2 === 0 ? '' : Lib.signature(args[i - 1], arg)))
+        .filter(v => v !== '')
+        .join('_')
     );
   }
 
@@ -261,12 +261,12 @@ class SVGFilterManager {
     this._bindings[theID] = [];
 
     const filterEntry = this._defs
-      .append("filter")
-      .attr("id", theID)
-      .attr("height", "300%")
-      .attr("width", "300%")
-      .attr("x", "-100%")
-      .attr("y", "-100%");
+      .append('filter')
+      .attr('id', theID)
+      .attr('height', '300%')
+      .attr('width', '300%')
+      .attr('x', '-100%')
+      .attr('y', '-100%');
 
     filterEntry.node().__filters__ = [];
 
@@ -313,7 +313,7 @@ d3.selection.prototype.svgFilter = function(...filters) {
   if (filterID === this.getFilterID()) return;
   this.clearFilter();
 
-  this.attr("filter", `url(#${filterID})`);
+  this.attr('filter', `url(#${filterID})`);
   filterManager._bind(this, filterID);
 
   // 3. Generate a filter manager if not existing
@@ -325,13 +325,13 @@ d3.selection.prototype.svgFilter = function(...filters) {
 d3.selection.prototype.svgFilterDefs = function() {
   // 1. Find topmost SVG
   let svg = d3.select(
-    this.node().farthestViewportElement || this.node().closest("svg")
+    this.node().farthestViewportElement || this.node().closest('svg')
   );
 
   // 2. Ensure the defs entry exists
-  let defs = svg.select(":scope>defs.svg-custom-filters");
+  let defs = svg.select(':scope>defs.svg-custom-filters');
   if (defs.empty()) {
-    defs = svg.append("defs").attr("class", "svg-custom-filters");
+    defs = svg.append('defs').attr('class', 'svg-custom-filters');
     defs.node()._svgFilterManager = new SVGFilterManager(defs);
   }
 
@@ -339,7 +339,7 @@ d3.selection.prototype.svgFilterDefs = function() {
 };
 
 d3.selection.prototype.getFilterID = function() {
-  const filterAttr = this.attr("filter");
+  const filterAttr = this.attr('filter');
 
   let filterID;
   if (!!filterAttr) filterID = /\(\#(.+)\)/.exec(filterAttr)[1];
@@ -356,7 +356,7 @@ d3.selection.prototype.clearFilter = function() {
     const defs = sel.svgFilterDefs();
     const filterManager = defs.node()._svgFilterManager;
 
-    sel.attr("filter", null);
+    sel.attr('filter', null);
     filterManager._unbind(sel, filterID);
   });
 
