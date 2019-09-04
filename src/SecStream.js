@@ -5,6 +5,7 @@ import SecStreamData from './SecStreamData.js';
 import '../libs/d3svgfilters/src/d3-svg-filters.js';
 
 import { getRandomColor } from './functions.js';
+import '../css/SecStream.css';
 
 export default class SecStream {
   constructor(container, opts = {}) {
@@ -451,8 +452,8 @@ export default class SecStream {
       .on('mouseout', onMouseOut)
       .attr('clip-path', d => 'url(#clip' + d.id + this._name + ')')
       .attr('id', d => 'stream' + d.id + this._name)
-      .attr('shape-rendering', 'geometricPrecision')
-      //.attr('shape-rendering', 'optimizeSpeed')
+      // .attr('shape-rendering', 'geometricPrecision')
+      .attr('shape-rendering', 'optimizeSpeed')
       .attr('paint-order', 'stroke')
       //.attr('stroke-width', 3)
       .merge(streams)

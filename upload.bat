@@ -1,1 +1,1 @@
-scp -r build css js libs examples.js generator.html index.html ontologies.js storms.js testPage.html README.txt fbo083@login.uib.no:/Data/www/folk/fbo083/secstreams
+scp -r dist/* README.txt fbo083@login.uib.no:/Data/www/folk/fbo083/secstreams

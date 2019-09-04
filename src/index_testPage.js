@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import SecStream from '../src/SecStream.js';
+import SecStream from './SecStream';
 
 import {
   loadJSON,
@@ -10,7 +10,7 @@ import {
   transformGumtreeFormat,
   loadTitanFormat,
   loadAllenFormat
-} from '../src/functions.js';
+} from './functions';
 
 const tests = {
   add: require('../data/test_add.json'),

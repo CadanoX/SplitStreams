@@ -1,10 +1,10 @@
-import 'vue-resize/dist/vue-resize.css';
-
 import Vue from 'vue';
 import VueResize from 'vue-resize';
 import * as d3 from 'd3';
 
-import SecStream from '../src/SecStream.js';
+import DataGenerator from './DataGenerator';
+import SecStream from './SecStream';
+
 import {
   loadJSON,
   getRandomColor,
@@ -14,7 +14,10 @@ import {
   transformGumtreeFormat,
   loadTitanFormat,
   loadAllenFormat
-} from '../src/functions.js';
+} from './functions';
+
+import 'vue-resize/dist/vue-resize.css';
+import '../css/style.css';
 
 Vue.use(VueResize);
 
@@ -22,7 +25,7 @@ var stream;
 var treemap;
 var secstream;
 
-const generator = DataGenerator();
+const generator = new DataGenerator();
 
 document.addEventListener('DOMContentLoaded', function(event) {
   let app = new Vue({

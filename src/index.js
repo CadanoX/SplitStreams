@@ -1,11 +1,12 @@
 import 'vue-resize/dist/vue-resize.css';
+import '../css/style.css';
 
 import Vue from 'vue';
 import VueResize from 'vue-resize';
 import * as d3 from 'd3';
 
-import SecStream from '../src/SecStream.js';
-import OntologyLoader from '../src/OntologyLoader';
+import SecStream from './SecStream';
+import OntologyLoader from './OntologyLoader';
 
 import {
   loadJSON,
@@ -17,7 +18,7 @@ import {
   loadTitanFormat,
   loadAllenFormat,
   loadStorylineFormat
-} from '../src/functions.js';
+} from './functions';
 
 Vue.use(VueResize);
 

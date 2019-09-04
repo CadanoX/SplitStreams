@@ -1,5 +1,6 @@
 const path = require('path');
 const PrettierPlugin = require("prettier-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -12,6 +13,7 @@ module.exports = {
     contentBase: './dist',
     hot: true
   },
+  devtool: "source-map",
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
@@ -49,6 +51,9 @@ module.exports = {
   plugins: [
     new PrettierPlugin({
       singleQuote: true
-    })
+    }),
+    new CopyWebpackPlugin([{
+      from: './*.html'
+    }])
   ]
 };
