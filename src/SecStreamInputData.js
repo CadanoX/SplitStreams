@@ -19,6 +19,7 @@ export default class SecStreamInputData {
     if (!this._timesteps[t].references[id]) {
       let dataSize = +size;
       let dataPos = +pos;
+      id = String(id);
       // size = +size;
       // pos = +pos;
       this._timesteps[t].references[id] = {

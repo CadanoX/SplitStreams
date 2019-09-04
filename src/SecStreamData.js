@@ -654,10 +654,10 @@ export default class SecStreamData {
       clipPath.horizontal(clipStart);
       clipPath.vertical(y0);
 
-      this._clipPaths[stream.streamId] = {
+      this._clipPaths.push({
         id: stream.streamId,
         path: clipPath.get()
-      };
+      });
 
       // find position to put a text label
       let textPos;
@@ -686,8 +686,9 @@ export default class SecStreamData {
       */
     }
 
-    // if stream IDs are strings, the clipPath array has an empty value in the beginning --> remove
-    this._clipPaths = this._clipPaths.filter(d => d);
+    // WARNING: This was a fix for: "if stream IDs are strings, the clipPath array has an empty value in the beginning --> remove"
+    // But instead it just removes all clipPaths which have string as an ID
+    //this._clipPaths = this._clipPaths.filter(d => d);
 
     // TODO: apply an order in which children are drawn correctly
     // this._streams.sort((a,b) => (a.depth < b.depth) ? -1 : 1)

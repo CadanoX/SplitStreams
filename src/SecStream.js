@@ -50,7 +50,6 @@ export default class SecStream {
     this._maxValue;
     this._maxDepth;
     this._indices = {};
-    this._maxIndex = 0;
 
     this._xSpacing = this.xSpacingFixed;
     this._ySpacing = this.ySpacingFixed;
@@ -218,41 +217,24 @@ export default class SecStream {
         node.streamId = node.id;
       } else {
         // find a new ID
-        do this._maxIndex++;
-        while (!!this._indices[this._maxIndex]);
-        console.log(
-          `ID '${node.id}' is already in use. Use '${this._maxIndex}' instead.`
-        );
+        let count = 0;
+        let id;
+        do {
+          count++;
+          id = node.id + '_' + count;
+        } while (!!this._indices[id]);
+        console.log(`ID '${node.id}' is already in use. Use '${id}' instead.`);
         // ID is now in use
-        this._indices[this._maxIndex] = true;
-        node.streamId = this._maxIndex;
+        this._indices[id] = true;
+        node.streamId = id;
       }
       return true;
     }
   }
-  //*/
-  /*
-  _findStreamId(node) {
-    if (!node.prev) { // new node
-      // find a new ID
-      do { this._maxIndex++; }
-      while(!!this._indices[this._maxIndex.toString()])
-      // ID is now in use
-      this._indices[this._maxIndex.toString()] = true;
-      node.streamId = this._maxIndex.toString();
-      return true;
-    }
-    else {
-      // use id of prev node
-      node.streamId = node.prev[0].streamId;
-      return false;
-    }
-  }*/
 
   _clearStreamIds() {
     this._streamData.clear();
     this._indices = {};
-    this._maxIndex = 0;
   }
 
   _normalizeData() {
@@ -329,37 +311,36 @@ export default class SecStream {
   _calculatePositions() {
     let { height, width, margin, minSizeThreshold, offset } = this._opts;
 
+    let setOffset = root => {
+      if (offset == 'zero') {
+        root.y0 = 0;
+        root.y1 = root.size / this._maxValue;
+      } else if (offset == 'expand') {
+        root.y0 = 0;
+        root.y1 = 1;
+      } else if (offset == 'silhouette') {
+        root.y0 = 0.5 - (0.5 * root.size) / this._maxValue;
+        root.y1 = 0.5 + (0.5 * root.size) / this._maxValue;
+      }
+    };
+
     let traverse = (node, childX = 0) => {
       let p = node.parent;
       if (!p) {
-        if (offset == 'zero') {
-          node.y0 = 0;
-          node.y1 = node.size / this._maxValue;
-        } else if (offset == 'expand') {
-          node.y0 = 0;
-          node.y1 = 1;
-        } else if (offset == 'silhouette') {
-          node.y0 = 0.5 - (0.5 * node.size) / this._maxValue;
-          node.y1 = 0.5 + (0.5 * node.size) / this._maxValue;
-        }
-
-        if (this._opts.splitRoot) node.marginX = this._xSpacing(node);
-        // this._xSpacing().call(this, )
-        else node.marginX = 0;
-        node.marginY = this._ySpacing(node);
+        node.marginX = this._opts.splitRoot ? this._xSpacing(node) : 0;
       } else {
         node.x = p.x;
         let numMargins = p.children.length + 1;
-        let pSize = p.y1 - p.y0 - numMargins * p.marginY;
-        if (pSize <= 0) {
+        let space = p.y1 - p.y0 - numMargins * p.marginY;
+        if (space <= 0) {
           node.y0 = 0.5 * (p.y0 + p.y1);
           node.y1 = 0.5 * (p.y0 + p.y1);
         } else {
           // normalize
-          node.rpos = (node.pos - node.parent.pos) / node.parent.size;
-          node.rsize = node.size / node.parent.size;
-          node.y0 = p.y0 + (childX + 1) * p.marginY + pSize * node.rpos;
-          node.y1 = node.y0 + pSize * node.rsize;
+          node.rpos = (node.pos - p.pos) / p.size;
+          node.rsize = node.size / p.size;
+          node.y0 = p.y0 + (childX + 1) * p.marginY + space * node.rpos;
+          node.y1 = node.y0 + space * node.rsize;
 
           let size = node.y1 - node.y0;
           if (size <= minSizeThreshold) {
@@ -369,8 +350,9 @@ export default class SecStream {
         }
 
         node.marginX = p.marginX + this._xSpacing(node);
-        node.marginY = this._ySpacing(node);
       }
+
+      node.marginY = this._ySpacing(node);
 
       if (!!node.children)
         node.children.forEach((child, i) => traverse(child, i));
@@ -379,6 +361,7 @@ export default class SecStream {
     let time = this._data.timesteps;
     for (let i in time) {
       time[i].tree.x = +i;
+      setOffset(time[i].tree);
       traverse(time[i].tree);
     }
 
@@ -421,52 +404,44 @@ export default class SecStream {
 
     let depthLayers = this._pathContainer
       .selectAll('g.depthLayer > g.clipLayer')
-      .data(streamsByDepth, d => this._name + this._datasetsLoaded + d.key);
+      .data(streamsByDepth, d => this._name + this._datasetsLoaded + d.key)
+      .join(enter =>
+        enter
+          .append('g')
+          .classed('depthLayer', true)
+          .each(function(d) {
+            this.classList.add('depth-' + d.key);
+          })
+          .append('g')
+          .classed('clipLayer', true)
+      );
 
-    depthLayers.exit().remove();
-    // this._pathContainer.selectAll('.depthLayer:empty').remove()
-
-    depthLayers
-      .enter()
-      .append('g')
-      .classed('depthLayer', true)
-      .each(function(d) {
-        this.classList.add('depth-' + d.key);
-      })
-      .append('g')
-      .classed('clipLayer', true);
     // .attr('clip-path', d => 'url(#clip' + d.key + 'wrapper)');
 
-    let streams = depthLayers.selectAll('path.stream').data(
-      function(d) {
-        return d.values;
-      },
-      d => this._name + this._datasetsLoaded + d.id
-    );
-
-    streams
-      .enter()
-      .append('path')
-      .classed('stream', true)
-      .on('mouseover', onMouseOver)
-      .on('mouseout', onMouseOut)
-      .attr('clip-path', d => 'url(#clip' + d.id + this._name + ')')
-      .attr('id', d => 'stream' + d.id + this._name)
-      // .attr('shape-rendering', 'geometricPrecision')
-      .attr('shape-rendering', 'optimizeSpeed')
-      .attr('paint-order', 'stroke')
-      //.attr('stroke-width', 3)
-      .merge(streams)
+    depthLayers
+      .selectAll('path.stream')
+      .data(d => d.values, d => this._name + this._datasetsLoaded + d.id)
+      .join(enter =>
+        enter
+          .append('path')
+          .classed('stream', true)
+          .on('mouseover', onMouseOver)
+          .on('mouseout', onMouseOut)
+          .attr('clip-path', d => 'url(#clip' + d.id + this._name + ')')
+          .attr('id', d => 'stream' + d.id + this._name)
+          // .attr('shape-rendering', 'geometricPrecision')
+          .attr('shape-rendering', 'optimizeSpeed')
+          //.attr('stroke-width', 3)
+          .attr('paint-order', 'stroke')
+      )
       .attr('d', d => d.path)
       .style(
         'fill',
         d => (!!d.data ? d.data.color : null) || color(d.deepestDepth)
+        // remove empty streams (they do not include a single bezier curve)
       )
-      // remove empty streams (they do not include a single bezier curve)
       .filter(d => d.path.indexOf('C') == -1)
       .remove();
-
-    streams.exit().remove();
 
     this.showLabels(this._opts.showLabels);
     this.drawStroke(this._opts.drawStroke);
@@ -494,9 +469,7 @@ export default class SecStream {
 
     let labels = this._textContainer
       .selectAll('text')
-      .data(labelData, function(d) {
-        return d.id;
-      });
+      .data(labelData, d => d.id);
 
     labels
       .enter()

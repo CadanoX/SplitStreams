@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         ]
       },
       dataset: {
-        value: 'gumtree',
+        value: 'viscousMin',
         options: [
           { value: 'viscous', text: 'Viscous Fingers' },
           { value: 'viscousMin', text: 'Minimal Viscous' },
