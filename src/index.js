@@ -7,116 +7,52 @@ import * as d3 from 'd3';
 
 import SecStream from './SecStream';
 import OntologyLoader from './OntologyLoader';
+import TransformData from './TransformData';
 
-import {
-  loadJSON,
-  getRandomColor,
-  saveSvg,
-  saveJson,
-  transformViscousFormat,
-  transformGumtreeFormat,
-  loadTitanFormat,
-  loadAllenFormat,
-  loadStorylineFormat,
-  loadTreemapFormat
-} from './functions';
+import { loadJSON, getRandomColor, saveSvg, saveJson, addLoadingSpinner, removeLoadingSpinner } from './functions';
+import { Transform } from 'stream';
 
 Vue.use(VueResize);
 
-const examples = {
-  viscous: require('../data/viscous.json'),
-  viscousMin: require('../data/viscousMin.json'),
-  filetree: require('../data/filetree.json'),
-  filetree2: require('../data/filetree2.json'),
-  explanation: require('../data/explanation.json'),
-  gumtreeMin: require('../data/gumtreeMin.json'),
-  gumtree: require('../data/gumtree.json'),
-  gumtreeDFT: require('../data/gumtreeDFT.json'),
-  TITAN: require('../data/storms.csv'),
-  mouse_brain: require('../data/mouse_brain.json'),
-  starwars: require('../data/starwars.json'),
-  matrix: require('../data/matrix.json'),
-  ontologies: {
-    // ICD9CM_2013AB: require('../data/ICD9CM/ICD9CM-2013AB.ttl'),
-    // ICD9CM_2014AB: require('../data/ICD9CM/ICD9CM-2014AB.ttl')
-  },
-  treemaps: {
-    MoviesH22Y7M: require('../data/treemaps/MoviesH22Y7M.data')
-  }
-};
-
-// const treemapsList = require('../data/treemaps-list.json');
-// for (let treemap of treemapsList) examples.treemaps[treemap] = require(`../data/${treemap}`);
-
 var stream;
+var wrapper;
 
 var datasets = {};
+const datasetList = require('../data/_datasets.json');
+
 function loadDataset(name) {
+  addLoadingSpinner(wrapper);
+  let type = datasetList[name].type;
   if (!datasets[name]) {
-    switch (name) {
-      case 'viscous':
-        datasets.viscous = transformViscousFormat(examples.viscous);
-        break;
-      case 'viscousMin':
-        datasets.viscousMin = transformViscousFormat(examples.viscousMin);
-        break;
-      case 'filetree':
-        datasets.filetree = transformViscousFormat(examples.filetree);
-        break;
-      case 'filetree2':
-        datasets.filetree2 = transformViscousFormat(examples.filetree2);
-        break;
-      case 'explanation':
-        datasets.explanation = transformViscousFormat(examples.explanation);
-        break;
+    let data;
+    // if (type == 'treemap') data = await import(`../data/treemaps/${name}`);
+    // else data = await import(`../data/${name}`);
 
-      case 'gumtreeMin':
-        datasets.gumtreeMin = transformGumtreeFormat(examples.gumtreeMin);
-        break;
-      case 'gumtree':
-        datasets.gumtree = transformGumtreeFormat(examples.gumtree);
-        break;
-      case 'gumtreeDFT':
-        datasets.gumtreeDFT = transformGumtreeFormat(examples.gumtreeDFT);
-        break;
-
-      case 'TITAN':
-        datasets.TITAN = loadTitanFormat(examples.TITAN);
-        break;
-      case 'mouseBrain':
-        datasets.mouseBrain = loadAllenFormat(examples.mouse_brain);
-        break;
-
-      case 'starwars':
-        datasets.starwars = loadStorylineFormat(examples.starwars);
-        break;
-      case 'matrix':
-        datasets.matrix = loadStorylineFormat(examples.matrix);
-        break;
-
-      case 'ontology':
-        let ont = new OntologyLoader();
-        ont.loadOntology(examples.ontologies.ICD9CM_2013AB);
-        ont.loadOntology(examples.ontologies.ICD9CM_2014AB);
-        ont.transformOntologiesToTree();
-        datasets.ontology = ont.data;
-        break;
-
-      case 'MoviesH22Y7M':
-        datasets.MoviesH22Y7M = loadTreemapFormat(
-          examples.treemaps.MoviesH22Y7M
-        );
-        break;
-
-      default:
-        examples[name] = require(`../data/treemaps/${name}`);
-        datasets[name] = loadTreemapFormat(examples[name]);
-        break;
+    if (type == 'ontology') {
+      // case 'ontology':
+      //   let ont = new OntologyLoader();
+      //   ont.loadOntology(examples.ontologies.ICD9CM_2013AB);
+      //   ont.loadOntology(examples.ontologies.ICD9CM_2014AB);
+      //   ont.transformOntologiesToTree();
+      //   datasets.ontology = ont.data;
+      //   break;
+    }
+    else {
+      try {
+        if (type == 'treemap') data = require(`../data/treemaps/${name}`);
+        else data = require(`../data/${name}`);
+        datasets[name] = TransformData[type](data);
+        return true;
+      } catch (e) {
+        alert('Dataset is not available');
+        return false;
+      }
     }
   }
+  return true;
 }
 
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function (event) {
   let app = new Vue({
     el: '#app',
     data: {
@@ -156,38 +92,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       },
       dataset: {
         value: 'viscousMin',
-        options: [
-          { value: 'viscous', text: 'Viscous Fingers' },
-          { value: 'viscousMin', text: 'Minimal Viscous' },
-          { value: 'gumtree', text: 'Source Code' },
-          { value: 'gumtreeMin', text: 'Minimal Source Code' },
-          { value: 'filetree', text: 'Filetree' },
-          { value: 'filetree2', text: 'Filetree2' },
-          { value: 'explanation', text: 'Figure 3' },
-          { value: 'gumtreeDFT', text: 'Figure 5' },
-          { value: 'TITAN', text: 'TITAN' },
-          { value: 'mouseBrain', text: 'Mouse Brain' },
-          { value: 'starwars', text: 'Star Wars' },
-          { value: 'matrix', text: 'Matrix' },
-          { value: 'ontology', text: 'Ontology' },
-          {
-            value: 'atp-losses-country-player.data',
-            text: 'atp-losses-country-player.data'
-          },
-          {
-            value: 'atp-matches-allplayers-height.data',
-            text: 'atp-matches-allplayers-height.data'
-          },
-          {
-            value: 'atp-matches-top20players-rank.data',
-            text: 'atp-matches-top20players-rank.data'
-          },
-          {
-            value: 'atp-wins-country-player.data',
-            text: 'atp-wins-country-player.data'
-          },
-          { value: 'MoviesH22Y7M.data', text: 'MoviesH22Y7M.data' }
-        ]
+        options: [] // options are dynamically added from ./data/_datasets.json
       },
       offset: {
         value: 'silhouette',
@@ -259,12 +164,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
       }
     },
     methods: {
-      randomizeSplits: function() {
+      randomizeSplits: function () {
         stream.removeSplits();
         stream.addSplitsRandomly(10);
         this.randomSplits = stream.splits;
       },
-      applySplits: function(option) {
+      applySplits: function (option) {
         if (option == 'at') {
           stream.removeSplits();
           stream.addSplitsAtTimepoints();
@@ -282,19 +187,19 @@ document.addEventListener('DOMContentLoaded', function(event) {
       wrapperResize(...args) {
         stream.resize();
       },
-      download: function() {
+      download: function () {
         saveSvg(document.querySelector('svg'), 'secstream');
         saveJson(generator.get(), 'data');
       }
     },
     watch: {
-      size: function() {
+      size: function () {
         this.settings.width = this.size * 1.0;
         this.settings.height =
           (this.size * window.innerHeight) / window.innerWidth;
         stream.resize(this.settings.width, this.settings.height);
       },
-      ySpacing: function() {
+      ySpacing: function () {
         if (this.ySpacing == 'Fixed') stream.ySpacing = stream.ySpacingFixed;
         else if (this.ySpacing == 'Percentage')
           stream.ySpacing = stream.ySpacingPercentage;
@@ -303,29 +208,29 @@ document.addEventListener('DOMContentLoaded', function(event) {
         else if (this.ySpacing == 'HierarchicalReverse')
           stream.ySpacing = stream.ySpacingHierarchicalReverse;
       },
-      yMargin: function() {
+      yMargin: function () {
         stream.yMargin = this.yMargin;
       },
-      yPadding: function() {
+      yPadding: function () {
         stream.yPadding = this.yPadding;
       },
-      xSpacing: function() {
+      xSpacing: function () {
         if (this.xSpacing == 'Fixed') stream.xSpacing = stream.xSpacingFixed;
         else if (this.xSpacing == 'Hierarchical')
           stream.xSpacing = stream.xSpacingHierarchical;
         else if (this.xSpacing == 'HierarchicalReverse')
           stream.xSpacing = stream.xSpacingHierarchicalReverse;
       },
-      xMargin: function() {
+      xMargin: function () {
         stream.xMargin = this.xMargin;
       },
-      sizeThreshold: function() {
+      sizeThreshold: function () {
         stream.minSizeThreshold = this.sizeThreshold;
       },
-      proportion: function() {
+      proportion: function () {
         stream.proportion = this.proportion;
       },
-      zoomTime: function() {
+      zoomTime: function () {
         stream.zoomTime = this.zoomTime;
       },
       unifySize() {
@@ -347,13 +252,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
         stream.splitRoot = this.splitRoot;
       },
       filters: {
-        handler: function(filters) {
+        handler: function (filters) {
           stream.filters(this.filters);
         },
         deep: true
       },
       startEndEncoding: {
-        handler: function(encoding) {
+        handler: function (encoding) {
           stream.startEndEncoding = encoding.value;
           stream.startEndEncodingX = encoding.x;
           stream.startEndEncodingY = encoding.y;
@@ -361,27 +266,29 @@ document.addEventListener('DOMContentLoaded', function(event) {
         deep: true
       },
       dataset: {
-        handler: function(dataset) {
-          loadDataset(dataset.value);
-          stream.data(datasets[dataset.value]).filters(this.filters);
-          this.applySplits(this.split);
+        handler: function (dataset) {
+          if (loadDataset(dataset.value)) {
+            stream.data(datasets[dataset.value]).filters(this.filters);
+            this.applySplits(this.split);
+          }
+          removeLoadingSpinner(wrapper);
         },
         deep: true
       },
       shapeRendering: {
-        handler: function(shapeRendering) {
+        handler: function (shapeRendering) {
           stream.shapeRendering = shapeRendering.value;
         },
         deep: true
       },
       offset: {
-        handler: function(offset) {
+        handler: function (offset) {
           stream.offset = offset.value;
         },
         deep: true
       },
       color: {
-        handler: function(color) {
+        handler: function (color) {
           stream.colorRandom = false;
           switch (color.value) {
             case 'random':
@@ -495,15 +402,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
         },
         deep: true
       },
-      split: function(option) {
+      split: function (option) {
         this.applySplits(option);
       }
     }
   });
 
-  let div = document.querySelector('#wrapper');
+  wrapper = document.querySelector('#wrapper')
+
+  // Add all datasets to the dataset selector
+  let datasetListArray = Object.keys(datasetList).map((k) => datasetList[k]);
+  app.dataset.options = datasetListArray;
+
   loadDataset(app.dataset.value);
-  stream = new SecStream(div).data(datasets[app.dataset.value]);
+  stream = new SecStream(wrapper).data(datasets[app.dataset.value]);
 
   stream.addSplitsAtTimepoints();
 });

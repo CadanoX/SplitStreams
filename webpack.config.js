@@ -27,7 +27,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     },
-    extensions: ['*', '.js', '.vue', '.json']
+    extensions: ['*', '.js', '.vue', '.json', '.csv']
   },
   module: {
     rules: [
@@ -66,9 +66,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new PrettierPlugin({
-      singleQuote: true
-    }),
+    // new PrettierPlugin({
+    //   singleQuote: true
+    // }),
     new CopyWebpackPlugin([{
       from: './*.html'
     }])

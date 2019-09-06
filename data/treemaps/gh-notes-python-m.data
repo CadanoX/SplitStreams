@@ -1,0 +1,19 @@
+root/07-interfacing-with-other-languages,root,0,0,0,0,0,0,0,2095.0,2095.0,2095.0,2095.0,2095.0,2095.0,2095.0
+root/07-interfacing-with-other-languages/fib_orig.c,root/07-interfacing-with-other-languages,0,0,0,0,0,0,0,1605.0,1605.0,1605.0,1605.0,1605.0,1605.0,1605.0
+root/07-interfacing-with-other-languages/fib_orig.html,root/07-interfacing-with-other-languages,0,0,0,0,0,0,0,485.0,485.0,485.0,485.0,485.0,485.0,485.0
+root/07-interfacing-with-other-languages/fib_orig.pyx,root/07-interfacing-with-other-languages,0,0,0,0,0,0,0,5.0,5.0,5.0,5.0,5.0,5.0,5.0
+root/07. interfacing with other languages,root,5.0,5.0,5.0,5.0,2095.0,2095.0,2095.0,0,0,0,0,0,0,0
+root/07. interfacing with other languages/fib_orig.c,root/07. interfacing with other languages,0,0,0,0,1605.0,1605.0,1605.0,0,0,0,0,0,0,0
+root/07. interfacing with other languages/fib_orig.html,root/07. interfacing with other languages,0,0,0,0,485.0,485.0,485.0,0,0,0,0,0,0,0
+root/07. interfacing with other languages/fib_orig.pyx,root/07. interfacing with other languages,5.0,5.0,5.0,5.0,5.0,5.0,5.0,0,0,0,0,0,0,0
+root/09-theano,root,0,0,0,0,0,0,0,68.0,68.0,68.0,68.0,68.0,68.0,68.0
+root/09-theano/download_mnist.py,root/09-theano,0,0,0,0,0,0,0,20.0,20.0,20.0,20.0,20.0,20.0,20.0
+root/09-theano/load.py,root/09-theano,0,0,0,0,0,0,0,48.0,48.0,48.0,48.0,48.0,48.0,48.0
+root/09. theano,root,68.0,68.0,68.0,68.0,68.0,68.0,68.0,0,0,0,0,0,0,0
+root/09. theano/download_mnist.py,root/09. theano,20.0,20.0,20.0,20.0,20.0,20.0,20.0,0,0,0,0,0,0,0
+root/09. theano/load.py,root/09. theano,48.0,48.0,48.0,48.0,48.0,48.0,48.0,0,0,0,0,0,0,0
+root/10-something-interesting,root,0,0,0,0,0,0,0,453.0,453.0,453.0,453.0,453.0,453.0,453.0
+root/10-something-interesting/_Player.py,root/10-something-interesting,0,0,0,0,0,0,0,453.0,453.0,453.0,453.0,453.0,453.0,453.0
+root/10. something interesting,root,0,0,0,0,453.0,453.0,453.0,0,0,0,0,0,0,0
+root/10. something interesting/_Player.py,root/10. something interesting,0,0,0,0,453.0,453.0,453.0,0,0,0,0,0,0,0
+root/generate_static_files.py,root,0,84.0,88.0,88.0,88.0,88.0,88.0,89.0,89.0,89.0,92.0,92.0,92.0,92.0

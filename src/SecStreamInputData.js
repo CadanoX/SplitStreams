@@ -32,7 +32,7 @@ export default class SecStreamInputData {
       };
     } else
       console.log(
-        `Warning AddNode: Node ${id} at timestep ${t} exists already.`
+        // `Warning AddNode: Node ${id} at timestep ${t} exists already.`
       );
   }
 
@@ -42,11 +42,11 @@ export default class SecStreamInputData {
     let node = nodes[id];
     let parent = nodes[pId];
     if (!node) {
-      console.log(`Error 'addParent': Node '${id}' does not exist.`);
+      // console.log(`Error 'addParent': Node '${id}' does not exist.`);
       return;
     }
     if (!parent) {
-      console.log(`Error 'addParent': Parent node '${pId}' does not exist.`);
+      // console.log(`Error 'addParent': Parent node '${pId}' does not exist.`);
       return;
     }
     node.parent = parent;
@@ -56,17 +56,17 @@ export default class SecStreamInputData {
 
   addNext(t, id, nextId) {
     if (!this._timesteps[+t + 1]) {
-      console.log(`Error 'addNext': Timestep '${+t + 1}' does not exist.`);
+      // console.log(`Error 'addNext': Timestep '${+t + 1}' does not exist.`);
       return;
     }
     let node = this._timesteps[t].references[id];
     if (!node) {
-      console.log(`Error 'addNext': Node '${id}' does not exist.`);
+      // console.log(`Error 'addNext': Node '${id}' does not exist.`);
       return;
     }
     let nextNode = this._timesteps[+t + 1].references[nextId];
     if (!nextNode)
-      console.log(`Error 'addNext': Next node  '${nextId}' does not exist.`);
+      ;// console.log(`Error 'addNext': Next node  '${nextId}' does not exist.`);
     else {
       if (!node.next) node.next = [];
       node.next.push(nextNode);
@@ -143,8 +143,8 @@ export default class SecStreamInputData {
 
   _checkSize(node) {
     if (node.dataSize < node.aggregate) {
-      console.log('Error: Node has a smaller size than its children.');
-      console.log(node);
+      // console.log('Error: Node has a smaller size than its children.');
+      // console.log(node);
     }
   }
 
@@ -155,8 +155,8 @@ export default class SecStreamInputData {
       for (let child of node.children) {
         if (child.pos >= 0) {
           if (minPos > child.pos) {
-            console.log('Error: Children positions overlap each other.');
-            console.log(node);
+            // console.log('Error: Children positions overlap each other.');
+            // console.log(node);
           }
           minPos = child.pos + child.dataSize;
         }
@@ -165,7 +165,7 @@ export default class SecStreamInputData {
   }
 
   __forEachNodeDepthFirst(callback) {
-    let traverse = function(node) {
+    let traverse = function (node) {
       if (!!node.children) node.children.forEach(traverse);
       callback(node);
     };

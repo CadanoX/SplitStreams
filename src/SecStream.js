@@ -61,7 +61,7 @@ export default class SecStream {
     this._init();
   }
 
-  static get a() {}
+  static get a() { }
 
   data(d) {
     return d == null ? this._data : (this._setData(d), this);
@@ -228,7 +228,7 @@ export default class SecStream {
           count++;
           id = node.id + '_' + count;
         } while (!!this._indices[id]);
-        console.log(`ID '${node.id}' is already in use. Use '${id}' instead.`);
+        // console.log(`ID '${node.id}' is already in use. Use '${id}' instead.`);
         // ID is now in use
         this._indices[id] = true;
         node.streamId = id;
@@ -395,8 +395,8 @@ export default class SecStream {
       : this._color.domain([this._maxDepth, 0]);
 
     let onMouseOver = d => {
-      console.log('id: ' + d.id);
-      console.log(d.data);
+      // console.log('id: ' + d.id);
+      // console.log(d.data);
     };
     let onMouseOut = d => {
       //console.log("mouse out")
@@ -414,7 +414,7 @@ export default class SecStream {
         enter
           .append('g')
           .classed('depthLayer', true)
-          .each(function(d) {
+          .each(function (d) {
             this.classList.add('depth-' + d.key);
           })
           .append('g')
