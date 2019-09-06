@@ -29,6 +29,7 @@ export default class SecStream {
       showLabels: false,
       mirror: false,
       splitRoot: false,
+      shapeRendering: 'geometricPrecision',
       offset: 'silhouette', // zero, expand, silhouette
 
       ...opts // overwrite default settings with user settings
@@ -120,6 +121,10 @@ export default class SecStream {
   set yMargin(value) {
     this._opts.yMargin = +value;
     this._update();
+  }
+  set shapeRendering(rendering) {
+    this._opts.shapeRendering = rendering;
+    this.render();
   }
 
   set color(colorFunction) {
@@ -251,7 +256,7 @@ export default class SecStream {
         if (aggregate > node.dataSize || this._opts.unifySize)
           node.size = aggregate;
         else node.size = node.dataSize;
-        node.size += this._opts.yPadding * node.children.length;
+        node.size += this._opts.yPadding * (node.children.length + 1);
       } else node.size = this._opts.unifySize ? 1 : node.dataSize;
     };
 
@@ -429,12 +434,11 @@ export default class SecStream {
           .on('mouseout', onMouseOut)
           .attr('clip-path', d => 'url(#clip' + d.id + this._name + ')')
           .attr('id', d => 'stream' + d.id + this._name)
-          // .attr('shape-rendering', 'geometricPrecision')
-          .attr('shape-rendering', 'optimizeSpeed')
           //.attr('stroke-width', 3)
           .attr('paint-order', 'stroke')
       )
       .attr('d', d => d.path)
+      .attr('shape-rendering', this._opts.shapeRendering)
       .style(
         'fill',
         d => (!!d.data ? d.data.color : null) || color(d.deepestDepth)

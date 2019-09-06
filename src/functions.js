@@ -228,3 +228,21 @@ export function loadStorylineFormat(data) {
   format.finalize();
   return format.data;
 }
+
+export function loadTreemapFormat(data) {
+  let format = new SecStreamInputData();
+  for (let entry of data) {
+    let id = entry[0];
+    let parentId = entry[1];
+    for (let t = 2; t < entry.length; t++) {
+      if (entry[t] > 0) {
+        format.addNode(t, id, entry[t]);
+        format.addNode(t, parentId);
+        format.addParent(t, id, parentId);
+      }
+    }
+  }
+  format._buildTimeConnections();
+  format.finalize();
+  return format.data;
+}

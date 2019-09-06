@@ -55,6 +55,15 @@
         </select>
       </div>
       <div>
+        <label><b>Rendering:</b></label>
+        <br>
+        <select v-model="shapeRendering.value">
+          <option v-for="option in shapeRendering.options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+      </div>
+      <div>
         <label><b>Offset:</b></label>
         <br>
         <select v-model="offset.value">
@@ -81,7 +90,7 @@
           <label>Value: {{ yPadding }}</label>
         </div>
         <div>
-          <input type="range" v-model="yPadding" step="0.05" min="0" max="10" />
+          <input type="range" v-model="yPadding" step="0.05" min="0" max="1000" />
         </div>
       </div>
       <hr>

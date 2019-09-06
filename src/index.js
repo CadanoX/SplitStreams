@@ -17,7 +17,8 @@ import {
   transformGumtreeFormat,
   loadTitanFormat,
   loadAllenFormat,
-  loadStorylineFormat
+  loadStorylineFormat,
+  loadTreemapFormat
 } from './functions';
 
 Vue.use(VueResize);
@@ -36,10 +37,16 @@ const examples = {
   starwars: require('../data/starwars.json'),
   matrix: require('../data/matrix.json'),
   ontologies: {
-    ICD9CM_2013AB: require('../data/ICD9CM/ICD9CM-2013AB.ttl'),
-    ICD9CM_2014AB: require('../data/ICD9CM/ICD9CM-2014AB.ttl')
+    // ICD9CM_2013AB: require('../data/ICD9CM/ICD9CM-2013AB.ttl'),
+    // ICD9CM_2014AB: require('../data/ICD9CM/ICD9CM-2014AB.ttl')
+  },
+  treemaps: {
+    MoviesH22Y7M: require('../data/treemaps/MoviesH22Y7M.data')
   }
 };
+
+// const treemapsList = require('../data/treemaps-list.json');
+// for (let treemap of treemapsList) examples.treemaps[treemap] = require(`../data/${treemap}`);
 
 var stream;
 
@@ -95,7 +102,15 @@ function loadDataset(name) {
         datasets.ontology = ont.data;
         break;
 
+      case 'MoviesH22Y7M':
+        datasets.MoviesH22Y7M = loadTreemapFormat(
+          examples.treemaps.MoviesH22Y7M
+        );
+        break;
+
       default:
+        examples[name] = require(`../data/treemaps/${name}`);
+        datasets[name] = loadTreemapFormat(examples[name]);
         break;
     }
   }
@@ -118,6 +133,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
       unifySize: false,
       unifyPosition: false,
       drawStroke: false,
+      shapeRendering: {
+        value: 'geometricPrecision',
+        options: [
+          { value: 'geometricPrecision', text: 'geometricPrecision' },
+          { value: 'optimizeSpeed', text: 'optimizeSpeed' },
+          { value: 'crispEdges', text: 'crispEdges' }
+        ]
+      },
       showLabels: false,
       splitRoot: false,
       mirror: false,
@@ -146,7 +169,24 @@ document.addEventListener('DOMContentLoaded', function(event) {
           { value: 'mouseBrain', text: 'Mouse Brain' },
           { value: 'starwars', text: 'Star Wars' },
           { value: 'matrix', text: 'Matrix' },
-          { value: 'ontology', text: 'Ontology' }
+          { value: 'ontology', text: 'Ontology' },
+          {
+            value: 'atp-losses-country-player.data',
+            text: 'atp-losses-country-player.data'
+          },
+          {
+            value: 'atp-matches-allplayers-height.data',
+            text: 'atp-matches-allplayers-height.data'
+          },
+          {
+            value: 'atp-matches-top20players-rank.data',
+            text: 'atp-matches-top20players-rank.data'
+          },
+          {
+            value: 'atp-wins-country-player.data',
+            text: 'atp-wins-country-player.data'
+          },
+          { value: 'MoviesH22Y7M.data', text: 'MoviesH22Y7M.data' }
         ]
       },
       offset: {
@@ -325,6 +365,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
           loadDataset(dataset.value);
           stream.data(datasets[dataset.value]).filters(this.filters);
           this.applySplits(this.split);
+        },
+        deep: true
+      },
+      shapeRendering: {
+        handler: function(shapeRendering) {
+          stream.shapeRendering = shapeRendering.value;
         },
         deep: true
       },

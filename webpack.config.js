@@ -18,6 +18,11 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: 'all'
+  //   }
+  // },
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
@@ -26,6 +31,10 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.json$/,
+      //   loader: 'json-loader'
+      // },
       {
         test: /\.css$/,
         use: [
@@ -43,6 +52,14 @@ module.exports = {
         options: {
           dynamicTyping: true,
           header: true,
+          skipEmptyLines: true
+        }
+      },
+      {
+        test: /\.(data)$/,
+        loader: 'csv-loader',
+        options: {
+          dynamicTyping: true,
           skipEmptyLines: true
         }
       },
