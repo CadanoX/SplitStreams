@@ -72,5 +72,9 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: './*.html'
     }])
+  ],
+  externals: [
+    // { d3: 'd3' },
+    /^(..\/data\/)/,
   ]
 };

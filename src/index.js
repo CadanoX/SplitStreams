@@ -4,6 +4,7 @@ import '../css/style.css';
 import Vue from 'vue';
 import VueResize from 'vue-resize';
 import * as d3 from 'd3';
+import Papa from 'papaparse'
 
 import SecStream from './SecStream';
 import OntologyLoader from './OntologyLoader';
@@ -18,17 +19,16 @@ var stream;
 var wrapper;
 
 var datasets = {};
-const datasetList = require('../data/_datasets.json');
+const datasetList = require('../_datasets.json');
 
-function loadDataset(name) {
+async function loadDataset(name) {
   addLoadingSpinner(wrapper);
-  let type = datasetList[name].type;
+  let file = datasetList[name];
   if (!datasets[name]) {
     let data;
-    // if (type == 'treemap') data = await import(`../data/treemaps/${name}`);
-    // else data = await import(`../data/${name}`);
+    let response;
 
-    if (type == 'ontology') {
+    if (file.format == 'ontology') {
       // case 'ontology':
       //   let ont = new OntologyLoader();
       //   ont.loadOntology(examples.ontologies.ICD9CM_2013AB);
@@ -39,12 +39,24 @@ function loadDataset(name) {
     }
     else {
       try {
-        if (type == 'treemap') data = require(`../data/treemaps/${name}`);
-        else data = require(`../data/${name}`);
-        datasets[name] = TransformData[type](data);
+        if (file.format == 'treemap') response = await fetch(`../data/treemaps/${name}.${file.filetype}`);
+        else response = await fetch(`../data/${name}.${file.filetype}`);
+
+        if (file.filetype == 'json')
+          data = await response.json();
+        else if (file.filetype == 'csv')
+          data = Papa.parse(await response.text(),
+            { header: true }
+          ).data;
+        else if (file.filetype == 'data')
+          data = Papa.parse(await response.text()).data;
+        else
+          throw Exception('File format not supported.');
+
+        datasets[name] = TransformData[file.format](data);
         return true;
       } catch (e) {
-        alert('Dataset is not available');
+        alert(e);
         return false;
       }
     }
@@ -52,7 +64,7 @@ function loadDataset(name) {
   return true;
 }
 
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', async function (event) {
   let app = new Vue({
     el: '#app',
     data: {
@@ -267,11 +279,16 @@ document.addEventListener('DOMContentLoaded', function (event) {
       },
       dataset: {
         handler: function (dataset) {
-          if (loadDataset(dataset.value)) {
-            stream.data(datasets[dataset.value]).filters(this.filters);
-            this.applySplits(this.split);
-          }
-          removeLoadingSpinner(wrapper);
+          loadDataset(dataset.value).then((loaded) => {
+            if (loaded) {
+              stream.data(datasets[dataset.value])
+              stream.filters(this.filters);
+              this.applySplits(this.split);
+            }
+
+            removeLoadingSpinner(wrapper);
+          })
+
         },
         deep: true
       },
@@ -414,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   let datasetListArray = Object.keys(datasetList).map((k) => datasetList[k]);
   app.dataset.options = datasetListArray;
 
-  loadDataset(app.dataset.value);
+  await loadDataset(app.dataset.value);
   stream = new SecStream(wrapper).data(datasets[app.dataset.value]);
 
   stream.addSplitsAtTimepoints();
