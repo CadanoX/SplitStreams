@@ -1,0 +1,9 @@
+root/naughtystrings,root,35.0,35.0,1267.0,1267.0,1267.0,1267.0,1267.0,1267.0,1267.0,1488.0,1488.0,1488.0,1488.0,1488.0,1488.0,1488.0
+root/naughtystrings/__init__.py,root/naughtystrings,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0,35.0
+root/naughtystrings/internal,root/naughtystrings,0,0,1174.0,1174.0,1174.0,1174.0,1174.0,1174.0,1174.0,1395.0,1395.0,1395.0,1395.0,1395.0,1395.0,1395.0
+root/naughtystrings/internal/resource.go,root/naughtystrings/internal,0,0,1174.0,1174.0,1174.0,1174.0,1174.0,1174.0,1174.0,1395.0,1395.0,1395.0,1395.0,1395.0,1395.0,1395.0
+root/naughtystrings/naughtystrings.go,root/naughtystrings,0,0,45.0,45.0,45.0,45.0,45.0,45.0,45.0,45.0,45.0,45.0,45.0,45.0,45.0,45.0
+root/naughtystrings/naughtystrings_test.go,root/naughtystrings,0,0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0
+root/scripts,root,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,37.0
+root/scripts/texttobase64.sh,root/scripts,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0
+root/scripts/txt_to_json.py,root/scripts,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0

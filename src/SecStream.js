@@ -30,7 +30,8 @@ export default class SecStream {
       mirror: false,
       splitRoot: false,
       shapeRendering: 'geometricPrecision',
-      offset: 'silhouette', // zero, expand, silhouette
+      offset: 'silhouette', // zero, expand, silhouette,
+      filterMode: 'fast',
 
       ...opts // overwrite default settings with user settings
     };
@@ -125,6 +126,14 @@ export default class SecStream {
   set shapeRendering(rendering) {
     this._opts.shapeRendering = rendering;
     this.render();
+  }
+  set filterMode(mode) {
+    if (mode != this._opts.filterMode) {
+      d3.selectAll('.depthLayer').clearFilter();
+      d3.selectAll('path.stream').clearFilter();
+    }
+    this._opts.filterMode = mode;
+    this._applyFilters();
   }
 
   set color(colorFunction) {
@@ -253,10 +262,10 @@ export default class SecStream {
           checkSizes(child);
           aggregate += child.size;
         }
-        if (aggregate > node.dataSize || this._opts.unifySize)
-          node.size = aggregate;
-        else node.size = node.dataSize;
-        node.size += this._opts.yPadding * (node.children.length + 1);
+        let dataSize = node.dataSize + this._opts.yPadding;
+        if (aggregate > dataSize || this._opts.unifySize)
+          node.size = aggregate + this._opts.yPadding;
+        else node.size = dataSize;
       } else node.size = this._opts.unifySize ? 1 : node.dataSize;
     };
 
@@ -504,7 +513,10 @@ export default class SecStream {
         blur: filter.stdDeviation
       });
 
-    d3.selectAll('.depthLayer').svgFilter(...filters);
+    if (this._opts.filterMode == 'fast')
+      d3.selectAll('.depthLayer').svgFilter(...filters);
+    else if (this._opts.filterMode == 'accurate')
+      d3.selectAll('path.stream').svgFilter(...filters);
   }
 
   update() {

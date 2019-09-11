@@ -1,0 +1,557 @@
+root/.codeclimate.yml,root,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,4.0
+root/.travis.yml,root,0,0,0,0,0,0,0,0,0,0,0,0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,9.0,9.0,9.0,9.0,9.0,9.0,6.0,6.0,6.0,10.0,10.0,17.0,17.0
+root/dist,root,1.0,1.0,1.0,1.0,1.0,1.0,5.0,3.0,3.0,3.0,3.0,3.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules,root,0,902.0,902.0,898.0,1803.0,1898.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/actions,root/dist-modules,0,30.0,30.0,30.0,39.0,39.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/actions/DragDropActionCreators.js,root/dist-modules/actions,0,30.0,30.0,30.0,39.0,39.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/backends,root/dist-modules,0,0,0,0,194.0,236.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/backends/HTML5.js,root/dist-modules/backends,0,0,0,0,189.0,231.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/backends/index.js,root/dist-modules/backends,0,0,0,0,5.0,5.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/dispatcher,root/dist-modules,0,14.0,14.0,14.0,14.0,14.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/dispatcher/DragDropDispatcher.js,root/dist-modules/dispatcher,0,14.0,14.0,14.0,14.0,14.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/index.js,root/dist-modules,0,0,0,0,16.0,16.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/mixins,root/dist-modules,0,491.0,491.0,491.0,585.0,608.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/mixins/DragDropMixin.js,root/dist-modules/mixins,0,396.0,396.0,396.0,422.0,422.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/mixins/DragLayerMixin.js,root/dist-modules/mixins,0,0,0,0,67.0,90.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/mixins/ImagePreloaderMixin.js,root/dist-modules/mixins,0,65.0,65.0,65.0,66.0,66.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/mixins/MemoizeBindMixin.js,root/dist-modules/mixins,0,30.0,30.0,30.0,30.0,30.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/stores,root/dist-modules,0,61.0,61.0,61.0,176.0,177.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/stores/DragDropStore.js,root/dist-modules/stores,0,61.0,61.0,61.0,62.0,62.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/stores/DragOffsetStore.js,root/dist-modules/stores,0,0,0,0,49.0,50.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/stores/DragOperationStore.js,root/dist-modules/stores,0,0,0,0,65.0,65.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils,root/dist-modules,0,306.0,306.0,302.0,779.0,808.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/DefaultDragSource.js,root/dist-modules/utils,0,0,0,0,18.0,18.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/DefaultDropTarget.js,root/dist-modules/utils,0,0,0,0,20.0,20.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/DragDropContext.js,root/dist-modules/utils,0,0,0,0,25.0,29.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/EnterLeaveMonitor.js,root/dist-modules/utils,0,39.0,39.0,39.0,52.0,52.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/LegacyDefaultDropTarget.js,root/dist-modules/utils,0,0,0,0,20.0,20.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/NativeDragDropSupport.js,root/dist-modules/utils,0,139.0,139.0,135.0,135.0,135.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/bindAll.js,root/dist-modules/utils,0,0,0,0,17.0,17.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/configureDataTransfer.js,root/dist-modules/utils,0,25.0,25.0,25.0,22.0,22.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/createDragDropMixin.js,root/dist-modules/utils,0,0,0,0,361.0,359.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/createStore.js,root/dist-modules/utils,0,30.0,30.0,30.0,27.0,27.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/extractNativeItem.js,root/dist-modules/utils,0,0,0,0,18.0,18.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/getDragImageOffset.js,root/dist-modules/utils,0,73.0,73.0,73.0,64.0,64.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/isFileDragDropEvent.js,root/dist-modules/utils,0,0,0,0,0,12.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist-modules/utils/isNativeDraggedItemType.js,root/dist-modules/utils,0,0,0,0,0,15.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist/ReactDND.min.js,root/dist,1.0,1.0,1.0,1.0,1.0,1.0,5.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/dist/ReactDnD.min.js,root/dist,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples,root,1178.0,1111.0,1111.0,1111.0,1290.0,1543.0,2365.0,2738.0,2738.0,2738.0,2738.0,2772.0,2722.0,2723.0,2723.0,2723.0,2723.0,2723.0,2723.0,2723.0,2723.0,2723.0,2723.0,2723.0,2723.0,2723.0,2807.0,2806.0,3103.0,3135.0,3135.0,3135.0,3135.0,3135.0,3266.0,0,0,0,0
+root/examples/00 Chessboard,root/examples,0,0,0,0,0,0,0,282.0,282.0,282.0,282.0,282.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,293.0,293.0,293.0,297.0,297.0,297.0,297.0,297.0,302.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App,root/examples/00 Chessboard,0,0,0,0,0,0,0,282.0,282.0,282.0,282.0,282.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,286.0,293.0,293.0,293.0,297.0,297.0,297.0,297.0,297.0,302.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/Board.js,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,47.0,47.0,47.0,48.0,48.0,48.0,48.0,48.0,42.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/Board.less,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/BoardSquare.js,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,68.0,68.0,68.0,68.0,68.0,70.0,70.0,70.0,70.0,70.0,70.0,70.0,70.0,70.0,70.0,70.0,70.0,70.0,70.0,74.0,74.0,74.0,75.0,75.0,75.0,75.0,75.0,73.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/Constants.js,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/Game.js,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,35.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/ItemTypes.js,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/Knight.js,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,45.0,45.0,45.0,45.0,45.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,48.0,48.0,48.0,49.0,49.0,49.0,49.0,49.0,50.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/Square.js,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,24.0,24.0,24.0,24.0,24.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,27.0,27.0,27.0,28.0,28.0,28.0,28.0,28.0,28.0,0,0,0,0
+root/examples/00 Chessboard/Tutorial App/index.js,root/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,65.0,0,0,0,0
+root/examples/01 Dustbin,root/examples,0,0,0,0,0,0,0,648.0,648.0,648.0,648.0,648.0,590.0,590.0,590.0,590.0,590.0,590.0,590.0,590.0,590.0,590.0,590.0,590.0,590.0,590.0,660.0,659.0,830.0,837.0,837.0,837.0,837.0,837.0,855.0,0,0,0,0
+root/examples/01 Dustbin/Copy or Move,root/examples/01 Dustbin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,171.0,173.0,173.0,173.0,173.0,173.0,179.0,0,0,0,0
+root/examples/01 Dustbin/Copy or Move/Box.js,root/examples/01 Dustbin/Copy or Move,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63.0,64.0,64.0,64.0,64.0,64.0,62.0,0,0,0,0
+root/examples/01 Dustbin/Copy or Move/Container.js,root/examples/01 Dustbin/Copy or Move,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26.0,26.0,26.0,26.0,26.0,26.0,26.0,0,0,0,0
+root/examples/01 Dustbin/Copy or Move/Dustbin.js,root/examples/01 Dustbin/Copy or Move,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61.0,62.0,62.0,62.0,62.0,62.0,61.0,0,0,0,0
+root/examples/01 Dustbin/Copy or Move/index.js,root/examples/01 Dustbin/Copy or Move,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21.0,21.0,21.0,21.0,21.0,21.0,30.0,0,0,0,0
+root/examples/01 Dustbin/Multiple Targets,root/examples/01 Dustbin,0,0,0,0,0,0,0,208.0,208.0,208.0,208.0,208.0,145.0,145.0,145.0,145.0,145.0,145.0,145.0,145.0,145.0,145.0,145.0,145.0,145.0,145.0,149.0,149.0,149.0,150.0,150.0,150.0,150.0,150.0,155.0,0,0,0,0
+root/examples/01 Dustbin/Multiple Targets/Box.js,root/examples/01 Dustbin/Multiple Targets,0,0,0,0,0,0,0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,49.0,49.0,49.0,49.0,49.0,46.0,0,0,0,0
+root/examples/01 Dustbin/Multiple Targets/Container.js,root/examples/01 Dustbin/Multiple Targets,0,0,0,0,0,0,0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,79.0,79.0,79.0,79.0,79.0,79.0,79.0,79.0,83.0,0,0,0,0
+root/examples/01 Dustbin/Multiple Targets/Dustbin.js,root/examples/01 Dustbin/Multiple Targets,0,0,0,0,0,0,0,63.0,63.0,63.0,63.0,63.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/01 Dustbin/Multiple Targets/index.js,root/examples/01 Dustbin/Multiple Targets,0,0,0,0,0,0,0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,26.0,0,0,0,0
+root/examples/01 Dustbin/Single Target,root/examples/01 Dustbin,0,0,0,0,0,0,0,211.0,211.0,211.0,211.0,211.0,214.0,214.0,214.0,214.0,214.0,214.0,214.0,214.0,214.0,214.0,214.0,214.0,214.0,214.0,219.0,218.0,218.0,220.0,220.0,220.0,220.0,220.0,207.0,0,0,0,0
+root/examples/01 Dustbin/Single Target in iframe,root/examples/01 Dustbin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,60.0,0,0,0,0
+root/examples/01 Dustbin/Single Target in iframe/Container.js,root/examples/01 Dustbin/Single Target in iframe,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,0,0,0,0
+root/examples/01 Dustbin/Single Target in iframe/index.js,root/examples/01 Dustbin/Single Target in iframe,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,28.0,0,0,0,0
+root/examples/01 Dustbin/Single Target/Box.js,root/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,56.0,56.0,56.0,56.0,56.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,58.0,59.0,59.0,59.0,59.0,59.0,51.0,0,0,0,0
+root/examples/01 Dustbin/Single Target/Container.js,root/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,0,0,0,0
+root/examples/01 Dustbin/Single Target/Dustbin.js,root/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,57.0,57.0,57.0,57.0,57.0,54.0,0,0,0,0
+root/examples/01 Dustbin/Single Target/__tests__,root/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,53.0,53.0,53.0,53.0,53.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,58.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,53.0,0,0,0,0
+root/examples/01 Dustbin/Single Target/__tests__/Box-test.js,root/examples/01 Dustbin/Single Target/__tests__,0,0,0,0,0,0,0,53.0,53.0,53.0,53.0,53.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,54.0,58.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,53.0,0,0,0,0
+root/examples/01 Dustbin/Single Target/index.js,root/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,25.0,0,0,0,0
+root/examples/01 Dustbin/Stress Test,root/examples/01 Dustbin,0,0,0,0,0,0,0,229.0,229.0,229.0,229.0,229.0,231.0,231.0,231.0,231.0,231.0,231.0,231.0,231.0,231.0,231.0,231.0,231.0,231.0,231.0,235.0,235.0,235.0,237.0,237.0,237.0,237.0,237.0,254.0,0,0,0,0
+root/examples/01 Dustbin/Stress Test/Box.js,root/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,53.0,54.0,54.0,54.0,54.0,54.0,51.0,0,0,0,0
+root/examples/01 Dustbin/Stress Test/Container.js,root/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,89.0,89.0,89.0,89.0,89.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,95.0,95.0,95.0,95.0,95.0,95.0,95.0,95.0,102.0,0,0,0,0
+root/examples/01 Dustbin/Stress Test/Dustbin.js,root/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,63.0,63.0,63.0,63.0,63.0,68.0,0,0,0,0
+root/examples/01 Dustbin/Stress Test/ItemTypes.js,root/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,0,0,0,0
+root/examples/01 Dustbin/Stress Test/index.js,root/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,28.0,0,0,0,0
+root/examples/02 Drag Around,root/examples,0,0,0,0,0,0,0,595.0,595.0,595.0,595.0,595.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,596.0,603.0,603.0,603.0,603.0,603.0,632.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer,root/examples/02 Drag Around,0,0,0,0,0,0,0,411.0,411.0,411.0,411.0,411.0,412.0,412.0,412.0,412.0,412.0,412.0,412.0,412.0,412.0,412.0,412.0,412.0,412.0,412.0,410.0,410.0,410.0,415.0,415.0,415.0,415.0,415.0,423.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer/Box.js,root/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,29.0,29.0,29.0,29.0,29.0,25.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer/BoxDragPreview.js,root/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,50.0,50.0,50.0,51.0,51.0,51.0,51.0,51.0,51.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer/Container.js,root/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,81.0,81.0,81.0,82.0,82.0,82.0,82.0,82.0,79.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer/CustomDragLayer.js,root/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,90.0,90.0,90.0,90.0,90.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,91.0,89.0,89.0,89.0,90.0,90.0,90.0,90.0,90.0,90.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer/DraggableBox.js,root/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,68.0,68.0,68.0,68.0,68.0,68.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer/index.js,root/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,77.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,97.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer/shouldPureComponentUpdate.js,root/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,7.0,0,0,0,0
+root/examples/02 Drag Around/Custom Drag Layer/snapToGrid.js,root/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,0,0,0,0
+root/examples/02 Drag Around/Naive,root/examples/02 Drag Around,0,0,0,0,0,0,0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,186.0,186.0,186.0,188.0,188.0,188.0,188.0,188.0,209.0,0,0,0,0
+root/examples/02 Drag Around/Naive/Box.js,root/examples/02 Drag Around/Naive,0,0,0,0,0,0,0,46.0,46.0,46.0,46.0,46.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,47.0,48.0,48.0,48.0,48.0,48.0,53.0,0,0,0,0
+root/examples/02 Drag Around/Naive/Container.js,root/examples/02 Drag Around/Naive,0,0,0,0,0,0,0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,79.0,79.0,79.0,80.0,80.0,80.0,80.0,80.0,82.0,0,0,0,0
+root/examples/02 Drag Around/Naive/index.js,root/examples/02 Drag Around/Naive,0,0,0,0,0,0,0,58.0,58.0,58.0,58.0,58.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,60.0,60.0,60.0,60.0,60.0,60.0,60.0,60.0,74.0,0,0,0,0
+root/examples/03 Nesting,root/examples,0,0,0,0,0,0,0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,407.0,407.0,407.0,411.0,411.0,411.0,411.0,411.0,437.0,0,0,0,0
+root/examples/03 Nesting/Drag Sources,root/examples/03 Nesting,0,0,0,0,0,0,0,224.0,224.0,224.0,224.0,224.0,228.0,228.0,228.0,228.0,228.0,228.0,228.0,228.0,228.0,228.0,228.0,228.0,228.0,228.0,235.0,235.0,235.0,237.0,237.0,237.0,237.0,237.0,254.0,0,0,0,0
+root/examples/03 Nesting/Drag Sources/Colors.js,root/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,0,0,0,0
+root/examples/03 Nesting/Drag Sources/Container.js,root/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,0,0,0,0
+root/examples/03 Nesting/Drag Sources/SourceBox.js,root/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,88.0,88.0,88.0,88.0,88.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,95.0,95.0,95.0,96.0,96.0,96.0,96.0,96.0,103.0,0,0,0,0
+root/examples/03 Nesting/Drag Sources/TargetBox.js,root/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,81.0,81.0,81.0,81.0,81.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,83.0,85.0,85.0,85.0,86.0,86.0,86.0,86.0,86.0,90.0,0,0,0,0
+root/examples/03 Nesting/Drag Sources/index.js,root/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,20.0,26.0,0,0,0,0
+root/examples/03 Nesting/Drop Targets,root/examples/03 Nesting,0,0,0,0,0,0,0,176.0,176.0,176.0,176.0,176.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,172.0,174.0,174.0,174.0,174.0,174.0,183.0,0,0,0,0
+root/examples/03 Nesting/Drop Targets/Box.js,root/examples/03 Nesting/Drop Targets,0,0,0,0,0,0,0,38.0,38.0,38.0,38.0,38.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,37.0,37.0,37.0,37.0,37.0,33.0,0,0,0,0
+root/examples/03 Nesting/Drop Targets/Container.js,root/examples/03 Nesting/Drop Targets,0,0,0,0,0,0,0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,0,0,0,0
+root/examples/03 Nesting/Drop Targets/Dustbin.js,root/examples/03 Nesting/Drop Targets,0,0,0,0,0,0,0,84.0,84.0,84.0,84.0,84.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,82.0,83.0,83.0,83.0,83.0,83.0,85.0,0,0,0,0
+root/examples/03 Nesting/Drop Targets/index.js,root/examples/03 Nesting/Drop Targets,0,0,0,0,0,0,0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,33.0,0,0,0,0
+root/examples/04 Sortable,root/examples,0,0,0,0,0,0,0,528.0,528.0,528.0,528.0,562.0,566.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,567.0,571.0,571.0,571.0,571.0,571.0,619.0,0,0,0,0
+root/examples/04 Sortable/Cancel on Drop Outside,root/examples/04 Sortable,0,0,0,0,0,0,0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,190.0,192.0,192.0,192.0,192.0,192.0,210.0,0,0,0,0
+root/examples/04 Sortable/Cancel on Drop Outside/Card.js,root/examples/04 Sortable/Cancel on Drop Outside,0,0,0,0,0,0,0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,75.0,76.0,76.0,76.0,76.0,76.0,79.0,0,0,0,0
+root/examples/04 Sortable/Cancel on Drop Outside/Container.js,root/examples/04 Sortable/Cancel on Drop Outside,0,0,0,0,0,0,0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,96.0,97.0,97.0,97.0,97.0,97.0,103.0,0,0,0,0
+root/examples/04 Sortable/Cancel on Drop Outside/index.js,root/examples/04 Sortable/Cancel on Drop Outside,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,28.0,0,0,0,0
+root/examples/04 Sortable/Simple,root/examples/04 Sortable,0,0,0,0,0,0,0,150.0,150.0,150.0,150.0,184.0,188.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,189.0,190.0,190.0,190.0,190.0,190.0,207.0,0,0,0,0
+root/examples/04 Sortable/Simple/Card.js,root/examples/04 Sortable/Simple,0,0,0,0,0,0,0,56.0,56.0,56.0,56.0,93.0,97.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,98.0,99.0,99.0,99.0,99.0,99.0,102.0,0,0,0,0
+root/examples/04 Sortable/Simple/Container.js,root/examples/04 Sortable/Simple,0,0,0,0,0,0,0,76.0,76.0,76.0,76.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,81.0,0,0,0,0
+root/examples/04 Sortable/Simple/index.js,root/examples/04 Sortable/Simple,0,0,0,0,0,0,0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,24.0,0,0,0,0
+root/examples/04 Sortable/Stress Test,root/examples/04 Sortable,0,0,0,0,0,0,0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,188.0,189.0,189.0,189.0,189.0,189.0,202.0,0,0,0,0
+root/examples/04 Sortable/Stress Test/Card.js,root/examples/04 Sortable/Stress Test,0,0,0,0,0,0,0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,57.0,57.0,57.0,57.0,57.0,60.0,0,0,0,0
+root/examples/04 Sortable/Stress Test/Container.js,root/examples/04 Sortable/Stress Test,0,0,0,0,0,0,0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,90.0,87.0,0,0,0,0
+root/examples/04 Sortable/Stress Test/ItemTypes.js,root/examples/04 Sortable/Stress Test,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,0,0,0,0
+root/examples/04 Sortable/Stress Test/index.js,root/examples/04 Sortable/Stress Test,0,0,0,0,0,0,0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,39.0,52.0,0,0,0,0
+root/examples/05 Customize,root/examples,0,0,0,0,0,0,0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,271.0,275.0,275.0,275.0,275.0,275.0,280.0,0,0,0,0
+root/examples/05 Customize/Drop Effects,root/examples/05 Customize,0,0,0,0,0,0,0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,127.0,129.0,129.0,129.0,129.0,129.0,130.0,0,0,0,0
+root/examples/05 Customize/Drop Effects/Container.js,root/examples/05 Customize/Drop Effects,0,0,0,0,0,0,0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,0,0,0,0
+root/examples/05 Customize/Drop Effects/SourceBox.js,root/examples/05 Customize/Drop Effects,0,0,0,0,0,0,0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,44.0,44.0,44.0,44.0,44.0,44.0,0,0,0,0
+root/examples/05 Customize/Drop Effects/TargetBox.js,root/examples/05 Customize/Drop Effects,0,0,0,0,0,0,0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,44.0,44.0,44.0,44.0,44.0,40.0,0,0,0,0
+root/examples/05 Customize/Drop Effects/index.js,root/examples/05 Customize/Drop Effects,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,24.0,0,0,0,0
+root/examples/05 Customize/Handles and Previews,root/examples/05 Customize,0,0,0,0,0,0,0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,144.0,146.0,146.0,146.0,146.0,146.0,150.0,0,0,0,0
+root/examples/05 Customize/Handles and Previews/BoxWithHandle.js,root/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,56.0,56.0,56.0,56.0,56.0,52.0,0,0,0,0
+root/examples/05 Customize/Handles and Previews/BoxWithImage.js,root/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,48.0,49.0,49.0,49.0,49.0,49.0,48.0,0,0,0,0
+root/examples/05 Customize/Handles and Previews/Container.js,root/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,0,0,0,0
+root/examples/05 Customize/Handles and Previews/ItemTypes.js,root/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,0,0,0,0
+root/examples/05 Customize/Handles and Previews/index.js,root/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,28.0,0,0,0,0
+root/examples/06 Other,root/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,126.0,128.0,128.0,128.0,128.0,128.0,128.0,0,0,0,0
+root/examples/06 Other/Native Files,root/examples/06 Other,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,126.0,128.0,128.0,128.0,128.0,128.0,128.0,0,0,0,0
+root/examples/06 Other/Native Files/Container.js,root/examples/06 Other/Native Files,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37.0,37.0,37.0,37.0,37.0,37.0,37.0,0,0,0,0
+root/examples/06 Other/Native Files/FileList.js,root/examples/06 Other/Native Files,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23.0,24.0,24.0,24.0,24.0,24.0,26.0,0,0,0,0
+root/examples/06 Other/Native Files/TargetBox.js,root/examples/06 Other/Native Files,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48.0,49.0,49.0,49.0,49.0,49.0,45.0,0,0,0,0
+root/examples/06 Other/Native Files/index.js,root/examples/06 Other/Native Files,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18.0,18.0,18.0,18.0,18.0,18.0,20.0,0,0,0,0
+root/examples/Object.es6.js,root/examples,47.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-effects,root/examples,0,0,0,0,0,0,125.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-effects/Container.js,root/examples/_customize-effects,0,0,0,0,0,0,24.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-effects/SourceBox.js,root/examples/_customize-effects,0,0,0,0,0,0,49.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-effects/TargetBox.js,root/examples/_customize-effects,0,0,0,0,0,0,52.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-handles,root/examples,0,0,0,0,0,0,152.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-handles/BoxWithHandle.js,root/examples/_customize-handles,0,0,0,0,0,0,61.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-handles/BoxWithImage.js,root/examples/_customize-handles,0,0,0,0,0,0,55.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-handles/Container.js,root/examples/_customize-handles,0,0,0,0,0,0,21.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_customize-handles/index.js,root/examples/_customize-handles,0,0,0,0,0,0,15.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom,root/examples,207.0,204.0,204.0,204.0,403.0,399.0,437.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/Box.js,root/examples/_drag-around-custom,61.0,60.0,60.0,60.0,31.0,30.0,28.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/BoxDragPreview.js,root/examples/_drag-around-custom,0,0,0,0,53.0,54.0,53.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/Container.js,root/examples/_drag-around-custom,88.0,87.0,87.0,87.0,93.0,94.0,94.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/DragLayer.js,root/examples/_drag-around-custom,0,0,0,0,81.0,77.0,94.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/DraggableBox.js,root/examples/_drag-around-custom,0,0,0,0,67.0,64.0,69.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/getEmptyImage.js,root/examples/_drag-around-custom,12.0,12.0,12.0,12.0,12.0,10.0,10.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/index.js,root/examples/_drag-around-custom,46.0,45.0,45.0,45.0,56.0,62.0,75.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/shouldPureComponentUpdate.js,root/examples/_drag-around-custom,0,0,0,0,0,0,6.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-custom/snapToGrid.js,root/examples/_drag-around-custom,0,0,0,0,10.0,8.0,8.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-naive,root/examples,202.0,199.0,199.0,199.0,198.0,211.0,195.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-naive/Box.js,root/examples/_drag-around-naive,61.0,60.0,60.0,60.0,56.0,59.0,52.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-naive/Container.js,root/examples/_drag-around-naive,84.0,83.0,83.0,83.0,86.0,92.0,91.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-naive/ItemTypes.js,root/examples/_drag-around-naive,5.0,5.0,5.0,5.0,5.0,5.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_drag-around-naive/index.js,root/examples/_drag-around-naive,52.0,51.0,51.0,51.0,51.0,55.0,52.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting,root/examples,208.0,204.0,204.0,204.0,218.0,219.0,150.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting/Box.js,root/examples/_dustbin-interesting,0,0,0,0,0,0,55.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting/Container.js,root/examples/_dustbin-interesting,33.0,32.0,32.0,32.0,42.0,42.0,77.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting/Dustbin.js,root/examples/_dustbin-interesting,75.0,74.0,74.0,74.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting/Item.js,root/examples/_dustbin-interesting,72.0,71.0,71.0,71.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting/ItemTypes.js,root/examples/_dustbin-interesting,7.0,7.0,7.0,7.0,7.0,7.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting/index.js,root/examples/_dustbin-interesting,21.0,20.0,20.0,20.0,20.0,20.0,18.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting/makeDustbin.js,root/examples/_dustbin-interesting,0,0,0,0,75.0,74.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-interesting/makeItem.js,root/examples/_dustbin-interesting,0,0,0,0,74.0,76.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-simple,root/examples,145.0,141.0,141.0,141.0,145.0,158.0,161.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-simple/Box.js,root/examples/_dustbin-simple,0,0,0,0,0,0,60.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-simple/Container.js,root/examples/_dustbin-simple,23.0,22.0,22.0,22.0,22.0,22.0,23.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-simple/Dustbin.js,root/examples/_dustbin-simple,51.0,50.0,50.0,50.0,52.0,58.0,59.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-simple/Item.js,root/examples/_dustbin-simple,49.0,48.0,48.0,48.0,50.0,57.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-simple/index.js,root/examples/_dustbin-simple,22.0,21.0,21.0,21.0,21.0,21.0,19.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-stress,root/examples,0,0,0,0,0,0,244.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-stress/Box.js,root/examples/_dustbin-stress,0,0,0,0,0,0,60.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-stress/Container.js,root/examples/_dustbin-stress,0,0,0,0,0,0,91.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-stress/Dustbin.js,root/examples/_dustbin-stress,0,0,0,0,0,0,68.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-stress/ItemTypes.js,root/examples/_dustbin-stress,0,0,0,0,0,0,7.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_dustbin-stress/index.js,root/examples/_dustbin-stress,0,0,0,0,0,0,18.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-sources,root/examples,0,0,0,0,0,217.0,237.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-sources/Colors.js,root/examples/_nesting-sources,0,0,0,0,0,6.0,6.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-sources/Container.js,root/examples/_nesting-sources,0,0,0,0,0,35.0,33.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-sources/SourceBox.js,root/examples/_nesting-sources,0,0,0,0,0,0,91.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-sources/Target.js,root/examples/_nesting-sources,0,0,0,0,0,79.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-sources/TargetBox.js,root/examples/_nesting-sources,0,0,0,0,0,0,89.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-sources/index.js,root/examples/_nesting-sources,0,0,0,0,0,20.0,18.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-sources/makeSource.js,root/examples/_nesting-sources,0,0,0,0,0,77.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-targets,root/examples,0,0,0,0,0,0,190.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-targets/Box.js,root/examples/_nesting-targets,0,0,0,0,0,0,45.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-targets/Container.js,root/examples/_nesting-targets,0,0,0,0,0,0,34.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-targets/Dustbin.js,root/examples/_nesting-targets,0,0,0,0,0,0,92.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-targets/ItemTypes.js,root/examples/_nesting-targets,0,0,0,0,0,0,5.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_nesting-targets/index.js,root/examples/_nesting-targets,0,0,0,0,0,0,14.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-simple,root/examples,152.0,149.0,149.0,149.0,151.0,161.0,74.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-simple/Card.js,root/examples/_sortable-simple,57.0,56.0,56.0,56.0,58.0,66.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-simple/Container.js,root/examples/_sortable-simple,70.0,69.0,69.0,69.0,69.0,71.0,74.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-simple/ItemTypes.js,root/examples/_sortable-simple,5.0,5.0,5.0,5.0,5.0,5.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-simple/index.js,root/examples/_sortable-simple,20.0,19.0,19.0,19.0,19.0,19.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-stress,root/examples,0,0,0,0,0,0,174.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-stress/Card.js,root/examples/_sortable-stress,0,0,0,0,0,0,64.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-stress/Container.js,root/examples/_sortable-stress,0,0,0,0,0,0,88.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-stress/ItemTypes.js,root/examples/_sortable-stress,0,0,0,0,0,0,5.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/_sortable-stress/index.js,root/examples/_sortable-stress,0,0,0,0,0,0,17.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/bundle.js,root/examples,35.0,35.0,35.0,35.0,25.0,25.0,53.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/index.html,root/examples,9.0,9.0,9.0,9.0,9.0,9.0,9.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/index.js,root/examples,47.0,44.0,44.0,44.0,43.0,46.0,59.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/server.js,root/examples,26.0,26.0,26.0,26.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/shared,root/examples,0,0,0,0,0,0,0,14.0,14.0,14.0,14.0,14.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,0,0,0,0
+root/examples/shared/wrapInTestContext.js,root/examples/shared,0,0,0,0,0,0,0,14.0,14.0,14.0,14.0,14.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,0,0,0,0
+root/examples/styles.css,root/examples,33.0,33.0,33.0,33.0,33.0,33.0,33.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/webpack.config.js,root/examples,28.0,28.0,28.0,28.0,26.0,26.0,32.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/examples/webpack.config.production.js,root/examples,39.0,39.0,39.0,39.0,39.0,39.0,40.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/karma.conf.js,root,0,0,0,0,0,0,0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,33.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules,root,1050.0,1078.0,1078.0,1074.0,1272.0,1361.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/actions,root/modules,30.0,30.0,30.0,30.0,39.0,39.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/actions/DragDropActionCreators.js,root/modules/actions,30.0,30.0,30.0,30.0,39.0,39.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/backends,root/modules,0,0,0,0,190.0,232.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/backends/HTML5.js,root/modules/backends,0,0,0,0,187.0,229.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/backends/index.js,root/modules/backends,0,0,0,0,3.0,3.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/constants,root/modules,51.0,51.0,51.0,51.0,53.0,51.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/constants/DragDropActionTypes.js,root/modules/constants,11.0,11.0,11.0,11.0,12.0,12.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/constants/DropEffects.js,root/modules/constants,9.0,9.0,9.0,9.0,9.0,9.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/constants/HorizontalDragAnchors.js,root/modules/constants,11.0,11.0,11.0,11.0,11.0,11.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/constants/NativeDragItemTypes.js,root/modules/constants,9.0,9.0,9.0,9.0,10.0,8.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/constants/VerticalDragAnchors.js,root/modules/constants,11.0,11.0,11.0,11.0,11.0,11.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/dispatcher,root/modules,14.0,14.0,14.0,14.0,14.0,14.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/dispatcher/DragDropDispatcher.js,root/modules/dispatcher,14.0,14.0,14.0,14.0,14.0,14.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/index.js,root/modules,10.0,10.0,10.0,10.0,14.0,14.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/mixins,root/modules,483.0,491.0,491.0,491.0,127.0,155.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/mixins/DragDropMixin.js,root/modules/mixins,388.0,396.0,396.0,396.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/mixins/DragLayerMixin.js,root/modules/mixins,0,0,0,0,62.0,90.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/mixins/ImagePreloaderMixin.js,root/modules/mixins,65.0,65.0,65.0,65.0,65.0,65.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/mixins/MemoizeBindMixin.js,root/modules/mixins,30.0,30.0,30.0,30.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/stores,root/modules,61.0,61.0,61.0,61.0,112.0,113.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/stores/DragDropStore.js,root/modules/stores,61.0,61.0,61.0,61.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/stores/DragOffsetStore.js,root/modules/stores,0,0,0,0,48.0,49.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/stores/DragOperationStore.js,root/modules/stores,0,0,0,0,64.0,64.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils,root/modules,401.0,421.0,421.0,417.0,723.0,743.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/DefaultDragSource.js,root/modules/utils,0,0,0,0,18.0,18.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/DefaultDropTarget.js,root/modules/utils,0,0,0,0,20.0,20.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/DragDropContext.js,root/modules/utils,0,0,0,0,25.0,29.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/EnterLeaveMonitor.js,root/modules/utils,39.0,39.0,39.0,39.0,39.0,39.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/NativeDragDropSupport.js,root/modules/utils,125.0,139.0,139.0,135.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/bindAll.js,root/modules/utils,17.0,17.0,17.0,17.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/configureDataTransfer.js,root/modules/utils,25.0,25.0,25.0,25.0,23.0,23.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/createDragDropMixin.js,root/modules/utils,0,0,0,0,377.0,378.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/createStore.js,root/modules/utils,30.0,30.0,30.0,30.0,27.0,27.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/endsWith.js,root/modules/utils,7.0,7.0,7.0,7.0,7.0,7.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/extractNativeItem.js,root/modules/utils,0,0,0,0,21.0,21.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/getBrowserEffectAllowed.js,root/modules/utils,29.0,29.0,29.0,29.0,29.0,29.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/getDragImageOffset.js,root/modules/utils,67.0,73.0,73.0,73.0,63.0,63.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/getDragImageScale.js,root/modules/utils,14.0,14.0,14.0,14.0,14.0,14.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/isFileDragDropEvent.js,root/modules/utils,8.0,8.0,8.0,8.0,12.0,12.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/isFirefox.js,root/modules/utils,7.0,7.0,7.0,7.0,7.0,7.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/isNativeDraggedItemType.js,root/modules/utils,0,0,0,0,0,15.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/isSafari.js,root/modules/utils,7.0,7.0,7.0,7.0,7.0,7.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/isUrlDragDropEvent.js,root/modules/utils,0,0,0,0,8.0,8.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/isWebkit.js,root/modules/utils,7.0,7.0,7.0,7.0,7.0,7.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/modules/utils/shouldUseDragPreview.js,root/modules/utils,19.0,19.0,19.0,19.0,19.0,19.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/packages,root,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5466.0,5492.0,5496.0,5493.0,5533.0,5556.0,5564.0,5773.0,11299.0,11299.0,2285.0,1450.0
+root/packages/dnd-core,root/packages,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3214.0,3217.0,3217.0,3217.0,3217.0,3217.0,3217.0,3363.0,3363.0,3363.0,0,0
+root/packages/dnd-core/src,root/packages/dnd-core,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,967.0,970.0,970.0,970.0,970.0,970.0,970.0,994.0,994.0,994.0,0,0
+root/packages/dnd-core/src/DragDropManager.js,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66.0,66.0,66.0,66.0,66.0,66.0,66.0,66.0,66.0,66.0,0,0
+root/packages/dnd-core/src/DragDropMonitor.js,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,184.0,184.0,184.0,184.0,184.0,184.0,184.0,182.0,182.0,182.0,0,0
+root/packages/dnd-core/src/DragSource.js,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,0,0
+root/packages/dnd-core/src/DropTarget.js,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,0,0
+root/packages/dnd-core/src/HandlerRegistry.js,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,170.0,170.0,170.0,170.0,170.0,170.0,170.0,195.0,195.0,195.0,0,0
+root/packages/dnd-core/src/actions,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,219.0,222.0,222.0,222.0,222.0,222.0,222.0,205.0,205.0,205.0,0,0
+root/packages/dnd-core/src/actions/dragDrop.js,root/packages/dnd-core/src/actions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,187.0,190.0,190.0,190.0,190.0,190.0,190.0,173.0,173.0,173.0,0,0
+root/packages/dnd-core/src/actions/registry.js,root/packages/dnd-core/src/actions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,32.0,0,0
+root/packages/dnd-core/src/backends,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,0,0
+root/packages/dnd-core/src/backends/createTestBackend.js,root/packages/dnd-core/src/backends,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,0,0
+root/packages/dnd-core/src/index.js,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,0,0
+root/packages/dnd-core/src/reducers,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,239.0,239.0,239.0,239.0,239.0,239.0,239.0,257.0,257.0,257.0,0,0
+root/packages/dnd-core/src/reducers/dirtyHandlerIds.js,root/packages/dnd-core/src/reducers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,82.0,82.0,82.0,0,0
+root/packages/dnd-core/src/reducers/dragOffset.js,root/packages/dnd-core/src/reducers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65.0,65.0,65.0,65.0,65.0,65.0,65.0,62.0,62.0,62.0,0,0
+root/packages/dnd-core/src/reducers/dragOperation.js,root/packages/dnd-core/src/reducers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66.0,66.0,66.0,66.0,66.0,66.0,66.0,72.0,72.0,72.0,0,0
+root/packages/dnd-core/src/reducers/index.js,root/packages/dnd-core/src/reducers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,19.0,19.0,19.0,0,0
+root/packages/dnd-core/src/reducers/refCount.js,root/packages/dnd-core/src/reducers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,0,0
+root/packages/dnd-core/src/reducers/stateId.js,root/packages/dnd-core/src/reducers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,0,0
+root/packages/dnd-core/src/utils,root/packages/dnd-core/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,0,0
+root/packages/dnd-core/src/utils/getNextUniqueId.js,root/packages/dnd-core/src/utils,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,0,0
+root/packages/dnd-core/src/utils/matchesType.js,root/packages/dnd-core/src/utils,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,0,0
+root/packages/dnd-core/test,root/packages/dnd-core,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2247.0,2247.0,2247.0,2247.0,2247.0,2247.0,2247.0,2369.0,2369.0,2369.0,0,0
+root/packages/dnd-core/test/DragDropManager.spec.js,root/packages/dnd-core/test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,657.0,657.0,657.0,657.0,657.0,657.0,657.0,681.0,681.0,681.0,0,0
+root/packages/dnd-core/test/DragDropMonitor.spec.js,root/packages/dnd-core/test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1444.0,1444.0,1444.0,1444.0,1444.0,1444.0,1444.0,1542.0,1542.0,1542.0,0,0
+root/packages/dnd-core/test/sources.js,root/packages/dnd-core/test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0,63.0,0,0
+root/packages/dnd-core/test/targets.js,root/packages/dnd-core/test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,80.0,0,0
+root/packages/dnd-core/test/types.js,root/packages/dnd-core/test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,0,0
+root/packages/documentation,root/packages,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5520.0,5520.0,2199.0,1364.0
+root/packages/documentation/examples,root/packages/documentation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3304.0,3304.0,6.0,6.0
+root/packages/documentation/examples/00 Chessboard,root/packages/documentation/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,300.0,300.0,6.0,6.0
+root/packages/documentation/examples/00 Chessboard/Tutorial App,root/packages/documentation/examples/00 Chessboard,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,300.0,300.0,6.0,6.0
+root/packages/documentation/examples/00 Chessboard/Tutorial App/Board.js,root/packages/documentation/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42.0,42.0,0,0
+root/packages/documentation/examples/00 Chessboard/Tutorial App/Board.less,root/packages/documentation/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.0,6.0,6.0,6.0
+root/packages/documentation/examples/00 Chessboard/Tutorial App/BoardSquare.js,root/packages/documentation/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,73.0,73.0,0,0
+root/packages/documentation/examples/00 Chessboard/Tutorial App/Game.js,root/packages/documentation/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35.0,35.0,0,0
+root/packages/documentation/examples/00 Chessboard/Tutorial App/ItemTypes.js,root/packages/documentation/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0,3.0,0,0
+root/packages/documentation/examples/00 Chessboard/Tutorial App/Knight.js,root/packages/documentation/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50.0,50.0,0,0
+root/packages/documentation/examples/00 Chessboard/Tutorial App/Square.js,root/packages/documentation/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28.0,28.0,0,0
+root/packages/documentation/examples/00 Chessboard/Tutorial App/index.js,root/packages/documentation/examples/00 Chessboard/Tutorial App,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63.0,63.0,0,0
+root/packages/documentation/examples/01 Dustbin,root/packages/documentation/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,895.0,895.0,0,0
+root/packages/documentation/examples/01 Dustbin/Copy or Move,root/packages/documentation/examples/01 Dustbin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,181.0,181.0,0,0
+root/packages/documentation/examples/01 Dustbin/Copy or Move/Box.js,root/packages/documentation/examples/01 Dustbin/Copy or Move,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64.0,64.0,0,0
+root/packages/documentation/examples/01 Dustbin/Copy or Move/Container.js,root/packages/documentation/examples/01 Dustbin/Copy or Move,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26.0,26.0,0,0
+root/packages/documentation/examples/01 Dustbin/Copy or Move/Dustbin.js,root/packages/documentation/examples/01 Dustbin/Copy or Move,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61.0,61.0,0,0
+root/packages/documentation/examples/01 Dustbin/Copy or Move/index.js,root/packages/documentation/examples/01 Dustbin/Copy or Move,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30.0,30.0,0,0
+root/packages/documentation/examples/01 Dustbin/Multiple Targets,root/packages/documentation/examples/01 Dustbin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,155.0,155.0,0,0
+root/packages/documentation/examples/01 Dustbin/Multiple Targets/Box.js,root/packages/documentation/examples/01 Dustbin/Multiple Targets,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46.0,46.0,0,0
+root/packages/documentation/examples/01 Dustbin/Multiple Targets/Container.js,root/packages/documentation/examples/01 Dustbin/Multiple Targets,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,83.0,83.0,0,0
+root/packages/documentation/examples/01 Dustbin/Multiple Targets/index.js,root/packages/documentation/examples/01 Dustbin/Multiple Targets,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26.0,26.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target,root/packages/documentation/examples/01 Dustbin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,245.0,245.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target in iframe,root/packages/documentation/examples/01 Dustbin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60.0,60.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target in iframe/Container.js,root/packages/documentation/examples/01 Dustbin/Single Target in iframe,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32.0,32.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target in iframe/index.js,root/packages/documentation/examples/01 Dustbin/Single Target in iframe,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28.0,28.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target/Box.js,root/packages/documentation/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51.0,51.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target/Container.js,root/packages/documentation/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24.0,24.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target/Dustbin.js,root/packages/documentation/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54.0,54.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target/__tests__,root/packages/documentation/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,91.0,91.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target/__tests__/Box-test.js,root/packages/documentation/examples/01 Dustbin/Single Target/__tests__,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53.0,53.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target/__tests__/integration-test.js,root/packages/documentation/examples/01 Dustbin/Single Target/__tests__,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38.0,38.0,0,0
+root/packages/documentation/examples/01 Dustbin/Single Target/index.js,root/packages/documentation/examples/01 Dustbin/Single Target,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25.0,25.0,0,0
+root/packages/documentation/examples/01 Dustbin/Stress Test,root/packages/documentation/examples/01 Dustbin,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,254.0,254.0,0,0
+root/packages/documentation/examples/01 Dustbin/Stress Test/Box.js,root/packages/documentation/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51.0,51.0,0,0
+root/packages/documentation/examples/01 Dustbin/Stress Test/Container.js,root/packages/documentation/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102.0,102.0,0,0
+root/packages/documentation/examples/01 Dustbin/Stress Test/Dustbin.js,root/packages/documentation/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68.0,68.0,0,0
+root/packages/documentation/examples/01 Dustbin/Stress Test/ItemTypes.js,root/packages/documentation/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5.0,5.0,0,0
+root/packages/documentation/examples/01 Dustbin/Stress Test/index.js,root/packages/documentation/examples/01 Dustbin/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28.0,28.0,0,0
+root/packages/documentation/examples/02 Drag Around,root/packages/documentation/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,632.0,632.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,root/packages/documentation/examples/02 Drag Around,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,423.0,423.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer/Box.js,root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25.0,25.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer/BoxDragPreview.js,root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51.0,51.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer/Container.js,root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79.0,79.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer/CustomDragLayer.js,root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90.0,90.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer/DraggableBox.js,root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68.0,68.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer/index.js,root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97.0,97.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer/shouldPureComponentUpdate.js,root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.0,7.0,0,0
+root/packages/documentation/examples/02 Drag Around/Custom Drag Layer/snapToGrid.js,root/packages/documentation/examples/02 Drag Around/Custom Drag Layer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.0,6.0,0,0
+root/packages/documentation/examples/02 Drag Around/Naive,root/packages/documentation/examples/02 Drag Around,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,209.0,209.0,0,0
+root/packages/documentation/examples/02 Drag Around/Naive/Box.js,root/packages/documentation/examples/02 Drag Around/Naive,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53.0,53.0,0,0
+root/packages/documentation/examples/02 Drag Around/Naive/Container.js,root/packages/documentation/examples/02 Drag Around/Naive,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,82.0,82.0,0,0
+root/packages/documentation/examples/02 Drag Around/Naive/index.js,root/packages/documentation/examples/02 Drag Around/Naive,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,74.0,74.0,0,0
+root/packages/documentation/examples/03 Nesting,root/packages/documentation/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,437.0,437.0,0,0
+root/packages/documentation/examples/03 Nesting/Drag Sources,root/packages/documentation/examples/03 Nesting,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,254.0,254.0,0,0
+root/packages/documentation/examples/03 Nesting/Drag Sources/Colors.js,root/packages/documentation/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4.0,4.0,0,0
+root/packages/documentation/examples/03 Nesting/Drag Sources/Container.js,root/packages/documentation/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31.0,31.0,0,0
+root/packages/documentation/examples/03 Nesting/Drag Sources/SourceBox.js,root/packages/documentation/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103.0,103.0,0,0
+root/packages/documentation/examples/03 Nesting/Drag Sources/TargetBox.js,root/packages/documentation/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90.0,90.0,0,0
+root/packages/documentation/examples/03 Nesting/Drag Sources/index.js,root/packages/documentation/examples/03 Nesting/Drag Sources,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26.0,26.0,0,0
+root/packages/documentation/examples/03 Nesting/Drop Targets,root/packages/documentation/examples/03 Nesting,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,183.0,183.0,0,0
+root/packages/documentation/examples/03 Nesting/Drop Targets/Box.js,root/packages/documentation/examples/03 Nesting/Drop Targets,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33.0,33.0,0,0
+root/packages/documentation/examples/03 Nesting/Drop Targets/Container.js,root/packages/documentation/examples/03 Nesting/Drop Targets,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32.0,32.0,0,0
+root/packages/documentation/examples/03 Nesting/Drop Targets/Dustbin.js,root/packages/documentation/examples/03 Nesting/Drop Targets,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85.0,85.0,0,0
+root/packages/documentation/examples/03 Nesting/Drop Targets/index.js,root/packages/documentation/examples/03 Nesting/Drop Targets,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33.0,33.0,0,0
+root/packages/documentation/examples/04 Sortable,root/packages/documentation/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,619.0,619.0,0,0
+root/packages/documentation/examples/04 Sortable/Cancel on Drop Outside,root/packages/documentation/examples/04 Sortable,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,210.0,210.0,0,0
+root/packages/documentation/examples/04 Sortable/Cancel on Drop Outside/Card.js,root/packages/documentation/examples/04 Sortable/Cancel on Drop Outside,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79.0,79.0,0,0
+root/packages/documentation/examples/04 Sortable/Cancel on Drop Outside/Container.js,root/packages/documentation/examples/04 Sortable/Cancel on Drop Outside,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103.0,103.0,0,0
+root/packages/documentation/examples/04 Sortable/Cancel on Drop Outside/index.js,root/packages/documentation/examples/04 Sortable/Cancel on Drop Outside,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28.0,28.0,0,0
+root/packages/documentation/examples/04 Sortable/Simple,root/packages/documentation/examples/04 Sortable,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,207.0,207.0,0,0
+root/packages/documentation/examples/04 Sortable/Simple/Card.js,root/packages/documentation/examples/04 Sortable/Simple,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,102.0,102.0,0,0
+root/packages/documentation/examples/04 Sortable/Simple/Container.js,root/packages/documentation/examples/04 Sortable/Simple,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,81.0,81.0,0,0
+root/packages/documentation/examples/04 Sortable/Simple/index.js,root/packages/documentation/examples/04 Sortable/Simple,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24.0,24.0,0,0
+root/packages/documentation/examples/04 Sortable/Stress Test,root/packages/documentation/examples/04 Sortable,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,202.0,202.0,0,0
+root/packages/documentation/examples/04 Sortable/Stress Test/Card.js,root/packages/documentation/examples/04 Sortable/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60.0,60.0,0,0
+root/packages/documentation/examples/04 Sortable/Stress Test/Container.js,root/packages/documentation/examples/04 Sortable/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87.0,87.0,0,0
+root/packages/documentation/examples/04 Sortable/Stress Test/ItemTypes.js,root/packages/documentation/examples/04 Sortable/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0,3.0,0,0
+root/packages/documentation/examples/04 Sortable/Stress Test/index.js,root/packages/documentation/examples/04 Sortable/Stress Test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52.0,52.0,0,0
+root/packages/documentation/examples/05 Customize,root/packages/documentation/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,280.0,280.0,0,0
+root/packages/documentation/examples/05 Customize/Drop Effects,root/packages/documentation/examples/05 Customize,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,130.0,130.0,0,0
+root/packages/documentation/examples/05 Customize/Drop Effects/Container.js,root/packages/documentation/examples/05 Customize/Drop Effects,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22.0,22.0,0,0
+root/packages/documentation/examples/05 Customize/Drop Effects/SourceBox.js,root/packages/documentation/examples/05 Customize/Drop Effects,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44.0,44.0,0,0
+root/packages/documentation/examples/05 Customize/Drop Effects/TargetBox.js,root/packages/documentation/examples/05 Customize/Drop Effects,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40.0,40.0,0,0
+root/packages/documentation/examples/05 Customize/Drop Effects/index.js,root/packages/documentation/examples/05 Customize/Drop Effects,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24.0,24.0,0,0
+root/packages/documentation/examples/05 Customize/Handles and Previews,root/packages/documentation/examples/05 Customize,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150.0,150.0,0,0
+root/packages/documentation/examples/05 Customize/Handles and Previews/BoxWithHandle.js,root/packages/documentation/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52.0,52.0,0,0
+root/packages/documentation/examples/05 Customize/Handles and Previews/BoxWithImage.js,root/packages/documentation/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48.0,48.0,0,0
+root/packages/documentation/examples/05 Customize/Handles and Previews/Container.js,root/packages/documentation/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19.0,19.0,0,0
+root/packages/documentation/examples/05 Customize/Handles and Previews/ItemTypes.js,root/packages/documentation/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0,3.0,0,0
+root/packages/documentation/examples/05 Customize/Handles and Previews/index.js,root/packages/documentation/examples/05 Customize/Handles and Previews,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28.0,28.0,0,0
+root/packages/documentation/examples/06 Other,root/packages/documentation/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128.0,128.0,0,0
+root/packages/documentation/examples/06 Other/Native Files,root/packages/documentation/examples/06 Other,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128.0,128.0,0,0
+root/packages/documentation/examples/06 Other/Native Files/Container.js,root/packages/documentation/examples/06 Other/Native Files,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37.0,37.0,0,0
+root/packages/documentation/examples/06 Other/Native Files/FileList.js,root/packages/documentation/examples/06 Other/Native Files,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26.0,26.0,0,0
+root/packages/documentation/examples/06 Other/Native Files/TargetBox.js,root/packages/documentation/examples/06 Other/Native Files,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45.0,45.0,0,0
+root/packages/documentation/examples/06 Other/Native Files/index.js,root/packages/documentation/examples/06 Other/Native Files,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20.0,20.0,0,0
+root/packages/documentation/examples/shared,root/packages/documentation/examples,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13.0,13.0,0,0
+root/packages/documentation/examples/shared/wrapInTestContext.js,root/packages/documentation/examples/shared,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13.0,13.0,0,0
+root/packages/documentation/scripts,root/packages/documentation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,924.0,924.0,877.0,798.0
+root/packages/documentation/scripts/buildSiteIndexPages.sh,root/packages/documentation/scripts,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71.0,71.0,70.0,0
+root/packages/documentation/scripts/buildStaticSite.sh,root/packages/documentation/scripts,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.0,9.0,9.0,9.0
+root/packages/documentation/scripts/cssTransformLoader.js,root/packages/documentation/scripts,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17.0,17.0,17.0,17.0
+root/packages/documentation/scripts/markdownLoader.js,root/packages/documentation/scripts,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76.0,76.0,76.0,76.0
+root/packages/documentation/scripts/prism.js,root/packages/documentation/scripts,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,696.0,696.0,696.0,696.0
+root/packages/documentation/scripts/resolvers.js,root/packages/documentation/scripts,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46.0,46.0,0,0
+root/packages/documentation/scripts/startSiteDevServer.sh,root/packages/documentation/scripts,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.0,9.0,9.0,0
+root/packages/documentation/site,root/packages/documentation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1292.0,1292.0,1316.0,560.0
+root/packages/documentation/site/Constants.js,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,207.0,207.0,207.0,0
+root/packages/documentation/site/IndexPage.js,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160.0,160.0,155.0,0
+root/packages/documentation/site/base.less,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,158.0,158.0,158.0,158.0
+root/packages/documentation/site/client.js,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5.0,5.0,5.0,0
+root/packages/documentation/site/components,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,470.0,470.0,470.0,168.0
+root/packages/documentation/site/components/CodeBlock.js,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,122.0,122.0,122.0,0
+root/packages/documentation/site/components/CodeBlock.less,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0
+root/packages/documentation/site/components/Cover.js,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14.0,14.0,14.0,0
+root/packages/documentation/site/components/Cover.less,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36.0,36.0,36.0,36.0
+root/packages/documentation/site/components/Header.js,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15.0,15.0,15.0,0
+root/packages/documentation/site/components/Header.less,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0
+root/packages/documentation/site/components/NavBar.js,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36.0,36.0,36.0,0
+root/packages/documentation/site/components/NavBar.less,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43.0,43.0,43.0,43.0
+root/packages/documentation/site/components/PageBody.js,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18.0,18.0,18.0,0
+root/packages/documentation/site/components/PageBody.less,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25.0,25.0,25.0,25.0
+root/packages/documentation/site/components/SideBar.js,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39.0,39.0,39.0,0
+root/packages/documentation/site/components/SideBar.less,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42.0,42.0,42.0,42.0
+root/packages/documentation/site/components/StaticHTMLBlock.js,root/packages/documentation/site/components,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58.0,58.0,58.0,0
+root/packages/documentation/site/constants.less,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14.0,14.0,14.0,14.0
+root/packages/documentation/site/pages,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61.0,61.0,61.0,0
+root/packages/documentation/site/pages/APIPage.js,root/packages/documentation/site/pages,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22.0,22.0,22.0,0
+root/packages/documentation/site/pages/ExamplePage.js,root/packages/documentation/site/pages,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20.0,20.0,20.0,0
+root/packages/documentation/site/pages/HomePage.js,root/packages/documentation/site/pages,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19.0,19.0,19.0,0
+root/packages/documentation/site/renderPath.js,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6.0,6.0,6.0,0
+root/packages/documentation/site/webpack-client.config.js,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113.0,113.0,136.0,121.0
+root/packages/documentation/site/webpack-prerender.config.js,root/packages/documentation/site,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,98.0,98.0,104.0,99.0
+root/packages/react-dnd,root/packages,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1305.0,1305.0,1309.0,1309.0,1309.0,1313.0,1313.0,1340.0,1344.0,1344.0,49.0,49.0
+root/packages/react-dnd-html5-backend,root/packages,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,946.0,969.0,969.0,966.0,1006.0,1025.0,1033.0,1069.0,1071.0,1071.0,37.0,37.0
+root/packages/react-dnd-html5-backend/src,root/packages/react-dnd-html5-backend,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,867.0,890.0,890.0,887.0,927.0,940.0,948.0,986.0,988.0,988.0,0,0
+root/packages/react-dnd-html5-backend/src/BrowserDetector.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,0,0
+root/packages/react-dnd-html5-backend/src/EnterLeaveCounter.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,35.0,35.0,35.0,0,0
+root/packages/react-dnd-html5-backend/src/HTML5Backend.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,536.0,559.0,559.0,559.0,566.0,579.0,587.0,631.0,633.0,633.0,0,0
+root/packages/react-dnd-html5-backend/src/MonotonicInterpolant.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,0,0
+root/packages/react-dnd-html5-backend/src/NativeDragSources.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,81.0,81.0,81.0,81.0,81.0,81.0,81.0,80.0,80.0,80.0,0,0
+root/packages/react-dnd-html5-backend/src/NativeTypes.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,0,0
+root/packages/react-dnd-html5-backend/src/OffsetUtils.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,87.0,87.0,87.0,84.0,117.0,117.0,117.0,117.0,117.0,117.0,0,0
+root/packages/react-dnd-html5-backend/src/getEmptyImage.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,10.0,10.0,10.0,0,0
+root/packages/react-dnd-html5-backend/src/index.js,root/packages/react-dnd-html5-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,0,0
+root/packages/react-dnd-html5-backend/test,root/packages/react-dnd-html5-backend,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,0,0
+root/packages/react-dnd-html5-backend/test/HTML5Backend.spec.js,root/packages/react-dnd-html5-backend/test,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,51.0,0,0
+root/packages/react-dnd-html5-backend/webpack.config.js,root/packages/react-dnd-html5-backend,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28.0,28.0,28.0,28.0,28.0,34.0,34.0,32.0,32.0,32.0,37.0,37.0
+root/packages/react-dnd-test-backend,root/packages,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,0
+root/packages/react-dnd-test-backend/src,root/packages/react-dnd-test-backend,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,0
+root/packages/react-dnd-test-backend/src/index.js,root/packages/react-dnd-test-backend/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0,0
+root/packages/react-dnd/src,root/packages/react-dnd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1271.0,1271.0,1275.0,1275.0,1275.0,1275.0,1275.0,1302.0,1306.0,1306.0,0,0
+root/packages/react-dnd/src/DragDropContext.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77.0,77.0,78.0,78.0,78.0,78.0,78.0,77.0,77.0,77.0,0,0
+root/packages/react-dnd/src/DragDropContextProvider.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59.0,59.0,60.0,60.0,60.0,60.0,60.0,75.0,75.0,75.0,0,0
+root/packages/react-dnd/src/DragLayer.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,125.0,125.0,126.0,126.0,126.0,126.0,126.0,123.0,123.0,123.0,0,0
+root/packages/react-dnd/src/DragSource.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,69.0,69.0,69.0,0,0
+root/packages/react-dnd/src/DropTarget.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,69.0,69.0,69.0,0,0
+root/packages/react-dnd/src/areOptionsEqual.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,13.0,13.0,13.0,0,0
+root/packages/react-dnd/src/createSourceConnector.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,0,0
+root/packages/react-dnd/src/createSourceFactory.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,0,0
+root/packages/react-dnd/src/createSourceMonitor.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,0,0
+root/packages/react-dnd/src/createTargetConnector.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,0,0
+root/packages/react-dnd/src/createTargetFactory.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,85.0,85.0,85.0,0,0
+root/packages/react-dnd/src/createTargetMonitor.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,0,0
+root/packages/react-dnd/src/decorateHandler.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,186.0,186.0,187.0,187.0,187.0,187.0,187.0,185.0,189.0,189.0,0,0
+root/packages/react-dnd/src/index.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,0,0
+root/packages/react-dnd/src/registerSource.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,0,0
+root/packages/react-dnd/src/registerTarget.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,0,0
+root/packages/react-dnd/src/utils,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115.0,115.0,115.0,115.0,115.0,115.0,115.0,125.0,125.0,125.0,0,0
+root/packages/react-dnd/src/utils/checkDecoratorArguments.js,root/packages/react-dnd/src/utils,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,20.0,20.0,20.0,0,0
+root/packages/react-dnd/src/utils/cloneWithRef.js,root/packages/react-dnd/src/utils,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,0,0
+root/packages/react-dnd/src/utils/isValidType.js,root/packages/react-dnd/src/utils,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,9.0,9.0,9.0,0,0
+root/packages/react-dnd/src/utils/shallowEqual.js,root/packages/react-dnd/src/utils,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,29.0,29.0,29.0,0,0
+root/packages/react-dnd/src/utils/shallowEqualScalar.js,root/packages/react-dnd/src/utils,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,38.0,38.0,38.0,0,0
+root/packages/react-dnd/src/wrapConnectorHooks.js,root/packages/react-dnd/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,53.0,53.0,53.0,0,0
+root/packages/react-dnd/webpack.config.js,root/packages/react-dnd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34.0,34.0,34.0,34.0,34.0,38.0,38.0,38.0,38.0,38.0,49.0,49.0
+root/scripts,root,0,15.0,15.0,15.0,15.0,15.0,15.0,939.0,939.0,939.0,939.0,939.0,939.0,939.0,940.0,939.0,940.0,940.0,940.0,940.0,940.0,940.0,940.0,940.0,940.0,940.0,930.0,930.0,930.0,930.0,930.0,930.0,934.0,934.0,934.0,57.0,57.0,57.0,57.0
+root/scripts/build,root/scripts,0,12.0,12.0,12.0,12.0,12.0,12.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/scripts/build.sh,root/scripts,0,0,0,0,0,0,0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,10.0,9.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/scripts/buildSiteIndexPages.sh,root/scripts,0,0,0,0,0,0,0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,71.0,0,0,0,0
+root/scripts/buildStaticSite.sh,root/scripts,0,0,0,0,0,0,0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,0,0,0,0
+root/scripts/cssTransformLoader.js,root/scripts,0,0,0,0,0,0,0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,17.0,0,0,0,0
+root/scripts/markdownLoader.js,root/scripts,0,0,0,0,0,0,0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,0,0,0,0
+root/scripts/prism.js,root/scripts,0,0,0,0,0,0,0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,661.0,0,0,0,0
+root/scripts/publishDocumentation.sh,root/scripts,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57.0,57.0,57.0,57.0
+root/scripts/publishStaticSite.sh,root/scripts,0,0,0,0,0,0,0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,0,0,0,0
+root/scripts/resolvers.js,root/scripts,0,0,0,0,0,0,0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,46.0,46.0,46.0,0,0,0,0
+root/scripts/run-examples,root/scripts,0,3.0,3.0,3.0,3.0,3.0,3.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/scripts/startSiteDevServer.sh,root/scripts,0,0,0,0,0,0,0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,9.0,0,0,0,0
+root/site,root,0,0,0,0,0,0,0,1192.0,1192.0,1192.0,1192.0,1192.0,1191.0,1191.0,1191.0,1191.0,1192.0,1192.0,1193.0,1193.0,1193.0,1193.0,1193.0,1193.0,1193.0,1193.0,1207.0,1212.0,1226.0,1230.0,1230.0,1230.0,1253.0,1251.0,1300.0,0,0,0,0
+root/site/Constants.js,root/site,0,0,0,0,0,0,0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,173.0,181.0,181.0,193.0,193.0,193.0,193.0,193.0,193.0,207.0,0,0,0,0
+root/site/IndexPage.js,root/site,0,0,0,0,0,0,0,141.0,141.0,141.0,141.0,141.0,141.0,141.0,141.0,141.0,141.0,141.0,142.0,142.0,142.0,142.0,142.0,142.0,142.0,142.0,144.0,144.0,146.0,146.0,146.0,146.0,146.0,146.0,160.0,0,0,0,0
+root/site/base.less,root/site,0,0,0,0,0,0,0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,158.0,0,0,0,0
+root/site/client.js,root/site,0,0,0,0,0,0,0,11.0,11.0,11.0,11.0,11.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,5.0,0,0,0,0
+root/site/components,root/site,0,0,0,0,0,0,0,459.0,459.0,459.0,459.0,459.0,459.0,459.0,459.0,459.0,460.0,460.0,460.0,460.0,460.0,460.0,460.0,460.0,460.0,460.0,460.0,461.0,461.0,465.0,465.0,465.0,465.0,463.0,470.0,0,0,0,0
+root/site/components/CodeBlock.js,root/site/components,0,0,0,0,0,0,0,116.0,116.0,116.0,116.0,116.0,116.0,116.0,116.0,116.0,117.0,117.0,117.0,117.0,117.0,117.0,117.0,117.0,117.0,117.0,117.0,118.0,118.0,119.0,119.0,119.0,119.0,117.0,122.0,0,0,0,0
+root/site/components/CodeBlock.less,root/site/components,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,0,0,0,0
+root/site/components/Cover.js,root/site/components,0,0,0,0,0,0,0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,14.0,0,0,0,0
+root/site/components/Cover.less,root/site/components,0,0,0,0,0,0,0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,0,0,0,0
+root/site/components/Header.js,root/site/components,0,0,0,0,0,0,0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,15.0,15.0,15.0,15.0,15.0,15.0,0,0,0,0
+root/site/components/Header.less,root/site/components,0,0,0,0,0,0,0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,3.0,0,0,0,0
+root/site/components/NavBar.js,root/site/components,0,0,0,0,0,0,0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,28.0,36.0,0,0,0,0
+root/site/components/NavBar.less,root/site/components,0,0,0,0,0,0,0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,43.0,0,0,0,0
+root/site/components/PageBody.js,root/site/components,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,20.0,20.0,20.0,20.0,20.0,18.0,0,0,0,0
+root/site/components/PageBody.less,root/site/components,0,0,0,0,0,0,0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,0,0,0,0
+root/site/components/SideBar.js,root/site/components,0,0,0,0,0,0,0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,41.0,39.0,0,0,0,0
+root/site/components/SideBar.less,root/site/components,0,0,0,0,0,0,0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,42.0,0,0,0,0
+root/site/components/StaticHTMLBlock.js,root/site/components,0,0,0,0,0,0,0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,57.0,58.0,58.0,58.0,58.0,58.0,58.0,0,0,0,0
+root/site/constants.less,root/site,0,0,0,0,0,0,0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,14.0,0,0,0,0
+root/site/pages,root/site,0,0,0,0,0,0,0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,67.0,61.0,0,0,0,0
+root/site/pages/APIPage.js,root/site/pages,0,0,0,0,0,0,0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,25.0,22.0,0,0,0,0
+root/site/pages/ExamplePage.js,root/site/pages,0,0,0,0,0,0,0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,23.0,20.0,0,0,0,0
+root/site/pages/HomePage.js,root/site/pages,0,0,0,0,0,0,0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,19.0,0,0,0,0
+root/site/renderPath.js,root/site,0,0,0,0,0,0,0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,6.0,0,0,0,0
+root/site/webpack-client.config.js,root/site,0,0,0,0,0,0,0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,88.0,90.0,92.0,92.0,92.0,92.0,92.0,104.0,104.0,117.0,0,0,0,0
+root/site/webpack-prerender.config.js,root/site,0,0,0,0,0,0,0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,73.0,75.0,77.0,77.0,77.0,77.0,77.0,88.0,88.0,102.0,0,0,0,0
+root/src,root,0,0,0,0,0,0,1436.0,1829.0,1829.0,1829.0,1829.0,1829.0,1046.0,1046.0,1046.0,1048.0,1193.0,1181.0,1181.0,1181.0,1181.0,1181.0,1190.0,1181.0,1200.0,1200.0,1269.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/ComponentDragSource.js,root/src,0,0,0,0,0,0,63.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/ComponentDropTarget.js,root/src,0,0,0,0,0,0,60.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/ComponentHandlerMap.js,root/src,0,0,0,0,0,0,86.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/ComponentHandlerMapping.js,root/src,0,0,0,0,0,0,39.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/DragDropContext.js,root/src,0,0,0,0,0,0,0,56.0,56.0,56.0,56.0,56.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0,65.0,62.0,70.0,70.0,77.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/DragDropContextProvider.js,root/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/DragLayer.js,root/src,0,0,0,0,0,0,0,100.0,100.0,100.0,100.0,100.0,99.0,99.0,99.0,101.0,115.0,115.0,115.0,115.0,115.0,115.0,118.0,115.0,123.0,123.0,125.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/DragSource.js,root/src,0,0,0,0,0,0,0,67.0,67.0,67.0,67.0,67.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/DropTarget.js,root/src,0,0,0,0,0,0,0,67.0,67.0,67.0,67.0,67.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,64.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/HandlerRegistration.js,root/src,0,0,0,0,0,0,79.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/SourceMonitor.js,root/src,0,0,0,0,0,0,35.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/TargetMonitor.js,root/src,0,0,0,0,0,0,35.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/areOptionsEqual.js,root/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,11.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/backends,root/src,0,0,0,0,0,0,514.0,577.0,577.0,577.0,577.0,577.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/backends/HTML5.js,root/src/backends,0,0,0,0,0,0,514.0,576.0,576.0,576.0,576.0,576.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/backends/Test.js,root/src/backends,0,0,0,0,0,0,0,1.0,1.0,1.0,1.0,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/bindConnector.js,root/src,0,0,0,0,0,0,0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/bindConnectorMethod.js,root/src,0,0,0,0,0,0,0,46.0,46.0,46.0,46.0,46.0,69.0,69.0,69.0,69.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/configureDragDrop.js,root/src,0,0,0,0,0,0,108.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/configureDragDropContext.js,root/src,0,0,0,0,0,0,30.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/configureDragDropLayer.js,root/src,0,0,0,0,0,0,58.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/createConnectRef.js,root/src,0,0,0,0,0,0,30.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/createSourceConnector.js,root/src,0,0,0,0,0,0,0,6.0,6.0,6.0,6.0,6.0,10.0,10.0,10.0,10.0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,89.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/createSourceFactory.js,root/src,0,0,0,0,0,0,0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,97.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/createSourceMonitor.js,root/src,0,0,0,0,0,0,0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,84.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/createTargetConnector.js,root/src,0,0,0,0,0,0,0,5.0,5.0,5.0,5.0,5.0,7.0,7.0,7.0,7.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,55.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/createTargetFactory.js,root/src,0,0,0,0,0,0,0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,86.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/createTargetMonitor.js,root/src,0,0,0,0,0,0,0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,72.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/decorateHandler.js,root/src,0,0,0,0,0,0,0,164.0,164.0,164.0,164.0,164.0,164.0,164.0,164.0,164.0,181.0,181.0,181.0,181.0,181.0,181.0,184.0,181.0,184.0,184.0,186.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/index.js,root/src,0,0,0,0,0,0,3.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,16.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,5.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/index.umd.js,root/src,0,0,0,0,0,0,0,2.0,2.0,2.0,2.0,2.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/registerSource.js,root/src,0,0,0,0,0,0,0,15.0,15.0,15.0,15.0,15.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/registerTarget.js,root/src,0,0,0,0,0,0,0,15.0,15.0,15.0,15.0,15.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,13.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils,root/src,0,0,0,0,0,0,296.0,336.0,336.0,336.0,336.0,336.0,108.0,108.0,108.0,108.0,115.0,115.0,115.0,115.0,115.0,115.0,115.0,115.0,115.0,115.0,115.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/BrowserDetector.js,root/src/utils,0,0,0,0,0,0,9.0,9.0,9.0,9.0,9.0,9.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/DataTransfer.js,root/src/utils,0,0,0,0,0,0,9.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/EnterLeaveCounter.js,root/src/utils,0,0,0,0,0,0,39.0,39.0,39.0,39.0,39.0,39.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/OffsetHelpers.js,root/src/utils,0,0,0,0,0,0,79.0,84.0,84.0,84.0,84.0,84.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/checkDecoratorArguments.js,root/src/utils,0,0,0,0,0,0,0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/cloneWithRef.js,root/src/utils,0,0,0,0,0,0,0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,22.0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,29.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/createMonotonicInterpolant.js,root/src/utils,0,0,0,0,0,0,95.0,95.0,95.0,95.0,95.0,95.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/isValidType.js,root/src/utils,0,0,0,0,0,0,0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,7.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/shallowEqual.js,root/src/utils,0,0,0,0,0,0,31.0,31.0,31.0,31.0,31.0,31.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/utils/shallowEqualScalar.js,root/src/utils,0,0,0,0,0,0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,34.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/src/wrapConnectorHooks.js,root/src,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,56.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/tests.webpack.js,root,0,0,0,0,0,0,0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,0,0,0,0,0,0,0,0,0,0,0,0
+root/wallaby.js,root,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26.0,26.0
+root/webpack.config.js,root,28.0,28.0,28.0,28.0,28.0,28.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,36.0,31.0,36.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,31.0,34.0,0,0,0,0,0,0,0,0,0,0,0,0

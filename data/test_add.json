@@ -1,0 +1,41 @@
+{
+  "format": "gumtree",
+  "timesteps": [
+    {
+      "root": {
+        "length": "10",
+        "pos": "0"
+      }
+    },
+    {
+      "root": {
+        "length": "10",
+        "pos": "0",
+        "children": [
+          {
+            "length": "4",
+            "pos": "3"
+          }
+        ]
+      }
+    }
+  ],
+  "changes": [
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 1
+        }
+      ],
+      "actions": [
+        {
+          "action": "insert",
+          "tree": 0,
+          "parent": 0,
+          "at": 0
+        }
+      ]
+    }
+  ]
+}

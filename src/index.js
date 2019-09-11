@@ -23,12 +23,12 @@ const datasetList = require('../_datasets.json');
 
 async function loadDataset(name) {
   addLoadingSpinner(wrapper);
-  let file = datasetList[name];
+  let entry = datasetList[name];
   if (!datasets[name]) {
     let data;
     let response;
 
-    if (file.format == 'ontology') {
+    if (entry.format == 'ontology') {
       // case 'ontology':
       //   let ont = new OntologyLoader();
       //   ont.loadOntology(examples.ontologies.ICD9CM_2013AB);
@@ -39,21 +39,25 @@ async function loadDataset(name) {
     }
     else {
       try {
-        if (file.format == 'treemap') response = await fetch(`../data/treemaps/${name}.${file.filetype}`);
-        else response = await fetch(`../data/${name}.${file.filetype}`);
+        response = await fetch(entry.file);
+      } catch (e) {
+        alert(e);
+        return false;
+      }
 
-        if (file.filetype == 'json')
+      try {
+        if (entry.filetype == 'json')
           data = await response.json();
-        else if (file.filetype == 'csv')
+        else if (entry.filetype == 'csv')
           data = Papa.parse(await response.text(),
             { header: true }
           ).data;
-        else if (file.filetype == 'data')
+        else if (entry.filetype == 'data')
           data = Papa.parse(await response.text()).data;
         else
           throw Exception('File format not supported.');
 
-        datasets[name] = TransformData[file.format](data);
+        datasets[name] = TransformData[entry.format](data);
         return true;
       } catch (e) {
         alert(e);
@@ -104,7 +108,7 @@ document.addEventListener('DOMContentLoaded', async function (event) {
       },
       dataset: {
         value: 'viscousMin',
-        options: [] // options are dynamically added from ./data/_datasets.json
+        options: [] // options are dynamically added from ./_datasets.json
       },
       offset: {
         value: 'silhouette',
@@ -161,7 +165,14 @@ document.addEventListener('DOMContentLoaded', async function (event) {
       filters: [
         { type: 'double-inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
         { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0 }
-      ]
+      ],
+      filterMode: {
+        value: 'fast',
+        options: [
+          { value: 'fast', text: 'fast' },
+          { value: 'accurate', text: 'accurate' },
+        ]
+      }
     },
     computed: {
       disableNormSizeButton() {
@@ -269,6 +280,12 @@ document.addEventListener('DOMContentLoaded', async function (event) {
         },
         deep: true
       },
+      filterMode: {
+        handler: function () {
+          stream.filterMode = this.filterMode.value;
+        },
+        deep: true
+      },
       startEndEncoding: {
         handler: function (encoding) {
           stream.startEndEncoding = encoding.value;
@@ -288,7 +305,6 @@ document.addEventListener('DOMContentLoaded', async function (event) {
 
             removeLoadingSpinner(wrapper);
           })
-
         },
         deep: true
       },

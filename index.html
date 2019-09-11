@@ -232,6 +232,11 @@
         <div>
           <input type="range" v-model="filters[0].stdDeviation" step="0.2" min="0" max="20" />
         </div>
+        <select v-model="filterMode.value">
+          <option v-for="option in filterMode.options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
       </div>
 
 

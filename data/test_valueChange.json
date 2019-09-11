@@ -1,0 +1,27 @@
+{
+  "format": "gumtree",
+  "timesteps": [
+    {
+      "root": {
+        "length": "10",
+        "pos": "0"
+      }
+    },
+    {
+      "root": {
+        "length": "5",
+        "pos": "0"
+      }
+    }
+  ],
+  "changes": [
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 0
+        }
+      ]
+    }
+  ]
+}

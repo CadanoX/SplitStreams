@@ -69,9 +69,10 @@ module.exports = {
     // new PrettierPlugin({
     //   singleQuote: true
     // }),
-    new CopyWebpackPlugin([{
-      from: './*.html'
-    }])
+    new CopyWebpackPlugin([
+      './*.html',
+      { from: 'data', to: 'data' },
+    ])
   ],
   externals: [
     // { d3: 'd3' },

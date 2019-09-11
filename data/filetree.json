@@ -1,0 +1,86 @@
+{
+  "N": {
+    "MyFolder": {
+      "l": 0,
+      "t": 0,
+      "w": 50
+    },
+    "Documents": {
+      "l": 1,
+      "t": 0,
+      "w": 20
+    },
+    "Pictures": {
+      "l": 1,
+      "t": 0,
+      "w": 20
+    },
+    "doc1.txt": {
+      "l": 2,
+      "t": 0,
+      "w": 5
+    },
+    "doc2.txt": {
+      "l": 2,
+      "t": 0,
+      "w": 5
+    },
+    "pic1.png": {
+      "l": 2,
+      "t": 0,
+      "w": 5
+    },
+    "2MyFolder": {
+      "l": 0,
+      "t": 1,
+      "w": 50
+    },
+    "2Documents": {
+      "l": 1,
+      "t": 1,
+      "w": 20
+    },
+    "2Pictures": {
+      "l": 1,
+      "t": 1,
+      "w": 20
+    },
+    "2doc1.txt": {
+      "l": 2,
+      "t": 1,
+      "w": 5
+    },
+    "2doc2.txt": {
+      "l": 2,
+      "t": 1,
+      "w": 10
+    },
+    "2pic1.png": {
+      "l": 2,
+      "t": 1,
+      "w": 5
+    }
+  },
+  "EN": {
+    "0": {
+      "MyFolder": ["Documents", "Pictures"],
+      "Documents": ["doc1.txt", "doc2.txt"],
+      "Pictures": ["pic1.png"]
+    },
+    "1": {
+      "2MyFolder": ["2Documents", "2Pictures"],
+      "2Documents": ["2doc1.txt", "2doc2.txt"],
+      "2Pictures": ["2pic1.png"]
+    }
+  },
+  "ET": {
+    "0": {
+      "MyFolder": ["2MyFolder"],
+      "Documents": ["2Documents"],
+      "Pictures": ["2Pictures"],
+      "doc1.txt": ["2doc1.txt"],
+      "doc2.txt": ["2doc2.txt"],
+      "pic1.png": ["2pic1.png"]
+    }
+  }
+}
