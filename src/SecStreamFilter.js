@@ -5,17 +5,21 @@ export default class SecStreamFilter {
       ...options // overwrite default settings with user settings
     };
     this._inputData = inputData;
-    this._fitleredData = [];
+    this._filteredData = [];
   }
 
   get data() {
-    this._filteredData.references = [...this._inputData];
     return this._filteredData;
+  }
+
+  _reset() {
+    this._filteredData = [...this._inputData];
   }
 
   maxDepth(maxDepth) {
     let traverse = node => {
       if (node.depth == maxDepth) {
+        node.show;
       } else {
         if (!!node.children) for (let child of node.children) traverse(child);
       }

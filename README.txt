@@ -1,1 +1,66 @@
-npm run build
+# SplitStreams
+**SecStreams** is a JavaScript library, that allows for the visualization of hierarchically structured data over time. Visualization types include:
+- Streamgraphs
+- one-dimensional treemaps
+- Nested Tracking Graphs (Nested Streamgraphs)
+- storylines, and
+- SplitStreams.
+
+We utilize [D3](https://d3js.org).
+
+index.html includes an extensive demo page with several datasets loaded, and my of the parameters exposed as sliders.
+testPage.html shows minimal examples to see how the library handles those cases.
+generators.html allows for the creation of random datasets (but is still buggy)
+
+To run the demo in this repository, use `npm install` and start a development server via `npm run dev`.
+To utilize the library in your own project, load the library and create a stream by providing it with a div and data to render.
+
+```import SecStream from './SecStream';
+let div = document.createElement("div");
+document.body.appendChild(div);
+let stream = new SecStream(div);
+stream.data(myJson);```
+
+Our input data format looks like the following:
+```let myJson = {
+  timesteps: [
+    0: {
+      references: [
+        0: { id: 0, size: 2, parent: null, next: next(A)},
+        1: { id: 1, size: 1, parent: parent(0), next: next(B)}
+      ],
+      tree: root(0)
+    },
+    1: {
+      references: [
+        'A': { id: 'A', size: 2, parent: null, prev: [prev(0)] },
+        'B': { id: 'B'', size: 1, parent: parent(A), prev: [prev(1)] }
+      ],
+      tree: root (A)
+    }
+  ]
+}```
+
+If your data format already looks like the previous example, you can use it like `stream.data(myJson)`.
+In case your data is using a different format, we provide convenience functions to transform your data:
+
+```
+import SecStreamInputData from './SecStreamInputData.js';
+let format = new SecStreamInputData();
+for (every node of the data)
+  for (every timestep the node is active in)
+      format.addNode(timestep, id, weight);
+      
+for (every parent-child relation)
+  for (every timestep the relation is active in)
+    format.addParent(timestep, child_id, parent_id);
+
+format._buildTimeConnections();
+format.finalize();
+return format.data;
+```
+
+Several examples of how different data can be converted to our format, are demonstrated in `TransformData.js`.
+`format._buildTimeConnections()` connects the nodes of continuous timesteps, if they have the same ID. If IDs are not consistent along timesteps, or when the data includes splits (from one node into multiple nodes), or merges (from multiple nodes into one), we need to utilize the function `format.addNext(timestep, id, nextId)`.
+
+
