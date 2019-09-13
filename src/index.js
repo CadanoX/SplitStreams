@@ -6,7 +6,7 @@ import VueResize from 'vue-resize';
 import * as d3 from 'd3';
 import Papa from 'papaparse'
 
-import SecStream from './SecStream';
+import SplitStream from './SplitStream';
 import OntologyLoader from './OntologyLoader';
 import TransformData from './TransformData';
 
@@ -21,6 +21,30 @@ var wrapper;
 var datasets = {};
 const datasetList = require('../_datasets.json');
 
+const meshList = [
+  // "mtrees1997.bin",
+  // "mtrees1998.bin",
+  // "mtrees2001.bin",
+  // "mtrees2002.bin",
+  // "mtrees2003.bin",
+  // "mtrees2004.bin",
+  // "mtrees2005.bin",
+  // "mtrees2006.bin",
+  // "mtrees2007.bin",
+  // "mtrees2008.bin",
+  // "mtrees2009.bin",
+  // "mtrees2010.bin",
+  // "mtrees2011.bin",
+  // "mtrees2012.bin",
+  // "mtrees2013.bin",
+  "mtrees2014.bin",
+  "mtrees2015.bin",
+  "mtrees2016.bin",
+  "mtrees2017.bin",
+  "mtrees2018.bin",
+  "mtrees2019.bin",
+]
+
 async function loadDataset(name) {
   addLoadingSpinner(wrapper);
   let entry = datasetList[name];
@@ -29,18 +53,33 @@ async function loadDataset(name) {
     let response;
 
     if (entry.format == 'ontology') {
-      // case 'ontology':
-      //   let ont = new OntologyLoader();
-      //   ont.loadOntology(examples.ontologies.ICD9CM_2013AB);
-      //   ont.loadOntology(examples.ontologies.ICD9CM_2014AB);
-      //   ont.transformOntologiesToTree();
-      //   datasets.ontology = ont.data;
-      //   break;
+      let ont = new OntologyLoader();
+      ont.loadOntology(examples.ontologies.ICD9CM_2013AB);
+      ont.loadOntology(examples.ontologies.ICD9CM_2014AB);
+      ont.transformOntologiesToTree();
+      datasets[name] = ont.data;
+    }
+    else if (entry.format == "MeSH") {
+      let meshData = [];
+      let text;
+      for (let filename of meshList) {
+        try { response = await fetch(`/data/MeSH/${filename}`); }
+        catch (e) {
+          alert(e);
+          return false;
+        }
+        try { text = await response.text(); }
+        catch (e) {
+          alert(e);
+          return false;
+        }
+        meshData.push(Papa.parse(text).data);
+      }
+      datasets[name] = TransformData[entry.format](meshData);
     }
     else {
-      try {
-        response = await fetch(entry.file);
-      } catch (e) {
+      try { response = await fetch(entry.file); }
+      catch (e) {
         alert(e);
         return false;
       }
@@ -58,7 +97,6 @@ async function loadDataset(name) {
           throw Exception('File format not supported.');
 
         datasets[name] = TransformData[entry.format](data);
-        return true;
       } catch (e) {
         alert(e);
         return false;
@@ -448,7 +486,7 @@ document.addEventListener('DOMContentLoaded', async function (event) {
   app.dataset.options = datasetListArray;
 
   await loadDataset(app.dataset.value);
-  stream = new SecStream(wrapper).data(datasets[app.dataset.value]);
+  stream = new SplitStream(wrapper).data(datasets[app.dataset.value]);
 
   stream.addSplitsAtTimepoints();
 });

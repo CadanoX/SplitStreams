@@ -3,7 +3,7 @@ import VueResize from 'vue-resize';
 import * as d3 from 'd3';
 
 import DataGenerator from './DataGenerator';
-import SecStream from './SecStream';
+import SplitStream from './SplitStream';
 import TransformData from './TransformData';
 
 import {
@@ -325,16 +325,16 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }
   });
 
-  treemap = new SecStream(document.querySelector('#treemap'));
+  treemap = new SplitStream(document.querySelector('#treemap'));
   treemap.proportion = 0;
   treemap.separationXFunction = treemap.marginXFixed;
   treemap.separationXValue = 1;
   treemap.splitRoot = true;
 
-  stream = new SecStream(document.querySelector('#stream'));
+  stream = new SplitStream(document.querySelector('#stream'));
   //stream.showLabels(this.showLabels);
 
-  secstream = new SecStream(document.querySelector('#secstream'));
+  secstream = new SplitStream(document.querySelector('#secstream'));
   secstream.proportion = 1;
   secstream.separationXFunction = secstream.marginXFixed;
   secstream.separationXValue = 1;

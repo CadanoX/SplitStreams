@@ -1,4 +1,4 @@
-import SecStream from './SecStream';
+import SplitStream from './SplitStream';
 import TransformData from './TransformData';
 
 import {
@@ -49,7 +49,7 @@ getData(tests).then(() => {
     let format = data.format;
     data = TransformData[format](data);
 
-    let stream = new SecStream(testResult, {
+    let stream = new SplitStream(testResult, {
       drawStroke: true,
       zoomTimeFactor: 1,
       width: 200,

@@ -1,8 +1,8 @@
-import SecStreamInputData from './SecStreamInputData.js';
+import SplitStreamInputData from './SplitStreamInputData.js';
 
 const TransformData = {
   'viscous': function (data) {
-    let format = new SecStreamInputData();
+    let format = new SplitStreamInputData();
     // add nodes
     for (let id in data.N) {
       let node = data.N[id];
@@ -32,7 +32,7 @@ const TransformData = {
   },
 
   'gumtree': function (data) {
-    let format = new SecStreamInputData();
+    let format = new SplitStreamInputData();
     let idx = 0;
 
     // follow the data format's post-order DFS approach
@@ -84,7 +84,7 @@ const TransformData = {
   },
 
   'titan': function (data) {
-    let format = new SecStreamInputData();
+    let format = new SplitStreamInputData();
     let t = -1;
     let lastDate;
     for (let entry of data) {
@@ -118,7 +118,7 @@ const TransformData = {
   },
 
   'allen': function (data) {
-    let format = new SecStreamInputData(/*{forceFakeRoot: true}*/);
+    let format = new SplitStreamInputData(/*{forceFakeRoot: true}*/);
     let timesteps = {
       '2': 0,
       '3': 1,
@@ -155,7 +155,7 @@ const TransformData = {
   },
 
   'storyline': function (data) {
-    let format = new SecStreamInputData();
+    let format = new SplitStreamInputData();
     const characters = [];
     const locations = [];
     for (let char of data.characters)
@@ -179,7 +179,7 @@ const TransformData = {
   },
 
   'treemap': function (data) {
-    let format = new SecStreamInputData();
+    let format = new SplitStreamInputData();
     for (let entry of data) {
       let id = entry[0];
       let parentId = entry[1];
@@ -187,6 +187,33 @@ const TransformData = {
         if (entry[t] > 0) {
           format.addNode(t, id, entry[t]);
           format.addNode(t, parentId);
+          format.addParent(t, id, parentId);
+        }
+      }
+    }
+    format._buildTimeConnections();
+    format.finalize();
+    return format.data;
+  },
+
+  'MeSH': function (data) {
+    let format = new SplitStreamInputData();
+    for (let t = 0; t < data.length; t++) {
+      console.log("start timestep " + t);
+      for (let entry of data[t]) {
+        let name = entry[0];
+        if (name == "")
+          continue;
+        let id = entry[1];
+
+        // the id looks like 1.12.5.123, where 1 is the parent of 1.12 is the parent of 1.12.5 is the parent of 1.12.5.123
+        let parts = id.split(".");
+        parts.pop(); // remove the last part of the id
+        let parentId = parts.join('.'); // reconnect all parts into the parent's id
+
+        format.addNode(t, id);
+        if (parentId != "") {
+          //format.addNode(t, parentId);
           format.addParent(t, id, parentId);
         }
       }

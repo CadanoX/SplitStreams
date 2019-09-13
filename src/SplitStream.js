@@ -1,13 +1,13 @@
 import * as d3 from 'd3';
 
-import SecStreamFilter from './SecStreamFilter.js';
-import SecStreamData from './SecStreamData.js';
+import SplitStreamFilter from './SplitStreamFilter.js';
+import SplitStreamData from './SplitStreamData.js';
 import '../libs/d3svgfilters/src/d3-svg-filters.js';
 
 import { getRandomColor } from './functions.js';
-import '../css/SecStream.css';
+import '../css/SplitStream.css';
 
-export default class SecStream {
+export default class SplitStream {
   constructor(container, opts = {}) {
     this._opts = {
       animDuration: 1000,
@@ -46,7 +46,7 @@ export default class SecStream {
     this._filters;
     this._datasetsLoaded = 0;
 
-    this._streamData = new SecStreamData();
+    this._streamData = new SplitStreamData();
     this._minTime;
     this._maxTime;
     this._maxValue;
@@ -169,7 +169,7 @@ export default class SecStream {
     this._streamData.splits;
   }
 
-  // expects SecStreamInputData as input
+  // expects SplitStreamInputData as input
   _setData(d) {
     this._datasetsLoaded++;
 
@@ -617,6 +617,6 @@ export default class SecStream {
   //     this.myNewFunction
   // }
   // extend(...args) {
-  //     return SecStream.extend(...args);
+  //     return SplitStream.extend(...args);
   // }
 }

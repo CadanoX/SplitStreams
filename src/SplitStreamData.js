@@ -1,6 +1,6 @@
 import SvgPath from './SvgPath.js';
 
-export default class SecStreamData {
+export default class SplitStreamData {
   // array of streams
   // every stream has a unique ID
   // every stream contains references to all nodes which belong to that stream
@@ -183,7 +183,7 @@ export default class SecStreamData {
   }
 
   _findClosestNode(stream, x) {
-    let traverseTime = function(node) {
+    let traverseTime = function (node) {
       let distance = Math.abs(node.x - x);
       if (distance < minDistance) {
         minDistance = distance;

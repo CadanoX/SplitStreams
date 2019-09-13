@@ -1,5 +1,5 @@
 # SplitStreams
-**SecStreams** is a JavaScript library, that allows for the visualization of hierarchically structured data over time. Visualization types include:
+**SplitStreams** is a JavaScript library, that allows for the visualization of hierarchically structured data over time. Visualization types include:
 - Streamgraphs
 - one-dimensional treemaps
 - Nested Tracking Graphs (Nested Streamgraphs)
@@ -15,10 +15,10 @@ generators.html allows for the creation of random datasets (but is still buggy)
 To run the demo in this repository, use `npm install` and start a development server via `npm run dev`.
 To utilize the library in your own project, load the library and create a stream by providing it with a div and data to render.
 
-```import SecStream from './SecStream';
+```import SplitStream from './SplitStream';
 let div = document.createElement("div");
 document.body.appendChild(div);
-let stream = new SecStream(div);
+let stream = new SplitStream(div);
 stream.data(myJson);```
 
 Our input data format looks like the following:
@@ -45,8 +45,8 @@ If your data format already looks like the previous example, you can use it like
 In case your data is using a different format, we provide convenience functions to transform your data:
 
 ```
-import SecStreamInputData from './SecStreamInputData.js';
-let format = new SecStreamInputData();
+import SplitStreamInputData from './SplitStreamInputData.js';
+let format = new SplitStreamInputData();
 for (every node of the data)
   for (every timestep the node is active in)
       format.addNode(timestep, id, weight);

@@ -1,4 +1,4 @@
-export default class SecStreamInputData {
+export default class SplitStreamInputData {
   constructor(options = {}) {
     this._opts = {
       forceFakeRoot: false,

@@ -1,5 +1,5 @@
-export default class SecStreamFilter {
-  // expects SecStreamInputData.data as input
+export default class SplitStreamFilter {
+  // expects SplitStreamInputData.data as input
   constructor(inputData, options = {}) {
     this._opts = {
       ...options // overwrite default settings with user settings
@@ -30,5 +30,5 @@ export default class SecStreamFilter {
     }
   }
 
-  select(nodeId) {}
+  select(nodeId) { }
 }

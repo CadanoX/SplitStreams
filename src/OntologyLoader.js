@@ -1,10 +1,10 @@
 import N3 from 'n3';
-import SecStreamInputData from '../src/SecStreamInputData';
+import SplitStreamInputData from '../src/SplitStreamInputData';
 
 export default class OntologyLoader {
   constructor() {
     this._stores = [];
-    this._data = new SecStreamInputData();
+    this._data = new SplitStreamInputData();
   }
 
   get data() {

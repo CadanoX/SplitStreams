@@ -268,7 +268,7 @@ export default class DataGenerator {
     }
 
     // set depth values for each node
-    let traverse = function(node) {
+    let traverse = function (node) {
       for (let child of EN[0][node]) {
         N[child].l++;
         traverse(child);
@@ -469,8 +469,8 @@ export default class DataGenerator {
       if (typeof nodeToMove == 'undefined') {
         console.log(
           'Move Along: Not enough streams to move along. (Moved ' +
-            numMoved +
-            ')'
+          numMoved +
+          ')'
         );
         break;
       }
@@ -625,7 +625,7 @@ export default class DataGenerator {
         // choose random node of the parents stream (because every stream can only be deleted at one point)
         let randomNodeOfParentStream =
           streamNodesOfParent[
-            Math.round(Math.random() * (streamNodesOfParent.length - 1))
+          Math.round(Math.random() * (streamNodesOfParent.length - 1))
           ];
         // add this random node of the stream to our random array at a random position
         remainingNodes.splice(
@@ -701,7 +701,7 @@ export default class DataGenerator {
         // merge
         let mergeNode =
           possibleMerges[
-            Math.round(Math.random() * (possibleMerges.length - 1))
+          Math.round(Math.random() * (possibleMerges.length - 1))
           ];
         // set node's next node to merge node
         ET[N[node].streamId][node] = [mergeNode];
@@ -712,7 +712,7 @@ export default class DataGenerator {
     }
   }
 
-  _genSplits() {}
+  _genSplits() { }
 
   _applyWeights() {
     let { minValue, maxValue } = this._opts;
