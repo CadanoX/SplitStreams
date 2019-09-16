@@ -64,3 +64,20 @@ Several examples of how different data can be converted to our format, are demon
 `format._buildTimeConnections()` connects the nodes of continuous timesteps, if they have the same ID. If IDs are not consistent along timesteps, or when the data includes splits (from one node into multiple nodes), or merges (from multiple nodes into one), we need to utilize the function `format.addNext(timestep, id, nextId)`.
 
 
+# stream.data(d)
+
+Sets the input data. The data needs to be conform with the SecStreamInputData format.
+If d is null, returns the current data.
+
+# stream.filters(d)
+
+Takes an array of SVG filters as defined in /libs/d3svgfilters. Currently supported options are
+```
+[
+  { type: 'double-inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
+  { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0 }
+]
+```
+
+
+

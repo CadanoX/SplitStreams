@@ -1,11 +1,12 @@
-import * as d3 from 'd3';
+import * as d3 from "d3";
+import "../libs/d3svgfilters/src/d3-svg-filters.js";
 
-import SplitStreamFilter from './SplitStreamFilter.js';
-import SplitStreamData from './SplitStreamData.js';
-import '../libs/d3svgfilters/src/d3-svg-filters.js';
+import SplitStreamInputData from "./SplitStreamInputData.js";
+import SplitStreamFilter from "./SplitStreamFilter.js";
+import SplitStreamData from "./SplitStreamData.js";
 
-import { getRandomColor } from './functions.js';
-import '../css/SplitStream.css';
+import { getRandomColor } from "./functions.js";
+import "../css/SplitStream.css";
 
 export default class SplitStream {
   constructor(container, opts = {}) {
@@ -29,9 +30,9 @@ export default class SplitStream {
       showLabels: false,
       mirror: false,
       splitRoot: false,
-      shapeRendering: 'geometricPrecision',
-      offset: 'silhouette', // zero, expand, silhouette,
-      filterMode: 'fast',
+      shapeRendering: "geometricPrecision",
+      offset: "silhouette", // zero, expand, silhouette,
+      filterMode: "fast",
 
       ...opts // overwrite default settings with user settings
     };
@@ -62,7 +63,7 @@ export default class SplitStream {
     this._init();
   }
 
-  static get a() { }
+  static get a() {}
 
   data(d) {
     return d == null ? this._data : (this._setData(d), this);
@@ -129,8 +130,8 @@ export default class SplitStream {
   }
   set filterMode(mode) {
     if (mode != this._opts.filterMode) {
-      d3.selectAll('.depthLayer').clearFilter();
-      d3.selectAll('path.stream').clearFilter();
+      d3.selectAll(".depthLayer").clearFilter();
+      d3.selectAll("path.stream").clearFilter();
     }
     this._opts.filterMode = mode;
     this._applyFilters();
@@ -171,17 +172,18 @@ export default class SplitStream {
 
   // expects SplitStreamInputData as input
   _setData(d) {
-    this._datasetsLoaded++;
+    if (!(d instanceof SplitStreamInputData || d instanceof SplitStreamFilter))
+      console.error(
+        "Added data is not an instance of SplitStreamData or SplitStreamFilter"
+      );
 
-    if (!d || typeof d !== 'object')
-      return console.log(`ERROR: Added data "${d}" is not an object.`);
-    this._data = d;
+    this._datasetsLoaded++;
+    this._data = d.data;
     this._normalizeData();
-    this.update(); // TODO: for some reason, streams won't include any data if update is not called twice. that's why we call it here
   }
 
   _setFilters(d) {
-    if (!d || typeof d !== 'object')
+    if (!d || typeof d !== "object")
       return console.log(`ERROR: Added data "${d}" is not an object.`);
     this._filters = d;
     this._applyFilters();
@@ -191,14 +193,14 @@ export default class SplitStream {
     const { margin } = this._opts;
     this._svg = d3
       .select(this._container)
-      .append('svg')
-      .classed('secstream', 'true')
-      .attr('height', this._container.clientHeight)
-      .attr('width', this._container.clientWidth)
+      .append("svg")
+      .classed("secstream", "true")
+      .attr("height", this._container.clientHeight)
+      .attr("width", this._container.clientWidth)
       .call(
-        d3.zoom().on('zoom', () => {
-          this._pathContainer.attr('transform', d3.event.transform);
-          this._textContainer.attr('transform', d3.event.transform);
+        d3.zoom().on("zoom", () => {
+          this._pathContainer.attr("transform", d3.event.transform);
+          this._textContainer.attr("transform", d3.event.transform);
         })
       );
     //.on("contextmenu", () => d3.event.preventDefault());
@@ -206,9 +208,9 @@ export default class SplitStream {
     //	.attr('id', 'svg-drawn')
     //.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
-    this._svgFilters = this._svg.append('defs');
-    this._pathContainer = this._svg.append('g').classed('pathContainer', true);
-    this._textContainer = this._svg.append('g').classed('textContainer', true);
+    this._svgFilters = this._svg.append("defs");
+    this._pathContainer = this._svg.append("g").classed("pathContainer", true);
+    this._textContainer = this._svg.append("g").classed("textContainer", true);
   }
 
   _applyOrdering() {
@@ -235,7 +237,7 @@ export default class SplitStream {
         let id;
         do {
           count++;
-          id = node.id + '_' + count;
+          id = node.id + "_" + count;
         } while (!!this._indices[id]);
         // console.log(`ID '${node.id}' is already in use. Use '${id}' instead.`);
         // ID is now in use
@@ -274,8 +276,8 @@ export default class SplitStream {
       if (
         this._opts.unifySize ||
         this._opts.unifyPosition ||
-        Number.isNaN(node.dataPos) ||
-        (!!node.parent && node.parent.id == 'fakeRoot')
+        !node.dataPos ||
+        (!!node.parent && node.parent.id == "fakeRoot")
       )
         node.pos = pos;
       else node.pos = node.dataPos;
@@ -326,13 +328,13 @@ export default class SplitStream {
     let { height, width, margin, minSizeThreshold, offset } = this._opts;
 
     let setOffset = root => {
-      if (offset == 'zero') {
+      if (offset == "zero") {
         root.y0 = 0;
         root.y1 = root.size / this._maxValue;
-      } else if (offset == 'expand') {
+      } else if (offset == "expand") {
         root.y0 = 0;
         root.y1 = 1;
-      } else if (offset == 'silhouette') {
+      } else if (offset == "silhouette") {
         root.y0 = 0.5 - (0.5 * root.size) / this._maxValue;
         root.y1 = 0.5 + (0.5 * root.size) / this._maxValue;
       }
@@ -417,50 +419,50 @@ export default class SplitStream {
       .entries(this._streamData.streams);
 
     let depthLayers = this._pathContainer
-      .selectAll('g.depthLayer > g.clipLayer')
+      .selectAll("g.depthLayer > g.clipLayer")
       .data(streamsByDepth, d => this._name + this._datasetsLoaded + d.key)
       .join(enter =>
         enter
-          .append('g')
-          .classed('depthLayer', true)
-          .each(function (d) {
-            this.classList.add('depth-' + d.key);
+          .append("g")
+          .classed("depthLayer", true)
+          .each(function(d) {
+            this.classList.add("depth-" + d.key);
           })
-          .append('g')
-          .classed('clipLayer', true)
+          .append("g")
+          .classed("clipLayer", true)
       );
 
     // .attr('clip-path', d => 'url(#clip' + d.key + 'wrapper)');
 
     depthLayers
-      .selectAll('path.stream')
+      .selectAll("path.stream")
       .data(d => d.values, d => this._name + this._datasetsLoaded + d.id)
       .join(enter =>
         enter
-          .append('path')
-          .classed('stream', true)
-          .on('mouseover', onMouseOver)
-          .on('mouseout', onMouseOut)
-          .attr('clip-path', d => 'url(#clip' + d.id + this._name + ')')
-          .attr('id', d => 'stream' + d.id + this._name)
+          .append("path")
+          .classed("stream", true)
+          .on("mouseover", onMouseOver)
+          .on("mouseout", onMouseOut)
+          .attr("clip-path", d => "url(#clip" + d.id + this._name + ")")
+          .attr("id", d => "stream" + d.id + this._name)
           //.attr('stroke-width', 3)
-          .attr('paint-order', 'stroke')
+          .attr("paint-order", "stroke")
       )
-      .attr('d', d => d.path)
-      .attr('shape-rendering', this._opts.shapeRendering)
+      .attr("d", d => d.path)
+      .attr("shape-rendering", this._opts.shapeRendering)
       .style(
-        'fill',
+        "fill",
         d => (!!d.data ? d.data.color : null) || color(d.deepestDepth)
         // remove empty streams (they do not include a single bezier curve)
       )
-      .filter(d => d.path.indexOf('C') == -1)
+      .filter(d => d.path.indexOf("C") == -1)
       .remove();
 
     this.showLabels(this._opts.showLabels);
     this.drawStroke(this._opts.drawStroke);
 
     let splitData = this._svgFilters
-      .selectAll('clipPath')
+      .selectAll("clipPath")
       .data(
         this._streamData.clipPaths,
         d => this._name + this._datasetsLoaded + d.id
@@ -468,8 +470,8 @@ export default class SplitStream {
 
     splitData
       .enter()
-      .append('clipPath')
-      .attr('id', d => 'clip' + d.id + this._name)
+      .append("clipPath")
+      .attr("id", d => "clip" + d.id + this._name)
       .merge(splitData)
       .html(d => '<path d="' + d.path + '">');
 
@@ -481,25 +483,25 @@ export default class SplitStream {
     let labelData = this._opts.showLabels ? this._streamData.streams : [];
 
     let labels = this._textContainer
-      .selectAll('text')
+      .selectAll("text")
       .data(labelData, d => d.id);
 
     labels
       .enter()
-      .append('text')
+      .append("text")
       .text(d => (!!d.data ? d.data.typeLabel : d.id))
       .merge(labels)
-      .attr('x', d => d.textPos.x)
-      .attr('y', d => d.textPos.y);
+      .attr("x", d => d.textPos.x)
+      .attr("y", d => d.textPos.y);
 
     labels.exit().remove();
   }
 
   drawStroke(draw = true) {
     this._opts.drawStroke = draw;
-    let color = this._opts.drawStroke ? 'black' : null;
-    this._pathContainer.attr('stroke', color);
-    this._pathContainer.attr('stroke-width', 3);
+    let color = this._opts.drawStroke ? "black" : null;
+    this._pathContainer.attr("stroke", color);
+    this._pathContainer.attr("stroke-width", 3);
     // d3.selectAll('path').attr('stroke-width', 0.001)
   }
 
@@ -507,16 +509,16 @@ export default class SplitStream {
     let filters = [];
     for (let filter of this._filters)
       filters.push(filter.type, {
-        color: 'black',
+        color: "black",
         dx: filter.dx,
         dy: filter.dy,
         blur: filter.stdDeviation
       });
 
-    if (this._opts.filterMode == 'fast')
-      d3.selectAll('.depthLayer').svgFilter(...filters);
-    else if (this._opts.filterMode == 'accurate')
-      d3.selectAll('path.stream').svgFilter(...filters);
+    if (this._opts.filterMode == "fast")
+      d3.selectAll(".depthLayer").svgFilter(...filters);
+    else if (this._opts.filterMode == "accurate")
+      d3.selectAll("path.stream").svgFilter(...filters);
   }
 
   update() {
@@ -527,7 +529,7 @@ export default class SplitStream {
 
     if (!this._opts.automaticUpdate) if (!manuallyTriggered) return;
 
-    console.log('update');
+    console.log("update");
 
     this._normalizeData();
     this._applyOrdering();
@@ -544,7 +546,7 @@ export default class SplitStream {
   ) {
     this._opts.width = width;
     this._opts.height = height;
-    this._svg.attr('width', width).attr('height', height);
+    this._svg.attr("width", width).attr("height", height);
 
     this._update();
   }

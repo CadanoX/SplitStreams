@@ -31,9 +31,10 @@ export default class SplitStreamInputData {
         data
       };
     } else
-      console.log(
+      console
+        .log
         // `Warning AddNode: Node ${id} at timestep ${t} exists already.`
-      );
+        ();
   }
 
   addParent(t, id, pId) {
@@ -65,9 +66,9 @@ export default class SplitStreamInputData {
       return;
     }
     let nextNode = this._timesteps[+t + 1].references[nextId];
-    if (!nextNode)
-      ;// console.log(`Error 'addNext': Next node  '${nextId}' does not exist.`);
+    if (!nextNode);
     else {
+      // console.log(`Error 'addNext': Next node  '${nextId}' does not exist.`);
       if (!node.next) node.next = [];
       node.next.push(nextNode);
       if (!nextNode.prev) nextNode.prev = [];
@@ -78,8 +79,9 @@ export default class SplitStreamInputData {
   finalize() {
     this._checkParents();
 
-    this.__forEachNodeDepthFirst(node => {
+    this.__forEachNodeDepthFirst((node, depth) => {
       this._setSizeAndAggregate(node);
+      node.depth = depth;
       this._checkSize(node);
       this._checkPositions(node);
     });
@@ -111,14 +113,14 @@ export default class SplitStreamInputData {
     if (fakeRootNeeded || this._opts.forceFakeRoot) {
       let prevT;
       for (let t in nodesWithoutParents) {
-        this.addNode(t, 'fakeRoot');
+        this.addNode(t, "fakeRoot");
         nodesWithoutParents[t].forEach(node => {
-          this.addParent(t, node.id, 'fakeRoot');
-          this._timesteps[t].tree = this._timesteps[t].references['fakeRoot'];
+          this.addParent(t, node.id, "fakeRoot");
+          this._timesteps[t].tree = this._timesteps[t].references["fakeRoot"];
         });
         // connect fake roots
         if (!!prevT) {
-          this.addNext(prevT, 'fakeRoot', 'fakeRoot');
+          this.addNext(prevT, "fakeRoot", "fakeRoot");
         }
         prevT = t;
       }
@@ -165,12 +167,13 @@ export default class SplitStreamInputData {
   }
 
   __forEachNodeDepthFirst(callback) {
-    let traverse = function (node) {
-      if (!!node.children) node.children.forEach(traverse);
-      callback(node);
+    let traverse = function(node, depth) {
+      if (!!node.children)
+        node.children.forEach(child => traverse(child, depth + 1));
+      callback(node, depth);
     };
 
-    for (let t in this._timesteps) traverse(this._timesteps[t].tree);
+    for (let t in this._timesteps) traverse(this._timesteps[t].tree, 0);
   }
 
   _createTimestep(t) {

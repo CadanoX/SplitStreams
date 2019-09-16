@@ -28,6 +28,24 @@
         </select>
       </div>
       <div>
+        <input type="checkbox" id="limitDepth" v-model="limitDepth">
+        <label for="limitDepth">limit depth</label>
+        <div v-if="limitDepth">
+        <br>
+        <input type="range" v-model="depthLimit" step="1" min="1" max="7" />
+        <label for="depthLimit">{{ depthLimit }}</label>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="selectBranch" v-model="selectBranch">
+        <label for="selectBranch">select branch</label>
+        <div v-if="selectBranch">
+          <br>
+          <input type="range" v-model="branchSelected" step="1" min="1" max="7" />
+          <label for="branchSelected">{{ branchSelected }}</label>
+        </div>
+      </div>
+      <div>
         <input type="checkbox" id="unifySize" v-model="unifySize" :disabled="disableNormSizeButton">
         <label for="unifySize">normalize size</label>
       </div>

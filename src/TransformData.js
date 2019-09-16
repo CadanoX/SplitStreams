@@ -1,7 +1,7 @@
-import SplitStreamInputData from './SplitStreamInputData.js';
+import SplitStreamInputData from "./SplitStreamInputData.js";
 
 const TransformData = {
-  'viscous': function (data) {
+  viscous: function(data) {
     let format = new SplitStreamInputData();
     // add nodes
     for (let id in data.N) {
@@ -28,10 +28,10 @@ const TransformData = {
     }
 
     format.finalize();
-    return format.data;
+    return format;
   },
 
-  'gumtree': function (data) {
+  gumtree: function(data) {
     let format = new SplitStreamInputData();
     let idx = 0;
 
@@ -80,33 +80,33 @@ const TransformData = {
     }
 
     format.finalize();
-    return format.data;
+    return format;
   },
 
-  'titan': function (data) {
+  titan: function(data) {
     let format = new SplitStreamInputData();
     let t = -1;
     let lastDate;
     for (let entry of data) {
       // when timestamp changes, create a new timestep
-      if (entry['observation_time'] != lastDate) {
-        lastDate = entry['observation_time'];
+      if (entry["observation_time"] != lastDate) {
+        lastDate = entry["observation_time"];
         t++;
       }
-      format.addNode(t, entry.id, +entry['cell_volume (km3)']);
+      format.addNode(t, entry.id, +entry["cell_volume (km3)"]);
     }
 
     t = -1;
     for (let entry of data) {
-      if (entry['observation_time'] != lastDate) {
-        lastDate = entry['observation_time'];
+      if (entry["observation_time"] != lastDate) {
+        lastDate = entry["observation_time"];
         t++;
       }
-      let children = entry['IDs of children '];
+      let children = entry["IDs of children "];
       if (!!children) {
-        if (typeof children == 'string') {
-          let next = children.split(', ');
-          if (next[0] != '')
+        if (typeof children == "string") {
+          let next = children.split(", ");
+          if (next[0] != "")
             next.forEach(nextId => format.addNext(t, entry.id, nextId));
         } // single ID as number
         else format.addNext(t, entry.id, children);
@@ -114,18 +114,18 @@ const TransformData = {
     }
 
     format.finalize();
-    return format.data;
+    return format;
   },
 
-  'allen': function (data) {
+  allen: function(data) {
     let format = new SplitStreamInputData(/*{forceFakeRoot: true}*/);
     let timesteps = {
-      '2': 0,
-      '3': 1,
-      '5': 2,
-      '6': 3,
-      '7': 4,
-      '8': 5
+      "2": 0,
+      "3": 1,
+      "5": 2,
+      "6": 3,
+      "7": 4,
+      "8": 5
     };
     let time = t => timesteps[t];
 
@@ -151,17 +151,17 @@ const TransformData = {
 
     format._buildTimeConnections();
     format.finalize();
-    return format.data;
+    return format;
   },
 
-  'storyline': function (data) {
+  storyline: function(data) {
     let format = new SplitStreamInputData();
     const characters = [];
     const locations = [];
     for (let char of data.characters)
-      characters[char.id] = char.name.replace(/\s+/g, '');
+      characters[char.id] = char.name.replace(/\s+/g, "");
     for (let loc of data.locations)
-      locations[loc.id] = loc.name.replace(/\s+/g, '');
+      locations[loc.id] = loc.name.replace(/\s+/g, "");
 
     for (let session of data.sessions) {
       for (let t = session.start; t < session.end; t++) {
@@ -175,10 +175,10 @@ const TransformData = {
 
     format._buildTimeConnections();
     format.finalize();
-    return format.data;
+    return format;
   },
 
-  'treemap': function (data) {
+  treemap: function(data) {
     let format = new SplitStreamInputData();
     for (let entry of data) {
       let id = entry[0];
@@ -193,23 +193,22 @@ const TransformData = {
     }
     format._buildTimeConnections();
     format.finalize();
-    return format.data;
+    return format;
   },
 
-  'MeSH': function (data) {
+  MeSH: function(data) {
     let format = new SplitStreamInputData();
     for (let t = 0; t < data.length; t++) {
       console.log("start timestep " + t);
       for (let entry of data[t]) {
         let name = entry[0];
-        if (name == "")
-          continue;
+        if (name == "") continue;
         let id = entry[1];
 
         // the id looks like 1.12.5.123, where 1 is the parent of 1.12 is the parent of 1.12.5 is the parent of 1.12.5.123
         let parts = id.split(".");
         parts.pop(); // remove the last part of the id
-        let parentId = parts.join('.'); // reconnect all parts into the parent's id
+        let parentId = parts.join("."); // reconnect all parts into the parent's id
 
         format.addNode(t, id);
         if (parentId != "") {
@@ -220,8 +219,8 @@ const TransformData = {
     }
     format._buildTimeConnections();
     format.finalize();
-    return format.data;
+    return format;
   }
-}
+};
 
 export default TransformData;
