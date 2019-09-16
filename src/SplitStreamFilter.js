@@ -45,6 +45,7 @@ export default class SplitStreamFilter {
   }
 
   branch(branchNr) {
+    branchNr = +branchNr;
     // this._reset();
     for (let time of this._filteredData.timesteps) {
       if (!!time) {
@@ -59,5 +60,5 @@ export default class SplitStreamFilter {
     return this;
   }
 
-  select(nodeId) {}
+  select(nodeId) { }
 }

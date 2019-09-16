@@ -41,10 +41,10 @@ const meshList = [
   // "mtrees2007.bin",
   // "mtrees2008.bin",
   // "mtrees2009.bin",
-  // "mtrees2010.bin",
-  // "mtrees2011.bin",
-  // "mtrees2012.bin",
-  // "mtrees2013.bin",
+  "mtrees2010.bin",
+  "mtrees2011.bin",
+  "mtrees2012.bin",
+  "mtrees2013.bin",
   "mtrees2014.bin",
   "mtrees2015.bin",
   "mtrees2016.bin",
@@ -111,7 +111,7 @@ async function loadDataset(name) {
   return true;
 }
 
-document.addEventListener("DOMContentLoaded", async function(event) {
+document.addEventListener("DOMContentLoaded", async function (event) {
   let app = new Vue({
     el: "#app",
     data: {
@@ -234,12 +234,12 @@ document.addEventListener("DOMContentLoaded", async function(event) {
       }
     },
     methods: {
-      randomizeSplits: function() {
+      randomizeSplits: function () {
         stream.removeSplits();
         stream.addSplitsRandomly(10);
         this.randomSplits = stream.splits;
       },
-      applySplits: function(option) {
+      applySplits: function (option) {
         if (option == "at") {
           stream.removeSplits();
           stream.addSplitsAtTimepoints();
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", async function(event) {
       wrapperResize(...args) {
         stream.resize();
       },
-      download: function() {
+      download: function () {
         saveSvg(document.querySelector("svg"), "secstream");
         saveJson(generator.get(), "data");
       },
@@ -348,19 +348,19 @@ document.addEventListener("DOMContentLoaded", async function(event) {
         stream.splitRoot = this.splitRoot;
       },
       filters: {
-        handler: function(filters) {
+        handler: function (filters) {
           stream.filters(this.filters);
         },
         deep: true
       },
       filterMode: {
-        handler: function() {
+        handler: function () {
           stream.filterMode = this.filterMode.value;
         },
         deep: true
       },
       startEndEncoding: {
-        handler: function(encoding) {
+        handler: function (encoding) {
           stream.startEndEncoding = encoding.value;
           stream.startEndEncodingX = encoding.x;
           stream.startEndEncodingY = encoding.y;
@@ -368,7 +368,7 @@ document.addEventListener("DOMContentLoaded", async function(event) {
         deep: true
       },
       dataset: {
-        handler: function(dataset) {
+        handler: function (dataset) {
           loadDataset(dataset.value).then(loaded => {
             if (loaded) this.render();
             removeLoadingSpinner(wrapper);
@@ -377,19 +377,19 @@ document.addEventListener("DOMContentLoaded", async function(event) {
         deep: true
       },
       shapeRendering: {
-        handler: function(shapeRendering) {
+        handler: function (shapeRendering) {
           stream.shapeRendering = shapeRendering.value;
         },
         deep: true
       },
       offset: {
-        handler: function(offset) {
+        handler: function (offset) {
           stream.offset = offset.value;
         },
         deep: true
       },
       color: {
-        handler: function(color) {
+        handler: function (color) {
           stream.colorRandom = false;
           switch (color.value) {
             case "random":
@@ -503,7 +503,7 @@ document.addEventListener("DOMContentLoaded", async function(event) {
         },
         deep: true
       },
-      split: function(option) {
+      split: function (option) {
         this.applySplits(option);
       }
     }
