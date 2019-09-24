@@ -1,0 +1,354 @@
+REPLACED MEDICAL SUBJECT HEADINGS WITH REPLACED-BY HEADINGS - 2003
+
+# = DELETED RECORD
+
+1. TOTAL REPLACED HEADINGS =     93
+2. TOTAL DELETED  HEADINGS =     20
+                            -------
+3. TOTAL(1.+2.) =               113
+
+
+[P] = new status is printed entry term
+[N] = new status is entry term, non-print
+[C] = new status is Supplementary Concept Record
+ [] = old term does not exist in new MeSH
+
+
+MH OLD = Actinobacteria Group # []
+MH NEW = Actinobacteria
+
+MH OLD = Adenine Nucleotide Translocase [P]
+MH NEW = Mitochondrial ADP, ATP Translocases
+
+MH OLD = Adnexitis [P]
+MH NEW = Pelvic Inflammatory Disease
+
+MH OLD = Adolescence [P]
+MH NEW = Adolescent
+
+MH OLD = 17 alpha-Hydroxyprogesterone Aldolase # [N]
+MH NEW = Steroid 17-alpha-Hydroxylase
+
+MH OLD = Anise [P]
+MH NEW = Pimpinella
+
+MH OLD = Asparagus []
+MH NEW = Asparagus Plant
+
+MH OLD = Barley [P]
+MH NEW = Hordeum
+
+MH OLD = Barnacles [P]
+MH NEW = Thoracica
+
+MH OLD = Basil [P]
+MH NEW = Ocimum basilicum
+
+MH OLD = Behcet's Syndrome [P]
+MH NEW = Behcet Syndrome
+
+MH OLD = Belladonna [P]
+MH NEW = Atropa belladonna
+
+MH OLD = Carrots [P]
+MH NEW = Daucus carota
+
+MH OLD = Cassava [P]
+MH NEW = Manihot
+
+MH OLD = Cephalosporanic Acids # [N]
+MH NEW = Cephalosporins
+
+MH OLD = Cholesterol 7 alpha-Monooxygenase []
+MH NEW = Cholesterol 7-alpha-Hydroxylase
+
+MH OLD = Cholesterol Monooxygenase (Side-Chain-Cleaving) [P]
+MH NEW = Cholesterol Side-Chain Cleavage Enzyme
+
+MH OLD = Ciguatoxin [P]
+MH NEW = Ciguatoxins
+
+MH OLD = Coconut [P]
+MH NEW = Cocos
+
+MH OLD = Complement 4-Binding Protein []
+MH NEW = Integrin alphaXbeta2
+
+MH OLD = Corn [P]
+MH NEW = Zea mays
+
+MH OLD = Corpus Luteum Regression [P]
+MH NEW = Luteolysis
+
+MH OLD = Cotton []
+MH NEW = Gossypium
+
+MH OLD = Cowdria [P]
+MH NEW = Ehrlichia ruminantium
+
+MH OLD = Crabs []
+MH NEW = Brachyura
+
+MH OLD = Crayfish [P]
+MH NEW = Astacoidea
+
+MH OLD = Cruciferae [P]
+MH NEW = Brassicaceae
+
+MH OLD = Cytochrome P-450 [P]
+MH NEW = Cytochrome P-450 Enzyme System
+
+MH OLD = Cytochrome P-450 CYP11B2 [P]
+MH NEW = Aldosterone Synthase
+
+MH OLD = Deafness, Sudden [P]
+MH NEW = Hearing Loss, Sudden
+
+MH OLD = Delivery # [P]
+MH NEW = Delivery, Obstetric
+
+MH OLD = DNA-Directed RNA Polymerase [N]
+MH NEW = DNA-Directed RNA Polymerases
+
+MH OLD = Dracunculus []
+MH NEW = Dracunculus Nematode
+
+MH OLD = Ehrlichieae # [P]
+MH NEW = Anaplasmataceae
+
+MH OLD = eIF-1 []
+MH NEW = Eukaryotic Initiation Factor-1
+
+MH OLD = eIF-2 []
+MH NEW = Eukaryotic Initiation Factor-2
+
+MH OLD = EIF-2B [P]
+MH NEW = Eukaryotic Initiation Factor-2B
+
+MH OLD = Electronic Journals [Publication Type] # []
+MH NEW = [No replaced-by heading]
+
+MH OLD = Fetal Development [P]
+MH NEW = Embryo and Fetal Development
+
+MH OLD = Feverfew [P]
+MH NEW = Tanacetum parthenium
+
+MH OLD = FMN [P]
+MH NEW = Flavin Mononucleotide
+
+MH OLD = Fractionation [P]
+MH NEW = Chemical Fractionation
+
+MH OLD = Gene, sry [P]
+MH NEW = Genes, sry
+
+MH OLD = Genetics, Biochemical # [N]
+MH NEW = Molecular Biology
+
+MH OLD = Gentian [P]
+MH NEW = Gentiana
+
+MH OLD = Gonadotropins, Chorionic []
+MH NEW = Chorionic Gonadotropin
+
+MH OLD = Halobacterium salinarium []
+MH NEW = Halobacterium salinarum
+
+MH OLD = Hearing Loss, Partial # []
+MH NEW = Hearing Loss
+
+MH OLD = Hemorrhagic Bacteremia [P]
+MH NEW = Hemorrhagic Septicemia
+
+MH OLD = Hepatitis Agents, GB # []
+MH NEW = Flaviviridae
+
+MH OLD = Histone Deacetylase [N]
+MH NEW = Histone Deacetylases
+
+MH OLD = HTLV-BLV Antibodies [P]
+MH NEW = Deltaretrovirus Antibodies
+
+MH OLD = HTLV-BLV Antigens [P]
+MH NEW = Deltaretrovirus Antigens
+
+MH OLD = Hybridization []
+MH NEW = Hybridization, Genetic
+
+MH OLD = 25-Hydroxycholecalciferol 1-Hydroxylase [P]
+MH NEW = 25-Hydroxyvitamin D3 1-alpha-Hydroxylase
+
+MH OLD = Hydroxylases [P]
+MH NEW = Mixed Function Oxygenases
+
+MH OLD = Jellyfish # []
+MH NEW = Scyphozoa
+
+MH OLD = Labor [P]
+MH NEW = Labor, Obstetric
+
+MH OLD = Lawsonia []
+MH NEW = Lawsonia Bacteria
+
+MH OLD = Lectins # [P]
+MH NEW = Lectins
+
+MH OLD = Leptospira canicola # []
+MH NEW = Leptospira Interrogans serovar canicola
+
+MH OLD = LH []
+MH NEW = Luteinizing Hormone
+
+MH OLD = Lobsters []
+MH NEW = Nephropidae
+
+MH OLD = Lutein Cells [P]
+MH NEW = Luteal Cells
+
+MH OLD = Lymphocyte Transformation [P]
+MH NEW = Lymphocyte Activation
+
+MH OLD = Millet [P]
+MH NEW = Panicum
+
+MH OLD = Mixed Function Oxidases # [N]
+MH NEW = Mixed Function Oxygenases
+
+MH OLD = NAD(P)(+)-Arginine ADP-Ribosyltransferase # [P]
+MH NEW = ADP Ribose Transferases
+
+MH OLD = NAD+ ADP-Ribosyltransferase [P]
+MH NEW = Poly(ADP-ribose) Polymerases
+
+MH OLD = Nerve Tissue Protein S 100 [P]
+MH NEW = S100 Proteins
+
+MH OLD = Neurokinin K []
+MH NEW = Neurokinin B
+
+MH OLD = Nocardioform Group # []
+MH NEW = Actinomycetales
+
+MH OLD = Nucleosidases [P]
+MH NEW = N-glycosyl Hydrolases
+
+MH OLD = Oats [P]
+MH NEW = Avena sativa
+
+MH OLD = Ovum Implantation [P]
+MH NEW = Embryo Implantation
+
+MH OLD = Ovum Implantation, Delayed [P]
+MH NEW = Embryo Implantation, Delayed
+
+MH OLD = Pasteurella haemolytica [P]
+MH NEW = Mannheimia haemolytica
+
+MH OLD = Perineuronal Satellite Cells [P]
+MH NEW = Satellite Cells, Perineuronal
+
+MH OLD = Pertussis Toxins []
+MH NEW = Virulence Factors, Bordetella
+
+MH OLD = Pineal Body [P]
+MH NEW = Pineal Gland
+
+MH OLD = Polygenic Inheritance [P]
+MH NEW = Multifactorial Inheritance
+
+MH OLD = Puumala Virus []
+MH NEW = Puumala virus
+
+MH OLD = Pyrethrum [P]
+MH NEW = Chrysanthemum cinerariifolium
+
+MH OLD = Quantitative Trait []
+MH NEW = Quantitative Trait, Heritable
+
+MH OLD = Radical Neck Dissection # [P]
+MH NEW = Neck Dissection
+
+MH OLD = Recall [P]
+MH NEW = Mental Recall
+
+MH OLD = Resins []
+MH NEW = Resins, Plant
+
+MH OLD = Ribosomal Protein S6 Kinase [N]
+MH NEW = Ribosomal Protein S6 Kinases
+
+MH OLD = Rice [P]
+MH NEW = Oryza sativa
+
+MH OLD = Rye [P]
+MH NEW = Secale cereale
+
+MH OLD = Salmonella hirschfeldii [P]
+MH NEW = Salmonella paratyphi C
+
+MH OLD = Salmonella schottmuelleri [P]
+MH NEW = Salmonella paratyphi B
+
+MH OLD = Sarcoma, Mast-Cell [P]
+MH NEW = Mast-Cell Sarcoma
+
+MH OLD = Senna []
+MH NEW = Senna Plant
+
+MH OLD = Setaria []
+MH NEW = Setaria Nematode
+
+MH OLD = Shrimp # []
+MH NEW = Decapoda (Crustacea)
+
+MH OLD = Somatotropin [P]
+MH NEW = Growth Hormone
+
+MH OLD = Somatotropins, Recombinant # [N]
+MH NEW = Growth Hormone
+
+MH OLD = Somatrem # []
+MH NEW = Human Growth Hormone
+
+MH OLD = Somatropin [N]
+MH NEW = Human Growth Hormone
+
+MH OLD = Steroid 11 beta-Monooxygenase []
+MH NEW = Steroid 11-beta-Hydroxylase
+
+MH OLD = Steroid 12-Monooxygenase [P]
+MH NEW = Steroid 12-alpha-Hydroxylase
+
+MH OLD = Steroid 17 alpha-Monooxygenase [P]
+MH NEW = Steroid 17-alpha-Hydroxylase
+
+MH OLD = Steroid 21-Monooxygenase [P]
+MH NEW = Steroid 21-Hydroxylase
+
+MH OLD = Stramonium [P]
+MH NEW = Datura stramonium
+
+MH OLD = Templates []
+MH NEW = Templates, Genetic
+
+MH OLD = Tomatoes [P]
+MH NEW = Lycopersicon esculentum
+
+MH OLD = Trombiculid Mites [P]
+MH NEW = Trombiculidae
+
+MH OLD = Trophoblast [N]
+MH NEW = Trophoblasts
+
+MH OLD = Tumor Viruses, Murine # [P]
+MH NEW = Gammaretrovirus
+
+MH OLD = Vegetarianism [P]
+MH NEW = Diet, Vegetarian
+
+MH OLD = Weil's Disease [N]
+MH NEW = Weil Disease
+
+MH OLD = Wheat [P]
+MH NEW = Triticum

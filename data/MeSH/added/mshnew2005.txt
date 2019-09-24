@@ -1,0 +1,4911 @@
+NEW (2005) MESH HEADINGS WITH SCOPE NOTES (UNIT RECORD FORMAT; 8/13/2004)
+
+TOTAL DESCRIPTORS =  487
+
+MH  - Acanthamoeba castellanii
+UI  - D048248
+MN  - B1.500.841.750.656.475.100.75.80.150
+MS  - A species of free-living soil amoebae in the family Acanthamoebidae.
+      It can cause ENCEPHALITIS and KERATITIS in humans.
+AN  - infection: coordinate IM with AMEBIASIS (IM); or ACANTHAMOEBA
+      KERATITIS (IM) if pertinent
+HN  - 2005
+
+MH  - Acanthoma
+UI  - D049309
+MN  - C4.557.470.700.40
+MN  - C4.588.805.40
+MS  - A neoplasm composed of squamous or epidermal cells.
+AN  - coordinate IM with SKIN NEOPLASMS (IM)
+HN  - 2005
+BX  - Acanthoma, Clear Cell
+
+MH  - Adaptor Proteins, Signal Transducing
+UI  - D048868
+MN  - D12.644.360.24
+MN  - D12.776.157.57
+MN  - D12.776.476.24
+MS  - A broad category of carrier proteins that play a role in SIGNAL
+      TRANSDUCTION. They generally contain several modular domains, each of
+      which having its own binding activity, and act by forming complexes
+      with other intracellular-signaling molecules. Signal-transducing
+      adaptor proteins lack enzyme activity, however their activity can be
+      modulated by other signal-transducing enzymes
+HN  - 2005
+BX  - Signal Transducing Adaptor Proteins
+
+MH  - Adrenogenital Syndrome
+UI  - D047808
+MN  - C19.391.775.129
+MS  - Abnormal SEXUAL DIFFERENTIATION caused by disorders of the GONADS or
+      the ADRENAL GLANDS, such as CONGENITAL ADRENAL HYPERPLASIA and ADRENAL
+      CORTEX NEOPLASMS. Due to abnormal steroid biosynthesis, clinical
+      features include VIRILISM in females; FEMINIZATION in males; or
+      precocious sexual development in children.
+HN  - 2005; use ADRENAL HYPERPLASIA, CONGENITAL 1980-2004
+FX  - Adrenal Hyperplasia, Congenital
+
+MH  - Aeromonas salmonicida
+UI  - D048409
+MN  - B3.440.450.19.25.690
+MN  - B3.660.250.17.25.690
+MS  - A species of gram-negative bacteria, in the family Aeromonadaceae. It
+      is strictly parasitic and often pathogenic causing FURUNCULOSIS in
+      SALMONIDS and ulcer disease in GOLDFISH.
+AN  - infection: coordinate IM with GRAM-NEGATIVE BACTERIAL INFECTIONS (IM)
+      and FURUNCULOSIS (IM) if pertinent
+HN  - 2005
+
+MH  - Agapornis
+UI  - D046710
+MN  - B1.150.900.248.710.672.40
+MS  - A genus comprised of nine species of small PARROTS from Africa. They
+      are noted for showing affection for their mates.
+HN  - 2005
+BX  - Lovebirds
+
+MH  - Agelas
+UI  - D047230
+MN  - B1.500.802.39
+MS  - A genus of large, brightly colored SPONGES in the family Agelasidae,
+      possessing a skeleton of spongin fibers with a core of large spicules
+      (megascleres).
+HN  - 2005
+
+MH  - alpha-Cyclodextrins
+UI  - D047391
+MN  - D4.345.103.222
+MN  - D9.698.365.855.400.375.222
+MS  - Cyclic GLUCANS consisting of six (6) glucopyranose units linked by
+      1,4-glycosidic bonds.
+HN  - 2005
+
+MH  - alpha-N-Acetylgalactosaminidase
+UI  - D048809
+MN  - D8.811.277.450.483.44
+MS  - A hexosaminidase with specificity for terminal non-reducing
+      N-acetyl-D-galactosamine residues in
+      N-acetyl-alpha-D-galactosaminides.
+HN  - 2005(1978)
+BX  - alpha-N-Acetyl-D-galactosaminidase
+
+MH  - Amaryllidaceae Alkaloids
+UI  - D047151
+MN  - D3.132.52
+MS  - Alkaloids derived from TYRAMINE combined with
+      3,4-dihydroxybenzaldehyde via a norbelladine pathway, including
+      GALANTAMINE, lycorine and crinine. They are found in the
+      Amaryllidaceae (LILACEAE) plant family.
+HN  - 2005
+
+MH  - Amazona
+UI  - D046708
+MN  - B1.150.900.248.710.672.50
+MS  - One of the largest genera of PARROTS, ranging from South American to
+      Northern Mexico. Many species are commonly kept as house pets.
+HN  - 2005
+BX  - Amazon Parrots
+
+MH  - American Civil War
+UI  - D047831
+MN  - K1.504.504.937.100
+MS  - 1861-1865 conflict between the Union (Northern states) and the 11
+      Southern states that seceded and were organized as the Confederate
+      States of America.
+HN  - 2005
+BX  - War Between the States
+
+MH  - American Revolution
+UI  - D047788
+MN  - K1.504.504.875.100
+MS  - Armed conflict that resulted in separation of American colonies from
+      Britain and established the United States of America.
+HN  - 2005
+BX  - American War of Independence
+BX  - Revolutionary War
+
+MH  - Aminoacylation
+UI  - D049148
+MN  - G6.535.95.55
+MN  - G6.535.770.50
+MN  - H1.181.404.95.526
+MS  - A reaction that introduces an aminoacyl group to a molecule. TRANSFER
+      RNA AMINOACYLATION is the first step in GENETIC TRANSLATION.
+AN  - not for activation of enzymes, receptors, cells, etc. by amino acids:
+      index ENZYME ACTIVATION or specific term with /metab
+HN  - 2005
+
+MH  - Anabaena cylindrica
+UI  - D046868
+MN  - B3.280.100.150
+MN  - B3.440.475.100.100.150
+MS  - A species in the genus ANABAENA whose trichomes are composed of
+      cylindrical cells.
+HN  - 2005
+
+MH  - Anabaena flos-aquae
+UI  - D046869
+MN  - B3.280.100.300
+MN  - B3.440.475.100.100.300
+MS  - A species in the genus ANABAENA containing gas vacuoles that gives
+      buoyancy to the organism. It can form extensive blooms in FRESH WATER
+      and is responsible for acute poisonings of various animals.
+HN  - 2005
+
+MH  - Anabaena variabilis
+UI  - D046870
+MN  - B3.280.100.900
+MN  - B3.440.475.100.100.900
+MS  - A species of ANABAENA that can form SPORES called akinetes.
+HN  - 2005
+
+MH  - Anacardic Acids
+UI  - D048729
+MN  - D2.241.223.100.380.800.62
+MN  - D2.241.511.390.700.62
+MN  - D2.755.410.700.62
+MS  - A group of 6-alkyl SALICYLIC ACIDS that are found in ANACARDIUM and
+      known for causing CONTACT DERMATITIS.
+HN  - 2005
+
+MH  - Andropause
+UI  - D047649
+MN  - G8.520.960.249.249
+MS  - An endocrine state in men, characterized by a significant decline in
+      the production of TESTOSTERONE; DEHYDROEPIANDROSTERONE; and other
+      hormones such as HUMAN GROWTH HORMONE. Andropause symptoms are related
+      to the lack of androgens including DEPRESSION, sexual dysfunction, and
+      OSTEOPOROSIS. Andropause may  also result from hormonal ablation
+      therapy for malignant diseases.
+HN  - 2005
+
+MH  - Angiotensin II Type 1 Receptor Blockers
+UI  - D047228
+MN  - D27.505.519.155
+MS  - Agents that antagonize ANGIOTENSIN II TYPE 1 RECEPTOR. Included are
+      ANGIOTENSIN II analogs such as SARALASIN and biphenylimidazoles such
+      as LOSARTAN. Some are used as ANTIHYPERTENSIVE AGENTS.
+HN  - 2005
+FX  - Angiotensin-Converting Enzyme Inhibitors
+
+MH  - Anopheles gambiae
+UI  - D048169
+MN  - B1.500.131.617.289.275.120.400
+MS  - A species of mosquito in the genus Anopheles and the principle vector
+      of MALARIA in Africa.
+HN  - 2005
+
+MH  - Anseriformes
+UI  - D046090
+MN  - B1.150.900.248.50
+MS  - An order of BIRDS comprising the waterfowl, particularly DUCKS; GEESE;
+      swans; and screamers.
+HN  - 2005
+
+MH  - Anthocidaris
+UI  - D047329
+MN  - B1.500.408.578.50
+MS  - A genus of SEA URCHINS in the family Echinometridae. They are closely
+      related to and some say indistinguishable from the genus Heliocidaris.
+HN  - 2005
+BX  - Heliocidaris
+
+MH  - Aphanizomenon
+UI  - D046890
+MN  - B3.280.110
+MN  - B3.440.475.100.110
+MS  - A form-genus of planktonic CYANOBACTERIA in the order Nostocales.
+HN  - 2005
+
+MH  - Apigenin
+UI  - D047310
+MN  - D3.438.150.266.450.260.110
+MS  - 5,7,4'-trihydroxy-flavone, one of the FLAVONES.
+HN  - 2005 (2000)
+
+MH  - Arbacia
+UI  - D047308
+MN  - B1.500.408.578.70
+MS  - A genus of SEA URCHINS in the family Arbaciidae. They have only one
+      spheridium (stalked body) per ambulacral area (contains tube feet);
+      most sea urchins have several spheridia per area.
+HN  - 2005
+
+MH  - Aromatase Inhibitors
+UI  - D047072
+MN  - D27.505.519.389.99
+MS  - Compounds that inhibit AROMATASE in order to reduce production of
+      estrogenic steroid hormones.
+HN  - 2005
+
+MH  - Arylalkylamine N-Acetyltransferase
+UI  - D047068
+MN  - D8.811.913.50.294
+MS  - An acetyltransferase with specificity towards the amine group of
+      aromatic alkylamines (arylalkylamines) such as SEROTONIN. This enzyme
+      is also referred to as serotonin acetylase despite the fact that
+      serotonin acetylation can also occur through the action of broad
+      specificity acetyltransferases such as ARYLAMINE N-ACETYLTRANSFERASE.
+AN  - do not confuse with ARYLAMINE N-ACETYLTRANSFERASE
+HN  - 2005(1986)
+BX  - Serotonin Acetyltransferase
+
+MH  - Asterias
+UI  - D047271
+MN  - B1.500.408.765.70
+MS  - A genus of STARFISH in the family Asteriidae. One species, Asterias
+      rubens, is the most common in the north-east Atlantic region.
+HN  - 2005
+
+MH  - Asterina
+UI  - D047288
+MN  - B1.500.408.765.75
+MS  - A genus of STARFISH in the family Asterinidae. They externally hold
+      developing embryos (EMBRYO, NON-MAMMALIAN) among the spines below the
+      oral surface.
+HN  - 2005
+
+MH  - Atadenovirus
+UI  - D046808
+MN  - B4.280.30.80
+MN  - B4.909.204.97.80
+MS  - A genus of ADENOVIRIDAE that comprises viruses of several species of
+      MAMMALS and BIRDS. The type species is Ovine adenovirus D.
+AN  - infection: coord IM with ADENOVIRIDAE INFECTIONS (IM)
+HN  - 2005
+BX  - Bovine adenovirus D
+BX  - Deer adenovirus
+BX  - Duck adenovirus A
+BX  - Egg drop syndrome virus
+BX  - Ovine adenovirus D
+
+MH  - ATP-Dependent Proteases
+UI  - D049069
+MN  - D8.811.277.656.149
+MS  - Proteases that contain proteolytic core domains and ATPase-containing
+      regulatory domains. They are usually comprised of large multi-subunit
+      assemblies. The domains can occur within a single peptide chain or on
+      distinct subunits.
+HN  - 2005(1981)
+BX  - ATP-Dependent Protease
+
+MH  - Axinella
+UI  - D047089
+MN  - B1.500.802.80
+MS  - A genus of SPONGES in the family Axinellidae, comprised of a
+      choanosomal skeleton differentiated in the axial and extra-axial
+      region. The type species is Axinella polypoides.
+HN  - 2005
+
+MH  - Bandages, Hydrocolloid
+UI  - D047070
+MN  - E7.101.74
+MS  - Dressings comprised of a self-adhesive matrix to which hydrophilic
+      absorbent particles are embedded. The particles consist of CELLULOSE
+      derivatives; calcium ALGINATES; PECTINS; or GELS. The utility is based
+      on providing a moist environment for WOUND HEALING.
+HN  - 2005; use BANDAGES, HYDROCOLLOID (NM) 1988-2004
+BX  - Bandages, Hydrogel
+
+MH  - Bariatrics
+UI  - D049088
+MN  - G2.403.74
+MS  - Discipline or activities related to WEIGHT REDUCTION in patients with
+      OBESITY. Treatment methods include DIET; EXERCISE; BEHAVIOR
+      MODIFICATION; medications; and bariatric surgeries.
+HN  - 2005
+
+MH  - Benzoxazines
+UI  - D048588
+MN  - D3.383.533.249
+MN  - D3.438.209
+MS  - OXAZINES with a fused BENZENE ring.
+AN  - do not confuse with benzoxazolines (which contain a 5-membered ring)
+      see BENZOXAZOLES
+HN  - 2005
+
+MH  - beta-Cyclodextrins
+UI  - D047392
+MN  - D4.345.103.333
+MN  - D9.698.365.855.400.375.333
+MS  - Cyclic GLUCANS consisting of seven (7) glucopyranose units linked by
+      1,4-glycosidic bonds.
+HN  - 2005
+
+MH  - beta-Glucans
+UI  - D047071
+MN  - D9.698.365.89
+MS  - Glucose polymers consisting of a backbone of beta(1->3)-linked
+      beta-D-glucopyranosyl units with beta(1->6) linked side chains of
+      various lengths. They are a major component of the CELL WALL of
+      organisms and of soluble DIETARY FIBER.
+HN  - 2005
+
+MH  - beta-Lactams
+UI  - D047090
+MN  - D2.65.589.99
+MS  - Four-membered cyclic AMIDES, best known for the PENICILLINS based on a
+      bicyclo-thiazolidine, and including monocyclic MONOBACTAMS.
+      BETA-LACTAMASES hydrolyze the beta lactam ring, accounting for
+      BETA-LACTAM RESISTANCE of infective bacteria.
+HN  - 2005; use LACTAMS 1996-2004
+
+MH  - beta-N-Acetyl-Galactosaminidase
+UI  - D048828
+MN  - D8.811.277.450.483.112
+MS  - A hexosiminidase that specifically hydrolyzes terminal non-reducing
+      N-acetyl-D-galactosamine residues in N-acetyl-beta-D-galactosaminides.
+HN  - 2005(1973)
+
+MH  - Bilobalides
+UI  - D046935
+MN  - D2.455.849.291.400.500
+MS  - A degraded form of GINKGOLIDES that have three LACTONES and a unique
+      tert-butyl group which are found in GINKGO plants.
+HN  - 2005
+
+MH  - Blood-Nerve Barrier
+UI  - D049428
+MN  - A7.37
+MN  - A8.800.800.90
+MS  - The barrier between the perineurium of PERIPHERAL NERVES and the
+      endothelium (ENDOTHELIUM, VASCULAR) of endoneurial CAPILLARIES. The
+      perineurium acts as a diffusion barrier, but ion permeability at the
+      blood-nerve barrier is still higher than at the BLOOD-BRAIN BARRIER.
+HN  - 2005
+FX  - Capillary Permeability
+
+MH  - Body Modification, Non-Therapeutic
+UI  - D046289
+MN  - E2.218.85
+MN  - E4.85
+MS  - The wounding of the body or body parts by branding, cutting, piercing
+      (BODY PIERCING), or TATTOOING as a cultural practice or expression of
+      creativity or identity.
+HN  - 2005
+BX  - Cultural Body Modification
+FX  - Circumcision, Female
+FX  - Self-Injurious Behavior
+
+MH  - Body Piercing
+UI  - D046288
+MN  - E2.218.85.90
+MN  - E2.800.90
+MN  - E4.85.90
+MS  - The perforation of an anatomical region for the wearing of jewelry.
+HN  - 2005
+BX  - Ear Piercing
+BX  - Eyebrow Piercing
+BX  - Lip Piercing
+BX  - Navel Piercing
+BX  - Nipple Piercing
+BX  - Piercing, Body
+BX  - Tongue Piercing
+
+MH  - Body Size
+UI  - D049628
+MN  - E1.370.600.115.100.160
+MN  - E5.118.160
+MN  - G7.290.100.160
+MN  - G7.574.249.314
+MS  - The physical measurements of a body.
+HN  - 2005; use BODY CONSTITUTION 1984-2004
+
+MH  - Bovine Respiratory Disease Complex
+UI  - D048090
+MN  - C8.730.85
+MN  - C22.196.90
+MS  - A multifactorial disease of CATTLE resulting from complex interactions
+      between environmental factors, host factors, and pathogens. The
+      environmental factors act as stressors adversely affecting the IMMUNE
+      SYSTEM and other host defenses and enhancing transmission of infecting
+      agents.
+HN  - 2005
+
+MH  - Breast Cyst
+UI  - D047688
+MN  - C4.182.156
+MN  - C17.800.90.249
+MS  - A fluid-filled closed cavity or sac that is lined by an EPITHELIUM and
+      found in the BREAST. It may appear as a single large cyst in one
+      breast, multifocal, or bilateral in FIBROCYSTIC BREAST DISEASE.
+AN  - FIBROCYSTIC BREAST DISEASE is also available
+HN  - 2005; use FIBROCYSTIC BREAST DISEASE 1993-2004
+BX  - Breast Cysts
+FX  - Fibrocystic Breast Disease
+
+MH  - CADASIL
+UI  - D046589
+MN  - C10.228.140.300.400.203
+MN  - C10.228.140.300.510.200.175
+MN  - C14.907.253.337.187
+MN  - C14.907.253.560.200.175
+MN  - C16.131.260.140
+MN  - C16.320.180.140
+MS  - A familial, cerebral arteriopathy mapped to chromosome 19q12, and
+      characterized by the presence of granular deposits in small CEREBRAL
+      ARTERIES producing ischemic STROKE; PSEUDOBULBAR PALSY; and multiple
+      subcortical infarcts (CEREBRAL INFARCTION). CADASIL is an acronym for
+      Cerebral Autosomal Dominant Arteriopathy with Subcortical Infarcts and
+      Leukoencephalopathy. CADASIL differs from BINSWANGER DISEASE by the
+      presence of MIGRAINE WITH AURA and usually by the lack of history of
+      arterial HYPERTENSION. (From Bradley et al, Neurology in Clinical
+      Practice, 2000, p1146)
+HN  - 2005; use DEMENTIA, MULTI-INFARCT 2000-2004
+
+MH  - Calixarenes
+UI  - D047250
+MN  - D4.345.25
+MS  - Phenolic metacyclophanes derived from condensation of PHENOLS and
+      ALDEHYDES. The name derives from the vase-like molecular structures. A
+      bracketed [n] indicates the number of aromatic rings.
+HN  - 2005
+BX  - Calixarene
+
+MH  - Callyspongia
+UI  - D047128
+MN  - B1.500.802.160
+MS  - A genus of SPONGES in the family Callyspongiidae comprised of a
+      regular ectosomal reticulate skeleton.
+HN  - 2005
+
+MH  - Canidae
+UI  - D046028
+MN  - B1.150.900.649.147.153
+MS  - A family of terrestrial carnivores with long snouts and
+      non-retractable claws. Members include COYOTES; DOGS; FOXES; JACKALS;
+      RACCOON DOGS; and WOLVES.
+HN  - 2005; use CARNIVORA 1998-2004
+
+MH  - Casein Kinase I
+UI  - D047389
+MN  - D8.811.913.696.620.682.700.140.300
+MN  - D12.644.360.150.300
+MN  - D12.776.476.150.300
+MS  - A casein kinase that was originally described as a monomeric enzyme
+      with a molecular weight of 30-40 kD. Several ISOENZYMES of casein
+      kinase I have been found which are encoded by separate genes. Many of
+      the casein kinase I isoenzymes have been shown to play distinctive
+      roles in intracellular SIGNAL TRANSDUCTION.
+HN  - 2005(1974)
+
+MH  - Casein Kinase Ialpha
+UI  - D048128
+MN  - D8.811.913.696.620.682.700.140.300.100
+MN  - D12.644.360.150.300.100
+MN  - D12.776.476.150.300.100
+MS  - A casein kinase I isoenzyme that plays a role in intracellular
+      signaling pathways including the CELL CYCLE, membrane trafficking and
+      RNA PROCESSING. In DROSOPHILA casein kinase Ialpha has been in
+      regulation of Hedghog and Wingless signaling pathways. Multiple
+      isoforms of casein kinase Ialpha exist and are due ALTERNATIVE MRNA
+      SPLICING.
+HN  - 2005(2000)
+
+MH  - Casein Kinase Idelta
+UI  - D048148
+MN  - D8.811.913.696.620.682.700.140.300.200
+MN  - D12.644.360.150.300.200
+MN  - D12.776.476.150.300.200
+MS  - A casein kinase I isoenzyme that plays a regulatory role in a variety
+      of cellular functions including vesicular transport, CHROMSOME
+      SEGREGATION; CYTOKINESIS, developmental processes, and the CIRCADIAN
+      RHYTHM.
+HN  - 2005(1993)
+
+MH  - Casein Kinase Iepsilon
+UI  - D048149
+MN  - D8.811.913.696.620.682.700.140.300.300
+MN  - D12.644.360.150.300.300
+MN  - D12.776.476.150.300.300
+MS  - A casein kinase I isoenzyme with specificity for proteins involved the
+      regulation of the CIRCADIAN RHYTHM.
+HN  - 2005(1998)
+
+MH  - Casein Kinase II
+UI  - D047390
+MN  - D8.811.913.696.620.682.700.140.600
+MN  - D12.644.360.150.600
+MN  - D12.776.476.150.600
+MS  - A ubiquitous casein kinase that is comprised of two distinct catalytic
+      subunits and dimeric regulatory subunit. Casein kinase II has been
+      shown to phosphorylate a large number of substrates, many of which are
+      proteins involved in the regulation of gene expression.
+HN  - 2005(1992)
+
+MH  - Casein Kinases
+UI  - D047388
+MN  - D8.811.913.696.620.682.700.140
+MN  - D12.644.360.150
+MN  - D12.776.476.150
+MS  - A group of protein-serine-threonine kinases that was originally
+      identified as being responsible for the PHOSPHORYLATION of CASEINS.
+      They are ubiquitous enzymes that have a preference for acidic
+      proteins. Casein kinases play a role in SIGNAL TRANSDUCTION by
+      phosphorylating a variety of regulatory cytoplasmic and regulatory
+      nuclear proteins.
+AN  - general or unspecified; prefer specifics
+HN  - 2005(1974)
+BX  - Casein Kinase
+
+MH  - Caulerpa
+UI  - D046068
+MN  - B2.80.300
+MS  - A genus of toxic marine GREEN ALGAE found throughout tropical and
+      subtropical seas. One species, Caulerpa taxifolia, is highly invasive
+      and produces the poison caulerpenyne, deadly to marine organisms
+      though not humans.
+HN  - 2005
+
+MH  - Cell Enlargement
+UI  - D049108
+MN  - G4.335.233.500
+MN  - G7.382.843.500
+MN  - G7.574.249.410.500
+MS  - Growth processes that result in an increase in CELL SIZE.
+HN  - 2005
+BX  - Cell Growth in Size
+FX  - Hypertrophy
+
+MH  - Cell Growth Processes
+UI  - D048708
+MN  - G4.335.233
+MN  - G7.382.843
+MN  - G7.574.249.410
+MS  - Processes required for CELL ENLARGEMENT and CELL PROLIFERATION.
+AN  - general; prefer specifics
+HN  - 2005
+FX  - Cell Size
+FX  - Cell Survival
+
+MH  - Cell Nucleus Division
+UI  - D048750
+MN  - G4.335.134.220.220
+MN  - G4.335.233.750.500.220
+MN  - G5.105.220
+MN  - G7.382.374.220.220
+MN  - G7.382.843.750.500.220
+MN  - G7.574.249.410.750.500.220
+MS  - The process by which the CELL NUCLEUS is divided.
+AN  - 1st phase = PROPHASE, 2d phase = METAPHASE, 3d phase = ANAPHASE, final
+      phase = TELOPHASE
+HN  - 2005; for KARYOKINESIS use MITOSIS 1981-2004
+BX  - Cell Nucleus Division Phases
+BX  - Karyokinesis
+BX  - Nuclear Division
+
+MH  - Cell Proliferation
+UI  - D049109
+MN  - G4.335.233.750
+MN  - G7.382.843.750
+MN  - G7.574.249.410.750
+MS  - All of the processes involved in increasing in CELL NUMBER. These
+      processes include more than CELL DIVISION which is part of the CELL
+      CYCLE.
+HN  - 2005
+BX  - Cell Growth in Number
+BX  - Cellular Proliferation
+FX  - Hyperplasia
+
+MH  - Cell Shape
+UI  - D048430
+MN  - G4.335.309
+MN  - G7.382.968
+MS  - The quality of surface form or outline of CELLS.
+AN  - not for microorganisms; coordinate with organ /cytol or /pathol or
+      specific cell /cytol or /pathol
+HN  - 2005; use CELL SIZE 1993-2004
+
+MH  - Cell Size
+UI  - D048429
+MN  - G4.335.313
+MN  - G7.382.984
+MS  - The quantity of volume or surface area of CELLS.
+AN  - not for microorganisms; coordinate with organ /cytol or /pathol or
+      specific cell /cytol or /pathol
+HN  - 2005(1993)
+
+MH  - Chalcones
+UI  - D047188
+MN  - D2.522.818.222
+MN  - D3.438.150.266.450.221
+MS  - Compounds based on CHALCONE. They are important intermediates in the
+      formation of FLAVONOIDS.
+HN  - 2005
+FX  - Benzoates
+
+MH  - Charadriformes
+UI  - D046091
+MN  - B1.150.900.248.150
+MS  - An order of BIRDS including over 300 species that primarily inhabit
+      costal waters, beaches, and marshes. They are comprised of shorebirds,
+      gulls, and terns.
+HN  - 2005
+BX  - Gulls
+BX  - Laridae
+
+MH  - Chernobyl Nuclear Accident
+UI  - D047852
+MN  - K1.504.504.968.700
+MS  - April 25th -26th, 1986 nuclear power accident that occurred at
+      Chernobyl in the former USSR (Ukraine) located 80 miles north of Kiev.
+HN  - 2005
+FX  - Disasters
+FX  - Nuclear Reactors
+
+MH  - Child Mortality
+UI  - D046688
+MN  - E5.318.308.985.550.287
+MN  - G3.850.505.400.975.550.287
+MN  - G3.850.520.308.985.550.287
+MN  - L1.280.975.550.287
+MN  - N1.224.935.698.150
+MS  - Number of deaths of children between one year of age to 12 years of
+      age in a given population.
+AN  - a statistical concept; check the tag CHILD, PRESCHOOL or CHILD
+HN  - 2005; use INFANT MORTALITY 1980-2004
+
+MH  - Chimerism
+UI  - D046528
+MN  - G13.920.590.175.125
+MS  - The occurrence in an individual of two or more cell populations of
+      different chromosomal constitutions, derived from different
+      individuals. This contrasts with MOSAICISM in which the different cell
+      populations are derived from a single individual.
+HN  - 2005
+FX  - Chimera
+FX  - Mosaicism
+
+MH  - Chitosan
+UI  - D048271
+MN  - D5.750.78.139.500
+MN  - D9.698.211.500
+MS  - Deacetylated CHITIN, a linear polysaccharide of deacetylated
+      beta-1,4-D-glucosamine. It is used in HYDROGEL and to treat WOUNDS.
+HN  - 2005(2004)
+
+MH  - Chlorella vulgaris
+UI  - D048408
+MN  - B2.80.469.400
+MS  - A species of green microalgae in the family Chlorellaceae. It is used
+      as a model organism for PHOTOSYNTHESIS, and as a food supplement
+      (DIETARY SUPPLEMENTS).
+HN  - 2005
+
+MH  - Cholangiopancreatography, Magnetic Resonance
+UI  - D049448
+MN  - E1.370.350.500.100
+MN  - E1.370.350.700.715.200.215
+MN  - E1.370.350.825.500.100
+MN  - E1.370.372.200.215
+MS  - Non-invasive diagnostic technique for visualizing the PANCREATIC DUCTS
+      and BILE DUCTS. It has excellent sensitivity for duct dilatation,
+      biliary stricture, and intraductal abnormalities.
+HN  - 2005
+BX  - Magnetic Resonance Cholangiopancreatography
+
+MH  - Chondromalacia Patellae
+UI  - D046789
+MN  - C5.182.100
+MN  - C17.300.182.100
+MS  - A degeneration of the ARTICULAR CARTILAGE of the PATELLA, caused by a
+      decrease in sulfated MUCOPOLYSACCHARIDES in the ground substance. When
+      accompanied by pain, it is sometimes considered part of or confused
+      with PATELLOFEMORAL PAIN SYNDROME.
+HN  - 2005
+FX  - Patellofemoral Pain Syndrome
+
+MH  - Chorioallantoic Membrane
+UI  - D049033
+MN  - A10.615.249
+MN  - A13.350.575
+MN  - A16.254.300.400
+MS  - A highly vascularized extra-embryonic membrane, formed by the fusion
+      of the CHORION and the ALLANTOIS. It is mostly found in BIRDS and
+      REPTILES. It serves as a model for studying tumor or cell biology,
+      such as angiogenesis and TISSUE TRANSPLANTATION.
+HN  - 2005
+FX  - Allantois
+FX  - Chorion
+
+MH  - Chromatin Immunoprecipitation
+UI  - D047369
+MN  - E5.393.170
+MN  - E5.478.605.160
+MS  - A technique for identifying specific DNA sequences that are bound, in
+      vivo, to proteins of interest. It involves formaldehyde fixation of
+      CHROMATIN to crosslink the DNA-BINDING PROTEINS to the DNA. After
+      shearing the DNA into small fragments, specific DNA-protein complexes
+      are isolated by immunoprecipitation with protein-specific ANTIBODIES.
+      Then, the DNA isolated from the complex can be identified by PCR
+      amplification and sequencing.
+HN  - 2005
+BX  - Immunoprecipitation, Chromatin
+
+MH  - Clostridium acetobutylicum
+UI  - D046969
+MN  - B3.300.390.400.200.25
+MN  - B3.510.415.400.200.25
+MS  - A species of gram-positive bacteria in the family Clostridiaceae, used
+      for the industrial production of SOLVENTS.
+AN  - infection: coordinate IM with CLOSTRIDIUM INFECTIONS (IM)
+HN  - 2005
+
+MH  - Clostridium beijerinckii
+UI  - D046970
+MN  - B3.300.390.400.200.100
+MN  - B3.510.415.400.200.100
+MS  - A species of gram-positive bacteria in the family Clostridiaceae,
+      capable of solventogenesis, and isolated from SOIL, infected WOUNDS,
+      fermenting OLIVES, and spoiled CANDY.
+AN  - infection: coordinate IM with CLOSTRIDIUM INFECTIONS (IM)
+HN  - 2005
+
+MH  - Clostridium bifermentans
+UI  - D046971
+MN  - B3.300.390.400.200.130
+MN  - B3.510.415.400.200.130
+MS  - A species of gram-positive bacteria in the family Clostridiaceae that
+      ferments both CARBOHYDRATES and AMINO ACIDS.
+AN  - infection: coordinate IM with CLOSTRIDIUM INFECTIONS (IM)
+HN  - 2005
+
+MH  - Clostridium botulinum type A
+UI  - D047013
+MN  - B3.300.390.400.200.160.50
+MN  - B3.510.415.400.200.160.50
+MS  - Subtype of CLOSTRIDIUM BOTULINUM that produces BOTULINUM TOXIN TYPE A
+      which is neurotoxic to humans and animals.
+AN  - infection: coordinate IM with BOTULISM (IM)
+HN  - 2005
+
+MH  - Clostridium botulinum type B
+UI  - D047014
+MN  - B3.300.390.400.200.160.100
+MN  - B3.510.415.400.200.160.100
+MS  - Subtype of CLOSTRIDIUM BOTULINUM that produces botulinum toxin type B
+      which is neurotoxic to humans and animals.
+AN  - infection: coordinate IM with BOTULISM (IM)
+HN  - 2005
+
+MH  - Clostridium botulinum type C
+UI  - D047968
+MN  - B3.300.390.400.200.160.150
+MN  - B3.510.415.400.200.160.150
+MS  - Subtype of CLOSTRIDIUM BOTULINUM that produces botulinum toxin type C
+      which is neurotoxic to ANIMALS, especially CATTLE, but not humans. It
+      causes dissociation of ACTIN FILAMENTS.
+AN  - infection: coordinate IM with BOTULISM (IM)
+HN  - 2005
+
+MH  - Clostridium botulinum type D
+UI  - D047969
+MN  - B3.300.390.400.200.160.200
+MN  - B3.510.415.400.200.160.200
+MS  - Subtype of CLOSTRIDIUM BOTULINUM that produces botulinum toxin type D
+      which is neurotoxic to ANIMALS, especially CATTLE, but not humans.
+AN  - infection: coordinate IM with BOTULISM (IM)
+HN  - 2005
+
+MH  - Clostridium botulinum type E
+UI  - D047970
+MN  - B3.300.390.400.200.160.250
+MN  - B3.510.415.400.200.160.250
+MS  - Subtype of CLOSTRIDIUM BOTULINUM that produces botulinum toxin type E
+      which is neurotoxic to humans and animals.
+AN  - infection: coordinate IM with BOTULISM (IM)
+HN  - 2005
+
+MH  - Clostridium botulinum type F
+UI  - D047971
+MN  - B3.300.390.400.200.160.300
+MN  - B3.510.415.400.200.160.300
+MS  - Subtype of CLOSTRIDIUM BOTULINUM that produces botulinum toxin type F
+      which is neurotoxic to humans and animals.
+AN  - infection: coordinate IM with BOTULISM (IM)
+HN  - 2005
+
+MH  - Clostridium botulinum type G
+UI  - D048568
+MN  - B3.300.390.400.200.160.350
+MN  - B3.510.415.400.200.160.350
+MS  - Subtype of CLOSTRIDIUM BOTULINUM that produces botulinum toxin type G.
+      Though it has been isolated from soil, no outbreaks involving this
+      type have been recognized.
+AN  - infection: coordinate IM with BOTULISM (IM)
+HN  - 2005
+
+MH  - Clostridium butyricum
+UI  - D046972
+MN  - B3.300.390.400.200.180
+MN  - B3.510.415.400.200.180
+MS  - Type species of the genus CLOSTRIDIUM, a gram-positive bacteria in the
+      family Clostridiaceae. It is used as a source of PROBIOTICS.
+AN  - infection: coordinate IM with CLOSTRIDIUM INFECTIONS (IM)
+HN  - 2005
+
+MH  - Clostridium cellulolyticum
+UI  - D046973
+MN  - B3.300.390.400.200.200
+MN  - B3.510.415.400.200.200
+MS  - A species of gram-positive bacteria in the family Clostridiaceae. It
+      is a cellulolytic, mesophilic species isolated from decayed GRASS.
+HN  - 2005
+
+MH  - Clostridium cellulovorans
+UI  - D046974
+MN  - B3.300.390.400.200.205
+MN  - B3.510.415.400.200.205
+MS  - A species of gram-positive, cellulolytic bacteria in the family
+      Clostridiaceae. It produces CELLULOSOMES which are involved in plant
+      CELL WALL degradation.
+HN  - 2005
+
+MH  - Clostridium chauvoei
+UI  - D046975
+MN  - B3.300.390.400.200.215
+MN  - B3.510.415.400.200.215
+MS  - A species of gram-positive bacteria in the family Clostridiaceae
+      isolated from infected CATTLE; SHEEP; and other animals. It causes
+      blackleg in cattle and sheep and is transmitted through soil-borne
+      spores.
+AN  - infection: coordinate IM with CLOSTRIDIUM INFECTIONS (IM)
+HN  - 2005
+
+MH  - Clostridium histolyticum
+UI  - D047009
+MN  - B3.300.390.400.200.412
+MN  - B3.510.415.400.200.412
+MS  - A species of gram-positive, strongly proteolytic bacteria in the
+      family Clostridiaceae. It contains several forms of COLLAGENASE whose
+      action can lead to GAS GANGRENE in humans and HORSES.
+AN  - infection: coordinate IM with CLOSTRIDIUM INFECTIONS (IM) or GAS
+      GANGRENE (IM) if appropriate
+HN  - 2005
+
+MH  - Clostridium kluyveri
+UI  - D047010
+MN  - B3.300.390.400.200.493
+MN  - B3.510.415.400.200.493
+MS  - A species of gram-positive bacteria in the family Clostridiaceae. It
+      is distinctive for its ability to ferment ETHANOL to caproic acid.
+HN  - 2005
+
+MH  - Clostridium sordellii
+UI  - D047989
+MN  - B3.300.390.400.200.700
+MN  - B3.510.415.400.200.700
+MS  - A species of gram-positive bacteria in the family Clostridiaceae,
+      found in INTESTINES and SOIL.
+AN  - infection: coordinate IM with CLOSTRIDIUM INFECTIONS (IM)
+HN  - 2005
+
+MH  - Clostridium sticklandii
+UI  - D047991
+MN  - B3.300.390.400.200.710
+MN  - B3.510.415.400.200.710
+MS  - A species of gram-positive, anaerobic bacteria in the family
+      Clostridiaceae frequently used for the study of ENZYMES.
+HN  - 2005
+
+MH  - Clostridium symbiosum
+UI  - D048009
+MN  - B3.300.390.400.200.713
+MN  - B3.510.415.400.200.713
+MS  - A species of gram-positive bacteria in the family Clostridiaceae. Its
+      GLUTAMATE DEHYDROGENASE is commonly used in research.
+HN  - 2005
+
+MH  - Clostridium tertium
+UI  - D048010
+MN  - B3.300.390.400.200.722
+MN  - B3.510.415.400.200.722
+MS  - A species of gram-positive bacteria in the family Clostridiaceae,
+      causing BACTEREMIA in humans and ANIMALS.
+AN  - infection: coordinate IM with CLOSTRIDIUM INFECTIONS (IM)
+HN  - 2005
+
+MH  - Clostridium tetanomorphum
+UI  - D048012
+MN  - B3.300.390.400.200.740
+MN  - B3.510.415.400.200.740
+MS  - A species of gram-positive bacteria in the family Clostridiaceae. Its
+      glutamate mutase is commonly used in research.
+HN  - 2005
+
+MH  - Clostridium thermocellum
+UI  - D048013
+MN  - B3.300.390.400.200.770
+MN  - B3.510.415.400.200.770
+MS  - A species of gram-positive, thermophilic, cellulolytic bacteria in the
+      family Clostridaceae. It degrades and ferments CELLOBIOSE and
+      CELLULOSE to ETHANOL in the CELLULOSOME.
+HN  - 2005
+
+MH  - Clostridium tyrobutyricum
+UI  - D048014
+MN  - B3.300.390.400.200.800
+MN  - B3.510.415.400.200.800
+MS  - A species of gram-positive bacteria in the family Clostridiaceae
+      responsible for spoilage of some CHEESE via FERMENTATION of BUTYRIC
+      ACID.
+HN  - 2005
+
+MH  - Cockatoos
+UI  - D046410
+MN  - B1.150.900.248.710.251
+MS  - Large crested BIRDS in the family Cacatuidae, found in Australia, New
+      Guinea, and islands adjacent to the Philippines. The cockatiel
+      (species Nymphicus hollandicus) is much smaller.
+HN  - 2005
+BX  - Cacatuidae
+BX  - Cockatiels
+BX  - Nymphicus hollandicus
+
+MH  - Colitis, Collagenous
+UI  - D046729
+MN  - C6.405.205.265.173.500
+MN  - C6.405.469.158.188.173.500
+MS  - A subtype of MICROSCOPIC COLITIS, characterized by chronic watery
+      DIARRHEA of unknown origin, a normal COLONOSCOPY but abnormal
+      histopathology on BIOPSY. Microscopic examination of biopsy samples
+      taken from the COLON show larger-than-normal band of subepithelial
+      COLLAGEN.
+HN  - 2005
+
+MH  - Colitis, Lymphocytic
+UI  - D046730
+MN  - C6.405.205.265.173.750
+MN  - C6.405.469.158.188.173.750
+MS  - A subtype of MICROSCOPIC COLITIS, characterized by chronic watery
+      DIARRHEA of unknown origin, a normal COLONOSCOPY but abnormal
+      histopathology on BIOPSY. Microscopic examination of biopsy samples
+      taken from the COLON show infiltration of LYMPHOCYTES in the
+      superficial EPITHELIUM  and the underlying connective tissue (lamina
+      propria).
+HN  - 2005
+
+MH  - Colitis, Microscopic
+UI  - D046728
+MN  - C6.405.205.265.173
+MN  - C6.405.469.158.188.173
+MS  - A condition characterized by chronic watery DIARRHEA of unknown
+      origin, a normal COLONOSCOPY but abnormal histopathology on BIOPSY.
+      This syndrome was first described in 1980 by Read and associates.
+      Subtypes include COLLAGENOUS COLITIS and LYMPHOCYTIC COLITIS. Both
+      have similar clinical symptoms and are distinguishable only by
+      histology.
+HN  - 2005
+
+MH  - Columbiformes
+UI  - D046092
+MN  - B1.150.900.248.165
+MS  - An order of BIRDS comprised of PIGEONS, DOVES, and an extinct family
+      that includes dodos.
+HN  - 2005
+
+MH  - Coproporphyria, Hereditary
+UI  - D046349
+MN  - C6.552.830.74
+MN  - C16.320.565.735.74
+MN  - C16.320.850.742.74
+MN  - C17.800.827.742.74
+MN  - C17.800.849.617.400.74
+MN  - C18.452.648.735.74
+MN  - C18.452.872.617.400.74
+MS  - An autosomal dominant porphyria that is due to a deficiency of
+      COPROPORPHYRINOGEN OXIDASE in the LIVER, the sixth enzyme in the
+      8-enzyme biosynthetic pathway of HEME. Clinical features include both
+      neurological symptoms and cutaneous lesions. Patients excrete
+      increased levels of porphyrin precursors, 5-AMINOLEVULINIC ACID and
+      COPROPORPHYRINS.
+HN  - 2005; use PORPHYRIA, HEPATIC 1993-2004
+
+MH  - Coronary Artery Bypass, Off-Pump
+UI  - D047549
+MN  - E4.100.376.719.332.199
+MN  - E4.928.220.520.220.189
+MS  - Coronary artery bypass surgery on a beating HEART without a
+      CARDIOPULMONARY BYPASS (diverting the flow of blood from the heart and
+      lungs through an oxygenator).
+HN  - 2005
+BX  - Beating Heart Coronary Artery Bypass
+BX  - Off-Pump Coronary Artery Bypass
+
+MH  - Corynebacterium glutamicum
+UI  - D048230
+MN  - B3.510.24.49.180.300
+MN  - B3.510.460.400.400.200.300
+MS  - A species of gram-positive, asporogenous, non-pathogenic, soil
+      bacteria that produces GLUTAMIC ACID.
+HN  - 2005
+
+MH  - Coyotes
+UI  - D046029
+MN  - B1.150.900.649.147.153.150
+MS  - The species Canis latrans in the family CANIDAE, a smaller relative of
+      WOLVES. It is found in the Western hemisphere from Costa Rica to
+      Alaska.
+HN  - 2005; use CARNIVORA 1998-2004
+BX  - Canis latrans
+
+MH  - Crambe Sponge
+UI  - D047132
+MN  - B1.500.802.175
+MS  - A genus of SPONGES in the family Crambeidae characterized by desmoid
+      spicules. The type species is Crambe crambe.
+HN  - 2005
+BX  - Crambe crambe
+
+MH  - Crimean War
+UI  - D047849
+MN  - K1.504.504.937.500
+MS  - Conflict between Russia and its ally the Ottoman Empire and England,
+      France, and Sardinia. The immediate dispute was between Russia and
+      France over control of Palestinian holy places.
+HN  - 2005
+
+MH  - Crown Compounds
+UI  - D047248
+MN  - D4.345.51
+MS  - Macrocyclic compounds analogous to CROWN ETHERS but which lack any
+      OXYGEN atoms.
+HN  - 2005; use CROWN ETHERS 1993-2004
+
+MH  - Crows
+UI  - D046368
+MN  - B1.150.900.248.620.750.150
+MS  - Common name for the largest birds in the order PASSERIFORMES, family
+      Corvidae. These omnivorous black birds comprise most of the species in
+      the genus Corvus, along with ravens and jackdaws (which are often also
+      referred to as crows).
+HN  - 2005; use SONGBIRDS 1999-2004
+BX  - Ravens
+
+MH  - Cucumaria
+UI  - D048016
+MN  - B1.500.408.560.150
+MS  - A genus of large SEA CUCUMBERS possessing the primitive radial
+      configuration of podia in all five ambulacral areas.
+HN  - 2005
+
+MH  - Culture Techniques
+UI  - D046508
+MN  - E5.200.249
+MS  - Methods of maintaining or growing biological materials in controlled
+      laboratory conditions. These include the cultures of CELLS; TISSUES;
+      organs; or EMBRYO in vitro. Both animal and plant tissues may be
+      cultured by a variety of methods. Cultures may derive from normal or
+      abnormal tissues, and consist of a single cell type or mixed cell
+      types.
+AN  - NIM; Manual 18.7.2-.3, 22.26.1, 26.23+; ORGAN CULTURE; CELL CULTURE;
+      EMBRYO CULTURE are also available
+HN  - 2005
+FX  - Cell Line
+FX  - Cells, Cultured
+FX  - Cells, Immobilized
+FX  - Clone Cells
+FX  - Tumor Cells, Cultured
+FX  - Virus Cultivation
+
+MH  - Cyanothece
+UI  - D046889
+MN  - B3.280.200
+MN  - B3.440.475.100.200
+MS  - A form-genus of unicellular coccoid to rod-shaped CYANOBACTERIA, in
+      the order Chroococcales. Three different clusters of strains from
+      diverse habitats are included.
+HN  - 2005
+
+MH  - Cyclotides
+UI  - D047169
+MN  - D12.644.641.243
+MS  - A continuous circle of peptide bonds, typically of 2-3 dozen AMINO
+      ACIDS, so there is no free N- or C-terminus. They are further
+      characterized by six conserved CYSTEINE residues that form CYSTINE
+      KNOT MOTIFS.
+HN  - 2005
+
+MH  - Cylindrospermopsis
+UI  - D046891
+MN  - B3.280.210
+MN  - B3.440.475.100.210
+MS  - A form-genus of CYANOBACTERIA in the order Nostocales, characterized
+      by thin trichomes, cylindrical akinetes, and terminal heterocysts.
+HN  - 2005
+
+MH  - Cystine Knot Motifs
+UI  - D047168
+MN  - G6.184.603.790.709.600.40.127
+MS  - Amino acid sequence in which two disulfide bonds (DISULFIDES) and
+      their connecting backbone form a ring that is penetrated by a third
+      disulfide bond. Members include CYCLOTIDES and agouti-related protein.
+HN  - 2005
+
+MH  - Cytokinesis
+UI  - D048749
+MN  - G4.335.134.220.250
+MN  - G4.335.233.750.500.250
+MN  - G7.382.374.220.250
+MN  - G7.382.843.750.500.250
+MN  - G7.574.249.410.750.500.250
+MS  - The process by which the CYTOPLASM of a cell is divided.
+AN  - permitted with microorganisms; do not confuse CYTOKINESIS with CELL
+      MOVEMENT or CYTOPLASMIC STREAMING
+HN  - 2005; use CELL DIVISION 1985-2004
+
+MH  - Decapitation
+UI  - D049248
+MN  - C21.866.986.224
+MS  - Traumatic or experimentally induced separation of the head from the
+      body in an animal or human.
+HN  - 2005
+
+MH  - Deep Brain Stimulation
+UI  - D046690
+MN  - E2.779.468.250
+MN  - E2.831.580.468.250
+MN  - E4.190
+MS  - Therapy for MOVEMENT DISORDERS, especially PARKINSON DISEASE, that
+      applies electricity via stereotactic implantation of ELECTRODES in
+      specific areas of the BRAIN such as the THALAMUS. The electrodes are
+      attached to a neurostimulator placed subcutaneously.
+AN  - coord with disease /ther
+HN  - 2005; for ELECTRICAL STIMULATION OF THE BRAIN use ELECTRIC STIMULATION
+      1997-2003
+BX  - Brain Stimulation, Deep
+FX  - Electric Stimulation
+
+MH  - Defibrillators
+UI  - D047548
+MN  - E7.296.159
+MS  - Cardiac electrical stimulators that apply brief high-voltage
+      electroshocks to the HEART. These stimulators are used to restore
+      normal rhythm and contractile function in hearts of patients who are
+      experiencing VENTRICULAR FIBRILLATION or ventricular tachycardia
+      (TACHYCARDIA, VENTRICULAR) that is not accompanied by a palpable
+      PULSE. Some defibrillators may also be used to correct certain
+      noncritical dysrhythmias (called synchronized defibrillation or
+      CARDIOVERSION), using relatively low-level discharges synchronized to
+      the patient's ECG waveform. (UMDNS, 2003)
+HN  - 2005
+FX  - Electric Countershock
+
+MH  - Dendritic Spines
+UI  - D049229
+MN  - A8.663.256.200
+MN  - A11.284.180.225.169
+MN  - A11.671.240.169
+MS  - Spiny processes on DENDRITES, each of which receives excitatory input
+      from one nerve ending (NERVE ENDINGS).  They are commonly found on
+      PURKINJE CELLS and PYRAMIDAL CELLS.
+HN  - 2005
+
+MH  - Dental Informatics
+UI  - D048048
+MN  - L1.313.249
+MS  - The application of computer and information sciences to improve dental
+      practice, research, education and management.
+HN  - 2005
+
+MH  - Depsipeptides
+UI  - D047630
+MN  - D4.345.566.297
+MN  - D12.644.641.297
+MS  - Compounds consisting of chains of AMINO ACIDS alternating with
+      CARBOXYLIC ACIDS via ester and amide linkages. They are commonly
+      cyclized.
+HN  - 2005
+
+MH  - Dermoscopy
+UI  - D046169
+MN  - E1.370.350.515.184
+MS  - A noninvasive diagnostic technique that enables an experienced
+      clinician to perform direct microscopic examination of the surface and
+      architecture of pigmented SKIN lesions. The four major dermoscopic
+      criteria are ABCD: asymmetry (A), borders (B), colors (C), and
+      different structural components (D) providing a semiquantitative
+      scoring system for each lesion.
+HN  - 2005
+
+MH  - Diabetes Complications
+UI  - D048909
+MN  - C19.246.99
+MS  - Conditions or pathological processes associated with the disease of
+      diabetes mellitus. Due to the impaired control of BLOOD GLUCOSE level
+      in diabetic patients, pathological processes develop in numerous
+      tissues and organs including the EYE, the KIDNEY, the BLOOD VESSELS,
+      and the NERVE TISSUE.
+AN  - general only; prefer /compl with specific type of diabetes + specific
+      complication: Manual 23.25.3.1
+HN  - 2005
+
+MH  - Didelphis
+UI  - D048293
+MN  - B1.150.900.649.573.575.150
+MS  - A genus of large OPOSSUMS in the family Didelphidae, found in the
+      Americas. The species Didelphis virginiana is prominent in North
+      America.
+HN  - 2005; use OPOSSUMS 1968-2004
+BX  - Opossum, North American
+
+MH  - Dioxygenases
+UI  - D049308
+MN  - D8.811.682.690.416
+MS  - Non-heme iron-containing enzymes that incorporate two atoms of OXYGEN
+      into the substrate. They are important in biosynthesis of FLAVONOIDS;
+      GIBBERELLINS; and HYOSCYAMINE; and for degradation of AROMATIC
+      HYDROCARBONS.
+HN  - 2005
+
+MH  - Dipteryx
+UI  - D046914
+MN  - B6.388.100.401.194
+MS  - A plant genus of the family FABACEAE. Members contain COUMARINS.
+AN  - coord with specific PLANT COMPONENTS term if pertinent; for use in
+      therapy coord IM with PHYTOTHERAPY (IM) + disease/drug ther (IM) +
+      PLANT PREPARATIONS or its indentations/ther use (IM or NIM) + specific
+      plant chemical /ther use (IM) if pertinent; Manual 26.29
+HN  - 2005
+BX  - Tonka Bean
+
+MH  - Distal Myopathies
+UI  - D049310
+MN  - C5.651.534.500.74
+MN  - C10.668.491.175.500.74
+MN  - C16.320.577.74
+MS  - A heterogeneous group of genetic disorders characterized by
+      progressive MUSCULAR ATROPHY and MUSCLE WEAKNESS beginning in the
+      hands, the legs, or the feet. Most are adult-onset autosomal dominant
+      forms. Others are autosomal recessive.
+HN  - 2005; use MUSCULAR DYSTROPHIES 2000-2004
+BX  - Muscular Dystrophy, Distal
+
+MH  - DNA, Algal
+UI  - D048028
+MN  - D13.444.308.148
+MS  - Deoxyribonucleic acid that makes up the genetic material of ALGAE.
+HN  - 2005
+BX  - Algal DNA
+
+MH  - Donor Selection
+UI  - D046148
+MN  - E4.932.500
+MN  - N2.421.911.600
+MS  - The procedure established to evaluate the health status and risk
+      factors of the potential DONORS of biological materials. Donors are
+      selected based on the principles that their health will not be
+      compromised in the process, and the donated materials, such as TISSUES
+      or ORGANS, are safe for reuse in the recipients.
+HN  - 2005
+BX  - Donor Screening
+
+MH  - Dysidea
+UI  - D047088
+MN  - B1.500.802.200
+MS  - A genus of SPONGES in the family Dysideidae, in which all skeletal
+      fibers are filled with detritus.
+HN  - 2005
+
+MH  - Dystroglycans
+UI  - D049030
+MN  - D12.776.210.500.410.500
+MN  - D12.776.220.362.249
+MN  - D12.776.543.268.500
+MS  - Dystrophin-associated proteins that play role in the formation of a
+      transmembrane link between LAMININ-2 and DYSTROPHIN. Both the alpha
+      and the beta subtypes of dystroglycan originate via POST-TRANSLATIONAL
+      PROCESSING of a single precursor protein.
+HN  - 2005(1992)
+BX  - Dystroglycan
+FX  - Dystrophin-Associated Protein Complex
+
+MH  - Dystrophin-Associated Protein Complex
+UI  - D049028
+MN  - D5.500.149
+MS  - A macromolecular complex of proteins that includes DYSTROPHIN and
+      DYSTROPHIN-ASSOCIATED PROTEINS. It plays a structural role in the
+      linking the CYTOSKELETON to the EXTRACELLULAR MAXTRIX.
+HN  - 2005
+
+MH  - Dystrophin-Associated Proteins
+UI  - D049029
+MN  - D12.776.210.500.410
+MN  - D12.776.220.362
+MN  - D12.776.543.268
+MS  - A group of proteins that associate with DYSTROPHIN at the CELL
+      MEMBRANE to form the DYSTROPHIN-ASSOCIATED PROTEIN COMPLEX.
+HN  - 2005
+
+MH  - East Timor
+UI  - D049648
+MN  - Z1.252.145.281
+MS  - A country in Southeastern Asia, northwest of Australia in the Lesser
+      Sunda Islands at the eastern end of the Indonesian archipelago. It
+      includes the eastern half of the island of Timor, the Oecussi (Ambeno)
+      region on the northwest portion of the island of Timor, and the
+      islands of Pulau Atauro and Pulau Jaco. On May 20, 2002, East Timor
+      was internationally recognized as an independent state. This followed
+      its declared independence from Portugal on November 20, 1975 and a
+      period of armed conflict with Indonesia.
+HN  - 2005
+
+MH  - Ebola Vaccines
+UI  - D046129
+MN  - D24.310.894.899.205
+MS  - Vaccines or candidate vaccines used to prevent EBOLA HEMORRHAGIC
+      FEVER.
+HN  - 2005
+BX  - Ebola Virus Vaccines
+
+MH  - Echinococcus granulosus
+UI  - D048209
+MN  - B1.500.500.736.215.327.400
+MS  - A species of hydatid tapeworm (class CESTODA) in the family Taeniidae,
+      whose adult form infects the DIGESTIVE TRACT of DOGS, other canines,
+      and CATS. The larval form infects SHEEP; PIGS; HORSES; and may infect
+      humans, where it migrates to various organs and forms permanent
+      HYDATID CYSTS.
+AN  - infection: coordinate (IM) with ECHINOCOCCOSIS (IM) or specifics (IM)
+HN  - 2005
+
+MH  - Echinococcus multilocularis
+UI  - D048210
+MN  - B1.500.500.736.215.327.500
+MS  - A north temperate species of tapeworm (CESTODA) whose adult form
+      infects FOXES and wild RODENTS. The larval form can infect humans
+      producing HEPATIC HYDATID CYSTS.
+AN  - infection: coordinate (IM) with ECHINOCOCCOSIS (IM) or specifics (IM);
+      infection in humans = ECHINOCOCCOSIS, HEPATIC
+HN  - 2005
+
+MH  - Electrophoresis, Microchip
+UI  - D046209
+MN  - E5.196.401.190.500
+MN  - E5.196.630.465.340
+MN  - E5.588.465.340
+MS  - A highly miniaturized version of ELECTROPHORESIS performed in a
+      microfluidic device.
+AN  - coord with MICROARRAY ANALYSIS if pertinent
+HN  - 2005
+BX  - Microchip Electrophoresis
+
+MH  - Embryo Culture Techniques
+UI  - D046149
+MN  - E5.200.249.468
+MS  - The technique of maintaining or growing mammalian EMBRYOS in vitro.
+      This method offers an opportunity to observe embryonic development
+      (GROWTH AND EMBRYONIC DEVELOPMENT), METABOLISM, and susceptibility to
+      TERATOGENS
+AN  - restrict to whole mammalian embryos; for cultures of embryonic tissue
+      or cells, use TISSUE CULTURE or CELL CULTURE
+HN  - 2005
+
+MH  - Embryonic Development
+UI  - D047108
+MN  - G7.574.500.325.180
+MN  - G8.520.170.104
+MS  - Morphological and physiological development of EMBRYOS.
+HN  - 2005; use EMBRYONIC AND FETAL DEVELOPMENT 1985-2004; for
+      POSTIMPLANTATION EMBRYO DEVELOPMENT & PREIMPLANTATION EMBRYO
+      DEVELOPMENT use EMBRYONIC AND FETAL DEVELOPMENT 1976-2004
+BX  - Embryo Development
+BX  - Embryogenesis
+BX  - Postimplantation Embryo Development
+BX  - Preimplantation Embryo Development
+
+MH  - Endopeptidase Clp
+UI  - D049071
+MN  - D8.811.277.656.149.200
+MN  - D8.811.277.656.300.760.228
+MS  - An ATP-dependent protease found in prokaryotes, CHLOROPLASTS, and
+      MITOCHONDRIA. It is a soluble multisubunit complex that plays a role
+      in the degradation of many abnormal proteins.
+HN  - 2005(1988)
+BX  - ATP-Dependent Endoprotease Ti
+BX  - Protease Ti
+
+MH  - Eosinophil Cationic Protein
+UI  - D047150
+MN  - D8.811.277.352.700.350.262
+MN  - D12.776.124.486.379.249
+MN  - D24.611.600.600.249
+MS  - One of several basic proteins released from EOSINOPHIL cytoplasmic
+      granules. Eosinophil cationic protein is a 21-kDa cytotoxic peptide
+      with a pI of 10.9. Although eosinophil cationic protein is considered
+      a member of the RNAse A superfamily of proteins, it has only limited
+      RNAse activity.
+HN  - 2005(1979)
+
+MH  - Eosinophil Granule Proteins
+UI  - D047091
+MN  - D12.776.124.486.379
+MN  - D24.611.600.600
+MS  - Proteins found in EOSINOPHIL granules. They are primarily basic
+      proteins that play a role in host defense and the proinflammatory
+      actions of activated eosinophils.
+HN  - 2005(1979)
+
+MH  - Eosinophil Major Basic Protein
+UI  - D047093
+MN  - D12.776.124.486.379.500
+MN  - D24.611.600.600.500
+MS  - One of several basic proteins released from EOSINOPHIL cytoplasmic
+      granules. Eosinophil major basic protein is a 14-kDa cytotoxic peptide
+      with a pI of 10.9. In addition to its direct cytotoxic effects, it
+      stimulates the release of variety of INFLAMMATION MEDIATORS.
+HN  - 2005(1981)
+BX  - Eosinophil Basic Protein
+BX  - Major Basic Protein, Eosinophil
+
+MH  - Eosinophil Peroxidase
+UI  - D047209
+MN  - D8.811.682.732.440
+MN  - D12.776.124.486.379.311
+MN  - D24.611.600.600.311
+MS  - A 66-kDa peroxidase found in EOSINOPHIL granules. Eosinophil
+      peroxidase is a cationic protein with a pI of 10.8 and is comprised of
+      a heavy chain subunit and a light chain subunit. It possesses
+      cytotoxic activity towards BACTERIA and other organisms, which is
+      attributed to its peroxidase activity.
+HN  - 2005(1997)
+
+MH  - Eosinophil-Derived Neurotoxin
+UI  - D047208
+MN  - D8.811.277.352.700.350.381
+MN  - D12.776.124.486.379.275
+MN  - D24.611.600.600.275
+MS  - A 19-kDa cationic peptide found in EOSINOPHIL granules.
+      Eosinophil-derived neurotoxin is a RIBONUCLEASE and may play a role as
+      an endogenous ANTIVIRAL AGENT.
+HN  - 2005(1989)
+
+MH  - Escherichia coli K12
+UI  - D048168
+MN  - B3.440.450.425.325.300.149
+MN  - B3.660.250.150.180.100.49
+MS  - A species of gram-negative, rod-shaped bacteria belonging to the K
+      serogroup of ESCHERICHIA COLI. It lives as a harmless inhabitant of
+      the human LARGE INTESTINE and is widely used in medical and GENETIC
+      RESEARCH.
+AN  - infection: coordinate IM with ESCHERICHIA COLI INFECTIONS (IM)
+HN  - 2005
+BX  - E coli K12
+
+MH  - Esophageal Sphincter, Lower
+UI  - D049630
+MN  - A2.633.570.210
+MN  - A3.556.875.500.414.350
+MN  - A3.556.875.875.330.350
+MS  - The physiologic or functional barrier to GASTROESOPHAGEAL REFLUX at
+      the esophagogastric junction. Sphincteric muscles remain tonically
+      contracted during the resting state and form the high-pressure zone
+      separating the lumen of the ESOPHAGUS from that of the STOMACH.
+      (Haubrich et al, Bockus Gastroenterology, 5th ed., pp399, 415)
+AN  - diseases: coordinate IM with ESOPHAGEAL DISEASES (IM) or specific
+      esophageal disease (IM); neoplasms: coordinate IM with STOMACH
+      NEOPLASMS (IM) or ESOPHAGEAL NEOPLASMS (IM) depending on text
+HN  - 2005
+BX  - Lower Esophageal Sphincter
+FX  - Gastroesophageal Reflux
+
+MH  - Esophageal Sphincter, Upper
+UI  - D049631
+MN  - A2.633.567.800.360
+MN  - A3.556.875.500.360
+MN  - A4.623.617.360
+MN  - A14.724.617.360
+MS  - The structure at the pharyngoesophageal junction consisting chiefly of
+      the cricopharyngeus muscle. It normally occludes the lumen of the
+      ESOPHAGUS, except during SWALLOWING.
+AN  - diseases: coordinate IM with ESOPHAGEAL DISEASES (IM) or specific
+      esophageal disease (IM); neoplasms: coordinate IM with ESOPHAGEAL
+      NEOPLASMS (IM)
+HN  - 2005
+BX  - Upper Esophageal Sphincter
+
+MH  - Estrogen Receptor alpha
+UI  - D047628
+MN  - D12.776.826.750.350.174
+MN  - D12.776.930.682.350.174
+MS  - One of the ESTROGEN RECEPTORS that has marked affinity for ESTRADIOL.
+      Its expression and function differs from, and in some ways opposes,
+      ESTROGEN RECEPTOR BETA.
+HN  - 2005(1997)
+
+MH  - Estrogen Receptor beta
+UI  - D047629
+MN  - D12.776.826.750.350.262
+MN  - D12.776.930.682.350.262
+MS  - One of the ESTROGEN RECEPTORS that has greater affinity for
+      ISOFLAVONES than ESTROGEN RECEPTOR ALPHA does. There is great sequence
+      homology with ER alpha in the DNA-binding domain but not in the ligand
+      binding and hinge domains.
+HN  - 2005(1997)
+
+MH  - Exhumation
+UI  - D049249
+MN  - I1.198.780.937.422
+MS  - Removal of a dead body from the earth after burial.
+HN  - 2005
+FX  - Forensic Anthropology
+FX  - Postmortem Changes
+
+MH  - Exteins
+UI  - D047669
+MN  - G6.184.603.60.270
+MS  - The (EXternal proTEIN) sequences flanking INTEINS, which are internal
+      fragments of precursor proteins removed by PROTEIN SPLICING. 
+      Concomitantly, as the inteins are excised, the exteins are ligated to
+      form mature proteins.
+HN  - 2005
+FX  - Inteins
+FX  - Protein Splicing
+
+MH  - Extracellular Signal-Regulated MAP Kinases
+UI  - D048049
+MN  - D8.811.913.696.620.682.700.567.342
+MN  - D8.811.913.696.620.682.700.646.750.249
+MN  - D12.644.360.450.169
+MN  - D12.776.476.450.169
+MS  - A mitogen-activated protein kinase subfamily that is widely expressed
+      and plays a role in regulation of MEIOSIS, MITOSIS and post mitotic
+      functions in differentiated cells. The extracellular signal regulated
+      MAP kinases are regulated by a broad variety of CELL SURFACE RECEPTORS
+      and can be activated by certain CARCINOGENS.
+AN  - note specifics
+HN  - 2005; for EXTRACELLULAR SIGNAL-REGULATED KINASES use MITOGEN-ACTIVATED
+      PROTEIN KINASES 1994-2004
+BX  - ERK MAP Kinases
+BX  - Extracellular Signal-Regulated Kinases
+BX  - MAP Kinases, Extracellular Signal-Regulated
+
+MH  - Falconiformes
+UI  - D046093
+MN  - B1.150.900.248.250
+MN  - B1.150.900.248.815.350
+MS  - An order of diurnal BIRDS of prey, including EAGLES; HAWKS; buzzards;
+      vultures; and falcons.
+HN  - 2005
+
+MH  - Felidae
+UI  - D045989
+MN  - B1.150.900.649.147.354
+MS  - The cat family in the order CARNIVORA comprised of muscular,
+      deep-chested terrestrial carnivores with a highly predatory lifestyle.
+HN  - 2005; use CARNIVORA 1998-2004
+BX  - Leopards, Snow
+BX  - Leopardus pardalis
+BX  - Ocelots
+BX  - Snow Leopards
+
+MH  - Felis
+UI  - D045991
+MN  - B1.150.900.649.147.354.250
+MS  - Genus in the family FELIDAE comprised of small felines including the
+      domestic cat, Felis catus (CATS) and its ancestor the wild cat, Felis
+      silvestris.
+HN  - 2005; use CARNIVORA 1998-2004
+
+MH  - Fertile Period
+UI  - D046910
+MN  - G8.520.440.154
+MS  - The period in the MENSTRUAL CYCLE that is optimal for FERTILIZATION of
+      the OVUM and yielding PREGNANCY. The duration of fertile period
+      depends on the life span of male GAMETES within the female
+      reproductive tract and the time of OVULATION. It usually begins a few
+      days before ovulation and ends on the day of ovulation.
+HN  - 2005; use MENSTRUATION 1980-2004
+FX  - Natural Family Planning Methods
+
+MH  - Fetal Development
+UI  - D047109
+MN  - G7.574.500.325.235
+MN  - G8.520.170.157
+MS  - Morphological and physiological development of FETUSES.
+AN  - mammalian only
+HN  - 2005, 1985-2002; use EMBRYONIC AND FETAL DEVELOPMENT 2003-2004
+
+MH  - Fetal Mortality
+UI  - D046689
+MN  - E5.318.308.985.550.362
+MN  - G3.850.505.400.975.550.362
+MN  - G3.850.520.308.985.550.362
+MN  - L1.280.975.550.362
+MN  - N1.224.935.698.300
+MS  - Number of fetal deaths with stated or presumed gestation of 20 weeks
+      or more in a given population. Late fetal mortality is death after of
+      28 weeks or more.
+AN  - do not confuse with FETAL DEATH, a non-statistical concept
+HN  - 2005
+
+MH  - Fetal Nutrition Disorders
+UI  - D048070
+MN  - C13.703.277.677
+MN  - C18.654.521.625
+MS  - Disorders caused by nutritional imbalance, either overnutrition or
+      undernutrition, in the FETUS in utero.
+HN  - 2005; use PLACENTA  INSUFFICIENCY 1998-2004
+BX  - Fetal Malnutrition
+BX  - Malnutrition, Fetal
+
+MH  - Fetal Therapies
+UI  - D046128
+MN  - E2.467
+MS  - Prenatal interventions to correct fetal anomalies or treat FETAL
+      DISEASES in utero. Fetal therapies include several major areas, such
+      as open surgery; FETOSCOPY; pharmacological therapy; INTRAUTERINE
+      TRANSFUSION; STEM CELL TRANSPLANTATION; and GENE THERAPY.
+AN  - General only; prefer specifics
+HN  - 2005; use FETAL DISEASES 1993-2004, use FETUS 1986-1992
+BX  - Fetal Therapy
+
+MH  - Finches
+UI  - D046369
+MN  - B1.150.900.248.620.750.250
+MS  - Common name for small PASSERIFORMES in the family Fringillidae. They
+      have a short stout bill (BEAK) adapted for crushing SEEDS. Some
+      species of Old World finches are called CANARIES.
+HN  - 2005; use SONGBIRDS 1999-2004
+
+MH  - Fireflies
+UI  - D048888
+MN  - B1.500.131.617.69.307
+MS  - The family Lampyidae, which are bioluminescent BEETLES. They contain
+      FIREFLY LUCIFERIN and LUCIFERASES. Oxidation of firefly luciferin
+      results in luminescence.
+HN  - 2005; use BEETLES 1993-2004
+BX  - Lampyridae
+
+MH  - Firefly Luciferin
+UI  - D049454
+MN  - D3.383.871.298
+MS  - A benzothaizole which is oxidized by LUCIFERASES, FIREFLY to cause
+      emission of light (LUMINESCENCE, PHYSICAL).
+HN  - 2005
+
+MH  - Flavones
+UI  - D047309
+MN  - D3.438.150.266.450.260
+MS  - A group of 4-keto-FLAVONOIDS.
+HN  - 2005, 1963-2003; use FLAVONOIDS 2004
+
+MH  - Forensic Pathology
+UI  - D049429
+MN  - G2.403.776.240.300
+MN  - G2.403.776.600.249
+MN  - I1.198.780.937.460
+MS  - The application of pathology to questions of law.
+AN  - specialty; may also be used for forensic aspects in pathology
+HN  - 2005
+BX  - Pathology, Forensic
+
+MH  - Freezing Reaction, Cataleptic
+UI  - D046352
+MN  - F1.145.113.555
+MN  - F1.145.632.555
+MN  - G11.427.792.530.698.555
+MS  - An induced response to threatening stimuli characterized by the
+      cessation of body movements, except for those that are involved with
+      BREATHING, and the maintenance of an immobile POSTURE.
+AN  - do not confuse with IMMOBILIZATION: method for restraining body
+      movement, or IMMOBILITY RESPONSE, TONIC: loss of postural tone
+HN  - 2005
+BX  - Cataleptic Immobilization Reaction
+BX  - Immobilization Reaction, Cataleptic
+FX  - Catalepsy
+FX  - Immobility Response, Tonic
+FX  - Immobilization
+
+MH  - French Revolution
+UI  - D047850
+MN  - K1.504.504.875.374
+MS  - Conflict during which traditional monarchy was ended and modern
+      government functions were instituted.
+HN  - 2005
+
+MH  - Fruiting Bodies, Fungal
+UI  - D048690
+MN  - B5.295.249
+MS  - The fruiting 'heads' or 'caps' of FUNGI, which as a food item are
+      familiarly known as MUSHROOMS, that contain the FUNGAL SPORES.
+HN  - 2005
+FX  - Agaricales
+
+MH  - Fur Seals
+UI  - D046069
+MN  - B1.150.900.649.147.600.288
+MS  - A group comprised of several species of eared seals found in two
+      genera, in the family Otariidae. In comparison to SEA LIONS, they have
+      an especially dense wooly undercoat.
+AN  - SEALS, EARED is also available
+HN  - 2005; use SEALS, EARLESS 1990-2004
+BX  - Arctocephalus
+BX  - Callorhinus
+BX  - Seals, Eared
+
+MH  - G(M2) Activator Protein
+UI  - D049289
+MN  - D8.211.790.249
+MS  - An essential cofactor for the degradation of G(M2)GANGLIOSIDE by
+      lysosomal BETA-N-ACETYLHEXOSAMINIDASE. Genetic mutations resulting in
+      loss of G(M2) activator protein are one of the causes of TAY-SACHS
+      DISEASE, AB VARIANT.
+HN  - 2005(1983)
+
+MH  - Gadiformes
+UI  - D048388
+MN  - B1.150.900.493.467
+MS  - An order of fish including the families Gadidae (cods), Macrouridae
+      (grenadiers), and hakes. The large Gadidae family includes cod,
+      haddock, whiting, and pollock.
+HN  - 2005
+BX  - Gadidae
+BX  - Hakes
+
+MH  - Gadus morhua
+UI  - D048389
+MN  - B1.150.900.493.467.400
+MS  - A species of fish in the cod family GADIDAE, known as the Atlantic
+      cod. It is one of the most important commercial FISHES.
+HN  - 2005
+BX  - Atlantic Cod
+
+MH  - Galliformes
+UI  - D046094
+MN  - B1.150.900.248.350
+MS  - An order of heavy-bodied, largely terrestrial BIRDS including
+      pheasants, TURKEYS, grouse, QUAIL, and CHICKENS.
+HN  - 2005
+
+MH  - gamma-Cyclodextrins
+UI  - D047408
+MN  - D4.345.103.444
+MN  - D9.698.365.855.400.375.444
+MS  - Cyclic GLUCANS consisting of eight (8) glucopyranose units linked by
+      1,4-glycosidic bonds.
+HN  - 2005
+
+MH  - Gastrointestinal Stromal Tumors
+UI  - D046152
+MN  - C6.301.371.308
+MN  - C6.405.249.308
+MS  - All tumors in the GASTROINTESTINAL TRACT arising from mesenchymal
+      cells (MESODERM) except those of smooth muscle cells (LEIOMYOMA) or
+      SCHWANN CELLS (SCHWANNOMA). Seventy percent of gastrointestinal
+      stromal tumors occur in the STOMACH and account for 1-3% of all
+      gastric malignancies. They tend to be slow-growing and asymptomatic
+      until they become quite large. Symptoms include GASTROINTESTINAL
+      HEMORRHAGE; DYSPEPSIA; and obstructions. Most result from mutations in
+      the KIT gene encoding a protein-tyrosine kinase receptor
+      (PROTO-ONCOGENE PROTEIN C-KIT).
+HN  - 2005
+
+MH  - Geodia
+UI  - D047231
+MN  - B1.500.802.360
+MS  - A genus of massive or globular SPONGES in the family Geodiidae, with
+      large spicules at or near the surface.
+HN  - 2005
+
+MH  - Ginkgolides
+UI  - D046934
+MN  - D2.455.849.291.400
+MS  - DITERPENES with three LACTONES and a unique tert-butyl group, which
+      are found in GINKGO plants along with BILOBALIDES.
+HN  - 2005
+
+MH  - Glycerophosphoinositol Inositolphosphodiesterase
+UI  - D047768
+MN  - D8.811.277.352.640.295
+MS  - A phosphoric diester hydrolase with specificity for the cleavage of
+      GLYCEROL from 1-(sn-glycero-3-phospho)-1D-myo-inositol. It also has
+      specificity for hydrolysis of the cyclic phosphate bond in inositol
+      1,2-cyclic phosphate
+HN  - 2005(1993); for 1,2-CYCLIC INOSITOLPHOSPHATE PHOSPHODIESTERASE;
+      1,2-CYCLIC-INOSITOL-PHOSPHATE PHOSPHODIESTERASE; & INOSITOL 1,2-CYCLIC
+      PHOSPHATE 2-PHOSPHOHYDROLASE use ANNEXIN A3 1980-2004
+BX  - 1,2-Cyclic-Inositol-Phosphate Phosphodiesterase
+BX  - Inositol 1,2-Cyclic Phosphate 2-Phosphohydrolase
+
+MH  - Gophers
+UI  - D046348
+MN  - B1.150.900.649.865.545
+MS  - The family Geomyidae of burrowing rodents, commonly called pocket
+      gophers. There are six genera, all found in North America.
+HN  - 2005; use RODENTIA 1998-2004
+BX  - Geomyidae
+
+MH  - Green Fluorescent Proteins
+UI  - D049452
+MN  - D12.776.532.265
+MS  - Protein analogs and derivatives of the Aequorea victoria green
+      fluorescent protein that emit light (FLUORESCENCE) when excited with
+      ULTRAVIOLET RAYS. They are used in REPORTER GENES in doing GENETIC
+      TECHNIQUES. Numerous mutants have been made to emit other colors or be
+      sensitive to pH.
+HN  - 2005(1992)
+
+MH  - Grifola
+UI  - D048691
+MN  - B5.179.100.350
+MS  - A member of the AGARICALES known for edible MUSHROOMS.
+HN  - 2005
+
+MH  - Growth and Development
+UI  - D048788
+MN  - G7.574
+MS  - The series of changes to the shape, size, components, and functions of
+      an individual organism that occur over time as the organism progresses
+      from its initial form to full size and maturity.
+AN  - general only; prefer specifics or /growth with specific organism,
+      organ or tissue
+HN  - 2005
+FX  - Developmental Biology
+FX  - Gene Expression Regulation, Developmental
+
+MH  - Guided Tissue Regeneration
+UI  - D048091
+MN  - E4.680.300
+MS  - Procedures for enhancing and directing tissue repair and renewal
+      processes, such as BONE REGENERATION; NERVE REGENERATION; etc. They
+      involve surgically implanting growth conducive tracks or conduits at
+      the damaged site to stimulate and control of the location of cell
+      repopulation. The tracks or conduits are made from synthetic and/or
+      natural materials and may include support cells and induction factors
+      for CELL GROWTH or CELL MIGRATION.
+HN  - 2005
+FX  - Regeneration
+FX  - Tissue Engineering
+
+MH  - Gulf War
+UI  - D047830
+MN  - K1.504.504.968.800
+MS  - United Nations' action to intervene in conflict between the nation of
+      Kuwait and occupying Iraqi forces, occurring from 1990 through 1991.
+HN  - 2005
+BX  - Operation Desert Storm
+
+MH  - Gyrovirus
+UI  - D046810
+MN  - B4.280.120.400
+MN  - B4.909.204.120.400
+MS  - A genus in the family CIRCOVIRIDAE comprising the single species
+      CHICKEN ANEMIA VIRUS.
+AN  - infection: coord IM with CIRCOVIRIDAE INFECTIONS (IM)
+HN  - 2005
+
+MH  - Haliclona
+UI  - D047129
+MN  - B1.500.802.380
+MS  - A genus of SPONGES in the family Chalinidae characterized by
+      unispicular secondary lines in the choanosomal skeleton.
+HN  - 2005
+
+MH  - Hawks
+UI  - D046428
+MN  - B1.150.900.248.250.400
+MN  - B1.150.900.248.815.350.400
+MS  - Common name for many members of the FALCONIFORMES order, family
+      Accipitridae, generally smaller than EAGLES, and containing short,
+      rounded wings and a long tail.
+HN  - 2005; use RAPTORS 1999-2004
+
+MH  - Healthcare Common Procedure Coding System
+UI  - D049228
+MN  - L1.453.245.945.380
+MN  - L1.700.508.300.680.350
+MN  - N4.452.515.350
+MS  - Uniform method for health care providers and medical suppliers to
+      report professional services, procedures, and supplies. It consists of
+      alphanumeric codes and modifiers for the use of all public and private
+      health insurers. It is developed by the Centers for Medicare and
+      Medicaid Services.
+HN  - 2005
+BX  - HCPCS
+
+MH  - Hearing Loss, Mixed Conductive-Sensorineural
+UI  - D046089
+MN  - C9.218.458.341.849
+MN  - C10.597.751.418.341.849
+MN  - C23.888.592.763.393.341.849
+MS  - Hearing loss due to damage or impairment of both the conductive
+      elements (HEARING LOSS, CONDUCTIVE) and the sensorineural elements
+      (HEARING LOSS, SENSORINEURAL) of the ear.
+HN  - 2005; use HEARING DISORDERS 2000-2004
+
+MH  - Hearing Loss, Unilateral
+UI  - D046088
+MN  - C9.218.458.341.950
+MN  - C10.597.751.418.341.950
+MN  - C23.888.592.763.393.341.950
+MS  - Partial or complete hearing loss in one ear.
+HN  - 2005
+BX  - Unilateral Hearing Loss
+
+MH  - Hematoma, Epidural, Spinal
+UI  - D046748
+MN  - C23.550.414.838.355
+MS  - A rare epidural hematoma in the spinal epidural space, usually due to
+      a vascular malformation (CENTRAL NERVOUS SYSTEM VASCULAR
+      MALFORMATIONS) or TRAUMA. Spontaneous spinal epidural hematoma is a
+      neurologic emergency due to a rapidly evolving compressive MYELOPATHY.
+HN  - 2005
+BX  - Hemorrhage, Spinal Epidural
+BX  - Spinal Epidural Hematoma
+
+MH  - Hematoma, Subdural, Intracranial
+UI  - D046648
+MN  - C10.228.140.300.535.450.400.400
+MN  - C10.900.300.837.600.400
+MN  - C14.907.253.573.400.450.400
+MN  - C21.866.260.616.600.400
+MN  - C21.866.915.300.490.450.400
+MN  - C23.550.414.838.700.400
+MN  - C23.550.414.913.700.400
+MS  - Subdural hematoma occurring over the surface of the cerebral
+      hemisphere.
+HN  - 2005; use HEMATOMA, SUBDURAL 2000-2004
+BX  - Intracranial Subdural Hematoma
+
+MH  - Hematoma, Subdural, Spinal
+UI  - D046649
+MN  - C23.550.414.838.700.700
+MS  - Subdural hematoma of the SPINAL CANAL.
+HN  - 2005; use HEMATOMA, SUBDURAL (2000-2004)
+BX  - Spinal Subdural Hematoma
+
+MH  - Hemicentrotus
+UI  - D047330
+MN  - B1.500.408.578.400
+MS  - A genus of SEA URCHINS in the family Strongylocentrotidae with a
+      hemicyclic apical disk and short spines.
+HN  - 2005
+
+MH  - Hepatic Insufficiency
+UI  - D048550
+MN  - C6.552.308
+MS  - Conditions in which the LIVER functions fall below the normal ranges.
+      Severe hepatic insufficiency may cause LIVER FAILURE or DEATH.
+      Treatment may include LIVER TRANSPLANTATION.
+HN  - 2005
+
+MH  - Hernia, Abdominal
+UI  - D046449
+MN  - C6.405.293.249
+MN  - C23.300.707.374
+MS  - A protrusion of abdominal structures through the retaining ABDOMINAL
+      WALL. It involves two parts: an opening in the abdominal wall, and a
+      hernia sac consisting of PERITONEUM and abdominal contents. Abdominal
+      hernias include groin hernia (HERNIA, FEMORAL; HERNIA, INGUINAL) and
+      VENTRAL HERNIA.
+HN  - 2005; use HERNIA, VENTRAL 1989-2004
+
+MH  - Hirudo medicinalis
+UI  - D047709
+MN  - B1.500.91.426.400
+MS  - A species of European freshwater LEECHES used for BLOODLETTING in
+      ancient times and also for LEECHING in modern times.
+HN  - 2005; use LEECHES 2002-2004
+
+MH  - History, 15th Century
+UI  - D049668
+MN  - K1.504.475.500
+MS  - Time period from 1401 through 1500 of the common era.
+AN  - IM general only; NIM as check tag
+HN  - 2005
+BX  - 15th Century History
+
+MH  - History, 16th Century
+UI  - D049669
+MN  - K1.504.475.750
+MS  - Time period from 1501 through 1600 of the common era.
+AN  - IM general only; NIM as check tag
+HN  - 2005
+BX  - 16th Century History
+
+MH  - History, 17th Century
+UI  - D049670
+MN  - K1.504.504.750
+MS  - Time period from 1601 through 1700 of the common era.
+AN  - IM general only; NIM as check tag
+HN  - 2005
+BX  - 17th Century History
+
+MH  - History, 18th Century
+UI  - D049671
+MN  - K1.504.504.875
+MS  - Time period from 1701 through 1800 of the common era.
+AN  - IM general only; NIM as check tag
+HN  - 2005
+BX  - 18th Century History
+
+MH  - History, 19th Century
+UI  - D049672
+MN  - K1.504.504.937
+MS  - Time period from 1801 through 1900 of the common era.
+AN  - IM general only; NIM as check tag
+HN  - 2005
+BX  - 19th Century History
+
+MH  - History, 20th Century
+UI  - D049673
+MN  - K1.504.504.968
+MS  - Time period from 1901 through 2000 of the common era.
+AN  - IM general only; NIM as check tag
+HN  - 2005
+BX  - 20th Century History
+
+MH  - History, 21st Century
+UI  - D049674
+MN  - K1.504.504.984
+MS  - Time period from 2001 through 2100 of the common era.
+AN  - IM general only; NIM as check tag
+HN  - 2005
+BX  - 21st Century History
+
+MH  - History, Ancient
+UI  - D049690
+MN  - K1.504.470
+MS  - The period of history before 500 of the common era.
+AN  - before 500 AD; IM general only; NIM as check tag; note ANCIENT LANDS
+      in Category Z
+HN  - 2005
+BX  - Ancient History
+
+MH  - History, Early Modern 1451-1600
+UI  - D049692
+MN  - K1.504.475
+MS  - The period of history from 1451 through 1600 of the common era.
+AN  - not used for indexing
+HN  - 2005
+BX  - Early Modern History
+
+MH  - History, Medieval
+UI  - D049691
+MN  - K1.504.472
+MS  - The period of history from the year 500 through 1450 of the common
+      era.
+AN  - IM general only; NIM as check tag
+HN  - 2005
+BX  - Medieval History
+
+MH  - History, Modern 1601-
+UI  - D049711
+MN  - K1.504.504
+MS  - The period of history from 1601 of the common era to the present.
+AN  - not used for indexing
+HN  - 2005
+BX  - History, Modern
+BX  - Modern History
+
+MH  - Holothuria
+UI  - D047332
+MN  - B1.500.408.560.400
+MS  - A genus of large SEA CUCUMBERS in the family Holothuriidae possessing
+      thick body walls, a warty body surface, and microscopic ossicles.
+HN  - 2005
+
+MH  - Hyaenidae
+UI  - D045968
+MN  - B1.150.900.649.147.410
+MS  - A family of large terrestrial carnivores possessing long legs, coarse
+      guard hairs and a busy tail. It is comprised of hyenas and aardwolves.
+HN  - 2005; use CARNIVORA 1998-2004
+BX  - Aardwolves
+BX  - Hyenas
+BX  - Proteles
+
+MH  - Hydrolyzable Tannins
+UI  - D047348
+MN  - D2.241.223.100.380.350.299
+MN  - D2.241.511.390.350.299
+MN  - D2.755.410.350.299
+MN  - D5.750.78.937.214
+MS  - Polymeric derivatives of GALLIC ACID that are esters of a sugar.
+HN  - 2005
+
+MH  - Hymenolepis diminuta
+UI  - D048190
+MN  - B1.500.500.736.215.454.400
+MS  - A species of tapeworm (TAPEWORMS) infecting RATS and MICE but rarely
+      causing disease in humans. Its life cycle involves RODENTS as the
+      definitive host and BEETLES as the intermediate host.
+AN  - infection: coordinate (IM) with HYMENOLEPIASIS (IM)
+HN  - 2005
+BX  - Rat Tapeworm
+
+MH  - Hymenolepis nana
+UI  - D048189
+MN  - B1.500.500.736.215.454.410
+MS  - The smallest species of TAPEWORMS. It is the only cestode that
+      parasitizes humans without requiring an intermediate host.
+AN  - infection: coordinate (IM) with HYMENOLEPIASIS (IM)
+HN  - 2005
+
+MH  - Hypertension, Pregnancy-Induced
+UI  - D046110
+MN  - C13.703.395
+MN  - C14.907.489.480
+MS  - A condition in pregnant women with elevated systolic (>140 mm Hg) and
+      diastolic (>90 mm Hg) blood pressure on at least two occasions 6 h
+      apart. HYPERTENSION complicates 8-10% of all pregnancies, generally
+      after 20 weeks of gestation. Gestational hypertension can be divided
+      into several broad categories according to the complexity and
+      associated symptoms, such as EDEMA; PROTEINURIA; SEIZURES;
+      abnormalities in BLOOD COAGULATION and liver functions.
+AN  - check tags FEMALE & PREGNANCY
+HN  - 2005
+
+MH  - Ice Cover
+UI  - D046448
+MN  - G3.230.700.300.500
+MS  - A thick mass of ICE formed over large regions of land, RIVERS, lakes,
+      ponds, or SEAWATER.
+HN  - 2005
+BX  - Sea Ice Cover
+
+MH  - Imidazolidines
+UI  - D048289
+MN  - D3.383.374.432
+MS  - Compounds based on reduced IMIDAZOLINES which contain no double bonds
+      in the ring.
+HN  - 2005
+
+MH  - Imidazolines
+UI  - D048288
+MN  - D3.383.374.436
+MS  - Compounds based on reduced IMIDAZOLES containing a single double bond.
+HN  - 2005
+
+MH  - Immobility Response, Tonic
+UI  - D046353
+MN  - F1.145.113.680
+MN  - F1.145.632.680
+MN  - G11.427.792.530.698.680
+MS  - An induced response to threatening stimuli characterized by complete
+      loss of muscle strength.
+AN  - do not confuse with IMMOBILIZATION: restraining body movement or
+      FREEZING REACTION, CATALEPTIC: cessation of body movement while
+      maintaining an immobile posture via muscle rigidity
+HN  - 2005
+BX  - Hypnosis, Animal
+BX  - Immobilization, Tonic
+BX  - Tonic Immobilization
+FX  - Cataplexy
+FX  - Catatonia
+FX  - Freezing Reaction, Cataleptic
+FX  - Immobilization
+FX  - Syncope
+
+MH  - Immunoprecipitation
+UI  - D047468
+MN  - E5.478.605
+MS  - The aggregation of soluble ANTIGENS with ANTIBODIES, alone or with
+      antibody binding factors such as ANTI-ANTIBODIES or STAPHYLOCOCCAL
+      PROTEIN A, into complexes large enough to fall out of solution.
+HN  - 2005; use PRECIPITIN TESTS 1989-2004
+FX  - Antigen-Antibody Complex
+
+MH  - Incandescence
+UI  - D049450
+MN  - H1.671.606.552.440
+MN  - H1.671.768.638.578.440
+MS  - Emission of LIGHT by a substance as its temperature is raised. It is
+      sometimes called hot light in contrast to LUMINESCENCE, PHYSICAL.
+HN  - 2005
+
+MH  - Informatics
+UI  - D048088
+MN  - L1.313
+MS  - The field of information science concerned with the analysis and
+      dissemination of data through the application of computers.
+AN  - general; prefer specifics
+HN  - 2005
+
+MH  - Insulin, Long-Acting
+UI  - D049528
+MN  - D6.472.610.575.532
+MN  - D6.472.699.350.532
+MN  - D12.644.548.393.532
+MS  - Insulin formulation containing substance which delays or retards time
+      period of the absorption of insulin.
+HN  - 2005
+
+MH  - Inteins
+UI  - D047668
+MN  - G6.184.603.60.440
+MS  - The internal fragments of precursor proteins (INternal proTEINS) that
+      are autocatalytically removed by PROTEIN SPLICING. The flanking
+      fragments (EXTEINS) are ligated forming mature proteins. The nucleic
+      acid sequences coding for inteins are considered to be MOBILE GENETIC
+      ELEMENTS. Inteins are composed of self-splicing domains and an
+      endonuclease domain which plays a role in the spread of the intein's
+      genomic sequence. Mini-inteins are composed of the self-splicing
+      domains only.
+HN  - 2005
+BX  - Introns, Protein
+BX  - Protein Introns
+FX  - Exteins
+FX  - Protein Precursors
+FX  - Protein Splicing
+
+MH  - Intermittent Pneumatic Compression Devices
+UI  - D048228
+MN  - E7.515
+MS  - Instruments that generate intermittent forces, uniformed or graduated,
+      to facilitate the emptying of VEINS. These devices are used to reduce
+      limb EDEMA and prevent venous THROMBOEMBOLISM, such as deep vein
+      thrombosis in the legs.
+AN  - do not confuse with CONTINUOUS PASSIVE MOTION THERAPY
+HN  - 2005
+
+MH  - Intracellular Signaling Peptides and Proteins
+UI  - D047908
+MN  - D12.644.360
+MN  - D12.776.476
+MS  - Proteins and peptides that are involved in SIGNAL TRANSDUCTION within
+      the cell. Included here are peptides and proteins that regulate the
+      activity of TRANSCRIPTION FACTORS and cellular processes in response
+      to signals from CELL SURFACE RECEPTORS. Intracellular signaling
+      peptide and proteins may be part of an enzymatic signaling cascade or
+      act through binding to and modifying the action of other signaling
+      factors.
+AN  - don't confuse with SIGNAL PEPTIDES entry term to PROTEIN SORTING
+      SIGNALS; INTERCELLULAR SIGNALING PEPTIDES AND PROTEINS is also
+      available
+HN  - 2005
+
+MH  - Isavirus
+UI  - D046829
+MN  - B4.820.545.450
+MS  - A genus in the family ORTHOMYXOVIRIDAE containing one species:
+      Infectious salmon anemia virus.
+AN  - infection: coord IM with ORTHOMYXOVIRIDAE INFECTIONS (IM)
+HN  - 2005
+BX  - Infectious salmon anemia virus
+
+MH  - Jackals
+UI  - D046030
+MN  - B1.150.900.649.147.153.400
+MS  - Medium-sized terrestrial carnivores, in the genus Canis, family
+      CANIDAE. Three species are recognized, two found only in Africa and
+      one found in Africa, Europe, and Asia.
+HN  - 2005; use CARNIVORA 1998-2004
+
+MH  - JNK Mitogen-Activated Protein Kinases
+UI  - D048031
+MN  - D8.811.913.696.620.682.700.567.513
+MN  - D8.811.913.696.620.682.700.646.750.374
+MN  - D12.644.360.450.340
+MN  - D12.776.476.450.340
+MS  - A subgroup of mitogen-activated protein kinases that activate
+      TRANSCRIPTION FACTOR AP-1 via the phosphorylation of C-JUN PROTEINS.
+      They are components of intracellular signaling pathways that regulate
+      CELL PROLIFERATION; APOPTOSIS; and CELL DIFFERENTIATION.
+AN  - note specifics
+HN  - 2005
+
+MH  - Keratectomy, Laser
+UI  - D048988
+MN  - E4.416.237
+MS  - Application of laser techniques (LASERS) to reduce or reshape the
+      CORNEA to correct REFRACTIVE ERRORS of the EYE, such as MYOPIA and
+      ASTIGMATISM.
+HN  - 2005; for PHOTOKERATECTOMY use KERATECTOMY, PHOTOREFRACTIVE, EXCIMER
+      LlASER 1996-2004
+BX  - Laser Keratectomy
+BX  - Photokeratectomy
+
+MH  - Keratectomy, Subepithelial, Laser-Assisted
+UI  - D049008
+MN  - E4.416.237.875
+MS  - A surgical technique to correct REFRACTIVE ERRORS of the EYE, such as
+      MYOPIA and ASTIGMATISM. In this method, the flap of CORNEAL EPITHELIUM
+      is lifted then replaced after laser ablation of the subepithelial
+      CORNEA. The hinged flap is created by epithelial marking and exposure
+      of the marking to dilute alcohol.
+HN  - 2005
+BX  - Keratomileusis, Subepithelial, Laser-Assisted
+BX  - Laser-Assisted Subepithelial Keratectomy
+
+MH  - Ketolides
+UI  - D048628
+MN  - D2.540.505.250.445
+MN  - D4.345.349.250.445
+MN  - D9.408.477.250.445
+MS  - Compounds based on ERYTHROMYCIN with the 3-cladinose replaced by a
+      ketone. They bind the 23S part of 70S bacterial RIBOSOMES.
+HN  - 2005
+
+MH  - Korean War
+UI  - D047869
+MN  - K1.504.504.968.500
+MS  - An armed conflict between Communist and non-Communist forces in Korea
+      from June 25, 1950, to July 27, 1953.  The parties included United
+      Nations forces from 15 member nations under United States command
+      against military from North Korea and the Peoples Republic of China.
+HN  - 2005
+BX  - Korean War, 1950-1953
+
+MH  - Labor Pain
+UI  - D048949
+MN  - C10.597.617.515
+MN  - C23.888.592.612.490
+MN  - C23.888.646.492
+MS  - Pain associated with OBSTETRIC LABOR in CHILDBIRTH. It is caused
+      primarily by UTERINE CONTRACTION as well as pressure on the CERVIX;
+      BLADDER; and the GASTROINTESTINAL TRACT. Labor pain mostly occurs in
+      the ABDOMEN; the GROIN; and the BACK.
+HN  - 2005
+
+MH  - Lactams, Macrocyclic
+UI  - D047029
+MN  - D2.65.589.327
+MN  - D4.345.295
+MS  - LACTAMS forming compounds with a ring size of approximately 1-3 dozen
+      atoms.
+HN  - 2005; for ANSAMYCINS use LACTAMS, MACROCYCLIC 1974-2004
+BX  - Ansamycins
+BX  - Macrocyclic Lactams
+
+MH  - Lactobacillus delbrueckii
+UI  - D048668
+MN  - B3.510.460.400.410.475.475.250
+MS  - A species of gram-positive, rod-shaped, facultatively anaerobic
+      bacteria. capable of producing LACTIC ACID.  It is important in the
+      manufacture of fermented dairy products.
+HN  - 2005
+
+MH  - Lactobacillus plantarum
+UI  - D048191
+MN  - B3.510.460.400.410.475.475.612
+MS  - A species of rod-shaped, LACTIC ACID bacteria used in PROBIOTICS and
+      SILAGE production.
+HN  - 2005
+
+MH  - Laron Syndrome
+UI  - D046150
+MN  - C5.116.99.343.679
+MN  - C16.320.510
+MN  - C19.297.613
+MS  - An autosomal recessive disorder characterized by short stature,
+      defective GROWTH HORMONE RECEPTOR, and failure to generate
+      INSULIN-LIKE GROWTH FACTOR I by GROWTH HORMONE. Laron syndrome is not
+      a form of primary pituitary dwarfism (GROWTH HORMONE DEFICIENCY
+      DWARFISM) but the result of mutation of the human GHR gene on
+      chromosome 5.
+HN  - 2005
+BX  - Growth Hormone Insensitivity Syndrome
+
+MH  - Laser Scanning Cytometry
+UI  - D047569
+MN  - E1.370.350.515.395.500
+MN  - E5.196.712.516.600.240.400.500
+MN  - E5.200.500.386.400.500
+MN  - E5.595.395.500
+MS  - A scanning microscope-based, cytofluorimetry technique for making
+      fluorescence measurements and topographic analysis on individual
+      cells. Lasers are used to excite fluorochromes in labeled cellular
+      specimens. Fluorescence is detected in multiple discrete wavelengths
+      and the locational data is processed to quantitatively assess
+      APOPTOSIS; PLOIDES; cell proliferation; GENE EXPRESSION; PROTEIN
+      TRANSPORT; and other cellular processes.
+HN  - 2005
+BX  - Cytometry, Laser Scanning
+
+MH  - Leukoaraiosis
+UI  - D049292
+MN  - C23.550.522
+MS  - Non-specific white matter changes in the BRAIN, often seen after age
+      65. Changes include loss of AXONS; MYELIN pallor, GLIOSIS, loss of
+      ependymal cells, and enlarged perivascular spaces. Leukoaraiosis is a
+      risk factor for DEMENTIA and CEREBROVASCULAR DISEASE.
+HN  - 2005
+
+MH  - Leukocyte Reduction Procedures
+UI  - D047589
+MN  - E2.110.527
+MN  - E5.200.500.363.540
+MS  - The removal of LEUKOCYTES from BLOOD to reduce BLOOD TRANSFUSION
+      reactions and lower the chance of transmitting VIRUSES. This may be
+      performed by FILTRATION or by CYTAPHERESIS.
+HN  - 2005
+
+MH  - Libraries, Digital
+UI  - D046609
+MN  - L1.346.596.413
+MN  - L1.700.508.300.742.470
+MS  - Libraries in which a major proportion of the resources are available
+      in machine-readable format, rather than on paper or MICROFORM.
+HN  - 2005
+
+MH  - Lingual Goiter
+UI  - D047268
+MN  - C19.874.283.802
+MS  - Enlargement of the LINGUAL THYROID, ectopic thyroid tissue at the base
+      of the TONGUE. It may cause upper AIRWAY OBSTRUCTION; DYSPHAGIA; or
+      HYPOTHYROIDISM symptoms
+HN  - 2005
+FX  - Lingual Thyroid
+
+MH  - Lingual Thyroid
+UI  - D046151
+MN  - C19.874.591
+MS  - A condition characterized by the presence of rudimentary THYROID
+      tissue found at the base of the TONGUE. It is due to failed embryonic
+      development and migration of thyroid tissue to its normal location.
+      The lingual thyroid usually cannot maintain adequate hormone
+      production thereby resulting in HYPOTHYROIDISM.
+HN  - 2005
+FX  - Lingual Goiter
+
+MH  - Liver Abscess, Pyogenic
+UI  - D046290
+MN  - C1.539.830.25.20.455.730
+MN  - C6.552.597.758
+MS  - Single or multiple areas of PUS due to bacterial infection within the
+      hepatic parenchyma. It can be caused by a variety of BACTERIA, local
+      or disseminated from infections elsewhere such as in APPENDICITIS;
+      CHOLECYSTITIS; PERITONITIS; and after LIVER TRANSPLANTATION.
+AN  - coordinate IM with specific organism infection term (IM)
+HN  - 2005
+
+MH  - Locusta migratoria
+UI  - D048188
+MN  - B1.500.131.617.678.369.500
+MS  - A species of migratory Old World locusts, in the family ACRIDIDAE,
+      that are important pests in Africa and Asia.
+HN  - 2005
+
+MH  - Luciferases, Bacterial
+UI  - D049453
+MN  - D12.776.97.529
+MN  - D12.776.532.510.249
+MS  - Luciferases from BACTERIA such as PHOTOBACTERIUM; VIBRIO; and
+      PHOTORHABDUS.
+HN  - 2005
+
+MH  - Luciferases, Firefly
+UI  - D049409
+MN  - D12.776.532.510.500
+MS  - Luciferases from FIREFLIES, usually Photinus, that oxidize FIREFLY
+      LUCIFERINS to cause emission of PHOTONS.
+HN  - 2005
+
+MH  - Luciferases, Renilla
+UI  - D049410
+MN  - D12.776.532.510.750
+MS  - Luciferases from RENILLA that oxidizes certain LUMINESCENT AGENTS to
+      cause emission of PHOTONS.
+HN  - 2005
+
+MH  - Luminescence, Physical
+UI  - D049449
+MN  - H1.671.606.552.665
+MN  - H1.671.768.638.578.665
+MS  - Emission of LIGHT when ELECTRONS return to the electronic ground state
+      from an excited state and lose the energy as PHOTONS. It is sometimes
+      called cool light in contrast to INCANDESCENCE. LUMINESCENT
+      MEASUREMENTS take advantage of this type of light emitted from
+      LUMINESCENT AGENTS.
+HN  - 2005
+
+MH  - Luminescent Agents
+UI  - D049408
+MN  - D27.720.470.410.505
+MS  - Compound such as LUMINESCENT PROTEINS that cause or emit light
+      (PHYSICAL LUMINESCENCE).
+HN  - 2005
+FX  - Chromogenic Compounds
+FX  - Fluorescent Dyes
+
+MH  - Luteolin
+UI  - D047311
+MN  - D3.438.150.266.450.260.555
+MS  - 5,7,3',4'-tetrahydroxy-flavone, one of the FLAVONES.
+HN  - 2005 (1981)
+
+MH  - Lynx
+UI  - D046008
+MN  - B1.150.900.649.147.354.500
+MS  - A genus in the family FELIDAE comprising felines with long legs, ear
+      tufts, and a short tail.
+HN  - 2005; use CARNIVORA 1998-2004
+BX  - Bobcats
+
+MH  - Lytechnius
+UI  - D047331
+MN  - B1.500.408.578.500
+MS  - A genus of SEA URCHINS in the family Toxopneustidae possessing
+      trigeminate ambulacral plating.
+HN  - 2005
+
+MH  - Macrocyclic Compounds
+UI  - D047028
+MN  - D4.345
+MS  - Cyclic compounds with a ring size of approximately 1-4 dozen atoms.
+AN  - general or unspecified; prefer specific group or specific compound
+HN  - 2005
+
+MH  - Macromolecular Substances
+UI  - D046911
+MN  - D5
+MS  - Compounds and molecular complexes that consist of very large numbers
+      of atoms and are generally over 500 kD in size. In biological systems
+      macromolecular substances usually can be visualized using ELECTRON
+      MICROSCOPY and are distinguished from ORGANELLES by the lack of a
+      membrane structure.
+AN  - general only; do not use as a routine coordinate with specific
+      macromolecular substances
+HN  - 2005
+
+MH  - Macronucleus
+UI  - D048648
+MN  - A11.284.430.106.550
+MN  - A11.284.430.214.190.875.117.550
+MS  - The larger of two types of nuclei in ciliate PROTOZOANS. It is the
+      transcriptionally active nucleus of the vegetative cells as
+      distinguished from the smaller transcriptionally inert GERMLINE
+      MICRONUCLEUS.
+HN  - 2005
+
+MH  - Mandrillus
+UI  - D048528
+MN  - B1.150.900.649.801.400.130.120.530
+MS  - A genus of the subfamily CERCOPITHECINAE, family CERCOPITHECIDAE,
+      comprising two species: the drill (M. leucophaeus) and the mandrill
+      (M. sphinx). They are usually found in thick rainforest and have a
+      gentle disposition despite their ferocious reputation. Some authors
+      consider Mandrillus a subgenus of PAPIO.
+HN  - 2005; use PAPIO 1992-2004; for DRILL and MANDRILL use PAPIO 1981-2004
+BX  - Drill
+BX  - Mandrill
+
+MH  - MAP Kinase Kinase 1
+UI  - D048369
+MN  - D8.811.913.696.620.682.700.565.100
+MN  - D8.811.913.696.620.682.725.200.100
+MN  - D12.644.360.440.100
+MN  - D12.776.476.440.100
+MS  - An abundant 43-kDa mitogen-activated protein kinase kinase subtype
+      with specificity for MITOGEN-ACTIVATED PROTEIN KINASE 1 and
+      MITOGEN-ACTIVATED PROTEIN KINASE 3.
+HN  - 2005(1999)
+
+MH  - MAP Kinase Kinase 2
+UI  - D048370
+MN  - D8.811.913.696.620.682.700.565.200
+MN  - D8.811.913.696.620.682.725.200.200
+MN  - D12.644.360.440.200
+MN  - D12.776.476.440.200
+MS  - A 44 kDa mitogen-activated protein kinase kinase with specificity for
+      MITOGEN-ACTIVATED PROTEIN KINASE 1 and MITOGEN-ACTIVATED PROTEIN
+      KINASE 3.
+HN  - 2005(1993)
+
+MH  - MAP Kinase Kinase 3
+UI  - D048371
+MN  - D8.811.913.696.620.682.700.565.300
+MN  - D8.811.913.696.620.682.725.200.300
+MN  - D12.644.360.440.300
+MN  - D12.776.476.440.300
+MS  - A mitogen-activated protein kinase kinase with specificity for a
+      subset of  P38 MITOGEN-ACTIVATED PROTEIN KINASES that includes
+      MITOGEN-ACTIVATED PROTEIN KINASE 12; MITOGEN-ACTIVATED PROTEIN KINASE
+      13; and MITOGEN-ACTIVATED PROTEIN KINASE 14.
+HN  - 2005(1995)
+
+MH  - MAP Kinase Kinase 4
+UI  - D048670
+MN  - D8.811.913.696.620.682.700.565.400
+MN  - D8.811.913.696.620.682.725.200.400
+MN  - D12.644.360.440.400
+MN  - D12.776.476.440.400
+MS  - A mitogen-activated protein kinase kinase with specificity for JNK
+      MITOGEN-ACTIVATED PROTEIN KINASES; P38 MITOGEN-ACTIVATED PROTEIN
+      KINASES and the RXR RETINOIC ACID RECEPTOR. It takes part in a SIGNAL
+      TRANSDUCTION pathway that is activated in response to cellular stress.
+HN  - 2005(1995)
+
+MH  - MAP Kinase Kinase 5
+UI  - D048671
+MN  - D8.811.913.696.620.682.700.565.500
+MN  - D8.811.913.696.620.682.725.200.500
+MN  - D12.644.360.440.500
+MN  - D12.776.476.440.500
+MS  - A mitogen-activated protein kinase kinase with specificity for
+      MITOGEN-ACTIVATED PROTEIN KINASE 7.
+HN  - 2005(1995)
+
+MH  - MAP Kinase Kinase 6
+UI  - D048669
+MN  - D8.811.913.696.620.682.700.565.600
+MN  - D8.811.913.696.620.682.725.200.600
+MN  - D12.644.360.440.600
+MN  - D12.776.476.440.600
+MS  - A mitogen-activated protein kinase kinase with specificity for P38
+      MITOGEN-ACTIVATED PROTEIN KINASES.
+HN  - 2005(1996)
+
+MH  - MAP Kinase Kinase 7
+UI  - D048688
+MN  - D8.811.913.696.620.682.700.565.700
+MN  - D8.811.913.696.620.682.725.200.700
+MN  - D12.644.360.440.700
+MN  - D12.776.476.440.700
+MS  - A mitogen-activated protein kinase kinase with specificity for JNK
+      MITOGEN-ACTIVATED PROTEIN KINASES. It takes part in a SIGNAL
+      TRANSDUCTION pathway that is activated in response to CYTOKINES.
+HN  - 2005(1997)
+
+MH  - MAP Kinase Kinase Kinase 1
+UI  - D048728
+MN  - D8.811.913.696.620.682.700.559.100
+MN  - D12.644.360.400.100
+MN  - D12.776.476.400.100
+MS  - A 195-kDa MAP kinase kinase kinase with broad specificity for MAP
+      KINASE KINASES. It is found localized in the CYTOSKELETON and can
+      activate a variety of MAP kinase-dependent pathways.
+HN  - 2005(1994)
+BX  - Mitogen-Activated Protein Kinase Kinase Kinase 1
+
+MH  - MAP Kinase Kinase Kinase 2
+UI  - D048730
+MN  - D8.811.913.696.620.682.700.559.200
+MN  - D12.644.360.400.200
+MN  - D12.776.476.400.200
+MS  - A 70-kDa MAP kinase kinase kinase with specificity for MAP KINASE
+      KINASE 5. It is activated during the cellular response to GROWTH
+      FACTORS, oxidative stress, and hyperosmotic conditions.
+HN  - 2005(1999)
+
+MH  - MAP Kinase Kinase Kinase 3
+UI  - D048748
+MN  - D8.811.913.696.620.682.700.559.300
+MN  - D12.644.360.400.300
+MN  - D12.776.476.400.300
+MS  - A 70-kDa MAPK kinase kinase with specificity for MAP KINASE KINASE 5.
+HN  - 2005(1999)
+
+MH  - MAP Kinase Kinase Kinase 4
+UI  - D048768
+MN  - D8.811.913.696.620.682.700.559.400
+MN  - D12.644.360.400.400
+MN  - D12.776.476.400.400
+MS  - A 180-kDa MAP kinase kinase kinase with specificity for MAP KINASE
+      KINASE 4 and MAP KINASE KINASE 6.
+HN  - 2005(1997)
+
+MH  - MAP Kinase Kinase Kinase 5
+UI  - D048848
+MN  - D8.811.913.696.620.682.700.559.500
+MN  - D12.644.360.400.500
+MN  - D12.776.476.400.500
+MS  - A 150-kDa MAP kinase kinase kinase that may play a role in the
+      induction of APOPTOSIS. It has specificity for MAP KINASE KINASE 3;
+      MAP KINASE KINASE 4; and MAP KINASE KINASE 6.
+HN  - 2005(1996)
+
+MH  - Marchantia
+UI  - D047008
+MN  - B6.388.462.750
+MS  - A liverwort plant genus of the family Marchantiaceae, order
+      Marchantiales, subclass MARCHANTIAE. Members contain brassinosteroids
+      and DITERPENES.
+AN  - coord with specific PLANT COMPONENTS term if pertinent; for use in
+      therapy coord IM with PHYTOTHERAPY (IM) + disease/drug ther (IM) +
+      PLANT PREPARATIONS or its indentations/ther use (IM or NIM) + specific
+      plant chemical /ther use (IM) if pertinent; Manual 26.29
+HN  - 2005
+
+MH  - Massive Hepatic Necrosis
+UI  - D047508
+MN  - C6.552.308.500.750.500
+MS  - Extensive and rapid death of parenchymal cells in the LIVER, often due
+      to exposure to toxic materials. It is characterized by a soft, flabby,
+      yellow-brown wrinkled, and shrunken liver. It was called "acute yellow
+      atrophy".
+HN  - 2005; use LIVER DISEASES 1997-2004
+
+MH  - Medicago truncatula
+UI  - D046913
+MN  - B6.388.100.401.590.750
+MS  - A plant species of the family FABACEAE used to study GENETICS because
+      it is DIPLOID, self fertile, has a small genome, and short generation
+      time.
+AN  - coord with specific PLANT COMPONENTS term if pertinent; for use in
+      therapy coord IM with PHYTOTHERAPY (IM) + disease/drug ther (IM) +
+      PLANT PREPARATIONS or its indentations/ther use (IM or NIM) + specific
+      plant chemical /ther use (IM) if pertinent; Manual 26.29
+HN  - 2005
+
+MH  - Medical Subject Headings
+UI  - D046650
+MN  - L1.453.245.945.700.500
+MS  - Controlled vocabulary thesaurus produced by the NATIONAL LIBRARY OF
+      MEDICINE. It consists of sets of terms naming descriptors in a
+      hierarchical structure that permits searching at various levels of
+      specificity.
+HN  - 2005
+FX  - MEDLINE
+
+MH  - MedlinePlus
+UI  - D049293
+MN  - L1.700.508.280.730
+MS  - NATIONAL LIBRARY OF MEDICINE service for health professionals and
+      consumers. It links extensive information from the National Institutes
+      of Health and other reviewed sources of information on specific
+      diseases and conditions.
+AN  - CATALOG: Use NAF entry
+HN  - 2005
+
+MH  - Meiotic Prophase I
+UI  - D049469
+MN  - G4.335.134.220.220.875.500
+MN  - G4.335.134.220.531.444
+MN  - G4.335.233.750.500.220.875.500
+MN  - G4.335.233.750.500.531.500
+MN  - G5.105.220.875.500
+MN  - G5.105.531.500
+MN  - G7.382.374.220.220.875.500
+MN  - G7.382.374.220.625.500
+MN  - G7.382.843.750.500.220.875.500
+MN  - G7.382.843.750.500.531.500
+MN  - G7.574.249.410.750.500.220.875.500
+MN  - G7.574.249.410.750.500.531.500
+MS  - The prophase of the first division of MEIOSIS (in which homologous
+      CHROMOSOME SEGREGATION occurs). It is divided into five stages:
+      leptonema, zygonema, PACHYNEMA, diplonema, and diakinesis.
+HN  - 2005
+BX  - Leptotene Stage
+BX  - Zygotene Stage
+
+MH  - Melopsittacus
+UI  - D046408
+MN  - B1.150.900.248.710.672.650.500
+MS  - A genus, commonly called budgerigars, in the family PSITTACIDAE. In
+      the United States they are considered one of the five species of
+      PARAKEETS.
+HN  - 2005; use PARROTS 1995-2004
+BX  - Budgerigars
+
+MH  - Microarray Analysis
+UI  - D046228
+MN  - E5.196.630.570
+MN  - E5.588.570
+MS  - The simultaneous analysis, on a microchip, of multiple samples or
+      targets arranged in an array format.
+AN  - general; prefer specifics
+HN  - 2005
+
+MH  - Microchip Analytical Procedures
+UI  - D046208
+MN  - E5.196.630
+MN  - E5.588
+MS  - The preparation and analysis of samples on miniaturized devices.
+AN  - DNA CHIPS see OLIGONUCLEOTIDE SEQUENCE ANALYSIS and PROTEIN CHIPS see
+      PROTEIN ARRAY ANALYSIS are also available
+HN  - 2005
+FX  - Micromanipulation
+FX  - Nanotechnology
+
+MH  - Microcystis
+UI  - D046931
+MN  - B3.280.500
+MN  - B3.440.475.100.500
+MS  - A form-genus of CYANOBACTERIA in the order Chroococcales. Many species
+      are planktonic and possess gas vacuoles.
+HN  - 2005
+
+MH  - Microfluidic Analytical Techniques
+UI  - D046210
+MN  - E5.196.630.465
+MN  - E5.588.465
+MS  - Methods utilizing the principles of MICROFLUIDICS for sample handling,
+      reagent mixing, and separation and detection of specific components in
+      fluids.
+HN  - 2005
+BX  - Microfluidic Analysis
+FX  - Microfluidics
+
+MH  - Micronuclei, Chromosome-Defective
+UI  - D048629
+MN  - A11.284.430.106.570
+MN  - A11.284.430.214.190.875.117.570
+MN  - C23.550.210.570
+MN  - G13.920.590.175.570
+MS  - Defective nuclei produced during the TELOPHASE of MITOSIS or MEIOSIS
+      by lagging CHROMOSOMES or chromosome fragments derived from
+      spontaneous or experimentally induced chromosomal structural changes.
+HN  - 2005
+FX  - Micronucleus Tests
+FX  - Micronucleus, Germline
+
+MH  - Micronucleus, Germline
+UI  - D048631
+MN  - A11.284.430.106.575
+MN  - A11.284.430.214.190.875.117.575
+MS  - The smaller, reproductive, transcriptionally inert nucleus in the
+      cells of ciliate PROTOZOANS, as distinguished from the larger,
+      vegetative, transcriptionally active MACRONUCLEUS.  Micronuclei
+      participate in MEIOSIS and autogamy during GENETIC CONJUGATION.
+HN  - 2005
+BX  - Micronuclei, Germline
+FX  - Micronuclei, Chromosome-Defective
+
+MH  - Microscopy, Electron, Transmission
+UI  - D046529
+MN  - E1.370.350.515.402.580
+MN  - E5.595.402.580
+MS  - Electron microscopy in which the ELECTRONS or their reaction products
+      that pass down through the specimen are imaged below the plane of the
+      specimen.
+AN  - note specifics
+HN  - 2005; use MICROSCOPY, ELECTRON 1991-2004; for ELECTRON DIFFRACTION
+      MICROSCOPY use MICROSCOPY, ELECTRON 2003-2004
+BX  - Electron Diffraction Microscopy
+BX  - Electron Microscopy, Transmission
+BX  - Microscopy, Electron Diffraction
+BX  - Transmission Electron Microscopy
+
+MH  - Microscopy, Energy-Filtering Transmission Electron
+UI  - D046032
+MN  - E1.370.350.515.402.580.500
+MN  - E5.196.867.838.500
+MN  - E5.595.402.580.500
+MS  - An analytical transmission electron microscopy method using an
+      electron microscope fitted with an energy filtering lens. The method
+      is based on the principle that some of the ELECTRONS passing through
+      the specimen will lose energy when they ionize inner shell electrons
+      of the atoms in the specimen. The amount of energy loss is dependent
+      upon the element. Analysis of the energy loss spectrum (ELECTRON
+      ENERGY-LOSS SPECTROSCOPY) reveals the elemental composition of a
+      specimen. It is used analytically and quantitatively to determine
+      which, how much of, and where specific ELEMENTS are in a sample. For
+      example, it is used for elemental mapping of PHOSPHORUS to trace the
+      strands of a NUCLEIC ACID in nucleoprotein complexes.
+HN  - 2005
+BX  - Energy-Filtered Transmission Electron Microscopy
+
+MH  - Mitogen-Activated Protein Kinase 10
+UI  - D048057
+MN  - D8.811.913.696.620.682.700.567.513.800
+MN  - D8.811.913.696.620.682.700.646.750.374.800
+MN  - D12.644.360.450.340.800
+MN  - D12.776.476.450.340.800
+MS  - A c-jun amino-terminal kinase that is found predominantly within
+      NEURONS of the BRAIN, suggesting a role in stress-induced neuronal
+      APOPTOSIS. Several isoforms of the protein with molecular sizes of 47
+      kDa and 52 kDa exist due to multiple ALTERNATIVE SPLICING.
+HN  - 2005(1995)
+
+MH  - Mitogen-Activated Protein Kinase 11
+UI  - D048290
+MN  - D12.644.360.450.835.200
+MS  - A 38-kDa mitogen-activated protein kinase that is expressed in a broad
+      variety of cell types. It may play a role in regulating cell
+      proliferation and TRANSCRIPTION FACTOR AP-1 dependent transcription.
+HN  - 2005(2000)
+
+MH  - Mitogen-Activated Protein Kinase 12
+UI  - D048291
+MN  - D12.644.360.450.835.400
+MS  - A 38-kDa mitogen-activated protein kinase found primarily in SKELETAL
+      MUSCLE.
+HN  - 2005(1996)
+
+MH  - Mitogen-Activated Protein Kinase 13
+UI  - D048292
+MN  - D12.644.360.450.835.600
+MS  - A 38-kDa mitogen-activated protein kinase found expressed at high
+      levels in LUNG; KIDNEY; TESTIS; PANCREAS; and SMALL INTESTINE. It may
+      play a role in regulating functions such as CELLULAR DIFFERENTIATION
+      and APOPTOSIS of EPITHELIAL CELLS.
+HN  - 2005(1997)
+
+MH  - Mitogen-Activated Protein Kinase 14
+UI  - D048308
+MN  - D12.644.360.450.835.800
+MS  - A 38-kDa mitogen-activated protein kinase that is abundantly expressed
+      in a broad variety of cell types. It is involved in the regulation of
+      cellular stress responses as well as the control of proliferation and
+      survival of many cell types. The kinase activity of the enzyme is
+      inhibited by the pyridinyl-imidazole compound SB 203580.
+HN  - 2005(1994)
+
+MH  - Mitogen-Activated Protein Kinase 3
+UI  - D048052
+MN  - D8.811.913.696.620.682.700.567.342.750
+MN  - D8.811.913.696.620.682.700.646.750.249.750
+MN  - D12.644.360.450.169.750
+MN  - D12.776.476.450.169.750
+MS  - A 44-kDa extracellular signal-regulated MAP kinase that may play a
+      role the initiation and regulation of MEIOSIS; MITOSIS; and
+      postmitotic functions in differentiated cells. It phosphorylates a
+      number of TRANSCRIPTION FACTORS; and MICROTUBULE-ASSOCIATED PROTEIN.
+HN  - 2005(2000)
+BX  - Extracellular Signal-Regulated Kinase 1
+
+MH  - Mitogen-Activated Protein Kinase 6
+UI  - D048053
+MN  - D8.811.913.696.620.682.700.567.342.875
+MN  - D8.811.913.696.620.682.700.646.750.249.875
+MN  - D12.644.360.450.169.875
+MN  - D12.776.476.450.169.875
+MS  - A 97-kDa extracellular signal-regulated MAP kinase. Mitogen-activated
+      protein kinase 6 levels increase during cellular differentiation,
+      while in proliferating cells the enzyme is degraded rapidly via the
+      PROTEASOME ENDOPEPTIDASE COMPLEX.
+HN  - 2005(1991)
+BX  - Extracellular Signal-Regulated Kinase 3
+
+MH  - Mitogen-Activated Protein Kinase 7
+UI  - D048054
+MN  - D8.811.913.696.620.682.700.567.342.937
+MN  - D8.811.913.696.620.682.700.646.750.249.937
+MN  - D12.644.360.450.169.937
+MN  - D12.776.476.450.169.937
+MS  - A 110-kDa extracellular signal-regulated MAP kinase that is activated
+      in response to cellular stress and by GROWTH FACTOR RECEPTOR-mediated
+      pathways.
+HN  - 2005(1999)
+BX  - Extracellular Signal-Regulated Kinase 5
+
+MH  - Mitogen-Activated Protein Kinase 8
+UI  - D048055
+MN  - D8.811.913.696.620.682.700.567.513.500
+MN  - D8.811.913.696.620.682.700.646.750.374.500
+MN  - D12.644.360.450.340.500
+MN  - D12.776.476.450.340.500
+MS  - A c-jun amino-terminal kinase that is activated by environmental
+      stress and pro-inflammatory cytokines. Several isoforms of the protein
+      with molecular sizes of 43 and 48 KD exist due to multiple ALTERNATIVE
+      SPLICING.
+HN  - 2005(2000)
+
+MH  - Mitogen-Activated Protein Kinase 9
+UI  - D048056
+MN  - D8.811.913.696.620.682.700.567.513.750
+MN  - D8.811.913.696.620.682.700.646.750.374.750
+MN  - D12.644.360.450.340.750
+MN  - D12.776.476.450.340.750
+MS  - A c-jun amino-terminal kinase that is activated by environmental
+      stress and pro-inflammatory cytokines. Several isoforms of the protein
+      with molecular sizes of 48 and 54 KD exist due to multiple ALTERNATIVE
+      MRNA SPLICING.
+HN  - 2005(1994)
+
+MH  - Mongolian Spot
+UI  - D049328
+MN  - C4.557.665.560.615.530
+MS  - A bluish-gray to gray-brown benign, melanocytic nevus found usually in
+      the LUMBOSACRAL REGION of dark-skinned people, especially those of
+      East Asian ancestry. It is usually congenital or appears shortly after
+      birth, and disappears in childhood.
+AN  - coordinate IM with SKIN NEOPLASMS (IM) + site (IM or NIM) if relevant
+HN  - 2005
+FX  - Nevus, Blue
+
+MH  - Monodelphis
+UI  - D048309
+MN  - B1.150.900.649.573.575.500
+MS  - A genus of short-tailed OPOSSUMS in the family Didelphidae found in
+      South American, chiefly Brazil. They are opossums least well-adapted
+      to arboreal life.
+HN  - 2005; use OPOSSUMS 1995-2004
+BX  - Opossums, Short-Tailed
+
+MH  - Morning Sickness
+UI  - D048968
+MN  - C13.703.490
+MN  - C23.888.821.937.49
+MS  - Symptoms of NAUSEA and VOMITING in pregnant women that usually occur
+      in the morning during the first 2 to 3 months of PREGNANCY. Severe
+      persistent vomiting during pregnancy is called HYPEREMESIS GRAVIDARUM.
+AN  - check tags FEMALE & PREGNANCY
+HN  - 2005
+
+MH  - Multiprotein Complexes
+UI  - D046912
+MN  - D5.500
+MS  - Macromolecular complexes formed from the association of defined
+      protein subunits.
+AN  - general only; do not use as a routine coordinate with specific
+      multiprotein complexes; MULTIENZYME COMPLEXES is also available
+HN  - 2005; use MACROMOLECULAR SUBSTANCES 1966-2004
+
+MH  - Muscular Dystrophies, Limb-Girdle
+UI  - D049288
+MN  - C5.651.534.500.425
+MN  - C10.668.491.175.500.149
+MN  - C16.320.577.425
+MS  - A heterogenous group of inherited muscular dystrophy that can be
+      autosomal dominant or autosomal recessive. There are many forms
+      (called LGMDs) involving genes encoding muscle membrane proteins such
+      as the sarcoglycan (SARCOGLYCANS) complex that interacts with
+      DYSTROPHIN. The disease is characterized by progressing wasting and
+      weakness of the proximal muscles of arms and legs around the HIPS and
+      SHOULDERS (the pelvic and shoulder girdles).
+HN  - 2005; use MUSCULAR DYSTROPHIES 2000-2004
+
+MH  - Mustelidae
+UI  - D045969
+MN  - B1.150.900.649.147.550
+MS  - A family of terrestrial carnivores with long, slender bodies, long
+      tails, and anal scent glands. They include badgers, weasels, martens,
+      FERRETS; MINKS; wolverines, polecats, and OTTERS.
+HN  - 2005; use CARNIVORA 1998-2004
+BX  - Badgers
+BX  - Gulo
+BX  - Martens
+BX  - Martes
+BX  - Martes zibellina
+BX  - Sables
+BX  - Weasels
+BX  - Wolverines
+
+MH  - Myofibroma
+UI  - D047708
+MN  - C4.557.450.565.540
+MN  - C17.300.680.540
+MS  - A benign tumor that consists chiefly of fibrous CONNECTIVE TISSUE,
+      with variable numbers of MUSCLE CELLS forming portions of the neoplasm
+      (From Stedman's, 27th ed).
+AN  - coordinate IM with organ/neoplasm term (IM)
+HN  - 2005; use LEIOMYOMA 1994-2004
+
+MH  - Myopia, Degenerative
+UI  - D047728
+MN  - C11.744.636.500
+MS  - Excessive axial myopia associated with complications (especially
+      posterior staphyloma and CHOROIDAL NEOVASCULARIZATION) that can lead
+      to BLINDNESS.
+HN  - 2005
+BX  - Myopia, Pathological
+BX  - Myopia, Progressive
+
+MH  - Myoxidae
+UI  - D046330
+MN  - B1.150.900.649.865.640
+MS  - A family of nocturnal rodents, similar in appearance to SQUIRRELS, but
+      smaller. There are 28 species, half of which are found in Africa.
+HN  - 2005; use RODENTIA 1982-2004
+BX  - Dormice
+
+MH  - Nanoarchaeota
+UI  - D046588
+MN  - B7.600
+MS  - A phylum of hyperthermophilic ARCHAEA found in diverse environments.
+HN  - 2005
+
+MH  - Nanostructures
+UI  - D049329
+MN  - J1.637.512
+MS  - Nanometer-sized objects.
+HN  - 2005
+FX  - Nanotechnology
+
+MH  - Nesidioblastosis
+UI  - D046768
+MN  - C6.689.351
+MN  - C16.320.565.202.742
+MS  - An inherited autosomal recessive syndrome characterized by the
+      disorganized formation of new islets in the PANCREAS and PERSISTENT
+      HYPERINSULINEMIA HYPOGLYCEMIA OF INFANCY. It is due to focal
+      hyperplasia of pancreatic ISLET CELLS budding off from the ductal
+      structures and forming new islets of Langerhans. Mutations in the
+      islet cells involve the potassium channel gene KCNJ11 or the
+      ATP-binding cassette transporter gene ABCC8, both on CHROMOSOME 11.
+HN  - 2005; use PANCREATIC DISEASES 1983-2004
+BX  - Hyperinsulinism, Familial, with Pancreatic Nesidioblastosis
+
+MH  - Neuroepithelial Bodies
+UI  - D046568
+MN  - A8.800.550.700.120.530.550
+MN  - A11.436.690.550
+MS  - Innervated clusters of NEUROEPITHELIAL CELLS found in the LUNGS. They
+      act as airway OXYGEN sensors, releasing regulatory PEPTIDES and
+      SEROTONIN in response to HYPOXIA.
+HN  - 2005
+
+MH  - Neuroepithelial Cells
+UI  - D046569
+MN  - A8.800.550.700.120.530
+MN  - A8.800.550.700.500.600
+MN  - A11.436.690
+MS  - Cells of epithelial origin possessing specialized sensory functions.
+      They include cells that are found in the TASTE BUDS; OLFACTORY MUCOSA;
+      cochlear HAIR CELLS; and NEUROEPITHELIAL BODIES.
+HN  - 2005
+FX  - Olfactory Mucosa
+FX  - Taste Buds
+
+MH  - Nimaviridae
+UI  - D046849
+MN  - B4.280.505
+MS  - A family of DNA invertebrate viruses with one genus: Whispovirus.
+HN  - 2005
+
+MH  - Nodularia
+UI  - D046932
+MN  - B3.280.550
+MN  - B3.440.475.100.550
+MS  - A form-genus of filamentous CYANOBACTERIA in the order Nostocales. Its
+      members can be planktonic or benthic and the trichomes are composed of
+      disc-shaped vegetative cells.
+HN  - 2005
+
+MH  - Nomograms
+UI  - D049451
+MN  - E5.318.740.500.625
+MN  - G3.850.520.830.500.625
+MN  - H1.548.635.310.525
+MN  - H1.770.461.835.895
+MN  - L1.224.680.310.625
+MN  - N5.715.360.750.530.530
+MS  - Graphical representation of a statistical model containing scales for
+      calculating the prognostic weight of a value for each individual
+      variable. Nomograms are instruments that can be used to predict
+      outcomes using specific clinical parameters. They use ALGORITHMS that
+      incorporate several variables to calculate the predicted probability
+      that a patient will achieve a particular clinical endpoint.
+HN  - 2005
+
+MH  - Nostoc
+UI  - D046937
+MN  - B3.280.575
+MN  - B3.440.475.100.575
+MS  - A form-genus of CYANOBACTERIA in the order Nostocales. Trichomes
+      composed of spherical or ovoid vegetative cells along with heterocysts
+      and akinetes. The species form symbiotic associations with a wide
+      range of eukaryotes.
+HN  - 2005
+
+MH  - Nuchal Translucency Measurement
+UI  - D048208
+MN  - E1.370.350.850.865.500
+MN  - E1.370.378.630.865.500
+MS  - A prenatal ultrasonic measurement of the thickness or translucent area
+      below the SKIN in the back of the fetal NECK, or nape of the neck,
+      during the first 11-14 weeks of gestation (PREGNANCY TRIMESTER,
+      FIRST). Abnormal thickness or nuchal translucent measurements
+      resulting from fluid collection, is associated with increased risks of
+      CHROMOSOME ABNORMALITIES. (Nicolaides et al., 1992)
+HN  - 2005
+
+MH  - Nursing Informatics
+UI  - D048108
+MN  - L1.313.650
+MS  - The field of information science concerned with the analysis and
+      dissemination of data through the application of computers applied to
+      the field of nursing.
+HN  - 2005
+
+MH  - Octodon
+UI  - D046329
+MN  - B1.150.900.649.865.663
+MS  - A genus of diurnal rats in the family Octodonidae, found in South
+      America. The species Octodon degus is frequently used for research.
+HN  - 2005; use RODENTIA 1982-2004
+
+MH  - p38 Mitogen-Activated Protein Kinases
+UI  - D048051
+MN  - D8.811.913.696.620.682.700.567.878
+MN  - D8.811.913.696.620.682.700.646.750.843
+MN  - D12.644.360.450.835
+MN  - D12.776.476.450.835
+MS  - A mitogen-activated protein kinase subfamily that regulates a variety
+      of cellular processes including CELL GROWTH; CELL DIFFERENTIATION;
+      APOPTOSIS and cellular responses to INFLAMMATION. The P38 MAP kinases
+      are regulated by CYTOKINE RECEPTORS and can be activated in response
+      to bacterial pathogens.
+HN  - 2005(1994)
+BX  - Mitogen-Activated Protein Kinase p38
+
+MH  - Pachytene Stage
+UI  - D049471
+MN  - G4.335.134.220.220.875.500.600
+MN  - G4.335.134.220.531.444.600
+MN  - G4.335.233.750.500.220.875.500.600
+MN  - G4.335.233.750.500.531.500.600
+MN  - G5.105.220.875.500.600
+MN  - G5.105.531.500.600
+MN  - G7.382.374.220.220.875.500.600
+MN  - G7.382.374.220.625.500.600
+MN  - G7.382.843.750.500.220.875.500.600
+MN  - G7.382.843.750.500.531.500.600
+MN  - G7.574.249.410.750.500.220.875.500.600
+MN  - G7.574.249.410.750.500.531.500.600
+MS  - The stage in the first meiotic prophase, following ZYGOTENE STAGE,
+      when CROSSING OVER between homologous CHROMOSOMES begins.
+HN  - 2005
+FX  - Crossing Over, Genetic
+
+MH  - Palaeognathae
+UI  - D046108
+MN  - B1.150.900.248.600
+MS  - A superorder of large, mostly flightless birds, named for their
+      distinctive PALATE morphology. It includes the orders Apterygiformes,
+      Casuriiformes, Dinornithiformes, RHEIFORMES; STRUTHIONIFORMES and
+      Tinamiformes.
+HN  - 2005
+BX  - Ratites
+
+MH  - Pancreas, Exocrine
+UI  - D046790
+MN  - A3.734.540
+MN  - A10.336.645
+MS  - The major component (about 80%) of the PANCREAS composed of acinar
+      functional units of tubular and spherical cells. The acinar cells
+      synthesize and secrete several digestive enzymes such as TRYPSINOGEN;
+      LIPASE; AMYLASE; and RIBONUCLEASE. Secretion from the exocrine
+      pancreas drains into the pancreatic ductal system and empties into the
+      DUODENUM.
+HN  - 2005; use PANCREAS 1998-2004
+BX  - Exocrine Pancreas
+
+MH  - Panthera
+UI  - D046009
+MN  - B1.150.900.649.147.354.600
+MS  - Genus in the family FELIDAE comprised of big felines including LIONS,
+      TIGERS, jaguars, and the leopard.
+AN  - do not confuse X ref LEOPARD with leopards in other genera
+HN  - 2005; use CARNIVORA 1998-2004
+BX  - Jaguars
+BX  - Leopard
+
+MH  - Papio anubis
+UI  - D048530
+MN  - B1.150.900.649.801.400.130.120.610.50
+MS  - A species of baboon in the family CERCOPITHECIDAE with a somewhat
+      different social structure than PAPIO HAMADRYAS. They inhabit several
+      areas in Africa south of the Sahara.
+HN  - 2005
+BX  - Olive Baboon
+
+MH  - Papio cynocephalus
+UI  - D048548
+MN  - B1.150.900.649.801.400.130.120.610.150
+MS  - A species of baboon in the family CERCOPITHECIDAE found in southern
+      equatorial and east Africa. They are smaller than PAPIO ANUBIS and
+      have a thinner mane.
+HN  - 2005
+BX  - Yellow Baboon
+
+MH  - Papio hamadryas
+UI  - D048529
+MN  - B1.150.900.649.801.400.130.120.610.400
+MS  - A species of baboon in the family CERCOPITHECIDAE, which has a
+      well-studied trilevel social structure consisting of troops, bands,
+      and clans.
+HN  - 2005; use PAPIO 1975-2004
+BX  - Hamadryas Baboon
+
+MH  - Papio papio
+UI  - D048531
+MN  - B1.150.900.649.801.400.130.120.610.600
+MS  - A species of baboon in the family CERCOPITHECIDAE, often used as an
+      animal model for cognitive studies.
+HN  - 2005
+
+MH  - Papio ursinus
+UI  - D048549
+MN  - B1.150.900.649.801.400.130.120.610.800
+MS  - A species of baboon in the family CERCOPITHECIDAE found in southern
+      Africa. They are dark colored and have a variable social structure.
+HN  - 2005
+BX  - Chacma Baboon
+
+MH  - Paracentrotus
+UI  - D047328
+MN  - B1.500.408.578.600
+MS  - A genus of SEA URCHINS in the family Echinidae found primarily on the
+      western coasts of Ireland.
+HN  - 2005
+
+MH  - Paragonimus westermani
+UI  - D048492
+MN  - B1.500.500.736.715.800.610.900
+MS  - A species of lung fluke infecting humans and other animals, and found
+      chiefly in Asia and the Far East.
+AN  - infection: coordinate IM with PARAGONIMIASIS (IM); coordinate with
+      specific helminth terms (for example, ANTIGENS, HELMINTH) if pertinent
+HN  - 2005
+
+MH  - Paramecium aurelia
+UI  - D048489
+MN  - B1.500.841.185.650.375.550.637.74
+MS  - A species of ciliated PROTOZOA possessing two micronuclei. It is one
+      of the smallest PARAMECIUM.
+HN  - 2005
+
+MH  - Paramecium caudatum
+UI  - D048488
+MN  - B1.500.841.185.650.375.550.637.150
+MS  - The most widely distributed species of PARAMECIUM. It is elongated and
+      possesses a bluntly pointed posterior.
+HN  - 2005
+
+MH  - Passeriformes
+UI  - D046109
+MN  - B1.150.900.248.620
+MS  - A widely distributed order of perching BIRDS, including more than half
+      of all bird species.
+HN  - 2005; use SONGBIRDS 1999-2004
+
+MH  - Patellofemoral Pain Syndrome
+UI  - D046788
+MN  - C5.550.700
+MS  - A syndrome characterized by retropatellar or peripatellar PAIN
+      resulting from physical and biochemical changes in the patellofemoral
+      joint. The pain is most prominent when ascending or descending stairs,
+      squatting, or sitting with flexed knees. There is a lack of consensus
+      on the etiology and treatment. The syndrome is often confused with (or
+      accompanied by) CHONDROMALACIA PATELLAE, the latter describing a
+      pathological condition of the CARTILAGE and not a syndrome.
+HN  - 2005
+FX  - Chondromalacia Patellae
+
+MH  - Pattern Recognition, Physiological
+UI  - D046709
+MN  - F2.463.593.524
+MS  - The analysis of a critical number of sensory stimuli or facts (the
+      pattern) by physiological processes such as vision (PATTERN
+      RECOGNITION, VISUAL), touch, or hearing.
+HN  - 2005
+
+MH  - Penicillin-Binding Proteins
+UI  - D046915
+MN  - D8.811.710
+MN  - D12.776.97.545
+MS  - Bacterial proteins that share the property of binding irreversibly to
+      PENICILLINS and other ANTIBACTERIAL AGENTS derived from LACTAMS. The
+      penicillin-binding proteins are primarily enzymes involved in CELL
+      WALL biosynthesis including MURAMOYLPENTAPEPTIDE CARBOXYPEPTIDASE;
+      PEPTIDE SYNTHASES; TRANSPEPTIDASES; and HEXOSYLTRANSFERASES.
+HN  - 2005 (1978);
+FX  - Hexosyltransferases
+FX  - Muramoylpentapeptide Carboxypeptidase
+FX  - Peptidyl Transferases
+
+MH  - Peptide Biosynthesis, Nucleic Acid-Independent
+UI  - D046908
+MN  - G6.535.770.333
+MS  - The enzymatic synthesis of PEPTIDES without an RNA template by
+      processes that do not use the ribosomal apparatus (RIBOSOMES).
+AN  - coordinate with specific peptide /biosyn if pertinent
+HN  - 2005
+BX  - Peptide Biosynthesis, Extra-Ribosomal
+BX  - Peptide Biosynthesis, Non-Ribosomal
+BX  - Peptide Biosynthesis, Thiotemplate Mechanism
+
+MH  - Peptidoglycan Glycosyltransferase
+UI  - D046928
+MN  - D8.811.913.400.450.780
+MS  - A hexosyltransferase involved in the transfer of disaccharide
+      molecules to the peptidoglycan structure of the CELL WALL SKELETON. It
+      plays an important role in the genesis of the bacterial CELL WALL.
+HN  - 2005; use PEPTIDOGLYCAN GLYCOSYLTRANSFERASE (NM) 1981-2004
+
+MH  - Perimenopause
+UI  - D047648
+MN  - G8.520.960.249.500.562
+MS  - The transitional period before and after MENOPAUSE. Perimenopausal
+      symptoms are associated with irregular MENSTRUAL CYCLE and widely
+      fluctuated hormone levels. They may appear 6 years before menopause
+      and subside 2 to 5 years after menopause.
+HN  - 2005; use CLIMACTERIC 2002-2004, use PREMENOPAUSE 1995-2001
+
+MH  - Peroxisome Proliferator-Activated Receptors
+UI  - D047492
+MN  - D12.776.826.239
+MN  - D12.776.930.630
+MS  - TRANSCRIPTION FACTORS that are activated by ligands and heterodimerize
+      with RETINOID X RECEPTORS and bind to peroxisome proliferator response
+      elements in the promoter regions of target genes.
+AN  - note specifics
+HN  - 2005(1992)
+FX  - Peroxisome Proliferators
+
+MH  - Petromyzon
+UI  - D048428
+MN  - B1.150.900.493.559.600
+MS  - A genus of primitive fish in the family Petromyzontidae. The sole
+      species is Petromyzon marinus, known as the sea lamprey. The adult
+      form feeds parasitically on other fish species.
+HN  - 2005
+BX  - Petromyzon marinus
+BX  - Sea Lamprey
+
+MH  - Petrosia
+UI  - D047130
+MN  - B1.500.802.650
+MS  - A genus of SPONGES in the family Petrosiidae, characterized by an
+      ectosomal triangular or polygonal reticulation of spicule tracts or
+      single spicules.
+HN  - 2005
+
+MH  - Phalangeridae
+UI  - D048329
+MN  - B1.150.900.649.573.587
+MS  - A family of possums and cuscuses found in Australia, Tasmania, New
+      Guinea and other islands.
+AN  - possums unspecified go here; OPOSSUMS is also available
+HN  - 2005
+BX  - Cuscuses
+BX  - Phalanger
+
+MH  - Phascolarctidae
+UI  - D048368
+MN  - B1.150.900.649.573.590
+MS  - A family of marsupials in the order Diprotodontia, native to Australia
+      and possessing vestigial tails. There is a single living genus and
+      species: Phascolarctos cinereus, the koala.
+HN  - 2005
+BX  - Koala
+BX  - Phascolarctos cinereus
+
+MH  - Phenylcarbamates
+UI  - D048448
+MN  - D2.241.81.251.583
+MS  - Phenyl esters of carbamic acid or of N-substituted carbamic acids.
+      Structures are similar to PHENYLUREA COMPOUNDS with a carbamate in
+      place of the urea.
+HN  - 2005
+
+MH  - Pheromones, Human
+UI  - D049049
+MN  - D24.185.641.399
+MS  - Chemical substances excreted by humans that elicit behavior or
+      physiological responses from other humans. Perception of these
+      chemical signals may be olfactory or by contact.
+HN  - 2005
+
+MH  - Phoca
+UI  - D046049
+MN  - B1.150.900.649.147.600.700.600
+MS  - A genus in the family of EARLESS SEALS (Phocidae) and collectively the
+      most abundant PINNEPEDS in the Northern Hemisphere.
+HN  - 2005
+BX  - Seal, Harbor
+
+MH  - Phosphatidylethanolamine Binding Protein
+UI  - D049488
+MN  - D12.644.360.562
+MN  - D12.776.157.661
+MN  - D12.776.476.562
+MS  - A ubiquitously found basic protein that binds to
+      phosphatidylethanolamine and NUCLEOTIDES. It is an endogenous
+      inhibitor of RAF KINASES and may play a role in regulating SIGNAL
+      TRANSDUCTION. Phosphatidylethanolamine-binding protein is the
+      precursor of hippocampal cholinergic neurostimulating peptide, which
+      is cleaved from the N-terminal region of the protein.
+HN  - 2005(2000)
+
+MH  - Phospholipid Transfer Proteins
+UI  - D049294
+MN  - D12.776.157.674
+MN  - D12.776.543.693
+MS  - A ubiquitous family of proteins that transport PHOSPHOLIPIDS such as
+      PHOSPHATIDYLINOSITOL and PHOSPHATIDYLCHOLINE between membranes. They
+      play an important role in phospholipid metabolism during vesicular
+      transport and SIGNAL TRANSDUCTION.
+HN  - 2005(1978)
+BX  - Phosphatidylinositol Transfer Proteins
+
+MH  - Photinia
+UI  - D046936
+MN  - B6.388.100.842.500.522
+MS  - A plant genus of the family ROSACEAE. The common names of chokeberry
+      or chokecherry are also used for some species of PRUNUS.
+AN  - X ref BLACK CHOKECHERRY TREE: CHOKECHERRY TREE see PRUNUS is also
+      available; coord with specific PLANT COMPONENTS term if pertinent; for
+      use in therapy coord IM with PHYTOTHERAPY (IM) + disease/drug ther
+      (IM) + PLANT PREPARATIONS or its indentations/ther use (IM or NIM) +
+      specific plant chemical /ther use (IM) if pertinent; Manual 26.29
+HN  - 2005
+
+MH  - Phytoestrogens
+UI  - D048789
+MN  - D27.505.696.399.472.277.540.500
+MS  - PLANT EXTRACTS and compounds, primarily ISOFLAVONES, that mimic or
+      modulate endogenous estrogens, usually by binding to ESTROGEN
+      RECEPTORS.
+HN  - 2005(1978)
+
+MH  - Pituitary ACTH Hypersecretion
+UI  - D047748
+MN  - C10.228.140.617.738.250.725
+MN  - C19.700.355.800
+MS  - A disease of the PITUITARY GLAND characterized by the excess amount of
+      ADRENOCORTICOTROPIC HORMONE secreted. This leads to hypersecretion of
+      cortisol (HYDROCORTISONE) by the ADRENAL GLANDS resulting in CUSHING
+      SYNDROME.
+AN  - do not confuse X ref CUSHING DISEASE with CUSHING SYNDROME
+HN  - 2005; for INAPPROPRIATE ACTH SECRETION SYNDROME use HYPERPITUITARISM
+      2000-2004
+BX  - Cushing Disease
+BX  - Inappropriate ACTH Secretion Syndrome
+BX  - Inappropriate Adrenocorticotropic Hormone Secretion
+FX  - Cushing Syndrome
+
+MH  - Plagiocephaly, Nonsynostotic
+UI  - D049068
+MN  - C5.660.207.655
+MN  - C16.131.621.207.655
+MS  - A deformity of the SKULL that is not due to bone fusion (SYNOSTOSIS),
+      such as CRANIOSYNOSTOSES, and is characterized by an asymmetric skull
+      and face. It is observed with increased frequencies in INFANTS after
+      the adoption of supine sleeping recommendations to prevent SUDDEN
+      INFANT DEATH SYNDROME.
+HN  - 2005
+
+MH  - Plakortis
+UI  - D047229
+MN  - B1.500.802.670
+MS  - A genus of SPONGES in the family Plakinidae, with the skeleton formed
+      by small diactine (and some triactine) needle-like terminations.
+HN  - 2005
+
+MH  - Plantibodies
+UI  - D046549
+MN  - D24.611.125.820
+MS  - Recombinant antibodies produced in TRANSGENIC PLANTS. The plants serve
+      as BIOREACTORS to produce the antibodies for medical use or industrial
+      processes.
+HN  - 2005
+BX  - Antibodies, Plant-Derived
+BX  - Plant Antibodies, Recombinant
+FX  - Plants, Genetically Modified
+
+MH  - Plectonema
+UI  - D046938
+MN  - B3.280.650
+MN  - B3.440.475.100.650
+MS  - A form-genus of CYANOBACTERIA in the order Oscillatoriales. They are
+      non-heterocystous but may carry out NITROGEN FIXATION under
+      microaerobic conditions. Some smaller members have undergone transfer
+      to the form-genus Leptolyngbya.
+HN  - 2005
+
+MH  - Pneumonia of Calves, Enzootic
+UI  - D048089
+MN  - C1.252.620.530
+MN  - C8.381.677.540.530
+MN  - C8.730.85.675
+MN  - C8.730.610.540.530
+MN  - C22.196.90.675
+MS  - Chronic endemic respiratory disease of dairy calves and an important
+      component of bovine respiratory disease complex. It primarily affects
+      calves up to six months of age and the etiology is multifactorial.
+      Stress plus a primary viral infection is followed by a secondary
+      bacterial infection. The latter is most commonly associated with
+      PASTEURELLA MULTOCIDA producing a purulent BRONCHOPNEUMONIA. Sometimes
+      present are MANNHEIMIA HAEMOLYTICA; HAEMOPHILUS SOMNUS and mycoplasma
+      species.
+AN  - infection: coordinate IM with PASTEURELLA MULTOCIDA (IM), MANNHEIMIA
+      HAEMOLYTICA (IM) or HAEMOPHILUS SOMNUS (IM) only if particularly
+      discussed; check the tag CATTLE
+HN  - 2005
+BX  - Enzootic Pneumonia of Calves
+
+MH  - Podospora
+UI  - D048468
+MN  - B5.107.800.700
+MS  - A genus of ascomycete FUNGI in the order SORDARIALES, which is found
+      on SOIL and herbivore dung (FECES).
+HN  - 2005
+
+MH  - Polyanhydrides
+UI  - D049388
+MN  - D2.113.650
+MN  - D5.750.725
+MS  - Anhydride polymers with a repeating structure of RC(=O)OC(=O)R. They
+      readily hydrolyze in water making them useful for DELAYED-ACTION
+      PREPARATIONS.
+HN  - 2005
+
+MH  - Polyketide Synthases
+UI  - D048630
+MN  - D8.811.464.257.275
+MN  - D8.811.600.715
+MS  - Large enzyme complexes composed of a number of component enzymes that
+      are found in STREPTOMYCES which biosynthesize MACROLIDES and other
+      polyketides.
+HN  - 2005(1989)
+
+MH  - Porcupines
+UI  - D046328
+MN  - B1.150.900.649.865.692
+MS  - Common name for large, quilled rodents (RODENTIA) comprised of two
+      families: Old World porcupines (Hystricidae) and New World porcupines
+      (Erethizontidae).
+HN  - 2005; use RODENTIA 1982-2004; for COENDOU & HYSTRIX use RODENTIA
+      1982-2004
+BX  - Coendou
+BX  - Hystrix
+
+MH  - Porphyria, Variegate
+UI  - D046350
+MN  - C6.552.830.625
+MN  - C16.320.565.735.625
+MN  - C16.320.850.742.625
+MN  - C17.800.827.742.625
+MN  - C17.800.849.617.400.625
+MN  - C18.452.648.735.625
+MN  - C18.452.872.617.400.625
+MS  - An autosomal dominant porphyria that is due to a deficiency of
+      protoporphyrinogen oxidase (EC 1.3.3.4) in the LIVER, the seventh
+      enzyme in the 8-enzyme biosynthetic pathway of HEME. Clinical features
+      include both neurological symptoms and cutaneous lesions. Patients
+      excrete increased levels of porphyrin precursors, COPROPORPHYRINS and
+      protoporphyrinogen.
+HN  - 2005; use PORPHYRIA, HEPATIC 1993-2004
+
+MH  - Positron-Emission Tomography
+UI  - D049268
+MN  - E1.370.350.350.800.700
+MN  - E1.370.350.600.350.800.399
+MN  - E1.370.350.710.800.399
+MN  - E1.370.350.825.800.399
+MN  - E1.370.384.730.800.399
+MN  - H1.671.606.799.484.901.500
+MS  - An imaging technique using compounds labelled with short-lived
+      positron-emitting radionuclides (such as carbon-11, nitrogen-13,
+      oxygen-15 and fluorine-18) to measure cell metabolism. It has been
+      useful in study of soft tissues such as CANCER; CARDIOVASCULAR SYSTEM;
+      and BRAIN. SPECT is closely related to PET, but uses isotopes with
+      longer half-lives and resolution is lower.
+HN  - 2005; use TOMOGRAPHY, EMISSION-COMPUTED 1979-2004
+BX  - PET Scan
+BX  - Tomography, Positron-Emission
+
+MH  - Postpartum Period
+UI  - D049590
+MN  - G8.520.734
+MS  - In females, the period after giving birth (PARTURITION).
+AN  - human & animal; qualif permitted as for PREGNANCY; check the tag
+      FEMALE: Manual 18.4.3; puerperal psychoses = PUERPERAL DISORDERS (IM)
+      + PSYCHOTIC DISORDERS (IM); "postpartum amenorrhea" is indexed under
+      PUERPERIUM (IM) + AMENORRHEA (IM) & not LACTATION unless lactation is
+      particularly discussed
+HN  - 2005
+BX  - Puerperium
+
+MH  - Potoroidae
+UI  - D048328
+MN  - B1.150.900.649.573.600
+MS  - A family of rat kangaroos found in and around Australia. Genera
+      include Potorous and Bettongia.
+AN  - do not confuse rat kangaroo with KANGAROO RATS see DIPODOMYS
+HN  - 2005; use MACROPODIDAE 2001-2004
+BX  - Bettongia
+BX  - Long-Nosed Potoroo
+BX  - Long-Nosed Rat Kangaroo
+BX  - Rat Kangaroo
+
+MH  - PPAR alpha
+UI  - D047493
+MN  - D12.776.826.239.500
+MN  - D12.776.930.630.500
+MS  - A nuclear transcription factor. Heterodimerization with RETINOID X
+      RECEPTOR GAMMA is important to metabolism of LIPIDS. It is the target
+      of FIBRATES to control HYPERLIPIDEMIA.
+HN  - 2005(1992)
+BX  - PPARalpha
+
+MH  - PPAR delta
+UI  - D047494
+MN  - D12.776.826.239.555
+MN  - D12.776.930.630.555
+MS  - A nuclear transcription factor. It is activated by PROSTACYCLIN.
+HN  - 2005(1992)
+BX  - PPARdelta
+
+MH  - PPAR gamma
+UI  - D047495
+MN  - D12.776.826.239.588
+MN  - D12.776.930.630.588
+MS  - A nuclear transcription factor. Heterodimerization with RETINOID X
+      RECEPTOR ALPHA is important in regulation of GLUCOSE metabolism and
+      CELL GROWTH. It is a target of THIAZOLIDINEDIONES for control of
+      DIABETES.
+HN  - 2005(1992)
+BX  - PPARgamma
+
+MH  - PPAR-beta
+UI  - D048068
+MN  - D12.776.826.239.530
+MN  - D12.776.930.630.530
+MS  - One of the PPAR nuclear transcription factors.
+HN  - 2005(1992)
+
+MH  - Preconception Injuries
+UI  - D047489
+MN  - C21.111.549
+MN  - C21.676
+MS  - Damages to reproductive health prior to conception (FERTILIZATION), a
+      legal term for torts liability concerning environmental safety issues.
+      Preconception injuries may involve either the male or the female, such
+      as chromosomal mutations in the OVA or the SPERMATOZOA.
+AN  - not limited to traumatic injuries
+HN  - 2005; use PRENATAL EXPOSURE DELAYED EFFECTS 1992-2004
+
+MH  - Pregnancy, Unplanned
+UI  - D049168
+MN  - G8.520.769.570
+MS  - Unintended accidental pregnancy, including pregnancy resulting from
+      failed contraceptive measures.
+AN  - PREGNANCY, UNWANTED is also available
+HN  - 2005; use PREGNANCY 1980-2004
+FX  - Pregnancy, Unwanted
+
+MH  - Premature Birth
+UI  - D047928
+MN  - C13.703.420.491.500
+MS  - CHILDBIRTH before 37 weeks of PREGNANCY (259 days from the first day
+      of the mother's last menstrual period, or 245 days after
+      FERTILIZATION).
+AN  - check tags FEMALE & PREGNANCY; LABOR, PREMATURE is also available
+HN  - 2005; use LABOR, PREMATURE 1995-2004
+FX  - Infant, Premature
+
+MH  - Prenatal Injuries
+UI  - D049188
+MN  - C13.703.824
+MS  - Damages to the EMBRYO or the FETUS before BIRTH. Damages can be caused
+      by any factors including biological, chemical, or physical.
+AN  - for any damage to the EMBRYO or FETUS; not limited to traumatic
+      injuries
+HN  - 2005; use PRENATAL EXPOSURE DELAYED EFFECTS 1991-2004
+
+MH  - Prochlorococcus
+UI  - D048929
+MN  - B3.440.475.100.655.600
+MS  - A genus of marine planktonic CYANOBACTERIA in the order
+      PROCHLOROPHYTES. They lack PHYCOBILISOMES and contain divinyl
+      CHLOROPHYLL, a and b.
+HN  - 2005
+
+MH  - Prochlorophytes
+UI  - D048928
+MN  - B3.440.475.100.655
+MS  - An order of GRAM-NEGATIVE OXYGENIC PHOTOSYNTHETIC BACTERIA containing
+      CHLOROPHYLL, a and b, but lacking PHYCOBILISOMES (light-harvesting
+      antennae). There are three genera: PROCHLORON;  PROCHLOROCOCCUS; and
+      PROCHLOROTHRIX. This order was thought to be the missing link between
+      CYANOBACTERIA and plant CHLOROPLASTS, hence the name.
+HN  - 2005
+
+MH  - Procyonidae
+UI  - D045988
+MN  - B1.150.900.649.147.650
+MS  - A family of long-tailed terrestrial omnivores including RACCOONS,
+      lesser panda, ringtails, and coatimundis.
+AN  - note X ref PANDAS, LESSER: PANDAS, GIANT and PANDAS, GREATER see
+      URSIDAE is also available
+HN  - 2005; use CARNIVORA 1998; for PANDAS, LESSER use CARNIVORA 1997-2004
+BX  - Ailurus
+BX  - Pandas, Lesser
+
+MH  - Prometaphase
+UI  - D049468
+MN  - G4.335.134.220.220.812
+MN  - G4.335.233.750.500.220.812
+MN  - G5.105.220.812
+MN  - G7.382.374.220.220.812
+MN  - G7.382.843.750.500.220.812
+MN  - G7.574.249.410.750.500.220.812
+MS  - The phase of cell nucleus division following PROPHASE, when the
+      breakdown of the NUCLEAR ENVELOPE occurs and the MITOTIC SPINDLE
+      APPARATUS enters the nuclear region and attaches to the KINETOCHORES.
+HN  - 2005
+
+MH  - Protease La
+UI  - D049070
+MN  - D8.811.277.656.149.500
+MN  - D8.811.277.656.300.760.733
+MS  - A prokaryotic ATP-dependent protease that plays a role in the
+      degradation of many abnormal proteins. It is a tetramer of 87-kDa
+      subunits, each of which contains a proteolytic site and a ATP-binding
+      site.
+HN  - 2005(1981)
+BX  - Lon Protease
+
+MH  - Proteasome Endopeptidase Complex
+UI  - D046988
+MN  - D5.500.562.500
+MN  - D8.811.277.656.918
+MN  - D8.811.600.730
+MS  - A large multisubunit complex that plays an important role in the
+      degradation of most of the cytosolic and nuclear proteins in
+      eukaryotic cells. It contains a 700-kDa catalytic sub-complex and two
+      700-kDa regulatory sub-complexes. The complex digests ubiquitinated
+      proteins and protein activated via ornithine decarboxylase antizyme.
+HN  - 2005; use PROTEASOME ENDOPEPTIDASE COMPLEX (NM) 1986-2004
+FX  - Ubiquitin-Protein Ligase Complexes
+
+MH  - Protein Kinase Inhibitors
+UI  - D047428
+MN  - D27.505.519.389.427
+MS  - Agents that inhibit PROTEIN KINASES.
+HN  - 2005
+
+MH  - 14-3-3 Proteins
+UI  - D048948
+MN  - D12.644.360.24.249
+MN  - D12.776.476.24.249
+MS  - A large family of signal-transducing adaptor proteins present in wide
+      variety of eukaryotes. They are PHOSPHOSERINE and PHOSPHOTHREONINE
+      binding proteins involved in important cellular processes including
+      SIGNAL TRANSDUCTION; CELL-CYCLE control; APOPTOSIS; and cellular
+      stress responses. 14-3-3 proteins function by interacting with other
+      signal-transducing proteins and effecting changes in their enzymatic
+      activity and subcellular localization.  The name 14-3-3 derives from
+      numerical designations used in the original fractionation patterns of
+      the proteins.
+HN  - 2005(1981)
+
+MH  - Protein Modification, Translational
+UI  - D046188
+MN  - G5.315.670
+MN  - G6.535.770.871.790
+MS  - Any of the enzymatically catalyzed modifications of the individual
+      AMINO ACIDS of PROTEINS, and enzymatic cleavage or crosslinking of
+      peptide chains that occur pre-translationally (on the amino acid
+      component of AMINO ACYL TRNA), co-translationally (during the process
+      of GENETIC TRANSLATION), or after translation is completed
+      (POST-TRANSLATIONAL PROTEIN PROCESSING).
+AN  - coord IM with specific protein /metab (IM) and with specific
+      modification, for example, ACYLATION, AMINATION, DEAMINATION, PROTEIN
+      ISOPRENYLATION, etc.; do not confuse with PROTEIN PROCESSING,
+      POST-TRANSLATIONAL
+HN  - 2005
+BX  - Amino Acid Modification, Co-Translational
+BX  - Protein Modification, Co-Translational
+BX  - Protein Processing, Co-Translational
+BX  - Protein Processing, Translational
+
+MH  - Proto-Oncogene Proteins A-raf
+UI  - D048491
+MN  - D12.776.476.400.842.374
+MS  - A raf kinase subclass expressed primarily in non-neuronal tissues such
+      as SKELETAL MUSCLE. The A-raf kinases are MAP kinase kinase kinases
+      that have specificity for MAP KINASE KINASE 1.
+HN  - 2005(2001)
+
+MH  - Proto-Oncogene Proteins B-raf
+UI  - D048493
+MN  - D8.811.913.696.620.682.700.559.842.374
+MN  - D12.644.360.400.842.374
+MN  - D12.776.476.400.842.437
+MN  - D12.776.624.664.700.183.200
+MS  - A raf kinase subclass found at high levels in neuronal tissue. The
+      B-raf Kinases are MAP kinase kinase kinases that have specificity for
+      MAP KINASE KINASE 1 and MAP KINASE KINASE 2.
+HN  - 2005(2001)
+
+MH  - Protoporphyria, Erythropoietic
+UI  - D046351
+MN  - C6.552.830.812
+MN  - C16.320.565.735.812
+MN  - C16.320.850.742.812
+MN  - C17.800.827.742.812
+MN  - C17.800.849.617.400.812
+MN  - C18.452.648.735.812
+MN  - C18.452.872.617.400.812
+MS  - An autosomal dominant porphyria that is due to a deficiency of
+      FERROCHELATASE (heme synthetase) in both the LIVER and the BONE
+      MARROW, the last enzyme in the 8-enzyme biosynthetic pathway of HEME. 
+      Clinical features include mainly neurological symptoms, rarely
+      cutaneous lesions, and elevated levels of protoporphyrin and
+      COPROPORPHYRINS in the feces.
+AN  - do not confuse with PORPHYRIA, ERYTHROPOIETIC
+HN  - 2005; use PORPHYRIA, ERYTHROHEPATIC 1993-2004
+BX  - Erythropoietic Protoporphyria
+
+MH  - Psittacula
+UI  - D046409
+MN  - B1.150.900.248.710.672.650.650
+MS  - A genus in the family PSITTACIDAE containing three species of
+      PARAKEETS: the Derbyan, the Alexandrine, and the rose-ringed.
+HN  - 2005
+
+MH  - Pubic Symphysis Diastasis
+UI  - D046548
+MN  - C13.703.844.728
+MN  - C21.866.289.650
+MS  - Separation of the PUBIC SYMPHYSIS. It is an uncommon complication of 
+      CHILDBIRTH causing postpartum PAIN, but it can also arise from other
+      causes.
+HN  - 2005
+BX  - Symphysis Pubis Diastasis
+
+MH  - Pulmonary Sclerosing Hemangioma
+UI  - D047868
+MN  - C4.588.894.797.520.933
+MN  - C8.381.540.867
+MN  - C8.785.520.867
+MS  - A benign neoplasm of alveolar pneumocytes or ontogenetically primitive
+      counterparts thereof. Morphological patterns that have been described
+      include: solid, hemorrhagic, papillary, and sclerotic. Most lesions
+      display a combination of two or three morphological patterns. Despite
+      the implication by its name (HEMANGIOMA) of a vascular neoplasm,
+      pulmonary sclerosing hemangioma is considered by most authorities to
+      be an epithelial tumor. (Histopathology 2003;43(3):239-43; Arch Pathol
+      Lab Med. 2001;125(10): 1335-9)
+HN  - 2005
+FX  - Hemangioma
+
+MH  - Puma
+UI  - D046011
+MN  - B1.150.900.649.147.354.630
+MS  - A genus in the family FELIDAE comprising one species, Puma concolor.
+      It is a large, long-tailed, feline of uniform color. The names puma,
+      cougar, and mountain lion are used interchangeably for this species.
+      There are more than 20 subspecies.
+HN  - 2005; use CARNIVORA 1998-2004
+BX  - Cougars
+BX  - Florida Panther
+BX  - Mountain Lion
+BX  - Puma concolor
+
+MH  - Pyloric Stenosis, Hypertrophic
+UI  - D046248
+MN  - C6.405.748.340.690.500
+MS  - Narrowing of the pyloric canal due to HYPERTROPHY of the surrounding
+      circular muscle. It is usually seen in infants or young children.
+HN  - 2005
+
+MH  - Pyrazolones
+UI  - D047069
+MN  - D3.383.694.850
+MS  - Compounds with a five-membered heterocyclic ring with two NITROGENS
+      and a keto OXYGEN. Some are inhibitors of TNF-ALPHA production.
+HN  - 2005
+
+MH  - Pyrroloiminoquinones
+UI  - D047608
+MN  - D2.806.400.500
+MN  - D3.438.473.412.500
+MN  - D3.438.810.553
+MS  - Derivatives of QUINOLINES with fused PYRROLES and a keto group or
+      INDOLEQUINONES with fused PIPERIDINES.
+HN  - 2005
+
+MH  - Raccoon Dogs
+UI  - D046031
+MN  - B1.150.900.649.147.153.700
+MS  - The lone species in the genus Nyctereutes, family CANIDAE. It is found
+      in the woodland zone from southeastern Siberia to Vietnam and on the
+      main islands of Japan.
+AN  - do not confuse with RACCOONS
+HN  - 2005; use CARNIVORA 1990-2004; for NYCTEREUTES use CARNIVORA 1998-2004
+BX  - Nyctereutes
+
+MH  - raf Kinases
+UI  - D048490
+MN  - D8.811.913.696.620.682.700.559.842
+MN  - D12.644.360.400.842
+MN  - D12.776.476.400.842
+MN  - D12.776.624.664.700.183
+MS  - A family of closely-related serine-threonine kinases that were
+      originally identified as the cellular homologs of the
+      retrovirus-derived V-RAF KINASES. They are MAP kinase kinase kinases
+      that play important roles in SIGNAL TRANSDUCTION.
+HN  - 2005
+BX  - mil-raf Protein Kinases
+BX  - MIL-RAF Proteins
+BX  - raf MAP Kinase Kinase Kinases
+
+MH  - Receptors, Lysophosphatidic Acid
+UI  - D049368
+MN  - D12.776.543.750.100.420.249
+MS  - A subfamily of lysophospholipid receptors with specificity for
+      LYSOPHOSPHATIDIC ACIDS.
+HN  - 2005(1992)
+BX  - Lysophosphatidic Acid Receptor
+BX  - Lysophosphatidic Acid Receptors
+
+MH  - Receptors, Lysophospholipid
+UI  - D049312
+MN  - D12.776.543.750.100.420
+MS  - A family of G-protein-coupled receptors that bind to specific
+      LYSOPHOSPHOLIPIDS such as lysophosphatidic acid and lysosphinglipids
+      such as sphingosine-1-phosphate. They play an important role in the
+      formation and function of the CARDIOVASCULAR SYSTEM.
+HN  - 2005(1996)
+BX  - Lysophospholipid Receptors
+
+MH  - Receptors, Lysosphingolipid
+UI  - D049349
+MN  - D12.776.543.750.100.420.500
+MS  - A subfamily of lysophospholipid receptors with specificity for
+      LYSOSPHINGOLIPIDS such as sphingosine-1-phosphate and sphingosine
+      phosphorylcholine.
+HN  - 2005(1996)
+BX  - Lysosphingolipid Receptors
+
+MH  - Receptors, Tumor Necrosis Factor, Type I
+UI  - D047888
+MN  - D12.776.543.750.705.852.760.597
+MN  - D24.185.101.100.110.912
+MN  - D24.611.216.301.264.35.908
+MN  - D24.611.216.301.264.965
+MS  - A tumor necrosis factor receptor subtype that is constitutively
+      expressed in most tissues. It is the key mediator of tumor necrosis
+      factor signaling in the vast majority of cells. The activated receptor
+      signals by associating with TNF RECEPTOR-ASSOCIATED FACTORS.
+HN  - 2005(1994)
+BX  - Antigens, CD120a
+BX  - CD120a Antigens
+BX  - Tumor Necrosis Factor Receptor Superfamily, Member 1A
+BX  - Tumor Necrosis Factor Receptor Type I
+
+MH  - Receptors, Tumor Necrosis Factor, Type II
+UI  - D047889
+MN  - D12.776.543.750.705.852.760.798
+MN  - D24.185.101.100.110.916
+MN  - D24.611.216.301.264.35.912
+MS  - A tumor necrosis factor receptor subtype that is expressed primarily
+      in IMMUNE SYSTEM cells. It has specificity for membrane-bound form of
+      TUMOR NECROSIS FACTORS and mediates intracellular-signaling through
+      TNF RECEPTOR ASSOCIATED FACTORS.
+HN  - 2005(1994)
+BX  - Antigens, CD120b
+BX  - CD120b Antigens
+BX  - Tumor Necrosis Factor Receptor Superfamily, Member 1B
+BX  - Tumor Necrosis Factor Receptor Type II
+
+MH  - Renilla
+UI  - D048790
+MN  - B1.500.308.237.700
+MS  - A genus of bioluminescent marine invertebrates in the family
+      Renillidae, order Pennatulacea, class ANTHOZOA. It contains RENILLA
+      LUCIFERASE which oxidizes coelenterazine resulting in LUMINESCENCE.
+HN  - 2005
+BX  - Sea Pansy
+
+MH  - Reproductive Rights
+UI  - D046269
+MN  - I1.880.604.473.675
+MN  - N3.706.437.675
+MS  - Reproductive rights rest on the recognition of the basic right of all
+      couples and individuals to decide freely and responsibly the number,
+      spacing and timing of their children and to have the information and
+      means to do so, and the right to attain the highest standard of sexual
+      and reproductive health. They also include the right of all to make
+      decisions concerning reproduction free of discrimination, coercion and
+      violence.
+HN  - 2005
+
+MH  - Retinoid X Receptor alpha
+UI  - D047490
+MN  - D12.776.826.701.500.500
+MN  - D12.776.930.675.500.500
+MS  - A nuclear transcription factor. Heterodimerization with PPAR-GAMMA is
+      important in regulation of GLUCOSE metabolism and CELL GROWTH.
+HN  - 2005
+
+MH  - Retinoid X Receptor beta
+UI  - D049230
+MN  - D12.776.826.701.500.625
+MN  - D12.776.930.675.500.625
+HN  - 2005
+
+MH  - Retinoid X Receptor gamma
+UI  - D047491
+MN  - D12.776.826.701.500.750
+MN  - D12.776.930.675.500.750
+MS  - A nuclear transcription factor. Heterodimerization with PPAR ALPHA is
+      important to metabolism of LIPIDS.
+HN  - 2005
+
+MH  - Retinoid X Receptors
+UI  - D047488
+MN  - D12.776.826.701.500
+MN  - D12.776.930.675.500
+MS  - A subtype of RETINOIC ACID RECEPTORS that are specific for
+      9-cis-retinoic acid which function as nuclear TRANSCRIPTION FACTORS
+      that regulate multiple signalling pathways.
+HN  - 2005
+BX  - Retinoid X Receptor
+
+MH  - Reverse Transcription
+UI  - D048348
+MN  - G5.310.700.500
+MS  - The biosynthesis of DNA carried out on a template of RNA.
+HN  - 2005; use TRANSCRIPTION, GENETIC 1988-2004
+FX  - Reverse Transcriptase Polymerase Chain Reaction
+FX  - RNA-Directed DNA Polymerase
+
+MH  - Rhipicephalus
+UI  - D048494
+MN  - B1.500.131.166.132.832.400.712
+MS  - A genus of TICKS, in the family IXODIDAE, widespread in Africa.
+      Members of the genus include many important vectors of animal and
+      human pathogens.
+HN  - 2005
+
+MH  - Rhipicephalus sanguineus
+UI  - D048508
+MN  - B1.500.131.166.132.832.400.712.700
+MS  - A species of tick (TICKS) in the family IXODIDAE, distributed
+      throughout the world but abundant in southern Europe. It will feed on
+      a wide variety of MAMMALS, but DOGS are its preferred host. It
+      transmits a large number of diseases including BABESIOSIS;
+      THEILERIASIS; EHRLICHIOSIS; and MEDITERRANEAN SPOTTED FEVER.
+HN  - 2005
+BX  - Brown Dog Tick
+
+MH  - RNA, Algal
+UI  - D048030
+MN  - D13.444.735.130
+MS  - Ribonucleic acid in ALGAE having regulatory and catalytic roles as
+      well as involvement in protein synthesis.
+HN  - 2005
+BX  - Algal RNA
+
+MH  - Roniviridae
+UI  - D046828
+MN  - B4.820.504.770
+MS  - A family of rod-shaped viruses, in the order NIDOVIRALES. It includes
+      one genus: Okavirus.
+AN  - infection: coord IM with RNA VIRUS INFECTIONS (IM)
+HN  - 2005
+BX  - Gill-associated virus
+BX  - Okavirus
+BX  - Yellow-head virus
+
+MH  - Rupicapra
+UI  - D048608
+MN  - B1.150.900.649.77.380.513.500
+MS  - A genus of ruminants in the family Bovidae. The common name chamois
+      usually refers to the species Rupicapra rupicapra. Rupicapra
+      pyrenaica, found in the Pyrenees, is more properly referred to as the
+      Pyrenean chamois.
+HN  - 2005
+BX  - Chamois
+BX  - Chamois, Pyrenean
+
+MH  - Russian-Japanese War
+UI  - D047848
+MN  - K1.504.504.968.100
+MS  - Conflict from 1904 through 1905 between Russia and Japan regarding
+      Manchuria and Korea.
+HN  - 2005
+
+MH  - Saposins
+UI  - D049231
+MN  - D8.211.790.500
+MS  - A group of four homologous sphingolipid activator proteins that are
+      formed from proteolytic cleavage of a common protein precursor
+      molecule referred to as prosaposin.
+HN  - 2005(1977)
+
+MH  - Sarcoglycans
+UI  - D049031
+MN  - D12.776.210.500.410.750
+MN  - D12.776.543.268.750
+MN  - D12.776.543.550.712
+MS  - A family of transmembrane dystrophin-associated proteins that plays a
+      role in the membrane association of the DYSTROPHIN-ASSOCIATED PROTEIN
+      COMPLEX. Mutations abolishing the expression of sarcoglycans result in
+      LIMB-GIRDLE MUSCULAR DYSTROPHY.
+HN  - 2005(1993)
+BX  - beta-Sarcoglycan
+FX  - Muscular Dystrophies, Limb-Girdle
+
+MH  - Sea Lions
+UI  - D046070
+MN  - B1.150.900.649.147.600.670
+MS  - A group comprised of several species of aquatic carnivores in
+      different genera, in the family Otariidae. In comparison to FUR SEALS,
+      they have shorter, less dense hair.
+HN  - 2005; use SEALS, EARLESS 1980-2004, use PINNIPEDIA 1968-1979
+BX  - California Sea Lion
+BX  - Sea Lion, California
+BX  - Zalophus
+
+MH  - Seals, Earless
+UI  - D046048
+MN  - B1.150.900.649.147.600.700
+MS  - The family Phocidae, suborder PINNIPEDIA, order CARNIVORA, comprising
+      the true seals. They lack external ears and are unable to use their
+      hind flippers to walk. It includes over 18 species including the harp
+      seal, probably the best known seal species in the world.
+AN  - seals unspecified goes here; FUR SEALS is also available
+HN  - 2005
+BX  - Halichoerus grypus
+BX  - Mirounga
+BX  - Pagophilus groenlandicus
+BX  - Seal, Elephant
+BX  - Seal, Harp
+BX  - Seals, True
+
+MH  - Secologanin Tryptamine Alkaloids
+UI  - D046948
+MN  - D3.132.436.681
+MN  - D3.438.473.402.681
+MS  - Compounds formed by condensation of secologanin with tryptamine
+      resulting in a tetrahydro-beta-carboline which is processed further to
+      a number of bioactive compounds. These are especially found in plants
+      of the APOCYNACEAE; LOGANIACEAE; and RUBIACEAE families.
+HN  - 2005; for YOHIMBANS use YOHIMBANS 1969-2004; for RAUWOLFIA ALKALOIDS
+      use RAUWOLFIA ALKALOIDS 1975-2004
+
+MH  - September 11 Terrorist Attacks
+UI  - D047851
+MN  - I1.198.240.856.800.550
+MN  - K1.504.504.984.500
+MS  - Terrorism on September 11, 2001 against targets in New York, the
+      Pentagon in Virginia, and an aborted attack that ended in
+      Pennsylvania.
+HN  - 2005
+
+MH  - Sericins
+UI  - D047030
+MN  - D12.776.878.750
+MS  - A serine-rich sticky protein secreted by MOTHS. Generally, the term
+      refers to silkworm silk gum protein secreted in the middle section of
+      silk gland cells of SILKWORMS, Bombyx mori. Sericin acts as a cement
+      and coating for the two fibroin filaments in a silk strand and is
+      readily soluble in mild alkaline solution.
+HN  - 2005 (1974)
+
+MH  - Serine-Type D-Ala-D-Ala Carboxypeptidase
+UI  - D046929
+MN  - D8.811.277.656.350.245.252
+MS  - A carboxypeptidase that is specific for proteins that contain two
+      ALANINE residues on their C-terminal. Enzymes in this class play an
+      important role in bacterial CELL WALL biosynthesis.
+HN  - 2005(1993); for D-ALANYL-D-ALANINE-CLEAVING TRANSPEPTIDASE use
+      MURAMOYLPENTAPEPTIDE CARBOXYPEPTIDASE 1984-2004; for D-D
+      CARBOXYPEPTIDASE use MURAMOYLPENTAPEPTIDE CARBOXYPEPTIDASE 1974-2004
+BX  - D-D Carboxypeptidase
+
+MH  - Seroma
+UI  - D049291
+MN  - C23.550.470.640
+MS  - Tumor-like sterile accumulation of serum in a tissue, organ, or
+      cavity. It results from a tissue insult and is the product of tissue
+      inflammation. It most commonly occurs following MASTECTOMY.
+AN  - non neoplastic
+HN  - 2005
+FX  - Exudates and Transudates
+
+MH  - Sexual Development
+UI  - D046468
+MN  - G8.520.960
+MS  - The processes of anatomical and physiological changes related to
+      sexual or reproductive functions during the life span of a human or an
+      animal, from FERTILIZATION to DEATH. These processes include SEX
+      DIFFERENTIATION; SEXUAL MATURATION; and changes during AGING.
+AN  - human and animal
+HN  - 2005
+
+MH  - Siadenovirus
+UI  - D046809
+MN  - B4.280.30.750
+MN  - B4.909.204.97.750
+MS  - A genus of ADENOVIRIDAE comprising species including viruses of FROGS
+      and TURKEYS. The type species is Frog adenovirus.
+AN  - infection: coord IM with ADENOVIRIDAE INFECTIONS (IM)
+HN  - 2005
+BX  - Marble spleen disease virus
+BX  - Turkey adenovirus A
+
+MH  - Silk
+UI  - D047011
+MN  - D5.750.78.875
+MN  - D12.776.878
+MS  - A continuous protein fiber consisting primarily of FIBROINS. It is
+      synthesized by a variety of INSECTS and ARACHNIDS.
+HN  - 2005; use SILK (NM) 1980 -2004
+FX  - Bombyx
+FX  - Sutures
+FX  - Textiles
+
+MH  - Spalax
+UI  - D046308
+MN  - B1.150.900.649.865.600.700
+MN  - B1.150.900.649.865.635.700
+MS  - A genus of blind, subterranean MOLE RATS, in the subfamily Spalacidae,
+      family MURIDAE, used as a animal model in neurophysiology. There are
+      at least five different species described, all found in the Ukraine.
+HN  - 2005; use MOLE RATS 1998-2004
+
+MH  - Spanish-American War, 1898
+UI  - D047832
+MN  - K1.504.504.937.750
+MS  - Conflict between Spain and the United States, arising out of Spanish
+      policies in Cuba.
+HN  - 2005
+
+MH  - Sparrows
+UI  - D046370
+MN  - B1.150.900.248.620.750.700
+MS  - The family Passeridae comprised of small, mainly brown and grey
+      seed-eating birds with conical bills.
+HN  - 2005; use SONGBIRDS 1999-2004
+BX  - Passeridae
+
+MH  - Spectroscopy, Electron Energy-Loss
+UI  - D046590
+MN  - E5.196.867.838
+MS  - A technique for analysis of the chemical composition of molecules. A
+      substance is bombarded with monochromatic ELECTRONS. Some of the
+      electrons passing through the specimen will lose energy when they
+      ionize inner shell electrons of the atoms in the specimen. The energy
+      loss is element dependent. Analysis of the energy loss spectrum
+      reveals the elemental composition of a specimen. ENERGY-FILTERED
+      TRANSMISSION ELECTRON MICROSCOPY is a type of electron energy loss
+      spectroscopy carried out in electron microscopes specially outfitted
+      to analyze the spectrum of electron energy loss.
+HN  - 2005
+BX  - Electron Energy-Loss Spectroscopy
+
+MH  - Speech Recognition Software
+UI  - D049250
+MN  - L1.224.900.889
+MS  - Software capable of recognizing dictation and transcribing the spoken
+      words into written text.
+HN  - 2005
+BX  - Voice Recognition Software
+FX  - Communication Aids for Disabled
+FX  - User-Computer Interface
+
+MH  - Spheniscidae
+UI  - D046429
+MN  - B1.150.900.248.860
+MS  - The sole family in the order Sphenisciformes, comprised of 17 species
+      of penguins in six genera. They are flightless seabirds of the
+      Southern Hemisphere, highly adapted for marine life.
+HN  - 2005
+BX  - Penguins
+BX  - Sphenisciformes
+
+MH  - Sphincter of Oddi Dysfunction
+UI  - D046628
+MN  - C6.130.120.250.98.800
+MS  - Organic or functional motility disorder involving the SPHINCTER OF
+      ODDI and associated with biliary COLIC. Pathological changes are most
+      often seen in the COMMON BILE DUCT sphincter, and less commonly the
+      PANCREATIC DUCT sphincter.
+HN  - 2005
+BX  - Sphincter of Oddi Dyskinesia
+
+MH  - Sphingolipid Activator Proteins
+UI  - D049128
+MN  - D8.211.790
+MS  - A family of glycoprotein cofactors that are required for the efficient
+      catabolization of SPHINGOLIPIDS by specific acid hydrolases such as
+      GLUCOSYLCERAMIDASE; GALACTOCEREBROSIDASE; BETA-N-ACETYLHEXOSAMINIDASE;
+      and CEREBROSIDE-SULFATASE.
+HN  - 2005(1977)
+BX  - G(M1) Activator Protein
+
+MH  - Squalus
+UI  - D048250
+MN  - B1.150.900.493.370.853.392.800
+MS  - A genus of SHARKS in the family SQUALIDAE, comprised of many different
+      species. They travel in large groups and are bottom dwellers that feed
+      mostly on bony fishes.
+HN  - 2005; use DOGFISH 1994-2004
+
+MH  - Squalus acanthias
+UI  - D048251
+MN  - B1.150.900.493.370.853.392.800.500
+MS  - A species of shark in the family SQUALIDAE, used for its oil
+      (SQUALENE) and as fish meal. It also figures heavily in biological
+      research, especially with reference to its RECTAL GLAND in studies of
+      WATER-ELECTROLYTE BALANCE.
+HN  - 2005
+BX  - Dogfish, Spiny
+
+MH  - Starlings
+UI  - D046749
+MN  - B1.150.900.248.620.750.712
+MS  - The family Sturnidae, in the order PASSERIFORMES. The starling family
+      also includes mynahs and oxpeckers.
+HN  - 2005
+BX  - Mynahs
+BX  - Sturnidae
+
+MH  - Stichopus
+UI  - D047528
+MN  - B1.500.408.560.700
+MS  - A genus of very large, epibenthic SEA CUCUMBERS in the family
+      Stichopodidae, commercially harvested in Southeast Asia for food.
+HN  - 2005
+
+MH  - Streptococcus thermophilus
+UI  - D048249
+MN  - B3.510.400.800.872.800
+MS  - A species of thermophilic, gram-positive bacteria found in MILK and
+      milk products.
+HN  - 2005
+
+MH  - Streptomyces coelicolor
+UI  - D048372
+MN  - B3.300.390.400.810.768.200
+MN  - B3.510.24.49.775.775.200
+MN  - B3.510.415.400.810.768.200
+MN  - B3.510.460.410.810.768.200
+MS  - A soil-dwelling actinomycete with a complex lifecycle involving
+      mycelial growth and spore formation. It is involved in the production
+      of a number of medically important ANTIBIOTICS.
+HN  - 2005
+
+MH  - Streptomyces lividans
+UI  - D048170
+MN  - B3.300.390.400.810.768.500
+MN  - B3.510.24.49.775.775.500
+MN  - B3.510.415.400.810.768.500
+MN  - B3.510.460.410.810.768.500
+MS  - An actinomycete used for production of commercial ANTIBIOTICS and as a
+      host for gene cloning.
+HN  - 2005
+
+MH  - Stroboscopy
+UI  - D049489
+MN  - E1.370.350.755
+MS  - The observation of successive phases of MOVEMENT by use of a flashing
+      light.
+HN  - 2005
+
+MH  - Strongylocentrotus
+UI  - D047269
+MN  - B1.500.408.578.800
+MS  - A genus of SEA URCHIN in the family Strongylocentrotidae. They possess
+      more than three pore pairs per ambulacral plate. The species
+      STRONGYLOCENTROTUS PURPURATUS is commonly used for research.
+HN  - 2005
+
+MH  - Strongylocentrotus purpuratus
+UI  - D047270
+MN  - B1.500.408.578.800.600
+MS  - A species of SEA URCHIN in the family Strongylocentrotidae found on
+      the Pacific coastline from Alaska to Mexico. This species serves as a
+      major research model for molecular developmental biology and other
+      fields.
+HN  - 2005
+
+MH  - Suberites
+UI  - D047233
+MN  - B1.500.802.775
+MS  - A genus of velvety smooth SPONGES in the family Suberitidae,
+      characterized by the ectosomal and choanosomal skeletons dominated by
+      tylostyles (pin-like spicules with a pinched bulbous end).
+HN  - 2005
+
+MH  - Sulfolobus solfataricus
+UI  - D048229
+MN  - B7.75.725.725.725.800
+MS  - A species of thermoacidophilic ARCHAEA in the family Sulfolobaceae,
+      found in volcanic areas where the temperature is about 80 degrees C
+      and SULFUR is present.
+HN  - 2005
+
+MH  - Swallows
+UI  - D046388
+MN  - B1.150.900.248.620.750.725
+MS  - The family Hirundinidae, comprised of small BIRDS that hunt flying
+      INSECTS while in sustained flight.
+HN  - 2005; use SONGBIRDS 1999-2004
+BX  - Hirundinidae
+
+MH  - Synechococcus
+UI  - D046940
+MN  - B3.280.745
+MN  - B3.440.475.100.745
+MS  - A form-genus of spherical to rod-shaped CYANOBACTERIA in the order
+      Chroococcales. They contain THYLAKOIDS and are found in a wide range
+      of habitats.
+HN  - 2005
+
+MH  - Synechocystis
+UI  - D046939
+MN  - B3.280.750
+MN  - B3.440.475.100.750
+MS  - A form-genus of unicellular CYANOBACTERIA in the order Chroococcales.
+      None of the strains fix NITROGEN, there are no gas vacuoles, and
+      sheath layers are never produced.
+HN  - 2005
+
+MH  - Synkinesis
+UI  - D046608
+MN  - C10.597.350.675
+MN  - C23.888.592.350.675
+MS  - An involuntary movement accompanying a volitional movement. It often
+      refers to facial movements that accompany FACIAL PARALYSIS.
+HN  - 2005
+
+MH  - Systems Biology
+UI  - D049490
+MN  - G1.273.180.800
+MN  - H1.158.273.180.800
+MS  - Comprehensive, methodical analysis of complex biological systems by
+      monitoring responses to perturbations of biological processes. Large
+      scale, computerized collection and analysis of the data are used to
+      develop and test models of biological systems.
+HN  - 2005
+FX  - Systems Theory
+
+MH  - Tay-Sachs Disease, AB Variant
+UI  - D049290
+MN  - C10.228.140.163.100.435.825.300.300.750
+MN  - C16.320.565.150.435.825.300.300.920
+MN  - C16.320.565.556.641.803.350.300.925
+MN  - C16.320.565.580.554.825.300.300.920
+MN  - C16.320.565.580.803.350.300.925
+MN  - C18.452.100.100.435.825.300.300.920
+MN  - C18.452.648.151.435.825.300.300.920
+MN  - C18.452.648.151.825.300.300.925
+MN  - C18.452.648.556.641.803.350.300.925
+MN  - C18.452.648.595.554.825.300.300.920
+MN  - C18.452.648.595.803.350.300.925
+MS  - A form of GM2 gangliosidosis resulting from a lack of G(M2) ACTIVATOR
+      PROTEIN function, usually due to genetic mutations. The AB variant
+      designation refers to the elevated levels of HEXOSAMINIDASE A and
+      HEXOSAMINIDASE B proteins that occur in tissues that lack of G(M2)
+      ACTIVATOR PROTEIN.
+HN  - 2005(2000); use GANGLIOSIDOSES GM2 2000-2004
+BX  - Gangliosidosis GM2, AB Variant
+BX  - Gangliosidosis GM2, Type AB
+BX  - GM2 Protein Activator Deficiency Disease
+FX  - G(M2) Activator Protein
+
+MH  - Term Birth
+UI  - D047929
+MN  - G8.520.769.490.500
+MS  - CHILDBIRTH at the end of a normal duration of PREGNANCY, between 37 to
+      40 weeks of gestation or about 280 days from the first day of the
+      mother's last menstrual period.
+HN  - 2005
+FX  - Gestational Age
+
+MH  - Theonella
+UI  - D047232
+MN  - B1.500.802.785
+MS  - A genus of shallow-cupped SPONGES with a broad base in the family
+      Theonellidae. They are characterized by ectosomal spicules dominated
+      by phyllotriaenes.
+HN  - 2005
+
+MH  - Thermoanaerobacter
+UI  - D046968
+MN  - B3.510.460.400.400.790
+MS  - A genus of gram-positive, anaerobic bacteria in the family
+      Thermoanaerobacteriaceae. Cultures consist of rods interspersed with
+      coccoid cells.
+AN  - do not confuse with THERMOANAEROBACTERIUM
+HN  - 2005
+
+MH  - Thermoanaerobacterium
+UI  - D046950
+MN  - B3.510.460.400.400.800
+MS  - A genus of gram-negative, anaerobic bacteria in the family
+      Thermoanaerobacteriaceae. They are thermophilic and saccharolytic.
+AN  - do not confuse with THERMOANEROBACTER
+HN  - 2005
+
+MH  - Thermotoga neapolitana
+UI  - D046949
+MN  - B3.440.425.410.760
+MS  - A species of extremophilic bacteria in the family Thermotogaceae.
+      Generally anaerobic but in the presence of OXYGEN, it can produce
+      hydrogen gas as a byproduct of metabolism.
+HN  - 2005
+
+MH  - Thymus Plant
+UI  - D046930
+MN  - B6.388.100.575.974
+MS  - A plant genus of the family LAMIACEAE best known for the thyme spice
+      added to foods.
+AN  - coord with specific PLANT COMPONENTS term if pertinent; for use in
+      therapy coord IM with PHYTOTHERAPY (IM) + disease/drug ther (IM) +
+      PLANT PREPARATIONS or its indentations/ther use (IM or NIM) + specific
+      plant chemical /ther use (IM) if pertinent; Manual 26.29
+HN  - 2005
+
+MH  - Tigers
+UI  - D046010
+MN  - B1.150.900.649.147.354.600.800
+MS  - The species Panthera tigris, a large feline inhabiting Asia. Several
+      subspecies exist including the Siberian tiger and Sumatran tiger.
+HN  - 2005; use CARNIVORA 1998-2004
+BX  - Panthera tigris
+
+MH  - Tissue Array Analysis
+UI  - D046888
+MN  - E5.196.630.570.850
+MN  - E5.588.570.850
+MS  - The simultaneous analysis of multiple samples of TISSUES or CELLS from
+      BIOPSY or in vitro culture that have been arranged in an array format
+      on slides or microchips.
+HN  - 2005
+
+MH  - Tissue Culture Techniques
+UI  - D046509
+MN  - E5.200.249.617
+MS  - A technique for maintaining or growing TISSUE in vitro, usually by
+      DIFFUSION, perifusion, or PERFUSION. The tissue is cultured directly
+      after removal from the host without being dispersed for cell culture.
+HN  - 2005; use TISSUE CULTURE 1966-2004
+
+MH  - TNF Receptor-Associated Factor 1
+UI  - D047990
+MN  - D12.644.360.24.500.500
+MN  - D12.776.157.57.500.500
+MN  - D12.776.476.24.500.500
+MS  - A signal transducing tumor necrosis factor receptor associated factor
+      that is involved in TNF RECEPTOR feedback regulation. It is similar in
+      structure and appears to work in conjunction with TNF
+      RECEPTOR-ASSOCIATED FACTOR 2 to inhibit APOPTOSIS.
+HN  - 2005(1994)
+
+MH  - TNF Receptor-Associated Factor 2
+UI  - D047992
+MN  - D12.644.360.24.500.750
+MN  - D12.776.157.57.500.750
+MN  - D12.776.476.24.500.750
+MS  - A signal transducing tumor necrosis factor receptor associated factor
+      that is involved in TNF RECEPTOR feedback regulation. It is similar in
+      structure and appears to work in conjunction with TNF
+      RECEPTOR-ASSOCIATED FACTOR 1 to inhibit APOPTOSIS.
+HN  - 2005(1994)
+
+MH  - TNF Receptor-Associated Factor 3
+UI  - D048008
+MN  - D12.644.360.24.500.875
+MN  - D12.776.157.57.500.875
+MN  - D12.776.476.24.500.875
+MS  - A signal transducing tumor necrosis factor receptor associated factor
+      that is involved in regulation of NF-KAPPA B signaling and activation
+      of MITOGEN-ACTIVATED PROTEIN KINASES.
+HN  - 2005(1995)
+
+MH  - TNF Receptor-Associated Factor 5
+UI  - D048015
+MN  - D12.644.360.24.500.937
+MN  - D12.776.157.57.500.937
+MN  - D12.776.476.24.500.937
+MS  - A signal transducing tumor necrosis factor receptor associated factor
+      that mediates signaling from CD27 ANTIGENS, CD40 ANTIGENS and the
+      lymphotoxin beta-specific receptor. It is involved in regulation of
+      NF-KAPPA B signalling.
+HN  - 2005(1996)
+
+MH  - TNF Receptor-Associated Factor 6
+UI  - D048029
+MN  - D12.644.360.24.500.968
+MN  - D12.776.157.57.500.968
+MN  - D12.776.476.24.500.968
+MS  - A signal transducing tumor necrosis factor receptor associated factor
+      that is involved in regulation of NF-KAPPA B signalling and activation
+      of JNK MITOGEN-ACTIVATED PROTEIN KINASES.
+HN  - 2005(1996)
+
+MH  - Transfer RNA Aminoacylation
+UI  - D046249
+MN  - G6.535.95.55.860
+MN  - G6.535.770.50.860
+MN  - G6.535.770.871.850
+MN  - H1.181.404.95.526.860
+MS  - The conversion of uncharged TRANSFER RNA  to AMINO ACYL TRNA.
+HN  - 2005
+BX  - Aminoacylation, Transfer RNA
+BX  - Transfer RNA Charging
+BX  - tRNA Aminoacylation
+BX  - tRNA Charging
+FX  - Amino Acyl-tRNA Synthetases
+
+MH  - Treponema denticola
+UI  - D048373
+MN  - B3.440.425.410.711.795.700
+MN  - B3.851.595.795.200
+MS  - A species of bacteria in the family SPIROCHAETACEAEA, frequently
+      isolated from periodontal pockets (PERIODONTAL POCKET).
+HN  - 2005
+
+MH  - Trichosurus
+UI  - D048330
+MN  - B1.150.900.649.573.587.800
+MS  - A genus of brush-tailed possums found chiefly in Australia and New
+      Zealand. Secretions from their ANAL GLAND function both in defense and
+      demarcating territory.
+HN  - 2005
+BX  - Possums, Brush-Tailed
+
+MH  - Tumor Burden
+UI  - D047368
+MN  - E5.118.892
+MS  - The total amount (cell number, weight, size or volume) of tumor cells
+      or tissue in the body.
+AN  - coordinate with neoplasm /pathol
+HN  - 2005
+
+MH  - Tumor Necrosis Factor Receptor-Associated Peptides and Proteins
+UI  - D047988
+MN  - D12.644.360.24.500
+MN  - D12.776.157.57.500
+MN  - D12.776.476.24.500
+MS  - Intracellular signaling peptides and proteins that bind directly or
+      indirectly to the cytoplasmic portion of TUMOR NECROSIS FACTOR
+      RECEPTORS.
+HN  - 2005(1994)
+BX  - TNF Receptor-Associated Factors
+BX  - Tumor Necrosis Factor Receptor-Associated Factors
+
+MH  - Tumor Necrosis Factors
+UI  - D048069
+MN  - D12.644.276.992
+MN  - D12.776.467.968
+MN  - D24.611.350.750
+MS  - A family of proteins that were originally identified by their ability
+      to cause NECROSIS of NEOPLASMS. Their necrotic effect on cells is
+      mediated through TUMOR NECROSIS FACTOR RECEPTORS which induce
+      APOPTOSIS.
+HN  - 2005
+
+MH  - Tymoviridae
+UI  - D046830
+MN  - B4.715.850
+MN  - B4.820.900
+MS  - A family of icosahedral, non-enveloped, RNA plant viruses comprised of
+      three genera: TYMOVIRUS, Marafivirus and Maculavirus.
+HN  - 2005
+
+MH  - Unsafe Sex
+UI  - D047568
+MN  - G8.520.950.987
+MS  - Sexual behaviors which are high-risk for contracting SEXUALLY
+      TRANSMITTED DISEASES or for producing PREGNANCY.
+HN  - 2005; use SAFE SEX 2001-2004
+BX  - High-Risk Sex
+
+MH  - Utrophin
+UI  - D049411
+MN  - D12.776.220.987
+MN  - D12.776.543.985
+MS  - An autosomally-encoded 376-kDa cytoskeletal protein that is similar in
+      structure and function to DYSTROPHIN. It is a ubiquitously-expressed
+      protein that plays a role in anchoring the CYTOSKELETON to the PLASMA
+      MEMBRANE.
+HN  - 2005(1991)
+FX  - Dystrophin-Associated Protein Complex
+
+MH  - Vibrio fischeri
+UI  - D048908
+MN  - B3.440.450.900.859.300
+MN  - B3.660.250.830.830.250
+MS  - A species of gram-negative bacteria in the genus VIBRIO, which
+      exhibits LUMINESCENCE. V. fischeri is found in a symbiotic
+      relationship with the SQUID Euprymna scolopes.
+HN  - 2005
+
+MH  - Videoconferencing
+UI  - D049269
+MN  - L1.178.847.900
+MS  - Communications via an interactive conference between two or more
+      participants at different sites, using computer networks (COMPUTER
+      COMMUNICATIONS NETWORKS) or other telecommunication links to transmit
+      audio, video, and data.
+HN  - 2005
+
+MH  - Vietnam Conflict
+UI  - D047829
+MN  - K1.504.504.968.600
+MS  - A conflict occurring from 1954 through 1975 within the Republic of
+      Vietnam. It involved neighboring nations and the United States and
+      other members of the Southeast Asia Treaty Organization.
+HN  - 2005
+BX  - Viet Nam Conflict
+
+MH  - Visible Human Project
+UI  - D048589
+MN  - G1.100.185.900
+MN  - H1.158.100.185.900
+MN  - J1.897.280.500.545.129.800
+MN  - L1.178.820.90.545.129.800
+MN  - L1.470.750.750.900
+MN  - L1.700.508.300.221.400.900
+MS  - Digital image data sets, created by the NATIONAL LIBRARY OF MEDICINE,
+      consisting of complete, anatomically detailed, three-dimensional
+      representations of the normal male and female human bodies. The images
+      were generated from carefully selected and prepared CADAVERS in three
+      modes: computerized tomography (TOMOGRAPHY, X-RAY COMPUTED), magnetic
+      resonance (MAGNETIC RESONANCE IMAGING) and cryosection
+      (CRYOSECTIONING).
+HN  - 2005; use ANATOMY, CROSS-SECTIONAL 1997-2004
+FX  - Imaging, Three-Dimensional
+
+MH  - Vitellins
+UI  - D047048
+MN  - D12.776.290.812
+MS  - Major egg yolk proteins from egg-laying animals such as non-mammalian
+      VERTEBRATES; ARTHROPODS; and others. They are high-density
+      lipoglycoproteins derived from circulating precursors, VITELLOGENINS.
+      Vitellins serve as nutrients for the growing non-mammalian embryos
+      (EMBRYO, NONMAMMALIAN).
+HN  - 2005; use EGG PROTEINS 1989-2004
+
+MH  - Viverridae
+UI  - D045949
+MN  - B1.150.900.649.147.900
+MS  - The family of civets which are small and medium-sized Old World
+      carnivores, often stripped or spotted.
+HN  - 2005; use CARNIVORA 1998-2004; for CIVET CATS use CARNIVORA 2004
+BX  - Civet Cats
+BX  - Civets
+BX  - Genets
+
+MH  - Waist-Hip Ratio
+UI  - D049629
+MN  - E1.370.600.115.100.960
+MN  - E5.118.946
+MN  - G7.290.100.960
+MS  - The waist circumference measurement divided by the hip circumference
+      measurement.
+HN  - 2005; use BODY CONSTITUTION 1994-2004
+
+MH  - Weevils
+UI  - D048889
+MN  - B1.500.131.617.69.900
+MS  - BEETLES in the family Curculionidae and the largest family in the
+      order COLEOPTERA. They have a markedly convex shape and many are
+      considered pests.
+HN  - 2005
+BX  - Curculionidae
+
+MH  - White spot syndrome virus 1
+UI  - D046848
+MN  - B4.280.505.900
+MS  - A species of DNA virus, in the genus WHISPOVIRUS, infecting PENAEID
+      SHRIMP.
+HN  - 2005
+
+MH  - World War I
+UI  - D047828
+MN  - K1.504.504.968.300
+MS  - Global conflict primarily fought on European continent, that occurred
+      between 1914 and 1918.
+HN  - 2005
+
+MH  - World War II
+UI  - D047789
+MN  - K1.504.504.968.400
+MS  - Global conflict involving countries of Europe, Africa, Asia, and North
+      America that occurred between 1939 and 1945.
+HN  - 2005
+BX  - World War, 1939-1945
+
+MH  - Xestospongia
+UI  - D047131
+MN  - B1.500.802.900
+MS  - A genus of SPONGES in the family Petrosiidae, characterized by an
+      ectosomal skeleton consisting only of an isotropic reticulation of
+      single spicules or spicule tracts.
+HN  - 2005

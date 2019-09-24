@@ -20,6 +20,7 @@ import {
 } from "./functions";
 import { Transform } from "stream";
 import SplitStreamFilter from "./SplitStreamFilter";
+import SplitStreamData from './SplitStreamData';
 
 Vue.use(VueResize);
 
@@ -107,7 +108,10 @@ async function loadDataset(name) {
     }
   }
 
-  datasets[name] = new SplitStreamFilter(TransformData[entry.format](data));
+  if (entry.format == "storyline")
+    datasets[name] = TransformData[entry.format](data);
+  else
+    datasets[name] = new SplitStreamFilter(TransformData[entry.format](data));
   return true;
 }
 
@@ -262,11 +266,15 @@ document.addEventListener("DOMContentLoaded", async function (event) {
         saveJson(generator.get(), "data");
       },
       render() {
-        let data = datasets[this.dataset.value]._reset();
-        if (this.selectBranch)
-          datasets[this.dataset.value].branch(this.branchSelected);
-        if (this.limitDepth)
-          data = datasets[this.dataset.value].maxDepth(this.depthLimit);
+        let data;
+        if (datasets[this.dataset.value] instanceof SplitStreamFilter) {
+          data = datasets[this.dataset.value]._reset();
+          if (this.selectBranch)
+            datasets[this.dataset.value].branch(this.branchSelected);
+          if (this.limitDepth)
+            data = datasets[this.dataset.value].maxDepth(this.depthLimit);
+        }
+        else data = datasets[this.dataset.value];
 
         stream.automaticUpdate = false;
         stream.data(data);

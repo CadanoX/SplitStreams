@@ -1,0 +1,711 @@
+REPLACED MEDICAL SUBJECT HEADINGS WITH REPLACED-BY HEADINGS - 2002
+
+# = DELETED RECORD
+
+1. TOTAL REPLACED HEADINGS =    185
+2. TOTAL DELETED  HEADINGS =     47
+                            -------
+3. TOTAL(1.+2.) =               232
+
+
+[P] = new status is printed entry term
+[N] = new status is entry term, non-print
+[C] = new status is Supplementary Concept Record
+ [] = old term does not exist in new MeSH
+
+
+MH OLD = ABC Transporters [P]
+MH NEW = ATP-Binding Cassette Transporters
+
+MH OLD = Abelson Leukemia Virus [P]
+MH NEW = Abelson murine leukemia virus
+
+MH OLD = Acupuncture # [P]
+MH NEW = Acupuncture Therapy
+
+MH OLD = Acupuncture Anesthesia # [N]
+MH NEW = Acupuncture Analgesia
+
+MH OLD = African Horse Sickness Virus []
+MH NEW = African horse sickness virus
+
+MH OLD = African Swine Fever-Like Viruses # [P]
+MH NEW = Asfarviridae
+
+MH OLD = AKR Virus [P]
+MH NEW = AKR murine leukemia virus
+
+MH OLD = Alfalfa [P]
+MH NEW = Medicago sativa
+
+MH OLD = Alfalfa Mosaic Virus []
+MH NEW = Alfalfa mosaic virus
+
+MH OLD = Alternative Medicine [P]
+MH NEW = Complementary Therapies
+
+MH OLD = Amaranth []
+MH NEW = Amaranth Dye
+
+MH OLD = Animals, Transgenic # [P]
+MH NEW = Animals, Genetically Modified
+
+MH OLD = Antigen p150,95 [P]
+MH NEW = Complement 4-Binding Protein
+
+MH OLD = Antineoplastic Agents, Combined [P]
+MH NEW = Antineoplastic Combined Chemotherapy Protocols
+
+MH OLD = Arthritis, Adjuvant [N]
+MH NEW = Arthritis, Experimental
+
+MH OLD = Aspartate Transaminase [P]
+MH NEW = Aspartate Aminotransferases
+
+MH OLD = Bacteriorhodopsin [N]
+MH NEW = Bacteriorhodopsins
+
+MH OLD = Band 3 Protein [P]
+MH NEW = Anion Exchange Protein 1, Erythrocyte
+
+MH OLD = Baths, Finnish # [P]
+MH NEW = Steam Bath
+
+MH OLD = Beta Carotene []
+MH NEW = beta Carotene
+
+MH OLD = Bluetongue Virus []
+MH NEW = Bluetongue virus
+
+MH OLD = Border Disease Virus []
+MH NEW = Border disease virus
+
+MH OLD = Borna Disease Virus []
+MH NEW = Borna disease virus
+
+MH OLD = Borrelia burgdorferi [P]
+MH NEW = Borrelia burgdorferi Group
+
+MH OLD = Brain Diseases, Metabolic, Acquired # [N]
+MH NEW = Brain Diseases, Metabolic
+
+MH OLD = Bunyamwera Group Viruses [N]
+MH NEW = Bunyamwera virus
+
+MH OLD = Calicivirus # []
+MH NEW = Caliciviridae
+
+MH OLD = California Group Viruses [N]
+MH NEW = Encephalitis Virus, California
+
+MH OLD = Carbonate Dehydratase [P]
+MH NEW = Carbonic Anhydrases
+
+MH OLD = Carotene # [N]
+MH NEW = Carotenoids
+
+MH OLD = Carp [N]
+MH NEW = Carps
+
+MH OLD = Catfish [N]
+MH NEW = Catfishes
+
+MH OLD = cdc42 GTP-Binding Protein, Yeast [P]
+MH NEW = cdc42 GTP-Binding Protein, Saccharomyces cerevisiae
+
+MH OLD = Ch'i [P]
+MH NEW = Qi
+
+MH OLD = Chicken Anemia Virus []
+MH NEW = Chicken anemia virus
+
+MH OLD = Chikungunya Virus []
+MH NEW = Chikungunya virus
+
+MH OLD = Chromosomal Disorders, Nervous System # []
+MH NEW = Chromosome Disorders
+
+MH OLD = Chromosome Abnormalities # [N]
+MH NEW = Chromosome Aberrations
+
+MH OLD = Chromosomes, Bacterial Artificial [N]
+MH NEW = Chromosomes, Artificial, Bacterial
+
+MH OLD = Chromosomes, Human Artificial [N]
+MH NEW = Chromosomes, Artificial, Human
+
+MH OLD = Chromosomes, Human, 21-22 [N]
+MH NEW = Chromosomes, Human, 21-22 and Y
+
+MH OLD = Chromosomes, Human, 6-12 [N]
+MH NEW = Chromosomes, Human, 6-12 and X
+
+MH OLD = Chromosomes, Mammalian Artificial [P]
+MH NEW = Chromosomes, Artificial, Mammalian
+
+MH OLD = Chromosomes, Yeast Artificial [N]
+MH NEW = Chromosomes, Artificial, Yeast
+
+MH OLD = Cinnamon [P]
+MH NEW = Cinnamomum zeylanicum
+
+MH OLD = Colorado Tick Fever Virus []
+MH NEW = Colorado tick fever virus
+
+MH OLD = Columbia SK Virus []
+MH NEW = Columbia SK virus
+
+MH OLD = Coronavirus, Human # []
+MH NEW = Coronavirus
+
+MH OLD = Cowpox Virus []
+MH NEW = Cowpox virus
+
+MH OLD = Coxsackieviruses # [N]
+MH NEW = Enterovirus
+
+MH OLD = Coxsackieviruses A # []
+MH NEW = Enterovirus
+
+MH OLD = Coxsackieviruses B # [N]
+MH NEW = Enterovirus B, Human
+
+MH OLD = Cucumbers [P]
+MH NEW = Cucumis sativus
+
+MH OLD = Cyclostomes # []
+MH NEW = Fishes
+
+MH OLD = Diarrhea Virus, Bovine Viral [P]
+MH NEW = Diarrhea Viruses, Bovine Viral
+
+MH OLD = Diclofenac Sodium # [N]
+MH NEW = Diclofenac
+
+MH OLD = DNA Topoisomerase (ATP-Hydrolysing) [P]
+MH NEW = DNA Topoisomerases, Type II
+
+MH OLD = DNA Topoisomerase [P]
+MH NEW = DNA Topoisomerases, Type I
+
+MH OLD = Dopa [P]
+MH NEW = Dihydroxyphenylalanine
+
+MH OLD = Down-Regulation (Physiology) [N]
+MH NEW = Down-Regulation
+
+MH OLD = Ebola Virus # []
+MH NEW = Ebola-like Viruses
+
+MH OLD = Echovirus 6 [N]
+MH NEW = Echovirus 6, Human
+
+MH OLD = Echoviruses # [P]
+MH NEW = Enterovirus B, Human
+
+MH OLD = Eclecticism # []
+MH NEW = Therapeutics
+
+MH OLD = Economic Value of Life # [P]
+MH NEW = Value of Life
+
+MH OLD = Ectromelia Virus []
+MH NEW = Ectromelia virus
+
+MH OLD = Encephalomyelitis Virus, Murine [P]
+MH NEW = Maus Elberfeld virus
+
+MH OLD = Encephalomyocarditis Virus []
+MH NEW = Encephalomyocarditis virus
+
+MH OLD = Ergotamine Derivatives []
+MH NEW = Ergotamines
+
+MH OLD = FAD [P]
+MH NEW = Flavin-Adenine Dinucleotide
+
+MH OLD = Fanconi's Anemia [N]
+MH NEW = Fanconi Anemia
+
+MH OLD = Fibroblast Growth Factor [N]
+MH NEW = Fibroblast Growth Factors
+
+MH OLD = Fibroblast Growth Factor, Acidic [P]
+MH NEW = Fibroblast Growth Factor 1
+
+MH OLD = Fibroblast Growth Factor, Basic [P]
+MH NEW = Fibroblast Growth Factor 2
+
+MH OLD = Filovirus # []
+MH NEW = Filoviridae
+
+MH OLD = Filovirus Infections # []
+MH NEW = Filoviridae Infections
+
+MH OLD = FLA 63 [N]
+MH NEW = Bis(4-Methyl-1-Homopiperazinylthiocarbonyl)disulfide
+
+MH OLD = Fowlpox Virus []
+MH NEW = Fowlpox virus
+
+MH OLD = Friend Virus [P]
+MH NEW = Friend murine leukemia virus
+
+MH OLD = FSH [P]
+MH NEW = Follicle Stimulating Hormone
+
+MH OLD = GABA [P]
+MH NEW = gamma-Aminobutyric Acid
+
+MH OLD = Gastroenteritis Virus, Murine [P]
+MH NEW = Murine hepatitis virus
+
+MH OLD = Gastroenteritis Virus, Porcine Transmissible [P]
+MH NEW = Transmissible gastroenteritis virus
+
+MH OLD = Genes, Suppressor, Tumor []
+MH NEW = Genes, Tumor Suppressor
+
+MH OLD = Ginseng [P]
+MH NEW = Panax
+
+MH OLD = Grasses [P]
+MH NEW = Poaceae
+
+MH OLD = H(+)-Transporting ATP Synthase [P]
+MH NEW = Proton-Translocating ATPases
+
+MH OLD = Hagfish [N]
+MH NEW = Hagfishes
+
+MH OLD = Hamamelidae # []
+MH NEW = Angiosperms
+
+MH OLD = Hantaan Virus []
+MH NEW = Hantaan virus
+
+MH OLD = Harvey Sarcoma Virus [P]
+MH NEW = Harvey murine sarcoma virus
+
+MH OLD = Hepatitis C-Like Viruses [N]
+MH NEW = Hepacivirus
+
+MH OLD = Hepatitis E Virus []
+MH NEW = Hepatitis E virus
+
+MH OLD = Herbs # []
+MH NEW = Angiosperms
+
+MH OLD = Hereditary Diseases # [P]
+MH NEW = Genetic Diseases, Inborn
+
+MH OLD = Herpesvirus 2, Saimirine [P]
+MH NEW = Herpesvirus 2, Saimiriine
+
+MH OLD = Herpesvirus, Kaposi Sarcoma-Associated [P]
+MH NEW = Herpesvirus 8, Human
+
+MH OLD = Hog Cholera [P]
+MH NEW = Classical Swine Fever
+
+MH OLD = Hog Cholera Virus [P]
+MH NEW = Classical swine fever virus
+
+MH OLD = HTLV-BLV Infections [P]
+MH NEW = Deltaretrovirus Infections
+
+MH OLD = HTLV-BLV Viruses [P]
+MH NEW = Deltaretrovirus
+
+MH OLD = HTLV-I [P]
+MH NEW = Human T-lymphotropic virus 1
+
+MH OLD = HTLV-II [P]
+MH NEW = Human T-lymphotropic virus 2
+
+MH OLD = IgA [P]
+MH NEW = Immunoglobulin A
+
+MH OLD = IgA, Secretory [P]
+MH NEW = Immunoglobulin A, Secretory
+
+MH OLD = IgD [P]
+MH NEW = Immunoglobulin D
+
+MH OLD = IgE [P]
+MH NEW = Immunoglobulin E
+
+MH OLD = IgG [P]
+MH NEW = Immunoglobulin G
+
+MH OLD = IgM [P]
+MH NEW = Immunoglobulin M
+
+MH OLD = Indigo Carmine [P]
+MH NEW = Indigotindisulfonate Sodium
+
+MH OLD = Infectious Bronchitis Virus, Avian [N]
+MH NEW = Infectious bronchitis virus
+
+MH OLD = Infectious Bursal Disease Virus []
+MH NEW = Infectious bursal disease virus
+
+MH OLD = Infectious Pancreatic Necrosis Virus []
+MH NEW = Infectious pancreatic necrosis virus
+
+MH OLD = Infectious Peritonitis Virus, Feline [P]
+MH NEW = Coronavirus, Feline
+
+MH OLD = Influenza A Virus []
+MH NEW = Influenza A virus
+
+MH OLD = Influenza B Virus []
+MH NEW = Influenza B virus
+
+MH OLD = Influenzavirus A, B # []
+MH NEW = Orthomyxoviridae
+
+MH OLD = Inhibin [N]
+MH NEW = Inhibins
+
+MH OLD = Iodotyrosine [P]
+MH NEW = Monoiodotyrosine
+
+MH OLD = Jaagsiekte Sheep Retrovirus []
+MH NEW = Ovine pulmonary adenocarcinoma virus
+
+MH OLD = Junin Virus []
+MH NEW = Junin virus
+
+MH OLD = Juniper [P]
+MH NEW = Juniperus
+
+MH OLD = Kartagener's Syndrome [N]
+MH NEW = Kartagener Syndrome
+
+MH OLD = Kemerovo Virus # [N]
+MH NEW = Orbivirus
+
+MH OLD = Kieselguhr [P]
+MH NEW = Diatomaceous Earth
+
+MH OLD = Killifish [P]
+MH NEW = Killifishes
+
+MH OLD = Kirsten Sarcoma Virus [P]
+MH NEW = Kirsten murine sarcoma virus
+
+MH OLD = Klinefelter's Syndrome [P]
+MH NEW = Klinefelter Syndrome
+
+MH OLD = La Crosse Virus []
+MH NEW = La Crosse virus
+
+MH OLD = Lactate Dehydrogenase Virus [N]
+MH NEW = Lactate dehydrogenase-elevating virus
+
+MH OLD = Lassa Virus []
+MH NEW = Lassa virus
+
+MH OLD = Latex Allergy [P]
+MH NEW = Latex Hypersensitivity
+
+MH OLD = LCM-Lassa Complex Viruses [N]
+MH NEW = Arenaviruses, Old World
+
+MH OLD = Legumes [P]
+MH NEW = Fabaceae
+
+MH OLD = Leukemia Viruses, Murine [N]
+MH NEW = Leukemia Virus, Murine
+
+MH OLD = Levothyroxine # [P]
+MH NEW = Thyroxine
+
+MH OLD = Lumpy Skin Disease Virus []
+MH NEW = Lumpy skin disease virus
+
+MH OLD = Lymphocytic Choriomeningitis Virus []
+MH NEW = Lymphocytic choriomeningitis virus
+
+MH OLD = Mammary Tumor Viruses, Mouse [N]
+MH NEW = Mammary Tumor Virus, Mouse
+
+MH OLD = Marburg Virus # [P]
+MH NEW = Marburg-like Viruses
+
+MH OLD = Mason-Pfizer Monkey Virus []
+MH NEW = Mason-Pfizer monkey virus
+
+MH OLD = Measles Virus []
+MH NEW = Measles virus
+
+MH OLD = Medicine, Herbal [P]
+MH NEW = Phytotherapy
+
+MH OLD = Metals, Actinoid [P]
+MH NEW = Actinoid Series Elements
+
+MH OLD = Methergoline [P]
+MH NEW = Metergoline
+
+MH OLD = MM Virus # []
+MH NEW = Encephalomyocarditis virus
+
+MH OLD = Molluscum Contagiosum Virus []
+MH NEW = Molluscum contagiosum virus
+
+MH OLD = Moloney Leukemia Virus [P]
+MH NEW = Moloney murine leukemia virus
+
+MH OLD = Moloney Sarcoma Virus [P]
+MH NEW = Moloney murine sarcoma virus
+
+MH OLD = Monkeypox Virus []
+MH NEW = Monkeypox virus
+
+MH OLD = Mumps Virus []
+MH NEW = Mumps virus
+
+MH OLD = Myosin [N]
+MH NEW = Myosins
+
+MH OLD = Myosin ATPase # [P]
+MH NEW = Myosins
+
+MH OLD = Myxoma Virus []
+MH NEW = Myxoma virus
+
+MH OLD = Nairobi Sheep Disease Viruses # []
+MH NEW = Nairovirus
+
+MH OLD = Neonatal Diseases and Abnormalities [P]
+MH NEW = Congenital, Hereditary, and Neonatal Diseases and Abnormalities
+
+MH OLD = Newcastle Disease Virus []
+MH NEW = Newcastle disease virus
+
+MH OLD = Norwalk Virus []
+MH NEW = Norwalk virus
+
+MH OLD = Orf Virus []
+MH NEW = Orf virus
+
+MH OLD = Organisms, Transgenic # [P]
+MH NEW = Organisms, Genetically Modified
+
+MH OLD = Papovaviridae # []
+MH NEW = Papillomaviridae
+
+MH OLD = Paramyxovirus [P]
+MH NEW = Respirovirus
+
+MH OLD = Paramyxovirus Infections [P]
+MH NEW = Respirovirus Infections
+
+MH OLD = Peanuts [P]
+MH NEW = Arachis hypogaea
+
+MH OLD = Perch [P]
+MH NEW = Perches
+
+MH OLD = Permeases # [N]
+MH NEW = Membrane Transport Proteins
+
+MH OLD = Peste-des-Petits-Ruminants Virus []
+MH NEW = Peste-des-petits-ruminants virus
+
+MH OLD = Phosphorylase []
+MH NEW = Phosphorylases
+
+MH OLD = 6-Phosphofructokinase [P]
+MH NEW = Phosphofructokinase-1
+
+MH OLD = Photography, Intraoral # [P]
+MH NEW = Photography, Dental
+
+MH OLD = Physical Sciences [P]
+MH NEW = Natural Sciences
+
+MH OLD = Physical Therapy # []
+MH NEW = Physical Therapy Techniques
+
+MH OLD = Phytonadione [P]
+MH NEW = Vitamin K 1
+
+MH OLD = Pichinde Virus []
+MH NEW = Pichinde virus
+
+MH OLD = Plants, Transgenic # [P]
+MH NEW = Plants, Genetically Modified
+
+MH OLD = Polioviruses, Human 1-3 []
+MH NEW = Poliovirus
+
+MH OLD = Polyomavirus hominis 1 [N]
+MH NEW = BK Virus
+
+MH OLD = Polyomavirus hominis 2 [N]
+MH NEW = JC Virus
+
+MH OLD = Polyomavirus macacae [N]
+MH NEW = Simian virus 40
+
+MH OLD = Protein-Glutamine gamma-Glutamyltransferase []
+MH NEW = Transglutaminases
+
+MH OLD = Proton Pump [N]
+MH NEW = Proton Pumps
+
+MH OLD = Pseudocowpox Virus []
+MH NEW = Pseudocowpox virus
+
+MH OLD = Pyridoxine Deficiency # [P]
+MH NEW = Vitamin B 6 Deficiency
+
+MH OLD = Rabies Virus []
+MH NEW = Rabies virus
+
+MH OLD = Reiter's Disease [P]
+MH NEW = Reiter Disease
+
+MH OLD = Reproduction Techniques [N]
+MH NEW = Reproductive Techniques
+
+MH OLD = Reticuloendotheliosis Virus, Avian [N]
+MH NEW = Reticuloendotheliosis virus
+
+MH OLD = Reticuloendotheliosis Viruses []
+MH NEW = Reticuloendotheliosis Viruses, Avian
+
+MH OLD = Retroviruses Type B, Mammalian # [P]
+MH NEW = Betaretrovirus
+
+MH OLD = Retroviruses Type C, Avian [P]
+MH NEW = Alpharetrovirus
+
+MH OLD = Retroviruses Type C, Mammalian [P]
+MH NEW = Gammaretrovirus
+
+MH OLD = Retroviruses Type D # [P]
+MH NEW = Betaretrovirus
+
+MH OLD = Retroviruses Type D, Simian # []
+MH NEW = Retroviruses, Simian
+
+MH OLD = Rhinoviruses, Equine # []
+MH NEW = Picornaviridae
+
+MH OLD = Rift Valley Fever Virus []
+MH NEW = Rift Valley fever virus
+
+MH OLD = Rinderpest Virus []
+MH NEW = Rinderpest virus
+
+MH OLD = Ross River Virus []
+MH NEW = Ross river virus
+
+MH OLD = Rubella Virus []
+MH NEW = Rubella virus
+
+MH OLD = Sandfly Fever Group Viruses # []
+MH NEW = Phlebovirus
+
+MH OLD = Sarcoma Virus, Feline []
+MH NEW = Sarcoma Viruses, Feline
+
+MH OLD = Sarcoma Viruses, Simian [P]
+MH NEW = Sarcoma Virus, Woolly Monkey
+
+MH OLD = Semliki Forest Virus []
+MH NEW = Semliki forest virus
+
+MH OLD = Senna [P]
+MH NEW = Senna Extract
+
+MH OLD = Sex Chromosome Abnormalities [P]
+MH NEW = Sex Chromosome Aberrations
+
+MH OLD = Simbu Group Viruses [N]
+MH NEW = Simbu virus
+
+MH OLD = Skin Appendage Diseases # []
+MH NEW = Skin Diseases
+
+MH OLD = Soy Proteins # [N]
+MH NEW = Soybean Proteins
+
+MH OLD = STLV []
+MH NEW = Simian T-lymphotropic virus 1
+
+MH OLD = Swine Infertility and Respiratory Syndrome Virus [P]
+MH NEW = Porcine respiratory and reproductive syndrome virus
+
+MH OLD = Tacaribe Complex Viruses [N]
+MH NEW = Arenaviruses, New World
+
+MH OLD = Tarsal Joint [P]
+MH NEW = Tarsal Joints
+
+MH OLD = Tarsus # [P]
+MH NEW = Ankle
+
+MH OLD = Testicular Feminization [P]
+MH NEW = Androgen-Insensitivity Syndrome
+
+MH OLD = Theiler Murine Encephalomyelitis Virus [P]
+MH NEW = Theilovirus
+
+MH OLD = Thogoto-Like Viruses [N]
+MH NEW = Thogotovirus
+
+MH OLD = Tobacco Mosaic Virus Satellite [P]
+MH NEW = Tobacco mosaic satellite virus
+
+MH OLD = Turner's Syndrome [N]
+MH NEW = Turner Syndrome
+
+MH OLD = U-50488 [P]
+MH NEW = 3,4-Dichloro-N-methyl-N-(2-(1-pyrrolidinyl)-cyclohexyl)-benzeneacetamide, (trans)-Isomer
+
+MH OLD = Ubiquitin [P]
+MH NEW = Ubiquitins
+
+MH OLD = United States Health Care Financing Administration [P]
+MH NEW = United States Centers for Medicare and Medicaid Services
+
+MH OLD = Up-Regulation (Physiology) [N]
+MH NEW = Up-Regulation
+
+MH OLD = Uukuniemi Group Viruses [P]
+MH NEW = Uukuniemi virus
+
+MH OLD = Vaccinia Virus []
+MH NEW = Vaccinia virus
+
+MH OLD = Variola Virus []
+MH NEW = Variola virus
+
+MH OLD = Vesicular Exanthema of Swine Virus []
+MH NEW = Vesicular exanthema of swine virus
+
+MH OLD = Vesicular Stomatitis-Indiana Virus []
+MH NEW = Vesicular stomatitis-Indiana virus
+
+MH OLD = Viscum [P]
+MH NEW = Mistletoe
+
+MH OLD = Visna-Maedi Virus []
+MH NEW = Visna-maedi virus
+
+MH OLD = West Nile Virus []
+MH NEW = West Nile virus
+
+MH OLD = Xanthophyll []
+MH NEW = Lutein
+
+MH OLD = Yaba Monkey Tumor Virus []
+MH NEW = Yaba monkey tumor virus
+
+MH OLD = Yellow Fever Virus []
+MH NEW = Yellow fever virus

@@ -1,0 +1,1016 @@
+MH Changes and deletes for 2008 MeSH. August 30, 2007
+
+
+Total replaced     = 288
+Total deleted      =  46
+
+
+# = deleted record
+
+[P] = Old MH is now an EP
+[N] = Old MH is now an EN
+ [] = Old MH is not preserved
+
+ *  = old term now exists in a different record
+
+MH OLD = 3',5'-Cyclic-GMP Phosphodiesterase [N]
+MH NEW = 3',5'-Cyclic-GMP Phosphodiesterases
+
+MH OLD = 3',5'-Cyclic-Nucleotide Phosphodiesterase [P]
+MH NEW = 3',5'-Cyclic-AMP Phosphodiesterases
+
+MH OLD = Abbreviations [*]
+MH NEW = Abbreviations as Topic
+
+MH OLD = Abbreviations [Publication Type] []
+MH NEW = Abbreviations
+
+MH OLD = Abnormalities []
+MH NEW = Congenital Abnormalities
+
+MH OLD = Abstracting and Indexing [N]
+MH NEW = Abstracting and Indexing as Topic
+
+MH OLD = Abstracts [Publication Type] []
+MH NEW = Abstracts
+
+MH OLD = Academic Dissertations [Publication Type] []
+MH NEW = Academic Dissertations
+
+MH OLD = Account Books [Publication Type] []
+MH NEW = Account Books
+
+MH OLD = Acetylserotonin N-Methyltransferase []
+MH NEW = Acetylserotonin O-Methyltransferase
+
+MH OLD = Addresses [Publication Type] []
+MH NEW = Addresses
+
+MH OLD = Advertisements [Publication Type] []
+MH NEW = Advertisements
+
+MH OLD = Advertising []
+MH NEW = Advertising as Topic
+
+MH OLD = Almanacs [*]
+MH NEW = Almanacs as Topic
+
+MH OLD = Almanacs [Publication Type] []
+MH NEW = Almanacs
+
+MH OLD = Anecdotes [*]
+MH NEW = Anecdotes as Topic
+
+MH OLD = Anecdotes [Publication Type] []
+MH NEW = Anecdotes
+
+MH OLD = Angioneurotic Edema [N]
+MH NEW = Angioedema
+
+MH OLD = Animation [Publication Type] []
+MH NEW = Animation
+
+MH OLD = Annual Reports [*]
+MH NEW = Annual Reports as Topic
+
+MH OLD = Annual Reports [Publication Type] []
+MH NEW = Annual Reports
+
+MH OLD = Anoxemia # [N]
+MH NEW = Anoxia
+
+MH OLD = Aphorisms and Proverbs [*]
+MH NEW = Aphorisms and Proverbs as Topic
+
+MH OLD = Architectural Drawings [Publication Type] []
+MH NEW = Architectural Drawings
+
+MH OLD = Architecture [N]
+MH NEW = Architecture as Topic
+
+MH OLD = Arrhythmia [N]
+MH NEW = Arrhythmias, Cardiac
+
+MH OLD = Atlases [*]
+MH NEW = Atlases as Topic
+
+MH OLD = Atlases [Publication Type] []
+MH NEW = Atlases
+
+MH OLD = beta-Adrenergic Receptor Kinase [P]
+MH NEW = beta-Adrenergic Receptor Kinases
+
+MH OLD = beta-N-Acetylhexosaminidase [P]
+MH NEW = beta-N-Acetylhexosaminidases
+
+MH OLD = Bibliography [*]
+MH NEW = Bibliography as Topic
+
+MH OLD = Bibliography [Publication Type] []
+MH NEW = Bibliography
+
+MH OLD = Biobibliography [*]
+MH NEW = Biobibliography as Topic
+
+MH OLD = Biobibliography [Publication Type] []
+MH NEW = Biobibliography
+
+MH OLD = Biography [*]
+MH NEW = Biography as Topic
+
+MH OLD = Biography [Publication Type] []
+MH NEW = Biography
+
+MH OLD = Biological Response Modifiers # [N]
+MH NEW = Immunologic Factors
+
+MH OLD = Blue Cross # [P]
+MH NEW = Blue Cross Blue Shield Insurance Plans
+
+MH OLD = Blue Shield # [P]
+MH NEW = Blue Cross Blue Shield Insurance Plans
+
+MH OLD = Book Illustrations [Publication Type] []
+MH NEW = Book Illustrations
+
+MH OLD = Book Reviews [*]
+MH NEW = Book Reviews as Topic
+
+MH OLD = Book Reviews [Publication Type] []
+MH NEW = Book Reviews
+
+MH OLD = Bookplates [*]
+MH NEW = Bookplates as Topic
+
+MH OLD = Bookplates [Publication Type] []
+MH NEW = Bookplates
+
+MH OLD = Broadsides [*]
+MH NEW = Broadsides as Topic
+
+MH OLD = Broadsides [Publication Type] []
+MH NEW = Broadsides
+
+MH OLD = Ca(2+)-Calmodulin Dependent Protein Kinase []
+MH NEW = Calcium-Calmodulin-Dependent Protein Kinases
+
+MH OLD = Caricatures [*]
+MH NEW = Caricatures as Topic
+
+MH OLD = Caricatures [Publication Type] []
+MH NEW = Caricatures
+
+MH OLD = Cartoons [*]
+MH NEW = Cartoons as Topic
+
+MH OLD = Cartoons [Publication Type] []
+MH NEW = Cartoons
+
+MH OLD = Case Reports [Publication Type] []
+MH NEW = Case Reports
+
+MH OLD = Catalogs [*]
+MH NEW = Catalogs as Topic
+
+MH OLD = Catalogs [Publication Type] []
+MH NEW = Catalogs
+
+MH OLD = cdc25 Phosphatase [N]
+MH NEW = cdc25 Phosphatases
+
+MH OLD = Cerebrovascular Accident [P]
+MH NEW = Stroke
+
+MH OLD = Charts [Publication Type] []
+MH NEW = Charts
+
+MH OLD = Chemotactic Factors, Macrophage # [N]
+MH NEW = Chemotactic Factors
+
+MH OLD = Cholesterol Esterase [P]
+MH NEW = Sterol Esterase
+
+MH OLD = Choreatic Disorders # [P]
+MH NEW = Chorea
+
+MH OLD = Chronology [*]
+MH NEW = Chronology as Topic
+
+MH OLD = Chronology [Publication Type] []
+MH NEW = Chronology
+
+MH OLD = Classical Article [Publication Type] []
+MH NEW = Classical Article
+
+MH OLD = Clinical Conference [Publication Type] []
+MH NEW = Clinical Conference
+
+MH OLD = Clinical Trial [Publication Type] []
+MH NEW = Clinical Trial
+
+MH OLD = Clinical Trial, Phase I [Publication Type] []
+MH NEW = Clinical Trial, Phase I
+
+MH OLD = Clinical Trial, Phase II [Publication Type] []
+MH NEW = Clinical Trial, Phase II
+
+MH OLD = Clinical Trial, Phase III [Publication Type] []
+MH NEW = Clinical Trial, Phase III
+
+MH OLD = Clinical Trial, Phase IV [Publication Type] []
+MH NEW = Clinical Trial, Phase IV
+
+MH OLD = Clinical Trials []
+MH NEW = Clinical Trials as Topic
+
+MH OLD = Clinical Trials, Phase I [P]
+MH NEW = Clinical Trials, Phase I as Topic
+
+MH OLD = Clinical Trials, Phase II []
+MH NEW = Clinical Trials, Phase II as Topic
+
+MH OLD = Clinical Trials, Phase III []
+MH NEW = Clinical Trials, Phase III as Topic
+
+MH OLD = Clinical Trials, Phase IV []
+MH NEW = Clinical Trials, Phase IV as Topic
+
+MH OLD = Cobra Neurotoxins [P]
+MH NEW = Cobra Neurotoxin Proteins
+
+MH OLD = Collected Correspondence [Publication Type] []
+MH NEW = Collected Correspondence
+
+MH OLD = Collected Works [Publication Type] []
+MH NEW = Collected Works
+
+MH OLD = Collections [Publication Type] []
+MH NEW = Collections
+
+MH OLD = Comment [Publication Type] []
+MH NEW = Comment
+
+MH OLD = Congresses [*]
+MH NEW = Congresses as Topic
+
+MH OLD = Congresses [Publication Type] []
+MH NEW = Congresses
+
+MH OLD = Consensus Development Conference [Publication Type] []
+MH NEW = Consensus Development Conference
+
+MH OLD = Consensus Development Conference, NIH [Publication Type] []
+MH NEW = Consensus Development Conference, NIH
+
+MH OLD = Consensus Development Conferences []
+MH NEW = Consensus Development Conferences as Topic
+
+MH OLD = Consensus Development Conferences, NIH []
+MH NEW = Consensus Development Conferences, NIH as Topic
+
+MH OLD = Controlled Clinical Trial [Publication Type] []
+MH NEW = Controlled Clinical Trial
+
+MH OLD = Controlled Clinical Trials []
+MH NEW = Controlled Clinical Trials as Topic
+
+MH OLD = Coronary Arteriosclerosis [P]
+MH NEW = Coronary Artery Disease
+
+MH OLD = Corpora Quadrigemina [P]
+MH NEW = Tectum Mesencephali
+
+MH OLD = Corrected and Republished Article [Publication Type] []
+MH NEW = Corrected and Republished Article
+
+MH OLD = Correspondence []
+MH NEW = Correspondence as Topic
+
+MH OLD = Database [Publication Type] []
+MH NEW = Database
+
+MH OLD = Databases []
+MH NEW = Databases as Topic
+
+MH OLD = Densitometry, X-Ray # [N]
+MH NEW = Absorptiometry, Photon
+
+MH OLD = Diaries [Publication Type] []
+MH NEW = Diaries
+
+MH OLD = Dictionaries [N*]
+MH NEW = Dictionaries as Topic
+
+MH OLD = Dictionary [Publication Type] []
+MH NEW = Dictionary
+
+MH OLD = Direct Lytic Factors [P]
+MH NEW = Cobra Cardiotoxin Proteins
+
+MH OLD = Directories [N*]
+MH NEW = Directories as Topic
+
+MH OLD = Directory [Publication Type] []
+MH NEW = Directory
+
+MH OLD = Dissertations, Academic []
+MH NEW = Dissertations, Academic as Topic
+
+MH OLD = Documentaries and Factual Films [Publication Type] []
+MH NEW = Documentaries and Factual Films
+
+MH OLD = Drawings [Publication Type] []
+MH NEW = Drawings
+
+MH OLD = Duplicate Publication [*]
+MH NEW = Duplicate Publication as Topic
+
+MH OLD = Duplicate Publication [Publication Type] []
+MH NEW = Duplicate Publication
+
+MH OLD = Ear Cartilages [N]
+MH NEW = Ear Cartilage
+
+MH OLD = Ebstein's Anomaly [N]
+MH NEW = Ebstein Anomaly
+
+MH OLD = Editorial [Publication Type] []
+MH NEW = Editorial
+
+MH OLD = Embryo [P*]
+MH NEW = Embryo, Mammalian
+
+MH OLD = Encyclopedias [*]
+MH NEW = Encyclopedias as Topic
+
+MH OLD = Encyclopedias [Publication Type] []
+MH NEW = Encyclopedias
+
+MH OLD = Enzyme Tests []
+MH NEW = Clinical Enzyme Tests
+
+MH OLD = Ephemera [Publication Type] []
+MH NEW = Ephemera
+
+MH OLD = Epidemiologic Study Characteristics [N]
+MH NEW = Epidemiologic Study Characteristics as Topic
+
+MH OLD = Essays [Publication Type] []
+MH NEW = Essays
+
+MH OLD = Eulogies [Publication Type] []
+MH NEW = Eulogies
+
+MH OLD = Evaluation Studies [*]
+MH NEW = Evaluation Studies as Topic
+
+MH OLD = Evaluation Studies [Publication Type] []
+MH NEW = Evaluation Studies
+
+MH OLD = Examination Questions [Publication Type] []
+MH NEW = Examination Questions
+
+MH OLD = Exhibitions [Publication Type] []
+MH NEW = Exhibitions
+
+MH OLD = Exhibits [P]
+MH NEW = Exhibits as Topic
+
+MH OLD = Festschrift [Publication Type] []
+MH NEW = Festschrift
+
+MH OLD = Fictional Works [Publication Type] []
+MH NEW = Fictional Works
+
+MH OLD = Forms [Publication Type] []
+MH NEW = Forms
+
+MH OLD = Fornix (Brain) [N]
+MH NEW = Fornix, Brain
+
+MH OLD = Funeral Sermons [Publication Type] []
+MH NEW = Funeral Sermons
+
+MH OLD = Gene Products, vpu # [*]
+Replaced by SCR: vpu protein, Human immunodeficiency virus 1
+
+MH OLD = Government Publications [*]
+MH NEW = Government Publications as Topic
+
+MH OLD = Government Publications [Publication Type] []
+MH NEW = Government Publications
+
+MH OLD = Guidebooks [Publication Type] []
+MH NEW = Guidebooks
+
+MH OLD = Guideline [Publication Type] []
+MH NEW = Guideline
+
+MH OLD = Guidelines []
+MH NEW = Guidelines as Topic
+
+MH OLD = HIV-1 Reverse Transcriptase # []
+MH NEW = HIV Reverse Transcriptase
+
+MH OLD = Hair Cells []
+MH NEW = Hair Cells, Auditory
+
+MH OLD = Hair Cells, Inner []
+MH NEW = Hair Cells, Auditory, Inner
+
+MH OLD = Hair Cells, Outer []
+MH NEW = Hair Cells, Auditory, Outer
+
+MH OLD = Hallervorden-Spatz Syndrome [N]
+MH NEW = Pantothenate Kinase-Associated Neurodegeneration
+
+MH OLD = Handbooks [Publication Type] []
+MH NEW = Handbooks
+
+MH OLD = Heart Failure, Congestive [N]
+MH NEW = Heart Failure
+
+MH OLD = Hemodynamic Phenomena # []
+MH NEW = Hemodynamics
+
+MH OLD = Hemodynamic Processes []
+MH NEW = Hemodynamics
+
+MH OLD = Hepatic Vein Thrombosis [N]
+MH NEW = Budd-Chiari Syndrome
+
+MH OLD = Herbals [Publication Type] []
+MH NEW = Herbals
+
+MH OLD = Hippel-Lindau Disease [N]
+MH NEW = von Hippel-Lindau Disease
+
+MH OLD = Histiocytosis, Malignant # [P]
+MH NEW = Histiocytic Sarcoma
+
+MH OLD = Historical Article [Publication Type] []
+MH NEW = Historical Article
+
+MH OLD = Host-Parasite Relations [P]
+MH NEW = Host-Parasite Interactions
+
+MH OLD = Humor [Publication Type] []
+MH NEW = Humor
+
+MH OLD = Impotence [P]
+MH NEW = Erectile Dysfunction
+
+MH OLD = Indexes [Publication Type] []
+MH NEW = Indexes
+
+MH OLD = Inferior Colliculus [N]
+MH NEW = Inferior Colliculi
+
+MH OLD = Instruction [Publication Type] []
+MH NEW = Instruction
+
+MH OLD = Interview [Publication Type] []
+MH NEW = Interview
+
+MH OLD = Interviews []
+MH NEW = Interviews as Topic
+
+MH OLD = Journal Article [Publication Type] []
+MH NEW = Journal Article
+
+MH OLD = Juvenile Literature [Publication Type] []
+MH NEW = Juvenile Literature
+
+MH OLD = Keratectomy, Laser [P]
+MH NEW = Corneal Surgery, Laser
+
+MH OLD = Keratectomy, Photorefractive, Excimer Laser []
+MH NEW = Photorefractive Keratectomy
+
+MH OLD = Laboratory Manuals [Publication Type] []
+MH NEW = Laboratory Manuals
+
+MH OLD = Laser Surgery # [N]
+MH NEW = Laser Therapy
+
+MH OLD = Lecture Notes [Publication Type] []
+MH NEW = Lecture Notes
+
+MH OLD = Lectures [Publication Type] []
+MH NEW = Lectures
+
+MH OLD = Legal Cases [Publication Type] []
+MH NEW = Legal Cases
+
+MH OLD = Legislation [*]
+MH NEW = Legislation as Topic
+
+MH OLD = Legislation [Publication Type] []
+MH NEW = Legislation
+
+MH OLD = Leriche's Syndrome [N]
+MH NEW = Leriche Syndrome
+
+MH OLD = Letter [Publication Type] []
+MH NEW = Letter
+
+MH OLD = Leukemia, B-Cell, Acute # [P]
+MH NEW = Burkitt Lymphoma
+
+MH OLD = Leukemia, B-Cell, Chronic [P]
+MH NEW = Leukemia, Lymphocytic, Chronic, B-Cell
+
+MH OLD = Leukemia, CALLA-Positive # []
+MH NEW = Precursor B-Cell Lymphoblastic Leukemia-Lymphoma
+
+MH OLD = Leukemia, Lymphocytic [P]
+MH NEW = Leukemia, Lymphoid
+
+MH OLD = Leukemia, Lymphocytic, Acute # [N]
+MH NEW = Precursor Cell Lymphoblastic Leukemia-Lymphoma
+
+MH OLD = Leukemia, Lymphocytic, Acute, L1 # [N]
+MH NEW = Precursor Cell Lymphoblastic Leukemia-Lymphoma
+
+MH OLD = Leukemia, Lymphocytic, Acute, L2 # [N]
+MH NEW = Precursor Cell Lymphoblastic Leukemia-Lymphoma
+
+MH OLD = Leukemia, Lymphocytic, Chronic # [P]
+MH NEW = Leukemia, Lymphocytic, Chronic, B-Cell
+
+MH OLD = Leukemia, Megakaryocytic, Acute [P]
+MH NEW = Leukemia, Megakaryoblastic, Acute
+
+MH OLD = Leukemia, Mixed-Cell [P]
+MH NEW = Leukemia, Biphenotypic, Acute
+
+MH OLD = Leukemia, Monocytic, Chronic # [N]
+MH NEW = Leukemia, Myeloid
+
+MH OLD = Leukemia, Myelocytic, Acute # [N]
+MH NEW = Leukemia, Myeloid, Acute
+
+MH OLD = Leukemia, Myeloid, Aggressive-Phase [P]
+MH NEW = Leukemia, Myeloid, Accelerated Phase
+
+MH OLD = Leukemia, Myeloid, Chronic [P]
+MH NEW = Leukemia, Myelogenous, Chronic, BCR-ABL Positive
+
+MH OLD = Leukemia, Myeloid, Philadelphia-Negative # [P]
+MH NEW = Leukemia, Myeloid, Chronic, Atypical, BCR-ABL Negative
+
+MH OLD = Leukemia, Myeloid, Philadelphia-Positive # [N]
+MH NEW = Leukemia, Myelogenous, Chronic, BCR-ABL Positive
+
+MH OLD = Leukemia, Nonlymphocytic, Acute [P]
+MH NEW = Leukemia, Myeloid, Acute
+
+MH OLD = Leukemia, Null-Cell # []
+MH NEW = Precursor Cell Lymphoblastic Leukemia-Lymphoma
+
+MH OLD = Leukemia, Plasmacytic [P]
+MH NEW = Leukemia, Plasma Cell
+
+MH OLD = Leukemia, Pre-B-Cell [P]
+MH NEW = Precursor B-Cell Lymphoblastic Leukemia-Lymphoma
+
+MH OLD = Leukemia, Subleukemic # []
+MH NEW = Leukemia
+
+MH OLD = Leukemia, T-Cell, Acute [P]
+MH NEW = Leukemia-Lymphoma, Adult T-Cell
+
+MH OLD = Leukemia, T-Cell, Chronic [P]
+MH NEW = Leukemia, Prolymphocytic, T-Cell
+
+MH OLD = Leukemia, T-Cell, HTLV-II-Associated # []
+MH NEW = Leukemia, T-Cell
+
+MH OLD = Leukemia-Lymphoma, T-Cell, Acute, HTLV-I-Associated # [N]
+MH NEW = Leukemia-Lymphoma, Adult T-Cell
+
+MH OLD = Limb Bud [N]
+MH NEW = Limb Buds
+
+MH OLD = Long-Term Depression (Physiology) []
+MH NEW = Long-Term Synaptic Depression
+
+MH OLD = Lupus []
+MH NEW = Lupus Vulgaris
+
+MH OLD = Lutembacher's Syndrome [N]
+MH NEW = Lutembacher Syndrome
+
+MH OLD = Lymphoma, Diffuse # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Lymphoma, High-Grade # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Lymphoma, Intermediate-Grade # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Lymphoma, Large-Cell # [N]
+MH NEW = Lymphoma, Large B-Cell, Diffuse
+
+MH OLD = Lymphoma, Large-Cell, Diffuse [N]
+MH NEW = Lymphoma, Large B-Cell, Diffuse
+
+MH OLD = Lymphoma, Large-Cell, Follicular # [N]
+MH NEW = Lymphoma, Follicular
+
+MH OLD = Lymphoma, Large-Cell, Ki-1 [P]
+MH NEW = Lymphoma, Large-Cell, Anaplastic
+
+MH OLD = Lymphoma, Low-Grade # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Lymphoma, Lymphoblastic # [P]
+MH NEW = Precursor Cell Lymphoblastic Leukemia-Lymphoma
+
+MH OLD = Lymphoma, Mixed-Cell # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Lymphoma, Mixed-Cell, Diffuse # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Lymphoma, Mixed-Cell, Follicular # [N]
+MH NEW = Lymphoma, Follicular
+
+MH OLD = Lymphoma, Mucosa-Associated Lymphoid Tissue [P]
+MH NEW = Lymphoma, B-Cell, Marginal Zone
+
+MH OLD = Lymphoma, Small Cleaved-Cell, Diffuse # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Lymphoma, Small Cleaved-Cell, Follicular # [N]
+MH NEW = Lymphoma, Follicular
+
+MH OLD = Lymphoma, Small Lymphocytic # [P]
+MH NEW = Leukemia, Lymphocytic, Chronic, B-Cell
+
+MH OLD = Lymphoma, Small Noncleaved-Cell # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Lymphoma, Small-Cell # [N]
+MH NEW = Leukemia, Lymphocytic, Chronic, B-Cell
+
+MH OLD = Lymphoma, Undifferentiated # [N]
+MH NEW = Lymphoma, Non-Hodgkin
+
+MH OLD = Macrophage Inflammatory Protein-1 # [N]
+MH NEW = Macrophage Inflammatory Proteins
+
+MH OLD = Macular Edema, Cystoid [P]
+MH NEW = Macular Edema
+
+MH OLD = Mannitol Dehydrogenase [P]
+MH NEW = Mannitol Dehydrogenases
+
+MH OLD = Manuals []
+MH NEW = Manuals as Topic
+
+MH OLD = Manuscripts [*]
+MH NEW = Manuscripts as Topic
+
+MH OLD = Manuscripts [Publication Type] []
+MH NEW = Manuscripts
+
+MH OLD = Maps [*]
+MH NEW = Maps as Topic
+
+MH OLD = Maps [Publication Type] []
+MH NEW = Maps
+
+MH OLD = Meeting Abstracts [Publication Type] []
+MH NEW = Meeting Abstracts
+
+MH OLD = Meniere's Disease [P]
+MH NEW = Meniere Disease
+
+MH OLD = Meta-Analysis [*]
+MH NEW = Meta-Analysis as Topic
+
+MH OLD = Meta-Analysis [Publication Type] []
+MH NEW = Meta-Analysis
+
+MH OLD = Molecular Mechanisms of Action []
+MH NEW = Molecular Mechanisms of Pharmacological Action
+
+MH OLD = Monograph [Publication Type] []
+MH NEW = Monograph
+
+MH OLD = Motion Pictures [P]
+MH NEW = Motion Pictures as Topic
+
+MH OLD = Multicenter Studies [*]
+MH NEW = Multicenter Studies as Topic
+
+MH OLD = Multicenter Study [Publication Type] []
+MH NEW = Multicenter Study
+
+MH OLD = Mycobacterium paratuberculosis [P]
+MH NEW = Mycobacterium avium subsp. paratuberculosis
+
+MH OLD = Na(+)-K(+)-Exchanging ATPase [P]
+MH NEW = Sodium-Potassium-Exchanging ATPase
+
+MH OLD = National Center for Health Care Technology [N]
+MH NEW = National Center for Health Care Technology (U.S.)
+
+MH OLD = National Health Planning Information Center [N]
+MH NEW = National Health Planning Information Center (U.S.)
+
+MH OLD = National Institute for Occupational Safety and Health [N]
+MH NEW = National Institute for Occupational Safety and Health (U.S.)
+
+MH OLD = Newfoundland [N]
+MH NEW = Newfoundland and Labrador
+
+MH OLD = News [Publication Type] []
+MH NEW = News
+
+MH OLD = Newspaper Article [Publication Type] []
+MH NEW = Newspaper Article
+
+MH OLD = Nurses' Instruction [Publication Type] []
+MH NEW = Nurses' Instruction
+
+MH OLD = Optic Lobe []
+MH NEW = Optic Lobe, Nonmammalian
+
+MH OLD = Outlines [Publication Type] []
+MH NEW = Outlines
+
+MH OLD = Oval Window []
+MH NEW = Oval Window, Ear
+
+MH OLD = Overall [Publication Type] []
+MH NEW = Overall
+
+MH OLD = Patents [*]
+MH NEW = Patents as Topic
+
+MH OLD = Patents [Publication Type] []
+MH NEW = Patents
+
+MH OLD = Patient Education [N]
+MH NEW = Patient Education as Topic
+
+MH OLD = Patient Education Handout [Publication Type] []
+MH NEW = Patient Education Handout
+
+MH OLD = Periodical Index [Publication Type] []
+MH NEW = Periodical Index
+
+MH OLD = Periodicals [*]
+MH NEW = Periodicals as Topic
+
+MH OLD = Periodicals [Publication Type] []
+MH NEW = Periodicals
+
+MH OLD = Personal Narratives [Publication Type] []
+MH NEW = Personal Narratives
+
+MH OLD = Pharmacopoeias [*]
+MH NEW = Pharmacopoeias as Topic
+
+MH OLD = Pharmacopoeias [Publication Type] []
+MH NEW = Pharmacopoeias
+
+MH OLD = Phospholipase C [P]
+MH NEW = Type C Phospholipases
+
+MH OLD = Phosphoprotein Phosphatase [P]
+MH NEW = Phosphoprotein Phosphatases
+
+MH OLD = Phrases [Publication Type] []
+MH NEW = Phrases
+
+MH OLD = Pictorial Works [Publication Type] []
+MH NEW = Pictorial Works
+
+MH OLD = Pneumocystis jiroveci [N]
+MH NEW = Pneumocystis jirovecii
+
+MH OLD = Popular Works [Publication Type] []
+MH NEW = Popular Works
+
+MH OLD = Portraits [*]
+MH NEW = Portraits as Topic
+
+MH OLD = Portraits [Publication Type] []
+MH NEW = Portraits
+
+MH OLD = Posters [Publication Type] []
+MH NEW = Posters
+
+MH OLD = Practice Guideline [Publication Type] []
+MH NEW = Practice Guideline
+
+MH OLD = Practice Guidelines []
+MH NEW = Practice Guidelines as Topic
+
+MH OLD = Price Lists [Publication Type] []
+MH NEW = Price Lists
+
+MH OLD = Problems and Exercises [Publication Type] []
+MH NEW = Problems and Exercises
+
+MH OLD = Programmed Instruction [*]
+MH NEW = Programmed Instruction as Topic
+
+MH OLD = Programmed Instruction [Publication Type] []
+MH NEW = Programmed Instruction
+
+MH OLD = Programs [Publication Type] []
+MH NEW = Programs
+
+MH OLD = Propoxyphene [N]
+MH NEW = Dextropropoxyphene
+
+MH OLD = Prospectuses [Publication Type] []
+MH NEW = Prospectuses
+
+MH OLD = Protein Isoprenylation [P]
+MH NEW = Protein Prenylation
+
+MH OLD = Protein-Tyrosine-Phosphatase [P]
+MH NEW = Protein Tyrosine Phosphatases
+
+MH OLD = Publication Components [Publication Type] []
+MH NEW = Publication Components
+
+MH OLD = Publication Formats [Publication Type] []
+MH NEW = Publication Formats
+
+MH OLD = Published Erratum [Publication Type] []
+MH NEW = Published Erratum
+
+MH OLD = RANTES [P]
+MH NEW = Chemokine CCL5
+
+MH OLD = Randomized Controlled Trial [Publication Type] []
+MH NEW = Randomized Controlled Trial
+
+MH OLD = Randomized Controlled Trials []
+MH NEW = Randomized Controlled Trials as Topic
+
+MH OLD = Records []
+MH NEW = Records as Topic
+
+MH OLD = Reiter Syndrome # [N]
+MH NEW = Arthritis, Reactive
+
+MH OLD = Research Support []
+MH NEW = Research Support as Topic
+
+MH OLD = Resource Guides [Publication Type] []
+MH NEW = Resource Guides
+
+MH OLD = Reticuloendothelial System [P]
+MH NEW = Mononuclear Phagocyte System
+
+MH OLD = Retracted Publication [Publication Type] []
+MH NEW = Retracted Publication
+
+MH OLD = Retraction of Publication [*]
+MH NEW = Retraction of Publication as Topic
+
+MH OLD = Retraction of Publication [Publication Type] []
+MH NEW = Retraction of Publication
+
+MH OLD = Review Literature [N*]
+MH NEW = Review Literature as Topic
+
+MH OLD = Review [Publication Type] []
+MH NEW = Review
+
+MH OLD = Rhodopsin Kinase [P]
+MH NEW = G-Protein-Coupled Receptor Kinase 1
+
+MH OLD = Ribonuclease H, Calf Thymus [P]
+MH NEW = Ribonuclease H
+
+MH OLD = Round Window []
+MH NEW = Round Window, Ear
+
+MH OLD = SHP1 Protein Tyrosine Phosphatase [N]
+MH NEW = Protein Tyrosine Phosphatase, Non-Receptor Type 6
+
+MH OLD = Sarcoma, Granulocytic [P]
+MH NEW = Sarcoma, Myeloid
+
+MH OLD = Scientific Integrity Review [Publication Type] []
+MH NEW = Scientific Integrity Review
+
+MH OLD = Sermons [Publication Type] []
+MH NEW = Sermons
+
+MH OLD = Serpulina [P]
+MH NEW = Brachyspira
+
+MH OLD = Serpulina hyodysenteriae [P]
+MH NEW = Brachyspira hyodysenteriae
+
+MH OLD = Shiga-Like Toxin I [N]
+MH NEW = Shiga Toxin 1
+
+MH OLD = Shiga-Like Toxin II [N]
+MH NEW = Shiga Toxin 2
+
+MH OLD = Statistics [*]
+MH NEW = Statistics as Topic
+
+MH OLD = Statistics [Publication Type] []
+MH NEW = Statistics
+
+MH OLD = Stomas # []
+MH NEW = Surgical Stomas
+
+MH OLD = Study Characteristics [Publication Type] []
+MH NEW = Study Characteristics
+
+MH OLD = Superior Colliculus [N]
+MH NEW = Superior Colliculi
+
+MH OLD = Tables [Publication Type] []
+MH NEW = Tables
+
+MH OLD = Takayasu's Arteritis [N]
+MH NEW = Takayasu Arteritis
+
+MH OLD = Technical Report [Publication Type] []
+MH NEW = Technical Report
+
+MH OLD = Temporal Arteritis [P]
+MH NEW = Giant Cell Arteritis
+
+MH OLD = Terminology [*]
+MH NEW = Terminology as Topic
+
+MH OLD = Terminology [Publication Type] []
+MH NEW = Terminology
+
+MH OLD = Textbooks [*]
+MH NEW = Textbooks as Topic
+
+MH OLD = Textbooks [Publication Type] []
+MH NEW = Textbooks
+
+MH OLD = Thalassotherapy [P]
+MH NEW = Climatotherapy
+
+MH OLD = Thioredoxin [N]
+MH NEW = Thioredoxins
+
+MH OLD = Thioredoxin Reductase (NADPH) [P]
+MH NEW = Thioredoxin-Disulfide Reductase
+
+MH OLD = Tissue Expanders [P]
+MH NEW = Tissue Expansion Devices
+
+MH OLD = Torsion []
+MH NEW = Torsion Abnormality
+
+MH OLD = Tumor Stem Cells [P]
+MH NEW = Neoplastic Stem Cells
+
+MH OLD = Twin Studies [N*]
+MH NEW = Twin Studies as Topic
+
+MH OLD = Twin Study [Publication Type] []
+MH NEW = Twin Study
+
+MH OLD = Unedited Footage [Publication Type] []
+MH NEW = Unedited Footage
+
+MH OLD = Union Lists [Publication Type] []
+MH NEW = Union Lists
+
+MH OLD = United States Centers for Medicare and Medicaid Services [P]
+MH NEW = Centers for Medicare and Medicaid Services (U.S.)
+
+MH OLD = Unpublished Works [Publication Type] []
+MH NEW = Unpublished Works
+
+MH OLD = Validation Studies [Publication Type] []
+MH NEW = Validation Studies
+
+MH OLD = Vascular Hemostatic Disorders [P]
+MH NEW = Hemostatic Disorders
+
+MH OLD = Vesicular stomatitis-Indiana virus [N]
+MH NEW = Vesicular stomatitis Indiana virus
+
+MH OLD = Vestibule [N]
+MH NEW = Vestibule, Labyrinth
+
+MH OLD = Viral Regulatory Proteins # [P]
+MH NEW = Viral Regulatory and Accessory Proteins
+
+MH OLD = Wit and Humor []
+MH NEW = Wit and Humor as Topic
+
+MH OLD = Wolffian Duct [N]
+MH NEW = Wolffian Ducts

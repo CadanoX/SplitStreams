@@ -1,0 +1,585 @@
+REPLACED MEDICAL SUBJECT HEADINGS WITH REPLACED-BY HEADINGS - 2005.
+December 6, 2004.
+
+ # = DELETED RECORD
+
+1. TOTAL REPLACED HEADINGS =    129
+2. TOTAL DELETED  HEADINGS =     60
+                            -------
+3. TOTAL (1.+2.) =              189
+
+
+[P] = new status is printed entry term
+[N] = new status is entry term, non-print
+[C] = new status is Supplementary Concept Record
+ [] = old term does not exist in new MeSH
+
+ *  = old term now exists in a different record
+
+
+MH OLD = Acne Rosacea [N]
+MH NEW = Rosacea
+
+MH OLD = Aconite # [N]
+MH NEW = Aconitum
+
+MH OLD = Adaptor Proteins []
+MH NEW = Adaptor Proteins, Vesicular Transport
+
+MH OLD = Addison's Disease [N]
+MH NEW = Addison Disease
+
+MH OLD = Adenoma, Adrenal Cortical [P]
+MH NEW = Adrenocortical Adenoma
+
+MH OLD = Adenoviruses, Bovine # []
+MH NEW = Mastadenovirus
+
+MH OLD = Adrenal Gland Hyperfunction [N]
+MH NEW = Adrenocortical Hyperfunction
+
+MH OLD = Adrenal Gland Hypofunction [P]
+MH NEW = Adrenal Insufficiency
+
+MH OLD = Amino Acid Activation # []
+MH NEW = Aminoacylation
+
+MH OLD = Amino Acyl-tRNA Ligases [P]
+MH NEW = Amino Acyl-tRNA Synthetases
+
+MH OLD = Amyloid P Component [P]
+MH NEW = Serum Amyloid P-Component
+
+MH OLD = Amyloid Protein AA # [N]
+MH NEW = Serum Amyloid A Protein
+
+MH OLD = Amyloid Protein SAA [P]
+MH NEW = Serum Amyloid A Protein
+
+MH OLD = Androblastoma # [P]
+MH NEW = Sertoli-Leydig Cell Tumor
+
+MH OLD = Annexin I [P]
+MH NEW = Annexin A1
+
+MH OLD = Annexin II [P]
+MH NEW = Annexin A2
+
+MH OLD = Annexin III [P]
+MH NEW = Annexin A3
+
+MH OLD = Annexin IV [P]
+MH NEW = Annexin A4
+
+MH OLD = Annexin V [P]
+MH NEW = Annexin A5
+
+MH OLD = Annexin VI [P]
+MH NEW = Annexin A6
+
+MH OLD = Annexin VII [P]
+MH NEW = Annexin A7
+
+MH OLD = Aphyllophorales [P]
+MH NEW = Polyporales
+
+MH OLD = AY-9944 [N]
+MH NEW = trans-1,4-Bis(2-chlorobenzaminomethyl)cyclohexane Dihydrochloride
+
+MH OLD = Bartter's Disease [N]
+MH NEW = Bartter Syndrome
+
+MH OLD = Bay-K-8644 [N]
+MH NEW = 3-Pyridinecarboxylic acid, 1,4-dihydro-2,6-dimethyl-5-nitro-4-(2-(trifluoromethyl)phenyl)-, Methyl ester
+
+MH OLD = Bears [P]
+MH NEW = Ursidae
+
+MH OLD = Benzanthracenes [N]
+MH NEW = Benz(a)Anthracenes
+
+MH OLD = Bunyavirus [P]
+MH NEW = Orthobunyavirus
+
+MH OLD = BW 284 C 51 [N]
+MH NEW = Benzenaminium, 4,4'-(3-oxo-1,5-pentanediyl)bis(N,N-dimethyl-N-2-propenyl-), Dibromide
+
+MH OLD = BW-755C [N]
+MH NEW = 4,5-Dihydro-1-(3-(trifluoromethyl)phenyl)-1H-pyrazol-3-amine
+
+MH OLD = Campylobacter hyointestinal []
+MH NEW = Campylobacter hyointestinalis
+
+MH OLD = Carbohydrates and Hypoglycemic Agents # []
+MH NEW = Carbohydrates
+
+MH OLD = Carcinoma, Adrenal Cortical [P]
+MH NEW = Adrenocortical Carcinoma
+
+MH OLD = Cardiomyopathy, Congestive [P]
+MH NEW = Cardiomyopathy, Dilated
+
+MH OLD = Cell Culture [N]
+MH NEW = Cell Culture Techniques
+
+MH OLD = Cell Division Phases # []
+MH NEW = Cell Division
+
+MH OLD = Cell Size # [P]
+MH NEW = Cell Size
+
+MH OLD = Cheetahs [P]
+MH NEW = Acinonyx
+
+MH OLD = Chemiluminescence []
+MH NEW = Chemiluminescent Measurements
+
+MH OLD = Chyloperitoneum [P]
+MH NEW = Chylous Ascites
+
+MH OLD = Coculture [N]
+MH NEW = Coculture Techniques
+
+MH OLD = Coleoptera # [P]
+MH NEW = Beetles
+
+MH OLD = Convulsions # [P]
+MH NEW = Seizures
+
+MH OLD = Crambe []
+MH NEW = Crambe Plant
+
+MH OLD = Craniometry # [P]
+MH NEW = Cephalometry
+
+MH OLD = Crossing Over (Genetics) []
+MH NEW = Crossing Over, Genetic
+
+MH OLD = DDD [P]
+MH NEW = Dichlorodiphenyldichloroethane
+
+MH OLD = DDE [P]
+MH NEW = Dichlorodiphenyl Dichloroethylene
+
+MH OLD = Depression, Involutional [P]
+MH NEW = Depressive Disorder, Major
+
+MH OLD = Diabetes Mellitus, Type I [N]
+MH NEW = Diabetes Mellitus, Type 1
+
+MH OLD = Diabetes Mellitus, Type II [N]
+MH NEW = Diabetes Mellitus, Type 2
+
+MH OLD = Dibenamine [P]
+MH NEW = Dibenzylchlorethamine
+
+MH OLD = Disease Models, Autoimmune, Nervous System [N]
+MH NEW = Nervous System Autoimmune Disease, Experimental
+
+MH OLD = Embryo and Fetal Development [P]
+MH NEW = Embryonic and Fetal Development
+
+MH OLD = Emus [P]
+MH NEW = Dromaiidae
+
+MH OLD = Encephalomyelitis, Experimental Autoimmune [P]
+MH NEW = Encephalomyelitis, Autoimmune, Experimental
+
+MH OLD = Endocrine Diseases [P]
+MH NEW = Endocrine System Diseases
+
+MH OLD = Fibrocystic Disease of Breast [N]
+MH NEW = Fibrocystic Breast Disease
+
+MH OLD = Fibroin [P]
+MH NEW = Fibroins
+
+MH OLD = FK 33-824 [N]
+MH NEW = D-Ala(2),MePhe(4),Met(0)-ol-enkephalin
+
+MH OLD = Fludeoxyglucose F 18 [P]
+MH NEW = Fluorodeoxyglucose F18
+
+MH OLD = Fowl Plague [P]
+MH NEW = Influenza, Avian
+
+MH OLD = Galactosaminidase # [N]
+MH NEW = Hexosaminidases
+
+MH OLD = Gestosis, EPH # [N]
+MH NEW = Pre-Eclampsia
+
+MH OLD = Glucosaminidase # [N]
+MH NEW = Hexosaminidases
+
+MH OLD = Growth and Embryonic Development # []
+MH NEW = Embryonic Development
+
+MH OLD = Guided Tissue Regeneration [P*]
+MH NEW = Guided Tissue Regeneration, Periodontal
+
+MH OLD = Hematoma, Epidural []
+MH NEW = Hematoma, Epidural, Cranial
+
+MH OLD = Hepatitis B Virus []
+MH NEW = Hepatitis B virus
+
+MH OLD = Herbicides, Carbamate # []
+MH NEW = Herbicides
+
+MH OLD = Herbicides, Triazine # []
+MH NEW = Herbicides
+
+MH OLD = Herbicides, Urea # []
+MH NEW = Herbicides
+
+MH OLD = Hirudin [P]
+MH NEW = Hirudins
+
+MH OLD = History of Medicine, 15th Cent. # [N]
+MH NEW = History, 15th Century
+
+MH OLD = History of Medicine, 16th Cent. # [N]
+MH NEW = History, 16th Century
+
+MH OLD = History of Medicine, 17th Cent. # [N]
+MH NEW = History, 17th Century
+
+MH OLD = History of Medicine, 18th Cent. # [N]
+MH NEW = History, 18th Century
+
+MH OLD = History of Medicine, 19th Cent. # [N]
+MH NEW = History, 19th Century
+
+MH OLD = History of Medicine, 20th Cent. # [N]
+MH NEW = History, 20th Century
+
+MH OLD = History of Medicine, 21st Cent. # [N]
+MH NEW = History, 21st Century
+
+MH OLD = History of Medicine, Ancient # [N]
+MH NEW = History, Ancient
+
+MH OLD = History of Medicine, Early Modern # [N]
+MH NEW = History, Early Modern 1451-1600
+
+MH OLD = History of Medicine, Medieval # [N]
+MH NEW = History, Medieval
+
+MH OLD = History of Medicine, Modern # [N]
+MH NEW = History, Modern 1601-
+
+MH OLD = Human [N]
+MH NEW = Humans
+
+MH OLD = Humic Acids [P]
+MH NEW = Humic Substances
+
+MH OLD = Immunologic Diseases [P]
+MH NEW = Immune System Diseases
+
+MH OLD = Influenza Vaccine [N]
+MH NEW = Influenza Vaccines
+
+MH OLD = Insecticides, Botanical # []
+MH NEW = Insecticides
+
+MH OLD = Insecticides, Carbamate # []
+MH NEW = Insecticides
+
+MH OLD = Insecticides, Organochlorine # []
+MH NEW = Insecticides
+
+MH OLD = Insecticides, Organophosphate # []
+MH NEW = Insecticides
+
+MH OLD = Insecticides, Organothiophosphate # []
+MH NEW = Insecticides
+
+MH OLD = Insulin Like Growth-Factor-Binding Protein 4 []
+MH NEW = Insulin-Like Growth Factor-Binding Protein 4
+
+MH OLD = Insulin, Lente # [N]
+MH NEW = Insulin, Long-Acting
+
+MH OLD = Insulin, Protamine Zinc # [N]
+MH NEW = Insulin, Long-Acting
+
+MH OLD = Insulin-Like Growth Factor-Binding Protein 2 []
+MH NEW = Insulin-Like Growth Factor Binding Protein 2
+
+MH OLD = Insulin-Like Growth-Factor Binding Protein 1 []
+MH NEW = Insulin-Like Growth Factor Binding Protein 1
+
+MH OLD = Insulin-Like Growth-Factor-Binding Proteins []
+MH NEW = Insulin-Like Growth Factor Binding Proteins
+
+MH OLD = Insulin-Like Growth-Factor-Binding-Protein 5 []
+MH NEW = Insulin-Like Growth Factor Binding Protein 5
+
+MH OLD = Insulin-Like-Growth-Factor-Binding Protein 6 []
+MH NEW = Insulin-Like Growth Factor Binding Protein 6
+
+MH OLD = Inversion (Genetics) []
+MH NEW = Inversion, Chromosome
+
+MH OLD = Kangaroos [P]
+MH NEW = Macropodidae
+
+MH OLD = Kearns Syndrome [P]
+MH NEW = Kearns-Sayer Syndrome
+
+MH OLD = Lentils [P]
+MH NEW = Lens Plant
+
+MH OLD = Lentinus [P]
+MH NEW = Lentinula
+
+MH OLD = Luciferase [P]
+MH NEW = Luciferases
+
+MH OLD = Luciferins # []
+MH NEW = Firefly Luciferin
+
+MH OLD = Luminescence []
+MH NEW = Luminescent Measurements
+
+MH OLD = Luminescence, Bacterial # []
+MH NEW = Chemiluminescent Measurements
+
+MH OLD = Macromolecular Systems # []
+MH NEW = Macromolecular Substances
+
+MH OLD = Maternal Age 35 and over # []
+MH NEW = Maternal Age
+
+MH OLD = McN-A-343 [N]
+MH NEW = (4-(m-Chlorophenylcarbamoyloxy)-2-butynyl)trimethylammonium Chloride
+
+MH OLD = Micronuclei # []
+MH NEW = Micronuclei, Chromosome-Defective
+
+MH OLD = Mongooses [P]
+MH NEW = Herpestidae
+
+MH OLD = Myasthenia Gravis, Experimental Autoimmune [P]
+MH NEW = Myasthenia Gravis, Autoimmune, Experimental
+
+MH OLD = myo-Inositol-1-Phosphate Synthase []
+MH NEW = Myo-Inositol-1-Phosphate Synthase
+
+MH OLD = Myocardial Diseases [P]
+MH NEW = Cardiomyopathies
+
+MH OLD = Neoplastic Endocrine-Like Syndromes []
+MH NEW = Paraneoplastic Endocrine Syndromes
+
+MH OLD = Neuritis, Experimental Allergic [P]
+MH NEW = Neuritis, Autoimmune, Experimental
+
+MH OLD = Obesity in Diabetes # []
+MH NEW = Diabetes Mellitus
+
+MH OLD = Organ Culture [N]
+MH NEW = Organ Culture Techniques
+
+MH OLD = Organ Procurement [P]
+MH NEW = Tissue and Organ Procurement
+
+MH OLD = Organ Weight [P]
+MH NEW = Organ Size
+
+MH OLD = Ostriches [P]
+MH NEW = Struthioniformes
+
+MH OLD = Owls [P]
+MH NEW = Strigiformes
+
+MH OLD = p42 MAP Kinase [P]
+MH NEW = Mitogen-Activated Protein Kinase 1
+
+MH OLD = Pancreatic Insufficiency [P]
+MH NEW = Exocrine Pancreatic Insufficiency
+
+MH OLD = Pattern Recognition []
+MH NEW = Pattern Recognition, Automated
+
+MH OLD = Peptide Chain Elongation []
+MH NEW = Peptide Chain Elongation, Translational
+
+MH OLD = Peptide Chain Initiation []
+MH NEW = Peptide Chain Initiation, Translational
+
+MH OLD = Peptide Chain Termination []
+MH NEW = Peptide Chain Termination, Translational
+
+MH OLD = Peptide Synthesis []
+MH NEW = Peptide Biosynthesis
+
+MH OLD = Peptidyltransferase [P]
+MH NEW = Peptidyl Transferases
+
+MH OLD = Pigeons [P]
+MH NEW = Columbidae
+
+MH OLD = Polarity of Translation # []
+MH NEW = Gene Expression
+
+MH OLD = Polycyclic Hydrocarbons [P]
+MH NEW = Polycyclic Compounds
+
+MH OLD = Polymorphism (Genetics) [P]
+MH NEW = Polymorphism, Genetic
+
+MH OLD = Pongidae # [N]
+MH NEW = Hominidae
+
+MH OLD = Porphyria [N]
+MH NEW = Porphyrias
+
+MH OLD = Porphyria, Erythrohepatic [P]
+MH NEW = Porphyria, Hepatoerythropoietic
+
+MH OLD = Porphyria, Hepatic [N]
+MH NEW = Porphyrias, Hepatic
+
+MH OLD = Postimplantation Phase # []
+MH NEW = Embryonic Development
+
+MH OLD = Pregnancy Toxemias # [N]
+MH NEW = Pre-Eclampsia
+
+MH OLD = Pregnancy-Specific beta 1-Glycoprotein [P]
+MH NEW = Pregnancy-Specific beta 1-Glycoproteins
+
+MH OLD = Preimplantation Phase # []
+MH NEW = Embryonic Development
+
+MH OLD = Prochlorales # []
+MH NEW = Prochlorophytes
+
+MH OLD = Psittacines [P]
+MH NEW = Psittaciformes
+
+MH OLD = Puerperium # [P]
+MH NEW = Postpartum Period
+
+MH OLD = Ratites # [P]
+MH NEW = Palaeognathae
+
+MH OLD = Rauwolfia Alkaloids # [N]
+MH NEW = Secologanin Tryptamine Alkaloids
+
+MH OLD = Review Literature [Publication Type] # [N]
+MH NEW = Review [Publication Type]
+
+MH OLD = Review, Academic [Publication Type] # [N]
+MH NEW = Review [Publication Type]
+
+MH OLD = Rheas [P]
+MH NEW = Rheiformes
+
+MH OLD = Ribosomal Protein S6 Kinases, 70kD []
+MH NEW = Ribosomal Protein S6 Kinases, 70-kDa
+
+MH OLD = Ribosomal Protein S6 Kinases, 90kD []
+MH NEW = Ribosomal Protein S6 Kinases, 90-kDa
+
+MH OLD = Ro 20-1724 [N]
+MH NEW = 4-(3-Butoxy-4-methoxybenzyl)-2-imidazolidinone
+
+MH OLD = Ro 4-1284 [N]
+MH NEW = 2H-Benzo(a)quinolizin-2-ol, 2-Ethyl-1,3,4,6,7,11b-hexahydro-3-isobutyl-9,10-dimethoxy-
+
+MH OLD = SC-19220 [N]
+MH NEW = Dibenz(b,f)(1,4)oxazepine-10(11H)-carboxylic acid, 8-chloro-, 2-acetylhydrazide
+
+MH OLD = Sch-23390 [N]
+MH NEW = (R)-2,3,4,5-Tetrahydro-8-chloro-3-methyl-5-phenyl-1H-3-benzazepin-7-ol
+
+MH OLD = Seals # []
+MH NEW = Seals, Earless
+
+MH OLD = Sex Cord-Stromal Tumor [N]
+MH NEW = Sex Cord-Gonadal Stromal Tumors
+
+MH OLD = Sex Maturation [P]
+MH NEW = Sexual Maturation
+
+MH OLD = Silkworms [P]
+MH NEW = Bombyx
+
+MH OLD = SK&F-38393 [N]
+MH NEW = 2,3,4,5-Tetrahydro-7,8-dihydroxy-1-phenyl-1H-3-benzazepine
+
+MH OLD = Skunks [P]
+MH NEW = Mephitidae
+
+MH OLD = Spinach [P]
+MH NEW = Spinacia oleracea
+
+MH OLD = SQ-18506 [N]
+MH NEW = 5-Amino-3-((5-nitro-2-furyl)vinyl)-1,2,4-oxadiazole
+
+MH OLD = Stomach Dilatation [P]
+MH NEW = Gastric Dilatation
+
+MH OLD = Support, Non-U.S. Gov't []
+MH NEW = Research Support, Non-U.S. Gov't
+
+MH OLD = Syndrome X []
+MH NEW = Microvascular Angina
+
+MH OLD = Synechococcus Group # []
+MH NEW = Cyanobacteria
+
+MH OLD = Synechocystis Group # []
+MH NEW = Cyanobacteria
+
+MH OLD = Tannic Acid # [N*]
+MH NEW = Hydrolyzable Tannins
+
+MH OLD = Thyme # [N]
+MH NEW = Thymus Plant
+
+MH OLD = Tissue Culture # []
+MH NEW = Culture Techniques
+
+MH OLD = Tissue Harvesting [P]
+MH NEW = Tissue and Organ Harvesting
+
+MH OLD = Tissue Inhibitor of-Metalloproteinase-3 []
+MH NEW = Tissue Inhibitor of Metalloproteinase-3
+
+MH OLD = Tissue Inhibitor-of Metalloproteinase-2 []
+MH NEW = Tissue Inhibitor of Metalloproteinase-2
+
+MH OLD = Tissue-Inhibitor of Metalloproteinase-1 []
+MH NEW = Tissue Inhibitor of Metalloproteinase-1
+
+MH OLD = Translation, Genetic [P]
+MH NEW = Protein Biosynthesis
+
+MH OLD = Translocation (Genetics) []
+MH NEW = Translocation, Genetic
+
+MH OLD = Tuberculosis, Peritoneal [P]
+MH NEW = Peritonitis, Tuberculous
+
+MH OLD = Tumor Necrosis Factor [N]
+MH NEW = Tumor Necrosis Factor-alpha
+
+MH OLD = Twinning [N]
+MH NEW = Twinning, Monozygotic
+
+MH OLD = Uroporphyrinogen-III Synthase [P]
+MH NEW = Uroporphyrinogen III Synthetase
+
+MH OLD = Vitellogenin [N]
+MH NEW = Vitellogenins
+
+MH OLD = Walrus [N]
+MH NEW = Walruses
+
+MH OLD = Yohimbans # [N]
+MH NEW = Secologanin Tryptamine Alkaloids

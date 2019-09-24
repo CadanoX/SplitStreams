@@ -1,0 +1,171 @@
+REPLACED MEDICAL SUBJECT HEADINGS WITH REPLACED-BY HEADINGS - 2001
+
+# = DELETED RECORD
+
+1. TOTAL REPLACED HEADINGS =     42
+2. TOTAL DELETED  HEADINGS =     10
+                            -------
+3. TOTAL(1.+2.) =                52
+
+
+[P] = new status is printed entry term
+[N] = new status is entry term, non-print
+[C] = new status is Supplementary Chemical Record
+ [] = old term does not exist in new MeSH
+
+
+MH OLD = AET [N]
+MH NEW = beta-Aminoethyl Isothiourea
+
+MH OLD = Althesin [N]
+MH NEW = Alfaxalone Alfadolone Mixture
+
+MH OLD = Aortic Subvalvular Stenosis [P]
+MH NEW = Aortic Stenosis, Subvalvular
+
+MH OLD = Aprocarb [N]
+MH NEW = Propoxur
+
+MH OLD = Atherosclerosis # [P]
+MH NEW = Arteriosclerosis
+
+MH OLD = Berbines [P]
+MH NEW = Berberine Alkaloids
+
+MH OLD = Chlamydia pneumoniae [P]
+MH NEW = Chlamydophila pneumoniae
+
+MH OLD = Chlamydia psittaci [P]
+MH NEW = Chlamydophila psittaci
+
+MH OLD = Cholera Vaccine # []
+MH NEW = Cholera Vaccines
+
+MH OLD = Compound 48-80 [P]
+MH NEW = p-Methoxy-N-methylphenethylamine
+
+MH OLD = Creatine Kinase Isoenzymes # []
+MH NEW = Creatine Kinase
+
+MH OLD = DIDS [N]
+MH NEW = 4,4'-Diisothiocyanostilbene-2,2'-Disulfonic Acid
+
+MH OLD = DMPP [P]
+MH NEW = Dimethylphenylpiperazinium Iodide
+
+MH OLD = DOM [N]
+MH NEW = 2,5-Dimethoxy-4-Methylamphetamine
+
+MH OLD = Deet []
+MH NEW = DEET
+
+MH OLD = Diverticulosis, Colonic [P]
+MH NEW = Diverticulum, Colon
+
+MH OLD = Drug Screening [P]
+MH NEW = Drug Evaluation, Preclinical
+
+MH OLD = Eimeriina # []
+MH NEW = Eimeriida
+
+MH OLD = Endothelium-Derived Relaxing Factor # [P]
+MH NEW = Nitric Oxide
+
+MH OLD = EPN [N]
+MH NEW = Phenylphosphonothioic Acid, 2-Ethyl 2-(4-Nitrophenyl) Ester
+
+MH OLD = Esophageal Diverticulum [P]
+MH NEW = Diverticulum, Esophageal
+
+MH OLD = Etidronate Disodium [P]
+MH NEW = Etidronic Acid
+
+MH OLD = Freons [P]
+MH NEW = Chlorofluorocarbons, Methane
+
+MH OLD = Gastrospirillum hominis [P]
+MH NEW = Helicobacter heilmannii
+
+MH OLD = Gene Transfer []
+MH NEW = Gene Transfer Techniques
+
+MH OLD = Globin [P]
+MH NEW = Globins
+
+MH OLD = Haemosporina [N]
+MH NEW = Haemosporida
+
+MH OLD = Hemodialysis [P]
+MH NEW = Renal Dialysis
+
+MH OLD = Hoe-33258 [P]
+MH NEW = Bisbenzimide
+
+MH OLD = Kidney, Polycystic [P]
+MH NEW = Polycystic Kidney Diseases
+
+MH OLD = Kidney, Polycystic, Autosomal Dominant [P]
+MH NEW = Polycystic Kidney, Autosomal Dominant
+
+MH OLD = Kidney, Polycystic, Autosomal Recessive [P]
+MH NEW = Polycystic Kidney, Autosomal Recessive
+
+MH OLD = Lactate Dehydrogenase Isoenzymes # []
+MH NEW = Lactate Dehydrogenase
+
+MH OLD = MCPA [P]
+MH NEW = 2-Methyl-4-chlorophenoxyacetic Acid
+
+MH OLD = Marek's Disease [P]
+MH NEW = Marek Disease
+
+MH OLD = Microspora Infections [P]
+MH NEW = Microsporidiosis
+
+MH OLD = NBD Chloride [P]
+MH NEW = 4-Chloro-7-nitrobenzofurazan
+
+MH OLD = NCAM [P]
+MH NEW = Neural Cell Adhesion Molecules
+
+MH OLD = Nuclear Magnetic Resonance [P]
+MH NEW = Magnetic Resonance Spectroscopy
+
+MH OLD = Nuclear Membrane [P]
+MH NEW = Nuclear Envelope
+
+MH OLD = Poliovirus Vaccine []
+MH NEW = Poliovirus Vaccine, Inactivated
+
+MH OLD = Pregnancy in Diabetes [N]
+MH NEW = Pregnancy in Diabetics
+
+MH OLD = Rabies Vaccine [N]
+MH NEW = Rabies Vaccines
+
+MH OLD = Signal Peptides # [N]
+MH NEW = Protein Sorting Signals
+
+MH OLD = SITS [N]
+MH NEW = 4-Acetamido-4'-isothiocyanatostilbene-2,2'-disulfonic Acid
+
+MH OLD = Sporozoea # [N]
+MH NEW = Apicomplexa
+
+MH OLD = Sporozoea Infections # []
+MH NEW = Protozoan Infections
+
+MH OLD = Staining [P]
+MH NEW = Staining and Labeling
+
+MH OLD = Stomach Diverticulum [P]
+MH NEW = Diverticulum, Stomach
+
+MH OLD = Typhoid [N]
+MH NEW = Typhoid Fever
+
+MH OLD = United States Agency for Health Care Policy and Research [P]
+MH NEW = United States Agency for Healthcare Research and Quality
+
+MH OLD = Uteroplacental Circulation # [P]
+MH NEW = Placental Circulation

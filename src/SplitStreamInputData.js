@@ -167,7 +167,7 @@ export default class SplitStreamInputData {
   }
 
   __forEachNodeDepthFirst(callback) {
-    let traverse = function(node, depth) {
+    let traverse = function (node, depth) {
       if (!!node.children)
         node.children.forEach(child => traverse(child, depth + 1));
       callback(node, depth);
@@ -190,8 +190,11 @@ export default class SplitStreamInputData {
         let nodes2 = this._timesteps[+t + 1].references;
         for (let id in nodes) {
           if (!!nodes2[id]) {
-            nodes[id].next = [nodes2[id]];
-            nodes2[id].prev = [nodes[id]];
+            // do not build connections if the nodes next elements were manually set
+            if (!nodes[id].next)
+              nodes[id].next = [nodes2[id]];
+            if (nodes2[id].prev)
+              nodes2[id].prev = [nodes[id]];
           }
         }
       }

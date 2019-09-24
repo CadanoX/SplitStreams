@@ -1,7 +1,7 @@
 import N3 from 'n3';
-import SplitStreamInputData from '../src/SplitStreamInputData';
+import SplitStreamInputData from './SplitStreamInputData';
 
-export default class OntologyLoader {
+export default class LoaderOntology {
   constructor() {
     this._stores = [];
     this._data = new SplitStreamInputData();
@@ -11,7 +11,7 @@ export default class OntologyLoader {
     return this._data.data;
   }
 
-  loadOntology(filename) {
+  loadFile(filename) {
     let store = (this._stores[this._stores.length] = new N3.Store());
     const inputData = filename;
     const parser = new N3.Parser({
@@ -22,7 +22,7 @@ export default class OntologyLoader {
     for (let quad of quads) store.addQuad(quad);
   }
 
-  transformOntologiesToTree() {
+  transformToTree() {
     for (let [i, store] of this._stores.entries()) {
       //this._store.getQuads(undefined, 'http://purl.bioontology.org/ontology/ICD9CM/SIB', undefined, undefined);
       // store.forEach((d) => this._addQuadToTree(d, i), undefined, 'http://www.w3.org/2000/01/rdf-schema#subClassOf', undefined, undefined);

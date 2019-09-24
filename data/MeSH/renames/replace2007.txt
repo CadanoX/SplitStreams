@@ -1,0 +1,392 @@
+MH Changes and Deletes for 2007 MeSH. September 7, 2006
+
+
+Total 2007 MH Changes   = 99
+Total 2007 Deletes      = 21
+
+# = deleted record
+
+[P] = Old MH is now an EP in the same record
+[N] = Old MH is now an EN in the same record
+ [] = Old MH is not preserved
+
+Note five mid-year Changes and Deletes in 2006 MeSH:
+
+MH OLD = Influenza [N]
+MH NEW = Influenza, Human
+
+MH OLD = Influenza, Avian [P]
+MH NEW = Influenza in Birds
+
+MH OLD = Influenza A Virus, Avian # []
+MH NEW = Influenza A virus
+
+MH OLD = Influenza A Virus, Human # []
+MH NEW = Influenza A virus
+
+MH OLD = Influenza A Virus, Porcine # []
+MH NEW = Influenza A virus
+
+
+2007 MH Changes and Deletes:
+
+
+MH OLD = 2-Dehydro-3-Deoxyphosphoheptonate Aldolase [P]
+MH NEW = 3-Deoxy-7-Phosphoheptulonate Synthase
+
+MH OLD = Adenosinetriphosphatase [P]
+MH NEW = Adenosine Triphosphatases
+
+MH OLD = Adolescent Nutrition []
+MH NEW = Adolescent Nutrition Physiology
+
+MH OLD = Aminoaciduria, Renal [P]
+MH NEW = Renal Aminoacidurias
+
+MH OLD = Animal Nutrition []
+MH NEW = Animal Nutrition Physiology
+
+MH OLD = Aotinae [N]
+MH NEW = Aotidae
+
+MH OLD = Apoferritin [N]
+MH NEW = Apoferritins
+
+MH OLD = Argipressin [P]
+MH NEW = Arginine Vasopressin
+
+MH OLD = Astrovirus []
+MH NEW = Mamastrovirus
+
+MH OLD = Biodegradation []
+MH NEW = Biodegradation, Environmental
+
+MH OLD = Bladder [P]
+MH NEW = Urinary Bladder
+
+MH OLD = Bladder Calculi [N]
+MH NEW = Urinary Bladder Calculi
+
+MH OLD = Bladder Diseases [P]
+MH NEW = Urinary Bladder Diseases
+
+MH OLD = Bladder Fistula []
+MH NEW = Urinary Bladder Fistula
+
+MH OLD = Bladder Neck Obstruction [P]
+MH NEW = Urinary Bladder Neck Obstruction
+
+MH OLD = Bladder Neoplasms [P]
+MH NEW = Urinary Bladder Neoplasms
+
+MH OLD = Bladder, Neurogenic [N]
+MH NEW = Urinary Bladder, Neurogenic
+
+MH OLD = Brown Fat [P]
+MH NEW = Adipose Tissue, Brown
+
+MH OLD = Ca(2+)-Transporting ATPase [P]
+MH NEW = Calcium-Transporting ATPases
+
+MH OLD = Callitrichidae [N]
+MH NEW = Callitrichinae
+
+MH OLD = Child Nutrition []
+MH NEW = Child Nutrition Physiology
+
+MH OLD = Circumcision [N]
+MH NEW = Circumcision, Male
+
+MH OLD = Corticotropin [P]
+MH NEW = Adrenocorticotropic Hormone
+
+MH OLD = Diaphyseal Dysplasia, Progressive [P]
+MH NEW = Camurati-Engelmann Syndrome
+
+MH OLD = Ebola-like Viruses [N]
+MH NEW = Ebolavirus
+
+MH OLD = Enteroglucagons [P]
+MH NEW = Glucagon-Like Peptides
+
+MH OLD = Extinction (Psychology) [N]
+MH NEW = Extinction, Psychological
+
+MH OLD = Female Genital Diseases and Pregnancy Complications []
+MH NEW = Female Urogenital Diseases and Pregnancy Complications
+
+MH OLD = Ferritin [N]
+MH NEW = Ferritins
+
+MH OLD = G Suits []
+MH NEW = Gravity Suits
+
+MH OLD = Gangliosidoses GM2 [N]
+MH NEW = Gangliosidoses, GM2
+
+MH OLD = Gangliosidosis GM1 [N]
+MH NEW = Gangliosidosis, GM1
+
+MH OLD = Gelatinase A [P]
+MH NEW = Matrix Metalloproteinase 2
+
+MH OLD = Gelatinase B [P]
+MH NEW = Matrix Metalloproteinase 9
+
+MH OLD = Glomerulosclerosis, Focal [N]
+MH NEW = Glomerulosclerosis, Focal Segmental
+
+MH OLD = Glucagon Precursors [N]
+MH NEW = Proglucagon
+
+MH OLD = Gonadorelin [P]
+MH NEW = Gonadotropin-Releasing Hormone
+
+MH OLD = Habituation (Psychophysiology) [N]
+MH NEW = Habituation, Psychophysiologic
+
+MH OLD = Hemolysins [P]
+MH NEW = Hemolysin Proteins
+
+MH OLD = Heparan Sulfate Proteoglycan [P]
+MH NEW = Heparan Sulfate Proteoglycans
+
+MH OLD = Hydrocele []
+MH NEW = Testicular Hydrocele
+
+MH OLD = Hypercholesterolemia, Familial [P]
+MH NEW = Hyperlipoproteinemia Type II
+
+MH OLD = Hyperlipidemia [N]
+MH NEW = Hyperlipidemias
+
+MH OLD = Hyperlipoproteinemia [N]
+MH NEW = Hyperlipoproteinemias
+
+MH OLD = Hypobetalipoproteinemia [N]
+MH NEW = Hypobetalipoproteinemias
+
+MH OLD = Hypolipoproteinemia [N]
+MH NEW = Hypolipoproteinemias
+
+MH OLD = Infant Nutrition []
+MH NEW = Infant Nutrition Physiology
+
+MH OLD = Infectious Laryngotracheitis-like Viruses [N]
+MH NEW = Iltovirus
+
+MH OLD = Interstitial Collagenase [P]
+MH NEW = Matrix Metalloproteinase 1
+
+MH OLD = Keratin [N]
+MH NEW = Keratins
+
+MH OLD = Kindling (Neurology) []
+MH NEW = Kindling, Neurologic
+
+MH OLD = Laterality []
+MH NEW = Functional Laterality
+
+MH OLD = Leukosis Virus, Avian [P]
+MH NEW = Avian leukosis virus
+
+MH OLD = Lipoidosis [P]
+MH NEW = Lipidoses
+
+MH OLD = Lipoidproteinosis [N]
+MH NEW = Lipoid Proteinosis of Urbach and Wiethe
+
+MH OLD = Lipoprotein Lipase Deficiency, Familial [P]
+MH NEW = Hyperlipoproteinemia Type I
+
+MH OLD = Lipoproteins, HDL Cholesterol []
+MH NEW = Cholesterol, HDL
+
+MH OLD = Lipoproteins, LDL Cholesterol []
+MH NEW = Cholesterol, LDL
+
+MH OLD = Lipoproteins, VLDL Cholesterol []
+MH NEW = Cholesterol, VLDL
+
+MH OLD = Lipotropin [P]
+MH NEW = beta-Lipotropin
+
+MH OLD = Lymphotoxin [N]
+MH NEW = Lymphotoxin-alpha
+
+MH OLD = Lypressin [P]
+MH NEW = Lysine Vasopressin
+
+MH OLD = Lytechnius []
+MH NEW = Lytechinus
+
+MH OLD = Marburg-like Viruses [N]
+MH NEW = Marburgvirus
+
+MH OLD = Marek's Disease-like Viruses [N]
+MH NEW = Mardivirus
+
+MH OLD = Mass Fragmentography []
+MH NEW = Gas Chromatography-Mass Spectrometry
+
+MH OLD = Maternal Nutrition []
+MH NEW = Maternal Nutrition Physiology
+
+MH OLD = Matrilysin [P]
+MH NEW = Matrix Metalloproteinase 7
+
+MH OLD = Mice Minute Virus [P]
+MH NEW = Minute virus of mice
+
+MH OLD = Molecular Motors []
+MH NEW = Molecular Motor Proteins
+
+MH OLD = Monocyte Chemoattractant Protein-1 [P]
+MH NEW = Chemokine CCL2
+
+MH OLD = Myeloblastosis Virus, Avian [P]
+MH NEW = Avian myeloblastosis virus
+
+MH OLD = Neuronal Ceroid-Lipofuscinosis [N]
+MH NEW = Neuronal Ceroid-Lipofuscinoses
+
+MH OLD = Neutrophil Collagenase [P]
+MH NEW = Matrix Metalloproteinase 8
+
+MH OLD = Nutrition []
+MH NEW = Nutrition Physiology
+
+MH OLD = Ovine pulmonary adenocarcinoma virus [P]
+MH NEW = Jaagsiekte sheep retrovirus
+
+MH OLD = Papillomavirus, Cottontail Rabbit []
+MH NEW = Cottontail rabbit papillomavirus
+
+MH OLD = Prenatal Nutrition []
+MH NEW = Prenatal Nutrition Physiology
+
+MH OLD = Prolactin Release-Inhibiting Hormone [N]
+MH NEW = Prolactin Release-Inhibiting Factors
+
+MH OLD = Protein-Tyrosine Kinase [N]
+MH NEW = Protein-Tyrosine Kinases
+
+MH OLD = Recruitment (Neurology) []
+MH NEW = Recruitment, Neurophysiological
+
+MH OLD = Recruitment Detection (Audiology) []
+MH NEW = Recruitment Detection, Audiologic
+
+MH OLD = Refractory Period, Neurologic [P]
+MH NEW = Refractory Period, Electrophysiological
+
+MH OLD = Reiter Disease [N]
+MH NEW = Reiter Syndrome
+
+MH OLD = Reovirus 3 [P]
+MH NEW = Mammalian orthoreovirus 3
+
+MH OLD = Replication Factor A [P]
+MH NEW = Replication Protein A
+
+MH OLD = Replication Factor C [P]
+MH NEW = Replication Protein C
+
+MH OLD = Sarcoma Viruses, Avian [P]
+MH NEW = Avian Sarcoma Viruses
+
+MH OLD = Sepsis Syndrome [P]
+MH NEW = Systemic Inflammatory Response Syndrome
+
+MH OLD = Sex Behavior, Animal [N]
+MH NEW = Sexual Behavior, Animal
+
+MH OLD = Somatotropin-Releasing Hormone [P]
+MH NEW = Growth Hormone-Releasing Hormone
+
+MH OLD = Spectrum Analysis, Mass [P]
+MH NEW = Mass Spectrometry
+
+MH OLD = Stimulants (Historical) [N]
+MH NEW = Stimulants, Historical
+
+MH OLD = Stromelysin 1 [P]
+MH NEW = Matrix Metalloproteinase 3
+
+MH OLD = Tampons []
+MH NEW = Tampons, Surgical
+
+MH OLD = Vaginal Creams, Foams and Jellies [P]
+MH NEW = Vaginal Creams, Foams, and Jellies
+
+MH OLD = Wautersia [P]
+MH NEW = Cupriavidus
+
+MH OLD = Wautersia eutropha [P]
+MH NEW = Cupriavidus necator
+
+MH OLD = Wegener's Granulomatosis [N]
+MH NEW = Wegener Granulomatosis
+
+MH OLD = Air Pollutants, Environmental # [N]
+MH NEW = Air Pollutants
+
+MH OLD = Azotobacteraceae # [N]
+MH NEW = Pseudomonadaceae
+
+MH OLD = Erythroblastosis Virus, Avian # [N]
+MH NEW = Alpharetrovirus
+
+MH OLD = Gastrospirillum # [N]
+MH NEW = Helicobacter
+
+MH OLD = Goodpasture Syndrome # [P]
+MH NEW = Anti-Glomerular Basement Membrane Disease
+
+MH OLD = Gross Virus # [N]
+MH NEW = AKR murine leukemia virus
+
+MH OLD = Interleukin-14 # []
+MH NEW = Interleukins
+
+MH OLD = MSH-Releasing Hormone # []
+MH NEW = Melanocyte-Stimulating Hormones
+
+MH OLD = Papillomavirus # []
+MH NEW = Papillomaviridae
+
+MH OLD = Papillomavirus, Bovine # []
+MH NEW = Bovine papillomavirus 1
+
+MH OLD = Papillomavirus, Human # []
+MH NEW = Papillomaviridae
+
+MH OLD = Papovaviridae Infections # []
+MH NEW = Papillomavirus Infections
+
+MH OLD = Parvovirus, Feline # [N]
+MH NEW = Feline panleukopenia virus
+
+MH OLD = Polioviruses # [N]
+MH NEW = Poliovirus
+
+MH OLD = Prolactin-Releasing Hormone # [P]
+MH NEW = Thyrotropin-Releasing Hormone
+
+MH OLD = Ralstoniaceae # [N]
+MH NEW = Burkholderiaceae
+
+MH OLD = Septicemia # [N]
+MH NEW = Sepsis
+
+MH OLD = Tendons, Para-Articular # [N]
+MH NEW = Tendons
+
+MH OLD = Urogenital Diseases # []
+MH NEW = Female Urogenital Diseases
+
+MH OLD = Urologic and Male Genital Diseases # []
+MH NEW = Male Urogenital Diseases
+
+MH OLD = Visible Human Project # []
+MH NEW = Visible Human Projects

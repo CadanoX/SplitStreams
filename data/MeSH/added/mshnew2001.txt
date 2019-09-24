@@ -1,0 +1,2023 @@
+NEW (2001) MESH HEADINGS WITH SCOPE NOTES (UNIT RECORD FORMAT; revised 9/6/2000)
+
+TOTAL DESCRIPTORS = 184
+
+
+
+
+MH  - Active Transport, Cell Nucleus
+UI  - D021581
+MN  - G6.535.166.310.100
+MN  - G6.535.166.700.100
+MS  - Gated transport mechanisms by which proteins or RNA are
+      moved across the NUCLEAR MEMBRANE.
+AN  - IM GEN only; coord NIM with CELL NUCLEUS /metab (IM) +
+      substance /metab (IM)
+HN  - 2001
+BX  - Nuclear Export
+BX  - Nuclear Import
+BX  - Nuclear Transport
+
+MH  - Acute Toxicity Tests
+UI  - D023382
+MN  - E5.940.74
+MS  - Experiments designed to determine the potential toxic
+      effects of one-time, short-term exposure to a chemical or
+      chemicals.
+HN  - 2001
+BX  - Toxicity Tests, Acute
+
+MH  - Adherens Junctions
+UI  - D022005
+MN  - A11.284.149.165.420.20
+MS  - Anchoring points where the CYTOSKELETON of neighboring cells
+      are connected to each other. They are composed of
+      specialized areas of the plasma membrane where bundles of
+      MICROFILAMENTS attach to the membrane through the
+      transmembrane linkers, CADHERINS, which in turn attach
+      through their extracellular domains to cadherins in the
+      neighboring cell membranes. In sheets of cells, they form
+      into adhesion belts (zonula adherens) that go all the way
+      around a cell.
+HN  - 2001
+BX  - Zonula Adherens
+
+MH  - Advanced Cardiac Life Support
+UI  - D022561
+MN  - E2.365.647.110.500
+MS  - The use of sophisticated methods and equipment to treat
+      cardiopulmonary arrest. Advanced Cardiac Life Support (ACLS)
+      includes the use of specialized equipment to maintain the
+      airway, early defibrilation and pharmacological therapy.
+HN  - 2001
+BX  - Cardiac Life Support, Advanced
+BX  - Life Support, Advanced Cardiac
+FX  - Heart Arrest
+
+MH  - Allelic Imbalance
+UI  - D022981
+MN  - G5.632.40
+MS  - A situation where one member (allele) of a gene pair is lost
+      (LOSS OF HETEROZYGOSITY) or amplified.
+AN  - do not confuse with ALLELIC LOSS see LOSS OF HETEROZYGOSITY
+HN  - 2001
+
+MH  - alpha-Defensins
+UI  - D023084
+MN  - D12.644.350.200.50
+MN  - D24.611.600.200.50
+MS  - DEFENSINS found in azurophilic granules of neutrophils and
+      in the secretory granules of  intestinal PANETH CELLS.
+HN  - 2001
+
+MH  - Amino Acids, Neutral
+UI  - D021542
+MN  - D12.125.154
+MS  - Amino acids with uncharged R groups or side chains.
+HN  - 2001
+BX  - Neutral Amino Acids
+
+MH  - Animal Use Alternatives
+UI  - D023401
+MN  - H1.770.644.67
+MS  - Alternatives to the use of animals in research, testing, and
+      education. The alternatives may include reduction in the
+      number of animals used, replacement of animals with a
+      non-animal model or with animals of a species lower
+      phylogenetically, or refinement of methods to minimize pain
+      and distress of animals used.
+HN  - 2001
+
+MH  - Animals, Outbred Strains
+UI  - D021461
+MN  - B1.30.284
+MN  - B2.158.284
+MS  - Animals that are generated from breeding two genetically
+      dissimilar strains of the same species.
+AN  - IM GEN or unspecified; coord NIM with specific animal
+      probably NIM
+HN  - 2001
+
+MH  - Anoikis
+UI  - D023102
+MN  - G4.335.139.160.60
+MS  - APOPTOSIS triggered by loss of contact with the
+      EXTRACELLULAR MATRIX.
+HN  - 2001
+
+MH  - Anthrax Vaccines
+UI  - D022122
+MN  - D24.310.894.135.63
+MS  - Vaccines or candidate vaccines used to prevent ANTHRAX.
+HN  - 2001
+BX  - Vaccines, Anthrax
+
+MH  - Antifreeze Proteins
+UI  - D021301
+MN  - D12.776.53
+MS  - Proteins that bind to ice and modify the growth of ice
+      crystals. They perform a cryoprotective role in a variety of
+      organisms.
+AN  - GEN or unspecified; prefer specific types
+HN  - 2001; use ANTIFREEZE PROTEINS (NM) 1980-2000
+BX  - Antifreeze Glycoproteins
+
+MH  - Antifreeze Proteins, Type I
+UI  - D021322
+MN  - D12.776.53.100
+MS  - A subclass of ANTIFREEZE PROTEINS that are 3-5 kD in size
+      and contain a single alanine-rich amphipathic alpha-helix.
+HN  - 2001
+
+MH  - Antifreeze Proteins, Type II
+UI  - D021341
+MN  - D12.776.53.200
+MS  - A subclass of ANTIFREEZE PROTEINS that have a cystine-rich
+      globular structure of approximately 14 kD.
+HN  - 2001
+
+MH  - Antifreeze Proteins, Type III
+UI  - D021343
+MN  - D12.776.53.350
+MS  - A subclass of ANTIFREEZE PROTEINS that are globular, 6.5 kD
+      in size and contain compact beta-sheet structures.
+HN  - 2001
+
+MH  - Antifreeze Proteins, Type IV
+UI  - D021302
+MN  - D12.776.53.500
+MS  - A subclass of ANTIFREEZE PROTEINS that contain four
+      amphathic alpha-helices folded into an antiparallel helix
+      bundle.
+HN  - 2001; use ANTIFREEZE PROTEINS (NM) 1997-2000
+
+MH  - Antimicrobial Cationic Peptides
+UI  - D023181
+MN  - D12.644.350
+MN  - D24.611.600
+MS  - Small cationic peptides that are an important component, in
+      most species, of early innate and induced defenses against
+      invading microbes. In animals they are found on mucosal
+      surfaces, within phagocytic granules, and on the surface of
+      the body. They are also found in insects and plants.  Among
+      others, this group includes the DEFENSINS, protegrins,
+      tachyplesins, and thionins.
+HN  - 2001; use ANTIMICROBIAL CATIONIC PEPTIDES (NM) to search
+      MICROBICIDAL CATIONIC PROTEINS 1981-2000
+BX  - Microbicidal Cationic Proteins
+FX  - Blood Bactericidal Activity
+
+MH  - Antiretroviral Therapy, Highly Active
+UI  - D023241
+MN  - E2.319.310.75
+MS  - Drug regimens, for patients with HIV INFECTIONS, that
+      aggressively supress HIV replication. The regimens usually
+      involve administration of three or more different drugs
+      including a protease inhibitor.
+AN  - IM when general; NIM when with specific drugs
+HN  - 2001
+BX  - HAART
+BX  - Highly Active Antiretroviral Therapy
+FX  - Anti-HIV Agents
+
+MH  - Aortic Stenosis, Supravalvular
+UI  - D021921
+MN  - C14.280.484.150.60
+MS  - A narrowing of the aorta in the region above the aortic
+      valve.
+HN  - 2001; use AORTIC VALVE STENOSIS 1980-2000
+BX  - Supravalvular Aortic Stenosis
+
+MH  - Balloon Occlusion
+UI  - D021721
+MN  - E2.148.106
+MN  - E2.520.179
+MS  - Use of a balloon catheter to block the flow of blood through
+      an artery or vein.
+AN  - coord IM with dis /ther not /surg
+HN  - 2001
+FX  - Balloon Dilatation
+FX  - Blood Vessel Prosthesis Implantation
+
+MH  - beta-Defensins
+UI  - D023083
+MN  - D12.644.350.200.75
+MN  - D24.611.600.200.75
+MS  - DEFENSINS found mainly in epithelial cells.
+HN  - 2001
+
+MH  - Bioartificial Organs
+UI  - D021522
+MN  - E7.858.82.212
+MS  - Artificial organs that are composites of biomaterials and
+      cells. The biomaterial can act as a membrane (container) as
+      in BIOARTIFICIAL LIVER or a scaffold as in bioartificial
+      skin.
+HN  - 2001
+
+MH  - Bioterrorism
+UI  - D023482
+MN  - I1.198.240.856.800.100
+MN  - I1.880.735.900.800.100
+MS  - The use of biological agents in TERRORISM. This includes the
+      malevolent use of bacteria, viruses, or toxins against
+      people, animals, or plants.
+HN  - 2001
+BX  - Biological Terrorism
+FX  - Biological Warfare
+
+MH  - Book Reviews [Publication Type]
+UI  - D022921
+MS  - Critical analyses of books or other monographic works.
+AN  - used by special data producers only
+HN  - 2000
+
+MH  - Branched DNA Signal Amplification Assay
+UI  - D021121
+MN  - E5.393.525.300
+MN  - E5.393.661.124
+MN  - E5.601.300
+MS  - A molecular probe technique that utilizes branched DNA
+      (bDNA) as a means to amplify the hybridization signal. One
+      end of the bDNA molecule is designed to bind a specific
+      target, while the other end of the bDNA molecule contains
+      many branches of DNA that are designed to bind a probe used
+      for signal detection.
+AN  - DF: BDNA ASSAY
+HN  - 2001
+
+MH  - Carcinoma, Pancreatic Ductal
+UI  - D021441
+MN  - C4.557.470.200.25.380
+MN  - C4.557.470.615.487
+MN  - C4.588.274.761.750
+MS  - Carcinoma that arises from the PANCREATIC DUCTS. It accounts
+      for the majority of cancers derived from the PANCREAS.
+AN  - coord IM with PANCREATIC NEOPLASMS (IM)
+HN  - 2001
+BX  - Pancreatic Ductal Carcinoma
+
+MH  - Caveolae
+UI  - D021941
+MN  - A11.284.149.165.175.160
+MN  - A11.284.195.190.875.190.880.180.160
+MS  - Endocytic/exocytic CELL MEMBRANE STRUCTURES rich in
+      glycosphingolipids, cholesterol, and lipid-anchored membrane
+      proteins that function in  ENDOCYTOSIS (potocytosis),
+      transcytosis, and SIGNAL TRANSDUCTION. Caveolae assume
+      various shapes from open pits to closed vesicles. Caveolar
+      coats are composed of CAVEOLINS.
+HN  - 2001
+FX  - Caveolins
+
+MH  - Caveolins
+UI  - D022461
+MN  - D12.776.543.160
+MS  - The main structural proteins of CAVEOLAE. Several distinct
+      genes for caveolins have been identified.
+HN  - 2001
+FX  - Caveolae
+
+MH  - CCAAT-Binding Factor
+UI  - D023081
+MN  - D12.776.260.105.249
+MN  - D12.776.660.167.249
+MS  - A heterotrimeric DNA-binding protein that binds to CCAAT
+      motifs in the promoters of eukaryotic genes. It is composed
+      of three subunits: A, B and C.
+HN  - 2001; use CCAAT-ENHANCER-BINDING PROTEINS (NM) 1988-2000
+BX  - CCAAT-Binding Factor, A-Subunit
+BX  - CCAAT-Binding Factor, B-Subunit
+BX  - CCAAT-Binding Factor, C-Subunit
+
+MH  - CCAAT-Enhancer-Binding Protein-alpha
+UI  - D022763
+MN  - D12.776.260.105.500
+MN  - D12.776.660.167.500
+MS  - A CCAAT-enhancer-binding protein found in LIVER, ADIPOSE
+      TISSUE, INTESTINES, LUNG, ADRENAL GLANDS, PLACENTA, OVARY
+      and peripheral blood mononuclear cells (LEUKOCYTES,
+      MONONUCLEAR). Experiments with knock-out mice have
+      demonstrated that CCAAT-enhancer binding protein-alpha is
+      essential for the functioning and differentiation of
+      HEPATOCYTES and ADIPOCYTES.
+HN  - 2001; C-EBPALPHA use CCAAT-ENHANCER-BINDING PROTEINS (NM)
+      1996-2000
+BX  - C-EBP alpha
+
+MH  - CCAAT-Enhancer-Binding Protein-beta
+UI  - D022782
+MN  - D12.776.260.105.750
+MN  - D12.776.660.167.750
+MS  - A CCAAT-enhancer-binding protein found in LIVER, INTESTINES,
+      LUNG and ADIPOSE TISSUE. It is an important mediator of
+      INTERLEUKIN-6 signaling.
+HN  - 2001; use CCAAT-ENHANCER-BINDING PROTEINS (NM) 1994-2000;
+      for LIVER-ENRICHED INHIBITING PROTEIN use
+      CCAAT-ENHANCER-BINDING PROTEIN-BETA (NM) 1995-2000;
+BX  - C-EBP-beta
+BX  - LIP Protein
+BX  - NF-IL6
+
+MH  - CCAAT-Enhancer-Binding Proteins
+UI  - D022762
+MN  - D12.776.260.105
+MN  - D12.776.660.167
+MS  - A class of proteins that were originally identified by their
+      ability to bind the DNA sequence CCAAT. The typical
+      CCAAT-enhancer binding protein forms dimers and consists of
+      an activation domain, a DNA-binding basic region, and a
+      leucine-rich dimerization domain (LEUCINE ZIPPERS).
+      CCAAT-BINDING FACTOR is structurally distinct type of
+      CCAAT-enhancer binding protein consisting of a trimer of
+      three different subunits.
+AN  - GEN: prefer specifics
+HN  - 2001; for C-EBP NUCLEAR PROTEIN use CCAAT-ENHANCER-BINDING
+      PROTEINS (NM) 1989-2000; for CCAAT SEQUENCE-SPECIFIC
+      DNA-BINDING PROTEINS use CCAAT-ENHANCER BINDING PROTEINS
+      1988-2000
+BX  - C-EBP Nuclear Protein
+BX  - C-EBP Proteins
+
+MH  - CD40 Ligand
+UI  - D023201
+MN  - D12.776.395.550.185
+MN  - D12.776.543.550.185
+MN  - D24.185.101.100.110.280
+MN  - D24.611.216.301.264.35.280
+MS  - Membrane glycoprotein and differentiation antigen expressed
+      on the surface of T-cells.  It binds to CD40 (ANTIGENS,
+      CD40) on B-cells, inducing B-cell proliferation. Mutation in
+      this protein causes X-linked hyper-IgM syndrome
+      (HYPERGAMMAGLOBULINEMIA).
+HN  - 2001; use CD40 LIGAND (NM) to search CD40L 1992-2000
+BX  - Antigens, CD154
+BX  - CD154 Antigens
+BX  - CD40L
+FX  - Antigens, CD40
+
+MH  - Cell Membrane Structures
+UI  - D021961
+MN  - A11.284.149.165
+MS  - Structures which are part of the CELL MEMBRANE or have cell
+      membrane as a major part of their structure.
+AN  - GEN: avoid; prefer specifics
+HN  - 2001
+
+MH  - Cell Nucleus Structures
+UI  - D022003
+MN  - A11.284.170.279
+MS  - Structures that are part of or contained in the CELL
+      NUCLEUS.
+AN  - GEN: avoid; prefer specifics
+HN  - 2001
+
+MH  - Cell Surface Extensions
+UI  - D022081
+MN  - A11.284.180
+MS  - Specialized structures of the cell that extend the cell
+      membrane and project out from the cell surface.
+AN  - GEN: avoid; prefer specifics
+HN  - 2001
+BX  - Cell Membrane Extensions
+BX  - Cell Membrane Projections
+BX  - Cell Membrane Protrusions
+
+MH  - Cell-Matrix Junctions
+UI  - D021982
+MN  - A11.284.149.165.165
+MS  - Specialized areas at the CELL MEMBRANE where a cell attaches
+      to the EXTRACELLULAR MATRIX or other substratum.
+HN  - 2001
+BX  - Cell-Matrix Adhesions
+FX  - Cell Adhesion
+
+MH  - Cellular Structures
+UI  - D022082
+MN  - A11.284
+MS  - Components of a cell.
+AN  - GEN: avoid; prefer specifics
+HN  - 2001
+
+MH  - Chills
+UI  - D023341
+MN  - C23.888.208
+MS  - The sudden sensation of being cold. It may be accompanied by
+      SHIVERING.
+HN  - 2001; use SHIVERING 1977-2000
+FX  - Shivering
+
+MH  - Chlamydia muridarum
+UI  - D023502
+MN  - B3.440.190.190.190.500
+MS  - Species of CHLAMYDIA causing pneumonitis in mice and
+      hamsters. These isolates formerly belonged to CHLAMYDIA
+      TRACHOMATIS.
+AN  - infection: coord IM with CHLAMYDIA INFECTIONS (IM); index
+      also PNEUMONIA, BACTERIAL if pertinent
+HN  - 2001
+
+MH  - Chlamydophila
+UI  - D023501
+MN  - B3.440.190.190.230
+MS  - A genus of the family CHLAMYIDACEAE comprising gram-negative
+      non CHLAMYDIA TRACHOMATIS-like species infecting
+      vertebrates. Chlamydophila do not produce detectable
+      quantities of glycogen. The type species is CHLAMYDOPHILA
+      PSITTACI.
+AN  - infection = CHLAMYDOPHILA INFECTIONS
+HN  - 2001
+
+MH  - Chlamydophila Infections
+UI  - D023521
+MN  - C1.252.400.210.250
+MS  - Infections with bacteria of the genus CHLAMYDOPHILA.
+HN  - 2001
+
+MH  - Cholera Vaccines
+UI  - D022121
+MN  - D24.310.894.135.225
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with VIBRIO CHOLERAE. The original cholera vaccine consisted
+      of killed bacteria, but other kinds of vaccines now exist.
+HN  - 2001
+
+MH  - Chromosome Structures
+UI  - D022004
+MN  - A11.284.170.279.190.160
+MS  - Structures which are contained in or part of CHROMOSOMES.
+AN  - GEN: avoid; prefer specifics
+HN  - 2001
+
+MH  - Chromosomes, Artificial
+UI  - D022201
+MN  - A11.284.187.178
+MN  - D13.444.308.460.320.165
+MS  - DNA constructs that are composed of, at least, elements such
+      as a REPLICATION ORIGIN; TELOMERE; and CENTROMERE, that are
+      required for successful replication, propagation to and
+      maintainance in progeny cells. In addition, they are
+      constructed to carry other sequences for analysis or gene
+      transfer.
+AN  - coord with specific organism /genet  only if particularly
+      discussed; for insertion of the artificial chromosome, coord
+      with GENE TRANSFER TECHNIQUES
+HN  - 2001
+BX  - Artificial Chromosomes
+
+MH  - Chromosomes, Bacterial Artificial
+UI  - D022202
+MN  - A11.284.187.178.170
+MN  - A11.284.187.190.170
+MN  - D13.444.308.460.320.165.170
+MS  - DNA constructs that are composed of, at least,  a
+      REPLICATION ORIGIN,  for successful replication, propagation
+      to and maintainance as an extra chromosome in bacteria. In
+      addition, they can carry large amounts (about 200 kilobases)
+      of other sequence for a variety of bioengineering purposes.
+AN  - coord with specific bacterium /genet  only if particularly
+      discussed
+HN  - 2001
+BX  - Artificial Chromosomes, Bacterial
+BX  - Bacterial Artificial Chromosomes
+
+MH  - Chromosomes, Human Artificial
+UI  - D022222
+MN  - A11.284.187.178.190.117
+MN  - A11.284.187.480.117
+MN  - D13.444.308.460.320.165.190.117
+MS  - DNA constructs that are composed of, at least, all elements,
+      such as a REPLICATION ORIGIN; TELOMERE; and CENTROMERE,
+      required for successful replication, propagation to and
+      maintainance in progeny human cells. In addition, they are
+      constructed to carry other sequences for analysis or gene
+      transfer.
+AN  - coord with specific human chromosome /genet  only if
+      particularly discussed
+HN  - 2001
+BX  - Artificial Chromosomes, Human
+BX  - Human Artificial Chromosomes
+
+MH  - Chromosomes, Mammalian Artificial
+UI  - D022221
+MN  - A11.284.187.178.190
+MN  - D13.444.308.460.320.165.190
+MS  - DNA constructs that are composed of, at least, all elements,
+      such as a REPLICATION ORIGIN; TELOMERE; and CENTROMERE, that
+      are required for successful replication, propagation to and
+      maintainance in progeny mammalian cells. In addition, they
+      are constructed to carry other sequences for analysis or
+      gene transfer.
+AN  - coord with specific animal /genet  only if particularly
+      discussed
+HN  - 2001
+BX  - Artificial Chromosomes, Mammalian
+BX  - Mammalian Artificial Chromosomes
+
+MH  - Chronobiology Disorders
+UI  - D021081
+MN  - C10.281
+MS  - Disruptions of the rhythmic cycle of bodily functions or
+      activities.
+HN  - 2001; use SLEEP DISORDERS, CIRCADIAN RHYTHM 2000; for
+      CHRONOBIOLOGY DISORDERS use SLEEP DISORDERS, CIRCADIAN
+      RHYTHM 2000
+BX  - Circadian Rhythm Disorders
+
+MH  - Clathrin-Coated Vesicles
+UI  - D022163
+MN  - A11.284.195.190.875.190.880.180.170
+MS  - Vesicles formed when cell-membrane coated pits (COATED PITS,
+      CELL-MEMBRANE) invaginate and pinch off. The outer surface
+      of these vesicles is covered with a lattice-like network of
+      the protein CLATHRIN. Shortly after formation, however, the
+      clathrin coat is removed and the vesicles are referred to as
+      ENDOSOMES.
+HN  - 2001
+
+MH  - Communicable Diseases, Emerging
+UI  - D021821
+MN  - C1.539.221.500
+MS  - Reporting of new and reemerging infectious diseases and
+      studies that seek to improve the understanding of factors
+      involved in disease emergence, prevention, and elimination.
+HN  - 2001
+BX  - Infectious Diseases, Emerging
+
+MH  - Complementarity Determining Regions
+UI  - D022801
+MN  - D12.776.124.486.485.680.600.180
+MN  - D12.776.124.790.651.596.600.180
+MN  - D12.776.377.715.548.673.600.180
+MN  - D12.776.543.750.705.816.824.300
+MN  - D24.611.125.345.180
+MN  - D24.611.125.600.662.600.180
+MN  - D24.611.834.816.824.300
+MN  - G6.184.580.709.600.40.170
+MS  - Three regions (CDR1, CDR2 and CDR3) of amino acid sequence
+      in the IMMUNOGLOBULIN VARIABLE REGION that are highly
+      divergent. Together the CDRs from the light and heavy
+      immunoglobulin chains form a surface that is complementary
+      to the antigen. These regions are also present in other
+      members of the immunoglobulin superfamily, for example,
+      T-cell receptors (RECEPTORS, ANTIGEN, T-CELL).
+HN  - 2001; for COMPLEMENTARITY DETERMINING REGION and
+      HYPERVARIABLE REGION use IMMUNOGLOBULIN VARIABLE REGION
+      1988-2000
+BX  - Hypervariable Regions
+FX  - Receptors, Antigen, T-Cell
+
+MH  - COP-Coated Vesicles
+UI  - D022181
+MN  - A11.284.195.190.875.190.880.180.180
+MS  - TRANSPORT VESICLES formed when cell-membrane coated pits
+      (COATED PITS, CELL-MEMBRANE) invaginate and pinch off. The
+      outer surface of these vesicles is covered with a
+      lattice-like network of COP (coat protein complex) proteins,
+      either COPI or COPII. COPI coated vesicles transport
+      backwards from the cisternae of the GOLGI APPARATUS to the
+      rough endoplasmic reticulum (ENDOPLASMIC RETICULUM, ROUGH),
+      while COPII coated vesicles transport forward from the rough
+      endoplasmic reticulum to the Golgi apparatus.
+HN  - 2001
+BX  - COPI-Coated Vesicles
+BX  - COPII-Coated Vesicles
+BX  - Coatomer-Coated Vesicles
+
+MH  - Cryptosporidiidae
+UI  - D021742
+MN  - B1.841.75.189.250.150
+MS  - A family of parasitic PROTOZOA in the order EIMERIIDA.
+      CRYPTOSPORIDIUM is the most important genus.
+AN  - infection: coord IM with COCCIDIOSIS (IM); drug eff:
+      consider COCCIDIOSTATS; coord with specific protozoan terms
+      (ANTIGENS, PROTOZOAN, etc) if pertinent
+HN  - 2001
+
+MH  - Cyclophilin A
+UI  - D021984
+MN  - D8.586.399.325.500.400.300.500
+MS  - A 17 KD cytoplasmic PEPTIDYLPROLYL ISOMERASE involved in
+      immunoregulation. It is a member of the cyclophilin family
+      of proteins that binds to CYCLOSPORINE. EC 5.2.1.-
+HN  - 2001; use PEPTIDYLPROLYL ISOMERASE 1998-2000 &
+      PEPTIDYLPROLYL ISOMERASE (NM) 1984-1997
+BX  - Peptidyl-Prolyl cis-trans Isomerase A
+
+MH  - Cyclophilins
+UI  - D021983
+MN  - D8.586.399.325.500.400.300
+MN  - D12.776.543.750.705.400.300
+MN  - D12.776.827.275.300
+MN  - D24.611.834.400.300
+MS  - A family of peptidyl-prolyl cis-trans isomerases that bind
+      to CYCLOSPORINS and regulate the IMMUNE SYSTEM. EC 5.2.1.-
+HN  - 2001; use PEPTIDYLPROLYL ISOMERASE 1998-2000 &
+      PEPTIDYLPROLYL ISOMERASE (NM) 1984-1997
+BX  - Cyclophilin
+BX  - Cyclosporin-Binding Proteins
+
+MH  - Cyclospora
+UI  - D021744
+MN  - B1.841.75.189.250.250.200
+MS  - A genus of coccidian parasites in the family EIMERIIDAE.
+      Cyclospora cayetanensis is pathogenic in humans, probably
+      transmitted via the fecal-oral route, and causes nausea and
+      diarrhea.
+AN  - infection = CYCLOSORIASIS (IM); drug eff: consider
+      COCCIDIOSTATS; coord with specific protozoan terms
+      (ANTIGENS, PROTOZOAN, etc) if pertinent
+HN  - 2001
+
+MH  - Cyclosporiasis
+UI  - D021866
+MN  - C3.752.250.280
+MS  - Infection with parasitic protozoa of the genus CYCLOSPORA.
+      It is distributed globally and causes a diarrheal illness.
+      Transmission is waterborne.
+AN  - /drug ther: consider also COCCIDIOSTATS
+HN  - 2001
+
+MH  - Cytomegalovirus Vaccines
+UI  - D022482
+MN  - D24.310.894.899.120
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with CYTOMEGALOVIRUS.
+HN  - 2001
+
+MH  - Cytoplasmic Structures
+UI  - D022083
+MN  - A11.284.195.190
+MS  - Components of the cytoplasm excluding the CYTOSOL.
+AN  - GEN: avoid; prefer specifics
+HN  - 2001
+
+MH  - Cytoplasmic Vesicles
+UI  - D022162
+MN  - A11.284.195.190.875.190
+MS  - Membrane-limited structures derived from the plasma membrane
+      or various intracellular membranes which function in
+      storage, transport or metabolism.
+HN  - 2001
+
+MH  - Defensins
+UI  - D023082
+MN  - D12.644.350.200
+MN  - D24.611.600.200
+MS  - Family of antimicrobial peptides that have been identified
+      in humans, animals, and plants. They are thought to play a
+      role in host defenses against infections, inflammation,
+      wound repair, and acquired immunity. Based on the disulfide
+      pairing of their characteristic six cysteine residues, they
+      are divided into ALPHA-DEFENSINS and BETA-DEFENSINS.
+HN  - 2001; use DEFENSINS (NM) to search DEFENSINS 1985-2000
+
+MH  - Diphtheria-Tetanus Vaccine
+UI  - D022422
+MN  - D24.310.894.135.310
+MN  - D24.310.894.691.263.310
+MN  - D24.310.894.691.824.310
+MN  - D24.310.894.815.320
+MS  - A combined vaccine used to prevent infection with diphtheria
+      and tetanus toxoid. This is used in place of DTP vaccine
+      (DIPHTHERIA-TETANUS-PERTUSSIS VACCINE) when PERTUSSIS
+      VACCINE is contraindicated.
+AN  - DIPHTHERIA-TETANUS-ACELLULAR PERTUSSIS VACCINES and
+      DIPHTHERIA-TETANUS-PERTUSSIS VACCINE are also available
+HN  - 2001; use DIPHTHERIA-TETANUS VACCINE (NM) to search DT
+      VACCINE 1983-2000
+BX  - DT Vaccine
+
+MH  - Diphtheria-Tetanus-acellular Pertussis Vaccines
+UI  - D022681
+MN  - D24.310.894.135.290
+MN  - D24.310.894.135.535.295
+MN  - D24.310.894.691.263.290
+MN  - D24.310.894.691.824.290
+MN  - D24.310.894.815.149
+MN  - D24.310.894.860.900.267
+MS  - Combined  vaccines consisting of DIPHTHERIA TOXOID, TETANUS
+      TOXOID, and an acellular form of PERTUSSIS VACCINE. At least
+      five different purifed antigens of B. pertussis have been
+      used in various combinations in these vaccines.
+AN  - DIPHTHERIA-TETANUS VACCINE and DIPHTHERIA-TETANUS-PERTUSSIS
+      VACCINE are also available
+HN  - 2001; use DIPHTHERIA-TETANUS-ACELLULAR PERTUSSIS VACCINES
+      (NM) to search DIPHTHERIA-TETANUS-ACELLULAR PERTUSSIS
+      VACCINE 1997-2000
+BX  - DTaP Vaccines
+
+MH  - Discrete Subaortic Stenosis
+UI  - D021922
+MN  - C14.280.484.150.70.210
+MS  - An anatomic alteration in the mitral valve apparatus and
+      interventricular septum leading to obstruction of left
+      ventricular outflow. (from Eur J Cardiothorac Surg
+      1998;14(3):296-303)
+HN  - 2001; use AORTIC VALVE STENOSIS 1986-2000
+BX  - Subaortic Stenosis, Discrete
+
+MH  - DNA, Catalytic
+UI  - D021881
+MN  - D8.586.165
+MN  - D8.586.913.696.445.735.265
+MN  - D13.444.308.243
+MS  - Molecules of DNA that possess enzymatic activity.
+HN  - 2001; use DNA, CATALYTIC (NM) 1997-2000
+BX  - Deoxyribozymes
+
+MH  - DNA, Intergenic
+UI  - D021901
+MN  - D13.444.308.324
+MN  - G5.331.599.110.275
+MN  - G6.184.599.110.220
+MS  - Any of the DNA in between gene-coding DNA, including
+      untranslated regions, 5' and 3' flanking regions, INTRONS,
+      non-functional pseudogenes, and non-functional repetitive
+      sequences. This DNA may or may not encode regulatory
+      functions.
+AN  - note that DNA, RIBOSOMAL SPACER is available
+HN  - 2001
+BX  - DNA, Junk
+BX  - DNA, Spacer
+BX  - Intergenic DNA
+BX  - Junk DNA
+BX  - Spacer DNA
+
+MH  - DNA, Ribosomal Spacer
+UI  - D021903
+MN  - D13.444.308.324.230
+MN  - D13.444.308.475.230
+MS  - The intergenic DNA segments that are between the ribosomal
+      RNA genes (internal transcribed spacers) and between the
+      tandemly repeated units of rDNA (external transcribed
+      spacers and nontranscribed spacers).
+AN  - DNA, RIBOSOMAL and DNA, SPACER see DNA, INTERGENIC are also
+      available
+HN  - 2001
+BX  - Ribosomal Spacer DNA
+
+MH  - Eimeriida
+UI  - D021741
+MN  - B1.841.75.189.250
+MS  - An order of parasitic PROTOZOA in the class COCCICIDA.
+      Families include CRYPTOSPORIDIIDAE, EIMERIIDAE, and
+      SARCOCYSTIDAE.
+AN  - infection: coord IM with COCCIDIOSIS (IM); drug eff:
+      consider COCCIDIOSTATS; coord with specific protozoan terms
+      (ANTIGENS, PROTOZOAN, etc) if pertinent
+HN  - 2001
+
+MH  - Eimeriidae
+UI  - D021743
+MN  - B1.841.75.189.250.250
+MS  - A large family of parasitic PROTOZOA in the order EIMERIIDA.
+      They cause COCCIDIOSIS in a number of vertebrates including
+      humans.
+AN  - infection: coord IM with COCCIDIOSIS (IM); drug eff:
+      consider COCCIDIOSTATS; coord with specific protozoan terms
+      (ANTIGENS, PROTOZOAN, etc) if pertinent
+HN  - 2001
+
+MH  - Electrophysiologic Techniques, Cardiac
+UI  - D022062
+MN  - E1.370.370.380.245
+MN  - E1.370.405.267
+MS  - Invasive procedures whereby tachyarrhythmias (TACHYCARDIA),
+      induced or spontaneous, are mapped via heart catheterization
+      techniques for the investigation of electrical activities in
+      the heart. In addition to diagnostic purposes, the
+      techniques of intracardiac programmed electrostimulation are
+      used therapeutically.
+HN  - 2001
+BX  - Cardiac Electrophysiologic Techniques
+BX  - Electrophysiologic Study, Cardiac
+BX  - Programmed Electrostimulation
+
+MH  - Endpoint Determination
+UI  - D023381
+MN  - E5.91.284
+MS  - Establishment of the level of a quantifiable effect
+      indicative of a biologic process. The evaluation is
+      frequently to detect the degree of toxic or therapeutic
+      effect.
+HN  - 2001
+BX  - Endpoint Assay
+
+MH  - Enterobacter aerogenes
+UI  - D021902
+MN  - B3.440.450.425.275.99
+MS  - Gram-negative, capsulated, gas-producing rods found widely
+      in nature. Both motile and non-motile strains exist. The
+      species is closely related to KLEBSIELLA PNEUMONIAE and is
+      frequently associated with nosocomial infections
+AN  - infection: coord IM with ENTEROBACTERIACEAE INFECTIONS (IM)
+HN  - 2001; for AEROBACTER AEROGENES use KLEBSIELLA PNEUMONIAE
+      1992-2000 & ENTEROBACTER 1963-1991
+BX  - Aerobacter aerogenes
+BX  - Klebsiella aerogenes
+FX  - Klebsiella pneumoniae
+
+MH  - Enterocytozoon
+UI  - D021862
+MN  - B1.841.500.500.500.100.200
+MS  - A genus of parasitic protozoa in the family
+      Enterocytozoonidae, which infects humans. Enterocytozoon
+      bieneusi has been found in the intestines of patients with
+      AIDS.
+AN  - infection: coord IM with MICROSPORIDIOSIS (IM); coord with
+      specific protozoan terms (ANTIGENS, PROTOZOAN, etc) if
+      pertinent
+HN  - 2001
+
+MH  - Escherichia coli Vaccines
+UI  - D022361
+MN  - D24.310.894.135.390
+MS  - Vaccines or candidate vaccines used to prevent or treat both
+      enterotoxigenic and enteropathogenic Escherichia coli
+      infections.
+HN  - 2001; use ESCHERICHIA COLI VACCINES (NM) to search
+      ESCHERICHIA COLI VACCINE 1983-2000
+BX  - E coli Vaccines
+
+MH  - Euchromatin
+UI  - D022041
+MN  - A11.284.170.279.190.160.180.270
+MN  - D12.776.664.224.270
+MS  - Chromosome regions that are loosely packaged and more
+      accessible to RNA polymerases than HETEROCHROMATIN. These
+      regions also stain differentially in CHROMOSOME BANDING
+      preparations.
+HN  - 2001; use EUCHROMATIN (NM) 1981-2000
+
+MH  - Evaluation Studies [Publication Type]
+UI  - D023362
+MS  - Studies determining the effectiveness or utility of
+      processes, personnel, and equipment.
+HN  - 2001
+FX  - Clinical Trial [Publication Type]
+FX  - Validation Studies [Publication Type]
+
+MH  - Family Nursing
+UI  - D022143
+MN  - G2.478.676.218
+MS  - The provision of care involving the nursing process, to
+      families and family members in health and illness
+      situations. From Lippincott Manual of Nursing Practice. 6th
+      ed.
+HN  - 2001
+
+MH  - Fictional Works [Publication Type]
+UI  - D022922
+MS  - Creative writing, not presented as factual.
+HN  - 2000
+BX  - Fiction [Publication Type]
+
+MH  - Flank Pain
+UI  - D021501
+MN  - C23.888.646.451
+MS  - Pain emanating from below the RIBS and above the ILIUM.
+HN  - 2001
+
+MH  - Focal Adhesions
+UI  - D022001
+MN  - A11.284.149.165.165.285
+MS  - An anchoring junction of the cell to a non-cellular
+      substrate. It is composed of a specialized area of the
+      plasma membrane where bundles of MICROFILAMENTS terminate
+      and attach to the transmembrane linkers, INTEGRINS, which in
+      turn attach through their extracellular domains to
+      EXTRACELLULAR MATRIX PROTEINS.
+HN  - 2001
+BX  - Adhesion Plaques
+BX  - Cell-Matrix Adherens Junctions
+BX  - Focal Contacts
+FX  - Cell Adhesion
+
+MH  - Gene Order
+UI  - D023061
+MN  - G5.265
+MS  - The sequential location of genes on a chromosome.
+HN  - 2001
+FX  - Linkage (Genetics)
+
+MH  - Gene Transfer, Horizontal
+UI  - D022761
+MN  - G5.825.390
+MS  - The transmission of genetic information between organisms,
+      related or unrelated, circumventing parent-to-offspring
+      transmission. This may lead to a permanent change of the
+      organism's genetic composition (TRANSFORMATION, GENETIC) .
+AN  - note category: do not confuse with GENE TRANSFER TECHNIQUES
+HN  - 2001
+BX  - Horizontal Gene Transfer
+
+MH  - Genomics
+UI  - D023281
+MN  - G1.273.343.500
+MS  - The systematic study of the complete DNA sequences (GENOME)
+      of organisms.
+HN  - 2001
+FX  - Computational Biology
+FX  - Human Genome Project
+FX  - Sequence Analysis, DNA
+
+MH  - Glasgow Outcome Scale
+UI  - D023261
+MN  - E5.318.308.940.968.875.260
+MN  - E5.944.510
+MN  - L1.280.900.968.875.260
+MN  - N4.452.859.564.800.260
+MN  - N5.715.360.300.715.500.800.335
+MS  - A scale that assesses the outcome of serious craniocerebral
+      injuries, based on the level of regained social funtioning.
+HN  - 2001; use GLASGOW COMA SCALE 1990-2000
+
+MH  - Government Publications [Publication Type]
+UI  - D022903
+MS  - Documents issued by local, regional, or national governments
+      or by their agencies or subdivisions.
+AN  - used by special data producers only
+HN  - 2000
+BX  - Government Documents [Publication Type]
+
+MH  - Hemidesmosomes
+UI  - D022002
+MN  - A11.284.149.165.165.360
+MS  - An anchoring junction of the cell to a non-cellular
+      substrate, similar in morphology to halves of DESMOSOMES.
+      They are composed of specialized areas of the plasma
+      membrane where INTERMEDIATE FILAMENTS bind on the
+      cytoplasmic face to the transmembrane linkers, INTEGRINS,
+      via intracellular attachment proteins, while the
+      extracellular domain of the integrins binds to EXTRACELLULAR
+      MATRIX PROTEINS.
+HN  - 2001
+
+MH  - Hepatitis A Vaccines
+UI  - D022362
+MN  - D24.310.894.899.955.395
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with hepatitis A virus (HEPATOVIRUS).
+HN  - 2001; use HEPATITIS A VACCINES (NM) to search HEPATITIS A
+      VACCINE 1992-2000
+
+MH  - Hepatocytes
+UI  - D022781
+MN  - A11.436.348
+MS  - The main structural component of the LIVER. They are
+      specialized EPITHELIAL CELLS that are organized into
+      interconnected plates called lobules.
+HN  - 2001
+BX  - Hepatic Cells
+BX  - Liver Cells
+
+MH  - Hermanski-Pudlak Syndrome
+UI  - D022861
+MN  - C11.270.55.400
+MN  - C15.378.100.685.400
+MN  - C15.378.140.735.400
+MN  - C15.378.463.735.400
+MN  - C16.131.410.40.100.400
+MN  - C17.800.621.440.102.100.400
+MN  - C17.800.827.130.100.400
+MN  - C18.452.648.66.102.100.400
+MS  - Syndrome characterized by the triad of oculocutaneous
+      albinism (ALBINISM, OCULOCUTANEOUS), PLATELET STORAGE POOL
+      DEFICIENCY, and lysosomal accumulation of ceroid lipofuscin.
+HN  - 2001
+
+MH  - Herpes Simplex Virus Vaccines
+UI  - D022301
+MN  - D24.310.894.899.290.400
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with viruses from the genus SIMPLEXVIRUS. This includes
+      vaccines for HSV-1 and HSV-2.
+AN  - coord IM with specific simplexvirus /immunol (IM)
+HN  - 2001
+BX  - HSV Vaccines
+
+MH  - Herpesvirus Vaccines
+UI  - D022283
+MN  - D24.310.894.899.290
+MS  - Vaccines or candidate vaccines used to prevent infection by
+      any virus from the family HERPESVIRIDAE.
+AN  - coord IM with specific herpesvirus /immunol (IM) but note
+      specifics
+HN  - 2001
+
+MH  - Herpesvirus 4, Equid
+UI  - D023141
+MN  - B4.280.382.100.900.500
+MN  - B4.909.204.382.100.900.500
+MS  - A species of VARICELLOVIRUS and the chief cause of
+      rhinopneumonitis in horses.
+AN  - infection: coord IM with HERPESVIRIDAE INFECTIONS (IM)
+HN  - 2001; use VARICELLOVIRUS 1994-2000; for EQUINE
+      RHINOPNEUMONITIS VIRUS use HERPESVIRUS 1, EQUID 1994-2000,
+      EQUINE RHINOPNEUMONITIS VIRUS 1973-1993
+BX  - Equine Herpesvirus 4
+BX  - Equine Rhinopneumonitis Virus
+
+MH  - History of Medicine, 21st Cent.
+UI  - D023541
+MN  - K1.419.552.550.510
+MS  - Events and developments in medicine during the 100 year
+      period following the 20th century.
+AN  - NIM; no qualif; check tag when not point of article; DF:
+      HIST MED 21ST CENT or 21 CENT
+HN  - 2001
+BX  - 21st Cent. History
+BX  - 21st Cent. History (Medicine)
+BX  - 21st Cent. Medicine
+BX  - Medicine, 21st Cent.
+
+MH  - Hyperammonemia
+UI  - D022124
+MN  - C18.452.413
+MS  - Metabolic disorder characterized by elevated level of
+      ammonia in blood.
+HN  - 2001
+
+MH  - Imaging, Three-Dimensional
+UI  - D021621
+MN  - E1.370.350.400
+MS  - The process of generating three-dimensional images by
+      electronic or photographic methods. For example three
+      3-dimensional images can be generated by assembling multiple
+      tomographic images with the aid of a computer, while
+      photographic 3-D images (HOLOGRAMS) can be made by exposing
+      film to the interference pattern created when two laser
+      light sources shine on an object.
+AN  - for analysis of images use IMAGE ANALYSIS, COMPUTER-ASSISTED
+BX  - Computer-Assisted Three-Dimensional Imaging
+BX  - Imaging, Three-Dimensional, Computer Assisted
+
+MH  - Isosporiasis
+UI  - D021865
+MN  - C3.752.250.410
+MS  - Infection with parasitic protozoa of the genus ISOSPORA,
+      producing intestinal disease. It is caused by ingestion of
+      oocysts and can produce tissue cysts.
+AN  - /drug ther: consider also COCCIDIOSTATS
+HN  - 2001
+
+MH  - Jaagsiekte Sheep Retrovirus
+UI  - D022141
+MN  - B4.820.650.815.450
+MS  - A type-D retrovirus that causes pulmonary adenomatosis in
+      sheep (PULMONARY ADENOMATOSIS, OVINE).
+HN  - 2001
+
+MH  - Japanese Encephalitis Vaccines
+UI  - D022321
+MN  - D24.310.894.899.320
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with Japanese B encephalitis virus (ENCEPHALITIS VIRUS,
+      JAPANESE).
+AN  - vaccines to prevent infections caused by ENCEPHALITIS VIRUS,
+      JAPANESE only, not ENCEPHALITIS VIRUSES, JAPANESE.
+HN  - 2001
+
+MH  - Lacerations
+UI  - D022125
+MN  - C21.866.540
+MS  - Torn, ragged, mangled wounds.
+HN  - 2001
+
+MH  - Ligase Chain Reaction
+UI  - D022521
+MN  - E5.393.620.311
+MS  - A DNA amplification technique based upon the ligation of
+      OLIGONUCLEOTIDE PROBES. The probes are designed to exactly
+      match two adjacent sequences of a specific target DNA. The
+      chain reaction is repeated in three steps in the presence of
+      excess probe: (1) heat denaturation of double-stranded DNA,
+      (2) annealing of probes to target DNA, and (3) joining of
+      the probes by thermostable DNA ligase. After the reaction is
+      repeated for 20-30 cycles the production of ligated probe is
+      measured.
+HN  - 2001
+FX  - Polymerase Chain Reaction
+
+MH  - Liquid Ventilation
+UI  - D021061
+MN  - E2.880.820.525
+MS  - Artificial respiration (RESPIRATION, ARTIFICIAL) using an
+      oxygenated fluid.
+AN  - /instrum: consider also VENTILATORS, MECHANICAL
+HN  - 2001
+BX  - Total Liquid Ventilation
+FX  - Fluorocarbons
+FX  - Ventilators, Mechanical
+
+MH  - Local Lymph Node Assay
+UI  - D023441
+MN  - E1.370.750.450
+MN  - E1.450.495.750.450
+MS  - The local lymph node assay (LLNA) is an alternative method
+      for the identification of chemicals that have the ability to
+      cause skin sensitization and allergic contact dermatitis.
+      Endpoints have been established so fewer animals are
+      required and less painful procedures are used.
+HN  - 2001
+
+MH  - Lyme Disease Vaccines
+UI  - D022123
+MN  - D24.310.894.135.492
+MS  - Vaccines or candidate vaccines used to prevent LYME DISEASE.
+HN  - 2001
+BX  - Vaccines, Lyme Disease
+
+MH  - Management Service Organizations
+UI  - D021661
+MN  - N4.452.758.372
+MS  - Voluntarily-formed groups of healthcare professionals who
+      join for common management servicxes and other benefits such
+      as collective bargaining agreements with reinbursement
+      agents. The physical assets of a practice are controlled by
+      the MSO which also provides billing, collections, and
+      similar services. The practitioner retains control of
+      patient records and management of patient care.
+HN  - 2001; use HOSPITAL-PHYSICIAN JOINT VENTURES 1996-2000
+
+MH  - Marek Disease Vaccines
+UI  - D022501
+MN  - D24.310.894.899.290.500
+MS  - Vaccines or candidate vaccines used to prevent MAREK
+      DISEASE, an avian disease caused by a herpesvirus.
+HN  - 2001
+
+MH  - Measles-Mumps-Rubella Vaccine
+UI  - D022542
+MN  - D24.310.894.815.500
+MN  - D24.310.894.899.390
+MN  - D24.310.894.899.404.500
+MN  - D24.310.894.899.488.500
+MN  - D24.310.894.899.779.500
+MS  - A combined vaccine used to prevent MEASLES, MUMPS, and
+      RUBELLA.
+HN  - 2001; use MEASLES-MUMPS-RUBELLA VACCINE (NM)  to search
+      MEASLES, MUMPS, RUBELLA VACCINE 1986-2000
+BX  - MMR Vaccine
+
+MH  - Membrane Microdomains
+UI  - D021962
+MN  - A11.284.149.165.570
+MS  - Detergent-insoluble CELL MEMBRANE components. They are
+      enriched in SPHINGOLIPIDS and CHOLESTEROL and clustered with
+      glycosyl-phosphatidylinositol (GPI)-anchored proteins.
+HN  - 2001
+BX  - Lipid Rafts, Cell Membrane
+
+MH  - Meningococcal Vaccines
+UI  - D022401
+MN  - D24.310.894.135.500
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with NEISSERIA MENINGITIDIS.
+HN  - 2001; use MENINGOCOCCAL VACCINES (NM) to search
+      MENINGOCOCCAL VACCINE 1983-2000
+
+MH  - Microsporidia, Unclassified
+UI  - D021861
+MN  - B1.841.500.520
+MS  - Includes newly defined organisms as well as some that will
+      never be classified to the genus and/or species level
+      because of loss of the specimen or other information.
+AN  - index here if author uses the term microsporidium or
+      "unclassifed microsporidia"; index MICROSPORIDIA see
+      MICROSPORA if author uses "microsporidia" as a general term
+      for the phylum; infection: coord IM with MICROSPORIDIOSIS
+      (IM); coord with specific protozoan term (ANTIGENS,
+      PROTOZOAN, etc) if pertinent
+HN  - 2001
+BX  - Microsporidium
+
+MH  - Microtubule-Organizing Center
+UI  - D022101
+MN  - A11.284.195.190.750.585
+MS  - An amorphous region of electron dense material in the
+      cytoplasm from which the MICROTUBULES polymerization is
+      nucleated. The pericentriolar region of the CENTROSOME which
+      surrounds the CENTRIOLES is an example.
+AN  - DF: MTOC
+HN  - 2001; use CENTROSOME 1993-2000
+
+MH  - Models, Animal
+UI  - D023421
+MN  - E5.598
+MS  - Non-human animals, selected because of specific
+      characteristics, for use in experimental research, teaching,
+      or testing.
+HN  - 2001
+BX  - Experimental Animal Models
+BX  - Laboratory Animal Models
+
+MH  - Multicystic Dysplastic Kidney
+UI  - D021782
+MN  - C4.182.394.590
+MN  - C12.740.700.629
+MN  - C12.777.419.413.400
+MN  - C13.371.820.700.558
+MN  - C16.131.939.629
+MS  - A severe form of dysplasia where the kidney typically
+      appears as a bunch of grapes without a reniform
+      configuration or calyceal drainage system. It occurs
+      in-utero and is the most common form of nongenetic renal
+      cystic disease.
+AN  - X ref MULTICYSTIC KIDNEY: do not confuse with POLYCYSTIC
+      KIDNEY DISEASES
+HN  - 2001
+
+MH  - Myeloid Cells
+UI  - D022423
+MN  - A11.118.835
+MN  - A11.148.378.590.590
+MN  - A15.145.229.698
+MN  - A15.378.316.378.590.590
+MS  - Cells which include the MONOCYTES and the GRANULOCYTES.
+HN  - 2001
+
+MH  - Myeloid Progenitor Cells
+UI  - D023461
+MN  - A11.118.835.635
+MN  - A11.148.378.590
+MN  - A11.872.378.590
+MN  - A15.145.229.698.635
+MN  - A15.378.316.378.590
+MS  - One of the two stem cells derived from HEMATOPOIETIC STEM
+      CELLS - the other being the lymphoid progenitor cell.
+      Derived from these myeloid progenitor cells are the
+      ERYTHROID PROGENITOR CELLS and the MYELOID CELLS (MONOCYTES
+      and GRANULOCYTES).
+HN  - 2001
+BX  - Stem Cells, Myeloid
+
+MH  - Nuclear Pore
+UI  - D022022
+MN  - A11.284.170.279.692.630
+MS  - An opening through the NUCLEAR ENVELOPE formed by the
+      nuclear pore complex which transports nuclear proteins or
+      RNA into or out of the CELL NUCLEUS and which, under some
+      conditions, acts as an ion channel.
+HN  - 2001; use NUCLEAR ENVELOPE 1977-2000
+
+MH  - Nuclease Protection Assays
+UI  - D023282
+MN  - E5.393.600
+MS  - Techniques for measuring specific nucleic acid interaction
+      with another nucleic acid or with a protein by digestion of
+      the non-interacting nucleic acid by various nucleases.
+      After all non-interacting regions are eliminated by nuclease
+      digestion, the protected nucleic acid that remains is
+      analyzed. DNA FOOTPRINTING utilizes this technique to
+      analyze the DNA contact sites of DNA-BINDING PROTEINS.
+HN  - 2001
+
+MH  - Nucleic Acid Amplification Techniques
+UI  - D021141
+MN  - E5.393.620
+MS  - Laboratory techniques that involve the in-vitro synthesis of
+      many copies of DNA or RNA from one orginal template.
+HN  - 2001
+BX  - DNA Amplification Techniques
+BX  - RNA Amplification Techniques
+
+MH  - Oxazolidinones
+UI  - D023303
+MN  - D3.383.548.600
+MS  - Derivatives of oxazolidin-2-one. They represent an important
+      class of synthetic antibiotic agents.
+HN  - 2001; use OXAZOLIDINONES (NM) 1995-2000
+BX  - 1,3-Oxazolidin-2-one
+BX  - Oxazolidin-2-one
+
+MH  - Palate, Hard
+UI  - D021362
+MN  - A2.835.232.781.324.502.660
+MN  - A14.521.658.660
+MN  - A14.549.617.660
+MS  - The anteriorly located rigid section of the PALATE.
+HN  - 2001; use PALATE 1998-2000
+BX  - Hard Palate
+BX  - Palatine Bone
+
+MH  - Parainfluenza Vaccines
+UI  - D022241
+MN  - D24.310.894.899.500
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with parainfluenza viruses in humans and animals.
+AN  - coord IM with specific parainfluenza virus /immunol (IM)
+HN  - 2001
+
+MH  - Parasitic Sensitivity Tests
+UI  - D021261
+MN  - E5.337.550.600
+MN  - G1.273.688.750
+MS  - Tests that demonstrate the relative effectiveness of
+      chemotherapeutic agents against specific parasites.
+AN  - IM when general; NIM with specific drug (IM) & specific
+      parasite (IM); MICROBIAL SENSITIVITY TESTS is also available
+HN  - 2001
+
+MH  - Placental Circulation
+UI  - D021041
+MN  - G9.330.163.749
+MS  - The circulation of blood, of both the mother and the fetus,
+      through the placenta.
+AN  - DF: PLACENTAL CIRC
+HN  - 2001(1995)
+BX  - Circulation, Fetoplacental
+BX  - Circulation, Placental
+BX  - Circulation, Uteroplacental
+BX  - Fetoplacental Circulation
+BX  - Uteroplacental Circulation
+
+MH  - Pleistophora
+UI  - D021864
+MN  - B1.841.500.500.500.100.650
+MS  - A genus of parasitic protozoa in the family Pleistophoridae
+      that infects humans.
+AN  - infection: coord IM with MICROSPORIDIOSIS (IM); coord with
+      specific protoxoan terms (ANTIGENS, PROTOZOAN, etc) if
+      pertinent
+HN  - 2001
+
+MH  - Pneumococcal Vaccines
+UI  - D022242
+MN  - D24.310.894.135.630
+MS  - Vaccines or candidate vaccines used to prevent infections
+      with STREPTOCOCCUS PNEUMONIAE.
+HN  - 2001; use PNEUMOCOCCAL VACCINES (NM) to search PNEUMOVAX
+      1978-2000
+BX  - Pneumococcal Polysaccharide Vaccine
+
+MH  - Poliovirus Vaccines
+UI  - D023321
+MN  - D24.310.894.899.623
+MS  - Vaccines used to prevent POLIOMYELITIS. They include
+      inactivated  (POLIOVIRUS VACCINE, INACTIVATED) and oral
+      vaccines (POLIOVIRUS VACCINE, ORAL).
+HN  - 2001
+
+MH  - Protein Footprinting
+UI  - D023302
+MN  - E5.196.700.690
+MN  - E5.393.760.705.685.690
+MS  - A method for determining points of contact between
+      interacting proteins or binding sites of proteins to nucleic
+      acids. Protein footprinting utilizes a protein cutting
+      reagent or protease. Protein cleavage is inhibited where the
+      proteins, or nucleic acids and protein, contact each other.
+      After completion of the cutting reaction, the remaining
+      peptide fragments are analyzed by electrophoresis.
+HN  - 2001
+BX  - Footprints, Protein
+
+MH  - Protein Sorting Signals
+UI  - D021382
+MN  - D12.644.770
+MN  - G5.331.599.56.670
+MN  - G6.184.599.56.670
+MS  - Amino acid sequences found in transported proteins that
+      selectively guide the distribution of the proteins to
+      specific cellular compartments.
+HN  - 2001(1986)
+BX  - Leader Signal Peptides
+FX  - Protein Transport
+FX  - Signal Recognition Particle
+
+MH  - Protein Subunits
+UI  - D021122
+MN  - D12.776.813
+MS  - Single chains of amino acids that are the units of a
+      multimeric protein. They can be identical or  non-identical
+      subunits.
+HN  - 2001
+
+MH  - Protein Transport
+UI  - D021381
+MN  - G6.535.166.700
+MS  - The process of moving proteins from one cellular compartment
+      (including extracellular) to another by various sorting and
+      transport mechanisms such as gated transport, protein
+      translocation, and  vesicular transport.
+AN  - coord NIM with specific protein/metab (IM) or /pharmacokin
+      (IM)
+HN  - 2001
+BX  - Gated Protein Transport
+BX  - Protein Translocation
+BX  - Transmembrane Protein Transport
+BX  - Vesicular Protein Transport
+
+MH  - Pseudorabies Vaccines
+UI  - D022421
+MN  - D24.310.894.899.632
+MS  - Vaccines or candidate vaccines used to prevent PSEUDORABIES
+      (Aujeszky's disease), a herpesvirus of swine and other
+      animals.
+HN  - 2001; use PSEUDORABIES VACCINES (NM) to search PSEUDORABIES
+      VACCINE 1992-2000
+
+MH  - Quantitative Structure-Activity Relationship
+UI  - D021281
+MN  - G6.184.872.500
+MN  - G12.869.500
+MN  - H1.181.122.768.500
+MN  - H1.181.466.685.500
+MS  - A quantitative prediction of the biological,
+      ecotoxicological or pharmaceutical activity of a molecule.
+      It is based upon structure and activity information gathered
+      from a series of similar compounds.
+AN  - DF:QSAR
+HN  - 2001
+BX  - Structure Activity Relationship, Quantitiative
+
+MH  - Radiation Hybrid Mapping
+UI  - D021101
+MN  - E5.393.183.620.405
+MS  - A method for ordering genetic loci along CHROMOSOMES. The
+      method involves fusing irradiated donor cells with host
+      cells from another species. Following cell fusion, fragments
+      of DNA from the irradiated cells become integrated into the
+      chromosomes of the host cells.  Molecular probing of DNA
+      obtained from the fused cells is used to determine if two or
+      more genetic loci are located within the same fragment of
+      donor cell DNA.
+HN  - 2001
+BX  - Radiation Hybrid Maps
+BX  - Radiation Hybrids
+
+MH  - Receptors, Adrenergic, beta-3
+UI  - D022702
+MN  - D12.776.543.750.600.300.300.340.900
+MN  - D12.776.543.750.720.300.300.300.400
+MS  - A subclass of beta-adrenergic receptors (RECEPTORS,
+      ADRENERGIC, BETA). beta-3 Adrenergic receptors are the
+      predominant beta-adrenergic receptor type expressed in white
+      and brown ADIPOCYTES and are involved in modulating ENERGY
+      METABOLISM and THERMOGENESIS.
+AN  - DF: RECEPT ADREN BETA 3
+HN  - 2001; use RECEPTORS, ADRENERGIC, BETA-3 (NM) 1977-2000
+BX  - Adrenergic beta-3 Receptors
+BX  - Receptors, beta-3 Adrenergic
+BX  - beta-3 Adrenergic Receptors
+
+MH  - Receptors, Interleukin-8A
+UI  - D023062
+MN  - D12.776.543.750.705.852.125.825
+MN  - D24.185.101.100.110.782
+MN  - D24.611.216.301.264.35.782
+MN  - D24.611.834.852.125.825
+MS  - High-affinity receptors for INTERLEUKIN-8 present on
+      neutrophils, monocytes, and basophils.
+AN  - DF: IL8RA
+HN  - 2001; use RECEPTORS, INTERLEUKIN-8A (NM) to search
+      INTERLEUKIN 8 RECEPTOR 1989-2000
+BX  - Antigens, CDw128a
+BX  - CDw128a Antigens
+BX  - CXCR1 Protein
+BX  - CXCR1 Receptors
+BX  - IL-8A Receptors
+BX  - Interleukin-8A Receptors
+BX  - Receptors, CXCR1
+
+MH  - Receptors, Interleukin-8B
+UI  - D023063
+MN  - D12.776.543.750.705.852.420.426
+MS  - Low-affinity receptors for INTERLEUKIN-8 present on
+      neutrophils, monocytes, basophils, and T-cells. These
+      receptors also bind GRO and NAP-2.
+AN  - DF: IL8RB
+HN  - 2001; use RECEPTORS, INTERLEUKIN-8B (NM) to search
+      INTERLEUKIN-8 RECEPTOR TYPE B 1994-2000
+BX  - Antigens, CDw128b
+BX  - CDw128b Antigens
+BX  - CXCR2 Protein
+BX  - CXCR2 Receptors
+BX  - Interleukin-8B Receptors
+BX  - Receptors, CXCR2
+
+MH  - Recognition (Psychology)
+UI  - D021641
+MN  - F2.463.425.540.706
+MS  - The knowledge or perception that someone or something
+      present has been previously encountered.
+HN  - 2001; use MEMORY 1998-2000
+BX  - Familiarity
+
+MH  - Respiratory Syncytial Virus Vaccines
+UI  - D022261
+MN  - D24.310.894.899.730
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with RESPIRATORY SYNCYTIAL VIRUSES.
+HN  - 2001
+BX  - RSV Vaccines
+
+MH  - Ribotyping
+UI  - D021521
+MN  - E5.200.875.150.125.765
+MN  - E5.393.290.765
+MS  - RESTRICTION FRAGMENT LENGTH POLYMORPHISM analysis of rRNA
+      genes that is used for differentiating between species or
+      strains.
+HN  - 2001
+
+MH  - RNA Splice Sites
+UI  - D022821
+MN  - D13.444.735.544.520
+MN  - G5.331.599.110.805
+MN  - G6.184.599.110.805
+MS  - Nucleotide sequences located at the ends of exons and
+      recognized in pre-messenger RNA by the SPLICESOME. They are
+      joined during the RNA SPLICING reaction, forming the
+      junctions between exons.
+HN  - 2001
+BX  - Splice Acceptor Site
+BX  - Splice Donor Site
+
+MH  - RNA, Messenger, Stored
+UI  - D023121
+MN  - D13.444.735.544.527
+MS  - Messenger RNA that is stored in a masked state for
+      translation at a later time. Distinguish from RNA,
+      UNTRANSLATED which refers to non-messenger RNA, i.e. RNA
+      that does not code for protein.
+AN  - do not confuse with RNA, UNTRANSLATED; DF: STORED MRNA
+HN  - 2001
+BX  - Masked Messenger RNA
+BX  - Maternal Messenger RNA
+BX  - Paternal Messenger RNA
+BX  - RNA, Messenger, Masked
+BX  - RNA, Messenger, Maternal
+BX  - RNA, Messenger, Paternal
+BX  - Stored Messenger RNA
+
+MH  - RNA, Untranslated
+UI  - D022661
+MN  - D13.444.735.790
+MS  - RNA which does not code for protein but has some enzymatic,
+      structural or regulatory function. Although ribosomal RNA
+      (RNA, RIBOSOMAL) and transfer RNA (RNA, TRANSFER) are also
+      untranslated they are not included here.
+AN  - GEN: prefer specifics; do not confuse with RNA, MESSENGER,
+      STORED
+HN  - 2001
+
+MH  - Rotavirus Vaccines
+UI  - D022243
+MN  - D24.310.894.899.760
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with ROTAVIRUS.
+HN  - 2001
+
+MH  - Safe Sex
+UI  - D021841
+MN  - F1.145.792.845
+MS  - Sex behavior that prevents or decreases the spread of
+      sexually transmitted diseases or pregnancy.
+HN  - 2001
+BX  - Protected Sex
+BX  - Responsible Sex
+FX  - Sex Education
+
+MH  - Salmonella Vaccines
+UI  - D022562
+MN  - D24.310.894.135.685
+MS  - Vaccines or candidate vaccines used to prevent infection
+      with SALMONELLA. This includes vaccines used to prevent
+      TYPHOID FEVER or PARATYPHOID FEVER (TYPHOID-PARATYPHOID
+      VACCINES), and vaccines used to prevent nontyphoid
+      salmonellosis.
+AN  - coord IM with specific Salmonella species /immunol (IM) but
+      note TYPHOID-PARATYPHOID VACCINES is also available
+HN  - 2001
+BX  - Vaccines, Salmonella
+
+MH  - Sarcocystidae
+UI  - D021745
+MN  - B1.841.75.189.250.750
+MS  - A family of parasitic PROTOZOA in the order EIMERIIDAE. They
+      form tissue-cysts in their intermediate hosts, ultimately
+      leading to pathogenesis in the final hosts that includes
+      various mammals (including humans) and birds. The most
+      important genera include NEOSPORA, SARCOCYSTIS, and
+      TOXOPLASMA.
+AN  - infection: coord IM with COCCIDIOSIS (IM); drug eff:
+      consider COCCIDIOSTATS; coord with specific protozoan terms
+      (ANTIGENS, PROTOZOAN, etc) if pertinent
+HN  - 2001; for BESNOITIA use EIMERIIDA 1992-2000
+
+MH  - Scaphoid Bone
+UI  - D021361
+MN  - A2.835.232.87.144.650
+MS  - The bone which is located most lateral in the proximal row
+      of CARPAL BONES.
+HN  - 2001
+BX  - Navicular Bone of Hand
+
+MH  - Scedosporium
+UI  - D021681
+MN  - B5.354.381.785
+MS  - A mitosporic fungal genus previously called Monosporium.
+      Teleomorphs include PSEUDALLESCHERIA.
+AN  - infection: coord IM with probably MADUROMYCOSIS (IM) or
+      other mycosis (IM)
+HN  - 2001
+
+MH  - Sea Bream
+UI  - D021541
+MN  - B2.493.602.650
+MS  - A species of PERCIFORMES commonly used in saline
+      aquaculture.
+HN  - 2001
+BX  - Sparus aurata
+
+MH  - Secretory Vesicles
+UI  - D022142
+MN  - A11.284.195.190.875.190.880.810
+MS  - Vesicles derived from the GOLGI APPARATUS containing
+      material to be released at the cell surface.
+AN  - for zymogen granules coord with ENZYME PRECURSORS + specific
+      enzyme
+HN  - 2001; use CYTOPLASMIC GRANULES 1980-2000
+BX  - Secretory Granules
+BX  - Zymogen Granules
+
+MH  - Self-Sustained Sequence Replication
+UI  - D021161
+MN  - E5.393.620.374
+MS  - An isothermal in-vitro nucleotide amplification process. The
+      process involves the concomitant action of a RNA-DIRECTED
+      DNA POLYMERASE, a ribonuclease (RIBONUCLEASES), and a
+      DNA-DIRECTED RNA POLYMERASE to synthesize large quantities
+      of sequence-specific RNA and DNA molecules.
+AN  - DF:NASBA
+HN  - 2001
+BX  - Nucleic Acid Sequence-Based Amplification
+
+MH  - Sentinel Lymph Node Biopsy
+UI  - D021701
+MN  - E1.370.388.100.580
+MN  - E1.450.230.100.580
+MN  - E1.450.865.100.580
+MN  - E4.74.580
+MN  - E4.446.819
+MS  - A diagnostic procedure used to determine whether LYMPHATIC
+      METASTASIS has occurred. The sentinel lymph node is the
+      first lymph node to receive drainage from a neoplasm.
+HN  - 2001
+BX  - Biopsy, Sentinel Lymph Node
+BX  - Lymph Node Biopsy, Sentinel
+FX  - Lymphatic Metastasis
+
+MH  - Shiga Toxin
+UI  - D022621
+MN  - D24.185.926.123.794.500
+MN  - D24.185.926.330.575.500
+MS  - A toxin produced by SHIGELLA DYSENTERIAE. It is the protype
+      of class of toxins that inhibit protein synthesis by
+      blocking the interaction of ribosomal RNA (RNA, RIBOSOMAL)
+      with PEPTIDE ELONGATION FACTORS.
+AN  - SHIGA TOXINS is available
+HN  - 2001; use SHIGA TOXINS (NM) 1980-2000
+BX  - Stx Protein, Shigella dysenteria
+FX  - Shigella dysenteriae
+
+MH  - Shiga Toxins
+UI  - D022603
+MN  - D24.185.926.123.794
+MN  - D24.185.926.330.575
+MS  - A class of toxins that inhibit protein synthesis by blocking
+      the interaction of ribosomal RNA (RNA, RIBOSOMAL) with
+      PEPTIDE ELONGATION FACTORS. They include SHIGA TOXIN which
+      is produced by SHIGELLA DYSENTERIAE and a variety of
+      shiga-like toxins that are produced by pathologic strains of
+      ESCHERICHIA COLI such as ESCHERICHIA COLI O157.
+AN  - SHIGA TOXIN is also available
+HN  - 2001; for VERO CYTOTOXIN, VERO CELL CYTOTOXIN, VERO TOXIN &
+      VERO TOXIN use SHIGA-LIKE TOXIN I (NM) 1980-2000
+BX  - Vero Toxin
+BX  - Vero Toxins
+FX  - Dysentery
+
+MH  - Shiga-Like Toxin I
+UI  - D022622
+MN  - D24.185.926.123.794.100
+MN  - D24.185.926.330.575.249
+MS  - A toxin produced by certain pathogenic strains of
+      ESCHERICHIA COLI such as ESCHERICHIA COLI O157. It is
+      closely related to SHIGA TOXIN produced by SHIGELLA
+      DYSENTERIAE.
+HN  - 2001; use SHIGA-LIKE TOXIN I (NM) 1984-2000; for SHIGA TOXIN
+      1 & STX1 PROTEIN use SHIGA TOXIN (NM) 1997-2000
+FX  - Escherichia coli O157
+
+MH  - Shiga-Like Toxin II
+UI  - D022641
+MN  - D24.185.926.123.794.124
+MN  - D24.185.926.330.575.124
+MS  - A toxin produced by certain pathogenic strains of
+      ESCHERICHIA COLI such as ESCHERICHIA COLI O157. It is shares
+      50-60% homology with SHIGA TOXIN and SHIGA-LIKE TOXIN I.
+HN  - 2001; use SHIGA-LIKE TOXIN II (NM) 1988-2000; for SHIGA
+      TOXIN 2 & STX2 PROTEIN use SHIGA TOXIN (NM) 1997-2000
+
+MH  - Shigella Vaccines
+UI  - D022281
+MN  - D24.310.894.135.720
+MS  - Vaccines or candidate vaccines used to prevent bacillary
+      dysentery (DYSENTERY, BACILLARY) caused by species of
+      SHIGELLA.
+AN  - coord IM with specific Shigella species /immunol (IM)
+HN  - 2001
+FX  - Shigella dysenteriae
+
+MH  - Skin Irritancy Tests
+UI  - D023422
+MN  - E5.940.74.500
+MS  - Tests or bioassays that measure the skin sensitization
+      potential of various chemicals.
+HN  - 2001
+
+MH  - Spectrometry, Mass, Electrospray Ionization
+UI  - D021241
+MN  - E5.196.867.877.600
+MS  - A mass spectrometry technique used for analysis of
+      nonvolatile compounds such as proteins and macromolecules.
+      The technique involves preparing electrically charged
+      droplets from analyte molecules dissolved in solvent. The
+      electrically charged droplets enter a vacuum chamber where
+      the solvent is evaporated. Evaporation of solvent reduces
+      the droplet size, thereby increasing the coulombic repulsion
+      within the droplet. As the charged droplets get smaller, the
+      excess charge within them causes them to disintegrate and
+      release analyte molecules. The volatilized analyte molecules
+      are then analyzed by mass spectrometry.
+HN  - 2001
+BX  - ESI Mass Spectrometry
+BX  - Electrospray Ionization Mass Spectrometry
+
+MH  - Streptococcal Vaccines
+UI  - D022541
+MN  - D24.310.894.135.750
+MS  - Vaccines or candidate vaccines used to prevent STREPTOCOCCAL
+      INFECTIONS.
+AN  - coord IM with specific Streptococcus species /immunol (IM)
+HN  - 2001
+
+MH  - Stress Fibers
+UI  - D022502
+MN  - A11.284.195.190.750.510.830
+MS  - Bundles of actin filaments (MICROFILAMENTS) and myosin-II
+      that span across the cell attaching to the cell membrane at
+      FOCAL ADHESIONS and to the network of INTERMEDIATE FILAMENTS
+      that surrounds the nucleus.
+HN  - 2001
+
+MH  - Tacrolimus Binding Protein 1A
+UI  - D022061
+MN  - D8.586.399.325.500.400.700.500
+MN  - D12.776.543.750.705.400.700.500
+MN  - D12.776.827.275.700.500
+MN  - D24.611.834.400.700.500
+MS  - A 12 KD tacrolimus binding protein that is found associated
+      with and may modulate the function of calcium release
+      channels. It is a peptidyl-prolyl cis/trans isomerase which
+      is inhibtied by both tacrolimus (commonly called FK506) and
+      SIROLIMUS. EC 5.2.1.-
+HN  - 2001; use TACROLIMUS BINDING PROTEINS (NM) 1991-2000
+BX  - FK506-Binding Protein 1A
+BX  - FKBP12
+
+MH  - Tacrolimus Binding Proteins
+UI  - D022021
+MN  - D8.586.399.325.500.400.700
+MN  - D12.776.543.750.705.400.700
+MN  - D12.776.827.275.700
+MN  - D24.611.834.400.700
+MS  - A family of immunophilin proteins that bind to the
+      immunosuppressive drugs TACROLIMUS (also known as FK506) and
+      SIROLIMUS. EC 5.2.1.-
+HN  - 2001; use TACROLIMUS BINDING PROTEINS (NM) 1991-2000
+BX  - FK506 Binding Protein
+BX  - FK506 Binding Proteins
+BX  - Rapamycin Binding Proteins
+
+MH  - Terrorism
+UI  - D023481
+MN  - I1.198.240.856.800
+MN  - I1.880.735.900.800
+MS  - The use of force or VIOLENCE against persons or property in
+      violation of criminal laws for purposes of intimidation,
+      coercion, or ransom.
+HN  - 2001; use VIOLENCE 1981-2000
+
+MH  - Textbooks [Publication Type]
+UI  - D022923
+MS  - Books intended for use in the study of specific subjects,
+      containing systematic presentation of the principles and
+      essential knowledge of the subjects.
+AN  - used by special data producers only
+HN  - 2000
+
+MH  - Thermogenesis
+UI  - D022722
+MN  - G7.315.232.778
+MN  - G7.621.265.500
+MS  - The generation of heat in order to maintain body
+      temperature. The uncoupled oxidation of fatty acids
+      contained within brown adipose tissue and SHIVERING are
+      examples of thermogenesis in MAMMALS.
+HN  - 2001; for HEAT PRODUCTION use BODY TEMPERATURE REGULATION
+      1975-2000
+BX  - Heat Production
+
+MH  - trans-Golgi Network
+UI  - D021601
+MN  - A11.284.195.190.875.336.850
+MS  - A network of membrane compartments, located at the
+      cytoplasmic side of the GOLGI APPARATUS, where proteins and
+      lipids are sorted for transport to various locations in the
+      cell or cell membrane.
+HN  - 2001
+BX  - trans-Golgi Region
+
+MH  - Transfusion-Transmitted Virus
+UI  - D022783
+MN  - B4.280.910
+MN  - B4.909.204.910
+MN  - B4.970.910
+MS  - An unclassified, non-enveloped DNA virus associated with
+      transfusions and hepatitis. However, no etiological role has
+      been found for TTV in hepatitis, and evidence suggests it is
+      not a HEPATOVIRUS.
+AN  - a specific virus, not any virus transmitted by transfusion;
+      infection: coord IM with DNA VIRUS INFECTIONS (IM)
+HN  - 2001
+BX  - TT Virus
+
+MH  - Transplantation Tolerance
+UI  - D023001
+MN  - G4.610.484.955
+MS  - An induced state of non-reactivity to grafted tissue from a
+      donor organism that would ordinarily trigger a cell-mediated
+      or humoral immune response.
+HN  - 2001
+BX  - Graft Tolerance
+FX  - Graft Survival
+
+MH  - Transport Vesicles
+UI  - D022161
+MN  - A11.284.195.190.875.190.880
+MS  - Vesicles that are involved in shuttling cargo from the
+      interior of the cell to the cell surface, from the cell
+      surface to the interior, across the cell or around the cell
+      to various locations.
+HN  - 2001
+BX  - Endocytic Vesicles
+FX  - Biological Transport
+
+MH  - Trihalomethanes
+UI  - D022882
+MN  - D2.455.526.913
+MS  - Methanes substituted with three halogen atoms, which may be
+      the same or different.
+HN  - 2001; use CHLOROFLUOROCARBONS, METHANE 1984-2000
+
+MH  - Unpublished Works [Publication Type]
+UI  - D022902
+MS  - Works that have not been formally published.
+AN  - used by special data producers only
+HN  - 2000
+BX  - Unpublished Documents [Publication Type]
+
+MH  - Vaccines, Acellular
+UI  - D022282
+MN  - D24.310.894.860.900
+MS  - Vaccines that are produced by using only the antigenic part
+      of the disease causing organism. They often require a
+      "booster" every few years to maintain their effectiveness.
+AN  - IM general only; coord NIM with specific vaccine (IM)
+HN  - 2001
+
+MH  - Vaccines, Contraceptive
+UI  - D022642
+MN  - D24.310.894.818
+MS  - Vaccines or candidate vaccines used to prevent conception.
+HN  - 2001; use CONTRACEPTION, IMMUNOLOGIC (1996-2000)
+BX  - Contraceptive Vaccines
+FX  - Contraception, Immunologic
+
+MH  - Vaccines, Edible
+UI  - D022462
+MN  - D12.776.828.868.915
+MN  - D24.310.894.860.915
+MN  - D24.310.894.865.915
+MN  - D24.611.216.865.915
+MS  - Vaccines or candidate vaccines derived from edible plants.
+      Transgenic plants (PLANTS, TRANSGENIC) are used as
+      recombinant protein production systems and the edible plant
+      tissue functions as an oral vaccine.
+AN  - IM general only; coord NIM with specific vaccine (IM)
+HN  - 2001
+FX  - Plants, Transgenic
+
+MH  - Vaccines, Marker
+UI  - D022581
+MN  - D24.310.894.845
+MS  - Vaccines used in conjunction with diagnostic tests to
+      differentiate vaccinated animals from carrier animals.
+      Marker vaccines can be either a subunit or a gene-deleted
+      vaccine.
+AN  - IM general only; coord NIM with specific vaccine (IM)
+HN  - 2001
+BX  - Marker Vaccines
+
+MH  - Vaccines, Subunit
+UI  - D022223
+MN  - D24.310.894.860
+MS  - Vaccines consisting of one or more antigens that stimulate a
+      strong immune response. They are purified from
+      microorganisms or produced by recombinant DNA techniques, or
+      they can be chemically synthesized peptides.
+AN  - IM general only; coord NIM with specific vaccine (IM)
+HN  - 2001
+BX  - Peptide Vaccines
+BX  - Vaccines, Peptide
+
+MH  - Vaccines, Virosome
+UI  - D022721
+MN  - D12.776.828.868.940
+MN  - D24.310.894.865.940
+MN  - D24.611.216.865.940
+MS  - Vaccines using VIROSOMES as the antigen delivery system that
+      stimulates the desired immune response.
+AN  - IM general only; coord NIM with specific vaccine (IM)
+HN  - 2001
+FX  - Virosomes
+
+MH  - Validation Studies [Publication Type]
+UI  - D023361
+MS  - The processes by which the reliability and relevance of a
+      procedure for a specific purpose are established.
+HN  - 2001
+FX  - Clinical Trial [Publication Type]
+
+MH  - Virosomes
+UI  - D022701
+MN  - D26.664.255.260.900
+MN  - D27.720.280.260.900
+MN  - H1.181.529.530.900
+MS  - Semi-synthetic complex derived from nucleic-acid free viral
+      particles. They are essentially reconstituted viral coats,
+      where the infectious nucleocapsid is replaced by a compound
+      of choice. Virosomes retain their fusogenic activity and
+      thus deliver the incorporated compound (antigens, drugs,
+      genes) inside the target cell. They can be used for vaccines
+      (VACCINES, VIROSOME), drug delivery, or gene transfer.
+AN  - when used as a vehicle in drug ther, index specific drug
+      /admin (IM) + VIROSOMES (NIM without qualif)
+HN  - 2001
+FX  - Vaccines, Virosome
+
+MH  - Vittaforma
+UI  - D021863
+MN  - B1.841.500.500.500.100.900
+MS  - A genus of parasitic protozoa in the family nosematidae that
+      infects humans. Vittaforma corneae has been isolated from
+      AIDS patients.
+AN  - infection: coord IM with MICROSPORIDIOSIS (IM); coord with
+      specific protozoan terms (ANTIGENS, PROTOZOAN, etc) if
+      pertinent
+HN  - 2001
+BX  - Nosema corneum
+
+MH  - Xenograft Model Antitumor Assays
+UI  - D023041
+MN  - E5.337.550.200.900
+MN  - E5.624.850
+MS  - In vivo methods of screening investigative anticancer drugs,
+      biologic response modifiers or radiotherapies. Human tumor
+      tissue or cells are transplanted into mice or rats followed
+      by tumor treatment regimens. A variety of outcomes are
+      monitored to assess antitumor effectivness.
+HN  - 2001; for TUMOR XENOGRAFT ASSAY use SUBRENAL CAPSULE ASSAY
+      (1988-2000)
+BX  - Tumor Xenograft Assay
+BX  - Xenograft Antitumor Assays
+
+MH  - Yellow Fever Vaccine
+UI  - D022341
+MN  - D24.310.894.899.970
+MS  - Vaccine used to prevent YELLOW FEVER. It consists of a live
+      attenuated 17D strain of the YELLOW FEVER VIRUS.
+HN  - 2001
+
+MH  - Zygapophyseal Joint
+UI  - D021801
+MN  - A2.835.583.979
+MS  - The joint that occurs between facets of the interior and
+      superior articular processes of adjacent vertebra.
+HN  - 2001
+BX  - Facet Joint

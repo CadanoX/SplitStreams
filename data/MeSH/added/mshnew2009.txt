@@ -1,0 +1,4475 @@
+NEW (2009) MESH HEADINGS WITH SCOPE NOTES (UNIT RECORD FORMAT; 10/20/2008)
+
+TOTAL 2009 NEW DESCRIPTORS =  446
+
+
+MH  - 2S Albumins, Plant
+UI  - D055516
+MN  - D12.776.765.725.249
+MS  - A major class of water-soluble seed storage proteins. Many proteins
+      from this class are major PLANT ALLERGENS.
+HN  - 2009
+
+MH  - Ablation Techniques
+UI  - D055011
+MN  - E4.14
+MS  - Removal of tissue by vaporization, abrasion, or destruction. Methods
+      used include heating tissue by hot liquids or microwave thermal
+      heating, freezing (CRYOABLATION), chemical ablation, and photoablation
+      with LASERS.
+AN  - coordinate with organ or disease /surg
+HN  - 2009
+
+MH  - Acid Ceramidase
+UI  - D055573
+MN  - D8.811.277.87.250.100
+MS  - A ceramidase subtype that is active at acid pH. It plays an important
+      role in sphingolipid degradation by catalyzing the lysosomal
+      hydrolysis of ceramide to sphingosine and free fatty acid. Inherited
+      deficiency of acid ceramidase activity results in FARBER
+      LIPOGRANULOMATOSIS.
+HN  - 2009(1982); use GALACTOSYLGALACTOSYLGLUCOSYLCERAMIDASE 1983-2008
+
+MH  - Acrocallosal Syndrome
+UI  - D055673
+MN  - C10.500.70
+MN  - C16.131.666.70
+MS  - A condition caused by autosomal recessive gene mutations leading to
+      hypogenesis or absence (agenesis) or of CORPUS CALLOSUM, the band of
+      nerve fibers joining the two CEREBRAL HEMISPHERES. Clinical features
+      include MENTAL RETARDATION; CRANIOFACIAL ABNORMALITIES; digital
+      malformations, and growth retardation.
+HN  - 2009
+BX  - Corpus Callosum Agenesis
+
+MH  - Acute Lung Injury
+UI  - D055371
+MN  - C8.381.520.500
+MS  - A condition of lung damage that is characterized by bilateral
+      pulmonary infiltrates (PULMONARY EDEMA) rich in NEUTROPHILS, and in
+      the absence of clinical HEART FAILURE. This can represent a spectrum
+      of pulmonary lesions, endothelial and epithelial, due to numerous
+      factors (physical, chemical, or biological).
+HN  - 2009; use RESPIRATORY DISTRESS SYNDROME, ADULT 1994-2008
+BX  - Lung Injury, Acute
+
+MH  - Adenomyoepithelioma
+UI  - D055331
+MN  - C4.557.435.108
+MS  - A mixed epithelial and myoepithelial neoplasm usually encountered
+      within the breast. It is a multinodular lesion presenting with a
+      bicellular pattern of proliferating epithelial and myoepithelial
+      cells, which are regularly distributed in the glandular structures.
+HN  - 2009
+
+MH  - Afghan Campaign 2001-
+UI  - D055826
+MN  - K1.400.504.984.124
+MS  - Multinational coalition military operation initiated in October 2001
+      to counter terrorism and bring security to AFGHANISTAN in
+      collaboration with Afghan forces.
+HN  - 2009
+
+MH  - Agrocybe
+UI  - D055362
+MN  - B5.179.100.107
+MS  - A genus of saprobic mushrooms in the family Bolbitiaceae that grow in
+      grass, dung, garden mulch, or in woods.
+HN  - 2009
+
+MH  - Alkaline Ceramidase
+UI  - D055574
+MN  - D8.811.277.87.250.300
+MS  - A ceramidase subtype that is active at alkaline pH. It is found at
+      high levels within the SMALL INTESTINE.
+HN  - 2009(2007); for ALKALINE CERAMIDASE use CERAMIDASES 2007-2008
+
+MH  - Allomyces
+UI  - D055134
+MN  - B5.230.74
+MS  - A genus of aquatic fungi in the phylum BLASTOCLADIOMYCOTA. It is
+      abundant in warmer climates and exhibits true alternation of
+      generations.
+HN  - 2009
+
+MH  - alpha-Globins
+UI  - D055542
+MN  - D12.776.124.400.434.320
+MN  - D12.776.422.316.762.403.320
+MS  - Members of the alpha-globin family. In humans, they are encoded in a
+      gene cluster on CHROMSOME 16. They include zeta-globin and
+      alpha-globin. There are also pseudogenes of zeta (theta-zeta) and
+      alpha (theta-alpha) in the cluster. Adult HEMOGLOBIN is comprised of 2
+      alpha-globin chains and 2 beta-globin chains.
+HN  - 2009
+BX  - alpha-Globin
+
+MH  - AMP-Activated Protein Kinases
+UI  - D055372
+MN  - D8.811.913.696.620.682.700.85
+MN  - D12.644.360.62
+MN  - D12.776.476.62
+MS  - Intracellular signaling protein kinases that play a signaling role in
+      the regulation of cellular energy metabolism. Their activity largely
+      depends upon the concentration of cellular AMP which is increased
+      under conditions of low energy or metabolic stress. AMP-activated
+      protein kinases modify enzymes involved in LIPID METABOLISM, which in
+      turn provide substrates needed to convert AMP into ATP.
+HN  - 2009(1980)
+
+MH  - Ankle Brachial Index
+UI  - D055109
+MN  - E1.370.370.140.49
+MS  - Comparison of the BLOOD PRESSURE between the BRACHIAL ARTERY and the
+      POSTERIOR TIBIAL ARTERY. It is a predictor of PERIPHERAL ARTERIAL
+      DISEASE.
+HN  - 2009
+
+MH  - Anthracosis
+UI  - D055008
+MN  - C8.381.483.581.62
+MN  - C8.381.520.702.62
+MS  - A diffuse parenchymal lung disease caused by accumulation of inhaled
+      CARBON or coal dust. The disease can progress from asymptomatic
+      anthracosis to massive lung fibrosis. This lung lesion usually occurs
+      in coal miners, but can be seen in urban dwellers and tobacco smokers.
+HN  - 2009; use PNEUMOCONIOSIS 2008
+BX  - Black Lung Disease
+BX  - Coal Worker's Pneumoconiosis
+
+MH  - Antibodies, Immobilized
+UI  - D055910
+MN  - D12.776.124.486.485.114.207
+MN  - D12.776.124.790.651.114.207
+MN  - D12.776.377.715.548.114.207
+MN  - D12.776.463.250
+MS  - Antibodies that are chemically bound to a substrate material which
+      renders their location fixed.
+HN  - 2009
+BX  - Immobilized Antibodies
+
+MH  - Antigens, CD1d
+UI  - D055610
+MN  - D23.50.301.264.35.100.500
+MN  - D23.50.301.264.894.80.500
+MN  - D23.101.100.110.100.500
+MN  - D23.101.100.894.80.500
+MS  - A major histocompatibily complex class I-like protein that plays a
+      unique role in the presentation of lipid ANTIGENS to NATURAL KILLER
+      T-CELLS.
+HN  - 2009(1999)
+
+MH  - Antistatic Agents
+UI  - D055359
+MN  - D27.720.66
+MS  - Chemical compounds applied to materials to reduce their retention of
+      an electrostatic charge.
+HN  - 2009
+
+MH  - Antley-Bixler Syndrome Phenotype
+UI  - D054882
+MN  - C5.116.99.370.894.115
+MN  - C5.660.906.181
+MN  - C16.131.621.906.181
+MN  - C16.320.565.925.324
+MN  - C18.452.648.925.324
+MS  - An inherited condition characterized by multiple malformations of
+      CARTILAGE and bone including CRANIOSYNOSTOSIS; midface hypoplasia;
+      radiohumeral SYNOSTOSIS; CHOANAL ATRESIA; femoral bowing; neonatal
+      fractures; and multiple joint CONTRACTURES and, occasionally,
+      urogenital, gastrointestinal or cardiac defects. In utero exposure to
+      FLUCONAZOLE, as well as mutations in at least two separate genes are
+      associated with this condition - POR (encoding P450 (cytochrome)
+      oxidoreductase (NADPH-FERRIHEMOPROTEIN REDUCTASE)) and FGFR2 (encoding
+      FIBROBLAST GROWTH FACTOR RECEPTOR 2).
+HN  - 2009
+BX  - Antley-Bixler Syndrome with Disordered Steroidogenesis
+BX  - Antley-Bixler Syndrome, Autosomal Dominant
+
+MH  - Antrodia
+UI  - D055491
+MN  - B5.179.120.174.70
+MS  - A genus of brown-rot fungi in the family Coriolaceae. The biologically
+      active ingredients of its species have potential pharmaceutical value.
+HN  - 2009; use POLYPORALES 2006-2008
+
+MH  - Arcanobacterium
+UI  - D055667
+MN  - B3.510.24.49.50.287
+MN  - B3.510.460.400.400.49.49.200
+MS  - A genus of facultatively anaerobic, gram-positive bacteria in the
+      family ACTINOMYCETACEAE, order ACTINOMYCETALES. They are obligate
+      parasites of the PHARYNX in humans and farm animals.
+AN  - infection: coordinate IM with ACTINOMYCETALES INFECTIONS (IM)
+HN  - 2009
+
+MH  - Armillaria
+UI  - D055392
+MN  - B5.179.100.125
+MS  - A genus of root and butt rot fungi in the family Tricholomataceae that
+      produce rhizomorphs and are facultatively parasitic. Many species are
+      pathogenic to trees causing Armillaria root disease.
+HN  - 2009
+
+MH  - Aspartylglucosaminuria
+UI  - D054880
+MN  - C16.320.565.595.100
+MN  - C18.452.648.595.100
+MS  - A recessively inherited, progressive lysosomal storage disease caused
+      by a deficiency of GLYCOSYLASPARAGINASE activity. The lack of this
+      enzyme activity results in the accumulation of
+      N-acetylglucosaminylasparagine (the linkage unit of asparagine-linked
+      glycoproteins) in LYSOSOMES.
+HN  - 2009
+
+MH  - Astronomical Objects
+UI  - D055587
+MN  - G1.60.249
+MS  - Aggregates of matter in outer space.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Astronomical Phenomena
+UI  - D055580
+MN  - G1.60
+MS  - Aggregates of matter in outer space, such as stars, planets, comets,
+      etc. and the properties and processes they undergo.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Astronomical Processes
+UI  - D055588
+MN  - G1.60.374
+MN  - G1.595.60
+MS  - The behavior and interactions of matter and energy in outer space.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Athletic Tape
+UI  - D055052
+MN  - E7.101.36
+MN  - E7.858.442.743.159
+MS  - Adhesive tape with the mechanical strength to resist stretching. It is
+      applied to the skin to support, stabilize, and restrict movement to
+      aid healing and/or prevent injuries of MUSCULOSKELETAL SYSTEM.
+HN  - 2009
+
+MH  - Auriculotherapy
+UI  - D055097
+MN  - E2.190.204
+MS  - Treatment of pain, drug addictions, or other ailments by stimulating
+      the various points on the external ear (EAR AURICLES). It is based on
+      the ancient Chinese practices of EAR ACUPUNCTURE, but sometimes
+      magnets and other modes of stimulation are used.
+AN  - AURICULAR ACUPUNCTURE see ACUPUNCTURE, EAR is also available
+HN  - 2009
+
+MH  - Autovaccines
+UI  - D054991
+MN  - D20.215.894.135.98
+MS  - Bacterial vaccines prepared from non-pathogenic, autologous bacteria
+      of human origin. In Eastern Europe they are used in humans to treat
+      chronic inflammatory disorders that are resistant to standard
+      treatments. Worldwide they have veterinary use in all types of
+      infectious disease.
+HN  - 2009
+BX  - Autogenous Vaccines
+
+MH  - Avalanches
+UI  - D055875
+MN  - G1.311.340.111
+MN  - G1.595.340.111
+MS  - Mass of snow and/or ice falling down a mountain or incline.
+AN  - coordinate with DISASTERS if pertinent; specify geographic location
+HN  - 2009
+BX  - Avalanche
+
+MH  - Bacterial Processes
+UI  - D055683
+MN  - G6.99.112
+MN  - G6.590.110
+MS  - The functions, behavior, and activities of bacteria.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - beta-Globins
+UI  - D055544
+MN  - D12.776.124.400.434.325
+MN  - D12.776.422.316.762.403.325
+MS  - Members of the beta-globin family. In humans, they are encoded in a
+      gene cluster on CHROMSOME 11. They include epsilon-globin,
+      gamma-globin, delta-globin and beta-globin. There is also a pseudogene
+      of beta (theta-beta) in the gene cluster. Adult HEMOGLOBIN is
+      comprised of two ALPHA-GLOBIN chains and two beta-globin chains.
+HN  - 2009
+BX  - beta-Globin
+
+MH  - Bhopal Accidental Release
+UI  - D055908
+MN  - K1.400.504.968.74
+MN  - N6.850.135.195.249
+MS  - 1984 accident in Bhopal, INDIA at a PESTICIDE facility, resulting when
+      WATER entered a storage tank containing ISOCYANATES. The following
+      accidental chemical release and uncontrolled reaction resulted in
+      several thousand deaths.
+AN  - coordinate with DISASTERS if pertinent
+HN  - 2009
+
+MH  - Biocatalysis
+UI  - D055162
+MN  - G2.111.87.95
+MN  - G2.149.115.95
+MN  - G2.149.170.500
+MN  - G2.149.767.500.500
+MN  - G2.842.750.500.500
+MN  - G3.495.159
+MS  - The facilitation of biochemical reactions with the aid of naturally
+      occurring catalysts such as ENZYMES.
+AN  - CATALYSIS is also available
+HN  - 2009
+
+MH  - Biochemical Processes
+UI  - D055438
+MN  - G2.111.87
+MN  - G2.149.115
+MS  - Chemical reactions or functions, enzymatic activities, and metabolic
+      pathways of living things.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Biohazard Release
+UI  - D055885
+MN  - N6.850.135.190
+MS  - Uncontrolled release of biological material from its containment. This
+      either threatens to, or does, cause exposure to a biological hazard.
+      Such an incident may occur accidentally or deliberately.
+AN  - for release resulting in disaster, coordinate with DISASTERS; for
+      deliberate release of biological material, coordinate BIOHAZARD
+      RELEASE with BIOTERRORISM; specify geographic location
+HN  - 2009
+BX  - Accidents, Biological
+
+MH  - Biological Processes
+UI  - D055694
+MN  - G16.100
+MS  - Biological activities and function of  the whole organism in human,
+      animal, microorgansims, and plants, and of the biosphere.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Biophysical Phenomena
+UI  - D055592
+MN  - G1.154
+MS  - The physical characteristics and processes of biological systems.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Biophysical Concepts
+
+MH  - Biophysical Processes
+UI  - D055597
+MN  - G1.154.100
+MN  - G1.595.100
+MS  - Physical forces and actions in living things.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Biosurveillance
+UI  - D055877
+MN  - N6.850.780.675.324
+MS  - Monitoring of information sources of potential value in detecting an
+      emerging epidemic, whether naturally occurring or the result of
+      bioterrorism.
+HN  - 2009
+
+MH  - Blastocladiomycota
+UI  - D055133
+MN  - B5.230
+MS  - A phylum of flagellated fungi, formerly the order Blastocladiales
+      under CHYTRIDIOMYCOTA.
+HN  - 2009
+
+MH  - Bone Morphogenetic Protein 1
+UI  - D055395
+MN  - D8.811.277.656.300.480.525.700.49
+MN  - D8.811.277.656.675.374.525.700.900.500
+MN  - D12.644.276.948.500
+MN  - D12.644.276.954.200.100
+MN  - D12.776.467.942.200.100
+MN  - D12.776.467.948.500
+MN  - D23.529.942.200.100
+MN  - D23.529.948.500
+MS  - A bone morphogenetic protein family member that includes an active
+      tolloid-like metalloproteinase domain. The metalloproteinase activity
+      of bone morphogenetic protein 1 is specific for the removal of the
+      C-propeptide of PROCOLLAGENS and may act as a regulator of
+      EXTRACELLULAR MATRIX deposition. Alternative splicing of MRNA for bone
+      morphogenetic protein 1 results in the production of several PROTEIN
+      ISOFORMS.
+HN  - 2009(1978)
+
+MH  - Bone Morphogenetic Protein 15
+UI  - D055430
+MN  - D12.644.276.954.200.900
+MN  - D12.644.276.954.300.49
+MN  - D12.776.467.942.200.900
+MN  - D12.776.467.942.300.49
+MN  - D23.529.942.200.900
+MN  - D23.529.942.300.49
+MS  - A protein that plays a role in GRANULOSA CELLS where it regulates
+      folliculogenesis. Mutations in the gene for bone morphogenetic protein
+      15 are linked to reproductive abnormalities such as PREMATURE OVARIAN
+      FAILURE.
+HN  - 2009(1993) for BONE MORPHOGENETIC PROTEIN 15 use GROWTH
+      DIFFERENTIATION FACTOR 9 1993-2008
+
+MH  - Bone Morphogenetic Protein 2
+UI  - D055396
+MN  - D12.644.276.954.200.200
+MN  - D12.776.467.942.200.200
+MN  - D23.529.942.200.200
+MS  - A potent osteoinductive protein that plays a critical role in the
+      differentiation of osteoprogenitor cells into OSTEOBLASTS.
+HN  - 2009(1993)
+
+MH  - Bone Morphogenetic Protein 3
+UI  - D055398
+MN  - D12.644.276.954.200.300
+MN  - D12.776.467.942.200.300
+MN  - D23.529.942.200.300
+MS  - A bone morphogenetic protein that is found at high concentrations in a
+      purified osteoinductive protein fraction from BONE. Bone morphogenetic
+      protein 3 is referred to as osteogenin, however it may play a role in
+      variety of developmental processes.
+HN  - 2009(1989)
+
+MH  - Bone Morphogenetic Protein 4
+UI  - D055415
+MN  - D12.644.276.954.200.400
+MN  - D12.776.467.942.200.400
+MN  - D23.529.942.200.400
+MS  - A bone morphogenetic protein that is a potent inducer of bone
+      formation. It also functions as a regulator of MESODERM formation
+      during EMBRYONIC DEVELOPMENT.
+HN  - 2009(1996)
+
+MH  - Bone Morphogenetic Protein 5
+UI  - D055417
+MN  - D12.644.276.954.200.500
+MN  - D12.776.467.942.200.500
+MN  - D23.529.942.200.500
+MS  - A bone morphogenetic protein that may play a role in CARTILAGE
+      formation. It is a potent regulator of the growth of CHONDROCYTES and
+      the synthesis of cartilage matrix proteins. Evidence for its role in
+      cartilage formation can be seen in MICE, where genetic mutations that
+      cause loss of bone morphogenetic protein 5 function result in the
+      formation of small malformed ears.
+HN  - 2009(1997)
+
+MH  - Bone Morphogenetic Protein 6
+UI  - D055418
+MN  - D12.644.276.954.200.600
+MN  - D12.776.467.942.200.600
+MN  - D23.529.942.200.600
+MS  - A bone morphogenetic protein that is a potent inducer of BONE
+      formation. It plays additional roles in regulating CELL DIFFERENTATION
+      of non-osteoblastic cell types and epithelial-mesenchymal
+      interactions.
+HN  - 2009(2007)
+
+MH  - Bone Morphogenetic Protein 7
+UI  - D055419
+MN  - D12.644.276.954.200.700
+MN  - D12.776.467.942.200.700
+MN  - D23.529.942.200.700
+MS  - A bone morphogenetic protein that is widely expressed during EMBRYONIC
+      DEVELOPMENT. It is both a potent osteogenic factor and a specific
+      regulator of nephrogenesis.
+HN  - 2009(1990)
+
+MH  - Brettanomyces
+UI  - D055168
+MN  - B5.381.137
+MN  - B5.930.150
+MS  - The anamorphic form of the yeast DEKKERA. It is implicated as a
+      spoilage microorganism in wines.
+HN  - 2009
+
+MH  - Bronchioles
+UI  - D055745
+MN  - A4.411.125.500
+MS  - The small airways branching off the TERTIARY BRONCHI. Terminal
+      bronchioles lead into several orders of respiratory bronchioles which
+      in turn lead into alveolar ducts and then into PULMONARY ALVEOLI.
+AN  - inflammation = BRONCHIOLITIS or specifics
+HN  - 2009; use BRONCHI 1984-2008
+
+MH  - Bronchomalacia
+UI  - D055091
+MN  - C5.182.895.249
+MN  - C8.127.719.500
+MN  - C16.131.621.953.249
+MN  - C17.300.182.895.249
+MS  - A congenital or acquired condition of underdeveloped or degeneration
+      of CARTILAGE in the BRONCHI. This results in a floppy bronchial wall
+      making patency difficult to maintain. It is characterized by wheezing
+      and difficult breathing.
+HN  - 2009
+BX  - Chondromalacia of Bronchi
+
+MH  - Bulbo-Spinal Atrophy, X-Linked
+UI  - D055534
+MN  - C10.228.854.468.399
+MN  - C10.574.500.175
+MN  - C10.574.562.500.374
+MN  - C10.668.460.500.186
+MN  - C16.320.322.76
+MS  - An X-linked recessive form of spinal muscular atrophy. It is due to a
+      mutation of the gene encoding the ANDROGEN RECEPTOR.
+HN  - 2009(2000); use MUSCULAR ATROPHY, SPINAL 2000-2008
+BX  - Kennedy Syndrome
+
+MH  - Byssochlamys
+UI  - D055323
+MN  - B5.107.320.125
+MS  - A genus of ascomycetous mold in the family Trichocomaceae, order
+      EUROTIALES. Byssochlamys species are responsible for spoilage and
+      degradation of fruit and fruit juices. Anamorphs are found in the
+      genus PAECILOMYCES.
+HN  - 2009
+
+MH  - Campomelic Dysplasia
+UI  - D055036
+MN  - C5.660.142
+MN  - C16.131.621.142
+MS  - A congenital disorder of CHONDROGENESIS and OSTEOGENESIS characterized
+      by hypoplasia of endochondral bones. In most cases there is a
+      curvature of the long bones especially the TIBIA with dimpling of the
+      skin over the bowed areas, malformation of the pelvis and spine, 11
+      pairs of ribs, hypoplastic scapulae, club feet, micrognathia, CLEFT
+      PALATE, tracheobronchomalacia, and in some patients male-to-female sex
+      reversal (SEX REVERSAL, GONADAL). Most patients die in the neonatal
+      period of respiratory distress. Campomelic dysplasia is associated
+      with haploinsufficiency of the SOX9 gene (SRY-related HMG-box gene 9).
+HN  - 2009
+
+MH  - Cape Verde
+UI  - D055726
+MN  - Z1.58.290.190.258
+MS  - The republic consists of islands that are located in the mid-Atlantic
+      Ocean about 300 miles off the west coast of Africa. The archipelago
+      includes 10 islands and 5 islets, divided into the windward
+      (Barlavento) and leeward (Sotavento) groups. The capital is Praia.
+HN  - 2009; see Africa, Western 1983-2008
+
+MH  - Carbohydrate Biochemistry
+UI  - D055731
+MN  - H1.158.201.85
+MS  - The study of the structure, biosynthesis, and function of
+      CARBOHYDRATES and GLYCOSYLATION.
+AN  - specialty;  the biochemistry of  carbohydrates = CARBOHYDRATES/chem
+HN  - 2009; use GLYCOMICS 2008
+
+MH  - Cardiac-Gated Imaging Techniques
+UI  - D055424
+MN  - E1.370.350.174
+MS  - Timing the acquisition of imaging data to specific points in the
+      cardiac cycle to minimize image blurring and other motion artifacts.
+AN  - coordinate with specific type of imaging
+HN  - 2009
+
+MH  - Cardiac-Gated Single-Photon Emission Computer-Assisted Tomography
+UI  - D055426
+MN  - E1.370.350.174.500
+MN  - E1.370.350.350.800.800.500
+MN  - E1.370.350.710.800.800.500
+MN  - E1.370.350.825.800.800.500
+MN  - E1.370.384.730.800.800.500
+MS  - Tomography using single-photon emitting RADIONUCLIDES to create images
+      that are captured in times corresponding to various points in the
+      cardiac cycle.
+AN  - for gated blood-pool SPECT imaging, coordinate with GATED BLOOD-POOL
+      IMAGING; for gated myocardial perfusion SPECT imaging, coordinate with
+      MYOCARDIAL PERFUSION IMAGING
+HN  - 2009
+
+MH  - Catheter-Related Infections
+UI  - D055499
+MN  - C1.539.195
+MS  - Infections resulting from the use of catheters. Proper aseptic
+      technique, site of catheter placement, material composition, and
+      virulence of the organism are all factors that can influence possible
+      infection.
+AN  - coordinate with CROSS INFECTION if pertinent
+HN  - 2009
+FX  - Cross Infection
+
+MH  - CCN Intercellular Signaling Proteins
+UI  - D055511
+MN  - D12.644.276.200
+MN  - D12.776.467.200
+MN  - D12.776.860.300.200
+MN  - D23.529.237
+MS  - A family of secreted proteins found associated with the EXTRACELLULAR
+      MATRIX and cell surface receptors. They are believed to play a role in
+      modulating the effects of a variety of GROWTH FACTORS and PROTEASES at
+      the cell membrane extracellular matrix. The CCN protein family is
+      named after three protypical members; CYSTEINE-RICH PROTEIN 61;
+      CONNECTIVE TISSUE GROWTH FACTOR; and NEPHROBLASTOMA OVEREXPRESSED
+      PROTEIN.
+HN  - 2009
+
+MH  - Cell Physiological Processes
+UI  - D055648
+MN  - G4.299
+MS  - Cellular functions, mechanisms, and activities.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Cell-Derived Microparticles
+UI  - D055252
+MN  - A11.284.149.165.82
+MS  - Extracellular membrane vesicles generated by the shedding of CELL
+      MEMBRANES blebs. Microparticles originating from PLATELETS;
+      ENDOTHELIAL CELLS; and other cell types circulate in the peripheral
+      blood and through the MICROVASCULATURE where larger cells cannot,
+      functioning as active effectors in a variety of vascular processes
+      such as INFLAMMATION; HEMOSTASIS; ANGIOGENESIS; and vascular
+      reactivity. Increased levels are found following stimulation of bleb
+      formation under normal or pathological conditions.
+HN  - 2009
+FX  - Exosomes
+
+MH  - Cemeteries
+UI  - D055699
+MN  - I1.76.201.450.550.150.500
+MS  - Areas set apart as burial grounds.
+HN  - 2009; use MORTUARY PRACTICE 1963-2008
+
+MH  - Ceramidases
+UI  - D055572
+MN  - D8.811.277.87.250
+MS  - Amidohydrolases that are specific for the cleavage of the N-acyl
+      linkage of CERAMIDES. Ceramidases are classified as acidic, neutral or
+      basic according to the optimal pH with which they function.
+HN  - 2009(1980)
+
+MH  - Chemical Hazard Release
+UI  - D055884
+MN  - N6.850.135.195
+MS  - Uncontrolled release of a chemical from its containment that either
+      threatens to, or does, cause exposure to a chemical hazard. Such an
+      incident may occur accidentally or deliberately.
+AN  - for release resulting in disaster, coordinate with DISASTERS; for
+      deliberate release of chemicals, coordinate CHEMICAL HAZARD RELEASE
+      with TERRORISM; specify geographic location
+HN  - 2009
+BX  - Accidents, Chemical
+
+MH  - Chemical Phenomena
+UI  - D055598
+MN  - G2
+MS  - The composition, conformation, and properties of atoms and molecules,
+      and their reaction and interaction processes.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Chemical Concepts
+
+MH  - Chemical Processes
+UI  - D055599
+MN  - G2.149
+MS  - The reactions and interactions of atoms and molecules, the changes in
+      their structure and composition, and associated energy changes.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Chromohalobacter
+UI  - D055353
+MN  - B3.440.400.425.377.249
+MN  - B3.660.250.350.249
+MS  - A genus of gram-negative, moderately halophilic bacteria in the family
+      HALOMONADACEAE. They are chemoorganotrophic and grow optimally in
+      media containing 8-10% salt.
+HN  - 2009; use HALOMONADACEAE 2004-2008
+
+MH  - Chromosomal Position Effects
+UI  - D055012
+MN  - G5.355.315.203.124
+MS  - The effects on gene expression that depend on the location of a gene
+      with respect to its neighboring genes and region of chromosome. Stable
+      position effects are sequence dependent. Variegated position effects
+      depend on whether the gene is located in or adjacent to
+      HETEROCHROMATIN or EUCHROMATIN.
+HN  - 2009
+
+MH  - Chronic Periodontitis
+UI  - D055113
+MN  - C7.465.714.533.324
+MS  - Chronic inflammation and loss of PERIODONTIUM that is associated with
+      the amount of DENTAL PLAQUE or DENTAL CALCULUS present. Chronic
+      periodontitis occurs mostly in adults and was called adult
+      periodontitis, but this disease can appear in young people.
+HN  - 2009
+
+MH  - Chronobiology Discipline
+UI  - D055881
+MN  - H1.158.580
+MS  - A multidisciplinary field of research and practice studying the
+      periodicity of biological systems and the application of principles of
+      chronobiology to various therapeutic strategies. Aging, biological
+      rhythms, and cyclic phenomena are included. Statistical,
+      computer-aided mathematical procedures are used to describe, in
+      mathematical terminology, various biological functions over time.
+HN  - 2009
+FX  - Chronobiology Phenomena
+FX  - Chronotherapy
+FX  - Drug Chronotherapy
+FX  - Sleep Phase Chronotherapy
+
+MH  - Climatic Processes
+UI  - D055907
+MN  - G16.500.240.135
+MS  - Characteristic events occurring in the ATMOSPHERE during the
+      interactions and transformation of various atmospheric components and
+      conditions.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Clinical Governance
+UI  - D054976
+MN  - N4.452.115
+MS  - A framework through which the United Kingdom's National Health Service
+      organizations are accountable for continually improving the quality of
+      their services and safeguarding high standards of care by creating an
+      environment in which excellence in clinical care will flourish. 
+      (Scally and Donaldson, BMJ (4 July 1998): 61-65)
+HN  - 2009
+FX  - Clinical Audit
+
+MH  - Coelomomyces
+UI  - D055135
+MN  - B5.230.200
+MS  - A genus of fungi in the phylum BLASTOCLADIOMYCOTA. They exhibit
+      complex life cycles and are parasitic on the larvae of MOSQUITOES.
+HN  - 2009
+
+MH  - Color Vision
+UI  - D055253
+MN  - F2.830.816.964.124
+MN  - G11.561.600.810.964.124
+MN  - G14.640.816.124
+MS  - Function of the human eye that is used in bright illumination or in
+      daylight (at photopic intensities). Photopic vision is performed by
+      the three types of RETINAL CONE PHOTORECEPTORS with varied peak
+      absorption wavelengths in the color spectrum (from violet to red, 400
+      - 700 nm).
+AN  - do not confuse with COLOR PERCEPTION
+HN  - 2009 (1986)
+BX  - Photopic Vision
+FX  - Color Perception
+
+MH  - Community-Based Participatory Research
+UI  - D055812
+MN  - N5.425.104
+MS  - Collaborative process of research involving researchers and community
+      representatives.
+HN  - 2009
+
+MH  - Comparative Genomic Hybridization
+UI  - D055028
+MN  - E5.393.285.240
+MN  - E5.393.520.500
+MN  - E5.393.661.187
+MS  - A method for analyzing and mapping differences in the copy number of
+      specific genes or other large sequences between two sets of
+      chromosomal DNA. It is used to look for large sequence changes such as
+      deletions, duplications, or amplifications within the genomic DNA of
+      an individual (with a tumor for example) or family members or
+      population or between species.
+HN  - 2009
+
+MH  - Cone Opsins
+UI  - D055358
+MN  - D12.776.306.466.249
+MN  - D23.767.930.750.249
+MS  - Photosensitive proteins expressed in the CONE PHOTORECEPTOR CELLS.
+      They are the protein components of cone photopigments. Cone opsins are
+      classified by their peak absorption wavelengths.
+HN  - 2009
+BX  - Blue-Sensitive Cone Opsins
+BX  - Green-Sensitive Cone Opsins
+BX  - Red-Sensitive Cone Opsins
+
+MH  - Connective Tissue Growth Factor
+UI  - D055513
+MN  - D12.644.276.200.100
+MN  - D12.776.467.200.100
+MN  - D12.776.860.300.200.100
+MN  - D23.529.237.100
+MS  - A CCN protein family member that regulates a variety of extracellular
+      functions including CELL ADHESION; CELL MIGRATION; and EXTRACELLULAR
+      MATRIX synthesis. It is found in hypertrophic CHONDROCYTES where it
+      may play a role in CHONDROGENESIS and endochondral ossification.
+HN  - 2009(1991)
+
+MH  - Cookbooks
+UI  - D055823
+MN  - V2.272
+MS  - Collections of recipes or instructions for preparation of food and
+      organization of meals.
+AN  - this heading is used as a Publication Type. Used by catalogers only;
+      cookbooks as a subject are indexed under the main heading COOKBOOKS AS
+      TOPIC
+HN  - 2009
+
+MH  - Cookbooks as Topic
+UI  - D055927
+MN  - J1.576.423.200.200.500
+MN  - L1.178.682.192.402
+MS  - Set of instructions about how to prepare food for eating using
+      specific instructions.
+AN  - do not confuse with the Publication Type COOKBOOKS
+HN  - 2009
+
+MH  - Coriolaceae
+UI  - D055453
+MN  - B5.179.120.174
+MS  - A family of fungi, order POLYPORALES, found on decaying wood.
+HN  - 2009
+BX  - Bjerkandera
+BX  - Ceriporiopsis
+BX  - Fomes
+BX  - Fomitopsis
+
+MH  - Cornified Envelope Proline-Rich Proteins
+UI  - D055233
+MN  - D12.776.220.150
+MN  - D12.776.543.200
+MS  - A family of low molcular-weight proteins that contain PROLINE-RICH
+      PROTEIN DOMAINS. Members of this family play a role in the formation
+      of an insoluble cornified envelope beneath the plasma membrane of
+      stratified squamous epithelial cells.
+HN  - 2009
+FX  - Proline-Rich Protein Domains
+
+MH  - Cortinarius
+UI  - D055363
+MN  - B5.179.100.205
+MS  - A genus of mushrooms in the family Cortinariaceae. When ingested,
+      species of Cortinarius cause delayed acute RENAL FAILURE.
+AN  - poisoning: coordinate with MUSHROOM POISONING
+HN  - 2009, 1991-1996; use AGARICALES 1997-2008 and 1986-1990
+
+MH  - Costameres
+UI  - D054974
+MN  - A11.284.149.165.165.142
+MS  - STRIATED MUSCLE cell components which anchor the MYOFIBRILS from the
+      Z-bands to the SARCOLEMMA and EXTRACELLULAR MATRIX. Costameric
+      proteins include the proteins of FOCAL ADHESIONS.
+HN  - 2009
+
+MH  - Cranial Fontanelles
+UI  - D055762
+MN  - A2.835.232.781.175
+MS  - Any of six membrane-covered openings between the CRANIAL SUTURES in
+      the incompletely ossified skull of the fetus or newborn infant. The
+      fontanelles normally close sometime after birth.
+HN  - 2009
+
+MH  - Cremation
+UI  - D055700
+MN  - I1.76.201.450.550.175
+MS  - Reducing a dead body to ashes by burning or incineration.
+HN  - 2009; use MORTUARY PRACTICE 1979-2008
+BX  - Cremains
+
+MH  - Curing Lights, Dental
+UI  - D055117
+MN  - E6.186.104
+MN  - E7.222.104
+MS  - Light sources used to activate polymerization light-cured orthodontic
+      adhesives (DENTAL CEMENTS). Degree of cure and bond strength depends
+      on exposure time, wavelength, and intensity of the curing light.
+HN  - 2009
+BX  - Dental Curing Lights
+
+MH  - Cyathus
+UI  - D055365
+MN  - B5.179.100.215
+MS  - A genus of saprophytic fungi in the family Nidulariaceae. They look
+      like small bird's nests complete with eggs. The eggs are small
+      capsules known as peridioles, which contain the spores.
+HN  - 2009
+
+MH  - Cyclones
+UI  - D055867
+MN  - G16.500.240.135.500
+MS  - Non-frontal low-pressure systems over tropical or sub-tropical waters
+      with organized convection and definite pattern of surface wind
+      circulation.
+AN  - coordinate with DISASTERS if pertinent; specify geographic location
+HN  - 2009
+BX  - Cyclone
+
+MH  - Cystatin A
+UI  - D055312
+MN  - D12.776.215.100
+MS  - A cytastin subtype found at high levels in the SKIN and in BLOOD
+      CELLS. Cystatin A incorporates into the cornified cell envelope of
+      stratified squamous epithelial cells and may play a role in
+      bacteriostatic properties of skin.
+HN  - 2009(1990);  use CYSTATINS 1990-2008
+
+MH  - Cystatin B
+UI  - D055313
+MN  - D12.776.215.200
+MS  - An intracellular cystatin subtype that is found in a broad variety of
+      cell types. It is a cytosolic enzyme inhibitor that protects the cell
+      against the proteolytic action of lysosomal enzymes such as
+      CATHEPSINS.
+HN  - 2009(1984)
+
+MH  - Cystatin C
+UI  - D055316
+MN  - D12.776.215.300
+MS  - An extracellular cystatin subtype that is abundantly expressed in
+      bodily fluids. It may play a role in the inhibition of interstitial
+      CYSTEINE PROTEASES.
+HN  - 2009(1980)
+
+MH  - Cystatin M
+UI  - D055332
+MN  - D12.776.215.500
+MN  - D12.776.624.776.418
+MS  - A cystatin subtype that has a diverse tissue distribution, target
+      specificity, and functions as an endogenous inhibitor of lysosomal
+      cysteine proteases.
+HN  - 2009(1997)
+BX  - Cystatin E
+
+MH  - Cysteine-Rich Protein 61
+UI  - D055515
+MN  - D12.644.276.200.200
+MN  - D12.776.467.200.200
+MN  - D12.776.860.300.200.200
+MN  - D23.529.237.200
+MS  - A CCN protein family member that regulates a variety of extracellular
+      functions including CELL ADHESION; CELL MIGRATION; and EXTRACELLULAR
+      MATRIX synthesis. It may play an important role in the development of
+      branched CAPILLARIES during EMBRYOGENESIS.
+HN  - 2009
+
+MH  - Cytokine-Induced Killer Cells
+UI  - D055612
+MN  - A11.118.637.555.283
+MN  - A11.251.476
+MN  - A15.145.229.637.555.283
+MN  - A15.382.490.555.283
+MS  - Mononuclear leukocytes that have been expanded in CELL CULTURE and
+      activated with CYTOKINES such as INTERLEUKIN-2 to produce large
+      numbers of highly cytotoxic cells.
+HN  - 2009
+
+MH  - DEAD Box Protein 20
+UI  - D055541
+MN  - D8.811.913.696.445.735.720.249.500
+MN  - D12.776.157.725.875.249
+MN  - D12.776.580.922.249
+MN  - D12.776.664.962.875.249
+MS  - A multifunctional protein that is both a DEAD-box RNA helicase and a
+      component  of the SMN protein complex.
+HN  - 2009
+
+MH  - Debaromyces
+UI  - D055165
+MN  - B5.107.795.190
+MN  - B5.930.323
+MS  - A genus of ascomycetous yeast in the family Saccharomycetaceae, order
+      SACCHAROMYCETALES. Debaryomyces hansenni is a salt-tolerant marine
+      species.
+HN  - 2009
+
+MH  - Dekkera
+UI  - D055167
+MN  - B5.107.795.192
+MN  - B5.930.326
+MS  - A genus of ascomycetous yeast in the family Saccharomycetaceae, order
+      SACCHAROMYCETALES. It has been implicated in wine spoilage. Anamorphic
+      forms are found in the genus BRETTANOMYCES.
+HN  - 2009
+
+MH  - Delayed Emergence from Anesthesia
+UI  - D055191
+MN  - C23.550.767.137
+MS  - Abnormally slow pace of regaining CONSCIOUSNESS after general
+      anesthesia (ANESTHESIA, GENERAL) usually given during surgical
+      procedures. This condition is characterized by persistent somnolence.
+HN  - 2009
+BX  - Delayed Awakening from Anesthesia
+BX  - Delayed Awakening, Post-Anesthesia
+FX  - Anesthesia Recovery Period
+
+MH  - delta-Globins
+UI  - D055546
+MN  - D12.776.124.400.434.325.249
+MN  - D12.776.422.316.762.403.325.249
+MS  - A member of the beta-globin family. In humans, delta-globin is encoded
+      in the beta-globin gene cluster located on CHROMOSOME 11. Two
+      delta-globin chains along with two alpha-globin chains form HEMOGLOBIN
+      A2 which makes up about 3% of the HEMOGLOBIN in adults.
+HN  - 2009
+BX  - delta-Globin
+
+MH  - delta-Thalassemia
+UI  - D055538
+MN  - C15.378.71.141.150.875.575
+MN  - C15.378.420.826.200
+MN  - C16.320.70.875.575
+MN  - C16.320.365.826.575
+MS  - A hereditary disorder characterized by reduced or absent DELTA-GLOBIN
+      thus effecting the level of HEMOGLOBIN A2, a minor component of adult
+      hemoglobin monitored in the diagnosis of BETA-THALASSEMIA.
+AN  - delta-beta thalassemia = DELTA-THALASSEMIA + BETA-THALASSEMIA
+HN  - 2009
+
+MH  - Dental Bonding, Chemically-Cured
+UI  - D055116
+MN  - E6.95.377
+MS  - The hardening or polymerization of bonding agents (DENTAL CEMENTS) via
+      chemical reactions, usually involving two components. This type of
+      dental bonding uses a self-cure or dual-cure system.
+HN  - 2009
+BX  - Chemical-Curing of Dental Adhesives
+BX  - Dual-Curing of Resin Cements
+BX  - Self-Curing of Dental Resins
+
+MH  - Dental Bonding, Light-Cured
+UI  - D055115
+MN  - E6.95.585
+MS  - The hardening or polymerization of bonding agents (DENTAL CEMENTS) via
+      exposure to light.
+HN  - 2009
+BX  - Light-Curing of Dental Cements
+
+MH  - Dental Physiological Processes
+UI  - D055690
+MN  - G10.549.235
+MS  - Functions and activities of DENTITION as a whole.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Diet, Gluten-Free
+UI  - D055050
+MN  - G7.610.240.265
+MS  - A diet which is devoid of GLUTENS from WHEAT; BARLEY; RYE; and other
+      wheat-related varieties. The diet is designed to reduce exposure to
+      those  proteins in gluten that trigger INFLAMMATION of the small
+      intestinal mucosa in patients with CELIAC DISEASE.
+HN  - 2009
+BX  - Gluten-Free Diet
+
+MH  - Digestive System and Oral Physiological Phenomena
+UI  - D055688
+MN  - G10
+MS  - Properties and processes of the DIGESTIVE SYSTEM and DENTITION as a
+      whole or of any of its parts.
+AN  - used for searching: indexers and catalogers apply specifics
+HN  - 2009
+BX  - Digestive System and Oral Physiology
+
+MH  - Dipodascus
+UI  - D055157
+MN  - B5.107.795.200
+MN  - B5.930.330
+MS  - A genus of ascomycetous yeast in the family Dipodascaceae, order
+      SACCHAROMYCETALES. It is characterized by asci which have persistent
+      walls and by smooth-walled ascospores. Anamorphs are in the genus
+      GEOTRICHUM.
+HN  - 2009
+
+MH  - Droughts
+UI  - D055864
+MN  - G16.500.240.135.781
+MN  - G16.500.750.775.154
+MS  - Prolonged dry periods in natural climate cycle. They are slow-onset
+      phenomena caused by rainfall deficit combined with other predisposing
+      factors.
+AN  - coordinate with DISASTERS if pertinent; specify geographic location
+HN  - 2009; use DISASTERS 1990-2008
+BX  - Drought
+
+MH  - Drug Chronotherapy
+UI  - D055870
+MN  - E2.168.500
+MN  - E2.319.283.400
+MS  - The adaptation of drug administration to the known variations in
+      biological RHYTHMICITY, such as CIRCADIAN RHYTHMS. The treatment is
+      aimed at supporting normal rhythms, or modifying the timing of therapy
+      to achieve maximal efficacy and minimal adverse effect.
+AN  - coordinate with specific drug with probably / admin (IM) but do not
+      coordinate with DRUG ADMINISTRATION SCHEDULE or CIRCADIAN RHYTHM
+HN  - 2009
+
+MH  - Drug Discovery
+UI  - D055808
+MN  - E5.295
+MN  - H1.158.703.07.675
+MN  - H1.181.466.675
+MS  - The process of finding chemicals for potential therapeutic use.
+HN  - 2009; for DRUG PROSPECTING use DRUG EVALUATION, PRECLINICAL 2000-2009
+
+MH  - Drug Users
+UI  - D055030
+MN  - M1.169
+MS  - People who take drugs for a non-therapeutic or non-medical effect. The
+      drugs may be legal or illegal, but their use often results in adverse
+      medical, legal, or social consequences for the users.
+AN  - for drug users as persons only; for the disorder, use
+      SUBSTANCE-RELATED DISORDERS
+HN  - 2009
+BX  - Drug Abusers
+BX  - Drug Addicts
+
+MH  - Dysphonia
+UI  - D055154
+MN  - C8.360.940.325
+MN  - C9.400.940.325
+MN  - C10.597.975.325
+MN  - C23.888.592.979.325
+MS  - Difficulty and/or pain in PHONATION or speaking.
+HN  - 2009
+BX  - Phonation Disorders
+BX  - Spastic Dysphonia
+
+MH  - Early Detection of Cancer
+UI  - D055088
+MN  - E1.390.500
+MS  - Methods to identify and characterize cancer in the early stages of
+      disease and predict tumor behavior.
+HN  - 2009
+
+MH  - Earthquakes
+UI  - D055866
+MN  - G1.311.340.224
+MN  - G1.595.340.224
+MS  - Sudden slips on a fault, and the resulting ground shaking and radiated
+      seismic energy caused by the slips, or by volcanic or magmatic
+      activity, or other sudden stress changes in the earth.  Faults are
+      fractures along which the blocks of EARTH crust on either side have
+      moved relative to one another parallel to the fracture.
+AN  - coordinate with DISASTERS if pertinent; specify geographic location
+HN  - 2009; use DISASTERS 1976-2008
+
+MH  - Ecological and Environmental Phenomena
+UI  - D055669
+MN  - G16.500
+MS  - Ecological and environmental entities, characteristics, properties,
+      relationships and processes.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Ecological and Environmental Concepts
+
+MH  - Ecological and Environmental Processes
+UI  - D055691
+MN  - G16.500.240
+MS  - Ecosystem and environmental activities, functions, or events.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Elastic Modulus
+UI  - D055119
+MN  - G1.374.590.605
+MS  - Numerical expression indicating the measure of stiffness in a
+      material. It is defined by the ratio of stress in a unit area of
+      substance to the resulting deformation (strain). This allows the
+      behavior of a material under load (such as bone) to be calculated.
+HN  - 2009
+BX  - Young Modulus
+FX  - Elasticity
+
+MH  - Electrical Equipment and Supplies
+UI  - D055615
+MN  - E7.305
+MS  - Apparatus and instruments that generate and operate with ELECTRICITY,
+      and their electrical components.
+HN  - 2009
+BX  - Electronic Equipment and Supplies
+FX  - Electronics
+
+MH  - Electrochemical Techniques
+UI  - D055664
+MN  - E5.301
+MS  - The utilization of an electrical current to measure, analyze, or alter
+      chemicals or chemical reactions in solution, cells, or tissues.
+HN  - 2009
+
+MH  - Electromagnetic Phenomena
+UI  - D055590
+MN  - G1.201
+MS  - Characteristics of ELECTRICITY and magnetism such as charged particles
+      and the properties and behavior of charged particles, and other
+      phenomena related to or associated with electromagnetism.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Electrical Concepts
+BX  - Electromagnetic Concepts
+
+MH  - Electron Microscope Tomography
+UI  - D055032
+MN  - E1.370.350.825.249
+MN  - E5.595.402.580.239
+MS  - A tomographic technique for obtaining 3-dimensional images with
+      transmission electron microscopy.
+AN  - do not confuse entry term ELECTRON TOMOGRAPHY with ELECTRON-BEAM
+      TOMOGRAPHY see TOMOGRAPHY, X-RAY COMPUTED
+HN  - 2009
+BX  - Electron Tomography
+BX  - Tomography, Electron
+BX  - Tomography, Electron Microscope
+
+MH  - Electronic Prescribing
+UI  - D055695
+MN  - N2.421.668.778.750
+MS  - The use of COMPUTER COMMUNICATION NETWORKS to store and transmit
+      medical PRESCRIPTIONS.
+HN  - 2009
+FX  - Clinical Pharmacy Information Systems
+FX  - Drug Therapy, Computer-Assisted
+FX  - Medical Order Entry Systems
+
+MH  - Electrophysiological Phenomena
+UI  - D055724
+MN  - G7.265
+MS  - The electrical properties, characteristics of living organisms, and
+      the processes of organisms or their parts that are involved in
+      generating and responding to electrical charges.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Electrophysiological Concepts
+
+MH  - Electrophysiological Processes
+UI  - D055725
+MN  - G7.265.337
+MN  - G7.700.240
+MS  - The functions and activities of living organisms or their parts
+      involved in generating and responding to electrical charges .
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Endocrine Cells
+UI  - D055098
+MN  - A11.382
+MS  - Secretory cells of the ductless glands. They secrete HORMONES directly
+      into the blood circulation (internal secretion) to be carried to the
+      target cells. The secreted chemicals can be PEPTIDES; STEROIDS;
+      NEUROPEPTIDES; or BIOGENIC AMINES.
+AN  - general; prefer specific cell types
+HN  - 2009
+
+MH  - Endometrial Ablation Techniques
+UI  - D055356
+MN  - E4.14.240
+MN  - E4.950.300.320
+MS  - Procedures used for the targeted destruction of the mucous membrane
+      lining of the uterine cavity.
+HN  - 2009
+
+MH  - Endomyces
+UI  - D055159
+MN  - B5.107.795.230
+MN  - B5.930.340
+MS  - A genus of ascomycetous yeast in the family Endomycetaceae, order
+      SACCHAROMYCETALES. They have been described as ascus-bearing parasites
+      of basidiocarps, the fruiting bodies of BASIDIOMYCOTA.
+HN  - 2009
+
+MH  - Epichloe
+UI  - D055329
+MN  - B5.107.501.310
+MS  - A genus of ascomycetous fungi in the family Clavicipitaceae, order
+      HYPOCREALES, which are fungal symbionts of grasses. Anamorphic forms
+      are in the genus NEOTYPHODIUM.
+HN  - 2009
+
+MH  - epsilon-Globins
+UI  - D055547
+MN  - D12.776.124.400.434.325.374
+MN  - D12.776.422.316.762.403.325.374
+MS  - A member of the beta-globin family. In humans, epsilon-globin is
+      encoded in the beta-globin gene cluster located on CHROMOSOME 11. Two
+      epsilon-globin chains combine with two ZETA-GLOBIN chains to form the
+      embryonic hemoglobin Gower I or two epsilon-globin chains combine with
+      two ALPHA 2-GLOBIN chains to form the embryonic hemoglobin Gower II.
+HN  - 2009
+
+MH  - Eremothecium
+UI  - D055169
+MN  - B5.107.795.250
+MN  - B5.930.350
+MS  - A genus of ascomycetous yeast in the family Saccharomycetaceae, order
+      SACCHAROMYCETALES. Species in the genus are plant pathogens.
+HN  - 2009; for EREMOTHECIUM use SACCHAROMYCETALES 1986-2008, use ASCOMYCOTA
+      1963-1985
+
+MH  - Eupenicillium
+UI  - D055324
+MN  - B5.107.320.215
+MS  - A genus of endophytic, ascomycetous mold in the family Trichocomaceae,
+      order EUROTIALES. Anamorphic forms are in the genus PENICILLIUM.
+HN  - 2009
+
+MH  - Eurotium
+UI  - D055325
+MN  - B5.107.320.218
+MS  - A genus of ascomycetous fungi in the family Trichocomaceae, order
+      EUROTIALES. Health effects, allergenicity, and toxicity of Eurotium
+      are closely related to its anamorph ASPERGILLUS.
+HN  - 2009
+
+MH  - Evidence-Based Dentistry
+UI  - D055094
+MN  - H2.163.232
+MN  - H2.249.500
+MS  - An approach or process of practicing oral health care that requires
+      the judicious integration of systematic assessments of clinical
+      relevant scientific evidence, relating to the patient's oral and
+      medical condition and history, with the dentist's clinical expertise
+      and the patient's treatment needs and preferences. (from J Am Dent
+      Assoc 134: 689, 2003)
+HN  - 2009
+BX  - Dentistry, Evidence-Based
+FX  - Evidence-Based Medicine
+FX  - Evidence-Based Nursing
+
+MH  - Evidence-Based Emergency Medicine
+UI  - D055416
+MN  - H2.249.750.500
+MN  - H2.403.200.400.500
+MS  - A way of providing emergency medical care that is guided by a
+      thoughtful integration of the best available scientific knowledge with
+      clinical expertise in EMERGENCY MEDICINE. This approach allows the
+      practitioner to critically assess research data, clinical guidelines,
+      and other information resources in order to correctly identify the
+      clinical problem, apply the most high-quality intervention, and
+      re-evaluate the outcome for future improvement.
+AN  - DF: EVIDENCE BASED EMERGENCY MED
+HN  - 2009
+BX  - Emergency Medicine, Evidence-Based
+
+MH  - Evidence-Based Nursing
+UI  - D055318
+MN  - H2.249.875
+MN  - H2.478.197
+MS  - A way of providing nursing care that is guided by the integration of
+      the best available scientific knowledge with nursing expertise. This
+      approach requires nurses to critically assess relevant scientific data
+      or research evidence, and to implement high-quality interventions for
+      their nursing practice.
+HN  - 2009
+BX  - Nursing, Evidence-Based
+FX  - Evidence-Based Dentistry
+FX  - Evidence-Based Medicine
+
+MH  - Evidence-Based Practice
+UI  - D055317
+MN  - H2.249
+MS  - A way of providing health care that is guided by a thoughtful
+      integration of the best available scientific knowledge with clinical
+      expertise. This approach allows the practitioner to critically assess
+      research data, clinical guidelines, and other information resources in
+      order to correctly identify the clinical problem, apply the most
+      high-quality intervention, and re-evaluate the outcome for future
+      improvement.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Evidence-Based Health Care
+
+MH  - Exosomes
+UI  - D055354
+MN  - A11.284.430.214.190.875.190.880.495
+MS  - Vesicles secreted from MULTIVESICULAR BODIES into the extracellular
+      environment when the multivesicular bodies fuse with the PLASMA
+      MEMBRANE. Multivesicular bodies are formed from ENDOSOMES when they
+      accumulate vesicles (sometimes referred to as "intraluminal vesicles")
+      from inward budding of the endosome membrane.
+HN  - 2009
+FX  - Cell-Derived Microparticles
+FX  - Endosomes
+FX  - Secretory Vesicles
+
+MH  - Extreme Cold
+UI  - D055873
+MN  - G16.500.750.775.232
+MN  - N6.230.300.100.725.154.500
+MN  - N6.230.300.100.725.710.300.500
+MS  - Below normal weather temperatures that may lead to serious health
+      problems. Extreme cold is a dangerous situation that can bring on
+      health emergencies in susceptible people.
+HN  - 2009
+
+MH  - Extreme Heat
+UI  - D055874
+MN  - G16.500.750.775.271
+MN  - N6.230.300.100.725.232.500
+MN  - N6.230.300.100.725.710.380.500
+MS  - High temperature weather exceeding the average and of several weeks
+      duration. Extreme cold is a dangerous situation that can bring on
+      health emergencies in susceptible people.
+HN  - 2009
+
+MH  - Facilitated Diffusion
+UI  - D055459
+MN  - G1.154.100.280
+MN  - G1.595.100.280
+MN  - G1.595.200.374
+MN  - G2.149.767.560.500
+MN  - G2.842.750.560.500
+MN  - G3.495.166.427
+MS  - The passive movement of molecules exceeding the rate expected by
+      simple diffusion. No energy is expended in the process. It is achieved
+      by the introduction of passively diffusing molecules to an enviroment
+      or path that is more favorable to the movement of those molecules. 
+      Examples of facilitated diffusion are passive transport of hydrophilic
+      substances across a lipid membrane through hydrophilic pores that
+      traverse the membrane, and the sliding of a DNA BINDING PROTEIN along
+      a strand of DNA.
+HN  - 2009
+
+MH  - Failed Back Surgery Syndrome
+UI  - D055111
+MN  - C10.597.617.152.199
+MN  - C23.550.767.225
+MS  - A condition of persistent pain and discomfort in the BACK and the LEG
+      following lumbar surgery, often seen in patients enrolled in pain
+      centers.
+HN  - 2009
+
+MH  - Farber Lipogranulomatosis
+UI  - D055577
+MN  - C10.228.140.163.100.435.825.250
+MN  - C16.320.565.189.435.825.250
+MN  - C16.320.565.398.641.803.325
+MN  - C16.320.565.595.554.825.250
+MN  - C18.452.132.100.435.825.250
+MN  - C18.452.584.687.803.325
+MN  - C18.452.648.189.435.825.250
+MN  - C18.452.648.398.641.803.325
+MN  - C18.452.648.595.554.825.250
+MS  - A sphingolipidosis subtype that is characterized by the histological
+      appearance of granulomatous deposits in tissues. It results from the
+      accumulation of CERAMIDES in various tissues due to an inherited
+      deficiency of ACID CERAMIDASE.
+HN  - 2009
+
+MH  - Flammulina
+UI  - D055393
+MN  - B5.179.100.320
+MS  - A genus of mushrooms in the family Tricholomataceae, whose species are
+      characterized by a slimy cap (FRUITING BODIES, FUNGAL).
+HN  - 2009
+
+MH  - Floods
+UI  - D055868
+MN  - G16.500.240.135.812
+MS  - Sudden onset water phenomena with different speed of occurance. These
+      include flash floods, seasonal river floods, and coastal floods,
+      associated with CYCLONES, TIDALWAVES, and storm surges.
+AN  - coordinate with DISASTERS if pertinent; specify geographic location
+HN  - 2009; use DISASTERS 1982-2008
+
+MH  - Formularies
+UI  - D055824
+MN  - V2.480
+MS  - Works that consist of lists of drugs or collections of recipes,
+      formulas, and prescriptions for the compounding of medicinal
+      preparations.
+AN  - this heading is used as a Publication Type. Used by catalogers only;
+      formularies as a subject are indexed under the main heading
+      FORMULARIES AS TOPIC
+HN  - 2009
+
+MH  - Galaxies
+UI  - D055608
+MN  - G1.60.249.320
+MS  - Large aggregates of CELESTIAL STARS; COSMIC DUST; and gas. (From
+      McGraw Hill Dictionary of Scientific and Technical Terms, 6th ed)
+HN  - 2009; use ASTRONOMY 1995-2008
+
+MH  - gamma-Globins
+UI  - D055545
+MN  - D12.776.124.400.434.325.500
+MN  - D12.776.422.316.762.403.325.500
+MS  - Members of the beta-globin family. In humans, two non-allelic types of
+      gamma-globin - A gamma and G gamma are encoded in the beta-globin gene
+      cluster on CHROMOSOME 11. Two gamma-globin chains combine with two
+      ZETA-GLOBIN chains to form the embryonic hemoglobin Portland. Fetal
+      HEMOGLOBIN F is formed from two gamma-globin chains combined with two
+      ALPHA-GLOBIN chains.
+HN  - 2009
+BX  - gamma-Globin
+
+MH  - Gemini of Coiled Bodies
+UI  - D055531
+MN  - A11.284.430.106.279.345.447
+MS  - Small, punctate nuclear structures found in close proximity to COILED
+      BODIES. They are enriched with SMN COMPLEX PROTEINS and may play a
+      role in the processing of SMALL NUCLEAR RIBONUCLEOPROTEINS.
+HN  - 2009
+FX  - Coiled Bodies
+FX  - SMN Complex Proteins
+
+MH  - Gene Knock-In Techniques
+UI  - D055879
+MN  - E5.393.335.249
+MS  - Techniques used to add in exogenous gene sequence such as mutated
+      genes; REPORTER GENES, to study mechanisms of gene expression; or
+      regulatory control sequences, to study effects of temporal changes to
+      GENE EXPRESSION.
+AN  - GENE KNOCKDOWN TECHNIQUES and GENE KNOCKOUT TECHNIQUES are also
+      available
+HN  - 2009
+
+MH  - Gene Knockdown Techniques
+UI  - D055785
+MN  - E5.393.335.500
+MS  - The artificial induction of GENE SILENCING by the use of RNA
+      INTERFERENCE to reduce the expression of a specific gene. It includes
+      the use of DOUBLE-STRANDED RNA, such as SMALL INTERFERING RNA and RNA
+      containing HAIRPIN LOOP SEQUENCE, and ANTI-SENSE OLIGONUCLEOTIDES.
+AN  - GENE KNOCK-IN TECHNIQUES and GENE KNOCKOUT TECHNIQUES are also
+      available
+HN  - 2009
+BX  - Gene Knock Down Techniques
+
+MH  - Gene Knockout Techniques
+UI  - D055786
+MN  - E5.393.335.750
+MS  - Techniques to alter a gene sequence that result in an inactivated
+      gene, or one in which the expression can be inactivated at a chosen
+      time during development to study the loss of function of a gene.
+AN  - GENE KNOCKDOWN TECHNIQUES and GENE KNOCK-IN TECHNIQUES are also
+      available
+HN  - 2009
+BX  - Gene Knock-Out Techniques
+FX  - Mice, Knockout
+
+MH  - Genetic Phenomena
+UI  - D055614
+MN  - G5
+MS  - The processes, properties and biological objects that are involved in
+      maintaining, expressing, and transmitting from one organism to
+      another, genetically encoded traits.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+FX  - Genetics
+
+MH  - Genome-Wide Association Study
+UI  - D055106
+MN  - E5.393.760.640.500
+MS  - An analysis comparing the allele frequencies of all available (or a
+      whole GENOME representative set of) polymorphic markers, in unrelated
+      patients with a specific symptom or disease condition and healthy
+      controls to identify markers associated with a specific disease or
+      condition.
+HN  - 2009
+BX  - Genome Wide Association Analysis
+BX  - Genome Wide Association Study
+
+MH  - Geological Phenomena
+UI  - D055593
+MN  - G1.311
+MS  - The inanimate matter of Earth, the structures and properties of this
+      matter, and the processes that affect it.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Geological Concepts
+
+MH  - Geological Processes
+UI  - D055594
+MN  - G1.311.340
+MN  - G1.595.340
+MS  - Events and activities happening with the Earth and it structures.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Glomeromycota
+UI  - D055137
+MN  - B5.320
+MS  - A phylum of fungi that are mutualistic symbionts and form ARBUSCULAR
+      MYCORRHIZAE with PLANT ROOTS.
+HN  - 2009
+
+MH  - Granulocyte-Macrophage Progenitor Cells
+UI  - D055014
+MN  - A11.148.378.590.675
+MN  - A11.627.635.675
+MN  - A11.872.378.590.635
+MN  - A15.378.316.378.590.675
+MS  - The parent cells that give rise to both cells of the GRANULOCYTE
+      lineage and cells of the monocyte/macrophage lineage.
+HN  - 2009
+BX  - Granulocyte-Macrophage Progenitors
+
+MH  - Gray Platelet Syndrome
+UI  - D055652
+MN  - C15.378.140.427
+MN  - C16.320.99.417
+MS  - A rare, inherited platelet disorder characterized by a selective
+      deficiency in the number and contents of platelet alpha-granules. It
+      is associated with THROMBOCYTOPENIA, enlarged platelets, and prolonged
+      bleeding time.
+HN  - 2009
+
+MH  - Green Chemistry Technology
+UI  - D055772
+MN  - J1.256.350
+MN  - J1.897.360
+MS  - Pollution prevention through the design of effective chemical products
+      that have low or no toxicity and use of chemical processes that reduce
+      or eliminate the use and generation of hazardous substances.
+HN  - 2009
+
+MH  - Growth Differentiation Factor 1
+UI  - D055452
+MN  - D12.644.276.954.300.100
+MN  - D12.644.276.954.550.100
+MN  - D12.776.467.942.300.100
+MN  - D12.776.467.942.550.100
+MN  - D23.529.942.300.100
+MN  - D23.529.942.550.100
+MS  - A growth differentiation factor that plays a role in the genesis of
+      left-right asymmetry during vertebrate development. Evidence for this
+      role is seen in MICE where loss of growth differentiation factor 1
+      function results in right-left isomerism of visceral organs. In HUMANS
+      heterozygous loss of growth differentiation factor 1 function has been
+      associated with CONGENITAL HEART DEFECTS and TRANSPOSITION OF GREAT
+      VESSELS.
+HN  - 2009(2005)
+
+MH  - Growth Differentiation Factor 10
+UI  - D055413
+MN  - D12.644.276.954.200.950
+MN  - D12.644.276.954.300.900
+MN  - D12.776.467.942.200.950
+MN  - D12.776.467.942.300.900
+MN  - D23.529.942.200.950
+MN  - D23.529.942.300.900
+MS  - A growth differentiation factor that is closely-related in structure
+      to BONE MORPHOGENETIC PROTEIN 3. Growth differentiation factor 10 is
+      found at high levels in BONE, however it plays an additional roles in
+      regulating EMBRYONIC DEVELOPMENT.
+HN  - 2009; use BONE MORPHOGENETIC PROTEIN 3 1989-2008
+
+MH  - Growth Differentiation Factor 15
+UI  - D055436
+MN  - D12.644.276.374.305
+MN  - D12.644.276.954.300.915
+MN  - D12.776.467.374.305
+MN  - D12.776.467.942.300.915
+MN  - D23.529.374.305
+MN  - D23.529.942.300.915
+MS  - A growth differentiation factor that is secreted in response to cell
+      stress and in response to MACROPHAGE ACTIVATION. In addition growth
+      differentiation factor 15 demonstrates a diverse array of biological
+      properties including the induction of cartilage formation, the
+      inhibition of hematopoietic progenitor proliferation, and the
+      induction of neuronal migration.
+HN  - 2009(1997)
+
+MH  - Growth Differentiation Factor 2
+UI  - D055427
+MN  - D12.644.276.954.200.910
+MN  - D12.644.276.954.300.200
+MN  - D12.776.467.942.200.910
+MN  - D12.776.467.942.300.200
+MN  - D23.529.942.200.910
+MN  - D23.529.942.300.200
+MS  - A growth differentiation factor that plays a regulatory role as a
+      paracrine factor for a diverse array of cell types during EMBRYONIC
+      DEVELOPMENT and in the adult tissues. Growth differentiation factor 2
+      is also a potent regulator of CHONDROGENESIS and was previously
+      referred to as bone morphogenetic protein 9.
+HN  - 2009(2000)
+
+MH  - Growth Differentiation Factor 3
+UI  - D055451
+MN  - D12.644.276.954.300.300
+MN  - D12.644.276.954.550.300
+MN  - D12.776.467.942.300.300
+MN  - D12.776.467.942.550.300
+MN  - D23.529.942.300.300
+MN  - D23.529.942.550.300
+MS  - A growth differentiation factor that may play a role in maintaining
+      the undifferentiated state of PLURIPOTENT STEM CELLS by inhibiting the
+      actions of BONE MORPHOGENETIC PROTEINS. Differentiation factor 3 is
+      also considered a nodal signaling ligand that influences the genesis
+      of left-right asymmetry.
+HN  - 2009(1993)
+
+MH  - Growth Differentiation Factor 5
+UI  - D055428
+MN  - D12.644.276.954.300.500
+MN  - D12.776.467.942.300.500
+MN  - D23.529.942.300.500
+MS  - A growth differentiation factor that plays a role in early
+      CHONDROGENESIS and joint formation.
+HN  - 2009(1994)
+
+MH  - Growth Differentiation Factor 6
+UI  - D055431
+MN  - D12.644.276.954.300.600
+MN  - D12.776.467.942.300.600
+MN  - D23.529.942.300.600
+MS  - A growth differentiation factor that plays a role in the neural
+      differentiation, specifically in the retinal development of the EYE.
+HN  - 2009(1994)
+
+MH  - Growth Differentiation Factor 9
+UI  - D055429
+MN  - D12.644.276.954.300.800
+MN  - D12.776.467.942.300.800
+MN  - D23.529.942.300.800
+MS  - A bone morphogenetic protein that plays an essential role in the
+      regulation of ovarian folliculogenesis.
+HN  - 2009(1993)
+
+MH  - Growth Differentiation Factors
+UI  - D055412
+MN  - D12.644.276.954.300
+MN  - D12.776.467.942.300
+MN  - D23.529.942.300
+MS  - A family of BONE MORPHOGENETIC PROTEIN-related proteins that are
+      primarily involved in regulation of CELL DIFFERENTIATION.
+AN  - general; prefer specifics
+HN  - 2009
+
+MH  - Halogenated Diphenyl Ethers
+UI  - D055768
+MN  - D2.355.726.601
+MS  - Compounds that contain two halogenated benzene rings linked via an
+      OXYGEN atom. Many polybrominated diphenyl ethers are used as FLAME
+      RETARDANTS.
+HN  - 2009
+
+MH  - Halorubrum
+UI  - D055352
+MN  - B7.200.400.400.445
+MS  - A genus of HALOBACTERIACEAE which are chemoorganotrophic and strictly
+      aerobic. They have been isolated from multiple hypersaline
+      environments that vary widely in chemical and physical properties.
+HN  - 2009
+
+MH  - Hanseniaspora
+UI  - D055321
+MN  - B5.107.795.393
+MN  - B5.930.443
+MS  - A genus of the ascomycetous yeast in the family Saccharomycodaceae,
+      order SACCHAROMYCETALES, that contributes to the spontaneous
+      fermentation of cider. Anamorphic forms are in the genus KLOECKERA.
+HN  - 2009
+
+MH  - Hebeloma
+UI  - D055364
+MN  - B5.179.100.360
+MS  - A genus of ectomycorrhizae basidiomycetous fungi in the family
+      Cortinariaceae. Some species are poisonous.
+AN  - poisoning: coordinate with MUSHROOM POISONING
+HN  - 2009
+
+MH  - Hemangioblasts
+UI  - D055018
+MN  - A11.436.275.365
+MN  - A11.872.378.270
+MS  - Bipotential angio-hematopoietic stem cells that give rise to both
+      HEMATOPOIETIC STEM CELLS and ENDOTHELIAL CELLS.
+AN  - do not confuse with HEMANGIOBLASTOMA
+HN  - 2009
+
+MH  - Hemoglobin Subunits
+UI  - D055554
+MN  - D12.776.124.400.434
+MN  - D12.776.422.316.762.403
+MS  - The PROTEIN SUBUNITS that comprise multimeric HEMOGLOBINS.
+HN  - 2009
+
+MH  - Hepatic Stellate Cells
+UI  - D055166
+MN  - A11.561
+MS  - Perisinusoidal cells of the liver, located in the space of Disse
+      between HEPATOCYTES and sinusoidal endothelial cells.
+HN  - 2009
+
+MH  - Hospitals, Isolation
+UI  - D055819
+MN  - N2.278.421.556.330
+MS  - Hospitals designed or used to isolate or quarantine persons with
+      communicable diseases.
+AN  - coordinate with hospital ownership term (e.g., HOSPITALS, COUNTY);
+      specify geographic location if pertinent
+HN  - 2009
+
+MH  - HSP27 Heat-Shock Proteins
+UI  - D055551
+MN  - D12.776.410.270.625
+MN  - D12.776.580.218.625
+MS  - A subfamily of small heat-shock proteins that function as molecular
+      chaperones that aid in refolding of non-native proteins. They play a
+      protective role that increases cellular survival during times of
+      stress.
+HN  - 2009(1989); use HEAT SHOCK PROTEINS 1989-2008
+
+MH  - Hypodermoclysis
+UI  - D055103
+MN  - E2.319.267.510.795.500
+MN  - E2.319.360.500
+MS  - Technique for treating DEHYDRATION and WATER-ELECTROLYTE IMBALANCE by
+      subcutaneous infusion of REHYDRATION SOLUTIONS.
+HN  - 2009
+
+MH  - Idiopathic Interstitial Pneumonias
+UI  - D054988
+MN  - C8.381.483.487
+MS  - A group of interstitial lung diseases with no known etiology. There
+      are several entities with varying patterns of inflammation and
+      fibrosis. They are classified by their distinct
+      clinical-radiological-pathological features and prognosis. They
+      include IDIOPATHIC PULMONARY FIBROSIS; CRYPTOGENIC ORGANIZING
+      PNEUMONIA; and others.
+HN  - 2009
+
+MH  - Idiopathic Pulmonary Fibrosis
+UI  - D054990
+MN  - C8.381.483.487.500
+MN  - C8.381.765.500
+MS  - A common interstitial lung disease of unknown etiology, usually
+      occurring between 50-70 years of age. Clinically, it is characterized
+      by an insidious onset of breathlessness with exertion and a
+      nonproductive cough, leading to progressive DYSPNEA. Pathological
+      features show scant interstitial inflammation, patchy collagen
+      fibrosis, prominent fibroblast proliferation foci, and microscopic
+      honeycomb change.
+AN  - do not confuse with PULMONARY FIBROSIS
+HN  - 2009
+BX  - Cryptogenic Fibrosing Alveolitis
+
+MH  - Illness Behavior
+UI  - D055809
+MN  - F1.145.499
+MS  - Coordinate set of non-specific behavioral responses to non-psychiatric
+      illness. These may include loss of APPETITE or LIBIDO; disinterest in
+      ACTIVITIES OF DAILY LIVING; or withdrawal from social interaction.
+HN  - 2009; use Sick Role 1975-2008
+FX  - Sick Role
+
+MH  - Immobilized Proteins
+UI  - D055767
+MN  - D12.776.463
+MS  - Proteins that are chemically bound to a substrate material which
+      renders their location fixed. The immobilization of proteins allows
+      their use in chemical reactions without being diluted by solvent.
+HN  - 2009
+
+MH  - Immune System Phenomena
+UI  - D055633
+MN  - G12
+MS  - The characteristic properties and processes involved in IMMUNITY and
+      an organism's immune response.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Immune System Processes
+UI  - D055635
+MN  - G12.425
+MS  - Mechanisms of action and interactions of the components of the IMMUNE
+      SYSTEM.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Immunogenetic Phenomena
+UI  - D055261
+MN  - G12.500
+MS  - GENETIC PHENOMENA characterizing IMMUNITY and the immune response.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Immunogenetic Concepts
+
+MH  - Immunogenetic Processes
+UI  - D055260
+MN  - G12.425.742
+MN  - G12.500.349
+MS  - GENETIC PROCESSES involved in establishing immunity.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Immunological Synapses
+UI  - D054992
+MN  - A11.284.149.165.420.548
+MN  - A15.382.370
+MS  - The interfaces between T-CELLS and ANTIGEN-PRESENTING CELLS.
+      Supramolecular organization of proteins takes place at these synapses
+      involving various types of immune cells. Immunological synapses can
+      have several functions including LYMPHOCYTE ACTIVATION; enhancing,
+      balancing, or terminating signaling; or directing cytokine secretion.
+HN  - 2009
+BX  - Synapses, Immunological
+FX  - Antigen Presentation
+
+MH  - Infectious Disease Incubation Period
+UI  - D055256
+MN  - N6.850.310.405
+MS  - The amount time between exposure to an infectious agent and becoming
+      symptomatic.
+HN  - 2009
+
+MH  - Infectious Disease Medicine
+UI  - D055552
+MN  - H2.403.776.409.480
+MS  - A branch of internal medicine concerned with the diagnosis and
+      treatment of INFECTIOUS DISEASES.
+HN  - 2009
+BX  - Infectious Diseases Specialty
+FX  - Communicable Disease Control
+
+MH  - Infusions, Subcutaneous
+UI  - D055104
+MN  - E2.319.267.510.795
+MS  - The administration of liquid medication or nutrients under the skin,
+      usually over minutes or hours.
+HN  - 2009
+BX  - Subcutaneous Infusions
+
+MH  - Insulin Receptor Substrate Proteins
+UI  - D055504
+MN  - D12.644.360.24.301
+MN  - D12.776.157.57.39
+MN  - D12.776.476.24.382
+MS  - A structurally-related group of signaling proteins that are
+      phosphorylated by the INSULIN RECEPTOR PROTEIN-TYROSINE KINASE. The
+      proteins share in common an N-terminal PHOSPHOLIPID-binding domain, a
+      phosphotyrosine-binding domain that interacts with the phosphorylated
+      INSULIN RECEPTOR, and a C-terminal TYROSINE-rich domain. Upon tyrosine
+      phosphorylation insulin receptor substrate proteins interact with
+      specific SH2 DOMAIN-containing proteins that are involved in insulin
+      receptor signaling.
+HN  - 2009(1992)
+
+MH  - Integrative Medicine
+UI  - D055048
+MN  - H2.403.400
+MS  - The discipline concerned with using the combination of conventional
+      (allopathic) medicine and ALTERNATIVE MEDICINE to address the
+      biological, psychological, social, and spiritual aspects of health and
+      illness.
+HN  - 2009
+
+MH  - Integumentary System Physiological Phenomena
+UI  - D055827
+MN  - G13
+MS  - The properties and relationships and biological processes that
+      characterize the nature and function of the SKIN and its appendages.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Interpleural Analgesia
+UI  - D055770
+MN  - E3.91.430
+MS  - Injection of ANALGESICS; LOCAL ANESTHETICS; OR NARCOTICS into the
+      PLEURAL CAVITY between the two pleural membranes.
+HN  - 2009
+BX  - Intrapleural Analgesia
+
+MH  - Invasive Pulmonary Aspergillosis
+UI  - D055744
+MN  - C8.381.472.850.750
+MS  - Lung infections with the invasive forms of ASPERGILLUS, usually after
+      surgery, transplantation, prolonged NEUTROPENIA or treatment with
+      high-doses of CORTICOSTEROIDS. Invasive pulmonary aspergillosis can
+      progress to CHRONIC NECROTIZING PULMONARY ASPERGILLOSIS or
+      hematogenous spread to other organs.
+HN  - 2009
+BX  - Chronic Necrotizing Pulmonary Aspergillosis
+
+MH  - Inverted Repeat Sequences
+UI  - D055029
+MN  - G2.111.570.80.708.800.325
+MN  - G5.360.80.708.800.325
+MS  - Copies of nucleic acid sequence that are arranged in opposing
+      orientation. They may lie adjacent to each other (tandem) or be
+      separated by some sequence that is not part of the repeat
+      (hyphenated). They may be true palindromic repeats, i.e. read the same
+      backwards as forward, or  complementary which reads as the base
+      complement in the opposite orientation. Complementary inverted repeats
+      have the potential to form hairpin loop or stem-loop structures which
+      results in cruciform structures (such as CRUCIFORM DNA) when the
+      complementary inverted repeats occur in double stranded regions.
+HN  - 2009; for INVERTED REPEAT SEQUENCE use REPETITIVE SEQUENCES, NUCLEIC
+      ACID 1990-2008
+
+MH  - Jewelry
+UI  - D055498
+MN  - J1.637.502
+MS  - Objects of precious metal usually containing gems and worn to enhance
+      personal appearance. Health concerns include possible contamination
+      from lead content or bacteria.
+HN  - 2009
+
+MH  - Journal Impact Factor
+UI  - D055811
+MN  - L1.178.682.99.325.500
+MN  - L1.453.183.291.500
+MS  - A quantitative measure of the frequency on average with which articles
+      in a journal have been cited in a given period of time.
+HN  - 2009
+
+MH  - Keratosis, Actinic
+UI  - D055623
+MN  - C4.834.450
+MN  - C17.800.428.570
+MS  - White or pink lesions on the arms, hands, face, or scalp that arise
+      from sun-induced DNA DAMAGE to KERATINOCYTES in exposed areas. They
+      are considered precursor lesions to superficial SQUAMOUS CELL
+      CARCINOMA.
+HN  - 2009
+BX  - Actinic Keratosis
+
+MH  - Ketogenic Diet
+UI  - D055423
+MN  - E2.642.249.650
+MN  - G7.610.240.670
+MS  - A course of food intake that is high in FATS and low in CARBOHYDRATES.
+      This diet provides sufficient PROTEINS for growth but insufficient
+      amount of carbohydrates for the energy needs of the body. A ketogenic
+      diet generates 80-90% of caloric requirements from fats and the
+      remainder from proteins.
+HN  - 2009
+
+MH  - Killer Factors, Yeast
+UI  - D055646
+MN  - D12.776.354.374
+MN  - D23.946.587.531
+MS  - Protein factors released from one species of YEAST that are
+      selectively toxic to another species of yeast.
+HN  - 2009(1980)
+
+MH  - Kloeckera
+UI  - D055322
+MN  - B5.381.490
+MN  - B5.930.530
+MS  - A mitosporic fungal genus used in the fermentation of wine.
+      Teleomorphs are in the genus HANSENIASPORA.
+HN  - 2009
+
+MH  - Laccaria
+UI  - D055399
+MN  - B5.179.100.502
+MS  - A genus of white-spored mushrooms in the family Tricholomataceae. They
+      form symbiotic partnerships (MYCORRHIZAE) with trees.
+HN  - 2009
+
+MH  - Landslides
+UI  - D055876
+MN  - G1.311.340.674
+MN  - G1.595.340.674
+MS  - Downslope movements of soil and and/or rock resulting from natural
+      phenomena or man made actions. These can be secondary effects of
+      severe storms, VOLCANIC ERUPTIONS and EARTHQUAKES.
+AN  - coordinate with DISASTERS if pertinent; specify geographic location
+HN  - 2009
+
+MH  - Laryngomalacia
+UI  - D055092
+MN  - C5.182.310
+MN  - C8.360.563
+MN  - C9.400.563
+MN  - C16.131.621.568
+MN  - C17.300.182.310
+MS  - A congenital or acquired condition of underdeveloped or degeneration
+      of CARTILAGE in the LARYNX. This results in a floppy laryngeal wall
+      making patency difficult to maintain.
+HN  - 2009
+BX  - Chondromalacia of Larynx
+
+MH  - Left-Right Determination Factors
+UI  - D055458
+MN  - D12.644.276.954.550.475
+MN  - D12.776.467.942.550.475
+MN  - D23.529.942.550.475
+MS  - Signaling ligands that act in opposition to NODAL PROTEIN. During
+      vertebrate development they regulate the degree of left-right
+      asymmetry by controlling the spatiotemporal influence of NODAL
+      PROTEIN.
+HN  - 2009(1996)
+BX  - Lefty Proteins
+
+MH  - Light Signal Transduction
+UI  - D055537
+MN  - G2.111.87.800.480
+MN  - G2.149.115.800.480
+MN  - G4.299.880.480
+MS  - The conversion of absorbed light energy into molecular signals
+AN  - phototransduction in plants or microorganisms or non-image
+      forming/non-visual phototransduction goes here; PHOTOTRANSDUCTION,
+      VISUAL see VISION, OCULAR is also available
+HN  - 2009
+FX  - Photoreceptors, Microbial
+FX  - Photoreceptors, Plant
+
+MH  - Lincosamides
+UI  - D055231
+MN  - D3.383.773.532
+MN  - D9.408.471
+MS  - A family of LINCOMYCIN-related glycosides that contain a pyrrolidine
+      ring linked via an amide-bond to a pyranose moiety. Individual members
+      of this family are defined by the arrangement of specific constituent
+      groups on the lyncomycin molecule. Many lincosamides are ANTIBIOTICS
+      produced by a variety STREPTOMYCES species.
+HN  - 2009
+
+MH  - Lipomyces
+UI  - D055160
+MN  - B5.107.795.550
+MN  - B5.930.555
+MS  - A genus of ascomycetous soil yeast in the family Lipomycetaceae, order
+      SACCHAROMYCETALES.
+HN  - 2009
+
+MH  - Lipopeptides
+UI  - D055666
+MN  - D10.477
+MN  - D12.644.365
+MS  - Compounds consisting of a short peptide chain conjugated with an acyl
+      chain.
+HN  - 2009
+
+MH  - Lot Quality Assurance Sampling
+UI  - D055810
+MN  - E5.318.308.461
+MN  - N5.715.360.775.700.500
+MN  - N6.850.520.308.461
+MS  - A sampling methodology using small sample sizes when conducting
+      surveys in small geographical or population-based areas or lots.
+HN  - 2009
+
+MH  - Lung Injury
+UI  - D055370
+MN  - C8.381.520
+MS  - Damage to any compartment of the lung caused by physical, chemical, or
+      biological agents which characteristically elicit inflammatory
+      reaction. These inflammatory reactions can either be acute and
+      dominated by NEUTROPHILS, or chronic and dominated by LYMPHOCYTES and
+      MACROPHAGES.
+AN  - ACUTE LUNG INJURY and VENTILATOR-INDUCED LUNG INJURY are also
+      available
+HN  - 2009
+
+MH  - Lynch Syndrome II
+UI  - D055847
+MN  - C4.700.250.500
+MN  - C16.320.700.250.500
+MS  - Hereditary nonpolyposis colorectal neoplasms associated with other
+      malignancies, more commonly of ovarian or uterine origin. When also
+      associated with SEBACEOUS GLAND NEOPLASMS, it is called MUIR-TORRE
+      SYNDROME.
+HN  - 2009; use COLORECTAL NEOPLASMS, HEREDITARY NONPOLYPOSIS 1992-2008
+
+MH  - Macrophage Activation Syndrome
+UI  - D055501
+MN  - C20.683.515.800
+MS  - A serious complication of childhood systemic inflammatory disorders
+      that is thought to be caused by excessive activation and proliferation
+      of T-LYMPHOCYTES and MACROPHAGES. It is seen predominantly in children
+      with systemic onset JUVENILE IDIOPATHIC ARTHRITIS.
+HN  - 2009
+
+MH  - Magnetic Field Therapy
+UI  - D055909
+MN  - E2.621
+MS  - The magnetic stimulation of specific target tissues or areas of the
+      body for therapeutic purposes via the application of magnetic fields
+      generated by magnets or electromagnets.
+HN  - 2009
+FX  - Electric Stimulation Therapy
+
+MH  - Marasmius
+UI  - D055433
+MN  - B5.179.100.550
+MS  - A genus of tiny mushrooms in the family Tricholomataceae. They help
+      break down the decaying organic matter of the forest floor.
+HN  - 2009
+
+MH  - Mathematical Concepts
+UI  - D055641
+MN  - G17
+MS  - Numeric or quantitative entities, descriptions, properties,
+      relationships, operations, and events.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Mechanical Phenomena
+UI  - D055595
+MN  - G1.374
+MS  - The properties and processes of materials that affect their behavior
+      under force.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Mechanical Concepts
+
+MH  - Mechanical Processes
+UI  - D055596
+MN  - G1.374.676
+MN  - G1.595.540
+MS  - The behaviors of materials under force.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Medication Adherence
+UI  - D055118
+MN  - F1.145.488.500.500
+MN  - N5.300.150.600.600.500
+MS  - Voluntary cooperation of the patient in taking drugs or medicine as
+      prescribed. This includes timing, dosage, and frequency.
+AN  - medication non-adherence goes here; distinguish from TREATMENT REFUSAL
+HN  - 2009
+BX  - Medication Compliance
+BX  - Medication Nonadherence
+FX  - Treatment Refusal
+
+MH  - Medicine, Korean Traditional
+UI  - D055670
+MN  - E2.190.488.660.700
+MN  - I1.76.201.450.654.660.700
+MS  - Medical practice or discipline that is based on the knowledge,
+      cultures, and beliefs of the people of KOREA.
+AN  - for hand acupuncture (Koryo Sooji Chim) in Korean traditional medicine
+      index ACUPUNCTURE THERAPY + HAND + MEDICINE, KOREAN TRADITIONAL
+HN  - 2009
+BX  - Traditional Medicine, Korea
+
+MH  - Megakaryocyte Progenitor Cells
+UI  - D055016
+MN  - A11.148.378.590.837.625
+MN  - A11.872.378.590.817.625
+MN  - A15.378.316.378.590.837.625
+MS  - The parent cells that give rise to cells in the MEGAKARYOCYTE lineage,
+      and ultimately BLOOD PLATELETS.
+HN  - 2009
+
+MH  - Megakaryocyte-Erythroid Progenitor Cells
+UI  - D055015
+MN  - A11.148.378.590.837
+MN  - A11.872.378.590.817
+MN  - A15.378.316.378.590.837
+MS  - The parent cells that give rise to both cells of the MEGAKARYOCYTE and
+      the ERYTHROCYTE lineages.
+HN  - 2009
+
+MH  - Meningeal Carcinomatosis
+UI  - D055756
+MN  - C4.588.614.250.580.150
+MN  - C10.551.240.500.150
+MS  - Primary or secondary neoplasm in the ARACHNOID or SUBARACHNOID SPACE.
+      It appears as a diffuse fibrotic thickening of the MENINGES associated
+      with variable degrees of inflammation.
+HN  - 2009
+BX  - Carcinomatous Meningitis
+FX  - Meningitis
+
+MH  - Mesopic Vision
+UI  - D055255
+MN  - F2.830.816.964.186
+MN  - G11.561.600.810.964.186
+MN  - G14.640.816.186
+MS  - The function of the eye that is used in the intermediate level of
+      illumination (mesopic intensities) where both the RETINAL ROD
+      PHOTORECEPTORS and the RETINAL CONE PHOTORECEPTORS are active in
+      processing light input simultaneously.
+HN  - 2009
+
+MH  - Metabolic Equivalent
+UI  - D055686
+MN  - E1.370.600.337
+MN  - G3.730.365
+MS  - A measurement of OXYGEN uptake in a sitting, resting person (resting
+      oxygen consumption), varying with age, sex, race, and other factors.
+      In normal adult men, one MET is approximately 3.5 ml O2/kg/min of body
+      weight. Oxygen uptake during activities or work can be measured in
+      METs which can be use to determine health status and exercise
+      prescription.
+HN  - 2009
+
+MH  - Metabolic Phenomena
+UI  - D055754
+MN  - G3
+MS  - The CHEMICAL PROCESSES that occur within the cells, tissues, or an
+      organism and related temporal, spatial, qualitative, and quantitative
+      concepts.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Metabolic Concepts
+
+MH  - Metabolome
+UI  - D055442
+MN  - G3.500
+MS  - The dynamic collection of metabolites which represent a cell's or
+      organism's net metabolic response to current conditions.
+HN  - 2009
+FX  - Metabolism
+FX  - Metabolomics
+
+MH  - Metabolomics
+UI  - D055432
+MN  - H1.158.201.586
+MN  - H1.158.273.180.599
+MN  - H1.181.122.638
+MS  - The systematic identification and quantitation of all the metabolic
+      products of a cell, tissue, organ, or organism under varying
+      conditions. The METABOLOME of a cell or organism is a dynamic
+      collection of metabolites which represent its net response to current
+      conditions.
+HN  - 2009; use METABOLISM 2008
+FX  - Nutrigenomics
+
+MH  - Meteorology
+UI  - D055904
+MN  - H1.671.547
+MS  - The science of studying the characteristics of the atmosphere such as
+      its temperature, density, winds, clouds, precipitation, and other
+      atmospheric phenomena and aiming to account for the weather in terms
+      of external influences and the basic laws of physics. (From
+      McGraw-Hill Dictionary of Scientific and Technical Terms, 6th ed)
+HN  - 2009; use METEROLOGY CONCEPTS 1977-2008 & WEATHER 1963-1976
+
+MH  - Methicillin-Resistant Staphylococcus aureus
+UI  - D055624
+MN  - B3.510.400.790.750.100.500
+MS  - A strain of Staphylococcus aureus that is non-susceptible to the
+      action of METHICILLIN. The mechanism of resistance usually involves
+      modification of normal or the presence of acquired PENICILLIN BINDING
+      PROTEINS.
+AN  - infection: coordinate IM with STAPHYLOCOCCAL INFECTIONS or specfics
+HN  - 2009
+BX  - MRSA
+FX  - Methicillin Resistance
+
+MH  - Metschnikowia
+UI  - D055163
+MN  - B5.107.795.575
+MN  - B5.930.587
+MS  - A genus of ascomycetous yeast in the family Metschnikowiaceae, order
+      SACCHAROMYCETALES. Its antifungal activity is used to inhibit
+      postharvest decay of fruit.
+HN  - 2009
+
+MH  - Micro-Electrical-Mechanical Systems
+UI  - D055617
+MN  - E7.305.343
+MN  - J1.637.509
+MS  - A class of devices combining electrical and mechanical components that
+      have at least one of the dimensions in the micrometer range (between 1
+      micron and 1 millimeter). They include sensors, actuators, microducts,
+      and micropumps.
+HN  - 2009
+
+MH  - Microbiological Processes
+UI  - D055679
+MN  - G6.590
+MS  - Physiological functions, activities, and interactions of
+      microorganisms, including ARCHAEA; BACTERIA; RICKETTSIA; VIRUSES; and
+      many of the PROTOZOA; and FUNGI.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Microtechnology
+UI  - D055616
+MN  - H1.570
+MN  - J1.897.520.500
+MS  - Manufacturing technology for making microscopic devices in the
+      micrometer range (typically 1-100 micrometers), such as integrated
+      circuits or MEMS. The process usually involves replication and
+      parallel fabrication of hundreds or millions of identical structures
+      using various thin film deposition techniques and carried out in
+      environmentally-controlled clean rooms.
+HN  - 2009
+
+MH  - Microvessels
+UI  - D055806
+MN  - A7.231.461
+MS  - The finer blood vessels of the vasculature that are generally less
+      than 100 microns in internal diameter.
+HN  - 2009
+BX  - Microvasculature
+
+MH  - Miniature Postsynaptic Potentials
+UI  - D055369
+MN  - G4.580.887.500
+MN  - G7.265.337.900.750.560
+MN  - G7.265.750.887.500
+MN  - G7.700.240.900.750.560
+MN  - G11.561.570.918.500
+MN  - G11.561.600.835.750.560
+MS  - Postsynaptic potentials generated from a release of neurotransmitters
+      from a presynaptic nerve terminal in the absence of an ACTION
+      POTENTIAL. They may be m.e.p.p.s (miniature EXCITATORY POSTSYNAPTIC
+      POTENTIALS) or m.i.p.p.s (miniature INHIBITORY POSTSYNAPTIC
+      POTENTIALS).
+AN  - for miniature end plate potentials or miniature excitatory
+      postsynaptic potentials coordinate with EXCITATORY POSTSYNAPTIC
+      POTENTIALS; for miniature inhibitory postsynaptic potentials
+      coordinate with INHIBITORY POSTSYNAPTIC POTENTIALS
+HN  - 2009
+
+MH  - Monocyte-Macrophage Precursor Cells
+UI  - D055017
+MN  - A11.148.378.590.675.750
+MN  - A11.148.580.500
+MN  - A11.627.482.665
+MN  - A11.627.624.249
+MN  - A11.627.635.675.750
+MN  - A11.872.378.590.635.875
+MN  - A15.378.316.378.590.675.750
+MS  - Parent cells in the lineage that gives rise to MONOCYTES and
+      MACROPHAGES.
+HN  - 2009
+BX  - Monoblasts
+BX  - Promonocytes
+
+MH  - Morgellons Disease
+UI  - D055535
+MN  - C17.800.518
+MS  - An unexplained illness which is characterized by skin manifestations
+      including non-healing lesions, itching, and the appearance of fibers.
+      There appears to be a strong association with LYME DISEASE.
+HN  - 2009
+
+MH  - Moving and Lifting Patients
+UI  - D055805
+MN  - N2.421.585.684
+MS  - Moving or repositioning patients within their beds, from bed to bed,
+      bed to chair, or otherwise from one posture or surface to another.
+AN  - do not confuse with PATIENT TRANSFER (interfacility or intrahospital
+      transfer  for administrative reasons with regard to special care or
+      economics) or with TRANSPORTATION OF PATIENTS
+HN  - 2009
+BX  - Patient Moving and Lifting
+FX  - Transportation of Patients
+
+MH  - MP3-Player
+UI  - D055539
+MN  - L1.178.820.90.615
+MS  - Portable electronics device for storing and playing audio and or media
+      files. MP3  for MPEG-1 audio layer 3, is a digital coding format.
+HN  - 2009
+
+MH  - Mucin 5AC
+UI  - D055271
+MN  - D12.776.395.560.631.300.500
+MS  - A gel-forming mucin that is primarily found on the surface of gastric
+      epithelium and in the RESPIRATORY TRACT. Mucin 5AC was originally
+      identified as two distinct proteins, however a single gene encodes the
+      protein which gives rise to the mucin 5A and mucin 5C variants.
+HN  - 2009(1997)
+
+MH  - Mucin-2
+UI  - D055262
+MN  - D12.776.395.560.631.161
+MS  - A gel-forming mucin found predominantly in SMALL INTESTINE and variety
+      of mucous membrane-containing organs. It provides a protective,
+      lubricating barrier against particles and infectious agents.
+HN  - 2009(1993)
+
+MH  - Mucin-3
+UI  - D055263
+MN  - D12.776.395.550.565
+MN  - D12.776.395.560.631.184
+MN  - D12.776.543.550.542
+MS  - A membrane-bound mucin subtype that is primarily found in INTESTINAL
+      MUCOSA. Two closely-related subtypes of this protein have been
+      identified in humans.
+HN  - 2009(1995)
+
+MH  - Mucin-4
+UI  - D055264
+MN  - D12.644.360.534
+MN  - D12.776.395.560.631.195
+MN  - D12.776.476.534
+MS  - A transmembrane mucin that is found in a broad variety of epithelial
+      tissue. Mucin-4 may play a role in regulating cellular adhesion and in
+      cell surface signaling from the ERBB-2 RECEPTOR PROTEIN-TYROSINE
+      KINASE. Mucin-4 is a heterodimer of alpha and beta chains. The alpha
+      and beta chains result from the proteolytic cleavage of a precursor
+      protein.
+HN  - 2009(1986)
+
+MH  - Mucin-5B
+UI  - D055257
+MN  - D12.644.848.750
+MN  - D12.776.395.560.631.207
+MN  - D12.776.850.850
+MS  - A gel-forming mucin that is predominantly expressed by submucosal
+      glands of airway tissues and the SUBLINGUAL GLAND.  It is one of the
+      principal components of high molecular weight salivary mucin.
+HN  - 2009(1997)
+
+MH  - Mucin-6
+UI  - D055272
+MN  - D12.776.395.560.631.300.750
+MS  - A gel-forming mucin that is predominantly associated with the gastric
+      epithelium.
+HN  - 2009(1997)
+
+MH  - Muir-Torre Syndrome
+UI  - D055653
+MN  - C4.588.805.578.500
+MN  - C4.700.250.500.500
+MN  - C16.320.700.250.500.500
+MN  - C17.800.794.712.500
+MN  - C17.800.827.610
+MN  - C17.800.882.712.500
+MS  - A form of LYNCH SYNDROME II associated with cutaneous SEBACEOUS GLAND
+      NEOPLASMS. Muir-Torre syndrome is also associated with other visceral
+      malignant diseases include colorectal, endometrial, urological, and
+      upper gastrointestinal neoplasms.
+HN  - 2009
+
+MH  - Multilevel Analysis
+UI  - D055361
+MN  - N6.850.520.830.562
+MS  - The statistical manipulation of hierarchically and non-hierarchically
+      nested data. It includes clustered data, such as a sample of subjects
+      within a group of schools. Prevalent in the social, behavioral
+      sciences, and biomedical sciences,  both linear and nonlinear
+      regression models are applied.
+HN  - 2009
+
+MH  - Multiple Pulmonary Nodules
+UI  - D055613
+MN  - C4.588.894.797.520.237
+MN  - C8.381.540.148
+MN  - C8.785.520.148
+MS  - A number of small lung lesions characterized by small round masses of
+      2- to 3-mm in diameter. They are usually detected by chest CT scans
+      (COMPUTED TOMOGRAPHY, X-RAY). Such nodules can be associated with
+      metastases of malignancies inside or outside the lung, benign
+      granulomas, or other lesions.
+AN  - if neoplastic, coordinate with LUNG NEOPLASMS; if non-neoplastic, do
+      not coordinate with LUNG DISEASES
+HN  - 2009
+
+MH  - Musculoskeletal and Neural Physiological Phenomena
+UI  - D055687
+MN  - G11
+MS  - Properties, and processes of the MUSCULOSKELETAL SYSTEM and the
+      NERVOUS SYSTEM or their parts.
+AN  - used for searching: indexers and catalogers apply specifics
+HN  - 2009
+BX  - Musculoskeletal and Neural Physiology
+
+MH  - Myocardial Perfusion Imaging
+UI  - D055414
+MN  - E1.370.350.710.600.500
+MN  - E1.370.370.380.500
+MN  - E1.370.384.730.354.500
+MS  - The creation and display of functional images showing where the blood
+      is flowing into the MYOCARDIUM by following over time the distribution
+      of tracers injected into the blood stream.
+HN  - 2009
+
+MH  - Myostatin
+UI  - D055435
+MN  - D12.644.276.954.300.925
+MN  - D12.776.467.942.300.925
+MN  - D23.529.942.300.925
+MS  - A growth differentiation factor that is a potent inhibitor of SKELETAL
+      MUSCLE growth. It may play a role in the regulation of MYOGENESIS and
+      in muscle maintenance during adulthood.
+HN  - 2009(1997)
+BX  - Growth Differentiation Factor 8
+
+MH  - Myxobolus
+UI  - D055766
+MN  - B1.500.308.550.500
+MS  - The largest genus in the family Myxobolidae, class MYXOSPOREA,
+      containing over 400 species.
+AN  - infection: coordinate IM with PARASITIC DISEASES, ANIMAL (IM) or
+      PARASITIC DISEASES if in humans
+HN  - 2009
+
+MH  - Myxozoa
+UI  - D055764
+MN  - B1.500.308.550
+MS  - Single-celled, aquatic endoparasitic worms that are currently
+      considered belonging to the phylum CNIDARIA. They have a complex life
+      cycle and parasitize a wide range of hosts including FISHES;
+      ANNELIDIA; and BRYOZOA.
+AN  - infection: coordinate IM with PARASITIC DISEASES, ANIMAL (IM) or
+      PARASITIC DISEASES if in humans
+HN  - 2009
+
+MH  - Nasal Cartilages
+UI  - D055171
+MN  - A2.165.407.550
+MN  - A4.531.413
+MS  - Hyaline cartilages in the nose. There are five major nasal cartilages
+      including two lateral, two alar, and one septal.
+HN  - 2009
+
+MH  - Nasal Lavage
+UI  - D055556
+MN  - E5.510.573
+MS  - Irrigation of the nose with saline or irrigation solutions for
+      diagnostic or therapeutic purposes. It is used to remove irritants,
+      allergens, or microorganisms from the nose.
+AN  - do not confuse with NASAL LAVAGE FLUID, the washings obtained by
+      lavage
+HN  - 2009
+
+MH  - National Institute of Neurological Disorders and Stroke
+UI  - D055825
+MN  - I1.409.137.500.600.480.461
+MN  - N3.540.348.500.500.600.480.461
+MS  - Component of the NATIONAL INSTITUTES OF HEALTH.  It supports and
+      conducts research, both basic and clinical, on the normal and diseases
+      nervous system. It was established in 1950.
+AN  - add UNITED STATES (NIM); research support by this agency is checked as
+      RESEARCH SUPPORT, N.I.H., EXTRAMURAL or RESEARCH SUPPORT, N.I.H.,
+      INTRAMURAL; CATALOG: use NAF entry
+HN  - 2009
+
+MH  - Natural Cytotoxicity Triggering Receptor 1
+UI  - D055627
+MN  - D12.776.543.750.705.895.750.100
+MN  - D23.50.301.264.35.540
+MN  - D23.101.100.110.540
+MS  - A 46-kD stimulatory receptor found on resting and activated NATURAL
+      KILLER CELLS. It has specificity for VIRAL HEMAGGLUTININS that are
+      expressed on infected cells.
+HN  - 2009
+
+MH  - Natural Cytotoxicity Triggering Receptor 2
+UI  - D055629
+MN  - D12.776.543.750.705.895.750.200
+MN  - D23.50.301.264.35.545
+MN  - D23.101.100.110.545
+MS  - A 44-kD stimulatory receptor found on activated NATURAL KILLER CELLS.
+      It has specificity for VIRAL HEMAGGLUTININS that are expressed on
+      infected cells.
+HN  - 2009
+
+MH  - Natural Cytotoxicity Triggering Receptor 3
+UI  - D055628
+MN  - D12.776.543.750.705.895.750.300
+MN  - D23.50.301.264.35.547
+MN  - D23.101.100.110.547
+MS  - A 30 kDa stimulatory receptor found on resting and activated NATURAL
+      KILLER CELLS.
+HN  - 2009
+
+MH  - Natural Killer T-Cells
+UI  - D055611
+MN  - A11.118.637.555.567.569.290
+MN  - A15.145.229.637.555.567.569.360
+MN  - A15.382.490.555.567.569.470
+MS  - A specialized subset of T-LYMPHOCYTES that exhibit features of INNATE
+      IMMUNITY similar to that of NATURAL KILLER CELLS. They are reactive to
+      glycolipids presented in the context of the major histocompatibility
+      complex (MHC) class I-like molecule, CD1D ANTIGEN.
+AN  - do not confuse with KILLER CELLS, NATURAL
+HN  - 2009
+
+MH  - Nectria
+UI  - D055330
+MN  - B5.107.501.550
+MS  - A genus of ascomycetous fungi in the family Nectriaceae, order
+      HYPOCREALES. They are found as saprophytes on decaying wood or
+      parasites of trees. Anamorphs include FUSARIUM and Cylindrocarpon.
+HN  - 2009
+
+MH  - Neocallimastigomycota
+UI  - D055136
+MN  - B5.665
+MS  - A phylum of anaerobic fungi found in the stomachs of RUMINANTS. These
+      fungi lack mitochondria and reproduce through zoospores.
+HN  - 2009
+
+MH  - Neosartorya
+UI  - D055326
+MN  - B5.107.320.550
+MS  - A genus of ascomycetous fungi in the family Trichocomaceae, order
+      EUROTIALES. Some species can cause opportunistic infections in humans,
+      similar to its anamorph ASPERGILLUS.
+AN  - infection: coordinate IM with MYCOSES (IM) or specific mycosis (IM)
+HN  - 2009
+
+MH  - Neotyphodium
+UI  - D055328
+MN  - B5.381.570
+MS  - The anamorphic form of the fungus EPICHLOE. Many Neotyphodium species
+      produce ERGOT ALKALOIDS.
+HN  - 2009
+
+MH  - Nephroblastoma Overexpressed Protein
+UI  - D055514
+MN  - D12.644.276.200.500
+MN  - D12.776.467.200.500
+MN  - D12.776.860.300.200.500
+MN  - D23.101.840.450
+MN  - D23.529.237.600
+MS  - A CCN protein family member found at high levels in NEPHROBLASTOMA
+      cells. It is found both intracellularly and in the EXTRACELLULAR
+      MATRIX and may play a role in the regulation of CELL PROLIFERATION and
+      EXTRACELLULAR MATRIX synthesis.
+HN  - 2009
+
+MH  - Nephrogenic Fibrosing Dermopathy
+UI  - D054989
+MN  - C17.800.553
+MN  - C23.550.355.550
+MS  - A chronic, acquired, idiopathic, progressive eruption of the skin that
+      occurs in the context of RENAL FAILURE. It is sometimes accompanied by
+      systemic fibrosis. The pathogenesis seems to be multifactorial, with
+      postulated involvement of circulating fibrocytes. There is a strong
+      association between this disorder and the use of gadolinium-based
+      contrast agents.
+HN  - 2009
+BX  - Nephrogenic Systemic Fibrosis
+
+MH  - Nerve Expansion
+UI  - D055164
+MN  - E4.680.800.500
+MS  - Procedures that stimulate nerve elongation over a period of time. They
+      are used in repairing nerve tissue.
+HN  - 2009
+
+MH  - Neuroendocrine Cells
+UI  - D055099
+MN  - A11.382.944
+MS  - Specialized NEURONS that produce hormones, such as NEUROPEPTIDES or
+      BIOGENIC AMINES. They generally are in the NERVOUS SYSTEM, such as
+      HYPOTHALAMUS, but can be found in other organs or systems. These
+      neurons contain dense neurosecretory granules and PROPROTEIN
+      CONVERTASES allowing the rapidly release of NEUROHORMONES into the
+      blood circulation upon stimulation.
+AN  - coordinate with specific organ
+HN  - 2009
+
+MH  - Neurogenesis
+UI  - D055495
+MN  - G4.299.151.912
+MN  - G7.700.320.500.325.377.687
+MN  - G8.686.785.760.170.450.500
+MS  - Formation of NEURONS which involves the differentiation and division
+      of STEM CELLS in which one or both of the daughter cells become
+      neurons.
+HN  - 2009
+
+MH  - Neurogenic Bowel
+UI  - D055496
+MN  - C6.405.469.158.272.804
+MS  - Loss or absence of normal intestinal function due to nerve damage or
+      birth defects. It is characterized by the inability to control the
+      elimination of stool from the body.
+HN  - 2009
+
+MH  - Neutral Ceramidase
+UI  - D055576
+MN  - D8.811.277.87.250.650
+MS  - A ceramidase subtype that is active at neutral pH. It is found at high
+      levels within the SMALL INTESTINE and in the BRAIN.
+HN  - 2009(2007); for NEUTRAL CERAMIDASE use CERAMIDASES 2007-2008
+
+MH  - Nevus, Halo
+UI  - D055882
+MN  - C4.557.665.560.580
+MS  - A benign skin lesion characterized by a zone of depigmentation
+      surrounding the nevus.
+HN  - 2009; use NEVUS, PIGMENTED 1994-2008
+
+MH  - New Orleans
+UI  - D055820
+MN  - Z1.107.567.875.750.480.500
+MN  - Z1.433.697
+MS  - City in Orleans Parish (county), largest city in state of LOUISIANA.
+      It is located between the Mississippi River and Lake Pontchartrain.
+HN  - 2009
+
+MH  - Night Vision
+UI  - D055254
+MN  - F2.830.816.964.249
+MN  - G11.561.600.810.964.249
+MN  - G14.640.816.249
+MS  - Function of the human eye that is used in dim illumination (scotopic
+      intensities) or at nighttime. Scotopic vision is performed by RETINAL
+      ROD PHOTORECEPTORS with high sensitivity to light and peak absorption
+      wavelength at 507 nm near the blue end of the spectrum.
+HN  - 2009
+BX  - Rod Vision
+BX  - Scotopic Vision
+
+MH  - NK Cell Lectin-Like Receptor Subfamily A
+UI  - D055650
+MN  - D12.776.543.750.705.895.800.100
+MN  - D23.50.301.264.920.500
+MN  - D23.101.100.920.500
+MS  - An inhibitory subclass of NK cell lectin-like receptors that interacts
+      with CLASS I MAJOR HISTOCOMPATIBILITY ANTIGENS and prevents the
+      activation of NK CELLS.
+HN  - 2009(1994)
+
+MH  - NK Cell Lectin-Like Receptor Subfamily B
+UI  - D055651
+MN  - D12.776.543.750.705.895.800.200
+MN  - D23.50.301.264.35.577
+MN  - D23.101.100.110.577
+MS  - A subclass of NK cell lectin-like receptors that includes both
+      inhibitory and stimulatory members.
+HN  - 2009(1991)
+
+MH  - NK Cell Lectin-Like Receptor Subfamily C
+UI  - D055654
+MN  - D12.776.543.750.705.895.800.810
+MS  - A subclass of NK cell lectin-like receptors that associates with
+      members of NK CELL LECTIN-LIKE RECEPTOR SUBFAMILY D to form
+      heterodimeric receptors for HLA-E antigen.
+HN  - 2009; for KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY C use RECEPTORS,
+      NATURAL KILLER CELL 1993-2008
+
+MH  - NK Cell Lectin-Like Receptor Subfamily K
+UI  - D055655
+MN  - D12.776.543.750.705.895.800.910
+MN  - D23.50.301.264.35.582
+MN  - D23.101.100.110.582
+MS  - An activating NK cell lectin-like receptor subfamily that regulates
+      immune responses to INFECTION and NEOPLASMS. Members of this subfamily
+      generally occur as homodimers.
+HN  - 2009; for KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY K use RECEPTORS,
+      NATURAL KILLER CELL 1993-2008
+
+MH  - Nodal Protein
+UI  - D055457
+MN  - D12.644.276.954.550.650
+MN  - D12.776.467.942.550.650
+MN  - D23.529.942.550.650
+MS  - The founding member of the nodal signaling ligand family of proteins.
+      Nodal protein was originally discovered in the region of the mouse
+      embryo primitive streak referred to as HENSEN'S NODE. It is expressed
+      asymmetrically on the left side in chordates and plays a critical role
+      in the genesis of left-right asymmetry during vertebrate development.
+HN  - 2009
+
+MH  - Nodal Signaling Ligands
+UI  - D055456
+MN  - D12.644.276.954.550
+MN  - D12.776.467.942.550
+MN  - D23.529.942.550
+MS  - Members of the transforming growth factor superfamily that play a role
+      in pattern formation and differentiation during the pregastrulation
+      and GASTRULATION stages of chordate development. Several nodal
+      signaling ligands are specifically involved in the genesis of
+      left-right asymmetry during development. The protein group is named
+      after a critical region of the vertebrate embryo PRIMITIVE STREAK
+      referred to as HENSEN'S NODE.
+HN  - 2009
+
+MH  - Nuclear Power Plants
+UI  - D055848
+MN  - E7.305.437.600
+MN  - E7.710.600.500
+MN  - J1.780.600
+MS  - Facilities that convert NUCLEAR ENERGY into electrical energy.
+HN  - 2009; use POWER PLANTS 1995-2008
+
+MH  - Olfactory Perception
+UI  - D055696
+MN  - F2.463.593.485
+MS  - The process by which the nature and meaning of olfactory stimuli, such
+      as odors, are recognized and interpreted by the brain.
+AN  - differentiate from SMELL: OLFACTORY PERCEPTION takes place in the
+      brain, SMELL takes place in the nose
+HN  - 2009
+
+MH  - Ophiostoma
+UI  - D055156
+MN  - B5.107.655.600
+MS  - A genus of fungi in the family Ophiostomataceae, order
+      OPHIIOSTOMATALES. Several species are the source of Dutch elm disease,
+      which is spread by the elm bark beetle.
+AN  - Ascomycota (1963-2008)
+HN  - 2009
+
+MH  - Ophiostomatales
+UI  - D055155
+MN  - B5.107.655
+MS  - An order of fungi in the phylum ASCOMYCOTA that are important plant
+      pathogens.
+HN  - 2009
+
+MH  - Opsins
+UI  - D055355
+MN  - D12.776.306.466
+MN  - D23.767.930.750
+MS  - Photosensitive proteins in the membranes of PHOTORECEPTOR CELLS such
+      as the rods and the cones. Opsins have varied light absorption
+      properties and are members of the G-PROTEIN-COUPLED RECEPTORS family.
+      Their ligands are VITAMIN A-based chromophores.
+HN  - 2009; for OPSIN use OPSIN 1993-2008
+
+MH  - Optical Devices
+UI  - D055096
+MN  - E7.632
+MS  - Products or parts of products used to detect, manipulate, or analyze
+      light, such as LENSES, refractors, mirrors, filters, prisms, and
+      OPTICAL FIBERS.
+HN  - 2009
+FX  - Optics and Photonics
+
+MH  - Optical Fibers
+UI  - D055100
+MN  - E7.632.750
+MS  - Thin strands of transparent material, usually glass, that are used for
+      transmitting light waves over long distances.
+HN  - 2009
+FX  - Fiber Optic Technology
+
+MH  - Optical Phenomena
+UI  - D055620
+MN  - G1.590
+MS  - LIGHT, it's processes and properties, and the characteristics of
+      materials interacting with it.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Optical Concepts
+
+MH  - Optical Processes
+UI  - D055621
+MN  - G1.590.770
+MN  - G1.595.640
+MS  - Behavior of LIGHT and its interactions with itself and materials.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Optics and Photonics
+UI  - D055095
+MN  - H1.671.617
+MN  - J1.293.688
+MS  - A specialized field of physics and engineering involved in studying
+      the behavior and properties of light and the technology of analyzing,
+      generating, transmitting, and manipulating ELECTROMAGNETIC RADIATION
+      in the visible, infrared, and ultraviolet range.
+AN  - OPTICAL DEVICES is available
+HN  - 2009
+FX  - Optical Devices
+
+MH  - Orbital Myositis
+UI  - D055622
+MN  - C5.651.594.728
+MN  - C10.668.491.562.537
+MN  - C11.675.426
+MS  - Inflammation of the extraocular muscle of the eye. It is characterized
+      by swelling which can lead to ischemia, fibrosis, or ORBITAL
+      PSEUDOTUMOR.
+HN  - 2009; use GRANULOMA, PLASMA CELL, ORBITAL 1992-2008
+BX  - Myositis, Orbital
+
+MH  - Organic Chemistry Phenomena
+UI  - D055601
+MN  - G2.607
+MS  - The conformation, properties, reaction processes, and the properties
+      of the reactions of carbon compounds.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Organic Chemistry Concepts
+
+MH  - Organic Chemistry Processes
+UI  - D055602
+MN  - G2.149.465
+MN  - G2.607.750
+MS  - The reactions, changes in structure and composition, the properties of
+      the reactions of carbon compounds, and the associated energy changes.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Orthostatic Intolerance
+UI  - D054971
+MN  - C10.177.575.600
+MN  - C23.888.592.610
+MS  - Symptoms of cerebral hypoperfusion or autonomic overaction which
+      develop while the subject is standing, but are relieved on recumbency.
+      Types of this include NEUROCARDIOGENIC SYNCOPE; POSTURAL ORTHOSTATIC
+      TACHYCARDIA SYNDROME; and neurogenic ORTHOSTATIC HYPOTENSION. (From
+      Noseworthy, JH., Neurological Therapeutics Principles and Practice,
+      2007, p2575-2576)
+HN  - 2009
+
+MH  - Osteoarthritis, Spine
+UI  - D055013
+MN  - C5.116.900.853.625.399
+MN  - C5.550.114.606.750
+MN  - C5.550.114.865.399
+MN  - C5.799.613.750
+MS  - A degenerative joint disease involving the SPINE. It is characterized
+      by progressive deterioration of the spinal articular cartilage
+      (CARTILAGE, ARTICULAR), usually with hardening of the subchondral bone
+      and outgrowth of bone spurs (OSTEOPHYTE).
+AN  - coordinate with specific vertebra
+HN  - 2009
+BX  - Lumbar Osteoarthritis
+BX  - Spinal Osteoarthritis
+
+MH  - Osteochondrosis
+UI  - D055034
+MN  - C5.116.821
+MS  - Any of a group of bone disorders involving one or more ossification
+      centers (EPIPHYSES). It is characterized by degeneration or NECROSIS
+      followed by revascularization and reossification. Osteochondrosis
+      often occurs in children causing varying degrees of discomfort or
+      pain. There are many eponymic types for specific affected areas, such
+      as tarsal navicular (Kohler disease) and tibial tuberosity
+      (Osgood-Schlatter disease).
+HN  - 2009; use OSTEOCHONDRITIS 1963-2008
+BX  - Koehler Disease
+BX  - Osgood-Schlatter Disease
+
+MH  - Osteopathic Physicians
+UI  - D055360
+MN  - M1.526.485.810.722
+MN  - N2.360.810.722
+MS  - Licensed physicians trained in OSTEOPATHIC MEDICINE. An osteopathic
+      physician, also known as D.O. (Doctor of Osteopathy), is able to
+      perform surgery and prescribe medications.
+HN  - 2009
+BX  - Osteopaths
+FX  - Osteopathic Medicine
+
+MH  - Pallister-Hall Syndrome
+UI  - D054975
+MN  - C4.445.622
+MN  - C4.588.614.250.195.885.500.299
+MN  - C5.660.585.600.374
+MN  - C10.228.140.211.885.500.299
+MN  - C10.228.140.617.477.299
+MN  - C10.551.240.250.700.500.249
+MN  - C16.131.77.690
+MN  - C16.131.621.585.600.374
+MS  - A pleiotropic disorder of human development that comprises
+      hypothalamic HAMARTOMA; central and postaxial POLYDACTYLY; bifid
+      EPIGLOTTIS; ANAL ATRESIA; and renal and other abnormalities. This
+      disorder is associated with FRAMESHIFT MUTATIONS in the GLI3 gene
+      which encodes the GLI3 protein, a KRUPPEL-LIKE TRANSCRIPTION FACTORS
+      family member.
+HN  - 2009
+
+MH  - Pancreatic alpha-Amylases
+UI  - D055292
+MN  - D8.811.277.450.66.50.249
+MS  - A subclass of alpha-amylase ISOENZYMES that are secreted into
+      PANCREATIC JUICE.
+HN  - 2009
+
+MH  - Pancreatitis, Graft
+UI  - D055589
+MN  - C6.689.750.860
+MS  - An inflammatory disease and serious complication of PANCREAS
+      TRANSPLANTATION. It is caused by a premature activation of pancreatic
+      proenzymes leading to autodigestion of the gland and can be attributed
+      to immunological or nonimmunological causes.
+HN  - 2009
+BX  - Graft Pancreatitis
+
+MH  - Perfusion Imaging
+UI  - D055420
+MN  - E1.370.350.710.600
+MN  - E1.370.384.730.354
+MS  - The creation and display of functional images showing where the blood
+      flow reaches by following the distribution of tracers injected into
+      the blood stream.
+HN  - 2009
+
+MH  - Periodontal Atrophy
+UI  - D055093
+MN  - C7.465.714.354
+MS  - Degradation or wasting of the PERIODONTIUM tissues that may involve
+      the gum (GINGIVA), the alveolar bone (ALVEOLAR PROCESS), the DENTAL
+      CEMENTUM, or the PERIODONTAL LIGAMENT.
+HN  - 2009
+
+MH  - Perivascular Epithelioid Cell Neoplasms
+UI  - D054973
+MN  - C4.557.450.692
+MS  - A family of mesenchymal tumors composed of histologically and
+      immunohistochemically distinctive perivascular epithelioid cells.
+      These cells do not have a normal anatomic homolog. (From Fletcher CDM,
+      et. al., World Health Organization Classification of Tumors: Pathology
+      and Genetics of Tumors of Soft Tissue and Bone, 2002).
+HN  - 2009
+BX  - Clear-Cell Myomelanocytic Tumors
+BX  - Clear-Cell Sugar Tumors
+BX  - PEComas
+
+MH  - Pharmacological Processes
+UI  - D055632
+MN  - G7.690.812
+MN  - G7.700.680
+MS  - The metabolism of drugs and their mechanisms of action.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Pharmacologic Processes
+
+MH  - Pholiota
+UI  - D055368
+MN  - B5.179.100.645
+MS  - A genus of basidiomycetous mushroom in the family Strophariaceae,
+      exhibiting a bipolar mating system.
+HN  - 2009
+
+MH  - Photochemical Processes
+UI  - D055668
+MN  - G2.149.767.690
+MN  - G2.842.750.690
+MS  - Chemical reactions effected by light.
+HN  - 2009
+
+MH  - Photoreceptor Connecting Cilium
+UI  - D055212
+MN  - A8.663.650.850.625.670.49
+MN  - A8.663.650.915.937.670.49
+MN  - A8.800.950.937.670.49
+MN  - A9.371.729.831.625.670.49
+MN  - A11.671.650.850.625.670.49
+MN  - A11.671.650.915.937.670.49
+MS  - The bridge between the inner and the outer segments of a retinal rod
+      or a cone photoreceptor cell. Through it, proteins synthesized in the
+      inner segment are transported to the outer segment.
+HN  - 2009
+
+MH  - Photoreceptors, Plant
+UI  - D055519
+MN  - D12.776.765.593
+MS  - Plant proteins that mediate LIGHT SIGNAL TRANDUCTION. They are
+      involved in PHOTOTROPISM and other light adaption responses during
+      plant growth and development . They include the phototropins,
+      phytochromes (PHYTOCHROME), and members of the ubiquitous cryptochrome
+      family.
+AN  - not for plant photosynthetic apparatus, use PHOTOSYNTHETIC REACTION
+      CENTER, PLANT see PHOTOSYNTHETIC REACTION CENTER COMPLEX PROTEINS
+HN  - 2009; use PHOTOSYNTHETIC REACTION CENTER COMPLEX PROTEINS 1999-2008
+FX  - Light Signal Transduction
+
+MH  - Physical Phenomena
+UI  - D055585
+MN  - G1
+MS  - The entities of matter and energy, and the processes, principles,
+      properties, and relationships describing their nature and
+      interactions.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Physical Concepts
+
+MH  - Physical Processes
+UI  - D055586
+MN  - G1.595
+MS  - The forces and principles of action of matter and energy.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Physicochemical Phenomena
+UI  - D055605
+MN  - G2.842
+MS  - The physical phenomena describing the structure and properties of
+      atoms and molecules, and their reaction and interaction processes.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Physical Chemistry Concepts
+BX  - Physicochemical Concepts
+
+MH  - Physicochemical Processes
+UI  - D055606
+MN  - G2.149.767
+MN  - G2.842.750
+MS  - Physical reactions involved in the formation of or changes in the
+      structure of atoms and molecules and their interactions.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Physical Chemistry Processes
+
+MH  - Physiological Processes
+UI  - D055705
+MN  - G7.700
+MS  - The functions and activities of living organisms that support life in
+      single- or multi-cellular organisms from their origin through the
+      progression of life.
+AN  - general or unspecified; prefer specifics; differentiate from
+      PHYSIOLOGY, the specialty or discipline; DF: PHYSIOL PROCESSES
+HN  - 2009
+
+MH  - Phytophthora infestans
+UI  - D055750
+MN  - B2.650.715.600
+MS  - A species of parasitic algae in the family Peronosporaceae that is the
+      causative agent of late blight of potato.
+HN  - 2009
+
+MH  - Placozoa
+UI  - D054909
+MN  - B1.500.740
+MS  - A phylum of primitive invertebrate animals that exemplify a simple
+      body organization. Trichoplax adhaerens is considered a key species
+      for early metazoan evolution.
+HN  - 2009
+BX  - Trichoplax
+
+MH  - Plant Physiological Processes
+UI  - D055639
+MN  - G15.744
+MS  - Physiological functions characteristic of plants.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Plant Root Nodulation
+UI  - D055170
+MN  - G15.744.747
+MS  - The formation of a nitrogen-fixing cell mass on PLANT ROOTS following
+      symbiotic infection by nitrogen-fixing bacteria such as RHIZOBIUM or
+      FRANKIA.
+HN  - 2009
+FX  - Nitrogen Fixation
+FX  - Root Nodules, Plant
+
+MH  - Poetry
+UI  - D055821
+MN  - V2.712
+MS  - Works that consist of literary and oral genre expressing meaning via
+      symbolism and following formal or informal patterns.
+AN  - this heading is used as a Publication Type. Used by catalogers only;
+      poetry as a subject is indexed under the main heading POETRY AS TOPIC
+HN  - 2009
+
+MH  - Polyporus
+UI  - D055492
+MN  - B5.179.120.760.675
+MS  - A genus of basidiomyceteous fungi in the family POLYPORACEAE found
+      mostly on living trees or dead wood.
+HN  - 2009
+
+MH  - Poria
+UI  - D055441
+MN  - B5.179.120.174.600
+MS  - A genus of basiodiomycetous fungi in the family Coriolaceae. Members
+      are known for infesting wood.
+HN  - 2009
+
+MH  - Posterior Cervical Sympathetic Syndrome
+UI  - D055010
+MN  - C5.116.900.596
+MS  - A pathological condition that is characterized by a host of cranial
+      symptoms, such as headaches, abnormal functions of the eyes and the
+      ears, and psychological and mental disorders. This syndrome usually
+      appears after neck injuries, inflammation, or neoplasm.
+HN  - 2009; use SPINAL OSTEOPHYTOSIS 1997-2008
+BX  - Barre-Lieou Syndrome
+
+MH  - Postural Orthostatic Tachycardia Syndrome
+UI  - D054972
+MN  - C10.177.575.600.625
+MS  - A syndrome of ORTHOSTATIC INTOLERANCE combined with excessive upright
+      TACHYCARDIA, and usually without associated ORTHOSTATIC HYPOTENSION.
+      All variants have in common an excessively reduced venous return to
+      the heart (central HYPOVOLEMIA) while upright.
+HN  - 2009
+BX  - Postural Tachycardia Syndrome
+
+MH  - Prescription Drugs
+UI  - D055553
+MN  - D26.670
+MS  - Drugs that cannot be sold legally without a prescription.
+AN  - note category: do not confuse with DRUG PRESCRIPTIONS; DRUG
+      PRESCRIPTIONS are the  written directions for obtaining drugs;
+      PRESCRIPTION DRUGS are the drugs that are prescribed
+HN  - 2009
+
+MH  - Prescriptions
+UI  - D055656
+MN  - N2.421.668.778
+MS  - Directions written for the obtaining and use of PHARMACEUTICAL
+      PREPARATIONS; MEDICAL DEVICES; corrective LENSES; and a variety of
+      other medical remedies.
+HN  - 2009, 1963-1977
+
+MH  - Primary Dysautonomias
+UI  - D054969
+MN  - C10.177.575
+MS  - Disorders of the AUTONOMIC NERVOUS SYSTEM occurring as a primary
+      condition. Manifestations can involve any or all body systems but
+      commonly affect the BLOOD PRESSURE and HEART RATE.
+AN  - do not confuse X ref DYSAUTONOMIA with DYSAUTONOMIA, FAMILIAL
+HN  - 2009; for DYSAUTONOMIA use AUTONOMIC NERVOUS SYSTEM DISEASES 1989-2008
+BX  - Dysautonomia
+
+MH  - Primary Graft Dysfunction
+UI  - D055031
+MN  - C14.907.725.675
+MN  - C23.550.767.877.750
+MS  - A form of ischemia-reperfusion injury occurring in the early period
+      following transplantation. Significant pathophysiological changes in
+      MITOCHONDRIA are the main cause of the dysfunction. It is most often
+      seen in the transplanted lung, liver, or kidney and can lead to GRAFT
+      REJECTION.
+HN  - 2009
+
+MH  - Primary Myelofibrosis
+UI  - D055728
+MN  - C15.378.190.636.765
+MS  - A de novo myeloproliferation arising from an abnormal stem cell. It is
+      characterized by the replacement of bone marrow by fibrous tissue, a
+      process that is mediated by CYTOKINES arising from the abnormal clone.
+HN  - 2009
+
+MH  - Prolamins
+UI  - D055315
+MN  - D12.776.765.725.500
+MS  - A group of seed storage proteins restricted to the POACEAE family.
+      They are rich in GLUTAMINE and PROLINE.
+AN  - may appear in the literature as "prolamines"; do not confuse with the
+      drug prolamine
+HN  - 2009 (1978)
+
+MH  - Proline-Rich Protein Domains
+UI  - D055232
+MN  - G2.111.570.790.709.600.40.752
+MS  - Protein domains that are enriched in PROLINE. The cyclical nature of
+      proline causes the peptide bonds it forms to have a limited degree of
+      conformational mobility. Therefore the presence of multiple prolines
+      in close proximity to each other can convey a distinct conformational
+      arrangement to a peptide chain.
+HN  - 2009(1979)
+FX  - Cornified Envelope Proline-Rich Proteins
+FX  - Salivary Proline-Rich Proteins
+
+MH  - Protein Multimerization
+UI  - D055503
+MN  - G2.111.87.697
+MN  - G2.149.115.697
+MS  - The assembly of the QUATERNARY PROTEIN STRUCTURE of multimeric
+      proteins (MULTIPROTEIN COMPLEXES) from their composite PROTEIN
+      SUBUNITS.
+HN  - 2009
+FX  - Dimerization
+
+MH  - Protein Stability
+UI  - D055550
+MN  - G2.111.700
+MS  - The ability of a protein to retain its structural conformation or its
+      activity when subjected to physical or chemical manipulations.
+AN  - IM general only; coordinate NIM with specific protein (IM)
+HN  - 2009
+FX  - Protein Denaturation
+
+MH  - Prussia
+UI  - D055787
+MN  - Z1.586.315.720
+MN  - Z1.586.725
+MS  - Former state in north central Germany. Formally abolished March 1,
+      1947. Kingdom established 1701.
+HN  - 2009
+
+MH  - Psilocybe
+UI  - D055391
+MN  - B5.179.100.660
+MS  - A genus of small mushrooms in the family Strophariaceae. Some species
+      are known for their hallucinogenic properties.
+HN  - 2009
+
+MH  - Public-Private Sector Partnerships
+UI  - D055818
+MN  - J1.219.843
+MN  - N3.540.706
+MS  - An organizational enterprise between a public sector agency, federal,
+      state or local, and a private sector entity. Skills and assets of each
+      sector are shared to deliver a service or facility for the benefit or
+      use of the general public.
+HN  - 2009
+
+MH  - Pulmonary Aspergillosis
+UI  - D055732
+MN  - C8.381.472.850
+MS  - Infections of the respiratory tract with fungi of the genus
+      ASPERGILLUS. Infections may result in allergic reaction (ALLERGIC
+      BRONCHOPULMONARY ASPERGILLOSIS), colonization in pulmonary cavities as
+      fungus balls (MYCETOMA), or lead to invasion of the lung parenchyma
+      (INVASIVE PULMONARY ASPERGILLOSIS).
+HN  - 2009; for BRONCHOPULMONARY ASPERGILLOSIS use ASPERGILLOSIS, ALLERGIC
+      BRONCHOPULMONARY 1992-2008
+BX  - Bronchopulmonary Aspergillosis
+
+MH  - Pure Autonomic Failure
+UI  - D054970
+MN  - C10.177.575.650
+MS  - A degenerative disease of the AUTONOMIC NERVOUS SYSTEM that is
+      characterized by idiopathic ORTHOSTATIC HYPOTENSION and a greatly
+      reduced level of CATECHOLAMINES. No other neurological deficits are
+      present.
+HN  - 2009; use AUTONOMIC NERVOUS SYSTEM DISEASES 1999-2008
+BX  - Bradbury-Eggleston Syndrome
+
+MH  - Purpura Fulminans
+UI  - D055665
+MN  - C15.378.100.802.230
+MS  - A severe, rapidly fatal reaction occurring most commonly in children
+      following an infectious illness. It is characterized by large, rapidly
+      spreading skin hemorrhages, fever, or shock. Purpura fulminans often
+      accompanies or is triggered by DISSEMINATED INTRAVASCULAR COAGULATION.
+HN  - 2009; use PURPURA, SCHOENLEIN-HENOCH (1997-2008)
+FX  - Disseminated Intravascular Coagulation
+
+MH  - Pycnoporus
+UI  - D055494
+MN  - B5.179.120.760.690
+MS  - A genus of basidiomyceteous fungi in the family POLYPORACEAE. The
+      species all contain bright orange, bracket-like fruiting bodies.
+HN  - 2009
+
+MH  - Pyometra
+UI  - D055112
+MN  - C13.351.500.852.544
+MS  - An accumulation of PUS in the uterine cavity (UTERUS). Pyometra
+      generally indicates the presence of infections.
+HN  - 2009
+
+MH  - Pyricularia grisea
+UI  - D055685
+MN  - B5.381.723
+MS  - The anamorphic form of the fungus MAGNAPORTHE GRISEA and the most
+      important pathogen of rice worldwide. It causes rice blast which
+      prevents maturation of the rice grains.
+HN  - 2009
+
+MH  - Radiation Equipment and Supplies
+UI  - D055618
+MN  - E7.710
+MS  - Instruments and apparatus for radiation applications and their
+      components and associated expendables.
+HN  - 2009
+
+MH  - Radiometric Dating
+UI  - D055110
+MN  - E5.799.669
+MS  - Techniques used to determine the age of materials, based on the
+      content and half-lives of the RADIOACTIVE ISOTOPES they contain.
+HN  - 2009
+
+MH  - Rats, Transgenic
+UI  - D055647
+MN  - B1.50.680.136.700
+MN  - B1.150.900.649.865.635.505.700.825
+MS  - Laboratory rats that have been produced from a genetically manipulated
+      rat EGG or rat EMBRYO, MAMMALIAN. They contain genes from another
+      species.
+AN  - NIM with no qualifiers when experimental animal; check the tag RATS
+HN  - 2009
+BX  - Transgenic Rats
+
+MH  - Receptors, Natural Cytotoxicity Triggering
+UI  - D055636
+MN  - D12.776.543.750.705.895.750
+MS  - A subclass of natural killer cell receptors that perform an important
+      role in the recognition of tumor cells by NK CELLS.
+HN  - 2009
+
+MH  - Receptors, Natural Killer Cell
+UI  - D055607
+MN  - D12.776.543.750.705.895
+MS  - Receptors that are specifically found on the surface of NATURAL KILLER
+      CELLS. They play an important role in regulating the cellular
+      component of INNATE IMMUNITY.
+AN  - not for receptors on NATURAL KILLER T-CELLS
+HN  - 2009(1993)
+
+MH  - Receptors, NK Cell Lectin-Like
+UI  - D055630
+MN  - D12.776.543.750.705.895.800
+MS  - Stucturally-related receptors that are typically found on NATURAL
+      KILLER CELLS. They are considered lectin-like proteins in that they
+      share sequence homology with the carbohydrate binding domains of
+      C-TYPE LECTINS. They differ from classical C-type lectins, however, in
+      that they appear to lack CALCIUM-binding domains.
+HN  - 2009
+BX  - Killer Cell Lectin-Like Receptors
+BX  - NK Cell Lectin-Like Receptors
+
+MH  - Receptors, Urokinase Plasminogen Activator
+UI  - D055293
+MN  - D12.776.543.750.887
+MN  - D23.50.301.264.35.911
+MN  - D23.101.100.110.917
+MS  - An extracellular receptor specific for UROKINASE-TYPE PLASMINOGEN
+      ACTIVATOR. It is attached to the cell membrane via a
+      GLYCOSYLPHOSPHATIDYLINOSITOL LINKAGE and plays a role in the
+      co-localization of urokinase-type plasminogen activator with
+      PLASMINOGEN.
+HN  - 2009(1985)
+BX  - Antigens, CD87
+
+MH  - Refeeding Syndrome
+UI  - D055677
+MN  - C18.654.521.687
+MS  - A condition of metabolic imbalance that is caused by complications of
+      initially feeding a severely malnourished patient too aggressively.
+      Usually occurring within the first 5 days of refeeding, this syndrome
+      is characterized by WATER-ELECTROLYTE IMBALANCE; GLUCOSE INTOLERANCE;
+      CARDIAC ARRHYTHMIAS; and DIARRHEA.
+HN  - 2009
+
+MH  - Reproductive Physiological Phenomena
+UI  - D055703
+MN  - G8.686
+MS  - Physiological processes, factors, properties and characteristics
+      pertaining to REPRODUCTION.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Reproductive Physiological Concepts
+
+MH  - Reproductive Physiological Processes
+UI  - D055704
+MN  - G8.686.785
+MS  - Physiological activities and functions that pertain to REPRODUCTION.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Resilience, Psychological
+UI  - D055500
+MN  - F2.940
+MS  - The human ability to adapt in the face of tragedy, trauma, adversity,
+      hardship, and ongoing significant life stressors.
+HN  - 2009
+FX  - Adaptation, Psychological
+
+MH  - Resistance Training
+UI  - D055070
+MN  - E2.779.483.875
+MN  - E2.779.867.199.875
+MN  - E2.831.387.875
+MN  - G11.427.590.237.500
+MN  - I3.350.500
+MS  - A type of strength-building exercise program that requires the body
+      muscle to exert a force against some form of resistance, such as
+      weight, stretch bands, water, or immovable objects. Resistance
+      exercise is a combination of static and dynamic contractions involving
+      shortening and lengthening of skeletal muscles.
+HN  - 2009
+BX  - Strength Training
+BX  - Weight-Bearing Strengthening Program
+BX  - Weight-Lifting Strengthening Program
+
+MH  - Respiratory-Gated Imaging Techniques
+UI  - D055425
+MN  - E1.370.350.730
+MN  - E1.370.386.730
+MS  - Timing the acquisition of imaging data to specific points in the
+      breathing cycle to minimize image blurring and other motion artifacts.
+      The images are used diagnostically and also interventionally to
+      coordinate radiation treatment beam on/off cycles to protect healthy
+      tissues when they move into the beam field during different times in
+      the breathing cycle.
+HN  - 2009
+
+MH  - Reticuloendotheliosis, Avian
+UI  - D055761
+MN  - C22.131.780
+MS  - A group of pathologic syndromes found in avian species caused by
+      RETICULOENDOTHELIOSIS VIRUS. The distinct syndromes include
+      non-neoplastic runting, acute neoplastic disease, and chronic
+      neoplastic disease. Humans and mammals appear resistant.
+AN  - RETICULOENDOTHELIOSIS, LEUKEMIC see LEUKEMIA, HAIRY CELL is also
+      available
+HN  - 2009
+BX  - Avian Reticuloendotheliosis
+
+MH  - Retinal Neurons
+UI  - D055351
+MN  - A8.663.650.850
+MN  - A9.371.729.831
+MN  - A11.671.650.850
+MS  - Nerve cells of the RETINA in the pathway of transmitting light signals
+      to the CENTRAL NERVOUS SYSTEM. They include the outer layer of
+      PHOTORECEPTOR CELLS, the intermediate layer of RETINAL BIPOLAR CELLS
+      and AMACRINE CELLS, and the internal layer of RETINAL GANGLION CELLS.
+HN  - 2009
+
+MH  - Retinal Photoreceptor Cell Inner Segment
+UI  - D055211
+MN  - A8.663.650.850.625.670.237
+MN  - A8.663.650.915.937.670.237
+MN  - A8.800.950.937.670.237
+MN  - A9.371.729.831.625.670.237
+MN  - A11.671.650.850.625.670.237
+MN  - A11.671.650.915.937.670.237
+MS  - The inner portion of a retinal rod or a cone photoreceptor cell,
+      situated between the PHOTORECEPTOR CONNECTING CILIUM and the synapse
+      with the adjacent neurons (RETINAL BIPOLAR CELLS; RETINAL HORIZONTAL
+      CELLS). The inner segment contains the cell body, the nucleus, the
+      mitochondria, and apparatus for protein synthesis.
+HN  - 2009
+BX  - Cone Cell Inner Segment
+BX  - Rod Cell Inner Segment
+
+MH  - Retinal Photoreceptor Cell Outer Segment
+UI  - D055214
+MN  - A8.663.650.850.625.670.375
+MN  - A8.663.650.915.937.670.375
+MN  - A8.800.950.937.670.375
+MN  - A9.371.729.831.625.670.375
+MN  - A11.671.650.850.625.670.375
+MN  - A11.671.650.915.937.670.375
+MS  - The light sensitive outer portion of a retinal rod or a cone
+      photoreceptor cell. The outer segment contains a stack of disk
+      membranes laden with photoreceptive pigments (RETINAL PIGMENTS). The
+      outer segment is connected to the inner segment by a PHOTORECEPTOR
+      CONNECTING CILIUM.
+HN  - 2009
+
+MH  - Retinal Pigment Epithelium
+UI  - D055213
+MN  - A9.371.670.500
+MN  - A9.371.729.887
+MS  - The single layer of pigment-containing epithelial cells in the RETINA,
+      situated closely to the tips (outer segments) of the RETINAL
+      PHOTORECEPTOR CELLS. These epithelial cells perform essential
+      functions for the photoreceptor cells, such as in nutrient transport,
+      phagocytosis of the shed photoreceptor membranes, and ensuring retinal
+      attachment.
+HN  - 2009; use PIGMENT EPITHELIUM OF EYE 1976-2008
+BX  - Epithelium, Retinal Pigment
+
+MH  - Rod-Cone Interaction
+UI  - D055258
+MN  - F2.830.816.964.186.624
+MN  - G11.561.600.810.964.186.624
+MN  - G14.640.816.186.624
+MS  - Reciprocal action of two vertebrate photoreceptor cells (RODS AND
+      CONES). Rod-cone interaction occurs during MESOPIC VISION in which
+      both rods and cones are active in light transduction to the VISUAL
+      CORTEX. Such interaction can influence visual sensitivity and luminous
+      efficiency.
+HN  - 2009
+
+MH  - Salivary alpha-Amylases
+UI  - D055291
+MN  - D8.811.277.450.66.50.500
+MN  - D12.644.848.875
+MN  - D12.776.850.887
+MS  - A subclass of alpha-amylase ISOENZYMES that are secreted into SALIVA.
+HN  - 2009
+
+MH  - Salivary Cystatins
+UI  - D055333
+MN  - D12.644.848.906
+MN  - D12.776.215.750
+MN  - D12.776.850.906
+MS  - A group of closely-related cystatins found in SALIVA.
+HN  - 2009(1980)
+BX  - Cystatin S
+
+MH  - Salivary Proline-Rich Proteins
+UI  - D055273
+MN  - D12.644.848.937
+MN  - D12.776.850.925
+MS  - A family of proline-rich proteins that constitute the majority of the
+      protein component of SALIVA. Salivary proline-rich proteins occur as
+      acidic, basic and glycosylated basic proteins. They perform a variety
+      of functions such as adhering to the acquired ENAMEL PELLICLE, acting
+      as lubricants and precipitating TANNINS.
+HN  - 2009(1979); use PROLINE-RICH PROTEIN DOMAINS 1980-2008
+FX  - Proline-Rich Protein Domains
+
+MH  - Salt-Tolerance
+UI  - D055049
+MN  - G7.700.62.796
+MS  - The ability of organisms to sense and adapt to high concentrations of
+      salt in their growth environment.
+HN  - 2009
+FX  - Halobacteriaceae
+
+MH  - Salt-Tolerant Plants
+UI  - D055051
+MN  - B6.723
+MS  - Plants that can grow well in soils that have a high SALINITY.
+HN  - 2009
+BX  - Halophytes
+BX  - Plants, Salt-Tolerant
+FX  - Plants, Genetically Modified
+
+MH  - Secondary Prevention
+UI  - D055502
+MN  - N2.421.726.825
+MN  - N6.850.780.750
+MS  - The prevention of recurrences or exacerbations of a disease that
+      already has been diagnosed. This also includes prevention of
+      complications or after-effects of a drug or surgical procedure.
+HN  - 2009
+
+MH  - Secretory Pathway
+UI  - D055571
+MN  - G3.495.166.925
+MN  - G4.299.490.580
+MS  - A series of sequential intracellular steps involved in the transport
+      of proteins (such as hormones and enzymes) from the site of synthesis
+      to outside the cell. The pathway involves membrane-bound compartments
+      through which the newly synthesized proteins undergo
+      POST-TRANSLATIONAL MODIFICATIONS, packaging, storage, or
+      transportation to the PLASMA MEMBRANE for secretion.
+HN  - 2009
+
+MH  - Seed Storage Proteins
+UI  - D055314
+MN  - D12.776.765.725
+MS  - One or more types of plant seed proteins providing the large amounts
+      of AMINO ACIDS utilized in GERMINATION and SEEDLING growth. As seeds
+      are the major food source from AGRICULTURAL CROPS, seed storage
+      proteins are a major source of DIETARY PROTEINS.
+HN  - 2009
+
+MH  - Semen Analysis
+UI  - D055101
+MN  - E1.450.752
+MS  - The quality of SEMEN, an indicator of male fertility, can be
+      determined by semen volume, pH, sperm concentration (SPERM COUNT),
+      total sperm number, sperm viability, sperm vigor (SPERM MOTILITY),
+      normal sperm morphology, ACROSOME integrity, and the concentration of
+      WHITE BLOOD CELLS.
+HN  - 2009
+
+MH  - Sensory Gating
+UI  - D055139
+MN  - G11.561.600.812
+MS  - The ability of the BRAIN to suppress neuronal responses to external
+      sensory inputs, such as auditory and visual stimuli. Sensory filtering
+      (or gating) allows humans to block out irrelevant, meaningless, or
+      redundant stimuli.
+AN  - do not confuse with ION CHANNEL GATING
+HN  - 2009
+
+MH  - Serbia
+UI  - D055771
+MN  - Z1.542.248.786
+MS  - A republic  located south of HUNGARY, west of ROMANIA and BULGARIA,
+      and part of the former YUGOSLAVIA. The capital is Belgrade.
+
+MH  - Seveso Accidental Release
+UI  - D055906
+MN  - K1.400.504.968.700
+MN  - N6.850.135.195.500
+MS  - 1976 accidental release of DIOXIN from a manufacturing facility in
+      Seveso, ITALY following an equipment failure.
+AN  - coordinate with DISASTERS if pertinent
+HN  - 2009
+
+MH  - Shc Signaling Adaptor Proteins
+UI  - D055765
+MN  - D12.644.360.24.330
+MN  - D12.776.157.57.162
+MN  - D12.776.476.24.415
+MS  - A family of signaling adaptor proteins that contain SRC HOMOLOGY
+      DOMAINS. Many members of this family are involved in transmitting
+      signals from CELL SURFACE RECEPTORS to MITOGEN-ACTIVATED PROTEIN
+      KINASES.
+HN  - 2009(1993)
+
+MH  - Skin Physiological Processes
+UI  - D055928
+MN  - G13.750.829
+MS  - Biological activities and functions of the SKIN.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Sleep Phase Chronotherapy
+UI  - D055865
+MN  - F4.754.137.875
+MS  - A progressive advance or delay of bedtime until the desired bedtime is
+      achieved.
+HN  - 2009
+
+MH  - Small Cell Lung Carcinoma
+UI  - D055752
+MN  - C4.588.894.797.520.220.624
+MN  - C8.381.540.140.750
+MN  - C8.785.520.140.750
+MS  - A form of highly malignant lung cancer that is composed of small ovoid
+      cells (SMALL CELL CARCINOMA).
+AN  - coordinate IM with LUNG NEOPLASMS (IM); CARCINOMA, NON-SMALL-CELL LUNG
+      and CARCINOMA, SMALL CELL are also available
+HN  - 2009; use CARCINOMA, SMALL CELL 1994-2008
+BX  - Oat Cell Carcinoma of Lung
+
+MH  - SMN Complex Proteins
+UI  - D055532
+MN  - D12.776.157.725.875
+MN  - D12.776.580.922
+MN  - D12.776.664.962.875
+MS  - A complex of proteins that assemble the SNRNP CORE PROTEINS into a
+      core structure that surrounds a highly conserved RNA sequence found in
+      SMALL NUCLEAR RNA. They are found localized in the GEMINI OF COILED
+      BODIES and in the CYTOPLASM. The SMN complex is named after the
+      Survival of Motor Neuron Complex Protein 1, which is a critical
+      component of the complex.
+HN  - 2009(1995)
+FX  - Gemini of Coiled Bodies
+
+MH  - snRNP Core Proteins
+UI  - D055517
+MN  - D12.776.157.725.500.875.700
+MN  - D12.776.660.625.750
+MN  - D12.776.664.962.500.875.700
+MN  - D23.50.290.875
+MN  - D23.50.422.750
+MS  - The protein components that constitute the common core of small
+      nuclear ribonucleoprotein particles. These proteins are commonly
+      referred as Sm nuclear antigens due to their antigenic nature.
+HN  - 2009(1981)
+BX  - Sm Nuclear Antigens
+
+MH  - SOX Transcription Factors
+UI  - D055747
+MN  - D12.776.260.719
+MN  - D12.776.660.235.400.750
+MN  - D12.776.664.235.400.750
+MN  - D12.776.930.823
+MS  - A large family of structurally-related transcription factors that were
+      originally discovered based upon their close sequence homology to an
+      HMG-box domain found in SEX-DETERMINING REGION Y PROTEIN. Many SOX
+      transcription factors play important roles in regulating CELL
+      DIFFERENTIATION. The numerous members of this family are organized in
+      several subgroups according to structural identities found within the
+      proteins.
+AN  - do not confuse entry term SRY (SEX DETERMINING REGION Y)-BOX  PROTEINS
+      with SRY SEX-DETERMINING REGION PROTEIN see SEX-DETERMINING REGION  Y
+      PROTEIN
+HN  - 2009
+
+MH  - SOX9 Transcription Factor
+UI  - D055758
+MN  - D12.776.260.719.500.500
+MN  - D12.776.660.235.400.750.500.500
+MN  - D12.776.664.235.400.750.500.500
+MN  - D12.776.930.823.500.500
+MS  - A SOXE transcription factor that plays a critical role in regulating
+      CHONDROGENESIS; OSTEOGENESIS; and male sex determination. Loss of
+      function of the SOX9  transcription factor due to genetic mutations is
+      a cause of CAMPOMELIC DYSPLASIA.
+HN  - 2009(1995)
+
+MH  - SOXB1 Transcription Factors
+UI  - D055748
+MN  - D12.776.260.719.100
+MN  - D12.776.660.235.400.750.100
+MN  - D12.776.664.235.400.750.100
+MN  - D12.776.930.823.100
+MS  - A subclass of SOX transcription factors that are expressed in neuronal
+      tissue where they may play a role in the regulation of CELL
+      DIFFERENTIATION. Members of this subclass are generally considered to
+      be transcriptional activators.
+HN  - 2009(1994)
+
+MH  - SOXB2 Transcription Factors
+UI  - D055749
+MN  - D12.776.260.719.200
+MN  - D12.776.660.235.400.750.200
+MN  - D12.776.664.235.400.750.200
+MN  - D12.776.930.823.200
+MS  - A subclass of SOX transcription factors that are expressed in neuronal
+      tissue where they may play a role in the regulation of CELL
+      DIFFERENTIATION. Members of this subclass are generally considered to
+      be transcriptional repressors.
+HN  - 2009
+
+MH  - SOXC Transcription Factors
+UI  - D055751
+MN  - D12.776.260.719.300
+MN  - D12.776.660.235.400.750.300
+MN  - D12.776.664.235.400.750.300
+MN  - D12.776.930.823.300
+MS  - A subclass of closely-related SOX transcription factors. Members of
+      the group have been found expressed in developing neuronal tissue,
+      LYMPHOCYTES, and during EMBRYONIC DEVELOPMENT.
+HN  - 2009
+
+MH  - SOXD Transcription Factors
+UI  - D055755
+MN  - D12.776.260.719.400
+MN  - D12.776.660.235.400.750.400
+MN  - D12.776.664.235.400.750.400
+MN  - D12.776.930.823.400
+MS  - A subclass of closely-related SOX transcription factors. In addition
+      to a conserved HMG-BOX DOMAIN, members of this group contain a leucine
+      zipper motif which mediates protein DIMERIZATION.
+HN  - 2009
+
+MH  - SOXE Transcription Factors
+UI  - D055757
+MN  - D12.776.260.719.500
+MN  - D12.776.660.235.400.750.500
+MN  - D12.776.664.235.400.750.500
+MN  - D12.776.930.823.500
+MS  - A subclass of closely-related SOX transcription factors. Members of
+      this subfamily have been implicated in regulating the differentiation
+      of OLIGODENDROCYTES during neural crest formation and in
+      CHONDROGENESIS.
+HN  - 2009(1998)
+
+MH  - SOXF Transcription Factors
+UI  - D055760
+MN  - D12.776.260.719.600
+MN  - D12.776.660.235.400.750.600
+MN  - D12.776.664.235.400.750.600
+MN  - D12.776.930.823.600
+MS  - A subclass of closely-related SOX transcription factors. Members of
+      this subclass are expressed in VASCULAR ENDOTHELIAL CELLS and may play
+      a role in vasculogenesis.
+HN  - 2009
+
+MH  - Speleotherapy
+UI  - D055161
+MN  - E2.190.894
+MS  - The use of caves, mines, or other subterranean environments in
+      treatment of diseases. Speleotherapy is used in some Central and
+      Eastern European countries to treat CHRONIC OBSTRUCTIVE AIRWAY
+      DISEASE.
+HN  - 2009
+
+MH  - Spinal Osteochondrosis
+UI  - D055035
+MN  - C5.116.821.500
+MN  - C5.116.900.808
+MS  - A bone disorder involving ossification centers (EPIPHYSES) of the
+      VERTEBRAL COLUMN.
+AN  - coordinate with specific vertebra
+HN  - 2009
+
+MH  - Spiral Ligament of Cochlea
+UI  - D055493
+MN  - A9.246.631.246.965
+MS  - A spiral thickening of the fibrous lining of the cochlear wall. Spiral
+      ligament secures the membranous COCHLEAR DUCT to the bony spiral canal
+      of the COCHLEA. Its spiral ligament fibrocytes function in conjunction
+      with the STRIA VASCULARIS to mediate cochlear ion homeostasis.
+HN  - 2009
+
+MH  - Spondylosis
+UI  - D055009
+MN  - C5.116.900.938
+MS  - A degenerative spinal disease that can involve any part of the
+      VERTEBRA, the INTERVERTEBRAL DISK, and the surrounding soft tissue.
+AN  - coordinate with specific vertebra; do not confuse with SPONDYLOLYSIS
+      or SPONDYLITIS
+HN  - 2009; use SPINAL OSTEOPHYTOSIS 1988-2008; for SPONDYLOSIS DEFORMANS
+      use SPINAL OSTEOPHYTOSIS 1965-2008
+BX  - Cervical Spondylosis
+BX  - Lumbarsacral Spondylosis
+BX  - Spondylosis Deformans
+BX  - Thoracic Spondylosis
+FX  - Spondylolysis
+
+MH  - Stage-Specific Embryonic Antigens
+UI  - D055746
+MN  - D23.50.301.264.965
+MN  - D23.101.100.965
+MS  - Cell-surface molecules that exhibit lineage-restricted patterns of
+      expression during EMBRYONIC DEVELOPMENT. The antigens are useful
+      markers in the identification of EMBRYONIC STEM CELLS.
+HN  - 2009
+
+MH  - Stalking
+UI  - D055807
+MN  - F1.145.126.950.500
+MN  - I1.880.735.223.500
+MS  - Course of conduct directed at a specific person that involves repeated
+      (two or more occasions) visual or physical proximity, nonconsensual
+      communication, or verbal, written, or implied threats, or a
+      combination thereof, that would cause a reasonable person fear.
+HN  - 2009
+
+MH  - Stars, Celestial
+UI  - D055609
+MN  - G1.60.249.750
+MS  - Large bodies consisting of self-luminous gas held together by their
+      own gravity.  (From McGraw Hill Dictionary of Scientific and Technical
+      Terms, 6th ed)
+HN  - 2009; use ASTRONOMY 1996-2008
+
+MH  - Static Electricity
+UI  - D055672
+MN  - G1.201.249.820
+MS  - The accumulation of an electric charge on a object
+HN  - 2009
+
+MH  - Stem Cell Niche
+UI  - D055153
+MN  - A10.830
+MS  - A particular zone of tissue composed of a specialized microenvironment
+      where stem cells are retained in a undifferentiated, self-renewable
+      state.
+HN  - 2009
+
+MH  - Structure Collapse
+UI  - D055883
+MN  - N6.230.750
+MS  - Failure in built environment with loss of functional integrity.
+AN  - coordinate with DISASTERS if pertinent
+HN  - 2009
+
+MH  - Sunbathing
+UI  - D055108
+MN  - I3.450.642.922
+MS  - Exposing oneself to SUNLIGHT or ULTRAVIOLET RAYS.
+HN  - 2009; use HELIOTHERAPY 1985-2008
+BX  - Suntanning
+FX  - Sunburn
+FX  - Suntan
+
+MH  - Suntan
+UI  - D055107
+MN  - G13.750.829.833.500
+MS  - An induced skin pigment (MELANIN) darkening after exposure to SUNLIGHT
+      or ULTRAVIOLET RAYS. The degree of tanning depends on the intensity
+      and duration of UV exposure, and genetic factors.
+HN  - 2009
+FX  - Sunbathing
+FX  - Sunburn
+
+MH  - Surge Capacity
+UI  - D055872
+MN  - N5.300.450.760
+MS  - A health care system's ability to rapidly mobilize to meet an
+      increased demand, to rapidly expand beyond normal services levels to
+      meet the increased demand in the event of large-scale DISASTERS or
+      public health emergencies.
+AN  - note category: restrict to health care
+HN  - 2009
+
+MH  - Survival of Motor Neuron 1 Protein
+UI  - D055533
+MN  - D12.776.157.725.875.500
+MN  - D12.776.580.922.500
+MN  - D12.776.664.962.875.500
+MS  - A SMN complex protein that is essential for the function of the SMN
+      protein complex. In humans the protein is encoded by a single gene
+      found near the inversion telomere of a large inverted region of
+      CHROMOSOME 5. Mutations in the gene coding for survival of motor
+      neuron 1 protein may result in SPINAL MUSCULAR ATROPHIES OF CHILDHOOD.
+HN  - 2009(2005); use SMN COMPLEX PROTEINS 2005-2008
+
+MH  - Survival of Motor Neuron 2 Protein
+UI  - D055540
+MN  - D12.776.157.725.875.750
+MN  - D12.776.580.922.750
+MN  - D12.776.664.962.875.750
+MS  - A SMN complex protein that is closely-related to SURVIVAL OF MOTOR
+      NEURON 1 PROTEIN. In humans, the protein is encoded by an often
+      duplicated gene found near the inversion centromere of a large
+      inverted region of CHROMOSOME 5.
+HN  - 2009(2005); use SMN COMPLEX PROTEINS 2005-2008
+
+MH  - Sverdlovsk Accidental Release
+UI  - D055905
+MN  - K1.400.504.968.750
+MN  - N6.850.135.190.500
+MS  - ANTHRAX outbreak  that occurred in 1979 and was associated with a
+      research facility in Sverdlovsk, in the Ural mountain region of
+      central RUSSIA.  Most victims worked or lived in a narrow zone
+      extending from the facility. The zone of anthrax-caused livestock
+      mortality paralleled the northerly wind that prevailed shortly before
+      the outbreak. It was concluded that an escape of ANTHRAX caused
+      outbreak.
+AN  - coordinate with DISASTERS if pertinent
+HN  - 2009
+
+MH  - Synaptic Potentials
+UI  - D055366
+MN  - G4.580.887
+MN  - G7.265.337.900.750
+MN  - G7.265.750.887
+MN  - G7.700.240.900.750
+MN  - G11.561.570.918
+MN  - G11.561.600.835.750
+MS  - The voltages across pre- or post-SYNAPTIC MEMBRANES.
+HN  - 2009; use SYNAPTIC TRANSMISSION 1994-2008
+
+MH  - Taste Perception
+UI  - D055697
+MN  - F2.463.593.817
+MS  - The process by which the nature and meaning of gustatory stimuli are
+      recognized and interpreted by the brain. The four basic classes of
+      taste perception are salty, sweet, bitter, and sour.
+AN  - differentiate from TASTE: TASTE PERCEPTION takes place in the brain,
+      TASTE takes place in the mouth
+HN  - 2009
+
+MH  - Telenursing
+UI  - D055817
+MN  - N4.452.758.377.937
+MS  - Delivery of nursing services via remote telecommunications.
+HN  - 2009
+
+MH  - Terahertz Imaging
+UI  - D055069
+MN  - E1.370.350.780
+MS  - The visualization of internal structure using TERAHERTZ RADIATION
+      technologies.
+HN  - 2009
+
+MH  - Terahertz Radiation
+UI  - D055053
+MN  - G1.201.875.770.832
+MS  - Non-ionizing electromagnetic energy in the frequency range of 100
+      gigahertz to 10 terahertz which spans from the mid-INFRARED RAYS
+      frequency to the high-frequency edge of the MICROWAVES band.
+HN  - 2009
+
+MH  - Terahertz Spectroscopy
+UI  - D055068
+MN  - E5.196.867.945
+MS  - Spectrum analysis of absorbed or emitted TERAHERTZ RADIATION.
+HN  - 2009
+
+MH  - Termitomyces
+UI  - D055434
+MN  - B5.179.100.780
+MS  - A paleotropical genus of fungi in the family Tricholomataceae. They
+      are obligate symbionts of termites.
+HN  - 2009
+
+MH  - Tertiary Prevention
+UI  - D055512
+MN  - N2.421.726.860
+MN  - N6.850.780.800
+MS  - Measures aimed at providing appropriate supportive and rehabilitative
+      services to minimize morbidity and maximize quality of life after a
+      long-term disease or injury is present.
+HN  - 2009
+
+MH  - TGF-beta Superfamily Proteins
+UI  - D055411
+MN  - D12.644.276.954
+MN  - D12.776.467.942
+MN  - D23.529.942
+MS  - A large family of cell regulatory proteins which are structurally
+      related to TRANSFORMING GROWTH FACTOR BETA. The superfamily is
+      subdivided into at least three related protein families: BONE
+      MORPHOGENETIC PROTEINS; GROWTH REGULATORY PROTEINS; and TRANSFORMING
+      GROWTH FACTORS.
+AN  - general; prefer specifics
+HN  - 2009
+
+MH  - Thermal Diffusion
+UI  - D055471
+MN  - G1.595.200.750
+MN  - G2.149.767.560.750
+MN  - G2.842.750.560.750
+MS  - The movement of molecules from one location to another as effected by
+      temperature changes.
+HN  - 2009
+
+MH  - Thermoascus
+UI  - D055327
+MN  - B5.107.320.820
+MS  - A genus of thermophilic, ascomycetous fungi in the family
+      Trichocomaceae, order EUROTIALES. Anamorphic forms are in the genus
+      PAECILOMYCES.
+HN  - 2009
+
+MH  - Tidal Waves
+UI  - D055871
+MN  - G16.500.240.135.875
+MS  - Water waves caused by the gravitational interactions between the
+      EARTH, MOON, and SUN.
+AN  - coordinate with DISASTERS if pertinent; specify geographic location
+HN  - 2009
+BX  - Tsunami
+BX  - Tsunamis
+
+MH  - Tolloid-Like Metalloproteinases
+UI  - D055394
+MN  - D8.811.277.656.675.374.525.700.900
+MN  - D12.644.276.948
+MN  - D12.776.467.948
+MN  - D23.529.948
+MS  - A family of metalloproteases that are related to the DROSOPHILA
+      protein tolloid, which is a gene product necessary for dorsal-ventral
+      patterning in early Drosophila embryogenesis. Many members of the
+      group may play a significant role in intercellular signaling.
+HN  - 2009(1999)
+
+MH  - Tornadoes
+UI  - D055869
+MN  - G16.500.750.775.745
+MS  - Rotating column of air extending from a thunderstorm to the ground. 
+      Tornadoes generally produce damage paths of 100 yards wide or less,
+      with path lengths of a couple miles.
+AN  - coordinate with DISASTERS if pertinent; specify geographic location
+HN  - 2009; use DISASTERS 1990-2008
+
+MH  - Torulaspora
+UI  - D055319
+MN  - B5.107.795.830
+MN  - B5.930.910
+MS  - A genus of  ascomycetous yeast in the family Saccharomycetaceae, order
+      SACCHAROMYCETALES. It is used commercially in the production of wines
+      and beer.
+HN  - 2009
+
+MH  - Touch Perception
+UI  - D055698
+MN  - F2.463.593.894
+MS  - The process by which the nature and meaning of tactile stimuli are
+      recognized and interpreted by the brain, such as realizing the
+      characteristics or name of an object being touched.
+AN  - differentiate from TOUCH: TOUCH PERCEPTION takes place in the brain,
+      TOUCH takes place in the skin and mucous membranes
+HN  - 2009
+BX  - Tactile Perception
+
+MH  - Tracheobronchomalacia
+UI  - D055089
+MN  - C5.182.895
+MN  - C8.127.719
+MN  - C8.907.796
+MN  - C16.131.621.953
+MN  - C17.300.182.895
+MS  - A congenital or acquired condition of underdeveloped or degeneration
+      of CARTILAGE in the TRACHEA and the BRONCHI. This results in a floppy
+      non-rigid airway making patency difficult to maintain.
+HN  - 2009
+BX  - Chondromalacia of Trachea and Bronchi
+
+MH  - Tracheomalacia
+UI  - D055090
+MN  - C5.182.895.500
+MN  - C8.907.796.500
+MN  - C16.131.621.953.500
+MN  - C17.300.182.895.500
+MS  - A congenital or acquired condition of underdeveloped or degeneration
+      of CARTILAGE in the TRACHEA. This results in a floppy tracheal wall
+      making patency difficult to maintain. It is characterized by wheezing
+      and difficult breathing.
+HN  - 2009
+BX  - Chondromalacia of Trachea
+
+MH  - Trametes
+UI  - D055454
+MN  - B5.179.120.174.850
+MS  - A genus of fungi in the family Coriolaceae.
+HN  - 2009
+
+MH  - Tricholoma
+UI  - D055439
+MN  - B5.179.100.790
+MS  - A large genus of gilled mushrooms in the family Tricholomataceae. They
+      are most often found in mountain and northern forests.
+HN  - 2009
+
+MH  - Urinary Tract Physiological Processes
+UI  - D055702
+MN  - G8.852.796
+MS  - Functions and activities of the URINARY TRACT as a whole or of any of
+      its parts.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+
+MH  - Uterine Artery Embolization
+UI  - D055357
+MN  - E2.520.360.575
+MN  - E4.950.300.883
+MS  - The use of embolizing agents to block the arterial blood supply to
+      parts or all of the UTERUS. The procedures are done to control
+      bleeding or to cause destruction of uterine tissues.
+HN  - 2009
+
+MH  - Vagus Nerve Stimulation
+UI  - D055536
+MN  - E2.342.900
+MN  - E2.779.468.900
+MS  - An adjunctive treatment for PARTIAL EPILEPSY and refractory DEPRESSION
+      that delivers electrical impulses to the brain via the VAGUS NERVE. A
+      battery implanted under the skin supplies the energy.
+HN  - 2009
+
+MH  - Vapor Pressure
+UI  - D055548
+MN  - G1.374.715.951
+MS  - The contribution to barometric PRESSURE of gaseous substance in
+      equilibrium with its solid or liquid phase.
+HN  - 2009
+
+MH  - Velopharyngeal Sphincter
+UI  - D055158
+MN  - A2.633.567.800.680
+MN  - A4.623.617.680
+MN  - A14.724.617.680
+MS  - A group of muscles attached to the SOFT PALATE (or velum) and the
+      PHARYNX. They include the superior constrictor, the PALATOPHARYNGEUS,
+      the levator veli palatini muscle, and the muscularis uvulae. This
+      sphincter is situated between the oral and nasal cavities. A competent
+      velopharyngeal sphincter is essential for normal speech and
+      swallowing.
+HN  - 2009
+BX  - Palatopharyngeal Sphincter
+
+MH  - Venous Valves
+UI  - D055422
+MN  - A7.231.908.950
+MS  - Flaps within the VEINS that allow the blood to flow only in one
+      direction. They are usually in the medium size veins that carry blood
+      to the heart against gravity.
+AN  - coordinate with specific vein term if pertinent
+HN  - 2009
+
+MH  - Ventilator-Induced Lung Injury
+UI  - D055397
+MN  - C8.381.520.750
+MS  - Lung damage that is caused by the adverse effects of PULMONARY
+      VENTILATOR usage. The high frequency and tidal volumes produced by a
+      mechanical ventilator can cause alveolar disruption and PULMONARY
+      EDEMA.
+AN  - BRONCHOPULMONARY DYSPLASIA is available for lung injury caused by
+      oxygen inhalation therapy or mechanical ventilation in newborn infants
+HN  - 2009
+FX  - Ventilators, Mechanical
+
+MH  - Virus Physiological Processes
+UI  - D055681
+MN  - G6.590.875
+MN  - G6.920.875
+MS  - Biological activities of viruses and their interactions with the cells
+      they infect.
+AN  - general or unspecified; prefer specifics
+HN  - 2009
+BX  - Viral Physiological Processes
+
+MH  - Viscoelastic Substances
+UI  - D055682
+MN  - D27.720.944
+MS  - Substances that display the physical properties of ELASTICITY and
+      VISCOSITY. The dual-nature of these substances causes them to resist
+      applied forces in a time-dependent manner.
+HN  - 2009
+
+MH  - Viscosupplementation
+UI  - D055676
+MN  - E2.319.267.530.380.500
+MN  - E2.718.875
+MS  - A therapeutic treatment typically involving INTRA-ARTICULAR INJECTIONS
+      of HYALURONIC ACID and related compounds. The procedure is commonly
+      used in the treatment of OSTEOARTHRITIS with the therapeutic goal to
+      restore the viscoelasticity of SYNOVIAL FLUID, decrease pain, improve
+      mobility and restore the natural protective functions of hyaluronan in
+      the joint.
+HN  - 2009
+FX  - Viscosupplements
+
+MH  - Viscosupplements
+UI  - D055675
+MN  - D27.720.556.500
+MN  - D27.720.944.500
+MS  - Viscoelastic solutions that are injected into JOINTS in order to
+      alleviate symptoms of joint-related disorders such as OSTEOARTHRITIS.
+HN  - 2009
+FX  - Viscosupplementation
+
+MH  - Volatile Organic Compounds
+UI  - D055549
+MN  - D2.974
+MS  - Organic compounds that have a relatively high VAPOR PRESSURE at room
+      temperature.
+AN  - general or unspecified; do not add routinely as a coordinate with
+      specific organic compounds; index only when volatility is specifically
+      discussed
+HN  - 2009
+
+MH  - Volvariella
+UI  - D055367
+MN  - B5.179.100.875
+MS  - A genus of edible mushrooms in the family Pluteaceae. They have pink
+      gills and a volva at the stem base, and species can be confused with
+      those of the poisonous genus AMANITA.
+HN  - 2009
+
+MH  - Vomer
+UI  - D055172
+MN  - A2.835.232.781.324.971
+MN  - A4.531.591.469
+MS  - An unpaired thin ploughshare-shaped facial bone. It is situated in the
+      median plane of the SKULL. The vomer forms the posterior and inferior
+      border of the NASAL SEPTUM.
+AN  - fractures: coordinate VOMER / inj (IM) + SKULL FRACTURES (IM);
+      neoplasms: coordinate VOMER (IM) + SKULL NEOPLASMS
+HN  - 2009; use NASAL SEPTUM  1975-2008
+
+MH  - Waist Circumference
+UI  - D055105
+MN  - E1.370.600.115.100.160.560
+MN  - E5.978.77.160.875
+MN  - G7.100.100.160.560
+MS  - The measurement around the body at the level of the ABDOMEN and just
+      above the hip bone. The measurement is usually taken immediately after
+      exhalation.
+HN  - 2009
+FX  - Waist-Hip Ratio
+
+MH  - Wandering Behavior
+UI  - D055816
+MN  - F1.145.126.995
+MS  - Moving oneself through space while confused or otherwise cognitively
+      impaired. Patterns include akathisia, exhibiting neuroleptic-induced
+      pacing and restlessness; exit seekers who are often newly admitted
+      institution residents who try to open locked exit doors;
+      self-stimulators who perform other activities such as turning
+      doorknobs, in addition to continuous pacing; and modelers who shadow
+      other pacers.
+HN  - 2009
+
+MH  - Wilderness
+UI  - D055814
+MN  - G16.500.275.965
+MS  - Environment un-modified by human activity. Areas in which natural
+      processes operate without human interference.
+HN  - 2009
+
+MH  - Wilderness Medicine
+UI  - D055813
+MN  - H2.403.959
+MS  - Skills and knowledge required for assessment and treatment of
+      traumatic, environmental, and medical emergencies in remote geographic
+      or wilderness environments.
+HN  - 2009
+
+MH  - Williopsis
+UI  - D055320
+MN  - B5.107.795.905
+MN  - B5.930.945
+MS  - A genus of ascomycetous yeast in the family Saccharomycetaceae, order
+      SACCHAROMYCETALES. Many species show mycocinogenic activity against
+      other yeasts.
+HN  - 2009
+
+MH  - X-Ray Microtomography
+UI  - D055114
+MN  - E1.370.350.700.810.810.900
+MN  - E1.370.350.825.810.810.900
+MS  - X-RAY COMPUTERIZED TOMOGRAPHY with resolution in the micrometer range.
+HN  - 2009
+
+MH  - Young Adult
+UI  - D055815
+MN  - M1.60.116.815
+MS  - A person between 19 and 24 years of age.
+AN  - age 19-24; IM only as social, political, psychological entity; NIM as
+      check tag
+HN  - 2009
+
+MH  - zeta-Globins
+UI  - D055543
+MN  - D12.776.124.400.434.320.500
+MN  - D12.776.422.316.762.403.320.500
+MS  - A member of the alpha-globin family. In humans, zeta-globin is encoded
+      in the alpha-globin gene cluster located on CHROMOSOME 16. Two
+      zeta-globin chains combine with two EPSILON GLOBIN chains to form the
+      embryonic HEMOGLOBIN Gower 1.
+HN  - 2009
+BX  - zeta-Globin

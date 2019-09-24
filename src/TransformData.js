@@ -1,7 +1,7 @@
 import SplitStreamInputData from "./SplitStreamInputData.js";
 
 const TransformData = {
-  viscous: function(data) {
+  viscous: function (data) {
     let format = new SplitStreamInputData();
     // add nodes
     for (let id in data.N) {
@@ -31,7 +31,7 @@ const TransformData = {
     return format;
   },
 
-  gumtree: function(data) {
+  gumtree: function (data) {
     let format = new SplitStreamInputData();
     let idx = 0;
 
@@ -83,7 +83,7 @@ const TransformData = {
     return format;
   },
 
-  titan: function(data) {
+  titan: function (data) {
     let format = new SplitStreamInputData();
     let t = -1;
     let lastDate;
@@ -117,7 +117,7 @@ const TransformData = {
     return format;
   },
 
-  allen: function(data) {
+  allen: function (data) {
     let format = new SplitStreamInputData(/*{forceFakeRoot: true}*/);
     let timesteps = {
       "2": 0,
@@ -154,7 +154,7 @@ const TransformData = {
     return format;
   },
 
-  storyline: function(data) {
+  storyline: function (data) {
     let format = new SplitStreamInputData();
     const characters = [];
     const locations = [];
@@ -178,7 +178,7 @@ const TransformData = {
     return format;
   },
 
-  treemap: function(data) {
+  treemap: function (data) {
     let format = new SplitStreamInputData();
     for (let entry of data) {
       let id = entry[0];
@@ -196,24 +196,53 @@ const TransformData = {
     return format;
   },
 
-  MeSH: function(data) {
+  /*
+  Every node has a name and an ID
+  Some nodes change their name and keep the same ID
+  Some nodes keep the same name and change their ID
+  Nodes that change both name and ID can not be tracked
+  */
+  MeSH: function (data) {
     let format = new SplitStreamInputData();
+    let idMap = new Map();
+    let nameMap = new Map();
+
     for (let t = 0; t < data.length; t++) {
       console.log("start timestep " + t);
+      // nameMap.clear();
       for (let entry of data[t]) {
         let name = entry[0];
-        if (name == "") continue;
         let id = entry[1];
+        if (name == "") continue;
+
+        // add node to data
+        format.addNode(t, name);
+
+        // If a node changes its name
+        let storedName = idMap.get(id);
+        let nameChanged = !!storedName && storedName != name;
+        // if (nameChanged)
+        //   format.addNext(t - 1, storedName, name);
+        idMap.set(id, name);
+
+        // if two nodes have the same name
+        let storedId = nameMap.get(name);
+        if (storedId) {
+          // if (storedId != id)
+          console.log(`${name}
+          t${t} ${id} != ${storedId}`);
+        }
+        nameMap.set(name, id);
 
         // the id looks like 1.12.5.123, where 1 is the parent of 1.12 is the parent of 1.12.5 is the parent of 1.12.5.123
         let parts = id.split(".");
         parts.pop(); // remove the last part of the id
         let parentId = parts.join("."); // reconnect all parts into the parent's id
 
-        format.addNode(t, id);
         if (parentId != "") {
           //format.addNode(t, parentId);
-          format.addParent(t, id, parentId);
+          let parentName = idMap.get(parentId);
+          format.addParent(t, name, parentName);
         }
       }
     }

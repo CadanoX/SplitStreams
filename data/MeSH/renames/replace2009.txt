@@ -1,0 +1,459 @@
+MH Changes and deletes. 2009 MeSH. October 24, 2008
+
+
+Total replaced     = 123
+Total deleted      =  26
+
+# = delete
+
+[] = new status of old term (P = EP; N = EN or PT; C = SCR term; null = old term not in New MeSH)
+
+* = old term in a different record than the new term
+
+
+MH OLD = (R)-2,3,4,5-Tetrahydro-8-chloro-3-methyl-5-phenyl-1H-3-benzazepin-7-ol # []
+MH NEW = Benzazepines
+
+MH OLD = Accidents, Radiation [P]
+MH NEW = Radioactive Hazard Release
+
+MH OLD = Adhesions []
+MH NEW = Tissue Adhesions
+
+MH OLD = Adolescent Nutrition Physiology [P]
+MH NEW = Adolescent Nutritional Physiological Phenomena
+
+MH OLD = alpha-Amylase [P]
+MH NEW = alpha-Amylases
+
+MH OLD = Amphibia [P]
+MH NEW = Amphibians
+
+MH OLD = Amplifiers []
+MH NEW = Amplifiers, Electronic
+
+MH OLD = Animal Nutrition Physiology [P]
+MH NEW = Animal Nutritional Physiological Phenomena
+
+MH OLD = Antigens, CD94 [P]
+MH NEW = NK Cell Lectin-Like Receptor Subfamily D
+
+MH OLD = Antigua [P]
+MH NEW = Barbuda and Antigua
+
+MH OLD = Aroclor 1254 [N]
+MH NEW = Chlorodiphenyl (54% Chlorine)
+
+MH OLD = Aspergillus Nuclease S1 [C*]
+MH NEW = Single-Strand Specific DNA and RNA Endonucleases
+
+MH OLD = Atelectasis [N]
+MH NEW = Pulmonary Atelectasis
+
+MH OLD = Atlas []
+MH NEW = Cervical Atlas
+
+MH OLD = Bacterial Physiology [P]
+MH NEW = Bacterial Physiological Phenomena
+
+MH OLD = Bay Region (Chemistry) []
+MH NEW = Bay-Region, Polycyclic Aromatic Hydrocarbon
+
+MH OLD = Biochemical Phenomena, Metabolism, and Nutrition # []
+MH NEW = Biochemical Phenomena
+
+MH OLD = Biological Phenomena, Cell Phenomena, and Immunity # []
+MH NEW = Biological Phenomena
+
+MH OLD = Biological Sciences [P]
+MH NEW = Biological Science Disciplines
+
+MH OLD = Bisbenzimide [P]
+MH NEW = Bisbenzimidazole
+
+MH OLD = Blood Physiologic Phenomena # []
+MH NEW = Blood Physiological Phenomena
+
+MH OLD = Blood Physiologic Processes [P]
+MH NEW = Blood Physiological Processes
+
+MH OLD = Blood Physiology [P]
+MH NEW = Blood Physiological Phenomena
+
+MH OLD = Bronchiolitis Obliterans Organizing Pneumonia [P]
+MH NEW = Cryptogenic Organizing Pneumonia
+
+MH OLD = CA-15-3 Antigen [P]
+MH NEW = Mucin-1
+
+MH OLD = Caplan's Syndrome [N]
+MH NEW = Caplan Syndrome
+
+MH OLD = Capreomycin Sulfate [P]
+MH NEW = Capreomycin
+
+MH OLD = Cardiovascular Physiologic Phenomena # []
+MH NEW = Cardiovascular Physiological Phenomena
+
+MH OLD = Cardiovascular Physiologic Processes [P]
+MH NEW = Cardiovascular Physiological Processes
+
+MH OLD = Cardiovascular Physiology [P]
+MH NEW = Cardiovascular Physiological Phenomena
+
+MH OLD = Cell Physiology [P]
+MH NEW = Cell Physiological Phenomena
+
+MH OLD = Ceramide Trihexosidase [P]
+MH NEW = Galactosylgalactosylglucosylceramidase
+
+MH OLD = Chemical and Pharmacologic Phenomena []
+MH NEW = Pharmacological Phenomena
+
+MH OLD = Chemoreceptors []
+MH NEW = Chemoreceptor Cells
+
+MH OLD = Child Nutrition Physiology [P]
+MH NEW = Child Nutritional Physiology Phenomena
+
+MH OLD = Chronobiology []
+MH NEW = Chronobiology Phenomena
+
+MH OLD = Circulatory and Respiratory Physiology [P]
+MH NEW = Circulatory and Respiratory Physiological Phenomena
+
+MH OLD = Coin Lesion, Pulmonary [P]
+MH NEW = Solitary Pulmonary Nodule
+
+MH OLD = Cold [P]
+MH NEW = Cold Temperature
+
+MH OLD = Cones (Retina) [P]
+MH NEW = Retinal Cone Photoreceptor Cells
+
+MH OLD = Dental Physiology [P]
+MH NEW = Dental Physiological Phenomena
+
+MH OLD = Digestive Physiology [P]
+MH NEW = Digestive System Physiological Phenomena
+
+MH OLD = Digestive System Phenomena # [N]
+MH NEW = Digestive System Physiological Phenomena
+
+MH OLD = Digestive, Oral, and Skin Physiology # []
+MH NEW = Digestive System and Oral Physiological Phenomena
+
+MH OLD = Disease Transmission []
+MH NEW = Disease Transmission, Infectious
+
+MH OLD = Disease Transmission, Horizontal # []
+MH NEW = Disease Transmission, Infectious
+
+MH OLD = Disease Transmission, Patient-to-Professional [P]
+MH NEW = Infectious Disease Transmission, Patient-to-Professional
+
+MH OLD = Disease Transmission, Professional-to-Patient [P]
+MH NEW = Infectious Disease Transmission, Professional-to-Patient
+
+MH OLD = Disease Transmission, Vertical []
+MH NEW = Infectious Disease Transmission, Vertical
+
+MH OLD = Double Effect []
+MH NEW = Double Effect Principle
+
+MH OLD = Drugs, Non-Prescription [P]
+MH NEW = Nonprescription Drugs
+
+MH OLD = Electromagnetics # [N]
+MH NEW = Electromagnetic Phenomena
+
+MH OLD = Electrostatics # [N]
+MH NEW = Static Electricity
+
+MH OLD = Enhancer Elements (Genetics) []
+MH NEW = Enhancer Elements, Genetic
+
+MH OLD = Erythroid Progenitor Cells [P]
+MH NEW = Erythroid Precursor Cells
+
+MH OLD = Exertion []
+MH NEW = Physical Exertion
+
+MH OLD = Fiber Optics []
+MH NEW = Fiber Optic Technology
+
+MH OLD = Formularies [M*]
+MH NEW = Formularies as Topic
+
+MH OLD = Gastric Mucin [P]
+MH NEW = Gastric Mucins
+
+MH OLD = Gluten [P]
+MH NEW = Glutens
+
+MH OLD = Granuloma, Plasma Cell, Orbital [N]
+MH NEW = Orbital Pseudotumor
+
+MH OLD = Granuloma, Plasma Cell, Pulmonary [P]
+MH NEW = Plasma Cell Granuloma, Pulmonary
+
+MH OLD = Gravity Perception [N]
+MH NEW = Gravity Sensing
+
+MH OLD = Heat [P]
+MH NEW = Hot Temperature
+
+MH OLD = Immunity, Natural [P]
+MH NEW = Immunity, Innate
+
+MH OLD = Infant Nutrition Physiology [P]
+MH NEW = Infant Nutritional Physiological Phenomena
+
+MH OLD = Insulin, Isophane [P]
+MH NEW = Insulin, NPH
+
+MH OLD = Interferon Type II [P]
+MH NEW = Interferon-gamma
+
+MH OLD = Keratosis Follicularis [P]
+MH NEW = Darier Disease
+
+MH OLD = Killer Cells # []
+MH NEW = Killer Cells, Natural
+
+MH OLD = Leptospira Interrogans serovar canicola []
+MH NEW = Leptospira interrogans serovar canicola
+
+MH OLD = Macao [N]
+MH NEW = Macau
+
+MH OLD = Maduromycosis [P]
+MH NEW = Mycetoma
+
+MH OLD = Maternal Nutrition Physiology [P]
+MH NEW = Maternal Nutritional Physiological Phenomena
+
+MH OLD = Medicine, Herbal [P]
+MH NEW = Herbal Medicine
+
+MH OLD = Medicine, Oriental Traditional [N]
+MH NEW = Medicine, East Asian Traditional
+
+MH OLD = Meteorological Factors [P]
+MH NEW = Meteorological Concepts
+
+MH OLD = Mice, Inbred HRS [P]
+MH NEW = Mice, Hairless
+
+MH OLD = Microbiologic Phenomena [P]
+MH NEW = Microbiological Phenomena
+
+MH OLD = Mind-Body and Relaxation Techniques []
+MH NEW = Mind-Body Therapies
+
+MH OLD = Muscle Fibers []
+MH NEW = Muscle Fibers, Skeletal
+
+MH OLD = Musculoskeletal Equilibrium [N]
+MH NEW = Postural Balance
+
+MH OLD = Musculoskeletal Physiologic Phenomena # []
+MH NEW = Musculoskeletal Physiological Phenomena
+
+MH OLD = Musculoskeletal Physiologic Processes [P]
+MH NEW = Musculoskeletal Physiological Processes
+
+MH OLD = Musculoskeletal Physiology [P]
+MH NEW = Musculoskeletal Physiological Phenomena
+
+MH OLD = Musculoskeletal, Neural, and Ocular Physiology # []
+MH NEW = Musculoskeletal and Neural Physiological Phenomena
+
+MH OLD = Myelofibrosis # [N]
+MH NEW = Primary Myelofibrosis
+
+MH OLD = Myeloid Metaplasia # [N]
+MH NEW = Primary Myelofibrosis
+
+MH OLD = Natural Disasters # [N]
+MH NEW = Disasters
+
+MH OLD = Natural Sciences [P]
+MH NEW = Natural Science Disciplines
+
+MH OLD = Neocallimasticales [N]
+MH NEW = Neocallimastigales
+
+MH OLD = Neoplasm Circulating Cells [P]
+MH NEW = Neoplastic Cells, Circulating
+
+MH OLD = Nervous System Physiologic Phenomena # []
+MH NEW = Nervous System Physiological Phenomena
+
+MH OLD = Nervous System Physiologic Processes [P]
+MH NEW = Nervous System Physiological Processes
+
+MH OLD = Nervous System Physiology [P]
+MH NEW = Nervous System Physiological Phenomena
+
+MH OLD = Nutrition Phenomena # [N]
+MH NEW = Nutritional Physiological Phenomena
+
+MH OLD = Nutrition Physiology [P]
+MH NEW = Nutritional Physiological Phenomena
+
+MH OLD = Ocular Physiologic Phenomena # []
+MH NEW = Ocular Physiological Phenomena
+
+MH OLD = Ocular Physiologic Processes [P]
+MH NEW = Ocular Physiological Processes
+
+MH OLD = Ocular Physiology [P]
+MH NEW = Ocular Physiological Phenomena
+
+MH OLD = Operator Regions (Genetics) []
+MH NEW = Operator Regions, Genetic
+
+MH OLD = Opsin [N*]
+MH NEW = Rod Opsins
+
+MH OLD = Optics # []
+MH NEW = Optics and Photonics
+
+MH OLD = Pancoast's Syndrome [N]
+MH NEW = Pancoast Syndrome
+
+MH OLD = Periodontitis, Juvenile [P]
+MH NEW = Aggressive Periodontitis
+
+MH OLD = Photoreceptors []
+MH NEW = Photoreceptor Cells
+
+MH OLD = Photoreceptors, Invertebrate [P]
+MH NEW = Photoreceptor Cells, Invertebrate
+
+MH OLD = Photoreceptors, Vertebrate [N]
+MH NEW = Photoreceptor Cells, Vertebrate
+
+MH OLD = Phototransduction # [N]
+MH NEW = Vision, Ocular
+
+MH OLD = Physiological Processes [M*]
+MH NEW = Physiological Phenomena
+
+MH OLD = Plant Physiology [P]
+MH NEW = Plant Physiological Phenomena
+
+MH OLD = Poetry [M*]
+MH NEW = Poetry as Topic
+
+MH OLD = Prenatal Nutrition Physiology [P]
+MH NEW = Prenatal Nutritional Physiological Phenomena
+
+MH OLD = Prescriptions, Drug []
+MH NEW = Drug Prescriptions
+
+MH OLD = Prescriptions, Non-Drug # [N]
+MH NEW = Prescriptions
+
+MH OLD = Promoter Regions (Genetics) []
+MH NEW = Promoter Regions, Genetic
+
+MH OLD = Protein Disulfide-Isomerase [P]
+MH NEW = Protein Disulfide-Isomerases
+
+MH OLD = Protein Hybridization # []
+MH NEW = Protein Multimerization
+
+MH OLD = Pulmonary Disease (Specialty) []
+MH NEW = Pulmonary Medicine
+
+MH OLD = Receptors, Sensory [N]
+MH NEW = Sensory Receptor Cells
+
+MH OLD = Relaxation Techniques [P]
+MH NEW = Relaxation Therapy
+
+MH OLD = Reproductive and Urinary Physiology [P]
+MH NEW = Reproductive and Urinary Physiological Phenomena
+
+MH OLD = Respiratory Physiologic Phenomena # []
+MH NEW = Respiratory Physiological Phenomena
+
+MH OLD = Respiratory Physiologic Processes [P]
+MH NEW = Respiratory Physiological Processes
+
+MH OLD = Respiratory Physiology [P]
+MH NEW = Respiratory Physiological Phenomena
+
+MH OLD = Reticuloendotheliosis # []
+MH NEW = Lymphatic Diseases
+
+MH OLD = Rod Outer Segments [N]
+MH NEW = Rod Cell Outer Segment
+
+MH OLD = Rods (Retina) [P]
+MH NEW = Retinal Rod Photoreceptor Cells
+
+MH OLD = Salivary Proteins [P]
+MH NEW = Salivary Proteins and Peptides
+
+MH OLD = Scheuermann's Disease [N]
+MH NEW = Scheuermann Disease
+
+MH OLD = Signal Detection (Psychology) [P]
+MH NEW = Signal Detection, Psychological
+
+MH OLD = Skin Physiology [P]
+MH NEW = Skin Physiological Phenomena
+
+MH OLD = Stress []
+MH NEW = Stress, Physiological
+
+MH OLD = Surgery [P]
+MH NEW = General Surgery
+
+MH OLD = Sweet's Syndrome [P]
+MH NEW = Sweet Syndrome
+
+MH OLD = Terminator Regions (Genetics) []
+MH NEW = Terminator Regions, Genetic
+
+MH OLD = Thrombocythemia, Hemorrhagic [P]
+MH NEW = Thrombocythemia, Essential
+
+MH OLD = Thyroid Gland, Desiccated [P]
+MH NEW = Thyroid Extract, Desiccated
+
+MH OLD = Tiron [P]
+MH NEW = 1,2-Dihydroxybenzene-3,5-Disulfonic Acid Disodium Salt
+
+MH OLD = Tonsil [P]
+MH NEW = Palatine Tonsil
+
+MH OLD = Trans-Activation (Genetics) []
+MH NEW = Transcriptional Activation
+
+MH OLD = Urinary Plasminogen Activator [P]
+MH NEW = Urokinase-Type Plasminogen Activator
+
+MH OLD = Urinary Tract Physiology [P]
+MH NEW = Urinary Tract Physiological Phenomena
+
+MH OLD = Variation (Genetics) []
+MH NEW = Genetic Variation
+
+MH OLD = Viral Physiology [P]
+MH NEW = Virus Physiological Phenomena
+
+MH OLD = Vision [P]
+MH NEW = Vision, Ocular
+
+MH OLD = Volcanic Eruption [P]
+MH NEW = Volcanic Eruptions
+
+MH OLD = Von Ebner Glands []
+MH NEW = von Ebner Glands
+
+MH OLD = Zygomycota # []
+MH NEW = Fungi

@@ -1,0 +1,2351 @@
+ABC Transporters;D8.586.747.20;D12.776.157.530.100
+ABC Transporters;D12.776.157.20;D12.776.543.585.100
+Abelson Leukemia Virus;B4.820.650.750.900.500.20;B4.820.650.375.900.500.20
+Abelson Leukemia Virus;B4.909.574.807.750.900.500.20;B4.909.574.807.375.900.500.20
+Abelson Leukemia Virus;B4.909.777.731.750.900.500.20;B4.909.777.731.375.900.500.20
+Abetalipoproteinemia;C10.228.140.163.474.50;C10.228.140.163.100.50
+Abetalipoproteinemia;C18.452.125.250.50;C16.320.565.150.50
+Abetalipoproteinemia;C18.452.648.156.50;C16.320.565.556.500.220
+Abetalipoproteinemia;C18.452.648.556.485.220;C18.452.100.100.50
+Abetalipoproteinemia;;C18.452.648.151.50
+Abetalipoproteinemia;;C18.452.648.556.500.220
+Acacia;B6.388.100.837.400.25;B6.388.100.401.25
+Acatalasia;;C16.320.565.556.750.25
+Achilles Tendon;A2.633.837.176;A2.880.176
+Achondroplasia;;C16.320.29
+Acidosis, Renal Tubular;;C16.320.565.851.93
+Acne Keloid;C17.800.805.305.383.261;C17.800.329.500.261
+Acne Vulgaris;C17.800.805.711.111;C17.800.794.111
+Acoustic Stimulation;;E2.190.888.30
+Acoustic Stimulation;;E2.779.124
+Acrodermatitis;C17.800.827.800.66;C17.800.804.66
+Actinium;;D1.268.33.33
+Activated Protein C Resistance;;C15.378.100.425.37
+Activated Protein C Resistance;;C16.320.99.37
+Acupressure;E2.40.500.100;E2.190.44.80
+Acupressure;E2.780.580.100;E2.190.599.61
+Acupressure;;E2.695.61
+Acupressure;;E2.695.522.100
+Acupressure;;E2.831.580.499.100
+Acupuncture Analgesia;E2.30.100.48;E2.190.44.105
+Acupuncture Analgesia;E2.40.25.100.48;
+Acupuncture Points;E2.30.510.35;E2.190.44.555.35
+Acupuncture Points;E2.40.25.510.35;
+Acupuncture Therapy;E2.30.100;E2.190.44
+Acupuncture Therapy;E2.40.25.100;
+Acupuncture, Ear;E2.30.100.200;E2.190.44.133
+Acupuncture, Ear;E2.40.25.100.200;
+Adenomatous Polyposis Coli;C16.466.700.100;C16.320.700.100
+Adenovirus E1 Proteins;D12.776.677.520.45.50;D12.776.624.664.520.45.50
+Adenovirus E1A Proteins;D12.776.677.520.45.50.100;D12.776.624.664.520.45.50.100
+Adenovirus E1B Proteins;D12.776.677.520.45.50.110;D12.776.624.664.520.45.50.110
+Adenovirus E2 Proteins;D12.776.677.520.45.60;D12.776.624.664.520.45.60
+Adenovirus E3 Proteins;D12.776.677.520.45.70;D12.776.624.664.520.45.70
+Adenovirus E4 Proteins;D12.776.677.520.45.80;D12.776.624.664.520.45.80
+Adenovirus Early Proteins;D12.776.677.520.45;D12.776.624.664.520.45
+Adhesins, Escherichia coli;;D12.776.97.275.500
+Adiposis Dolorosa;;C18.452.872.77
+Adrenal Hyperplasia, Congenital;;C16.320.33
+Adrenoleukodystrophy;C10.228.140.163.474.475.600.100;C10.228.140.163.100.680.100
+Adrenoleukodystrophy;C10.228.140.163.474.649.100;C16.320.565.150.680.100
+Adrenoleukodystrophy;C18.452.125.250.700.100;C16.320.565.556.750.112
+Adrenoleukodystrophy;C18.452.648.595.519.600.100;C18.452.100.100.680.100
+Adrenoleukodystrophy;;C18.452.648.151.680.100
+Afibrinogenemia;;C15.378.100.425.56
+Afibrinogenemia;;C16.320.99.56
+African Swine Fever Virus;B4.280.34.35;B4.280.49.35
+African Swine Fever Virus;B4.909.204.34.35;B4.909.204.102.35
+African Swine Fever Virus;B4.970.34.35;
+Air Microbiology;;H1.158.273.540.274.110
+AKR Virus;B4.820.650.750.900.500.50;B4.820.650.375.900.500.50
+AKR Virus;B4.909.574.807.750.900.500.50;B4.909.574.807.375.900.500.50
+AKR Virus;B4.909.777.731.750.900.500.50;B4.909.777.731.375.900.500.50
+Albania;Z1.542.248.64;Z1.542.248.00
+Albinism;C16.131.410.40;C16.320.290.40
+Albinism;C17.800.827.130;C16.320.565.66.102
+Albinism;;C16.320.850.80
+Albinism;;C17.800.827.80
+Albinism, Ocular;C11.270.50;C11.270.40.90
+Albinism, Ocular;C16.131.410.40.90;C16.320.290.40.90
+Albinism, Ocular;C17.800.827.130.90;C16.320.565.66.102.90
+Albinism, Ocular;;C16.320.850.80.90
+Albinism, Ocular;;C17.800.827.80.90
+Albinism, Oculocutaneous;C11.270.55;C11.270.40.545
+Albinism, Oculocutaneous;C16.131.410.40.100;C16.320.290.40.100
+Albinism, Oculocutaneous;C17.800.827.130.100;C16.320.565.66.102.100
+Albinism, Oculocutaneous;;C16.320.850.80.100
+Albinism, Oculocutaneous;;C17.800.827.80.100
+Alcuronium;D3.132.267.712.50;D3.132.436.500.712.50
+Alcuronium;;D3.438.473.402.500.712.50
+Alfalfa;B6.388.100.837.400.75;B6.388.100.401.590.500
+Alkaptonuria;;C16.320.565.66.187
+Allium;;B6.388.100.610.100
+Aloe;B6.388.100.700.125;B6.388.100.27
+Aloe;B6.560.50;
+Alopecia;C17.800.805.305.535.122;C17.800.329.937.122
+Alopecia Areata;C17.800.805.305.535.122.147;C17.800.329.937.122.147
+alpha-Methyltyrosine;D12.125.72.917.664.50;D12.125.72.50.875.664.50
+alpha-Thalassemia;;C16.320.70.875.100
+alpha-Thalassemia;;C16.320.365.826.100
+Alternative Medicine;E2.40;E2.190
+Alzheimer Disease;C10.574.150;C10.574.945.249
+Americium;;D1.268.33.50
+Amino Acid Metabolism, Inborn Errors;C10.228.140.163.474.100;C16.320.565.66
+Amino Acid Metabolism, Inborn Errors;C18.452.125.250.100;
+Amino Acid Metabolism, Inborn Errors;C18.452.648.156.100;
+Amino Acid Transport Disorders, Inborn;C10.228.140.163.474.220;C16.320.565.88
+Amino Acid Transport Disorders, Inborn;C18.452.125.250.125;
+Amino Acid Transport Disorders, Inborn;C18.452.648.156.125;
+Aminoaciduria, Renal;;C16.320.565.66.210
+Aminoaciduria, Renal;;C16.320.565.851.191
+Ammotherapy;E2.780.108.20;E2.779.249.20
+Ammotherapy;E2.780.480.20;E2.779.496.20
+Ammotherapy;;E2.831.580.249.20
+Ammotherapy;;E2.831.580.496.20
+Ampicillin Resistance;G4.185.515.286.100.600.50;G4.185.515.286.347.500.600.50
+Ampicillin Resistance;G12.392.269.100.600.50;G12.392.269.347.500.600.50
+Amyloid Neuropathies;C15.378.147.780.100.50;C18.452.90.50
+Amyloid Neuropathies;C15.604.515.56.50;
+Amyloid Neuropathies;C18.452.648.111.50;
+Amyloid Neuropathies;C20.683.780.100.50;
+Amyloidosis;C15.378.147.780.100;C18.452.90
+Amyloidosis;C15.604.515.56;
+Amyloidosis;C18.452.648.111;
+Amyloidosis;C20.683.780.100;
+Anatomy;;H1.158.100
+Anatomy, Artistic;;H1.158.100.91
+Anatomy, Comparative;;H1.158.100.154
+Anatomy, Cross-Sectional;;H1.158.100.185
+Anatomy, Regional;;H1.158.100.216
+Anatomy, Veterinary;;H1.158.100.279
+Anemia, Dyserythropoietic, Congenital;;C16.320.70.95
+Anemia, Hemolytic, Congenital;;C16.320.70
+Anemia, Hemolytic, Congenital;;Anemia, Hemolytic, Congenital Nonspherocytic
+Anemia, Hemolytic, Congenital;;C16.320.70.100
+Anemia, Sickle Cell;;C16.320.70.150
+Anemia, Sickle Cell;;C16.320.365.155
+Anestrus;G8.520.780.218.80;G8.520.188.249
+Aneuploidy;C23.550.210.131;C23.550.210.50
+Aneuploidy;G5.148.266.131;G5.148.175.50
+Angelman Syndrome;C16.131.280.75;C16.131.260.40
+Angelman Syndrome;;C16.320.180.40
+Angina Pectoris;;C23.888.646.215.500
+Angina Pectoris, Variant;C14.280.647.250.125.130;C14.280.647.250.125.150.150
+Angina Pectoris, Variant;;C23.888.646.215.500.150.150
+Angina, Unstable;;C23.888.646.215.500.150
+Animal Rights;K1.316.70.100.100;K1.316.34.500.500
+Animal Testing Alternatives;K1.316.70.70;K1.316.34.249.500
+Animal Use Alternatives;;K1.316.34.249
+Animal Welfare;K1.316.70.100;K1.316.34.500
+Animals, Suckling;B1.30.291;
+Aniridia;C16.131.410.78;C16.320.290.78
+Ankle;A1.378.592.116;A1.378.592.350.149
+Anthroposophy;E2.40.60;E2.190.88
+Anthroposophy;;K1.844.58
+Antigen p150,95;;D12.776.157.170
+Antigen p150,95;;D12.776.395.550.200.275
+Antigen p150,95;;D12.776.543.550.200.275
+Antigen p150,95;;D24.611.216.301.350.275
+Antigens, Polyomavirus Transforming;D12.776.677.520.90;D12.776.624.664.520.90
+Antineoplastic Agents, Combined;D22.204.160;D22.204.200
+Antineoplastic Agents, Combined;;E2.183.750.500
+Antineoplastic Agents, Combined;;E2.319.77.500
+Antiporters;D12.776.157.70;D12.776.157.530.450.162
+Antiporters;;D12.776.543.585.450.162
+Antithrombin III Deficiency;C15.378.100.75;C15.378.100.425.75
+Antithrombin III Deficiency;;C16.320.99.75
+Aquaporins;D12.776.395.550.440.730.40;D12.776.157.530.400.500.40
+Aquaporins;;D12.776.543.585.400.730.40
+Areca;B6.560.77;B6.388.100.93.249
+Arginine;;D12.125.68.50
+Argininosuccinic Acid;;D12.125.68.50.75
+Arnica;B6.560.90;
+Aromatherapy;E2.40.90;E2.190.525.61
+Aromatherapy;;E2.190.755.100
+Aromatherapy;;E2.190.888.61
+Art Therapy;;E2.190.888.124
+Artemisia;B6.560.97;
+Arteritis Virus, Equine;B4.820.60.100;B4.820.504.80.100.100
+Arteritis Virus, Equine;B4.909.777.90.100;B4.909.777.500.80.500.100
+Arteritis Virus, Equine;B4.970.60.100;
+Arterivirus;B4.820.60;B4.820.504.80.100
+Arterivirus;B4.909.777.90;B4.909.777.500.80.500
+Arterivirus;B4.970.60;
+Arterivirus Infections;C2.782.100;C2.782.600.100
+Arthritis, Gouty;;C16.320.565.798.368.410
+Arthritis, Psoriatic;;C5.116.900.845.800.145
+Arthritis, Psoriatic;;C5.550.114.865.800.145
+Arthritis, Reactive;;C5.116.900.845.800.150
+Arthritis, Reactive;;C5.550.114.865.800.150
+Asparagine;D12.125.119.107;D12.125.68.60
+Asparagine;;D12.125.95.165
+Aspartic Acid;;D12.125.67.500
+Ataxia Telangiectasia;;C16.320.80
+Autogenic Training;;E2.190.525.217.100
+Autosuggestion;;E2.190.525.217.771.100
+Bacteriochlorophylls;;D12.776.752.249
+Bacteriology;;H1.158.273.540.177
+Bacteriorhodopsin;D2.455.849.131.125;D12.776.90.200
+Bacteriorhodopsin;D11.557.261.125;D12.776.157.530.450.250.875.249
+Bacteriorhodopsin;D12.776.97.125;D12.776.543.585.450.250.875.249
+Bacteriorhodopsin;;D12.776.752.812.249
+Balneology;E2.780.108;E2.779.249
+Balneology;;E2.831.580.249
+Band 3 Protein;D12.776.157.70.110;D12.776.157.530.450.162.110
+Band 3 Protein;;D12.776.157.530.450.162.193.500
+Band 3 Protein;;D12.776.395.550.70.276.500
+Band 3 Protein;;D12.776.543.550.70.276.500
+Band 3 Protein;;D12.776.543.585.450.162.110
+Band 3 Protein;;D12.776.543.585.450.162.193.500
+Barley;B6.388.100.450.225.150;B6.388.100.822.225.150
+Basal Cell Nevus Syndrome;;C4.700.175
+Basal Cell Nevus Syndrome;;C16.320.700.175
+Basil;B6.388.100.675.100;B6.388.100.575.100
+Baths;E2.780.108.110;E2.779.249.110
+Baths;;E2.831.580.249.110
+Beckwith-Wiedemann Syndrome;C16.131.280.150;C16.131.260.80
+Beckwith-Wiedemann Syndrome;;C16.320.180.80
+Belladonna;B6.388.100.900.100;B6.388.100.905.100
+Belladonna;B6.560.100;
+Belladonna;B6.660.100;
+Benzoylarginine Nitroanilide;;D12.125.68.50.100
+Benzoylarginine-2-Naphthylamide;;D12.125.68.50.95
+Berkelium;;D1.268.33.100
+Bernard-Soulier Syndrome;C15.378.100.80;C15.378.100.425.80
+Bernard-Soulier Syndrome;;C16.320.99.80
+Beryllium;;D1.268.552.75
+Beta Carotene;D2.455.849.131.247.150;D2.455.849.131.123
+Beta Carotene;D11.557.261.206.150;D11.557.261.50
+beta-Lactam Resistance;G4.185.515.286.100;G4.185.515.286.347.500
+beta-Lactam Resistance;G12.392.269.100;G12.392.269.347.500
+beta-Thalassemia;;C16.320.70.875.150
+beta-Thalassemia;;C16.320.365.826.150
+Biochemistry;;H1.158.201
+Biological Sciences;;H1.158
+Biology;;H1.158.273
+Biomass;;H1.158.273.248.150
+Bionics;;H1.158.344.310
+Biophysics;;H1.158.344
+Biotechnology;;H1.158.550
+Biotin;;D3.383.374.80
+Blood Preservation;;E1.450.865.366.833.230
+Bloodletting;E1.450.865.632.150.100;E2.800.558.500
+Bloodletting;E2.800.117;
+Blotting, Western;E5.196.181.400.454.720.200;E5.601.155
+Blotting, Western;E5.196.401.319.720.200;E5.601.495.320.200
+Blotting, Western;E5.196.700.200;
+Borna Disease;;C2.782.580.124
+Borna Disease Virus;B4.820.79;B4.820.455.149.135
+Borna Disease Virus;B4.909.777.135;B4.909.777.455.149.135
+Borna Disease Virus;B4.970.135;
+Botany;;H1.158.273.118
+Brain Diseases, Metabolic;C18.452.125;C18.452.100
+Brain Diseases, Metabolic, Inborn;C10.228.140.163.474;C10.228.140.163.100
+Brain Diseases, Metabolic, Inborn;C18.452.125.250;C16.320.565.150
+Brain Diseases, Metabolic, Inborn;C18.452.648.156;C18.452.100.100
+Brain Diseases, Metabolic, Inborn;;C18.452.648.151
+Branchio-Oto-Renal Syndrome;C16.131.280.175;C16.131.260.90
+Branchio-Oto-Renal Syndrome;;C16.320.180.90
+BRCA1 Protein;;D12.776.624.776.100
+Breathing Exercises;E2.831.578.391.320;E2.190.525.186
+Breathing Exercises;;E2.403.124
+Bromocriptine;D3.132.327.287.131;D3.132.327.412.100
+Bromocriptine;;D3.549.562.100
+Bromocriptine;;D12.776.543.585.450.250.500
+Cacao;B6.388.100.800.200;
+Cadmium;;D1.268.956.61
+Calcium Channels;D12.776.395.550.440.150;D12.776.157.530.400.150
+Calcium Channels;;D12.776.543.585.400.150
+Calcium Channels, L-Type;D12.776.395.550.440.150.400;D12.776.157.530.400.150.400
+Calcium Channels, L-Type;;D12.776.543.585.400.150.400
+Calcium Channels, N-Type;D12.776.395.550.440.150.585;D12.776.157.530.400.150.585
+Calcium Channels, N-Type;;D12.776.543.585.400.150.585
+Calcium Channels, P-Type;D12.776.395.550.440.150.585.792;D12.776.157.530.400.150.585.792
+Calcium Channels, P-Type;;D12.776.543.585.400.150.585.792
+Calcium Channels, Q-Type;D12.776.395.550.440.150.585.826;D12.776.157.530.400.150.585.826
+Calcium Channels, Q-Type;;D12.776.543.585.400.150.585.826
+Calcium Channels, R-Type;D12.776.395.550.440.150.585.867;D12.776.157.530.400.150.585.867
+Calcium Channels, R-Type;;D12.776.543.585.400.150.585.867
+Calcium Channels, T-Type;D12.776.395.550.440.150.720;D12.776.157.530.400.150.720
+Calcium Channels, T-Type;;D12.776.543.585.400.150.720
+Calendula;B6.560.141;
+Calicivirus, Feline;B4.820.95.250.150;B4.820.95.887.150
+Calicivirus, Feline;B4.909.777.162.250.150;B4.909.777.162.887.150
+California Group Viruses;B4.820.87.150.160;B4.820.87.150.300
+California Group Viruses;B4.909.777.147.150.160;B4.909.777.147.150.300
+Californium;;D1.268.33.150
+Calymmatobacterium;B3.440.450.160;B3.440.450.425.180
+Canavan Disease;C16.466.400.150;C16.320.400.150
+Cannabis;B6.388.100.500.300;B6.388.100.175.500
+Canthaxanthin;D2.455.849.131.247.300;D2.455.849.131.868.249
+Canthaxanthin;D11.557.261.206.300;D11.557.261.887.249
+Capsicum;B6.388.100.900.145;B6.388.100.905.145
+Capsicum;B6.560.145;
+Capsicum;;Carbamoyl-Phosphate Synthase I Deficiency Disease
+Capsicum;C10.228.140.163.474.100.125;C10.228.140.163.100.162
+Capsicum;;C16.320.565.66.275
+Capsicum;;C16.320.565.150.162
+Capsicum;;C18.452.100.100.162
+Capsicum;;C18.452.648.151.162
+Carbidopa;D2.92.311.242.538.200;D2.92.311.200.538.200
+Carbohydrate Metabolism, Inborn Errors;;C16.320.565.202
+Carbohydrate Metabolism, Inborn Errors;;Carbohydrate-Deficient Glycoprotein Syndrome
+Carbohydrate Metabolism, Inborn Errors;;C16.320.565.202.125
+1-Carboxyglutamic Acid;;D12.125.67.750.150
+Cardiotonic Agents;;D26.684.80
+Cascara;D24.310.674.175;D24.310.784.500.175
+Cascara;;D26.674.500.175
+Case-Control Studies;G3.850.520.835.500.500;G3.850.520.450.500.500
+Cassava;B6.388.100.350.300;B6.388.100.350.155
+Cassia;B6.388.100.837.400.100;B6.388.100.401.100
+Cassia;B6.560.546.160;
+Castor Bean;B6.660.751.332;
+Castor Oil;;D24.310.784.750.132
+Castor Oil;;D26.674.750.132
+Cat's Claw;B6.560.150;
+cdc25 Phosphatase;D12.776.260.150.100;D12.776.167.100
+CDC28 Protein Kinase;D12.776.260.150.200.135;D12.776.167.200.135
+cdc42 GTP-Binding Protein, Yeast;D12.776.157.325.515.700.65;D12.776.157.325.515.700.50.500
+cdc42 GTP-Binding Protein, Yeast;;D12.776.354.750.249
+Cell Cycle Proteins;D12.776.260.150;D12.776.167
+Cephalosporin Resistance;G4.185.515.286.100.175;G4.185.515.286.347.500.175
+Cephalosporin Resistance;G12.392.269.100.175;G12.392.269.347.500.175
+Cereals;B6.388.100.450.225;B6.388.100.822.225
+Cerebral Amyloid Angiopathy;C15.378.147.780.100.100;C18.452.90.100
+Cerebral Amyloid Angiopathy;C15.604.515.56.100;
+Cerebral Amyloid Angiopathy;C18.452.648.111.100;
+Cerebral Amyloid Angiopathy;C20.683.780.100.100;
+Cerium;D1.268.558.75;D1.268.477.249
+Cerium;D1.552.550.120;D1.268.558.362.249
+Cerium;;D1.552.550.399.249
+Chamomile;B6.560.200;
+Charcot-Marie-Tooth Disease;C16.131.666.300.110;C16.131.666.300.200
+Charcot-Marie-Tooth Disease;C16.466.400.400.200;C16.320.400.400.200
+Cherubism;;C16.131.621.207.540.170
+Cherubism;;C16.320.170
+Chiropractic;E2.40.200;
+Chiropractic;E2.175;
+Chloramphenicol Resistance;G4.185.515.286.202;G4.185.515.286.347.750
+Chloramphenicol Resistance;G12.392.269.202;G12.392.269.347.750
+Chloride Channels;D12.776.395.550.440.175;D12.776.157.530.400.175
+Chloride Channels;;D12.776.543.585.400.175
+Cholesterol Ester Storage Disease;;C16.320.565.556.641.201
+Cholesterol Ester Storage Disease;;C16.320.565.580.201
+Chondrodysplasia Punctata, Rhizomelic;;C16.320.565.556.750.200
+Choroideremia;C16.131.410.142;C16.320.290.142
+Chromium;;D1.268.956.124
+Chromosome Aberrations;G5.148.266;G5.148.175
+Chromosome Breakage;C23.550.210.280;C23.550.210.170
+Chromosome Breakage;G5.148.266.280;G5.148.175.170
+Chromosome Deletion;C23.550.210.300;C23.550.210.175
+Chromosome Deletion;G5.148.266.300;G5.148.175.175
+Chromosome Fragility;C23.550.210.312;C23.550.210.180
+Chromosome Fragility;G5.148.266.312;G5.148.175.180
+Cinchona;B6.560.206;
+Cinnamon;B6.388.100.687.300;B6.388.100.590.149.500
+Ciprofloxacin;D3.438.810.835.180;D3.438.810.835.322.186
+Citrullinemia;C10.228.140.163.474.100.250;C10.228.140.163.100.175
+Citrullinemia;;C16.320.565.66.340
+Citrullinemia;;C16.320.565.150.175
+Citrullinemia;;C18.452.100.100.175
+Citrullinemia;;C18.452.648.151.175
+Citrus;B6.388.100.837.100;B6.388.100.875.500
+Clinical Protocols;E5.318.760.525;E2.183
+Clinical Protocols;G3.850.520.835.525;
+Clinical Protocols;H1.770.644.90;
+Clinical Trials;G3.850.520.835.535;G3.850.520.450.535
+Clinical Trials, Phase I;G3.850.520.835.535.200;G3.850.520.450.535.200
+Clinical Trials, Phase II;G3.850.520.835.535.210;G3.850.520.450.535.210
+Clinical Trials, Phase III;G3.850.520.835.535.220;G3.850.520.450.535.220
+Clinical Trials, Phase IV;G3.850.520.835.535.230;G3.850.520.450.535.230
+Closterovirus;B4.715.120;B4.715.110.150
+Closterovirus;B4.820.120;B4.820.110.150
+Cobalt;;D1.268.956.155
+Coca;B6.388.100.725.300;B6.388.100.346.500
+Coca;B6.560.216;
+Cockayne Syndrome;C16.466.400.200;C16.320.400.200
+Coconut;B6.388.100.225;B6.388.100.93.500
+Cohort Studies;G3.850.520.835.500.750;G3.850.520.450.500.750
+Colchicum;B6.560.224;B6.388.100.610.200
+Color Therapy;E2.40.215;E2.190.888.249
+Color Therapy;E2.780.750.215;E2.779.724.215
+Color Therapy;;E2.831.580.724.215
+Color Therapy;;Colorectal Neoplasms, Hereditary Nonpolyposis
+Color Therapy;C16.466.700.250;C16.320.700.250
+Comfrey;B6.388.100.227;B6.388.100.150.210
+Comfrey;B6.560.227;
+Computational Biology;;H1.158.273.595.150
+Condylomata Acuminata;C2.256.690.810.217;C2.256.650.810.217
+Confidentiality;;I1.880.604.473.650.500
+Confidentiality;;N3.706.437.650.124
+Conflict of Interest;K1.752.256.95;
+Controlled Clinical Trials;G3.850.520.835.535.365;G3.850.520.450.535.365
+Copper;;D1.268.956.170
+Corn;B6.388.100.450.225.200;B6.388.100.822.225.200
+Corn Oil;;D24.310.784.750.240
+Corn Oil;;D26.674.750.240
+Corneal Dystrophies, Hereditary;C16.131.410.162;C16.320.290.162
+Coronaviridae;B4.820.155;B4.820.504.540
+Coronaviridae;B4.909.777.199;B4.909.777.500.540
+Coronaviridae Infections;C2.782.225;C2.782.600.550
+Coronavirus;B4.820.155.150;B4.820.504.540.150
+Coronavirus;B4.909.777.199.150;B4.909.777.500.540.150
+Coronavirus Infections;C2.782.225.200;C2.782.600.550.200
+Coronavirus, Bovine;B4.820.155.150.150;B4.820.504.540.150.150
+Coronavirus, Bovine;B4.909.777.199.150.150;B4.909.777.500.540.150.150
+Coronavirus, Canine;B4.820.155.150.160;B4.820.504.540.150.160
+Coronavirus, Canine;B4.909.777.199.150.160;B4.909.777.500.540.150.160
+Coronavirus, Rat;B4.820.155.150.260;B4.820.504.540.150.260
+Coronavirus, Rat;B4.909.777.199.150.260;B4.909.777.500.540.150.260
+Coronavirus, Turkey;B4.820.155.150.300;B4.820.504.540.150.300
+Coronavirus, Turkey;B4.909.777.199.150.300;B4.909.777.500.540.150.300
+Cotton;B6.388.100.800.300;B6.388.100.700.244
+Cottonseed Oil;;D24.310.784.750.263
+Cottonseed Oil;;D26.674.750.263
+Cretinism;;C16.180
+Cretinism;;C19.297.275
+Cri-du-Chat Syndrome;C10.271.250;C10.597.606.643.180
+Cri-du-Chat Syndrome;C16.131.280.187.200;C16.131.260.190
+Cri-du-Chat Syndrome;;C16.320.180.190
+Crigler-Najjar Syndrome;;C16.320.565.437.281
+Cross-Over Studies;G3.850.520.840.150;G3.850.520.445.150
+Cross-Sectional Studies;G3.850.520.835.500.875;G3.850.520.450.500.875
+Croton Oil;;D24.310.784.750.315
+Croton Oil;;D26.674.750.315
+Cryopreservation;;E1.450.865.366.156
+Cryosurgery;E2.780.164.143;
+Cryotherapy;E2.780.164;E2.779.374
+Cryotherapy;;E2.831.580.374
+Cucumbers;B6.388.100.300.250;B6.388.100.300.188.666
+Curare;D3.132.267;D3.132.436.500
+Curare;D24.310.674.200;D3.438.473.402.500
+Curare;;D24.310.784.500.200
+Curare;;D26.674.500.200
+Curium;;D1.268.33.175
+Cutis Laxa;C17.800.150;C16.320.850.180
+Cutis Laxa;C17.800.827.200;C17.800.827.180
+Cyclin A;D12.776.260.150.218.100;D12.776.167.218.100
+Cyclin B;D12.776.260.150.218.120;D12.776.167.218.120
+Cyclin D1;D12.776.260.150.218.161;D12.776.167.218.161
+Cyclin D1;D12.776.818.161;D12.776.624.664.700.161
+Cyclin E;D12.776.260.150.218.180;D12.776.167.218.180
+Cyclin-Dependent Kinases;D12.776.260.150.200;D12.776.167.200
+Cyclins;D12.776.260.150.218;D12.776.167.218
+Cycloserine;;D3.383.548.332.162
+Cycloserine;;D3.383.548.600.162
+Cyprinodontiformes;B2.493.280;B2.493.850.280
+Cysteinyldopa;D2.92.311.242.180;D2.92.311.200.180
+Cysteinyldopa;D12.125.72.573.400.180;D12.125.72.50.685.400.180
+Cystic Fibrosis;;C16.320.190
+Cystic Fibrosis;;Cystic Fibrosis Transmembrane Conductance Regulator
+Cystic Fibrosis;D12.776.395.550.440.175.125;D12.776.157.530.400.175.125
+Cystic Fibrosis;;D12.776.543.585.400.175.125
+Cystinosis;;C16.320.565.851.368
+Cystinuria;;C16.320.565.66.210.250
+Cystinuria;;C16.320.565.851.191.250
+Cytology;;H1.158.100.433
+Dance Therapy;;E2.190.888.374
+Dance Therapy;;E2.403.186
+De Lange Syndrome;C10.271.300;C10.597.606.643.210
+De Lange Syndrome;C16.131.280.187.250;C16.131.260.210
+De Lange Syndrome;;C16.320.180.210
+Delayed-Action Preparations;;E2.319.300.253
+Densovirinae;;B4.525.150
+Densovirus;B4.525.200;B4.525.150.150
+Dependovirus;B4.265.658.210;
+Dermacentor;B1.131.166.132.832.380;B1.131.166.132.832.400.200
+Dermatitis, Atopic;C17.800.827.300;C16.320.850.210
+Dermatitis, Atopic;;C17.800.827.210
+Dermatitis, Seborrheic;C17.800.805.711.230;C17.800.794.230
+Developmental Biology;;H1.158.273.200
+Dextrocardia;C16.131.810.501.282;C16.131.810.250
+Dextrothyroxine;D6.472.931.812.185;D6.472.931.103
+Dextrothyroxine;D12.125.72.734.185;D12.125.72.50.342
+Diathermy;E2.780.480.280;E2.779.496.280
+Diathermy;;E2.831.580.496.280
+Diestrus;G8.520.780.218.200;G8.520.188.374
+Diet Fads;E2.40.287;E2.293.266
+DiGeorge Syndrome;;C16.131.300
+Digitalis;B6.560.290;B6.388.100.892.500
+Digitalis;B6.660.282;
+Dihydroergotamine;D3.132.327.287.362.412.387;D3.132.327.412.225
+Dihydroergotamine;D3.549.439.362.412.387;D3.549.562.300
+Dihydroergotoxine;D3.132.327.190;D3.132.327.412.250
+Dihydroergotoxine;;D3.549.562.400
+Diiodothyronines;D6.472.931.812.741.180;D6.472.931.740.180
+Diiodothyronines;D12.125.72.734.741.180;D12.125.72.50.767.741.180
+Diiodotyrosine;D12.125.72.917.262;D12.125.72.50.875.262
+DNA Topoisomerase;D8.586.399.351;D8.586.399.403.483
+Dopa;D2.92.311.242;D2.92.311.200
+Dopa;D12.125.72.573.400;D12.125.72.50.685.400
+Double-Blind Method;G3.850.520.840.300;G3.850.520.445.300
+Down Syndrome;C10.271.350;C10.597.606.643.220
+Down Syndrome;C16.131.280.187.300;C16.131.260.260
+Down Syndrome;;C16.320.180.260
+Drainage, Postural;E2.780.221;E2.403.249
+Drainage, Postural;;E2.779.437
+Drainage, Postural;;E2.831.580.437
+Drug Carriers;;E2.319.300.380
+Drug Resistance, Multiple;;G4.185.515.329
+Drugs, Chinese Herbal;D24.310.674.350;D24.310.784.500.350
+Drugs, Chinese Herbal;;D26.674.500.350
+Duane Retraction Syndrome;;C11.270.235
+Duane Retraction Syndrome;;C16.320.290.235
+Duty to Warn;;F1.145.209.259.800.200
+Dysautonomia, Familial;C16.131.666.690.309;C10.114.750.137.250
+Dysautonomia, Familial;;C10.314.750.600.250
+Dysautonomia, Familial;;C10.500.310.309
+Dysautonomia, Familial;;C10.574.500.496.250
+Dysautonomia, Familial;;C10.668.829.800.750.450.250
+Dysautonomia, Familial;;C16.131.666.310.309
+Dysautonomia, Familial;;C16.320.400.415.309
+Dysautonomia, Familial;;C20.111.258.750.600.250
+Dyskeratosis Congenita;C17.800.827.800.150;C16.320.850.235
+Dyskeratosis Congenita;;C17.800.804.150
+Dyskeratosis Congenita;;C17.800.827.235
+Dysplastic Nevus Syndrome;C16.466.700.305;C16.320.700.305
+Dysprosium;D1.268.558.125;D1.268.477.374
+Dysprosium;D1.552.550.208;D1.268.558.362.374
+Dysprosium;;D1.552.550.399.374
+Dystonia Musculorum Deformans;C16.466.400.330;C16.320.400.330
+Ecdysone;D4.808.247.222.265.150;D4.808.247.222.265.165.500
+Ecdysone;D6.472.445.573.230;D6.472.445.573.271.500
+Ecdysterone;D4.808.247.222.265.180;D4.808.247.222.265.165.750
+Ecdysterone;D6.472.445.573.313;D6.472.445.573.271.750
+Echinacea;B6.560.310;
+Echovirus 6;B4.820.565.284.314.225;B4.820.565.284.182.225
+Echovirus 6;B4.909.777.618.284.314.225;B4.909.777.618.284.182.225
+Echovirus 9;B4.820.565.284.314.250;B4.820.565.284.182.250
+Echovirus 9;B4.909.777.618.284.314.250;B4.909.777.618.284.182.250
+Ecology;;H1.158.273.248
+Ectodermal Dysplasia;C16.131.280.748.325;C16.131.260.800.240
+Ectodermal Dysplasia;C17.800.827.800.350;C16.320.180.800.240
+Ectodermal Dysplasia;;C16.320.850.250
+Ectodermal Dysplasia;;C17.800.804.350
+Ectodermal Dysplasia;;C17.800.827.250
+Eflornithine;;D12.125.68.665.340
+Ehlers-Danlos Syndrome;C17.800.827.800.428;C16.320.850.260
+Ehlers-Danlos Syndrome;;C17.800.804.428
+Ehlers-Danlos Syndrome;;C17.800.827.260
+Einsteinium;;D1.268.33.250
+Electric Stimulation Therapy;E2.40.335;E2.779.468
+Electric Stimulation Therapy;E2.780.335;E2.831.580.468
+Electroacupuncture;E2.30.325;E2.190.44.244
+Electroacupuncture;E2.40.25.325;E2.779.468.325
+Electroacupuncture;E2.40.335.325;E2.831.580.468.325
+Electroacupuncture;E2.780.335.325;
+Electrophorus;B2.493.200.328;B2.493.378.430.250
+Electrophorus;B2.493.378.380;
+Electrophysiology;;H1.158.344.528
+Electrophysiology;;H1.158.782.236
+Elliptocytosis, Hereditary;;C16.320.70.365
+Ellis-Van Creveld Syndrome;C17.800.827.800.350.398;C16.320.850.250.398
+Ellis-Van Creveld Syndrome;;C17.800.804.350.398
+Ellis-Van Creveld Syndrome;;C17.800.827.250.398
+Embryo Transfer;E5.820.330;E2.875.800.500
+Embryo Transfer;;E5.820.800.500
+Embryology;;H1.158.100.529
+Embryology;;H1.158.273.200.350
+Encephalomyelitis Virus, Avian;B4.820.565.284.500;B4.820.565.400.250
+Encephalomyelitis Virus, Avian;B4.909.777.618.284.500;B4.909.777.618.400.250
+Encephalomyelitis Virus, Murine;B4.820.565.170.200.200;B4.820.565.170.200.480
+Encephalomyelitis Virus, Murine;B4.909.777.618.170.200.200;B4.909.777.618.170.200.480
+Endocrinology;;H1.158.782.323
+Enoxacin;D3.438.612.320;D3.438.810.835.322.280
+Enteritis, Transmissible, of Turkeys;C2.782.225.200.325;C2.782.600.550.200.325
+Entomology;;H1.158.273.943.409
+Environmental Microbiology;;H1.158.273.540.274
+Enzootic Bovine Leukosis;C2.782.815.483.260;C2.782.815.200.260
+Enzootic Bovine Leukosis;;Enzyme Multiplied Immunoassay Technique
+Enzootic Bovine Leukosis;;E5.601.495.350.180
+Enzyme-Linked Immunosorbent Assay;;E5.601.495.350.170
+Enzyme-Linked Immunosorbent Assay;;E5.601.495.380.360
+Epidemiologic Research Design;G3.850.520.840;G3.850.520.445
+Epidemiologic Studies;G3.850.520.835.500;G3.850.520.450.500
+Epidemiologic Study Characteristics;G3.850.520.835;G3.850.520.450
+Epidemiology, Molecular;;H1.158.273.595.300
+Epidermodysplasia Verruciformis;C2.256.690.810.345;C2.256.650.810.345
+Epidermolysis Bullosa;C17.800.827.800.493;C16.320.850.275
+Epidermolysis Bullosa;;C17.800.804.493
+Epidermolysis Bullosa;;C17.800.827.275
+Epidermolysis Bullosa Acquisita;C17.800.827.800.493.80;C17.800.804.493.80
+Epidermolysis Bullosa Acquisita;;C17.800.827.275.80
+Epidermolysis Bullosa Dystrophica;C17.800.827.800.493.160;C16.320.850.275.160
+Epidermolysis Bullosa Dystrophica;;C17.800.804.493.160
+Epidermolysis Bullosa Dystrophica;;C17.800.827.275.160
+Epidermolysis Bullosa Simplex;C17.800.827.800.493.180;C16.320.850.275.180
+Epidermolysis Bullosa Simplex;;C17.800.804.493.180
+Epidermolysis Bullosa Simplex;;C17.800.827.275.180
+Epidermolysis Bullosa, Junctional;C17.800.827.800.493.170;C16.320.850.275.170
+Epidermolysis Bullosa, Junctional;;C17.800.804.493.170
+Epidermolysis Bullosa, Junctional;;C17.800.827.275.170
+Epitope Mapping;;E5.601.690.300
+Equisetum;B6.560.328;B6.388.175
+Erbium;D1.268.558.150;D1.268.477.437
+Erbium;D1.552.550.255;D1.268.558.362.437
+Erbium;;D1.552.550.399.437
+Ergoloid Mesylates;D3.132.327.190.325;D3.132.327.412.250.500
+Ergoloid Mesylates;;D3.549.562.400.500
+Ergotamine;D3.132.327.287.362;D3.132.327.412.400
+Ergotamine;D3.549.439.362;D3.549.562.500
+Ergotamine Derivatives;D3.132.327.287.362.412;D3.132.327.412
+Ergotamine Derivatives;D3.549.439.362.412;D3.549.562
+Ergothioneine;D3.132.327.537;D12.125.72.329.269
+Erythrina;B6.560.331;B6.388.100.401.200
+Erythroblastosis Virus, Avian;B4.820.650.735.250;B4.820.650.70.250
+Erythroblastosis Virus, Avian;B4.909.574.807.735.250;B4.909.574.807.70.250
+Erythroblastosis Virus, Avian;B4.909.777.731.735.250;B4.909.777.731.70.250
+Esocidae;B2.493.817.350;B2.493.385.300
+Estrus;G8.520.780.218;G8.520.188.500
+Estrus Synchronization;G8.520.780.218.268;G8.520.188.500.500
+Ethics Committees;;K1.316.173
+Ethics Committees;;N5.350.268
+Ethiodized Oil;;D24.310.784.750.550.300
+Ethiodized Oil;;D26.674.750.550.300
+Ethnobotany;;H1.158.273.118.299
+Ethnopharmacology;;H1.158.703.15
+Eucalyptus;B6.388.100.837.200;B6.388.100.775.500
+Eucalyptus;B6.560.343;
+Europium;D1.268.558.175;D1.268.477.468
+Europium;D1.552.550.292;D1.268.558.362.468
+Europium;;D1.552.550.399.468
+Euthanasia;K1.316.333.366.175;E2.760.905.199
+Euthanasia;K1.752.667.416.175;I1.880.735.344.500
+Euthanasia;N5.350.340.500.345;N2.421.585.905.199
+Euthanasia, Passive;K1.316.333.366.175.500;E2.760.905.199.500
+Euthanasia, Passive;K1.752.667.416.175.500;E2.760.952.500
+Euthanasia, Passive;N5.350.340.500.345.350;N2.421.585.905.199.625
+Euthanasia, Passive;;N2.421.585.952.500
+Exercise;;E2.403.500
+Exercise Therapy;E2.780.351;E2.403.750
+Exercise Therapy;E2.831.578.391;E2.695.199
+Exercise Therapy;;E2.831.580.484
+Exobiology;;H1.158.273.295
+Exostoses, Multiple Hereditary;;C4.700.330
+Exostoses, Multiple Hereditary;;C16.320.700.330
+Eye Diseases, Hereditary;C16.131.410;C16.320.290
+Fabry Disease;;C10.228.140.163.100.435.825.200
+Fabry Disease;;C16.320.565.150.435.825.200
+Fabry Disease;;C16.320.565.556.641.803.300
+Fabry Disease;;C16.320.565.580.554.825.200
+Fabry Disease;;C16.320.565.580.803.300
+Fabry Disease;;C18.452.100.100.435.825.200
+Fabry Disease;;C18.452.648.151.435.825.200
+Fabry Disease;;C18.452.648.151.825.200
+Fabry Disease;;C18.452.648.595.554.825.200
+Factor V Deficiency;;C15.378.100.425.300
+Factor V Deficiency;;C16.320.99.300
+Factor VII Deficiency;;C15.378.100.425.310
+Factor VII Deficiency;;C16.320.99.310
+Factor X Deficiency;;C15.378.100.425.320
+Factor X Deficiency;;C16.320.99.320
+Factor XI Deficiency;;C15.378.100.425.325
+Factor XI Deficiency;;C16.320.99.325
+Factor XII Deficiency;;C15.378.100.425.330
+Factor XII Deficiency;;C16.320.99.330
+Factor XIII;;D8.586.913.50.200.800.500
+Factor XIII Deficiency;;C15.378.100.425.335
+Factor XIII Deficiency;;C16.320.99.335
+Fallopian Tube Patency Tests;;E2.875.390
+Fanconi Syndrome;;C16.320.565.851.368.210
+Fanconi's Anemia;C15.378.71.85.400;C15.378.71.85.80.280
+Fanconi's Anemia;;C15.378.190.196.80.280
+Fanconi's Anemia;;C16.320.77.280
+Favism;;C16.320.70.480.370
+Feasibility Studies;G3.850.520.835.550;G3.850.520.450.550
+Feedback;F4.669.260;
+Feedback;G7.621.475;
+Feline Infectious Peritonitis;C2.782.225.200.360;C2.782.600.550.200.360
+Femoral Neck Fractures;C21.866.405.207.425.278;C21.866.405.207.425.500
+Femoral Neck Fractures;C21.866.558.276.425.278;C21.866.558.276.425.500
+Fenclonine;D12.125.72.573.440;D12.125.72.50.685.440
+Fermium;;D1.268.33.275
+Fertilization in Vitro;E5.820.490;E2.875.800.750
+Fertilization in Vitro;;E5.820.800.750
+Ferula;B6.560.373;
+Ferula;B6.660.357;
+Ferula;J2.500.850.375;
+Feverfew;B6.560.378;
+Fishes, Poisonous;B1.30.286.400;
+FLA 63;D3.383.374.275;D3.383.374.90
+Flax;B6.388.100.725.500;B6.388.100.620.500
+Fleroxacin;D3.438.810.835.180.400;D3.438.810.835.322.186.400
+Focal Dermal Hypoplasia;C16.131.280.748.325.350;C16.131.260.800.240.350
+Focal Dermal Hypoplasia;C17.800.827.800.350.424;C16.320.180.800.240.350
+Focal Dermal Hypoplasia;;C16.320.850.250.424
+Focal Dermal Hypoplasia;;C17.800.804.350.424
+Focal Dermal Hypoplasia;;C17.800.827.250.424
+Folliculitis;C17.800.805.305.383;C17.800.329.500
+Follow-Up Studies;G3.850.520.835.500.750.350;G3.850.520.450.500.750.350
+Food Chain;;H1.158.273.248.400
+Food Microbiology;;H1.158.273.540.274.332
+Food Parasitology;;H1.158.273.688.500
+Fox-Fordyce Disease;C17.800.805.843.492.285;C17.800.946.492.285
+Fragile X Syndrome;C10.271.400;C10.597.606.643.300
+Fragile X Syndrome;C16.131.280.187.350;C16.131.260.800.300
+Fragile X Syndrome;C16.131.280.748.360;C16.320.180.800.300
+Freeze Drying;;E1.450.865.366.156.260
+Freeze Substitution;;E1.450.865.366.156.260.270
+Friedreich Ataxia;C16.466.400.780.200;C16.320.400.780.200
+Friedreich Ataxia;;C18.452.660.300
+Friend Virus;B4.820.650.750.900.500.225;B4.820.650.375.900.500.225
+Friend Virus;B4.909.574.807.750.900.500.225;B4.909.574.807.375.900.500.225
+Friend Virus;B4.909.777.731.750.900.500.225;B4.909.777.731.375.900.500.225
+Fructose Intolerance;;C16.320.565.202.251.271
+Fructose Metabolism, Inborn Errors;;C16.320.565.202.251
+Fructose-1,6-Diphosphatase Deficiency;;C16.320.565.202.251.221
+Fuchs' Endothelial Dystrophy;C16.131.410.162.410;C16.320.290.162.410
+Fucosidosis;C10.228.140.163.474.475.250;C10.228.140.163.100.435.295
+Fucosidosis;C18.452.648.595.519.250;C16.320.565.150.435.295
+Fucosidosis;;C16.320.565.202.303
+Fucosidosis;;C16.320.565.580.554.295
+Fucosidosis;;C18.452.100.100.435.295
+Fucosidosis;;C18.452.648.151.300
+Fucosidosis;;C18.452.648.151.435.295
+Fucosidosis;;C18.452.648.595.554.295
+Furazolidone;;D3.383.548.600.500
+Fuselloviridae;B4.123.330;B4.100.224
+Fuselloviridae;;B4.280.224
+Fusion Proteins, bcr-abl;D12.776.677.500.100;D12.776.624.664.500.100
+Fusion Proteins, gag-onc;D12.776.677.500.320;D12.776.624.664.500.320
+Fusion Proteins, gag-onc;D12.776.677.520.750.320;D12.776.624.664.520.750.320
+Gadolinium;D1.268.558.225;D1.268.477.484
+Gadolinium;D1.552.550.344;D1.268.558.362.484
+Gadolinium;;D1.552.550.399.484
+Galactosemias;C10.228.140.163.474.300;C10.228.140.163.100.320
+Galactosemias;C18.452.125.250.200;C16.320.565.150.320
+Galactosemias;C18.452.648.156.200;C16.320.565.202.355
+Galactosemias;;C18.452.100.100.320
+Galactosemias;;C18.452.648.151.320
+Gamete Intrafallopian Transfer;E5.820.500;E2.875.800.875
+Gamete Intrafallopian Transfer;;E5.820.800.875
+Gangliosidoses;C10.228.140.163.474.475.600.300;C10.228.140.163.100.435.825.300
+Gangliosidoses;C18.452.648.595.519.600.300;C16.320.565.150.435.825.300
+Gangliosidoses;;C16.320.565.556.641.803.350
+Gangliosidoses;;C16.320.565.580.554.825.300
+Gangliosidoses;;C16.320.565.580.803.350
+Gangliosidoses;;C18.452.100.100.435.825.300
+Gangliosidoses;;C18.452.648.151.435.825.300
+Gangliosidoses;;C18.452.648.151.825.300
+Gangliosidoses;;C18.452.648.595.554.825.300
+Gangliosidoses GM2;C10.228.140.163.474.475.600.300.300 C10.228.140.163.100.435.825.300.300;
+Gangliosidoses GM2;C18.452.648.595.519.600.300.300;C16.320.565.150.435.825.300.300
+Gangliosidoses GM2;;C16.320.565.556.641.803.350.300
+Gangliosidoses GM2;;C16.320.565.580.554.825.300.300
+Gangliosidoses GM2;;C16.320.565.580.803.350.300
+Gangliosidoses GM2;;C18.452.100.100.435.825.300.300
+Gangliosidoses GM2;;C18.452.648.151.435.825.300.300
+Gangliosidoses GM2;;C18.452.648.151.825.300.300
+Gangliosidoses GM2;;C18.452.648.595.554.825.300.300
+Gangliosidosis GM1;C10.228.140.163.474.475.600.300.400 C10.228.140.163.100.435.825.300.400;
+Gangliosidosis GM1;C18.452.648.595.519.600.300.400;C16.320.565.150.435.825.300.400
+Gangliosidosis GM1;;C16.320.565.556.641.803.350.360
+Gangliosidosis GM1;;C16.320.565.580.554.825.300.400
+Gangliosidosis GM1;;C18.452.100.100.435.825.300.400
+Gangliosidosis GM1;;C18.452.648.151.435.825.300.400
+Gangliosidosis GM1;;C18.452.648.151.825.300.400
+Gangliosidosis GM1;;C18.452.648.595.554.825.300.400
+Gardner Syndrome;C4.588.274.476.411.510.393;C4.588.274.476.411.510.235.100.393
+Gardner Syndrome;C4.700.392;C4.700.100.392
+Gardner Syndrome;C4.799.411.393;C4.799.411.235.100.393
+Gardner Syndrome;C6.240.476.411.510.393;C6.240.476.411.510.360.100.393
+Gardner Syndrome;C6.405.282.411.510.393;C6.405.282.411.510.360.100.393
+Gardner Syndrome;C6.405.469.505.510.393;C6.405.469.505.510.360.100.393
+Gardner Syndrome;C6.405.469.583.393;C6.405.469.583.360.100.393
+Gardner Syndrome;C16.466.700.392;C16.320.700.100.393
+Garlic;B6.388.100.700.100.300;B6.388.100.610.100.300
+Garlic;B6.560.410;
+Gastroenteritis Virus, Murine;B4.450.370;B4.450.580
+Gastroenteritis Virus, Murine;B4.820.155.150.390;B4.820.504.540.150.580
+Gastroenteritis Virus, Murine;B4.909.777.199.150.390;B4.909.777.500.540.150.580
+Gastroenteritis Virus, Murine;;Gastroenteritis Virus, Porcine Transmissible
+Gastroenteritis Virus, Murine;B4.820.155.150.410;B4.820.504.540.150.800
+Gastroenteritis Virus, Murine;B4.909.777.199.150.410;B4.909.777.500.540.150.800
+Gastroenteritis Virus, Murine;;Gastroenteritis, Transmissible, of Swine
+Gastroenteritis Virus, Murine;C2.782.225.200.400;C2.782.600.550.200.400
+Gaucher Disease;C10.228.140.163.474.475.600.400;C10.228.140.163.100.435.825.400
+Gaucher Disease;C18.452.648.595.519.600.400;C16.320.565.150.435.825.400
+Gaucher Disease;;C16.320.565.556.641.803.441
+Gaucher Disease;;C16.320.565.580.554.825.400
+Gaucher Disease;;C16.320.565.580.803.441
+Gaucher Disease;;C18.452.100.100.435.825.400
+Gaucher Disease;;C18.452.648.151.435.825.400
+Gaucher Disease;;C18.452.648.151.825.400
+Gaucher Disease;;C18.452.648.595.554.825.400
+Gelatin Sponge, Absorbable;D12.776.860.476.300;
+Gene Products, rex;D12.776.677.520.750.470;D12.776.624.664.520.750.470
+Gene Products, tax;D12.776.677.520.750.480;D12.776.624.664.520.750.480
+Genes, APC;G5.275.540.400.50;
+Genes, BRCA1;G5.275.540.400.100;
+Genes, DCC;G5.275.540.400.300;G5.275.415.400.200
+Genes, MCC;G5.275.540.400.320;
+Genes, Neurofibromatosis 1;G5.275.540.400.340;
+Genes, Neurofibromatosis 2;G5.275.540.400.345;
+Genes, p16;G5.275.540.400.348;
+Genes, p53;G5.275.540.400.350;G5.275.415.400.350
+Genes, Retinoblastoma;G5.275.540.400.400;
+Genes, Suppressor, Tumor;G5.275.540.400;
+Genes, Wilms Tumor;G5.275.540.400.420;
+Genetics;;H1.158.273.343
+Genetics, Biochemical;;H1.158.273.595.331
+Genomics;;H1.158.273.343.500
+Gerstmann-Straussler-Scheinker Disease;C16.466.400.350;C16.320.400.350
+Gilbert Disease;;C16.320.565.437.528
+Ginger;B6.388.100.975.425;B6.388.100.975.900.444
+Ginger;B6.560.425;
+Ginkgo biloba;B6.560.430;
+Ginseng;B6.388.100.400;B6.388.100.87.500
+Ginseng;B6.560.434;
+Glucose Intolerance;C18.452.648.202.435;
+Glucose Intolerance;;Glucosephosphate Dehydrogenase Deficiency
+Glucose Intolerance;;C16.320.70.480
+Glucose Intolerance;;C16.320.565.390
+Glue Proteins, Drosophila;;D12.776.466.462.500
+Glutamates;;D12.125.67.750.400
+Glutamic Acid;;D12.125.67.750
+Glutamine;D12.125.119.574;D12.125.68.330
+Glutamine;;D12.125.95.461
+Glycogen Storage Disease;;C16.320.565.202.449
+Glycogen Storage Disease Type I;;C16.320.565.202.449.448
+Glycogen Storage Disease Type II;C10.228.140.163.474.475.350;C10.228.140.163.100.435.340
+Glycogen Storage Disease Type II;C18.452.648.595.519.350;C16.320.565.150.435.340
+Glycogen Storage Disease Type II;;C16.320.565.202.449.500
+Glycogen Storage Disease Type II;;C16.320.565.580.554.340
+Glycogen Storage Disease Type II;;C18.452.100.100.435.340
+Glycogen Storage Disease Type II;;C18.452.648.151.330
+Glycogen Storage Disease Type II;;C18.452.648.151.435.340
+Glycogen Storage Disease Type II;;C18.452.648.595.554.340
+Glycogen Storage Disease Type III;;C16.320.565.202.449.520
+Glycogen Storage Disease Type IV;;C16.320.565.202.449.540
+Glycogen Storage Disease Type V;;C16.320.565.202.449.560
+Glycogen Storage Disease Type VI;;C16.320.565.202.449.580
+Glycogen Storage Disease Type VII;;C5.651.534.500.149
+Glycogen Storage Disease Type VII;;C16.320.565.202.449.600
+Glycogen Storage Disease Type VIII;;C16.320.565.202.449.620
+Glycosuria, Renal;;C16.320.565.851.532
+Glycyrrhiza;B6.388.100.837.400.300;B6.388.100.401.300
+Glycyrrhiza;B6.560.546.300;
+Gold;;D1.268.956.186
+Gonadal Dysgenesis, 46,XY;C16.131.280.748.388;C12.740.700.842.309.293
+Gonadal Dysgenesis, 46,XY;;C16.131.260.800.340
+Gonadal Dysgenesis, 46,XY;;C16.320.180.800.340
+Gonadal Dysgenesis, Mixed;C16.131.280.748.391;C16.131.260.800.345
+Gonadal Dysgenesis, Mixed;;C16.320.180.800.345
+Gout;;C16.320.565.798.368
+Granuloma Inguinale;C1.252.400.411;C1.252.400.310.416
+Grasses;;B6.388.100.822
+Gross Virus;B4.820.650.750.900.500.300;B4.820.650.375.900.500.300
+Gross Virus;B4.909.574.807.750.900.500.300;B4.909.574.807.375.900.500.300
+Gross Virus;B4.909.777.731.750.900.500.300;B4.909.777.731.375.900.500.300
+Guaiac;D24.310.674.400;D24.310.784.500.400
+Guaiac;;D26.674.500.400
+Gyrate Atrophy;C16.131.410.468;C16.320.290.468
+Gyrate Atrophy;;D12.776.157.530.450.250.875.500
+Gyrate Atrophy;;D12.776.543.585.450.250.875.500
+Hafnium;;D1.268.956.249
+Hagfish;B2.493.181.371;B1.272.400.380
+Hagfish;;B2.493.516
+Hair Diseases;C17.800.805.305;C17.800.329
+Hallervorden-Spatz Syndrome;C16.466.400.375;C16.320.400.375
+Hamartoma Syndrome, Multiple;C16.466.700.435;C16.320.700.435
+Hartnup Disease;C10.228.140.163.474.220.325;C10.228.140.163.100.355
+Hartnup Disease;;C16.320.565.66.210.490
+Hartnup Disease;;C16.320.565.88.400
+Hartnup Disease;;C16.320.565.150.355
+Hartnup Disease;;C16.320.565.851.191.457
+Hartnup Disease;;C18.452.100.100.355
+Hartnup Disease;;C18.452.648.151.355
+Harvey Sarcoma Virus;B4.820.650.750.900.750.400;B4.820.650.375.900.750.400
+Harvey Sarcoma Virus;B4.909.574.807.750.900.750.400;B4.909.574.807.375.900.750.400
+Harvey Sarcoma Virus;B4.909.777.731.750.900.750.400;B4.909.777.731.375.900.750.400
+Heliotherapy;E2.780.750.430;E2.779.724.430
+Heliotherapy;;E2.831.580.724.430
+Helsinki Declaration;K1.752.667.416.377;
+Hematoporphyrin Photoradiation;E2.780.740.435;E2.779.724.722.435
+Hematoporphyrin Photoradiation;;E2.831.580.649.435
+Hemlock;B6.660.463;
+Hemochromatosis;;C16.320.565.618.337
+Hemoglobin C Disease;;C16.320.70.490
+Hemoglobin C Disease;;C16.320.365.463
+Hemoglobin SC Disease;;C16.320.70.150.440
+Hemoglobin SC Disease;;C16.320.365.155.440
+Hemoglobinopathies;;C16.320.365
+Hemophilia A;;C15.378.100.425.500
+Hemophilia A;;C16.320.99.500
+Hemophilia B;;C15.378.100.425.510
+Hemophilia B;;C16.320.99.510
+Hemorrhagic Disease Virus, Rabbit;B4.820.95.250.380;B4.820.95.500.380
+Hemorrhagic Disease Virus, Rabbit;B4.909.777.162.250.380;B4.909.777.162.500.380
+Hemorrhagic Fever, Ebola;C2.782.580.250.250.415;C2.782.580.250.400
+Hepatic Encephalopathy;C10.228.140.163.165.300;C10.228.140.163.360
+Hepatic Encephalopathy;C18.452.125.200.400;C18.452.100.360
+Hepatitis A Virus, Human;B4.450.420.400;B4.450.420.410.500
+Hepatitis A Virus, Human;B4.820.565.400.400;B4.820.565.400.410.500
+Hepatitis A Virus, Human;B4.909.777.618.400.400;B4.909.777.618.400.410.500
+Hepatitis Delta Virus;D13.444.735.721.411;
+Hepatitis E;C2.782.160.470;C2.782.455
+Hepatitis E Virus;B4.820.95.250.400;B4.820.330
+Hepatitis E Virus;B4.909.777.162.250.400;B4.909.777.415
+Hepatitis Virus, Duck;B4.909.777.618.284.660;B4.450.416
+Hepatitis Virus, Duck;;B4.820.565.342
+Hepatitis Virus, Duck;;B4.909.777.618.342
+Hepatolenticular Degeneration;C10.228.140.163.474.320;C10.228.140.163.100.360
+Hepatolenticular Degeneration;C16.466.400.387;C16.320.400.387
+Hepatolenticular Degeneration;C18.452.125.250.300;C16.320.565.150.360
+Hepatolenticular Degeneration;C18.452.648.156.300;C16.320.565.618.403
+Hepatolenticular Degeneration;;C18.452.100.100.360
+Hepatolenticular Degeneration;;C18.452.648.151.360
+Hepatolenticular Degeneration;;Hereditary Central Nervous System Demyelinating Diseases
+Hepatolenticular Degeneration;C16.466.400.393;C16.320.400.393
+Hepatolenticular Degeneration;;Hereditary Motor and Sensory Neuropathies
+Hepatolenticular Degeneration;C16.466.400.400;C16.320.400.400
+Hepatolenticular Degeneration;;Hereditary Sensory and Autonomic Neuropathies
+Hepatolenticular Degeneration;C16.131.666.690;C10.500.310
+Hepatolenticular Degeneration;;C16.131.666.310
+Hepatolenticular Degeneration;;C16.320.400.415
+Hepatolenticular Degeneration;;Heredodegenerative Disorders, Nervous System
+Hepatolenticular Degeneration;C16.466.400;C16.320.400
+Hermanski-Pudlak Syndrome;C11.270.55.400;C11.270.40.545.400
+Hermanski-Pudlak Syndrome;C16.131.410.40.100.400;C15.378.100.425.515
+Hermanski-Pudlak Syndrome;C17.800.827.130.100.400;C16.320.99.515
+Hermanski-Pudlak Syndrome;;C16.320.290.40.100.400
+Hermanski-Pudlak Syndrome;;C16.320.565.66.102.100.400
+Hermanski-Pudlak Syndrome;;C16.320.850.80.100.400
+Hermanski-Pudlak Syndrome;;C17.800.827.80.100.400
+Herpesvirus 1, Canid;B4.280.382.100.900.406;
+Herpesvirus 1, Canid;B4.909.204.382.100.900.406;
+Herpesvirus 1, Equid;;B4.280.382.100.900.430
+Herpesvirus 1, Equid;;B4.909.204.382.100.900.430
+Herpesvirus 1, Gallid;B4.280.382.100.900.425;B4.280.382.100.374.450
+Herpesvirus 1, Gallid;B4.909.204.382.100.900.425;B4.909.204.382.100.374.450
+Herpesvirus 1, Suid;;B4.280.382.100.900.510
+Herpesvirus 1, Suid;;B4.909.204.382.100.900.510
+Herpesvirus 2, Bovine;B4.280.382.100.750.400;B4.280.382.100.750.200
+Herpesvirus 2, Bovine;B4.909.204.382.100.750.400;B4.909.204.382.100.750.200
+Herpesvirus 2, Gallid;B4.280.382.503;B4.280.382.100.562.400
+Herpesvirus 2, Gallid;B4.909.204.382.503;B4.909.204.382.100.562.400
+Herpesvirus 2, Saimirine;B4.280.382.400.390;B4.280.382.400.700.400
+Herpesvirus 2, Saimirine;B4.909.204.210.400.390;B4.909.204.210.400.700.400
+Herpesvirus 2, Saimirine;B4.909.204.382.400.390;B4.909.204.382.400.700.400
+Herpesvirus 2, Saimirine;B4.909.574.204.500.390;B4.909.574.204.500.700.400
+Herpesvirus 3, Human;B4.280.382.100.900.445;B4.280.382.100.900.460
+Herpesvirus 3, Human;B4.909.204.382.100.900.445;B4.909.204.382.100.900.460
+Herpesvirus 4, Equid;B4.280.382.100.900.500;
+Herpesvirus 4, Equid;B4.909.204.382.100.900.500;
+Herpesvirus 7, Human;B4.280.382.515;B4.280.382.150.750.420
+Herpesvirus 7, Human;B4.909.204.382.515;B4.909.204.382.150.750.420
+Herpesvirus, Kaposi Sarcoma-Associated;B4.280.382.400.350;B4.280.382.400.700.330
+Herpesvirus, Kaposi Sarcoma-Associated;B4.909.204.210.400.350;B4.909.204.210.400.700.330
+Herpesvirus, Kaposi Sarcoma-Associated;B4.909.204.382.400.350;B4.909.204.382.400.700.330
+Herpesvirus, Kaposi Sarcoma-Associated;B4.909.574.204.500.350;B4.909.574.204.500.700.330
+Hidradenitis;C17.800.805.843.315;C17.800.946.315
+Hidradenitis Suppurativa;C17.800.805.843.315.320;C17.800.946.315.320
+Hip Dislocation;C21.866.558.418;C21.866.531.500
+Hip Fractures;;C21.866.405.358
+Hip Fractures;;C21.866.531.750
+Hippocratic Oath;K1.752.667.416.551;
+Hirsutism;C17.800.805.305.470;C17.800.329.750
+Histocytochemistry;;H1.158.201.344
+Histology;;H1.158.100.656
+Histology, Comparative;;H1.158.100.656.469
+HIV Seroprevalence;G3.850.520.835.500.950.375;G3.850.520.450.500.950.375
+Hog Cholera;C2.782.350.675.553;C2.782.350.675.200
+Holistic Health;;E2.190.321
+Holmium;D1.268.558.250;D1.268.477.492
+Holmium;D1.552.550.406;D1.268.558.362.492
+Holmium;;D1.552.550.399.492
+Holoprosencephaly;C16.131.280.400;C16.131.260.380
+Holoprosencephaly;;C16.320.180.380
+Homeopathy;E2.40.380;E2.190.388
+Homeopathy;;E2.190.901.249
+Homicide;;I1.880.735.344
+Homoarginine;;D12.125.68.50.400
+Homocystinuria;C10.228.140.163.474.420;C10.228.140.163.100.365
+Homocystinuria;C18.452.125.250.400;C16.320.565.66.470
+Homocystinuria;C18.452.648.156.400;C16.320.565.150.365
+Homocystinuria;;C18.452.100.100.365
+Homocystinuria;;C18.452.648.151.365
+HTLV-BLV Infections;C2.782.815.483;C2.782.815.200
+HTLV-BLV Viruses;B4.820.650.400;B4.820.650.200
+HTLV-BLV Viruses;B4.909.574.807.400;B4.909.574.807.200
+HTLV-BLV Viruses;B4.909.777.731.400;B4.909.777.731.200
+HTLV-I;B4.820.650.400.500;B4.820.650.200.725.400
+HTLV-I;B4.909.574.807.400.500;B4.909.574.807.200.725.400
+HTLV-I;B4.909.777.731.400.500;B4.909.777.731.200.725.400
+HTLV-I Infections;C2.782.815.483.470;C2.782.815.200.470
+HTLV-II;B4.820.650.400.510;B4.820.650.200.730.404
+HTLV-II;B4.909.574.807.400.510;B4.909.574.807.200.730.399
+HTLV-II;B4.909.777.731.400.510;B4.909.777.731.200.730.404
+HTLV-II Infections;C2.782.815.483.480;C2.782.815.200.480
+Huntington Disease;C16.466.400.430;C16.320.400.430
+Hydrogen Peroxide;;D1.248.497.158.685.750.424
+Hydrogen Peroxide;;D5.569.540.815.249.249
+Hydrops Fetalis;C15.378.71.141.150.875.100.350;C16.320.365.826.100.350
+Hydrops Fetalis;;C23.888.277.395
+Hydrotherapy;E2.780.450;E2.779.492
+Hydrotherapy;;E2.831.580.492
+Hydroxyl Radical;;D5.569.540.815.61
+Hydroxylysine;;D12.125.68.555.478
+5-Hydroxytryptophan;D12.125.72.859.479;D12.125.72.50.850.479
+Hyperargininemia;C10.228.140.163.474.100.375;C10.228.140.163.100.370
+Hyperargininemia;;C16.320.565.66.475
+Hyperargininemia;;C16.320.565.150.370
+Hyperargininemia;;C18.452.100.100.370
+Hyperargininemia;;C18.452.648.151.370
+Hyperbilirubinemia, Hereditary;;C16.320.565.437
+Hypercholesterolemia, Familial;C18.452.648.556.481.475;C16.320.565.556.475
+Hypercholesterolemia, Familial;C18.452.648.556.481.480.390;C16.320.565.556.480.390
+Hypercholesterolemia, Familial;;C18.452.494.481.475
+Hypercholesterolemia, Familial;;C18.452.494.481.480.390
+Hypercholesterolemia, Familial;;C18.452.648.556.475
+Hypercholesterolemia, Familial;;C18.452.648.556.480.390
+Hyperglycinemia, Nonketotic;C10.228.140.163.474.100.400;C10.228.140.163.100.375
+Hyperglycinemia, Nonketotic;;C16.320.565.66.477
+Hyperglycinemia, Nonketotic;;C16.320.565.150.375
+Hyperglycinemia, Nonketotic;;C18.452.100.100.375
+Hyperglycinemia, Nonketotic;;C18.452.648.151.375
+Hyperhidrosis;C17.800.805.843.350;C17.800.946.350
+Hyperhomocysteinemia;;C16.320.565.66.480
+Hypericum;B6.388.100.950.450;B6.388.100.928.249.500
+Hypericum;B6.560.450;
+Hyperkeratosis, Epidermolytic;C17.800.827.800.550.375;C16.320.850.400.375
+Hyperkeratosis, Epidermolytic;;C17.800.804.512.400.375
+Hyperkeratosis, Epidermolytic;;C17.800.827.400.375
+Hyperlipidemia, Familial Combined;C18.452.648.556.481.480;C16.320.565.556.480
+Hyperlipidemia, Familial Combined;;C18.452.494.481.480
+Hyperlipidemia, Familial Combined;;C18.452.648.556.480
+Hyperlipoproteinemia;C18.452.648.556.481;
+Hyperlipoproteinemia Type III;C18.452.648.556.481.485;C16.320.565.556.483
+Hyperlipoproteinemia Type III;;C18.452.494.481.485
+Hyperlipoproteinemia Type III;;C18.452.648.556.484
+Hyperlipoproteinemia Type IV;C18.452.648.556.481.480.395;C16.320.565.556.480.395
+Hyperlipoproteinemia Type IV;C18.452.648.556.481.490;C16.320.565.556.487
+Hyperlipoproteinemia Type IV;;C18.452.494.481.480.395
+Hyperlipoproteinemia Type IV;;C18.452.494.481.490
+Hyperlipoproteinemia Type IV;;C18.452.648.556.480.395
+Hyperlipoproteinemia Type IV;;C18.452.648.556.490
+Hyperlipoproteinemia Type V;C18.452.648.556.481.495;C16.320.565.556.493
+Hyperlipoproteinemia Type V;;C18.452.494.481.495
+Hyperlipoproteinemia Type V;;C18.452.648.556.495
+Hyperlysinemias;C10.228.140.163.474.100.437;C10.228.140.163.100.380
+Hyperlysinemias;;C16.320.565.66.544
+Hyperlysinemias;;C16.320.565.150.380
+Hyperlysinemias;;C18.452.100.100.380
+Hyperlysinemias;;C18.452.648.151.380
+Hyperoxaluria;C18.452.648.202.490;C18.452.497
+Hyperoxaluria, Primary;C18.452.648.202.490.490;C16.320.565.202.460
+Hyperoxaluria, Primary;;C18.452.497.490
+Hyperoxaluria, Primary;;C18.452.648.202.460
+Hyperthermia, Induced;E2.780.480;E2.779.496
+Hyperthermia, Induced;;E2.831.580.496
+Hypertrichosis;C17.800.805.305.531;C17.800.329.875
+Hypnosis;;E2.190.525.217
+Hypobetalipoproteinemia;C18.452.648.556.485.440;C16.320.565.556.500.440
+Hypobetalipoproteinemia;;C18.452.648.556.500.440
+Hypochlorous Acid;;D5.569.540.815.124
+Hypohidrosis;C17.800.805.843.370;C17.800.946.370
+Hypokalemic Periodic Paralysis;;C16.320.565.618.711.550
+Hypolipoproteinemia;C18.452.648.556.485;C16.320.565.556.500
+Hypolipoproteinemia;;C18.452.648.556.500
+Hypophosphatasia;;C16.320.565.618.482
+Hypophosphatemia, Familial;;C16.320.565.618.544
+Hypophosphatemia, Familial;;C16.320.565.851.647
+Hypoprothrombinemias;;C15.378.100.425.550
+Hypoprothrombinemias;;C16.320.99.550
+Hypotrichosis;C17.800.805.305.535;C17.800.329.937
+Ichthyosiform Erythroderma, Congenital;C17.800.827.800.550;C16.320.850.400
+Ichthyosiform Erythroderma, Congenital;;C17.800.804.512.400
+Ichthyosiform Erythroderma, Congenital;;C17.800.827.400
+Ichthyosis;;C17.800.804.512
+Ichthyosis Vulgaris;C17.800.827.800.560;C16.320.850.405
+Ichthyosis Vulgaris;;C17.800.804.512.410
+Ichthyosis Vulgaris;;C17.800.827.405
+Ichthyosis, Lamellar;C17.800.827.800.550.410;C16.320.850.400.410
+Ichthyosis, Lamellar;;C17.800.804.512.400.410
+Ichthyosis, Lamellar;;C17.800.827.400.410
+Ichthyosis, X-Linked;C17.800.827.800.570;C16.320.850.408
+Ichthyosis, X-Linked;;C17.800.804.512.420
+Ichthyosis, X-Linked;;C17.800.827.408
+Immunoassay;;E5.601.495
+Immunoblotting;;E5.601.495.320
+Immunochemistry;;H1.158.201.486
+Immunoenzyme Techniques;;E5.601.495.350
+Immunoglobulins, alpha-Chain;;D12.776.124.486.485.400.675
+Immunoglobulins, alpha-Chain;;D12.776.124.790.651.369.675
+Immunoglobulins, alpha-Chain;;D12.776.377.715.548.359.675
+Immunoglobulins, alpha-Chain;;D24.611.125.600.681.26.515
+Immunoglobulins, delta-Chain;;D12.776.124.486.485.456.500
+Immunoglobulins, delta-Chain;;D12.776.124.790.651.414.500
+Immunoglobulins, delta-Chain;;D12.776.377.715.548.421.500
+Immunoglobulins, delta-Chain;;D24.611.125.600.681.251.500
+Immunoglobulins, epsilon-Chain;;D12.776.124.486.485.511.500
+Immunoglobulins, epsilon-Chain;;D12.776.124.790.651.459.500
+Immunoglobulins, epsilon-Chain;;D12.776.377.715.548.484.500
+Immunoglobulins, epsilon-Chain;;D24.611.125.600.681.312.500
+Immunoglobulins, gamma-Chain;;D12.776.124.486.485.567.284
+Immunoglobulins, gamma-Chain;;D12.776.124.790.651.504.284
+Immunoglobulins, gamma-Chain;;D12.776.377.715.548.546.284
+Immunoglobulins, mu-Chain;;D12.776.124.486.485.622.500
+Immunoglobulins, mu-Chain;;D12.776.124.790.651.549.500
+Immunoglobulins, mu-Chain;;D12.776.377.715.548.609.500
+Immunoglobulins, mu-Chain;;D24.611.125.600.681.574.500
+Immunohistochemistry;;H1.158.201.344.512
+Immunohistochemistry;;H1.158.201.486.512
+Immunoradiometric Assay;;E5.601.495.639.405
+Immunosorbent Techniques;;E5.601.495.380
+Incontinentia Pigmenti;C17.800.827.800.580;C16.320.850.420
+Incontinentia Pigmenti;;C17.800.804.580
+Incontinentia Pigmenti;;C17.800.827.420
+Industrial Microbiology;;H1.158.273.540.460
+Infectious Bronchitis Virus, Avian;B4.820.155.150.500;B4.820.504.540.150.500
+Infectious Bronchitis Virus, Avian;B4.909.777.199.150.500;B4.909.777.500.540.150.500
+Infectious Peritonitis Virus, Feline;B4.820.155.150.520;B4.820.504.540.150.190
+Infectious Peritonitis Virus, Feline;B4.909.777.199.150.520;B4.909.777.500.540.150.190
+Influenza A Virus;B4.820.545.400.400;B4.820.545.405.400
+Influenza A Virus;B4.909.777.545.400.400;B4.909.777.545.405.400
+Influenza A Virus, Avian;B4.820.545.400.400.410;B4.820.545.405.400.410
+Influenza A Virus, Avian;B4.909.777.545.400.400.410;B4.909.777.545.405.400.410
+Influenza A Virus, Human;B4.820.545.400.400.420;B4.820.545.405.400.420
+Influenza A Virus, Human;B4.909.777.545.400.400.420;B4.909.777.545.405.400.420
+Influenza A Virus, Porcine;B4.820.545.400.400.430;B4.820.545.405.400.430
+Influenza A Virus, Porcine;B4.909.777.545.400.400.430;B4.909.777.545.405.400.430
+Influenza B Virus;B4.820.545.400.410;B4.820.545.407.410
+Influenza B Virus;B4.909.777.545.400.410;B4.909.777.545.407.410
+Informed Consent;;I1.880.604.473.650.718
+Informed Consent;;N3.706.437.650.312
+Inhibin;D6.472.866.640;D6.472.866.655
+Inhibin;D12.776.395.450;D12.776.395.439
+Insemination, Artificial;E5.820.520;E2.875.800.937
+Insemination, Artificial;;E5.820.800.937
+Insemination, Artificial, Heterologous;E5.820.520.515;E2.875.800.937.515
+Insemination, Artificial, Heterologous;;E5.820.800.937.515
+Insemination, Artificial, Homologous;E5.820.520.525;E2.875.800.937.525
+Insemination, Artificial, Homologous;;E5.820.800.937.525
+Insulin Resistance;;C18.452.555
+Intervention Studies;G3.850.520.835.565;G3.850.520.450.565
+Intervention Studies;G5.148.266.445;G5.148.175.420
+Iodized Oil;;D24.310.784.750.550
+Iodized Oil;;D26.674.750.550
+Iodotyrosine;D12.125.72.917.496;D12.125.72.50.875.496
+Ion Channels;D12.776.395.550.440;D12.776.157.530.400
+Ion Channels;;D12.776.543.585.400
+Ion Pumps;D12.776.543.400;D12.776.157.530.450
+Ion Pumps;;D12.776.543.585.450
+Ipecac;D3.132.442;D24.310.784.500.450
+Ipecac;D24.310.674.450;D26.674.500.450
+Iridium;;D1.268.956.280
+Iron;;D1.268.956.287
+Isochromosomes;C23.550.210.460;C23.550.210.430
+Isochromosomes;G5.148.266.460;G5.148.175.430
+Isoenzymes;D12.776.490.300;D12.776.800.300
+Ixodes;B1.131.166.132.832.425;B1.131.166.132.832.400.425
+Jaagsiekte Sheep Retrovirus;B4.820.650.815.450;B4.820.650.124.600
+Jaagsiekte Sheep Retrovirus;;B4.909.574.807.124.600
+Jaagsiekte Sheep Retrovirus;;B4.909.777.731.124.600
+Jaundice, Chronic Idiopathic;;C16.320.565.499
+Juniper;B6.388.400.400;B6.388.400.149.500
+Kallmann Syndrome;C16.131.280.748.400;C16.131.260.800.480
+Kallmann Syndrome;;C16.320.180.800.480
+Kanamycin Resistance;G4.185.515.286.493;G4.185.515.286.347.875
+Kanamycin Resistance;G12.392.269.493;G12.392.269.347.875
+Kartagener's Syndrome;C16.131.810.501;C8.127.384.500
+Kartagener's Syndrome;;C14.240.400.280.500
+Kartagener's Syndrome;;C14.280.400.280.500
+Kartagener's Syndrome;;C16.131.240.400.280.500
+Kartagener's Syndrome;;C16.131.810.250.500
+Kartagener's Syndrome;;C16.320.480
+Kava;B6.388.100.650;B6.388.100.812.249
+Kava;B6.560.530;
+Kearns Syndrome;C18.452.648.556.650.700.500;C18.452.660.560.700.500
+Keratoderma, Palmoplantar;;C16.320.850.475
+Keratoderma, Palmoplantar;;C17.800.827.475
+Keratoderma, Palmoplantar, Diffuse;;C16.320.850.475.440
+Keratoderma, Palmoplantar, Diffuse;;C17.800.827.475.440
+Keratomileusis, Laser In Situ;;E4.416.405
+Keratosis Follicularis;C17.800.827.600;C16.320.850.490
+Keratosis Follicularis;;C17.800.827.490
+Kernicterus;C10.228.140.163.165.330;C10.228.140.163.480
+Kernicterus;C18.452.125.200.550;C18.452.100.480
+Killifish;B2.493.280.428;B2.493.850.280.500
+Kinesiology, Applied;E2.40.440;E2.190.599.186
+Kinesiology, Applied;;E2.695.344
+Kirsten Sarcoma Virus;B4.820.650.750.900.750.500;B4.820.650.375.900.750.500
+Kirsten Sarcoma Virus;B4.909.574.807.750.900.750.500;B4.909.574.807.375.900.750.500
+Kirsten Sarcoma Virus;B4.909.777.731.750.900.750.500;B4.909.777.731.375.900.750.500
+Klinefelter's Syndrome;C16.131.280.748.421;C16.131.260.800.490
+Klinefelter's Syndrome;;C16.320.180.800.490
+La Crosse Virus;B4.820.87.150.160.500;B4.820.87.150.300.500
+La Crosse Virus;B4.909.777.147.150.160.500;B4.909.777.147.150.300.500
+Laboratory Animal Science;;H1.158.273.368
+Lactate Dehydrogenase Virus;B4.820.60.500;B4.820.504.80.100.500
+Lactate Dehydrogenase Virus;B4.909.777.90.500;B4.909.777.500.80.500.500
+Lactate Dehydrogenase Virus;B4.970.60.500;
+Lactose Intolerance;;C16.320.565.202.589
+Lafora Disease;C16.466.400.480;C16.320.400.480
+Lamiaceae;B6.388.100.675;B6.388.100.575
+Lampreys;B2.493.181.590;B2.493.559
+Lanthanum;D1.268.558.475;D1.268.477.500
+Lanthanum;D1.552.550.474;D1.268.558.362.500
+Lanthanum;;D1.552.550.399.500
+Lassa Virus;B4.820.57.70.500.500;B4.820.57.70.100.500
+Lassa Virus;B4.909.777.80.70.500.500;B4.909.777.80.70.100.500
+Lauraceae;B6.388.100.687;B6.388.100.590
+Lawrencium;;D1.268.33.500
+Lawrencium;;D1.268.956.295
+LCM-Lassa Complex Viruses;B4.820.57.70.500;B4.820.57.70.100
+LCM-Lassa Complex Viruses;B4.909.777.80.70.500;B4.909.777.80.70.100
+Lecithin Acyltransferase Deficiency;C18.452.648.556.485.448;C16.320.565.556.500.448
+Lecithin Acyltransferase Deficiency;;C18.452.648.556.500.448
+Legumes;B6.388.100.837.400;B6.388.100.401
+Legumes;B6.510.570;
+Legumes;B6.560.546;
+Leigh Disease;C10.228.140.163.165.497;C10.228.140.163.100.412
+Leigh Disease;C10.228.140.163.474.425;C16.320.565.150.412
+Leigh Disease;C18.452.125.200.587;C16.320.565.202.810.444
+Leigh Disease;C18.452.125.250.412;C18.452.100.100.412
+Leigh Disease;C18.452.648.156.412;C18.452.648.151.412
+Leigh Disease;;C18.452.660.520
+Lesch-Nyhan Syndrome;C10.228.140.163.474.430;C10.228.140.163.100.425
+Lesch-Nyhan Syndrome;C16.466.400.500;C16.320.400.500
+Lesch-Nyhan Syndrome;C18.452.125.250.425;C16.320.565.150.425
+Lesch-Nyhan Syndrome;C18.452.648.156.425;C16.320.565.798.594
+Lesch-Nyhan Syndrome;;C18.452.100.100.425
+Lesch-Nyhan Syndrome;;C18.452.648.151.425
+Leukemia Virus, Bovine;B4.820.650.400.600;B4.820.650.200.600
+Leukemia Virus, Bovine;B4.909.574.807.400.600;B4.909.574.807.200.600
+Leukemia Virus, Bovine;B4.909.777.731.400.600;B4.909.777.731.200.600
+Leukemia Virus, Feline;B4.820.650.750.500;B4.820.650.375.500
+Leukemia Virus, Feline;B4.909.574.807.750.500;B4.909.574.807.375.500
+Leukemia Virus, Feline;B4.909.777.731.750.500;B4.909.777.731.375.500
+Leukemia Virus, Gibbon Ape;B4.820.650.750.510;B4.820.650.375.510
+Leukemia Virus, Gibbon Ape;B4.909.574.807.750.510;B4.909.574.807.375.510
+Leukemia Virus, Gibbon Ape;B4.909.777.731.750.510;B4.909.777.731.375.510
+Leukemia Viruses, Murine;B4.820.650.750.900.500;B4.820.650.375.900.500
+Leukemia Viruses, Murine;B4.909.574.807.750.900.500;B4.909.574.807.375.900.500
+Leukemia Viruses, Murine;B4.909.777.731.750.900.500;B4.909.777.731.375.900.500
+Leukemia, T-Cell, HTLV-II-Associated;C2.782.815.483.480.350;C2.782.815.200.480.350
+Leukemia, T-Cell, HTLV-II-Associated;;Leukemia-Lymphoma, T-Cell, Acute, HTLV-I-Associated
+Leukemia, T-Cell, HTLV-II-Associated;C2.782.815.483.470.300;C2.782.815.200.470.300
+Leukodystrophy, Globoid Cell;C10.228.140.163.474.475.600.450;C10.228.140.163.100.435.825.590
+Leukodystrophy, Globoid Cell;;C16.320.565.150.435.825.590
+Leukodystrophy, Globoid Cell;;C16.320.565.556.641.803.585
+Leukodystrophy, Globoid Cell;;C16.320.565.580.554.825.590
+Leukodystrophy, Globoid Cell;;C16.320.565.580.803.585
+Leukodystrophy, Globoid Cell;;C18.452.100.100.435.825.590
+Leukodystrophy, Globoid Cell;;C18.452.648.151.435.825.590
+Leukodystrophy, Globoid Cell;;C18.452.648.151.825.590
+Leukodystrophy, Globoid Cell;;C18.452.648.595.554.825.590
+Leukodystrophy, Metachromatic;C10.228.140.163.474.475.600.475;C10.228.140.163.100.435.825.594
+Leukodystrophy, Metachromatic;;C16.320.565.150.435.825.594
+Leukodystrophy, Metachromatic;;C16.320.565.556.641.803.594
+Leukodystrophy, Metachromatic;;C16.320.565.580.554.825.594
+Leukodystrophy, Metachromatic;;C16.320.565.580.803.594
+Leukodystrophy, Metachromatic;;C18.452.100.100.435.825.594
+Leukodystrophy, Metachromatic;;C18.452.648.151.435.825.594
+Leukodystrophy, Metachromatic;;C18.452.648.151.825.594
+Leukodystrophy, Metachromatic;;C18.452.648.595.554.825.594
+Leukodystrophy, Metachromatic;;Leukoencephalopathy, Progressive Multifocal
+Leukodystrophy, Metachromatic;C2.256.690.405;C2.256.721.500
+Leukosis Virus, Avian;B4.820.650.735.500;B4.820.650.70.500
+Leukosis Virus, Avian;B4.909.574.807.735.500;B4.909.574.807.70.500
+Leukosis Virus, Avian;B4.909.777.731.735.500;B4.909.777.731.70.500
+Levodopa;D2.92.311.242.480;D2.92.311.200.480
+Levodopa;D12.125.72.573.400.500;D12.125.72.50.685.400.500
+Li-Fraumeni Syndrome;C16.466.700.600;C16.320.700.600
+Liliaceae;;B6.388.100.610
+Linaceae;;B6.388.100.620
+Linseed Oil;;D24.310.784.750.615
+Linseed Oil;;D26.674.750.615
+Lipid Metabolism, Inborn Errors;;C16.320.565.556
+Lipoamide Dehydrogenase;;D8.586.600.741.525
+Lipoidosis;;C16.320.565.556.641
+Lipoidproteinosis;;C16.320.565.556.641.391
+Lipoidproteinosis;;Lipoprotein Lipase Deficiency, Familial
+Lipoidproteinosis;C18.452.648.556.481.552;C16.320.565.556.645
+Lipoidproteinosis;;C18.452.494.481.552
+Lipoidproteinosis;;C18.452.648.556.645
+Lisuride;D3.132.327.287.560;D3.132.327.287.417
+Lolium;B6.388.100.450.500;B6.388.100.822.500
+Longitudinal Studies;G3.850.520.835.500.750.500;G3.850.520.450.500.750.500
+Loss of Heterozygosity;C23.550.210.300.520;C23.550.210.175.520
+Loss of Heterozygosity;G5.148.266.300.520;G5.148.175.175.520
+Lung, Hyperlucent;C8.381.495.632.500;C8.381.495.389.750.500
+Lutetium;D1.268.558.500;D1.268.477.562
+Lutetium;D1.552.550.518;D1.268.558.362.562
+Lutetium;;D1.268.956.311
+Lutetium;;D1.552.550.399.562
+Lutetium;D12.776.818.250;D12.776.624.664.700.250
+Lymphocytic Choriomeningitis Virus;B4.820.57.70.500.550;B4.820.57.70.100.550
+Lymphocytic Choriomeningitis Virus;B4.909.777.80.70.500.550;B4.909.777.80.70.100.550
+Lysine;;D12.125.68.555
+Lysinoalanine;;D12.125.68.555.575
+Lysosomal Storage Diseases;;C16.320.565.580
+Lysosomal Storage Diseases;;Lysosomal Storage Diseases, Nervous System
+Lysosomal Storage Diseases;C10.228.140.163.474.475;C10.228.140.163.100.435
+Lysosomal Storage Diseases;C18.452.648.595.519;C16.320.565.150.435
+Lysosomal Storage Diseases;;C16.320.565.580.554
+Lysosomal Storage Diseases;;C18.452.100.100.435
+Lysosomal Storage Diseases;;C18.452.648.151.435
+Lysosomal Storage Diseases;;C18.452.648.595.554
+Machado-Joseph Disease;C16.466.400.780.875.500;C16.320.400.780.875.500
+Magic;;E2.190.901.411
+Magnesium;;D1.268.552.437
+Malvaceae;B6.388.100.800;
+Mammary Tumor Viruses, Mouse;B4.820.650.710.500;B4.820.650.124.500
+Mammary Tumor Viruses, Mouse;B4.909.574.807.710.500;B4.909.574.807.124.500
+Mammary Tumor Viruses, Mouse;B4.909.777.731.710.500;B4.909.777.731.124.500
+Manganese;;D1.268.956.374
+Manipulation, Orthopedic;E2.780.530;E2.695.433
+Manipulation, Orthopedic;E2.831.578.695;E2.831.580.498
+Manipulation, Spinal;E2.780.530.500;E2.190.599.374
+Manipulation, Spinal;E2.831.578.695.500;E2.695.466
+Manipulation, Spinal;E4.555.500.500;
+Mannosidosis;;C16.320.565.202.625
+Mannosidosis;;C16.320.565.580.625
+Maple Syrup Urine Disease;C10.228.140.163.474.100.500;C10.228.140.163.100.520
+Maple Syrup Urine Disease;;C16.320.565.66.608
+Maple Syrup Urine Disease;;C16.320.565.150.520
+Maple Syrup Urine Disease;;C18.452.100.100.520
+Maple Syrup Urine Disease;;C18.452.648.151.445
+Marburg Virus Disease;C2.782.580.250.250.500;C2.782.580.250.500
+Marfan Syndrome;;C14.240.400.725
+Marfan Syndrome;;C14.280.400.725
+Marfan Syndrome;;C16.131.240.400.720
+Marfan Syndrome;;C16.320.540
+Marine Biology;;H1.158.273.476
+Mason-Pfizer Monkey Virus;B4.820.650.805.590.505;B4.820.650.124.520
+Mason-Pfizer Monkey Virus;B4.820.650.815.750.505;B4.820.650.805.550
+Mason-Pfizer Monkey Virus;B4.909.574.807.805.590.505;B4.909.574.807.124.520
+Mason-Pfizer Monkey Virus;B4.909.574.807.815.750.505;B4.909.574.807.805.550
+Mason-Pfizer Monkey Virus;B4.909.777.731.805.590.505;B4.909.777.731.124.520
+Mason-Pfizer Monkey Virus;B4.909.777.731.815.750.505;B4.909.777.731.805.550
+Massage;E2.40.500;E2.190.599.500
+Massage;E2.780.580;E2.695.522
+Massage;;E2.831.580.499
+Matched-Pair Analysis;G3.850.520.840.485;G3.850.520.445.485
+Maturation-Promoting Factor;D12.776.260.150.200.580;D12.776.167.200.580
+Medical Futility;E1.789.800.500;K1.316.34.750
+Medical Futility;F2.463.785.373.433;
+Medical Futility;K1.316.333.366.775;
+Medical Futility;K1.752.667.416.775;
+Medical Futility;N4.761.559.590.800.500;
+Medical Futility;N5.350.340.500.712;
+Medical Futility;N5.715.360.575.575.800.500;
+Medicine, African Traditional;E2.40.515.505;E2.190.488.505
+Medicine, African Traditional;;E2.190.901.433
+Medicine, Arabic;E2.40.515.510;E2.190.488.510
+Medicine, Ayurvedic;E2.40.515.515;E2.190.488.515
+Medicine, Chinese Traditional;E2.40.515.660.520;E2.190.488.660.520
+Medicine, Herbal;E2.40.515.540;E2.190.755
+Medicine, Herbal;I1.76.201.450.654.540;
+Medicine, Kampo;E2.40.515.540.400;E2.190.488.587
+Medicine, Kampo;E2.40.515.660.600;E2.190.488.660.600
+Medicine, Kampo;I1.76.201.450.654.540.400;I1.76.201.450.654.600
+Medicine, Oriental Traditional;E2.40.515.660;E2.190.488.660
+Medicine, Traditional;E2.40.515;E2.190.488
+Medicine, Unani;E2.40.515.510.500;E2.190.488.510.500
+Medicine, Unani;E2.40.515.540.500;I1.76.201.450.654.745
+Medicine, Unani;I1.76.201.450.654.540.500;
+Meditation;E2.40.750.500;E2.190.525.374
+Meditation;;E2.190.901.455
+MELAS Syndrome;C10.228.140.163.474.512.500.500;C10.228.140.163.100.535
+MELAS Syndrome;C18.452.648.556.650.620.520;C16.320.565.150.535
+MELAS Syndrome;;C18.452.100.100.535
+MELAS Syndrome;;C18.452.648.151.447
+MELAS Syndrome;;C18.452.660.560.620.520
+Melphalan;D12.125.72.573.500;D12.125.72.50.685.500
+Mendelevium;;D1.268.33.525
+Menkes Kinky Hair Syndrome;C10.228.140.163.474.450;C10.228.140.163.100.540
+Menkes Kinky Hair Syndrome;C16.466.400.520;C16.320.400.520
+Menkes Kinky Hair Syndrome;C17.800.805.305.550;C16.320.565.150.540
+Menkes Kinky Hair Syndrome;C18.452.125.250.450;C16.320.565.618.590
+Menkes Kinky Hair Syndrome;C18.452.648.156.450;C17.800.329.968
+Menkes Kinky Hair Syndrome;;C18.452.100.100.540
+Menkes Kinky Hair Syndrome;;C18.452.648.151.450
+Mental Healing;E2.40.530;E2.190.525.500
+Mental Healing;;E2.190.901.500
+Mercury;;D1.268.956.437
+Meridians;E2.30.510;E2.190.44.555
+Meridians;E2.40.25.510;
+MERRF Syndrome;C10.228.140.163.474.512.500.550;C10.228.140.163.100.545
+MERRF Syndrome;C18.452.648.556.650.620.530;C16.320.565.150.545
+MERRF Syndrome;;C18.452.100.100.545
+MERRF Syndrome;;C18.452.648.151.505
+MERRF Syndrome;;C18.452.660.560.620.530
+Meta-Analysis;G3.850.520.840.500;G3.850.520.445.500
+Metabolism, Inborn Errors;;C16.320.565
+Metal Metabolism, Inborn Errors;;C16.320.565.618
+Metals, Actinoid;;D1.268.33
+Metestrus;G8.520.780.218.320;G8.520.188.750
+Methicillin Resistance;G4.185.515.286.100.600.525;G4.185.515.286.347.500.600.525
+Methicillin Resistance;G12.392.269.100.600.525;G12.392.269.347.500.600.525
+Methyldopa;D2.92.311.242.538;D2.92.311.200.538
+Methyldopa;D12.125.72.573.400.600;D12.125.72.50.685.400.600
+Methyltyrosines;D12.125.72.917.664;D12.125.72.50.875.664
+Mice, Congenic;B1.30.199.40.500;
+Mice, Inbred A;B1.30.157.250.300;
+Mice, Inbred AKR;B1.30.157.250.318;
+Mice, Inbred BALB C;B1.30.157.250.338;
+Mice, Inbred C3H;B1.30.157.250.388;
+Mice, Inbred C57BL;B1.30.157.250.420;
+Mice, Inbred CBA;B1.30.157.250.440;
+Mice, Inbred CFTR;B1.30.157.250.445;
+Mice, Inbred DBA;B1.30.157.250.460;
+Mice, Inbred HRS;B1.30.157.250.480;
+Mice, Inbred ICR;B1.30.157.250.510;
+Mice, Inbred mdx;B1.30.157.250.420.500;
+Mice, Inbred MRL lpr;B1.30.157.250.555;
+Mice, Inbred NOD;B1.30.157.250.565;
+Mice, Inbred NZB;B1.30.157.250.580;
+Mice, Inbred SENCAR;B1.30.157.250.600;
+Mice, Inbred Strains;B1.30.157.250;
+Mice, Transgenic;B1.30.199.85.600;B2.158.136.600
+Mice, Transgenic;B1.30.296.600;B2.158.199.136.600
+Mice, Transgenic;B1.30.724.500.600;B2.158.680.136.600
+Mice, Transgenic;B2.158.199.85.600;
+Mice, Transgenic;B2.158.296.600;
+Mice, Transgenic;B2.158.724.500.600;
+Microbiology;;H1.158.273.540
+Miliaria;C17.800.805.843.492;C17.800.946.492
+Milk Thistle;B6.560.595;
+Millet;B6.388.100.450.225.500;B6.388.100.822.225.500
+Mink Cell Focus-Inducing Viruses;B4.820.650.750.900.500.580;B4.820.650.375.900.500.580
+Mink Cell Focus-Inducing Viruses;B4.909.574.807.750.900.500.580;B4.909.574.807.375.900.500.580
+Mink Cell Focus-Inducing Viruses;B4.909.777.731.750.900.500.580;B4.909.777.731.375.900.500.580
+Mitochondrial Encephalomyopathies;C10.228.140.163.474.512.500;C10.228.140.163.540
+Mitochondrial Encephalomyopathies;C18.452.648.556.650.620;C18.452.100.540
+Mitochondrial Encephalomyopathies;;C18.452.660.560.620
+Mitochondrial Myopathies;C10.228.140.163.474.512;C18.452.660.560
+Mitochondrial Myopathies;C18.452.125.250.500;
+Mitochondrial Myopathies;C18.452.648.156.500;
+Mitochondrial Myopathies;C18.452.648.556.650;
+Molecular Biology;;H1.158.273.595
+Moloney Leukemia Virus;B4.820.650.750.900.500.596;B4.820.650.375.900.500.596
+Moloney Leukemia Virus;B4.909.574.807.750.900.500.596;B4.909.574.807.375.900.500.596
+Moloney Leukemia Virus;B4.909.777.731.750.900.500.596;B4.909.777.731.375.900.500.596
+Moloney Sarcoma Virus;B4.820.650.750.900.750.600;B4.820.650.375.900.750.600
+Moloney Sarcoma Virus;B4.909.574.807.750.900.750.600;B4.909.574.807.375.900.750.600
+Moloney Sarcoma Virus;B4.909.777.731.750.900.750.600;B4.909.777.731.375.900.750.600
+Molybdenum;;D1.268.956.500
+Monosaccharide Transport Proteins;D12.776.157.590;D12.776.157.530.500
+Monosaccharide Transport Proteins;;D12.776.543.585.500
+Monosomy;C23.550.210.131.500;C23.550.210.50.500
+Monosomy;G5.148.266.131.500;G5.148.175.50.500
+Motion Therapy, Continuous Passive;E2.780.351.500;E2.695.199.500
+Motion Therapy, Continuous Passive;E2.831.578.391.660;E2.695.625
+Motion Therapy, Continuous Passive;;E2.831.580.484.500
+Moxibustion;E2.40.555;E2.190.44.588
+Mucinosis, Follicular;C17.800.805.305.535.122.550;C17.800.329.937.122.550
+Mucinosis, Follicular;C17.800.805.711.550;C17.800.794.550
+Mucolipidoses;C10.228.140.163.474.475.450;C10.228.140.163.100.435.590
+Mucolipidoses;C18.452.648.595.519.450;C16.320.565.150.435.590
+Mucolipidoses;;C16.320.565.202.670
+Mucolipidoses;;C16.320.565.580.554.590
+Mucolipidoses;;C18.452.100.100.435.590
+Mucolipidoses;;C18.452.648.151.435.590
+Mucolipidoses;;C18.452.648.151.580
+Mucolipidoses;;C18.452.648.595.554.590
+Mucopolysaccharidoses;C18.452.648.595.715;C16.320.565.202.715
+Mucopolysaccharidoses;;C16.320.565.580.600
+Mucopolysaccharidoses;;C18.452.648.595.600
+Mucopolysaccharidosis I;C17.300.200.470;C16.320.565.202.715.640
+Mucopolysaccharidosis I;C18.452.648.595.715.640;C16.320.565.580.600.640
+Mucopolysaccharidosis I;;C18.452.648.595.600.640
+Mucopolysaccharidosis II;C18.452.648.595.715.645;C16.320.565.202.715.645
+Mucopolysaccharidosis II;;C16.320.565.580.600.645
+Mucopolysaccharidosis II;;C18.452.648.595.600.645
+Mucopolysaccharidosis III;C18.452.648.595.715.650;C16.320.565.202.715.650
+Mucopolysaccharidosis III;;C16.320.565.580.600.650
+Mucopolysaccharidosis III;;C18.452.648.595.600.650
+Mucopolysaccharidosis IV;C18.452.648.595.715.655;C16.320.565.202.715.655
+Mucopolysaccharidosis IV;;C16.320.565.580.600.655
+Mucopolysaccharidosis IV;;C18.452.648.595.600.655
+Mucopolysaccharidosis VI;C18.452.648.595.715.670;C16.320.565.202.715.670
+Mucopolysaccharidosis VI;;C16.320.565.580.600.670
+Mucopolysaccharidosis VI;;C18.452.648.595.600.670
+Mucopolysaccharidosis VII;C18.452.648.595.715.675;C16.320.565.202.715.675
+Mucopolysaccharidosis VII;;C16.320.565.580.600.675
+Mucopolysaccharidosis VII;;C18.452.648.595.600.675
+Mud Therapy;E2.780.108.610;E2.779.249.610
+Mud Therapy;;E2.831.580.249.610
+Multicenter Studies;G3.850.520.835.535.500;G3.850.520.450.535.500
+Multiple Carboxylase Deficiency;;C16.320.565.66.620
+Multiple Carboxylase Deficiency;;C16.320.565.202.720
+Multiple Endocrine Neoplasia;C16.466.700.630;C16.320.700.630
+Multiple Endocrine Neoplasia Type 1;C16.466.700.630.500;C16.320.700.630.500
+Multiple Endocrine Neoplasia Type 2a;C16.466.700.630.505;C16.320.700.630.505
+Multiple Endocrine Neoplasia Type 2b;C16.466.700.630.510;C16.320.700.630.510
+Muscular Dystrophies;C16.466.400.530;C16.320.400.530
+Muscular Dystrophy, Duchenne;C16.466.400.530.125;C16.320.400.530.125
+Muscular Dystrophy, Emery-Dreifuss;C16.466.400.530.250;C16.320.400.530.250
+Muscular Dystrophy, Emery-Dreifuss;;Muscular Dystrophy, Facioscapulohumeral
+Muscular Dystrophy, Emery-Dreifuss;C16.466.400.530.500;C16.320.400.530.500
+Music Therapy;E2.40.580;E2.190.888.500
+Mustard;B6.560.610;
+Myasthenic Syndromes, Congenital;;C16.320.590
+Mycology;;H1.158.273.540.553
+Myelinolysis, Central Pontine;C10.228.140.163.165.539;C10.228.140.163.560
+Myelinolysis, Central Pontine;C18.452.125.200.625;C18.452.100.560
+Myeloblastosis Virus, Avian;B4.820.650.735.550;B4.820.650.70.550
+Myeloblastosis Virus, Avian;B4.909.574.807.735.550;B4.909.574.807.70.550
+Myeloblastosis Virus, Avian;B4.909.777.731.735.550;B4.909.777.731.70.550
+Myoclonic Cerebellar Dyssynergia;C16.466.400.780.500;C16.320.400.780.500
+Myofunctional Therapy;E2.780.590;E2.190.599.750
+Myofunctional Therapy;E2.831.578.710;E2.695.644
+Myosin;;D8.586.277.40.25.525
+Myosin Heavy Chains;D12.776.210.500.600.460;D12.776.210.500.600.100
+Myosin Heavy Chains;D12.776.220.525.475.460;D12.776.220.525.475.100
+Myosin Light Chains;D12.776.210.500.600.480;D12.776.210.500.600.200
+Myosin Light Chains;D12.776.220.525.475.480;D12.776.220.525.475.200
+Myosin Subfragments;D12.776.210.500.600.500;D12.776.210.500.600.300
+Myosin Subfragments;D12.776.220.525.475.500;D12.776.220.525.475.300
+Myotonia Congenita;C16.466.400.540;C16.320.400.540
+Myotonic Dystrophy;C16.466.400.542;C16.320.400.542
+Myoviridae;;B4.100.500
+N-Methylaspartate;;D12.125.67.500.400
+N-Methylaspartate;;D12.776.543.585.450.250.750
+Nail Diseases;C17.800.805.506;C17.800.529
+Nail-Patella Syndrome;C17.800.805.506.400;C17.800.529.400
+Nails, Ingrown;C17.800.805.506.406;C17.800.529.406
+Nails, Malformed;C17.800.805.506.506;C17.800.529.506
+Nalidixic Acid;;D3.438.810.835.393
+Natural Childbirth;;E2.190.633
+Natural History;;H1.158.273.602
+Naturopathy;E2.40.600;E2.190.655
+Neodymium;D1.268.558.525;D1.268.477.625
+Neodymium;D1.552.550.587;D1.268.558.362.625
+Neodymium;;D1.552.550.399.625
+Neoplastic Syndromes, Hereditary;C16.466.700;C16.320.700
+Nephroblastoma;C4.588.945.947.535.580;C4.588.945.947.535.585
+Nephroblastoma;C12.740.800.820.750.580;C4.700.635
+Nephroblastoma;C12.777.419.473.580;C12.740.800.820.750.585
+Nephroblastoma;C13.371.820.800.820.535.580;C12.777.419.473.585
+Nephroblastoma;;C13.371.820.800.820.535.585
+Nephroblastoma;;C16.320.700.642
+Neptunium;;D1.268.33.550
+Neuroanatomy;;H1.158.100.700
+Neuroanatomy;;H1.158.610.60
+Neurobiology;;H1.158.273.610
+Neurobiology;;H1.158.610.80
+Neurochemistry;;H1.158.201.687
+Neurochemistry;;H1.158.610.110
+Neurocutaneous Syndromes;C17.800.827.800.350.712;C16.320.850.250.712
+Neurocutaneous Syndromes;;C17.800.804.350.712
+Neurocutaneous Syndromes;;C17.800.827.250.712
+Neuroendocrinology;;H1.158.610.160
+Neuroendocrinology;;H1.158.782.323.200
+Neurofibromatoses;C16.466.400.560;C16.320.400.560
+Neurofibromatoses;C16.466.700.645;C16.320.700.645
+Neurofibromatosis 1;C16.466.400.560.400;C16.320.400.560.400
+Neurofibromatosis 1;C16.466.700.645.650;C16.320.700.645.650
+Neurofibromatosis 2;C16.466.400.560.700;C16.320.400.560.700
+Neurofibromatosis 2;C16.466.700.645.655;C16.320.700.645.655
+Neuronal Ceroid-Lipofuscinosis;C16.466.400.600;C16.320.400.600
+Neuronal Ceroid-Lipofuscinosis;;C16.320.565.556.641.509
+Neuropharmacology;;H1.158.610.208
+Neuropharmacology;;H1.158.703.30
+Neurophysiology;;H1.158.610.268
+Neurophysiology;;H1.158.782.562
+Neuropsychology;;H1.158.782.795.110
+Neurosciences;;H1.158.610
+NG-Nitroarginine Methyl Ester;;D12.125.68.50.525
+Nickel;;D1.268.956.625
+Niemann-Pick Diseases;C10.228.140.163.474.475.600.600;C10.228.140.163.100.435.825.700
+Niemann-Pick Diseases;;C16.320.565.150.435.825.700
+Niemann-Pick Diseases;;C16.320.565.556.641.803.730
+Niemann-Pick Diseases;;C16.320.565.580.554.825.700
+Niemann-Pick Diseases;;C16.320.565.580.803.730
+Niemann-Pick Diseases;;C18.452.100.100.435.825.700
+Niemann-Pick Diseases;;C18.452.648.151.435.825.700
+Niemann-Pick Diseases;;C18.452.648.151.825.700
+Niemann-Pick Diseases;;C18.452.648.595.554.825.700
+Nifuratel;;D3.383.548.600.600
+Niobium;;D1.268.956.687
+Nitric Oxide;;D1.339.387
+Nitric Oxide;;D1.625.700.500
+Nitroarginine;;D12.125.68.50.587
+Nitroglycerin;;D2.640.636
+Nobelium;;D1.268.33.575
+Nondisjunction, Genetic;G5.148.266.645;G5.148.175.645
+Norfloxacin;D3.438.810.835.475;D3.438.810.835.322.374
+Norwalk Virus;B4.820.95.250.550;B4.820.95.550.500
+Norwalk Virus;B4.909.777.162.250.550;B4.909.777.162.550.500
+Oats;B6.388.100.450.225.650;B6.388.100.822.225.650
+Occultism;;E2.190.901.650
+Ochronosis;C18.452.648.66.187.572;C18.452.730
+Oculocerebrorenal Syndrome;C10.228.140.163.474.220.662;C10.228.140.163.100.640
+Oculocerebrorenal Syndrome;C16.131.280.748.580;C16.131.260.800.640
+Oculocerebrorenal Syndrome;;C16.320.180.800.640
+Oculocerebrorenal Syndrome;;C16.320.565.88.600
+Oculocerebrorenal Syndrome;;C16.320.565.150.640
+Oculocerebrorenal Syndrome;;C16.320.565.851.750
+Oculocerebrorenal Syndrome;;C18.452.100.100.640
+Oculocerebrorenal Syndrome;;C18.452.648.151.640
+Ofloxacin;D3.383.606.725;D3.438.810.835.322.500
+Ofloxacin;D3.494.600;
+Olivopontocerebellar Atrophies;C16.466.400.780.750;C16.320.400.780.750
+omega-N-Methylarginine;;D12.125.68.50.650
+omega-N-Methylarginine;D12.776.677.520.750.320.700;D12.776.624.664.520.750.320.700
+Oncogene Proteins;D12.776.677;D12.776.624.664
+Oncogene Proteins v-abl;D12.776.677.520.750.875;D12.776.624.664.520.750.875
+Oncogene Proteins v-erbA;D12.776.677.520.750.882;D12.776.624.664.520.750.882
+Oncogene Proteins v-erbB;D12.776.677.520.750.883;D12.776.624.664.520.750.883
+Oncogene Proteins v-fos;D12.776.677.520.750.887;D12.776.624.664.520.750.887
+Oncogene Proteins v-mos;D12.776.677.520.750.900;D12.776.624.664.520.750.900
+Oncogene Proteins v-myb;D12.776.677.520.750.903;D12.776.624.664.520.750.903
+Oncogene Proteins v-rel;D12.776.677.520.750.925;D12.776.624.664.520.750.925
+Oncogene Proteins v-sis;D12.776.677.520.750.935;D12.776.624.664.520.750.935
+Oncogene Proteins, Fusion;D12.776.677.500;D12.776.624.664.500
+Oncogene Proteins, Viral;D12.776.677.520;D12.776.624.664.520
+Onions;B6.388.100.700.100.600;B6.388.100.610.100.600
+Onychomycosis;C17.800.805.506.550;C17.800.529.550
+Oocyte Donation;E5.820.605;E2.875.800.968
+Oocyte Donation;;E5.820.800.968
+Oocyte Donation;;Ophthalmoplegia, Chronic Progressive External
+Oocyte Donation;C18.452.648.556.650.700;C18.452.660.560.700
+Opsin;D11.557.261.648.500;D11.557.930.500
+Optic Atrophies, Hereditary;C16.131.410.564;C16.320.290.564
+Optic Atrophies, Hereditary;C16.466.400.630;C16.320.400.630
+Organ Preservation;;E1.450.865.366.833.660
+Organotherapy;E2.40.650;E2.190.701
+Ornithine;;D12.125.68.665
+Ornithine;;Ornithine Carbamoyltransferase Deficiency Disease
+Ornithine;C10.228.140.163.474.100.650;C10.228.140.163.100.650
+Ornithine;;C16.320.565.66.729
+Ornithine;;C16.320.565.150.650
+Ornithine;;C18.452.100.100.650
+Ornithine;;C18.452.648.151.650
+Orofaciodigital Syndromes;C16.131.280.748.590;C16.131.260.800.670
+Orofaciodigital Syndromes;;C16.320.180.800.670
+Oryzias;B2.493.280.608;B2.493.850.139.650
+Osmium;;D1.268.956.702
+Osteogenesis Imperfecta;C14.907.934.500;C16.320.737
+Osteogenesis Imperfecta;C15.378.463.835.500;
+Ovulation Detection;;E2.875.690
+Ovulation Induction;E5.820.740;E2.875.800.984
+Ovulation Induction;;E5.820.800.984
+Ozone;D1.268.185.550.600;D1.268.185.550.500
+Ozone;;D5.569.540.815.186
+p-Fluorophenylalanine;D12.125.72.573.450;D12.125.72.50.685.450
+P-Glycoprotein;D8.586.747.20.610.610;D12.776.157.530.100.652.500
+P-Glycoprotein;D12.776.157.20.610.610;D12.776.157.530.450.74.500.500.750
+P-Glycoprotein;;D12.776.543.585.100.610.500
+P-Glycoprotein;;D12.776.543.585.450.74.500.500.750
+P-Glycoproteins;D8.586.747.20.610;D12.776.157.530.100.652
+P-Glycoproteins;D12.776.157.20.610;D12.776.157.530.450.74.500.500.875
+P-Glycoproteins;;D12.776.543.585.100.610
+P-Glycoproteins;;D12.776.543.585.450.74.500.500.875
+Pain Insensitivity, Congenital;C16.466.775;C16.320.775
+Palladium;;D1.268.956.718
+Papaver;B6.560.671;B6.388.100.790.500
+Papillomavirus;B4.280.570.460;B4.280.535.600
+Papillomavirus;B4.909.204.210.711.460;B4.909.204.210.655.600
+Papillomavirus;B4.909.204.585.460;B4.909.574.204.655.600
+Papillomavirus;B4.909.574.204.711.460;B4.909.624.600
+Papillomavirus, Bovine;B4.280.570.460.650;B4.280.535.600.650
+Papillomavirus, Bovine;B4.909.204.210.711.460.650;B4.909.204.210.655.600.650
+Papillomavirus, Bovine;B4.909.204.585.460.650;B4.909.574.204.655.600.650
+Papillomavirus, Bovine;B4.909.574.204.711.460.650;B4.909.624.600.650
+Papillomavirus, Cottontail Rabbit;B4.280.570.460.660;B4.280.535.600.660
+Papillomavirus, Cottontail Rabbit;B4.909.204.210.711.460.660;B4.909.204.210.655.600.660
+Papillomavirus, Cottontail Rabbit;B4.909.204.585.460.660;B4.909.574.204.655.600.660
+Papillomavirus, Cottontail Rabbit;B4.909.574.204.711.460.660;B4.909.624.600.660
+Papillomavirus, Human;B4.280.570.460.690;B4.280.535.600.690
+Papillomavirus, Human;B4.909.204.210.711.460.690;B4.909.204.210.655.600.690
+Papillomavirus, Human;B4.909.204.585.460.690;B4.909.574.204.655.600.690
+Papillomavirus, Human;B4.909.574.204.711.460.690;B4.909.624.600.690
+Papillon-Lefevre Disease;;C16.320.850.475.600
+Papillon-Lefevre Disease;;C17.800.827.475.600
+Paralyses, Familial Periodic;;C16.320.565.618.711
+Paralysis, Hyperkalemic Periodic;;C16.320.565.618.711.600
+Paraparesis, Tropical Spastic;C2.782.815.483.470.710;C2.782.815.200.470.710
+Parasitic Sensitivity Tests;;H1.158.273.688.750
+Parasitology;;H1.158.273.688
+Paronychia;C17.800.805.506.639;C17.800.529.639
+Parvovirus, Canine;B4.280.580.650.600.670.600;B4.280.580.650.600.660
+Parvovirus, Canine;B4.909.204.671.650.600.670.600;B4.909.204.671.650.600.660
+Patient Advocacy;I1.880.604.473.600;I1.880.604.473.650.937
+Patient Advocacy;N3.706.437.600;N3.706.437.650.500
+Peanuts;B6.388.100.837.400.600;B6.388.100.401.77
+Peanuts;J2.500.850.500.450;J2.500.850.500.77
+Peas;B6.388.100.837.400.625;B6.388.100.401.625
+Pefloxacin;D3.438.810.835.530;D3.438.810.835.322.750
+Pemphigus, Benign Familial;;C16.320.850.700
+Penicillin Resistance;G4.185.515.286.100.600;G4.185.515.286.347.500.600
+Penicillin Resistance;G12.392.269.100.600;G12.392.269.347.500.600
+Peroxides;;D5.569.540.815.249
+Peroxisomal Disorders;C10.228.140.163.474.649;C10.228.140.163.100.680
+Peroxisomal Disorders;C18.452.125.250.700;C16.320.565.150.680
+Peroxisomal Disorders;;C16.320.565.556.750
+Peroxisomal Disorders;;C18.452.100.100.680
+Peroxisomal Disorders;;C18.452.648.151.680
+Peutz-Jeghers Syndrome;C16.466.700.705;C16.320.700.705
+Pharmacoepidemiology;;H1.158.703.45
+Pharmacognosy;;H1.158.273.118.598
+Pharmacognosy;;H1.158.703.60
+Pharmacology;;H1.158.703
+Pharmacology, Clinical;;H1.158.703.152
+Phenylalanine;D12.125.72.573;D12.125.72.50.685
+Phenylketonuria, Maternal;C10.228.140.163.474.100.700.500;C10.228.140.163.100.687.500
+Phenylketonuria, Maternal;;C16.320.565.66.766.500
+Phenylketonuria, Maternal;;C16.320.565.150.687.500
+Phenylketonuria, Maternal;;C18.452.100.100.687.500
+Phenylketonuria, Maternal;;C18.452.648.151.687.500
+Phenylketonurias;C10.228.140.163.474.100.700;C10.228.140.163.100.687
+Phenylketonurias;;C16.320.565.66.766
+Phenylketonurias;;C16.320.565.150.687
+Phenylketonurias;;C18.452.100.100.687
+Phenylketonurias;;C18.452.648.151.687
+Philadelphia Chromosome;C23.550.210.764.680;C23.550.210.870.680
+Philadelphia Chromosome;G5.148.266.764.680;G5.148.175.870.680
+6-Phosphofructokinase;D8.586.913.696.620.225.700;D8.586.913.696.620.225.850.500
+Phosphorylase a;D8.586.913.400.450.460.400.750;D8.586.913.400.450.460.400.280
+Phosphorylase b;D8.586.913.400.450.460.400.775;D8.586.913.400.450.460.400.327
+Phosphotyrosine;D12.125.72.917.750;D12.125.72.50.875.750
+Photobiology;;H1.158.273.738
+Photochemotherapy;E2.780.740;E2.779.724.722
+Photochemotherapy;;E2.831.580.649
+Photopheresis;E2.780.740.770.500;E2.779.724.945.500.500
+Photopheresis;;E2.831.580.649.770.500
+Phototherapy;E2.780.750;E2.779.724
+Phototherapy;;E2.831.580.724
+Physician Self-Referral;K1.316.130.500;
+Physician Self-Referral;K1.752.256.95.500;
+Physician's Role;F1.829.316.616.500;F1.829.316.616.625.600
+Physician's Role;N5.300.100.600;
+Physiology;;H1.158.782
+Physiology, Comparative;;H1.158.782.688
+Phytonadione;;D2.806.550.625
+Phytonadione;;D4.615.638.721.750
+Piebaldism;C16.131.410.40.600;C16.320.290.40.600
+Piebaldism;C17.800.827.130.600;C16.320.565.66.102.600
+Piebaldism;;C16.320.850.80.600
+Piebaldism;;C17.800.827.80.600
+Pilot Projects;G3.850.520.835.720;G3.850.520.450.720
+Placebos;E5.300.740;E2.785
+Plant Extracts;D24.310.674;D24.310.784.500
+Plant Extracts;;D26.674.500
+Plant Oils;;D24.310.784.750
+Plant Oils;;D26.674.750
+Plantago;B6.560.690;B6.388.100.818
+Platinum;;D1.268.956.734
+Play Therapy;;E2.190.888.625
+Plutonium;;D1.268.33.700
+Podophyllin;D24.310.674.675;D24.310.784.500.675
+Podophyllin;;D26.674.500.675
+Podophyllotoxin;D24.310.674.675.675;D24.310.784.500.675.675
+Podophyllotoxin;;D26.674.500.675.675
+Podophyllum;B6.560.706;B6.388.100.125.500
+Podophyllum;B6.660.620;
+Poecilia;B2.493.280.680;B2.493.850.280.680
+Poikiloderma Congenitale;C17.800.827.800.649;C16.320.850.715
+Poikiloderma Congenitale;;C17.800.804.649
+Poikiloderma Congenitale;;C17.800.827.715
+Poliomyelitis;C2.182.800;C2.182.700
+Polyglutamic Acid;;D12.125.67.750.400.700
+Polylysine;;D12.125.68.555.750
+Polyomavirus;B4.280.570.615;B4.280.640.615
+Polyomavirus;B4.909.204.210.711.615;B4.909.204.210.620.615
+Polyomavirus;B4.909.204.585.615;B4.909.574.204.670.615
+Polyomavirus;B4.909.574.204.711.615;B4.909.675.615
+Polyomavirus hominis 1;B4.280.570.615.600;B4.280.640.615.100
+Polyomavirus hominis 1;B4.909.204.210.711.615.600;B4.909.204.210.620.615.100
+Polyomavirus hominis 1;B4.909.204.585.615.600;B4.909.574.204.670.615.100
+Polyomavirus hominis 1;B4.909.574.204.711.615.600;B4.909.675.615.100
+Polyomavirus hominis 2;B4.280.570.615.610;B4.280.640.615.400
+Polyomavirus hominis 2;B4.909.204.210.711.615.610;B4.909.204.210.620.615.400
+Polyomavirus hominis 2;B4.909.204.585.615.610;B4.909.574.204.670.615.400
+Polyomavirus hominis 2;B4.909.574.204.711.615.610;B4.909.675.615.400
+Polyomavirus macacae;B4.280.570.615.700;B4.280.640.615.700
+Polyomavirus macacae;B4.909.204.210.711.615.700;B4.909.204.210.620.615.700
+Polyomavirus macacae;B4.909.204.585.615.700;B4.909.574.204.670.615.700
+Polyomavirus macacae;B4.909.574.204.711.615.700;B4.909.675.615.700
+Polyomavirus macacae;;Porcine Reproductive and Respiratory Syndrome
+Polyomavirus macacae;C2.782.100.700;C2.782.600.100.700
+Porins;D12.776.395.550.440.730;D12.776.157.530.400.500
+Porins;;D12.776.543.585.400.730
+Porokeratosis;;C16.320.850.730
+Porokeratosis;;C17.800.827.730
+Porphyria;C18.452.648.740;C18.452.872.617
+Porphyria Cutanea Tarda;C17.800.827.760.250;C16.320.565.735.250
+Porphyria Cutanea Tarda;C18.452.648.740.400.250;C16.320.850.742.250
+Porphyria Cutanea Tarda;;C17.800.827.742.250
+Porphyria Cutanea Tarda;;C18.452.648.735.250
+Porphyria Cutanea Tarda;;C18.452.872.617.400.250
+Porphyria, Acute Intermittent;C17.800.827.760.150;C16.320.565.735.150
+Porphyria, Acute Intermittent;C18.452.648.740.400.150;C16.320.850.742.150
+Porphyria, Acute Intermittent;;C17.800.827.742.150
+Porphyria, Acute Intermittent;;C18.452.648.735.150
+Porphyria, Acute Intermittent;;C18.452.872.617.400.150
+Porphyria, Erythrohepatic;C17.800.827.756;C16.320.565.728
+Porphyria, Erythrohepatic;C18.452.648.740.125;C16.320.850.735
+Porphyria, Erythrohepatic;;C17.800.827.735
+Porphyria, Erythrohepatic;;C18.452.648.728
+Porphyria, Erythrohepatic;;C18.452.872.617.125
+Porphyria, Erythropoietic;C17.800.827.758;C16.320.565.731
+Porphyria, Erythropoietic;C18.452.648.740.250;C16.320.850.738
+Porphyria, Erythropoietic;;C17.800.827.738
+Porphyria, Erythropoietic;;C18.452.648.730
+Porphyria, Erythropoietic;;C18.452.872.617.250
+Porphyria, Hepatic;C17.800.827.760;C16.320.565.735
+Porphyria, Hepatic;C18.452.648.740.400;C16.320.850.742
+Porphyria, Hepatic;;C17.800.827.742
+Porphyria, Hepatic;;C18.452.648.735
+Porphyria, Hepatic;;C18.452.872.617.400
+Port-Wine Stain;C17.800.827.800.675;C17.800.804.675
+Potassium Channels;D12.776.395.550.440.750;D12.776.157.530.400.600
+Potassium Channels;;D12.776.543.585.400.750
+Potassium Magnesium Aspartate;;D12.125.67.500.700
+Potatoes;B6.388.100.900.550;B6.388.100.905.550
+Prader-Willi Syndrome;C10.271.650;C10.597.606.643.690
+Prader-Willi Syndrome;C16.131.280.187.600;C16.131.260.700
+Prader-Willi Syndrome;;C16.320.180.700
+Praseodymium;D1.268.558.650;D1.268.477.750
+Praseodymium;D1.552.550.679;D1.268.558.362.750
+Praseodymium;;D1.552.550.399.750
+Predictive Value of Tests;G3.850.520.840.800.650;G3.850.520.445.800.650
+Pregnancy Outcome;E5.318.308.985.662;
+Pregnancy Outcome;G3.850.505.400.975.662;
+Pregnancy Outcome;G3.850.520.308.985.662;
+Pregnancy Outcome;L1.280.975.662;
+Pregnancy Outcome;N1.224.935.736;
+Pregnancy Rate;E5.318.308.985.775;
+Pregnancy Rate;G3.850.505.400.975.775;
+Pregnancy Rate;G3.850.520.308.985.775;
+Pregnancy Rate;L1.280.975.775;
+Pregnancy Rate;N1.224.935.775;
+Preservation, Biological;;E1.450.865.366
+Proestrus;G8.520.780.218.468;G8.520.188.875
+Progeria;;C16.320.565.769
+Proglumide;D12.125.119.574.700;D12.125.68.330.700
+Proglumide;;D12.125.95.461.700
+Promethium;D1.268.558.675;D1.268.477.875
+Promethium;D1.552.550.715;D1.268.558.362.875
+Promethium;;D1.552.550.399.875
+Prospective Studies;G3.850.520.835.500.750.650;G3.850.520.450.500.750.650
+Prostate-Specific Antigen;;D12.776.866.249.500
+Protactinium;;D1.268.33.725
+Protein C Deficiency;C15.378.100.795;C15.378.100.425.690
+Protein C Deficiency;;C16.320.99.690
+Protein Isoforms;D12.776.490;D12.776.800
+Protein p16;D12.776.260.150.609;D12.776.167.609
+Protein p16;;D12.776.624.776.695
+Protein p34cdc2;D12.776.260.150.200.580.675;
+Protein p53;;D12.776.624.776.700
+Proto-Oncogene Protein c-kit;D12.776.818.648;D12.776.624.664.700.648
+Proto-Oncogene Protein c-met;D12.776.818.654;D12.776.624.664.700.654
+Proto-Oncogene Proteins;D12.776.818;D12.776.624.664.700
+Proto-Oncogene Proteins c-abl;D12.776.818.633;D12.776.624.664.700.633
+Proto-Oncogene Proteins c-bcl-2;D12.776.818.635;D12.776.624.664.700.635
+Proto-Oncogene Proteins c-fos;D12.776.818.643;D12.776.624.664.700.643
+Proto-Oncogene Proteins c-jun;D12.776.818.647;D12.776.624.664.700.647
+Proto-Oncogene Proteins c-mos;D12.776.818.658;D12.776.624.664.700.658
+Proto-Oncogene Proteins c-myb;D12.776.818.661;D12.776.624.664.700.661
+Proto-Oncogene Proteins c-myc;D12.776.818.662;D12.776.624.664.700.662
+Proto-Oncogene Proteins c-raf;D8.586.913.696.620.682.700.793;D12.776.624.664.700.750
+Proto-Oncogene Proteins c-raf;D12.776.818.750;
+Proto-Oncogene Proteins c-rel;D12.776.818.780;D12.776.624.664.700.780
+Proto-Oncogene Proteins c-sis;D12.776.818.784;D12.776.624.664.700.784
+Proton Pump;D12.776.543.400.600;D12.776.157.530.450.250.875
+Proton Pump;;D12.776.543.585.450.250.875
+Pseudohypoaldosteronism;;C16.320.565.851.770
+Pseudohypoparathyroidism;;C16.320.565.618.815
+Pseudopseudohypoparathyroidism;;C16.320.565.618.815.815
+Pseudopseudohypoparathyroidism;;C18.452.174.766.815
+Pseudopseudohypoparathyroidism;;C18.452.648.618.815.815
+Pseudorabies;;C2.182.710
+Pseudorabies;;C10.228.228.210.710
+Pseudoxanthoma Elasticum;C17.800.827.800.766;C16.320.850.750
+Pseudoxanthoma Elasticum;;C17.800.804.766
+Psychodrama;;E2.190.888.812
+Psychoneuroimmunology;;H1.158.782.795.180
+Psychopharmacology;;H1.158.703.546
+Psychophysiology;;E2.190.525.812
+Psychophysiology;;H1.158.782.795
+Psyllium;D24.310.674.720;D24.310.784.500.720
+Psyllium;;D26.674.500.720
+Pulmonary Adenomatosis, Ovine;;C2.928.740
+Pulmonary Emphysema;C8.381.495.632;C8.381.495.389.750
+Pulmonary Emphysema;;Purine-Pyrimidine Metabolism, Inborn Errors
+Pulmonary Emphysema;;C16.320.565.798
+PUVA Therapy;E2.780.740.770;E2.779.724.945.500
+PUVA Therapy;;E2.831.580.649.770
+Pyridoxal;D11.786.708.704;D11.786.708.935.500
+Pyridoxal Phosphate;;D11.786.708.935.500.500
+Pyridoxamine;D11.786.708.733;D11.786.708.935.750
+Pyridoxic Acid;;D3.383.725.705.645
+Pyridoxine;D11.786.708.762;D3.383.725.676.850
+Pyridoxine;;D11.786.708.935.875
+Pyridoxine;;Pyruvate Carboxylase Deficiency Disease
+Pyridoxine;C10.228.140.163.474.787;C10.228.140.163.100.725
+Pyridoxine;C18.452.125.250.725;C16.320.565.150.725
+Pyridoxine;C18.452.648.156.725;C16.320.565.202.810.666
+Pyridoxine;;C18.452.100.100.725
+Pyridoxine;;C18.452.648.151.725
+Pyridoxine;;C18.452.660.705
+Pyridoxine;;Pyruvate Dehydrogenase Complex Deficiency Disease
+Pyridoxine;C10.228.140.163.474.800;C10.228.140.163.100.750
+Pyridoxine;C18.452.125.250.750;C16.320.565.150.750
+Pyridoxine;C18.452.648.156.750;C16.320.565.202.810.766
+Pyridoxine;;C18.452.100.100.750
+Pyridoxine;;C18.452.648.151.750
+Pyridoxine;;C18.452.660.710
+Pyruvate Metabolism, Inborn Errors;;C16.320.565.202.810
+Quality of Life;K1.752.770;K1.752.400.750
+Quality-Adjusted Life Years;I1.800.800;
+Quality-Adjusted Life Years;K1.752.770.800;
+Quinpirole;D3.132.327.287.900;D3.438.810.842
+Quinpirole;D3.549.439.900;D3.494.802
+Radiation Leukemia Virus;B4.820.650.750.900.500.750;B4.820.650.375.900.500.750
+Radiation Leukemia Virus;B4.909.574.807.750.900.500.750;B4.909.574.807.375.900.500.750
+Radiation Leukemia Virus;B4.909.777.731.750.900.500.750;B4.909.777.731.375.900.500.750
+Radiesthesia;E2.40.700;E2.190.901.740
+Radioallergosorbent Test;;E5.601.495.380.810
+Radioallergosorbent Test;;E5.601.495.639.810
+Radiobiology;;H1.158.273.789
+Radioimmunoassay;;E5.601.495.639
+Radioimmunoprecipitation Assay;;E5.601.495.380.825
+Radioimmunoprecipitation Assay;;E5.601.495.639.825
+Radioimmunosorbent Test;;E5.601.495.380.830
+Radioimmunosorbent Test;;E5.601.495.639.830
+ran GTP-Binding Protein;;D12.776.157.530.750.750
+Random Allocation;G3.850.520.840.700;G3.850.520.445.700
+Randomized Controlled Trials;G3.850.520.835.535.365.500;G3.850.520.450.535.365.500
+Rats, Inbred ACI;B1.30.157.500.80;
+Rats, Inbred BB;B1.30.157.500.90;
+Rats, Inbred BN;B1.30.157.500.110;
+Rats, Inbred BUF;B1.30.157.500.130;
+Rats, Inbred Dahl;B1.30.157.500.165;
+Rats, Inbred F344;B1.30.157.500.200;
+Rats, Inbred LEC;B1.30.157.500.275;
+Rats, Inbred Lew;B1.30.157.500.280;
+Rats, Inbred OLETF;B1.30.157.500.290;
+Rats, Inbred SHR;B1.30.157.500.300;
+Rats, Inbred Strains;B1.30.157.500;
+Rats, Inbred WF;B1.30.157.500.360;
+Rats, Inbred WKY;B1.30.157.500.390;
+Rauscher Virus;B4.820.650.750.900.500.770;B4.820.650.375.900.500.770
+Rauscher Virus;B4.909.574.807.750.900.500.770;B4.909.574.807.375.900.500.770
+Rauscher Virus;B4.909.777.731.750.900.500.770;B4.909.777.731.375.900.500.770
+Rauwolfia;B6.560.755;B6.388.100.81.777
+Reactive Oxygen Species;D1.268.185.550.750;D5.569.540.815
+Reactive Oxygen Species;D1.362.670.750;
+Reactive Oxygen Species;D5.569.673;
+Receptor, erbB-2;D12.776.818.642;D12.776.624.664.700.642
+Receptor, erbB-3;D12.776.818.790;D12.776.624.664.700.790
+Receptor, erbB-3;;Receptor, Macrophage Colony-Stimulating Factor
+Receptor, erbB-3;D12.776.818.800;D12.776.624.664.700.800
+Receptors, Thyroid Hormone;D12.776.818.830;D12.776.624.664.700.830
+Reflexotherapy;E2.40.720;E2.190.799
+Refrigeration;;E1.450.865.366.643
+Refsum Disease;C10.668.829.800.812;C10.228.140.163.100.680.760
+Refsum Disease;;C10.500.300.780
+Refsum Disease;;C10.574.500.495.780
+Refsum Disease;;C10.668.829.800.300.780
+Refsum Disease;;C16.131.666.300.780
+Refsum Disease;;C16.320.400.400.780
+Refsum Disease;;C16.320.565.150.680.760
+Refsum Disease;;C16.320.565.556.641.643
+Refsum Disease;;C16.320.565.556.750.760
+Refsum Disease;;C18.452.100.100.680.760
+Refsum Disease;;C18.452.648.151.680.760
+Refsum Disease;;C18.452.648.556.750.760
+Reiter's Disease;;C5.116.900.845.800.782
+Reiter's Disease;;C5.550.114.865.800.782
+Rejuvenation;E2.40.730;E2.190.822
+Relaxation;;E2.190.525.843
+Relaxation;;E2.403.906
+Relaxation Techniques;E2.40.750;E2.190.525.875
+Relaxation Techniques;;E2.190.599.875
+Relaxation Techniques;;E2.403.909
+Renal Tubular Transport, Inborn Errors;;C16.320.565.851
+Reovirus 3;B4.820.630.590.700;B4.820.630.590.550.700
+Reovirus 3;B4.909.777.714.590.700;B4.909.777.714.590.550.700
+Reproducibility of Results;G3.850.520.840.725;G3.850.520.445.725
+Reproduction Techniques;;E2.875
+Resuscitation Orders;;E2.760.905.700
+Resuscitation Orders;;N2.421.585.905.700
+Reticuloendotheliosis Virus, Avian;B4.820.650.750.700.700;B4.820.650.375.700.700
+Reticuloendotheliosis Virus, Avian;B4.909.574.807.750.700.700;B4.909.574.807.375.700.700
+Reticuloendotheliosis Virus, Avian;B4.909.777.731.750.700.700;B4.909.777.731.375.700.700
+Reticuloendotheliosis Viruses;B4.820.650.750.700;B4.820.650.375.700
+Reticuloendotheliosis Viruses;B4.909.574.807.750.700;B4.909.574.807.375.700
+Reticuloendotheliosis Viruses;B4.909.777.731.750.700;B4.909.777.731.375.700
+Retinal Dysplasia;C16.131.410.660;C16.320.290.660
+Retinal Pigments;D11.557.261.648;D11.557.930
+Retinitis Pigmentosa;C16.131.410.684;C16.320.290.684
+Retinoblastoma Protein;;D12.776.624.776.770
+Retrospective Studies;G3.850.520.835.500.500.500;G3.850.520.450.500.500.500
+Retroviridae Proteins, Oncogenic;D12.776.677.520.750;D12.776.624.664.520.750
+Retroviruses Type C, Avian;B4.820.650.735;B4.820.650.70
+Retroviruses Type C, Avian;B4.909.574.807.735;B4.909.574.807.70
+Retroviruses Type C, Avian;B4.909.777.731.735;B4.909.777.731.70
+Retroviruses Type C, Mammalian;B4.820.650.750;B4.820.650.375
+Retroviruses Type C, Mammalian;B4.909.574.807.750;B4.909.574.807.375
+Retroviruses Type C, Mammalian;B4.909.777.731.750;B4.909.777.731.375
+Rett Syndrome;C16.466.400.700;C16.320.400.700
+Rewarming;E2.780.830;E2.779.822
+Rewarming;;E2.831.580.900
+Reye Syndrome;C10.228.140.163.165.581;C10.228.140.163.780
+Reye Syndrome;C18.452.125.200.662;C18.452.100.780
+Rhamnus;B6.388.100.837.700;B6.388.100.831.500
+Rhamnus;B6.560.765;
+Rhamnus;B6.660.650;
+Rhenium;;D1.268.956.750
+Rhinophyma;C17.800.805.711.650;C17.800.794.650
+Rhodium;;D1.268.956.781
+Rhodopsin;D11.557.261.648.500.700;D11.557.930.500.700
+Rhubarb;B6.560.771;
+Rice;B6.388.100.450.225.700;B6.388.100.822.225.700
+Ricinus;B6.660.751;
+Rift Valley Fever Virus;B4.820.87.710.800.700;B4.820.87.710.700
+Rift Valley Fever Virus;B4.909.777.147.710.800.700;B4.909.777.147.710.700
+Right to Die;I1.880.604.473.600.805;I1.880.604.473.650.952
+Right to Die;N3.706.437.600.805;N3.706.437.650.750
+Ring Chromosomes;C23.550.210.751;C23.550.210.760
+Ring Chromosomes;G5.148.266.751;G5.148.175.760
+ROC Curve;G3.850.520.840.800.750;G3.850.520.445.800.750
+Role Playing;;E2.190.888.812.653
+Rosales;B6.388.100.837;B6.388.100.842
+Rotator Cuff;A2.633.837.781.650;A2.633.567.912
+Rotator Cuff;;A2.880.781.650
+Rubinstein-Taybi Syndrome;C10.271.700;C10.597.606.643.700
+Rubinstein-Taybi Syndrome;C16.131.280.187.750;C16.131.260.790
+Rubinstein-Taybi Syndrome;;C16.320.180.790
+Ruthenium;;D1.268.956.812
+Ruthenium;;Ryanodine Receptor Calcium Release Channel
+Ruthenium;D12.776.395.550.440.150.800;D12.776.157.530.400.150.800
+Ruthenium;;D12.776.543.585.400.150.800
+Rye;B6.388.100.450.225.750;B6.388.100.822.225.750
+Safflower Oil;;D24.310.784.750.840
+Safflower Oil;;D26.674.750.840
+Samarium;D1.268.558.775;D1.268.477.937
+Samarium;D1.552.550.778;D1.268.558.362.937
+Samarium;;D1.552.550.399.937
+Sample Size;G3.850.520.840.762;G3.850.520.445.762
+Sampling Studies;G3.850.520.835.875;G3.850.520.450.875
+Sandhoff Disease;C10.228.140.163.474.475.600.300.700 C10.228.140.163.100.435.825.300.700;
+Sandhoff Disease;;C16.320.565.150.435.825.300.300.800
+Sandhoff Disease;;C16.320.565.556.641.803.350.300.700
+Sandhoff Disease;;C16.320.565.580.554.825.300.300.800
+Sandhoff Disease;;C16.320.565.580.803.350.300.700
+Sandhoff Disease;;C18.452.100.100.435.825.300.300.800
+Sandhoff Disease;;C18.452.648.151.435.825.300.300.800
+Sandhoff Disease;;C18.452.648.151.825.300.300.700
+Sandhoff Disease;;C18.452.648.595.554.825.300.300.800
+Sarcoma Virus, Feline;B4.820.650.750.800;B4.820.650.375.800
+Sarcoma Virus, Feline;B4.909.574.807.750.800;B4.909.574.807.375.800
+Sarcoma Virus, Feline;B4.909.777.731.750.800;B4.909.777.731.375.800
+Sarcoma Viruses, Avian;B4.820.650.735.775;B4.820.650.70.775
+Sarcoma Viruses, Avian;B4.909.574.807.735.775;B4.909.574.807.70.775
+Sarcoma Viruses, Avian;B4.909.777.731.735.775;B4.909.777.731.70.775
+Sarcoma Viruses, Murine;B4.820.650.750.900.750;B4.820.650.375.900.750
+Sarcoma Viruses, Murine;B4.909.574.807.750.900.750;B4.909.574.807.375.900.750
+Sarcoma Viruses, Murine;B4.909.777.731.750.900.750;B4.909.777.731.375.900.750
+Sarcoma Viruses, Simian;B4.820.650.750.820;B4.820.650.375.820
+Sarcoma Viruses, Simian;B4.909.574.807.750.820;B4.909.574.807.375.820
+Sarcoma Viruses, Simian;B4.909.777.731.750.820;B4.909.777.731.375.820
+Sarcoptes scabiei;B1.131.166.132.658;B1.131.166.132.419.800
+Scandium;;D1.268.956.827
+Scientific Misconduct;K1.316.815;K1.316.768.500
+Scientific Misconduct;K1.752.256.773;
+Sclerema Neonatorum;C17.800.762;C17.800.804.812
+Sea Bream;B2.493.602.650;B2.493.602.750
+Sea-Blue Histiocyte Syndrome;;C16.320.565.556.641.803.850
+Sea-Blue Histiocyte Syndrome;;C16.320.565.580.803.850
+Sebaceous Gland Diseases;C17.800.805.711;C17.800.794
+Sebaceous Gland Neoplasms;C17.800.805.711.712;C17.800.794.712
+Semen Preservation;;E1.450.865.366.833.890
+Senecio;B6.660.826;
+Senna;D24.310.674.860;D24.310.784.500.860
+Senna;;D26.674.500.860
+Sensitivity and Specificity;G3.850.520.840.800;G3.850.520.445.800
+Seroepidemiologic Studies;G3.850.520.835.500.950;G3.850.520.450.500.950
+Sesame Oil;;D24.310.784.750.865
+Sesame Oil;;D26.674.750.865
+Sex Chromosome Abnormalities;C16.131.280.748;C23.550.210.815
+Sex Chromosome Abnormalities;;G5.148.175.815
+Sex Ratio;N1.224.935.780;
+Shamanism;E2.40.515.830;E2.190.488.830
+Shamanism;;E2.190.901.788
+Short-Wave Therapy;E2.780.480.280.853;E2.779.496.280.853
+Short-Wave Therapy;;E2.831.580.496.280.853
+Sickle Cell Trait;;C16.320.70.150.670
+Sickle Cell Trait;;C16.320.365.155.668
+Silver;;D1.268.956.843
+Single-Blind Method;G3.850.520.840.850;G3.850.520.445.850
+Siphoviridae;;B4.100.750
+Sjogren-Larsson Syndrome;C17.800.827.800.839;C16.320.565.556.641.723
+Sjogren-Larsson Syndrome;;C16.320.850.820
+Sjogren-Larsson Syndrome;;C17.800.804.512.723
+Sjogren-Larsson Syndrome;;C17.800.827.820
+Skin Abnormalities;C17.800.827.800;C17.800.804
+Skin Diseases, Genetic;;C16.320.850
+Skin Diseases, Metabolic;;C18.452.872
+Smith-Lemli-Opitz Syndrome;;C16.320.565.556.850
+Social Justice;;K1.316.745.750
+Social Justice;;K1.752.256.830.750
+Social Responsibility;F1.829.500.680;K1.316.630.595
+Social Responsibility;K1.316.630.680;K1.752.256.547.599
+Social Responsibility;K1.752.256.547.680;
+Sodium Channels;D12.776.395.550.440.875;D12.776.157.530.400.875
+Sodium Channels;;D12.776.543.585.400.875
+Sodium Glutamate;;D12.125.67.750.400.800
+Sodium-Calcium Exchanger;D12.776.157.773;D12.776.157.530.450.162.442
+Sodium-Calcium Exchanger;;D12.776.543.585.450.162.442
+Sodium-Hydrogen Antiporter;D12.776.157.70.775;D12.776.157.530.450.162.775
+Sodium-Hydrogen Antiporter;;D12.776.543.585.450.162.775
+Soil Microbiology;;H1.158.273.540.274.555
+Solanaceae;B6.388.100.900;B6.388.100.905
+Soybean Oil;;D24.310.784.750.880
+Soybean Oil;;D26.674.750.880
+Soybeans;B6.388.100.837.400.750;B6.388.100.401.750
+Spastic Paraplegia, Hereditary;C10.500.300.600;C10.500.300.820
+Spastic Paraplegia, Hereditary;C10.574.500.800;C10.574.500.495.820
+Spastic Paraplegia, Hereditary;C10.668.829.800.300.600;C10.668.829.800.300.820
+Spastic Paraplegia, Hereditary;C16.131.666.300.800;C16.131.666.300.820
+Spastic Paraplegia, Hereditary;C16.466.400.750;C16.320.400.400.820
+Sperm Injections, Intracytoplasmic;E5.820.490.700;E2.875.800.750.700
+Sperm Injections, Intracytoplasmic;;E5.820.800.750.700
+Spherocytosis, Hereditary;;C16.320.70.785
+Sphingolipidoses;C10.228.140.163.474.475.600;C10.228.140.163.100.435.825
+Sphingolipidoses;C18.452.648.595.519.600;C16.320.565.150.435.825
+Sphingolipidoses;;C16.320.565.556.641.803
+Sphingolipidoses;;C16.320.565.580.554.825
+Sphingolipidoses;;C16.320.565.580.803
+Sphingolipidoses;;C18.452.100.100.435.825
+Sphingolipidoses;;C18.452.648.151.435.825
+Sphingolipidoses;;C18.452.648.151.825
+Sphingolipidoses;;C18.452.648.595.554.825
+Spinal Muscular Atrophies of Childhood;C16.466.400.765;C16.320.400.765
+Spinocerebellar Ataxias;C16.466.400.780.875;C16.320.400.780.875
+Spinocerebellar Degenerations;C16.466.400.780;C16.320.400.780
+Spleen Focus-Forming Viruses;B4.820.650.750.900.500.850;B4.820.650.375.900.500.850
+Spleen Focus-Forming Viruses;B4.909.574.807.750.900.500.850;B4.909.574.807.375.900.500.850
+Spleen Focus-Forming Viruses;B4.909.777.731.750.900.500.850;B4.909.777.731.375.900.500.850
+Spondylitis, Ankylosing;;C5.116.900.845.800.850
+Spondylitis, Ankylosing;;C5.550.114.865.800.850
+Spores, Fungal;;B5.354.295.750
+Staurosporine;D3.132.803;D3.132.436.750
+Staurosporine;;D3.438.473.402.750
+STLV;B4.820.650.400.851;B4.820.650.200.725.755
+STLV;B4.909.574.807.400.851;B4.909.574.807.200.725.750
+STLV;B4.909.777.731.400.851;B4.909.777.731.200.725.755
+Stramonium;B6.388.100.900.850;B6.388.100.905.850
+Stramonium;B6.560.850;
+Stramonium;B6.660.850;
+Sturge-Weber Syndrome;C16.466.700.852;C16.320.700.852
+Suggestion;;E2.190.525.217.771
+Suicide, Assisted;;E2.760.905.850
+Suicide, Assisted;;N2.421.585.905.850
+Superovulation;E5.820.150.890;E2.875.800.984.500
+Superovulation;;E5.820.800.984.500
+Superoxides;;D5.569.540.815.249.500
+Supranuclear Palsy, Progressive;C10.574.890;C10.574.945.500
+Sweat Gland Diseases;C17.800.805.843;C17.800.946
+Sweat Gland Neoplasms;C17.800.805.843.743;C17.800.946.743
+Sweating, Gustatory;C17.800.805.843.350.843;C17.800.946.350.843
+Sweating, Gustatory;;Swine Infertility and Respiratory Syndrome Virus
+Sweating, Gustatory;B4.820.60.800;B4.820.504.80.100.700
+Sweating, Gustatory;B4.909.777.90.800;B4.909.777.500.80.500.800
+Sweating, Gustatory;B4.970.60.800;
+Synaptic Transmission;;G4.335.880.850
+Synaptic Transmission;;G6.184.850.850
+Tangier Disease;C18.452.648.556.485.724;C16.320.565.556.500.724
+Tangier Disease;;C18.452.648.556.500.724
+Tantalum;;D1.268.956.859
+Taxus;B6.560.875;
+Tay-Sachs Disease;C10.228.140.163.474.475.600.300.850 C10.228.140.163.100.435.825.300.850;
+Tay-Sachs Disease;;C16.320.565.150.435.825.300.300.840
+Tay-Sachs Disease;;C16.320.565.556.641.803.350.300.850
+Tay-Sachs Disease;;C16.320.565.580.554.825.300.300.840
+Tay-Sachs Disease;;C16.320.565.580.803.350.300.850
+Tay-Sachs Disease;;C18.452.100.100.435.825.300.300.840
+Tay-Sachs Disease;;C18.452.648.151.435.825.300.300.840
+Tay-Sachs Disease;;C18.452.648.151.825.300.300.850
+Tay-Sachs Disease;;C18.452.648.595.554.825.300.300.840
+Tea;B6.388.100.950.900;
+Tea Tree Oil;;D24.310.784.750.940
+Tea Tree Oil;;D26.674.750.940
+Technetium;;D1.268.956.875
+Tendons;A2.633.837;A2.880
+Tendons, Para-Articular;A2.633.837.781;A2.880.781
+Teratology;;H1.158.100.529.500
+Teratology;;H1.158.273.200.350.500
+Terbium;D1.268.558.850;D1.268.477.968
+Terbium;D1.552.550.852;D1.268.558.362.968
+Terbium;;D1.552.550.399.968
+Testicular Feminization;C12.740.700.842.749;C12.740.700.842.316.313
+Testicular Feminization;C16.131.939.842.749;C16.131.939.842.316.313
+Testicular Feminization;C19.391.775.749;C19.391.775.316.313
+Tetracycline Resistance;G4.185.515.286.898;G4.185.515.286.347.937
+Tetracycline Resistance;G12.392.269.898;G12.392.269.347.937
+Tetrodotoxin;;D3.438.786.910
+Thalassemia;;C16.320.70.875
+Thalassemia;;C16.320.365.826
+Thalassotherapy;E2.780.910;E2.779.950
+Thalassotherapy;;E2.831.580.950
+Theales;;B6.388.100.928
+Theiler Murine Encephalomyelitis Virus;B4.820.565.284.779.800;
+Therapeutic Touch;E2.40.817;E2.190.525.906
+Therapeutic Touch;;E2.190.901.830
+Thorium;;D1.268.33.900
+Thrombasthenia;C15.378.100.830;C15.378.100.425.820
+Thrombasthenia;;C16.320.99.820
+Thulium;D1.268.558.875;D1.268.477.984
+Thulium;D1.552.550.889;D1.268.558.362.984
+Thulium;;D1.552.550.399.984
+Thyronines;D6.472.931.812.741;D6.472.931.740
+Thyronines;D12.125.72.734.741;D12.125.72.50.767.741
+Thyroxine;D12.125.72.734;D12.125.72.50.767
+Tilapia;B2.493.602.700;B2.493.602.200.800
+Tissue Preservation;;E1.450.865.366.833
+Tissue Therapy;E2.40.650.884;E2.190.701.884
+Titanium;;D1.268.956.878
+Tobacco;B6.388.100.900.900;B6.388.100.905.900
+Tobacco;B6.660.900;
+Tobacco, Smokeless;B6.388.100.900.900.874;B6.388.100.905.900.874
+Tobacco, Smokeless;B6.660.900.874;
+Tomatoes;B6.388.100.900.925;B6.388.100.905.925
+Torovirus;B4.820.155.800;B4.820.504.540.800
+Torovirus;B4.909.777.199.800;B4.909.777.500.540.800
+Torovirus Infections;C2.782.225.800;C2.782.600.550.800
+Torpedo;;B2.493.370.935
+Tosylarginine Methyl Ester;;D12.125.68.50.900
+Tourette Syndrome;C16.466.400.820;C16.320.400.820
+Toxicodendron;B6.660.925;B6.388.100.44.744
+Toxicology;;H1.158.703.795
+Toxiferine;D3.132.267.712;D3.132.436.500.712
+Toxiferine;;D3.438.473.402.500.712
+Tragacanth;D24.310.674.930;D24.310.784.500.930
+Tragacanth;;D26.674.500.930
+Tragacanth;;Transcutaneous Electric Nerve Stimulation
+Tragacanth;E2.40.335.800;E2.779.468.800
+Tragacanth;E2.780.335.800;E2.831.580.468.800
+Tragacanth;G5.148.266.764;G5.148.175.870
+Treatment Refusal;;I1.880.604.473.650.968
+Treatment Refusal;;N3.706.437.650.875
+Triiodothyronine;D6.472.931.812.741.894;D6.472.931.740.385
+Triiodothyronine;D12.125.72.734.741.894;D12.125.72.50.767.741.894
+Triiodothyronine, Reverse;D6.472.931.812.741.894.900;D6.472.931.740.590
+Triiodothyronine, Reverse;D12.125.72.734.741.894.900;D12.125.72.50.767.741.947
+Trimethoprim Resistance;G4.185.515.286.925;G4.185.515.286.347.968
+Trimethoprim Resistance;G12.392.269.925;G12.392.269.347.968
+Trisomy;C23.550.210.131.750;C23.550.210.50.750
+Trisomy;G5.148.266.131.750;G5.148.175.50.750
+Truth Disclosure;F1.145.209.800;F1.145.209.259.800
+Trypsin Inhibitor, Bowman-Birk Soybean;D12.776.765.798;D12.776.765.741.500
+Trypsin Inhibitor, Kunitz Soybean;D12.776.765.805;D12.776.765.741.750
+Tryptophan;D12.125.72.859;D12.125.72.50.850
+Tuberculosis, Spinal;C5.116.900.902;C5.116.900.853.850
+Tuberous Sclerosis;C16.466.400.880;C16.320.400.880
+Tubocurarine;D3.132.267.847;D3.132.436.500.847
+Tubocurarine;;D3.438.473.402.500.847
+Tumor Viruses, Murine;B4.820.650.750.900;B4.820.650.375.900
+Tumor Viruses, Murine;B4.909.574.807.750.900;B4.909.574.807.375.900
+Tumor Viruses, Murine;B4.909.777.731.750.900;B4.909.777.731.375.900
+Tuna;B2.493.900;B2.493.602.825
+Tungsten;;D1.268.956.882
+Turner's Syndrome;C16.131.280.748.805;C12.740.700.842.309.695
+Turner's Syndrome;;C16.131.260.800.870
+Turner's Syndrome;;C16.320.180.800.870
+Turpentine;D24.310.674.965;D24.310.784.500.965
+Turpentine;;D26.674.500.965
+Twin Studies;G3.850.520.835.900;G3.850.520.450.900
+Two-Hybrid System Techniques;E5.601.870;E5.601.690.650
+Tyrosine;D12.125.72.917;D12.125.72.50.875
+Tyrosinemias;C10.228.140.163.474.100.850;C10.228.140.163.100.875
+Tyrosinemias;;C16.320.565.66.880
+Tyrosinemias;;C16.320.565.150.875
+Tyrosinemias;;C18.452.100.100.875
+Tyrosinemias;;C18.452.648.151.875
+Ubiquitin;D12.776.660.235.400.800;D12.776.947
+Ubiquitin;D12.776.664.235.400.850;
+Ultrasonic Therapy;E2.780.480.280.945;E2.779.496.280.945
+Ultrasonic Therapy;;E2.831.580.496.280.945
+Ultraviolet Therapy;E2.780.750.945;E2.779.724.945
+Ultraviolet Therapy;;E2.831.580.724.945
+Umbridae;B2.493.817.900;B2.493.385.850
+Unverricht-Lundborg Syndrome;C16.466.400.940;C16.320.400.940
+Uranium;;D1.268.33.950
+Valerian;B6.560.956;B6.388.100.955.500
+Vanadium;;D1.268.956.886
+Vancomycin Resistance;G4.185.515.286.960;G4.185.515.286.347.984
+Vancomycin Resistance;G12.392.269.960;G12.392.269.347.984
+Vehicles;;E2.319.300.754
+Veratrum;B6.388.100.700.800;B6.388.100.610.800
+Veratrum;B6.560.965;
+Veratrum;B6.660.932;
+Vesicular Exanthema of Swine Virus;B4.820.95.250.900;B4.820.95.887.900
+Vesicular Exanthema of Swine Virus;B4.909.777.162.250.900;B4.909.777.162.887.900
+Virginiamycin;D12.644.641.900;D12.644.641.802.875
+Virology;;H1.158.273.540.859
+Viscum;B6.560.975;B6.388.100.735
+Vitex;B6.388.100.675.977;B6.388.100.960.500
+Vitex;B6.560.977;
+von Willebrand Disease;;C15.378.100.425.900
+von Willebrand Disease;;C16.320.99.900
+WAGR Syndrome;C10.271.900;C4.588.945.947.535.585.950
+WAGR Syndrome;C16.131.280.187.875;C4.700.635.950
+WAGR Syndrome;C16.131.410.78.950;C10.597.606.643.969
+WAGR Syndrome;;C12.740.800.820.750.585.950
+WAGR Syndrome;;C12.777.419.473.585.950
+WAGR Syndrome;;C13.371.820.800.820.535.585.950
+WAGR Syndrome;;C16.131.260.940
+WAGR Syndrome;;C16.320.180.940
+WAGR Syndrome;;C16.320.290.78.950
+WAGR Syndrome;;C16.320.700.642.950
+Walking;;E2.403.921
+Warts;C2.256.690.810;C2.256.650.810
+Water Microbiology;;H1.158.273.540.274.777
+Werner Syndrome;C16.466.925;C16.320.925
+Wernicke Encephalopathy;C10.228.140.163.165.665;C10.228.140.163.960
+Wernicke Encephalopathy;C18.452.125.200.700;C18.452.100.960
+Wheat;B6.388.100.450.225.875;B6.388.100.822.225.875
+Williams Syndrome;C10.271.950;C10.597.606.643.970
+Williams Syndrome;C16.131.280.187.937;C16.131.260.970
+Williams Syndrome;;C16.320.180.970
+Wiskott-Aldrich Syndrome;;C15.378.100.425.970
+Wiskott-Aldrich Syndrome;;C16.320.99.970
+Witchcraft;;E2.190.901.968
+Wolfram Syndrome;C18.452.264.500;C10.292.700.225.500.980
+Wolfram Syndrome;C18.452.297.267.500;C10.574.500.662.980
+Wolfram Syndrome;C19.246.267.500;C11.270.564.980
+Wolfram Syndrome;C19.700.482.215.500;C11.640.451.451.980
+Wolfram Syndrome;;C16.320.290.564.980
+Wolfram Syndrome;;C16.320.400.630.980
+Wolfram Syndrome;;C18.452.264.960
+Wolfram Syndrome;;C18.452.297.267.960
+Wolfram Syndrome;;C19.246.267.960
+Wolfram Syndrome;;C19.700.482.215.960
+Wolman Disease;C18.452.981.923;C16.320.565.556.641.923
+Wolman Disease;;C16.320.565.580.923
+Wolman Disease;;C18.452.872.929.950
+Xanthogranuloma, Juvenile;;C18.452.872.866
+Xanthomatosis;C18.452.981;C18.452.872.929
+Xanthomatosis, Cerebrotendinous;C18.452.981.961;C16.320.565.556.925
+Xanthomatosis, Cerebrotendinous;;C18.452.872.929.975
+Xanthophyll;D2.455.849.131.824;D2.455.849.131.868.500
+Xanthophyll;D11.557.261.206.741;D11.557.261.887.500
+Xeroderma Pigmentosum;C17.800.827.800.936;C16.320.850.970
+Xeroderma Pigmentosum;;C17.800.804.936
+Xeroderma Pigmentosum;;C17.800.827.970
+XYY Karyotype;C16.131.280.748.980;C23.550.210.815.970
+XYY Karyotype;;G5.148.175.815.970
+Yoga;;E2.190.525.937
+Yoga;;E2.190.901.984
+Yoga;;E2.403.937
+Ytterbium;D1.268.558.950;D1.268.477.992
+Ytterbium;D1.552.550.958;D1.268.558.362.992
+Ytterbium;;D1.552.550.399.992
+Yttrium;;D1.268.956.890
+Zellweger Syndrome;C10.228.140.163.474.649.550;C10.228.140.163.100.680.970
+Zellweger Syndrome;C18.452.125.250.700.550;C16.320.565.150.680.970
+Zellweger Syndrome;;C16.320.565.556.750.970
+Zellweger Syndrome;;C18.452.100.100.680.970
+Zellweger Syndrome;;C18.452.648.151.680.970
+Zinc;;D1.268.956.906
+Zirconium;;D1.268.956.937
+Zoology;;H1.158.273.943
+Zygote Intrafallopian Transfer;E5.820.980;E2.875.800.992
+Zygote Intrafallopian Transfer;;E5.820.800.992

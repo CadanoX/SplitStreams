@@ -1,0 +1,592 @@
+REPLACED MEDICAL SUBJECT HEADINGS WITH REPLACED-BY HEADINGS - 2006.
+December 6, 2005.
+
+ # = DELETED RECORD
+
+
+1. TOTAL REPLACED HEADINGS =    140
+2. TOTAL DELETED  HEADINGS =     51
+                            -------
+3. TOTAL (1.+2.) =              191
+
+
+[P] = new status is printed entry term
+[N] = new status is entry term, non-print
+[C] = new status is Supplementary Concept Record
+ [] = old term does not exist in new MeSH
+
+ *  = old term now exists in a different record
+
+MH OLD = 1-(5-Isoquinolinesulfonyl)-2-methylpiperazine []
+MH NEW = 1-(5-Isoquinolinesulfonyl)-2-Methylpiperazine
+
+MH OLD = Achromobacter xylosoxidans [P]
+MH NEW = Achromobacter denitrificans
+
+MH OLD = Amine Oxidoreductases []
+MH NEW = Oxidoreductases Acting on CH-NH Group Donors
+
+MH OLD = Amino Acid Neurotransmitters # []
+MH NEW = Neurotransmitter Agents
+
+MH OLD = Ammonium Compounds [P]
+MH NEW = Quaternary Ammonium Compounds
+
+MH OLD = Anti-Allergic and Respiratory System Agents # []
+MH NEW = [No replaced-by heading]
+
+MH OLD = Anti-Inflammatory Agents, Antirheumatic Agents, and Inflammation Mediators # []
+MH NEW = Anti-Inflammatory Agents
+
+MH OLD = Antibiotics, Combined # []
+MH NEW = Drug Therapy, Combination
+
+MH OLD = Antibiotics, Glycopeptide # []
+MH NEW = Anti-Bacterial Agents
+
+MH OLD = Antibiotics, Peptide # []
+MH NEW = Anti-Bacterial Agents
+
+MH OLD = Antineoplastic and Immunosuppressive Agents # []
+MH NEW = Antineoplastic Agents
+
+MH OLD = Antirheumatic Agents, Gold # []
+MH NEW = Antirheumatic Agents
+
+MH OLD = Anus [P]
+MH NEW = Anal Canal
+
+MH OLD = Attachment Sites (Microbiology) [P]
+MH NEW = Attachment Sites, Microbiological
+
+MH OLD = Autophagocytosis [P]
+MH NEW = Autophagy
+
+MH OLD = Auxins # [N]
+MH NEW = Indoleacetic Acids
+
+MH OLD = Biogenic Amine Neurotransmitters # []
+MH NEW = Biogenic Monoamines
+
+MH OLD = Buckwheat [P]
+MH NEW = Fagopyrum
+
+MH OLD = CDK9 Protein Kinase []
+MH NEW = Cyclin-Dependent Kinase 9
+
+MH OLD = Callimiconinae [N]
+MH NEW = Callimico
+
+MH OLD = Callitrichinae [P]
+MH NEW = Callitrichidae
+
+MH OLD = Cervicitis [P]
+MH NEW = Uterine Cervicitis
+
+MH OLD = Cervix Diseases [P]
+MH NEW = Uterine Cervical Diseases
+
+MH OLD = Cervix Dysplasia [P]
+MH NEW = Uterine Cervical Dysplasia
+
+MH OLD = Cervix Erosion [P]
+MH NEW = Uterine Cervical Erosion
+
+MH OLD = Cervix Incompetence [P]
+MH NEW = Uterine Cervical Incompetence
+
+MH OLD = Cervix Neoplasms [N]
+MH NEW = Uterine Cervical Neoplasms
+
+MH OLD = Charadriformes []
+MH NEW = Charadriiformes
+
+MH OLD = Chimeric Proteins # []
+MH NEW = Recombinant Fusion Proteins
+
+MH OLD = Clams # [N]
+MH NEW = Bivalvia
+
+MH OLD = Classic Migraine [P]
+MH NEW = Migraine with Aura
+
+MH OLD = Common Migraine [P]
+MH NEW = Migraine without Aura
+
+MH OLD = Complement [N]
+MH NEW = Complement System Proteins
+
+MH OLD = Complement 1 [N]
+MH NEW = Complement C1
+
+MH OLD = Complement 1 Inactivators []
+MH NEW = Complement C1 Inactivator Proteins
+
+MH OLD = Complement 1q [N]
+MH NEW = Complement C1q
+
+MH OLD = Complement 1r [N]
+MH NEW = Complement C1r
+
+MH OLD = Complement 1s [N]
+MH NEW = Complement C1s
+
+MH OLD = Complement 2 [N]
+MH NEW = Complement C2
+
+MH OLD = Complement 3 [N]
+MH NEW = Complement C3
+
+MH OLD = Complement 3 Convertase # [N]
+MH NEW = Complement C3-C5 Convertases
+
+MH OLD = Complement 3 Nephritic Factor [N]
+MH NEW = Complement C3 Nephritic Factor
+
+MH OLD = Complement 3a [N]
+MH NEW = Complement C3a
+
+MH OLD = Complement 3b [N]
+MH NEW = Complement C3b
+
+MH OLD = Complement 3b Inactivators [N]
+MH NEW = Complement C3b Inactivator Proteins
+
+MH OLD = Complement 3c [N]
+MH NEW = Complement C3c
+
+MH OLD = Complement 3d [N]
+MH NEW = Complement C3d
+
+MH OLD = Complement 4 [N]
+MH NEW = Complement C4
+
+MH OLD = Complement 4a [N]
+MH NEW = Complement C4a
+
+MH OLD = Complement 4b [N]
+MH NEW = Complement C4b
+
+MH OLD = Complement 5 [N]
+MH NEW = Complement C5
+
+MH OLD = Complement 5a [N]
+MH NEW = Complement C5a
+
+MH OLD = Complement 5a, des-Arginine [N]
+MH NEW = Complement C5a, des-Arginine
+
+MH OLD = Complement 6 [N]
+MH NEW = Complement C6
+
+MH OLD = Complement 7 [N]
+MH NEW = Complement C7
+
+MH OLD = Complement 8 [N]
+MH NEW = Complement C8
+
+MH OLD = Complement 9 [N]
+MH NEW = Complement C9
+
+MH OLD = Complement Inactivators []
+MH NEW = Complement Inactivator Proteins
+
+MH OLD = Cretinism [P]
+MH NEW = Congenital Hypothyroidism
+
+MH OLD = D Cells [N]
+MH NEW = Somatostatin-Secreting Cells
+
+MH OLD = DNA-Binding Protein, Cyclic AMP-Responsive [P]
+MH NEW = Cyclic AMP Response Element-Binding Protein
+
+MH OLD = Decubitus Ulcer [P]
+MH NEW = Pressure Ulcer
+
+MH OLD = Dermatofibroma # [P]
+MH NEW = Histiocytoma, Benign Fibrous
+
+MH OLD = Descemet's Membrane [N]
+MH NEW = Descemet Membrane
+
+MH OLD = Desmopressin [P]
+MH NEW = Deamino Arginine Vasopressin
+
+MH OLD = Diuretics, Sulfamyl # []
+MH NEW = Diuretics
+
+MH OLD = Diuretics, Thiazide # [N]
+MH NEW = Sodium Chloride Symporter Inhibitors
+
+MH OLD = Dosage Compensation (Genetics) [P]
+MH NEW = Dosage Compensation, Genetic
+
+MH OLD = Dyes [P]
+MH NEW = Coloring Agents
+
+MH OLD = Endocrine Cells of Gut [P]
+MH NEW = Enteroendocrine Cells
+
+MH OLD = Enteroglucagon [P]
+MH NEW = Enteroglucagons
+
+MH OLD = Fetal Anoxia [P]
+MH NEW = Fetal Hypoxia
+
+MH OLD = Fetal Membranes [P]
+MH NEW = Extraembryonic Membranes
+
+MH OLD = Fractures # []
+MH NEW = Fractures, Bone
+
+MH OLD = G Cells [P]
+MH NEW = Gastrin-Secreting Cells
+
+MH OLD = Gamma-Globulins []
+MH NEW = gamma-Globulins
+
+MH OLD = Gene Fusion [P*]
+MH NEW = Artificial Gene Fusion
+
+MH OLD = Genes, Nitrogen Fixation # []
+MH NEW = Nitrogen Fixation
+
+MH OLD = Genes, Structural # []
+MH NEW = Genes
+
+MH OLD = Genes, Structural, Bacterial # []
+MH NEW = Genes, Bacterial
+
+MH OLD = Genes, Structural, Fungal # []
+MH NEW = Genes, Fungal
+
+MH OLD = Genes, Structural, Helminth # []
+MH NEW = Genes, Helminth
+
+MH OLD = Genes, Structural, Insect # []
+MH NEW = Genes, Insect
+
+MH OLD = Genes, Structural, Neoplasm # []
+MH NEW = Genes, Neoplasm
+
+MH OLD = Genes, Structural, Plant # []
+MH NEW = Genes, Plant
+
+MH OLD = Genes, Structural, Protozoan # []
+MH NEW = Genes, Protozoan
+
+MH OLD = Genes, Structural, Viral # []
+MH NEW = Genes, Viral
+
+MH OLD = Glyceraldehyde 3 Phosphate-Dehydrogenase (NADP+)(Phosphorylating) []
+MH NEW = Glyceraldehyde-3-Phosphate Dehydrogenase (NADP+)(Phosphorylating)
+
+MH OLD = Glyceraldehyde-3-Phosphate-Dehydrogenase (Phosphorylating) []
+MH NEW = Glyceraldehyde-3-Phosphate Dehydrogenase (Phosphorylating)
+
+MH OLD = Graves' Disease [P]
+MH NEW = Graves Disease
+
+MH OLD = Growth Substances, Pigments, and Vitamins # []
+MH NEW = Growth Substances
+
+MH OLD = Hamsters [P]
+MH NEW = Cricetinae
+
+MH OLD = Hand-Schueller-Christian Syndrome # [N]
+MH NEW = Histiocytosis, Langerhans-Cell
+
+MH OLD = Hay Fever [P]
+MH NEW = Rhinitis, Allergic, Seasonal
+
+MH OLD = Heat-Shock Proteins 70 [P]
+MH NEW = HSP70 Heat-Shock Proteins
+
+MH OLD = Heat-Shock Proteins 90 [P]
+MH NEW = HSP90 Heat-Shock Proteins
+
+MH OLD = Hematologic, Gastrointestinal, and Renal Agents # []
+MH NEW = Hematologic Agents
+
+MH OLD = Herpes Gestationis [N]
+MH NEW = Pemphigoid Gestationis
+
+MH OLD = Hesperomyinae [N]
+MH NEW = Sigmodontinae
+
+MH OLD = Histiocytoma, Fibrous [P]
+MH NEW = Histiocytoma, Benign Fibrous
+
+MH OLD = I-kappa B [N]
+MH NEW = I-kappa B Proteins
+
+MH OLD = Immunoglobulin Constant Region [P]
+MH NEW = Immunoglobulin Constant Regions
+
+MH OLD = Immunoglobulin Inv Allotypes [P]
+MH NEW = Immunoglobulin Km Allotypes
+
+MH OLD = Immunoglobulins, Fab [N]
+MH NEW = Immunoglobulin Fab Fragments
+
+MH OLD = Immunoglobulins, Fc [N]
+MH NEW = Immunoglobulin Fc Fragments
+
+MH OLD = Immunoglobulins, Heavy-Chain [P]
+MH NEW = Immunoglobulin Heavy Chains
+
+MH OLD = Immunoglobulins, J-Chain []
+MH NEW = Immunoglobulin J-Chains
+
+MH OLD = Immunoglobulins, Light-Chain [P]
+MH NEW = Immunoglobulin Light Chains
+
+MH OLD = Immunoglobulins, Surface # [N]
+MH NEW = Receptors, Antigen, B-Cell
+
+MH OLD = Immunoglobulins, alpha-Chain [P]
+MH NEW = Immunoglobulin alpha-Chains
+
+MH OLD = Immunoglobulins, delta-Chain [P]
+MH NEW = Immunoglobulin delta-Chains
+
+MH OLD = Immunoglobulins, epsilon-Chain [P]
+MH NEW = Immunoglobulin epsilon-Chains
+
+MH OLD = Immunoglobulins, gamma-Chain [P]
+MH NEW = Immunoglobulin gamma-Chains
+
+MH OLD = Immunoglobulins, kappa-Chain [P]
+MH NEW = Immunoglobulin kappa-Chains
+
+MH OLD = Immunoglobulins, lambda-Chain [P]
+MH NEW = Immunoglobulin lambda-Chains
+
+MH OLD = Immunoglobulins, mu-Chain [P]
+MH NEW = Immunoglobulin mu-Chains
+
+MH OLD = Immunologic and Biological Factors # []
+MH NEW = Immunologic Factors
+
+MH OLD = Influenza [N]
+MH NEW = Influenza, Human
+
+MH OLD = Influenza, Avian [P] 
+MH NEW = Influenza in Birds
+
+MH OLD = Influenza A Virus, Avian # []
+MH NEW = Influenza A virus
+
+MH OLD = Influenza A Virus, Human # []
+MH NEW = Influenza A virus
+
+MH OLD = Influenza A Virus, Porcine # []
+MH NEW = Influenza A virus
+
+MH OLD = Kidney, Cystic # [N]
+MH NEW = Kidney Diseases, Cystic
+
+MH OLD = Kidney, Sponge [N]
+MH NEW = Medullary Sponge Kidney
+
+MH OLD = Kinetins [P]
+MH NEW = Kinetin
+
+MH OLD = Kraurosis Vulvae [N]
+MH NEW = Vulvar Lichen Sclerosus
+
+MH OLD = Labor Complications [N]
+MH NEW = Obstetric Labor Complications
+
+MH OLD = Labor, Premature [N]
+MH NEW = Obstetric Labor, Premature
+
+MH OLD = Labyrinth [P]
+MH NEW = Ear, Inner
+
+MH OLD = Letterer-Siwe Disease # [N]
+MH NEW = Histiocytosis, Langerhans-Cell
+
+MH OLD = Luminescence, Physical [P]
+MH NEW = Luminescence
+
+MH OLD = Lymphangiomyomatosis [N]
+MH NEW = Lymphangioleiomyomatosis
+
+MH OLD = MSH [P]
+MH NEW = Melanocyte-Stimulating Hormones
+
+MH OLD = Meconium Aspiration [N]
+MH NEW = Meconium Aspiration Syndrome
+
+MH OLD = Meigs' Syndrome [N]
+MH NEW = Meigs Syndrome
+
+MH OLD = Methonium Compounds [P]
+MH NEW = Bis-Trimethylammonium Compounds
+
+MH OLD = Microspora [P]
+MH NEW = Microsporidia
+
+MH OLD = Microtinae [P]
+MH NEW = Arvicolinae
+
+MH OLD = Migraine [N]
+MH NEW = Migraine Disorders
+
+MH OLD = Mussels # [P]
+MH NEW = Bivalvia
+
+MH OLD = NAD(P)H-Flavin Oxidoreductase [P]
+MH NEW = FMN Reductase
+
+MH OLD = Nephroblastoma [P]
+MH NEW = Wilms Tumor
+
+MH OLD = Nerve Sheath Tumors [N]
+MH NEW = Nerve Sheath Neoplasms
+
+MH OLD = Neurotransmitters # [N]
+MH NEW = Neurotransmitter Agents
+
+MH OLD = Neurotransmitters and Neurotransmitter Agents # []
+MH NEW = Neurotransmitter Agents
+
+MH OLD = Nitric-Oxide Synthase [N]
+MH NEW = Nitric Oxide Synthase
+
+MH OLD = Nuclear Localization Signal [P]
+MH NEW = Nuclear Localization Signals
+
+MH OLD = Octopus # [P]
+MH NEW = Octopodiformes
+
+MH OLD = Opsonins [P]
+MH NEW = Opsonin Proteins
+
+MH OLD = Ornithosis [P]
+MH NEW = Psittacosis
+
+MH OLD = Oysters [P]
+MH NEW = Ostreidae
+
+MH OLD = p14ARF Protein [P]
+MH NEW = Tumor Suppressor Protein p14ARF
+
+MH OLD = Pentosephosphate Pathway [P]
+MH NEW = Pentose Phosphate Pathway
+
+MH OLD = Perfusion, Regional []
+MH NEW = Chemotherapy, Cancer, Regional Perfusion
+
+MH OLD = Physical Therapy Techniques [N]
+MH NEW = Physical Therapy Modalities
+
+MH OLD = Pickwickian Syndrome [P]
+MH NEW = Obesity Hypoventilation Syndrome
+
+MH OLD = Pigments []
+MH NEW = Pigments, Biological
+
+MH OLD = Placenta Praevia [N]
+MH NEW = Placenta Previa
+
+MH OLD = Poikiloderma Congenitale [P]
+MH NEW = Rothmund-Thomson Syndrome
+
+MH OLD = Potatoes [P]
+MH NEW = Solanum tuberosum
+
+MH OLD = Power Sources [P]
+MH NEW = Electric Power Supplies
+
+MH OLD = Prostaglandin-Endoperoxide Synthase [P]
+MH NEW = Prostaglandin-Endoperoxide Synthases
+
+MH OLD = Protein p16 []
+MH NEW = Cyclin-Dependent Kinase Inhibitor p16
+
+MH OLD = Protein p53 []
+MH NEW = Tumor Suppressor Protein p53
+
+MH OLD = Protirelin [P]
+MH NEW = Thyrotropin-Releasing Hormone
+
+MH OLD = Proto-Oncogene Protein c-kit [N]
+MH NEW = Proto-Oncogene Proteins c-kit
+
+MH OLD = Proto-Oncogene Protein c-met []
+MH NEW = Proto-Oncogene Proteins c-met
+
+MH OLD = Proto-Oncogene Protein p21(ras) [N]
+MH NEW = Proto-Oncogene Proteins p21(ras)
+
+MH OLD = Proto-Oncogene Protein pp60(c-src) [N]
+MH NEW = Proto-Oncogene Proteins pp60(c-src)
+
+MH OLD = Ralstonia eutropha [P]
+MH NEW = Wautersia eutropha
+
+MH OLD = Review of Reported Cases [Publication Type] # [N]
+MH NEW = Review [Publication Type]
+
+MH OLD = Review, Multicase [Publication Type] # [N]
+MH NEW = Review [Publication Type]
+
+MH OLD = Review, Tutorial [Publication Type] # [N]
+MH NEW = Review [Publication Type]
+
+MH OLD = Ross river virus []
+MH NEW = Ross River virus
+
+MH OLD = SIV []
+MH NEW = Simian immunodeficiency virus
+
+MH OLD = Semilunar Bone [P]
+MH NEW = Lunate Bone
+
+MH OLD = Sex Disorders [N]
+MH NEW = Sexual Dysfunction, Physiological
+
+MH OLD = Sphaeriales [P]
+MH NEW = Xylariales
+
+MH OLD = Squalene Synthetase [P]
+MH NEW = Farnesyl-Diphosphate Farnesyltransferase
+
+MH OLD = Squid # [P]
+MH NEW = Decapodiformes
+
+MH OLD = Sulfite Oxidases # [N]
+MH NEW = Oxidoreductases Acting on Sulfur Group Donors
+
+MH OLD = Sulfite Reductases # [N]
+MH NEW = Oxidoreductases Acting on Sulfur Group Donors
+
+MH OLD = T-Lymphocytes, Suppressor-Effector # []
+MH NEW = T-Lymphocytes, Regulatory
+
+MH OLD = T-Lymphocytes, Suppressor-Inducer # []
+MH NEW = T-Lymphocytes, Regulatory
+
+MH OLD = Tedelparin [P]
+MH NEW = Dalteparin
+
+MH OLD = Tendinitis # [P]
+MH NEW = Tendinopathy
+
+MH OLD = Tension Headache [N]
+MH NEW = Tension-Type Headache
+
+MH OLD = Toxins [P]
+MH NEW = Toxins, Biological
+
+MH OLD = Transcription Factor, Sp1 [P]
+MH NEW = Sp1 Transcription Factor
+
+MH OLD = Transfusion-Transmitted Virus [P]
+MH NEW = Torque teno virus
+
+MH OLD = Virus Inhibitors # []
+MH NEW = Antiviral Agents
+

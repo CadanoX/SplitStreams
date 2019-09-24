@@ -1,0 +1,556 @@
+REPLACED MEDICAL SUBJECT HEADINGS WITH REPLACED-BY HEADINGS - 2004. October 21, 2003
+
+ # = DELETED RECORD
+
+1. TOTAL REPLACED HEADINGS =    109
+2. TOTAL DELETED  HEADINGS =     71
+                            -------
+3. TOTAL(1.+2.) =               180
+
+
+[P] = new status is printed entry term
+[N] = new status is entry term, non-print
+[C] = new status is Supplementary Concept Record
+ [] = old term does not exist in new MeSH
+
+ *  = old term now exists in a different record
+
+MH old = Aborigines # [N]
+MH new = Oceanic Ancestry Group
+
+MH old = Agrobacterium tumefaciens [P]
+MH new = Rhizobium radiobacter
+
+MH old = Agrobacterium # [N]
+MH new = Rhizobium
+
+MH old = Algae and Fungi # []
+MH new = [none]
+
+MH old = alpha Proteobacteria [P]
+MH new = Alphaproteobacteria
+
+MH old = Anabolic Steroids # []
+MH new = Anabolic Agents
+
+MH old = Androgens, Synthetic # [N]
+MH new = Testosterone Congeners
+
+MH old = Androst-5-ene-3 beta,17 beta-diol []
+MH new = Androstenediol
+
+MH old = Angiogenesis Factor # [N]
+MH new = Angiogenesis Inducing Agents
+
+MH old = Animal [P]
+MH new = Animals
+
+MH old = Animals [P*]
+MH new = Animal Population Groups
+
+MH old = Anti-Anxiety Agents, Benzodiazepine # []
+MH new = Anti-Anxiety Agents
+
+MH old = Anti-Infective Agents, Fluoroquinolone # []
+MH new = Anti-Infective Agents
+
+MH old = Anti-Infective Agents, Quinolone # []
+MH new = Anti-Infective Agents
+
+MH old = Anti-Inflammatory Agents, Steroidal # []
+MH new = Anti-Inflammatory Agents
+
+MH old = Anti-Inflammatory Agents, Topical # []
+MH new = Anti-Inflammatory Agents
+
+MH old = Antibiotics [P]
+MH new = Anti-Bacterial Agents
+
+MH old = Antibiotics, Aminoglycoside # []
+MH new = Anti-Bacterial Agents
+
+MH old = Antibiotics, Anthracycline # []
+MH new = Antibiotics, Antineoplastic
+
+MH old = Antibiotics, Lactam # []
+MH new = Anti-Bacterial Agents
+
+MH old = Antibiotics, Macrolide # []
+MH new = Anti-Bacterial Agents
+
+MH old = Antibiotics, Tetracycline # []
+MH new = Anti-Bacterial Agents
+
+MH old = Antipsychotic Agents, Butyrophenone # []
+MH new = Antipsychotic Agents
+
+MH old = Antipsychotic Agents, Phenothiazine # []
+MH new = Antipsychotic Agents
+
+MH old = Aspiration []
+MH new = Inhalation
+
+MH old = Australoid Race # [N]
+MH new = Oceanic Ancestry Group
+
+MH old = Beggiatoaceae # [N]
+MH new = Thiotrichaceae
+
+MH old = Beggiatoales # []
+MH new = Gammaproteobacteria
+
+MH old = beta Proteobacteria [P]
+MH new = Betaproteobacteria
+
+MH old = Bile Duct Obstruction, Extrahepatic [P]
+MH new = Cholestasis, Extrahepatic
+
+MH old = Bioflavonoids # [P]
+MH new = Flavonoids
+
+MH old = Blacks [P*]
+MH new = African Americans
+
+MH old = Blood Groups [P]
+MH new = Blood Group Antigens
+
+MH old = Brunner's Glands [N]
+MH new = Brunner Glands
+
+MH old = Budding and Appendaged Bacteria # []
+MH new = Bacteria
+
+MH old = Carcinoma, Infiltrating Duct [P]
+MH new = Carcinoma, Ductal, Breast
+
+MH old = Caroli's Disease [P]
+MH new = Caroli Disease
+
+MH old = Case Report []
+MH new = Case Reports [Publication Type]
+
+MH old = Caucasoid Race # [N]
+MH new = European Continental Ancestry Group
+
+MH old = CDC28 Protein Kinase [N]
+MH new = CDC28 Protein Kinase, S cerevisiae
+
+MH old = Chemical Actions [N]
+MH new = Pharmacologic Actions
+
+MH old = Clove [P]
+MH new = Eugenia
+
+MH old = Colicin Factors [P]
+MH new = Bacteriocin Plasmids
+
+MH old = Comamonas acidovorans [P]
+MH new = Delftia acidovorans
+
+MH old = Common Bile Duct Calculi # [N]
+MH new = Gallstones
+
+MH old = Cytochrome a [P*]
+MH new = Cytochrome a Group
+
+MH old = Cytochrome b [P*]
+MH new = Cytochrome b Group
+
+MH old = Cytochrome b5 [N]
+MH new = Cytochromes b5
+
+MH old = Cytochrome c [P*]
+MH new = Cytochrome c Group
+
+MH old = Cytochrome c1 [P]
+MH new = Cytochromes c1
+
+MH old = Cytochrome d [P]
+MH new = Cytochrome d Group
+
+MH old = Cytochrome-c Oxidase [P]
+MH new = Electron Transport Complex IV
+
+MH old = Cytophagaceae # [P]
+MH new = Flexibacteraceae
+
+MH old = Cytophagales # [P]
+MH new = Bacteroidetes
+
+MH old = delta Proteobacteria [P]
+MH new = Deltaproteobacteria
+
+MH old = Diabetes Mellitus, Insulin-Dependent [P]
+MH new = Diabetes Mellitus, Type I
+
+MH old = Diabetes Mellitus, Non-Insulin-Dependent [P]
+MH new = Diabetes Mellitus, Type II
+
+MH old = Digestive Tract Contents [P]
+MH new = Gastrointestinal Contents
+
+MH old = Dihydroprogesterone [P]
+MH new = 20-alpha-Dihydroprogesterone
+
+MH old = Diuretics, Mercurial # []
+MH new = Organomercury Compounds
+
+MH old = Ectothiorhodospira halophila [P]
+MH new = Halorhodospira halophila
+
+MH old = 5,8,11,14,17-Eicosapentaenoic Acid [P]
+MH new = Eicosapentaenoic Acid
+
+MH old = Environmental Pollutants, Noxae, and Pesticides [N]
+MH new = Toxic Actions
+
+MH old = Enzymes, Coenzymes, and Enzyme Inhibitors # []
+MH new = Enzymes and Coenzymes
+
+MH old = Eperythrozoon # [P]
+MH new = Mycoplasma
+
+MH old = Eperythrozoonosis # [P]
+MH new = Mycoplasma Infections
+
+MH old = epsilon Proteobacteria [P]
+MH new = Epsilonproteobacteria
+
+MH old = Equilibrium []
+MH new = Musculoskeletal Equilibrium
+
+MH old = Erwinia carotovora [P]
+MH new = Pectobacterium carotovorum
+
+MH old = Erwinia chrysanthemi [P]
+MH new = Pectobacterium chrysanthemi
+
+MH old = Erythrocyte Aggregation, Intravascular # [P]
+MH new = Erythrocyte Aggregation
+
+MH old = Eskimos [P]
+MH new = Inuits
+
+MH old = Estrogens, Conjugated [N]
+MH new = Estrogens, Conjugated (USP)
+
+MH old = Estrogens, Synthetic # [N]
+MH new = Estradiol Congeners
+
+MH old = Family Planning [P]
+MH new = Family Planning Services
+
+MH old = Fatty Acid Desaturases # [P]
+MH new = Fatty Acid Desaturases
+
+MH old = Feces, Impacted [N]
+MH new = Fecal Impaction
+
+MH old = Flavones [P]
+MH new = Flavonoids
+
+MH old = G-Protein, Inhibitory Gi [P]
+MH new = GTP-Binding Protein alpha Subunits, Gi-Go
+
+MH old = G-Protein, Stimulatory Gs [P]
+MH new = GTP-Binding Protein alpha Subunits, Gs
+
+MH old = Galanthamine [P]
+MH new = Galantamine
+
+MH old = gamma Proteobacteria [P]
+MH new = Gammaproteobacteria
+
+MH old = Gastrointestinal System # [N]
+MH new = Digestive System
+
+MH old = Gliding Bacteria # []
+MH new = Bacteria
+
+MH old = Glucocorticoids, Synthetic # []
+MH new = Glucocorticoids
+
+MH old = Glucocorticoids, Topical # []
+MH new = Anti-Inflammatory Agents
+
+MH old = Green Sulfur Bacteria [P]
+MH new = Chlorobi
+
+MH old = Guaiacol Glyceryl Ether [P]
+MH new = Guaifenesin
+
+MH old = Halobacterium halobium # [P]
+MH new = Halobacterium salinarum
+
+MH old = Heart Atrium [P]
+MH new = Heart Atria
+
+MH old = Heart Ventricle [N]
+MH new = Heart Ventricles
+
+MH old = Hemodynamics []
+MH new = Hemodynamic Processes
+
+MH old = Hormones, Synthetic # []
+MH new = Hormones
+
+MH old = Hydrocortisone, Topical # []
+MH new = Anti-Inflammatory Agents
+
+MH old = Hydroxypregnenolone [N]
+MH new = 17-alpha-Hydroxypregnenolone
+
+MH old = 17-Hydroxyprogesterone [P]
+MH new = 17-alpha-Hydroxyprogesterone
+
+MH old = Hyperinsulinemia # [N]
+MH new = Hyperinsulinism
+
+MH old = Integrase [P]
+MH new = Integrases
+
+MH old = Klebsiella rhinoscleromatis # [N]
+MH new = Klebsiella pneumoniae
+
+MH old = Knowledge, Attitudes, Practice [N]
+MH new = Health Knowledge, Attitudes, Practice
+
+MH old = Lactate Dehydrogenase [P]
+MH new = L-Lactate Dehydrogenase
+
+MH old = Lipids and Antilipemic Agents # []
+MH new =
+
+MH old = Lipoamide Dehydrogenase [P]
+MH new = Dihydrolipoamide Dehydrogenase
+
+MH old = Mammae [P]
+MH new = Mammary Glands, Animal
+
+MH old = Mammary Neoplasms [N]
+MH new = Mammary Neoplasms, Animal
+
+MH old = Mannosidosis [P*]
+MH new = alpha-Mannosidosis
+
+MH old = Meckel's Diverticulum [N]
+MH new = Meckel Diverticulum
+
+MH old = Mercaptopropionylglycine [P]
+MH new = Thiopronine
+
+MH old = Methanogens # []
+MH new = Euryarchaeota
+
+MH old = Methemoglobin Reductase # [N]
+MH new = Cytochrome-B(5) Reductase
+
+MH old = Methyl N-Butyl Ketone []
+MH new = Methyl n-Butyl Ketone
+
+MH old = Methylenetetrahydrofolate Dehydrogenase [N]
+MH new = Methylenetetrahydrofolate Dehydrogenase (NADP)
+
+MH old = Middle Age [N]
+MH new = Middle Aged
+
+MH old = Mineralocorticoids, Synthetic # []
+MH new = Mineralocorticoids
+
+MH old = Mongoloid Race # [N]
+MH new = Asian Continental Ancestry Group
+
+MH old = Mosses [N*]
+MH new = Bryopsida
+
+MH old = Mustard [P]
+MH new = Mustard Plant
+
+MH old = Myxococcaceae # []
+MH new = Myxococcales
+
+MH old = N-glycosyl Hydrolases []
+MH new = N-Glycosyl Hydrolases
+
+MH old = N-substituted Glycine [P]
+MH new = N-substituted Glycines
+
+MH old = Natriuretic Hormone # []
+MH new = Natriuretic Agents
+
+MH old = Negroid Race # [N]
+MH new = African Continental Ancestry Group
+
+MH old = Nitrobacteraceae # [P]
+MH new = Bradyrhizobiaceae
+
+MH old = Norwalk-like Viruses [P]
+MH new = Norovirus
+
+MH old = Oddi's Sphincter [P]
+MH new = Sphincter of Oddi
+
+MH old = Paramyxoviruses, Avian [P]
+MH new = Avulavirus
+
+MH old = Parathyroid Hormones []
+MH new = Parathyroid Hormone
+
+MH old = Parotin # []
+MH new = Salivary Proteins
+
+MH old = Photosynthetic Reaction Center, Bacterial # [N]
+MH new = Photosynthetic Reaction Center Complex Proteins
+
+MH old = Photosynthetic Reaction Center, Plant # [N]
+MH new = Photosynthetic Reaction Center Complex Proteins
+
+MH old = Phototrophic Bacteria # []
+MH new = Bacteria
+
+MH old = Phthalein Dyes # []
+MH new = Dyes
+
+MH old = Pneumocystis carinii [P*]
+MH new = Pneumocystis
+
+MH old = Pneumocystis carinii Infections [N]
+MH new = Pneumocystis Infections
+
+MH old = Pneumonia, Pneumocystis carinii [N]
+MH new = Pneumonia, Pneumocystis
+
+MH old = Polymyxin [P]
+MH new = Polymyxins
+
+MH old = Prasterone [P]
+MH new = Dehydroepiandrosterone
+
+MH old = Prednisolone, Topical # []
+MH new = Anti-Inflammatory Agents
+
+MH old = Pregnancy Zone Proteins # []
+MH new = Pregnancy Proteins
+
+MH old = Pregnancy-Associated alpha-Plasma Protein [N]
+MH new = Pregnancy-Associated Plasma Protein-A
+
+MH old = Pregnancy-Associated beta-Plasma Protein # [N]
+MH new = Pregnancy-Specific beta 1-Glycoprotein
+
+MH old = Progestational Hormones [N]
+MH new = Progestins
+
+MH old = Progestational Hormones, Synthetic # [N]
+MH new = Progesterone Congeners
+
+MH old = Protein p34cdc2 [P]
+MH new = CDC2 Protein Kinase
+
+MH old = Racial Stocks # [N]
+MH new = Continental Population Groups
+
+MH old = Raynaud's Disease [N]
+MH new = Raynaud Disease
+
+MH old = Rec A Protein [P]
+MH new = Rec A Recombinases
+
+MH old = Receptor, Platelet-Derived-Growth Factor beta []
+MH new = Receptor, Platelet-Derived Growth Factor beta
+
+MH old = Respiratory Distress Syndrome []
+MH new = Respiratory Distress Syndrome, Newborn
+
+MH old = Rhodomicrobium vannielii [P]
+MH new = Rhodomicrobium
+
+MH old = Rhubarb [P]
+MH new = Rheum
+
+MH old = Rhythm Method [P]
+MH new = Natural Family Planning Methods
+
+MH old = Rickettsiales Infections # []
+MH new = Gram-Negative Bacterial Infections
+
+MH old = Rickettsiales # []
+MH new = Alphaproteobacteria
+
+MH old = Sapporo-like Viruses [P]
+MH new = Sapovirus
+
+MH old = SARS virus []
+MH new = SARS Virus
+
+MH old = Scleroderma, Circumscribed [P]
+MH new = Scleroderma, Localized
+
+MH old = Sedatives, Barbiturate # []
+MH new = Hypnotics and Sedatives
+
+MH old = Sedatives, Nonbarbiturate # []
+MH new = Hypnotics and Sedatives
+
+MH old = Sex Behavior [N]
+MH new = Sexual Behavior
+
+MH old = Sex Hormones [N]
+MH new = Gonadal Steroid Hormones
+
+MH old = Sigmoid [P]
+MH new = Colon, Sigmoid
+
+MH old = Specialty Chemicals and Products # [N]
+MH new = Specialty Uses of Chemicals
+
+MH old = Spectrophotometry, Atomic Absorption [P]
+MH new = Spectrophotometry, Atomic
+
+MH old = Spheroids []
+MH new = Spheroids, Cellular
+
+MH old = Spiral and Curved Bacteria # []
+MH new = Bacteria
+
+MH old = Stanolone [P]
+MH new = Dihydrotestosterone
+
+MH old = Sterilization, Sexual [N]
+MH new = Sterilization, Reproductive
+
+MH old = Thiobacillus thiooxidans [P]
+MH new = Acidithiobacillus thiooxidans
+
+MH old = Tonometry [P*]
+MH new = Tonometry, Ocular
+
+MH old = Transposase [P]
+MH new = Transposases
+
+MH old = Ubiquinol-Cytochrome-c Reductase [P]
+MH new = Electron Transport Complex III
+
+MH old = Uses of Chemicals and Drugs []
+MH new = Specialty Uses of Chemicals
+
+MH old = Valsalva's Maneuver [N]
+MH new = Valsalva Maneuver
+
+MH old = Vater's Ampulla [P]
+MH new = Ampulla of Vater
+
+MH old = Veillonellaceae # [N]
+MH new = Acidaminococcaceae
+
+MH old = Visceroptosis [P]
+MH new = Visceral Prolapse
+
+MH old = Whipple's Disease [P]
+MH new = Whipple Disease
+
+MH old = Whites # [N]
+MH new = European Continental Ancestry Group
+
+MH old = Xanthine Alkaloids # []
+MH new = Xanthines

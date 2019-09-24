@@ -1,0 +1,229 @@
+MH Changes and deletes. 2010 MeSH. August 13, 2009
+
+
+Total replaced     = 52
+Total deleted      = 20
+
+
+# = delete
+
+[] = new status of old term (P = EP; N = EN or PT; C = SCR term; M = MH; null = old term not in New MeSH)
+
+* = old term in a different record than the new term
+
+
+MH OLD = Acrospiroma, Eccrine [P]
+MH NEW = Acrospiroma
+
+MH OLD = Amino Acid Naphthylamidases # []
+MH NEW = Aminopeptidases
+
+MH OLD = Angioedema, Hereditary [P]
+MH NEW = Angioedemas, Hereditary
+
+MH OLD = Antibiotics, Antifungal # [N]
+MH NEW = Antifungal Agents
+
+MH OLD = Antiplasmin []
+MH NEW = alpha-2-Antiplasmin
+
+MH OLD = Aspartic Endopeptidases [P]
+MH NEW = Aspartic Acid Endopeptidases
+
+MH OLD = Bacillus stearothermophilus [P]
+MH NEW = Geobacillus stearothermophilus
+
+MH OLD = Barbuda and Antigua [P]
+MH NEW = Antigua and Barbuda
+
+MH OLD = Beta Rays [P]
+MH NEW = Beta Particles
+
+MH OLD = Biofeedback (Psychology) [P]
+MH NEW = Biofeedback, Psychology
+
+MH OLD = Carboxypeptidase C [P]
+MH NEW = Cathepsin A
+
+MH OLD = Chemistry, Analytical []
+MH NEW = Chemistry Techniques, Analytical
+
+MH OLD = Child Nutritional Physiology Phenomena [P]
+MH NEW = Child Nutritional Physiological Phenomena
+
+MH OLD = Cholestyramine [P]
+MH NEW = Cholestyramine Resin
+
+MH OLD = Cyclones [P]
+MH NEW = Cyclonic Storms
+
+MH OLD = Cytology [P]
+MH NEW = Cell Biology
+
+MH OLD = Dipeptidyl Peptidase I [P]
+MH NEW = Cathepsin C
+
+MH OLD = Dipeptidyl Peptidases [P]
+MH NEW = Dipeptidyl-Peptidases and Tripeptidyl-Peptidases
+
+MH OLD = Dupuytren's Contracture [P]
+MH NEW = Dupuytren Contracture
+
+MH OLD = Dynein ATPase [P]
+MH NEW = Dyneins
+
+MH OLD = Epidemiology, Molecular [P]
+MH NEW = Molecular Epidemiology
+
+MH OLD = Eumycetozoea # []
+MH NEW = Eukaryota
+
+MH OLD = Feedback, Biochemical [P]
+MH NEW = Feedback, Physiological
+
+MH OLD = Food Poisoning [P]
+MH NEW = Foodborne Diseases
+
+MH OLD = Fungal Components # [N]
+MH NEW = Fungal Structures
+
+MH OLD = Genetic Screening [N]
+MH NEW = Genetic Testing
+
+MH OLD = GroEL Protein # [N]
+MH NEW = Chaperonin 60
+
+MH OLD = GroES Protein # [N]
+MH NEW = Chaperonin 10
+
+MH OLD = Hemorrhagic Disease of Newborn [P]
+MH NEW = Vitamin K Deficiency Bleeding
+
+MH OLD = Hepatitis, Chronic, Drug-Induced # [N]
+MH NEW = Drug-Induced Liver Injury, Chronic
+
+MH OLD = Hepatitis, Toxic # [N]
+MH NEW = Drug-Induced Liver Injury
+
+MH OLD = Hereditary Motor and Sensory Neuropathies [P]
+MH NEW = Hereditary Sensory and Motor Neuropathy
+
+MH OLD = Incunabula [M*]
+MH NEW = Incunabula as Topic
+
+MH OLD = Inversion, Chromosome [P]
+MH NEW = Chromosome Inversion
+
+MH OLD = Kearns-Sayer Syndrome []
+MH NEW = Kearns-Sayre Syndrome
+
+MH OLD = Leucyl-beta-Naphthylamidase # []
+MH NEW = Leucyl Aminopeptidase
+
+MH OLD = Lysine Vasopressin [P]
+MH NEW = Lypressin
+
+MH OLD = Marginal Adaptation (Dentistry) []
+MH NEW = Dental Marginal Adaptation
+
+MH OLD = Mass Immunization [P]
+MH NEW = Mass Vaccination
+
+MH OLD = Mastigophora # []
+MH NEW = Eukaryota
+
+MH OLD = Mastigophora Infections # []
+MH NEW = Protozoan Infections
+
+MH OLD = Medroxyprogesterone 17-Acetate [P]
+MH NEW = Medroxyprogesterone Acetate
+
+MH OLD = Microbiome [P]
+MH NEW = Metagenome
+
+MH OLD = Monoclonal Gammopathies, Benign [P]
+MH NEW = Monoclonal Gammopathy of Undetermined Significance
+
+MH OLD = Monsters []
+MH NEW = Abnormalities, Severe Teratoid
+
+MH OLD = Nevus Sebaceous of Jadassohn []
+MH NEW = Nevus, Sebaceous of Jadassohn
+
+MH OLD = p-Aminosalicylic Acid [P]
+MH NEW = Aminosalicylic Acid
+
+MH OLD = Paget's Disease, Extramammary [P]
+MH NEW = Paget Disease Extramammary
+
+MH OLD = Penicillin G, Benzathine []
+MH NEW = Penicillin G Benzathine
+
+MH OLD = Penicillin G, Procaine []
+MH NEW = Penicillin G Procaine
+
+MH OLD = Phytomastigophorea # []
+MH NEW = Eukaryota
+
+MH OLD = Plant Components [P]
+MH NEW = Plant Structures
+
+MH OLD = Plasmin [P]
+MH NEW = Fibrinolysin
+
+MH OLD = Precipitation []
+MH NEW = Chemical Precipitation
+
+MH OLD = Protein-Arginine N-Methyltransferase [P]
+MH NEW = Protein-Arginine N-Methyltransferases
+
+MH OLD = Protozoa # []
+MH NEW = Eukaryota
+
+MH OLD = Sarcodina # []
+MH NEW = Eukaryota
+
+MH OLD = Sarcodina Infections # []
+MH NEW = Protozoan Infections
+
+MH OLD = Sarcomastigophora # []
+MH NEW = Eukaryota
+
+MH OLD = Sarcomastigophora Infections # []
+MH NEW = Protozoan Infections
+
+MH OLD = Selection (Genetics) []
+MH NEW = Selection, Genetic
+
+MH OLD = Selenoprotein R [P]
+MH NEW = Methionine Sulfoxide Reductases
+
+MH OLD = Site-Specific DNA Methyltransferase (Cytosine-Specific) [P]
+MH NEW = DNA-Cytosine Methylases
+
+MH OLD = Specialism [P]
+MH NEW = Specialization
+
+MH OLD = Specialties, Medical # [N]
+MH NEW = Medicine
+
+MH OLD = Spreading Cortical Depression [P]
+MH NEW = Cortical Spreading Depression
+
+MH OLD = Transistors []
+MH NEW = Transistors, Electronic
+
+MH OLD = Trichinosis [P]
+MH NEW = Trichinellosis
+
+MH OLD = Vasculitis, Allergic Cutaneous # [N]
+MH NEW = Vasculitis, Leukocytoclastic, Cutaneous
+
+MH OLD = Vasculitis, Hypersensitivity [P]
+MH NEW = Vasculitis, Leukocytoclastic, Cutaneous
+
+MH OLD = von Willebrand Disease [P]
+MH NEW = von Willebrand Diseases
+
+MH OLD = Zoomastigophora # []
+MH NEW = Eukaryota
