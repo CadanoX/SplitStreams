@@ -113,14 +113,14 @@ export default class SplitStreamInputData {
     if (fakeRootNeeded || this._opts.forceFakeRoot) {
       let prevT;
       for (let t in nodesWithoutParents) {
-        this.addNode(t, "fakeRoot");
+        this.addNode(t, 'fakeRoot');
         nodesWithoutParents[t].forEach(node => {
-          this.addParent(t, node.id, "fakeRoot");
-          this._timesteps[t].tree = this._timesteps[t].references["fakeRoot"];
+          this.addParent(t, node.id, 'fakeRoot');
+          this._timesteps[t].tree = this._timesteps[t].references['fakeRoot'];
         });
         // connect fake roots
         if (!!prevT) {
-          this.addNext(prevT, "fakeRoot", "fakeRoot");
+          this.addNext(prevT, 'fakeRoot', 'fakeRoot');
         }
         prevT = t;
       }

@@ -1,12 +1,7 @@
 import SplitStream from './SplitStream';
 import TransformData from './TransformData';
 
-import {
-  loadJSON,
-  getRandomColor,
-  saveSvg,
-  saveJson,
-} from './functions';
+import { loadJSON, getRandomColor, saveSvg, saveJson } from './functions';
 
 async function getData(tests) {
   tests.add = await (await fetch('./data/test_add.json')).json();
@@ -18,13 +13,15 @@ async function getData(tests) {
   tests.parentSwap = await (await fetch('./data/test_parentSwap.json')).json();
   tests.posChange = await (await fetch('./data/test_posChange.json')).json();
   tests.split = await (await fetch('./data/test_split.json')).json();
-  tests.valueChange = await (await fetch('./data/test_valueChange.json')).json();
-};
+  tests.valueChange = await (await fetch(
+    './data/test_valueChange.json'
+  )).json();
+}
 
 let tests = {};
 getData(tests).then(() => {
   const wrapper = document.querySelector('#app');
-  document.querySelector('#download').onclick = function () {
+  document.querySelector('#download').onclick = function() {
     let svgs = document.querySelectorAll('svg');
     for (let svg of svgs) saveSvg(svg, svg.parentNode.parentNode.id);
   };

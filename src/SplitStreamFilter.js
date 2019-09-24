@@ -1,5 +1,5 @@
-import { parse, stringify } from "flatted/esm";
-import SplitStreamInputData from "./SplitStreamInputData.js";
+import { parse, stringify } from 'flatted/esm';
+import SplitStreamInputData from './SplitStreamInputData.js';
 
 export default class SplitStreamFilter {
   // expects SplitStreamInputData.data as input
@@ -8,7 +8,7 @@ export default class SplitStreamFilter {
       ...options // overwrite default settings with user settings
     };
     if (!inputData instanceof SplitStreamInputData)
-      throw Exeption("Added data is not an instance of SplitStreamData");
+      throw Exeption('Added data is not an instance of SplitStreamData');
     this.__inputData = inputData;
     this._filteredData;
     this._lastMaxDepth = 0;
@@ -20,7 +20,8 @@ export default class SplitStreamFilter {
   }
 
   _reset() {
-    this._filteredData = parse(stringify(this.__inputData.data));
+    let json = stringify(this.__inputData.data);
+    this._filteredData = parse(json);
     this._filteredData.timesteps = this._filteredData.timesteps.filter(d => d);
     return this;
   }

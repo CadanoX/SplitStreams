@@ -183,7 +183,7 @@ export default class SplitStreamData {
   }
 
   _findClosestNode(stream, x) {
-    let traverseTime = function (node) {
+    let traverseTime = function(node) {
       let distance = Math.abs(node.x - x);
       if (distance < minDistance) {
         minDistance = distance;
@@ -602,16 +602,15 @@ export default class SplitStreamData {
 
     for (let stream of this._streamNodes) {
       d = new SvgPath();
+      // reset before new values are found by traverse
       lastTimepoint = 0;
       deepestDepth = 0;
 
       this._drawStart(d, stream);
       traverse(stream);
+      //d.close();
 
       // add splits
-
-      //d.close();
-      //console.log(d.get());
 
       let clipPath = new SvgPath();
       let splits = this._findSplits(stream.x - 0.5, lastTimepoint + 0.5);

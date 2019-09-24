@@ -67,9 +67,9 @@ module.exports = {
     ]
   },
   plugins: [
-    // new PrettierPlugin({
-    //   singleQuote: true
-    // }),
+    new PrettierPlugin({
+      singleQuote: true
+    }),
     new CopyWebpackPlugin([
       './*.html',
       { from: 'data', to: 'data' },

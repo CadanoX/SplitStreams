@@ -38,29 +38,34 @@ body {
   margin-top: 1rem;
 }
 
-.loader
-{
-	align-items: center;
-	background-color: black;
-	display: flex;
-	height: 100%;
-	justify-content: center;
-	opacity: 0.3;
-	position: absolute;
-	width: 100%;
-	z-index: 1;
+.controls select {
+  width: 148px;
 }
 
-.spinner
-{
-    border: solid #f3f3f3; /* Light grey */
-    border-top: solid #3498db; /* Blue */
-    border-radius: 50%;
-    animation: spin 2s linear infinite;
+.loader {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
-@keyframes spin
-{
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.spinner {
+  border: solid #f3f3f3; /* Light grey */
+  border-top: solid #3498db; /* Blue */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

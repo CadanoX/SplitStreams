@@ -6,12 +6,7 @@ import DataGenerator from './DataGenerator';
 import SplitStream from './SplitStream';
 import TransformData from './TransformData';
 
-import {
-  loadJSON,
-  getRandomColor,
-  saveSvg,
-  saveJson,
-} from './functions';
+import { loadJSON, getRandomColor, saveSvg, saveJson } from './functions';
 
 import 'vue-resize/dist/vue-resize.css';
 import '../css/style.css';
@@ -24,7 +19,7 @@ var secstream;
 
 const generator = new DataGenerator();
 
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', function(event) {
   let app = new Vue({
     el: '#app',
     data: {
@@ -83,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       maxValue: 1
     },
     watch: {
-      timesteps: function (val) {
+      timesteps: function(val) {
         generator.options({ timesteps: val });
         if (val == 1) {
           stream.proportion = 0.6;
@@ -95,47 +90,47 @@ document.addEventListener('DOMContentLoaded', function (event) {
         this.draw();
         this.applySplits(this.secstreamSplits);
       },
-      numStreams: function (val) {
+      numStreams: function(val) {
         generator.options({ numStreams: val });
         this.draw();
       },
-      maxDepth: function (val) {
+      maxDepth: function(val) {
         generator.options({ maxDepth: val });
         this.draw();
       },
-      maxChildren: function (val) {
+      maxChildren: function(val) {
         generator.options({ maxChildren: val });
         this.draw();
       },
-      numMerges: function (val) {
+      numMerges: function(val) {
         generator.options({ numMerges: val });
         this.draw();
       },
-      numSplits: function (val) {
+      numSplits: function(val) {
         generator.options({ numSplits: val });
         this.draw();
       },
-      numMoveAcross: function (val) {
+      numMoveAcross: function(val) {
         generator.options({ numMoveAcross: val });
         this.draw();
       },
-      numMoveAlong: function (val) {
+      numMoveAlong: function(val) {
         generator.options({ numMoveAlong: val });
         this.draw();
       },
-      numgenerators: function (val) {
+      numgenerators: function(val) {
         generator.options({ numStreams: val });
         this.draw();
       },
-      numAdds: function (val) {
+      numAdds: function(val) {
         generator.options({ numAdds: val });
         this.draw();
       },
-      numDeletes: function (val) {
+      numDeletes: function(val) {
         generator.options({ numDeletes: val });
         this.draw();
       },
-      maxValue: function (val) {
+      maxValue: function(val) {
         generator.options({ maxValue: val });
         treemap.yPadding = Number(this.maxValue);
         stream.yPadding = Number(this.maxValue);
@@ -143,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         this.draw();
       },
       color: {
-        handler: function (color) {
+        handler: function(color) {
           stream.colorRandom = false;
           treemap.colorRandom = false;
           secstream.colorRandom = false;
@@ -263,24 +258,24 @@ document.addEventListener('DOMContentLoaded', function (event) {
         },
         deep: true
       },
-      secstreamSplits: function (between) {
+      secstreamSplits: function(between) {
         this.applySplits(between);
       }
     },
     methods: {
-      applySplits: function (between) {
+      applySplits: function(between) {
         secstream.removeSplits();
         if (between) secstream.addSplitsBetweenTimepoints();
         else secstream.addSplitsAtTimepoints();
 
         secstream.update();
       },
-      applyColor: function (colorFunction) {
+      applyColor: function(colorFunction) {
         stream.color = colorFunction;
         treemap.color = colorFunction;
         secstream.color = colorFunction;
       },
-      generate: function () {
+      generate: function() {
         generator.options({
           timesteps: this.timesteps,
           numStreams: this.numStreams,
@@ -295,12 +290,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
         });
         this.draw();
       },
-      draw: function () {
+      draw: function() {
         generator.generate();
         // need individual objects
-        let data1 = TransformData['viscous'](JSON.parse(JSON.stringify(generator.get())));
-        let data2 = TransformData['viscous'](JSON.parse(JSON.stringify(generator.get())));
-        let data3 = TransformData['viscous'](JSON.parse(JSON.stringify(generator.get())));
+        let data1 = TransformData['viscous'](
+          JSON.parse(JSON.stringify(generator.get()))
+        );
+        let data2 = TransformData['viscous'](
+          JSON.parse(JSON.stringify(generator.get()))
+        );
+        let data3 = TransformData['viscous'](
+          JSON.parse(JSON.stringify(generator.get()))
+        );
 
         treemap.data(data1);
         treemap.addSplitsBetweenTimepoints();
@@ -311,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         secstream.data(data3);
         this.applySplits(this.secstreamSplits);
       },
-      download: function () {
+      download: function() {
         saveSvg(document.querySelector('#treemap > svg'), 'treemap');
         saveSvg(document.querySelector('#stream > svg'), 'stream');
         saveSvg(document.querySelector('#secstream > svg'), 'secstream');
