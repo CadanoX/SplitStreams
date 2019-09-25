@@ -41,14 +41,14 @@ const meshList = [
   { tree: 'mtrees2007.bin', changes: 'newmnchg2007.txt' },
   { tree: 'mtrees2008.bin', changes: 'newmnchg2008.txt' },
   { tree: 'mtrees2009.bin', changes: 'newmnchg2009.txt' },
-  { tree: 'mtrees2010.bin', changes: 'newmnchg2010.txt' }
-  // { tree: "mtrees2011.bin", changes: 'newmnchg2011.txt' },
-  // { tree: "mtrees2012.bin", changes: 'newmnchg2012.txt' },
-  // { tree: "mtrees2013.bin", changes: 'newmnchg2013.txt' },
-  // { tree: "mtrees2014.bin", changes: 'newmnchg2014.txt' },
-  // { tree: "mtrees2015.bin", changes: 'newmnchg2015.txt' },
-  // { tree: "mtrees2016.bin", changes: 'newmnchg2016.txt' },
-  // { tree: "mtrees2017.bin", changes: 'newmnchg2017.txt' },
+  { tree: 'mtrees2010.bin', changes: 'newmnchg2010.txt' },
+  { tree: 'mtrees2011.bin', changes: 'newmnchg2011.txt' },
+  { tree: 'mtrees2012.bin', changes: 'newmnchg2012.txt' },
+  { tree: 'mtrees2013.bin', changes: 'newmnchg2013.txt' },
+  { tree: 'mtrees2014.bin', changes: 'newmnchg2014.txt' },
+  { tree: 'mtrees2015.bin', changes: 'newmnchg2015.txt' },
+  { tree: 'mtrees2016.bin', changes: 'newmnchg2016.txt' },
+  { tree: 'mtrees2017.bin', changes: 'newmnchg2017.txt' }
   // { tree: "mtrees2018.bin", changes: 'newmnchg2018.txt' },
   // { tree: "mtrees2019.bin", changes: 'newmnchg2019.txt' }
 ];
