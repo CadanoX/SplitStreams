@@ -257,6 +257,7 @@ export default class SplitStream {
     // if node does not have a size, set it's size to the sum of the sizes of its children
     // if a node does not have a size and does not have children, give it size 1
 
+    // TODO: this padding interferes with positions
     let checkSizes = node => {
       if (!!node.children) {
         let aggregate = 0;
@@ -264,12 +265,27 @@ export default class SplitStream {
           checkSizes(child);
           aggregate += child.size;
         }
-        let dataSize = node.dataSize + this._opts.yPadding;
-        if (aggregate > dataSize || this._opts.unifySize)
-          node.size = aggregate + this._opts.yPadding;
-        else node.size = dataSize;
+        let padding = this._opts.yPadding * (node.children.length + 1);
+        if (aggregate > node.dataSize || this._opts.unifySize)
+          node.size = aggregate + padding;
+        else node.size = node.dataSize + padding;
       } else node.size = this._opts.unifySize ? 1 : node.dataSize;
     };
+
+    // TODO: This version is better with positions but doesn't work properly in general
+    // let checkSizes = node => {
+    //   if (!!node.children) {
+    //     let aggregate = 0;
+    //     for (let child of node.children) {
+    //       checkSizes(child);
+    //       aggregate += child.size;
+    //     }
+    //     let dataSize = node.dataSize + this._opts.yPadding;
+    //     if (aggregate > dataSize || this._opts.unifySize)
+    //       node.size = aggregate + this._opts.yPadding;
+    //     else node.size = dataSize;
+    //   } else node.size = this._opts.unifySize ? 1 : node.dataSize;
+    // };
 
     // positions must be unified, if sizes are unified
     let checkPositions = (node, pos = 0) => {

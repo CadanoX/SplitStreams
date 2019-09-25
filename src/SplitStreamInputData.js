@@ -69,6 +69,7 @@ export default class SplitStreamInputData {
     if (!nextNode);
     else {
       // console.log(`Error 'addNext': Next node  '${nextId}' does not exist.`);
+      console.log(`Change timestep ${t}: ${id} to ${nextId}`);
       if (!node.next) node.next = [];
       node.next.push(nextNode);
       if (!nextNode.prev) nextNode.prev = [];

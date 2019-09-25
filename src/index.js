@@ -29,6 +29,7 @@ var wrapper;
 var datasets = {};
 const datasetList = require('../_datasets.json');
 
+var mesh;
 const meshList = [
   // { tree: "mtrees1997.bin", changes: 'newmnchg1997.txt' },
   // { tree: "mtrees1998.bin", changes: 'newmnchg1998.txt' },
@@ -53,6 +54,13 @@ const meshList = [
   // { tree: "mtrees2019.bin", changes: 'newmnchg2019.txt' }
 ];
 
+function loadMeSH(branch) {
+  mesh.transformToTree(branch);
+  mesh.applyChanges();
+  mesh.done();
+  datasets['MeSH'] = new SplitStreamFilter(mesh.data);
+}
+
 async function loadDataset(name) {
   if (datasets[name]) return true;
 
@@ -69,22 +77,21 @@ async function loadDataset(name) {
     data = ont.data;
   } else if (entry.format == 'MeSH') {
     // load data
-    let mesh = new LoaderMeSH();
+    mesh = new LoaderMeSH();
     for (let meshEntry of meshList) {
       await mesh.loadFile('/data/MeSH/trees/' + meshEntry.tree);
     }
-    mesh.transformToTree();
     // load changes
-    for (let i = 0; i < meshList.length; i++) {
-      if (i === 0) continue;
+    // each file defines changes from the previous to the current timestep
+    // Splitstream defines changes from the current to the next timestep
+    for (let i = 1; i < meshList.length; i++) {
+      // ignore first timestep
       await mesh.loadFileChanges(
         '/data/MeSH/changes/' + meshList[i].changes,
         i
       );
     }
-    mesh.done();
-    data = mesh.data;
-    datasets[name] = data; //new SplitStreamFilter(data);
+    loadMeSH(0);
     return true;
   } else {
     try {
@@ -130,7 +137,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       zoomTime: 1,
       limitDepth: false,
       depthLimit: 2,
-      selectBranch: false,
+      selectBranch: true,
       branchSelected: 0,
       unifySize: false,
       unifyPosition: false,
@@ -268,8 +275,8 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         let data;
         if (datasets[this.dataset.value] instanceof SplitStreamFilter) {
           data = datasets[this.dataset.value]._reset();
-          if (this.selectBranch)
-            datasets[this.dataset.value].branch(this.branchSelected);
+          // if (this.selectBranch)
+          //   datasets[this.dataset.value].branch(this.branchSelected);
           if (this.limitDepth)
             data = datasets[this.dataset.value].maxDepth(this.depthLimit);
         } else data = datasets[this.dataset.value];
@@ -333,6 +340,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         this.render();
       },
       branchSelected() {
+        loadMeSH(this.branchSelected);
         this.render();
       },
       unifySize() {

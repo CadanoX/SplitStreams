@@ -14,7 +14,7 @@ module.exports = {
     contentBase: './dist',
     hot: true
   },
-  devtool: "source-map",
+  devtool: "eval-source-map",
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
