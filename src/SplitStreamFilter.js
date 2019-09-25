@@ -61,5 +61,5 @@ export default class SplitStreamFilter {
     return this;
   }
 
-  select(nodeId) { }
+  select(nodeId) {}
 }
