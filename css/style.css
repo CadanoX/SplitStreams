@@ -42,6 +42,12 @@ body {
   width: 148px;
 }
 
+.tooltip {
+  position: absolute;
+  background-color: white;
+  margin: 0px 5px 0px 5px;
+}
+
 .loader {
   align-items: center;
   background-color: black;

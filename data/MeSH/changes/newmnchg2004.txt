@@ -1,20 +1,18 @@
 1,2-Dipalmitoylphosphatidylcholine;D10.516.570.755.375.760.400.800.224 D10.570.755.375.760.400.800.224;
 1,4-alpha-Glucan Branching Enzyme;D8.586.913.400.450.460.100;D8.811.913.400.450.460.100
-1,4-alpha-Glucan Branching Enzyme;;1-Acylglycerophosphocholine O-Acyltransferase
-1,4-alpha-Glucan Branching Enzyme;D8.586.913.50.175;D8.811.913.50.175
+1-Acylglycerophosphocholine O-Acyltransferase;D8.586.913.50.175;D8.811.913.50.175
 1-Butanol;D10.516.289.110.175;D10.289.110.175
 1-Octanol;D10.516.289.600.610;D10.289.600.610
 1-Phosphatidylinositol 3-Kinase;D8.586.913.696.620.525;D8.811.913.696.620.525
 1-Phosphatidylinositol 4-Kinase;D8.586.913.696.620.550;D8.811.913.696.620.550
 11-Hydroxycorticosteroids;D6.472.40.322.478.353;D6.472.40.585.353
 11-Hydroxycorticosteroids;D6.472.40.668.478.561;
-11-Hydroxycorticosteroids;;12-Hydroxy-5,8,10,14-eicosatetraenoic Acid
-11-Hydroxycorticosteroids;D10.516.251.355.96.450.425;D10.251.355.96.450.425
-11-Hydroxycorticosteroids;D10.516.251.355.255.100.300.425;D10.251.355.255.100.300.425
-11-Hydroxycorticosteroids;D10.516.251.355.255.550.25.200;D10.251.355.255.100.637.25.650.500.500
-11-Hydroxycorticosteroids;D17.350.50.175.725.720.200;D10.251.355.255.550.25.650.500.500
-11-Hydroxycorticosteroids;;D17.350.50.175.725.720.720.500.500
-11-Hydroxycorticosteroids;;D17.350.700.630.500
+12-Hydroxy-5,8,10,14-eicosatetraenoic Acid;D10.516.251.355.96.450.425;D10.251.355.96.450.425
+12-Hydroxy-5,8,10,14-eicosatetraenoic Acid;D10.516.251.355.255.100.300.425;D10.251.355.255.100.300.425
+15-Hydroxy-11 alpha,9 alpha-(epoxymethano)prosta-5,13-dienoic Acid;D10.516.251.355.255.550.25.200;D10.251.355.255.100.637.25.650.500.500
+15-Hydroxy-11 alpha,9 alpha-(epoxymethano)prosta-5,13-dienoic Acid;D17.350.50.175.725.720.200;D10.251.355.255.550.25.650.500.500
+15-Hydroxy-11 alpha,9 alpha-(epoxymethano)prosta-5,13-dienoic Acid;;D17.350.50.175.725.720.720.500.500
+15-Hydroxy-11 alpha,9 alpha-(epoxymethano)prosta-5,13-dienoic Acid;;D17.350.700.630.500
 15-Oxoprostaglandin 13-Reductase;D8.586.682.680;D8.811.682.675.100
 16,16-Dimethylprostaglandin E2;D10.516.251.355.255.550.700.450.300 D10.251.355.255.550.700.450.300;
 17-Hydroxycorticosteroids;D6.472.40.322.478.478;D6.472.40.585.478
@@ -23,27 +21,23 @@
 18-Hydroxycorticosterone;D6.472.40.322.478.353.500;D6.472.40.585.353.500
 18-Hydroxycorticosterone;D6.472.40.668.478.561.550;
 18-Hydroxydesoxycorticosterone;D6.472.40.668.478.298.400;D6.472.40.585.611.400
-18-Hydroxydesoxycorticosterone;;2',3'-Cyclic-Nucleotide Phosphodiesterases
-18-Hydroxydesoxycorticosterone;D8.586.277.352.640.160;D8.811.277.352.640.160
+2',3'-Cyclic-Nucleotide Phosphodiesterases;D8.586.277.352.640.160;D8.811.277.352.640.160
 2',5'-Oligoadenylate Synthetase;D8.586.913.696.445.625;D8.811.913.696.445.625
 2-Acetolactate Mutase;D8.586.399.520.100;D8.811.399.520.100
-2-Acetolactate Mutase;;2-Dehydro-3-Deoxyphosphoheptonate Aldolase
-2-Acetolactate Mutase;D8.586.520.224.62.250;D8.811.520.224.62.250
+2-Dehydro-3-Deoxyphosphoheptonate Aldolase;D8.586.520.224.62.250;D8.811.520.224.62.250
 2-Isopropylmalate Synthase;D8.586.520.224.600.800;D8.811.520.224.600.800
 20-Hydroxysteroid Dehydrogenases;D8.586.682.47.436.400;D8.811.682.47.436.400
 24,25-Dihydroxyvitamin D 3;D10.516.570.938.146.478.387.400;D10.570.938.146.478.387.400
 25-Hydroxyvitamin D 2;D10.516.570.938.439.500;D10.570.938.439.500
-25-Hydroxyvitamin D 2;;25-Hydroxyvitamin D3 1-alpha-Hydroxylase
-25-Hydroxyvitamin D 2;D8.262.453.915.400;D8.244.453.915.400
-25-Hydroxyvitamin D 2;D8.586.682.580.170.915.400;D8.811.682.580.170.915.400
-25-Hydroxyvitamin D 2;D8.586.682.580.783.400;D8.811.682.580.783.400
+25-Hydroxyvitamin D3 1-alpha-Hydroxylase;D8.262.453.915.400;D8.244.453.915.400
+25-Hydroxyvitamin D3 1-alpha-Hydroxylase;D8.586.682.580.170.915.400;D8.811.682.580.170.915.400
+25-Hydroxyvitamin D3 1-alpha-Hydroxylase;D8.586.682.580.783.400;D8.811.682.580.783.400
 3',5'-Cyclic-GMP Phosphodiesterase;D8.586.277.352.640.125;D8.811.277.352.640.125
-3',5'-Cyclic-GMP Phosphodiesterase;;3',5'-Cyclic-Nucleotide Phosphodiesterase
-3',5'-Cyclic-GMP Phosphodiesterase;D8.586.277.352.640.150;D8.811.277.352.640.150
+3',5'-Cyclic-Nucleotide Phosphodiesterase;D8.586.277.352.640.150;D8.811.277.352.640.150
 3-Hydroxyacyl CoA Dehydrogenases;D8.586.682.47.385;D8.811.682.47.385
 3-Hydroxybutyric Acid;D10.516.251.400.241.400;D10.251.400.241.400
 3-Hydroxysteroid Dehydrogenases;D8.586.682.47.436.350;D8.811.682.47.436.350
-3-Hydroxysteroid Dehydrogenases;D8.586.913.50.575;D8.811.913.50.575
+3-Oxoacyl-(Acyl-Carrier-Protein) Synthase;D8.586.913.50.575;D8.811.913.50.575
 4-Aminobutyrate Transaminase;D8.586.913.477.700.200;D8.811.913.477.700.200
 4-Hydroxybenzoate-3-Monooxygenase;D8.586.682.580.425;D8.811.682.580.425
 4-Hydroxyphenylpyruvate Dioxygenase;D8.586.682.690.400;D8.811.682.690.400
@@ -55,8 +49,7 @@
 5,8,11,14,17-Eicosapentaenoic Acid;;D10.627.430.450.390
 5,8,11,14-Eicosatetraynoic Acid;D10.516.251.355.255.49;D10.251.355.255.49
 5-Aminolevulinate Synthetase;D8.586.913.50.276;D8.811.913.50.276
-5-Aminolevulinate Synthetase;;5-Methyltetrahydrofolate-Homocysteine S-Methyltransferase
-5-Aminolevulinate Synthetase;D8.586.913.555.500.600;D8.811.913.555.500.600
+5-Methyltetrahydrofolate-Homocysteine S-Methyltransferase;D8.586.913.555.500.600;D8.811.913.555.500.600
 6-Ketoprostaglandin F1 alpha;D10.516.251.355.255.550.400.350;D10.251.355.255.100.637.400.350
 6-Ketoprostaglandin F1 alpha;D10.516.251.355.325.450;D10.251.355.255.550.400.350
 6-Ketoprostaglandin F1 alpha;;D10.251.355.325.450
@@ -296,6 +289,7 @@ Amidine-Lyases;D8.586.520.232.300;D8.811.520.232.300
 Amidinotransferases;D8.586.913.555.150;D8.811.913.555.150
 Amidohydrolases;D8.586.277.87;D8.811.277.87
 Amidophosphoribosyltransferase;D8.586.913.400.725.130;D8.811.913.400.725.130
+Amine Oxidase (Copper-Containing);D8.586.682.135.75;D8.811.682.135.75
 Amine Oxidoreductases;D8.586.682.107;D8.811.682.107
 Amino Acid Isomerases;D8.586.399.894.200;D8.811.399.894.200
 Amino Acid Naphthylamidases;D8.586.277.656.350.100.150;D8.811.277.656.350.100.150
@@ -312,10 +306,9 @@ Amoebida;B1.841.750.656.475.100;B1.500.841.750.656.475.100
 Amoxicillin;D2.65.589.750.750.50.50;D2.65.589.875.750.50.50
 Amoxicillin;D3.438.260.650.750.50.50;D3.438.260.825.750.50.50
 Amoxicillin;D3.605.84.725.725.50.50;D3.605.84.737.750.50.50
-Amoxicillin;;Amoxicillin-Potassium Clavulanate Combination
-Amoxicillin;D2.65.589.750.750.50.50.60;D2.65.589.875.750.50.50.60
-Amoxicillin;D3.438.260.650.750.50.50.60;D3.438.260.825.750.50.50.60
-Amoxicillin;D3.605.84.725.725.50.50.60;D3.605.84.737.750.50.50.60
+Amoxicillin-Potassium Clavulanate Combination;D2.65.589.750.750.50.50.60;D2.65.589.875.750.50.50.60
+Amoxicillin-Potassium Clavulanate Combination;D3.438.260.650.750.50.50.60;D3.438.260.825.750.50.50.60
+Amoxicillin-Potassium Clavulanate Combination;D3.605.84.725.725.50.50.60;D3.605.84.737.750.50.50.60
 AMP Deaminase;D8.586.277.151.653.60;D8.811.277.151.653.60
 Amphibia;B2.90;B1.150.900.90
 Amphibian Venoms;;D20.888.33
@@ -385,9 +378,8 @@ Angiostrongylus cantonensis;B1.500.294.700.775.588.80.225;B1.500.500.294.700.775
 Angiotensin I;;D12.644.400.70.75
 Angiotensin II;;D12.644.400.70.78
 Angiotensin III;;D12.644.400.70.80
-Angiotensin III;;Angiotensin-Converting Enzyme Inhibitors
-Angiotensin III;D8.373.745.85;D27.505.519.389.745.85
-Angiotensin III;D27.505.373.745.85;
+Angiotensin-Converting Enzyme Inhibitors;D8.373.745.85;D27.505.519.389.745.85
+Angiotensin-Converting Enzyme Inhibitors;D27.505.373.745.85;
 Angiotensins;;D12.644.400.70
 Anguilla;B2.493.338.282;B1.150.900.493.338.282
 Aniline Hydroxylase;D8.262.453.40.50;D8.244.453.40.50
@@ -444,8 +436,7 @@ Anthranilate Phosphoribosyltransferase;D8.586.913.400.725.160;D8.811.913.400.725
 Anthranilate Synthase;D8.586.520.224.600.200;D8.811.520.224.600.200
 Anthranilate Synthase;D8.586.600.85;D8.811.600.85
 Anti-Allergic Agents;D27.505.97.30;D27.505.954.33.30
-Anti-Allergic Agents;;Anti-Allergic and Respiratory System Agents
-Anti-Allergic Agents;D27.505.97;D27.505.954.33
+Anti-Allergic and Respiratory System Agents;D27.505.97;D27.505.954.33
 Anti-Anxiety Agents;D27.505.270.210.950.15;D27.505.696.277.950.15
 Anti-Anxiety Agents;D27.505.270.700.872.15;D27.505.954.427.210.950.15
 Anti-Anxiety Agents;;D27.505.954.427.700.872.15
@@ -461,11 +452,9 @@ Anti-Infective Agents, Urinary;D20.237;D27.505.954.122.237
 Anti-Infective Agents, Urinary;D27.505.102.237;D27.505.954.522.770.56
 Anti-Infective Agents, Urinary;D27.505.435.770.56;
 Anti-Inflammatory Agents;D27.505.104.25;D27.505.954.194.25
-Anti-Inflammatory Agents;;Anti-Inflammatory Agents, Antirheumatic Agents, and Inflammation Mediators
-Anti-Inflammatory Agents;D27.505.104;D27.505.954.194
-Anti-Inflammatory Agents;;Anti-Inflammatory Agents, Non-Steroidal
-Anti-Inflammatory Agents;D27.505.104.25.30;D27.505.954.194.25.30
-Anti-Inflammatory Agents;D27.505.104.50.30;D27.505.954.194.50.30
+Anti-Inflammatory Agents, Antirheumatic Agents, and Inflammation Mediators;D27.505.104;D27.505.954.194
+Anti-Inflammatory Agents, Non-Steroidal;D27.505.104.25.30;D27.505.954.194.25.30
+Anti-Inflammatory Agents, Non-Steroidal;D27.505.104.50.30;D27.505.954.194.50.30
 Anti-Obesity Agents;D27.505.270.140;D27.505.954.427.140
 Anti-Ulcer Agents;D27.505.435.316.203;D27.505.954.522.316.203
 Antibiotics;D20.85;D27.505.954.122.85
@@ -495,8 +484,7 @@ Anticholesteremic Agents;D27.505.519.162.202;D27.505.954.230.202
 Anticoagulants;D27.505.435.461.119;D27.505.954.522.461.119
 Anticonvulsants;D27.505.270.80;D27.505.954.427.80
 Antidepressive Agents;D27.505.270.700.122;D27.505.954.427.700.122
-Antidepressive Agents;;Antidepressive Agents, Second-Generation
-Antidepressive Agents;D27.505.270.700.122.50;D27.505.954.427.700.122.50
+Antidepressive Agents, Second-Generation;D27.505.270.700.122.50;D27.505.954.427.700.122.50
 Antidepressive Agents, Tricyclic;D27.505.270.700.122.55;D27.505.954.427.700.122.55
 Antidiarrheals;D27.505.435.316.161;D27.505.954.522.316.161
 Antidotes;D26.684.37;D27.505.696.706.37
@@ -549,8 +537,7 @@ Antineoplastic Agents, Alkylating;D27.505.90.35;D27.505.954.266.204.150
 Antineoplastic Agents, Alkylating;D27.505.130.204.150;D27.888.569.35.35
 Antineoplastic Agents, Hormonal;D27.505.130.204.169;D27.505.954.266.204.169
 Antineoplastic Agents, Phytogenic;D27.505.130.204.179;D27.505.954.266.204.179
-Antineoplastic Agents, Phytogenic;;Antineoplastic and Immunosuppressive Agents
-Antineoplastic Agents, Phytogenic;D27.505.130;D27.505.954.266
+Antineoplastic and Immunosuppressive Agents;D27.505.130;D27.505.954.266
 Antioxidants;D26.684.47;D27.505.696.706.125
 Antioxidants;D27.505.707.125;D27.720.799.47
 Antiparasitic Agents;D20.250;D27.505.954.122.250
@@ -566,6 +553,7 @@ Antipsychotic Agents;D27.505.270.700.872.331;D27.505.954.427.210.950.40
 Antipsychotic Agents;;D27.505.954.427.700.872.331
 Antirheumatic Agents;D27.505.104.50;D27.505.954.194.50
 Antirheumatic Agents, Gold;D27.505.104.50.50;D27.505.954.194.50.50
+Antisense Elements (Genetics);D26.600.530.600.150;D27.720.470.530.600.150
 Antisickling Agents;D27.505.435.461.135;D27.505.954.522.461.135
 Antispermatogenic Agents;D27.505.730.360.443.68;D27.505.696.138
 Antispermatogenic Agents;;D27.505.696.875.360.443.68
@@ -669,10 +657,8 @@ Asian Americans;I1.880.143.522.50;
 Asian Americans;M1.194.50;
 Asparaginase;D8.586.277.87.116;D8.811.277.87.116
 Aspartame;D26.456.609.190;
-Aspartame;;Aspartate Aminotransferase, Cytoplasmic
-Aspartame;D8.586.913.477.700.225.249;D8.811.913.477.700.225.249
-Aspartame;;Aspartate Aminotransferase, Mitochondrial
-Aspartame;D8.586.913.477.700.225.500;D8.811.913.477.700.225.500
+Aspartate Aminotransferase, Cytoplasmic;D8.586.913.477.700.225.249;D8.811.913.477.700.225.249
+Aspartate Aminotransferase, Mitochondrial;D8.586.913.477.700.225.500;D8.811.913.477.700.225.500
 Aspartate Aminotransferases;D8.586.913.477.700.225;D8.811.913.477.700.225
 Aspartate Ammonia-Lyase;D8.586.520.232.400.200;D8.811.520.232.400.200
 Aspartate Carbamoyltransferase;D8.586.600.116;D8.811.600.116
@@ -701,6 +687,7 @@ Aspiration;G9.772.521.700.145;G9.772.770.755.700.390
 Astacoidea;B1.131.365.190.70;B1.500.131.365.190.70
 Astringents;D27.505.325.100;D27.505.696.207
 Astringents;;D27.505.954.444.100
+ATP Citrate (pro-S)-Lyase;D8.586.520.224.600.300;D8.811.520.224.600.300
 ATP Phosphoribosyltransferase;D8.586.913.400.725.200;D8.811.913.400.725.200
 ATP Synthetase Complexes;D8.586.913.696.650.150;D8.811.913.696.650.150
 Atracurium;D3.438.531.70;D3.438.531.85.61
@@ -785,8 +772,7 @@ beta-Galactosidase;D8.586.277.450.410.100;D8.811.277.450.410.100
 beta-Glucosidase;D8.586.277.450.420.100;D8.811.277.450.420.200.100
 beta-Lactamases;D8.586.277.87.180;D8.811.277.87.180
 beta-MSH;;D12.644.400.460.75
-beta-MSH;;beta-N-Acetylglucosaminylglycopeptide beta-1,4-Galactosyltransferase
-beta-MSH;D8.586.913.400.450.400.450;D8.811.913.400.450.400.450
+beta-N-Acetylglucosaminylglycopeptide beta-1,4-Galactosyltransferase;D8.586.913.400.450.400.450;D8.811.913.400.450.400.450
 beta-N-Acetylhexosaminidase;D8.586.277.450.483.180;D8.811.277.450.483.180
 Bicuculline;D3.438.531.100;D3.438.531.85.77
 Bicuspid;A14.254.860.150;A14.549.167.860.150
@@ -957,7 +943,9 @@ Butyric Acid;D10.516.251.400.241.140;D10.251.400.241.140
 Butyric Acids;D10.516.251.400.241;D10.251.400.241
 Butyrylcholinesterase;D8.586.277.352.100.170.250;D8.811.277.352.100.170.250
 C-Peptide;D12.644.100;
-C-Peptide;D8.586.913.696.620.682.700.125;D8.811.913.696.620.682.700.125
+Ca(2+) Mg(2+)-ATPase;D8.586.277.40.25.95;D8.811.277.40.25.95
+Ca(2+)-Calmodulin Dependent Protein Kinase;D8.586.913.696.620.682.700.125;D8.811.913.696.620.682.700.125
+Ca(2+)-Transporting ATPase;D8.586.277.40.25.125;D8.811.277.40.25.125
 CA-19-9 Antigen;;D24.611.216.301.290.544.119
 Caco-2 Cells;A11.251.210.770.220;A11.251.210.190.160
 Caco-2 Cells;;A11.251.860.180.160
@@ -1010,7 +998,8 @@ Caproates;D10.516.251.400.326;D10.251.400.326
 Caprylates;D10.516.251.122;D10.251.122
 Capsaicin;D10.516.251.355.325.190;D10.251.355.325.190
 Capsules;D26.664.255.150;D26.255.150
-Capsules;D8.586.464.259.400.300;D8.811.464.259.400.300
+Carbamoyl-Phosphate Synthase (Ammonia);D8.586.464.259.350;D8.811.464.259.350
+Carbamoyl-Phosphate Synthase (Glutamine-Hydrolyzing);D8.586.464.259.400.300;D8.811.464.259.400.300
 Carbapenems;D20.85.99.120;
 Carbenicillin;D2.65.589.750.750.170;D2.65.589.875.750.170
 Carbenicillin;D3.438.260.650.750.170;D3.438.260.825.750.170
@@ -1022,8 +1011,7 @@ Carbon-Carbon Double Bond Isomerases;D8.586.399.475.400;D8.811.399.475.400
 Carbon-Carbon Ligases;D8.586.464.257;D8.811.464.257
 Carbon-Carbon Lyases;D8.586.520.224;D8.811.520.224
 Carbon-Nitrogen Ligases;D8.586.464.259;D8.811.464.259
-Carbon-Nitrogen Ligases;;Carbon-Nitrogen Ligases with Glutamine as Amide-N-Donor
-Carbon-Nitrogen Ligases;D8.586.464.259.400;D8.811.464.259.400
+Carbon-Nitrogen Ligases with Glutamine as Amide-N-Donor;D8.586.464.259.400;D8.811.464.259.400
 Carbon-Nitrogen Lyases;D8.586.520.232;D8.811.520.232
 Carbon-Oxygen Ligases;D8.586.464.263;D8.811.464.263
 Carbon-Oxygen Lyases;D8.586.520.241;D8.811.520.241
@@ -1133,10 +1121,8 @@ CDC28 Protein Kinase;D8.586.913.696.620.682.700.200.135;D8.811.913.696.620.682.7
 CDC28 Protein Kinase;D12.776.167.200.135;D12.776.167.200.67.500
 CDC28 Protein Kinase;;D12.776.354.750.124
 cdc42 GTP-Binding Protein;D8.586.277.40.330.300.400.700.50;D8.811.277.40.330.300.400.700.50
-cdc42 GTP-Binding Protein;;cdc42 GTP-Binding Protein, Saccharomyces cerevisiae
-cdc42 GTP-Binding Protein;D8.586.277.40.330.300.400.700.60;D8.811.277.40.330.300.400.700.60
-cdc42 GTP-Binding Protein;;CDPdiacylglycerol-Serine O-Phosphatidyltransferase
-cdc42 GTP-Binding Protein;D8.586.913.696.900.150;D8.811.913.696.900.150
+cdc42 GTP-Binding Protein, Saccharomyces cerevisiae;D8.586.277.40.330.300.400.700.60;D8.811.277.40.330.300.400.700.60
+CDPdiacylglycerol-Serine O-Phosphatidyltransferase;D8.586.913.696.900.150;D8.811.913.696.900.150
 Cebidae;B2.649.801.400.120;B1.150.900.649.801.400.120
 Cebinae;B2.649.801.400.120.120;B1.150.900.649.801.400.120.120
 Cebus;B2.649.801.400.120.120.120;B1.150.900.649.801.400.120.120.120
@@ -1222,9 +1208,8 @@ Chlorophyllides;;D3.383.757.840.374.180
 Chlorophyllides;;D3.383.757.840.500.640.220.180
 Chlorophyllides;;D3.549.909.374.180
 Chlorophyllides;;D3.549.909.500.640.220.180
-Chlorophyllides;;Chloroplast Proton-Translocating ATPases
-Chlorophyllides;D8.586.277.40.25.325.500;D8.811.277.40.25.325.500
-Chlorophyllides;D8.586.913.696.650.150.500.500;D8.811.913.696.650.150.500.500
+Chloroplast Proton-Translocating ATPases;D8.586.277.40.25.325.500;D8.811.277.40.25.325.500
+Chloroplast Proton-Translocating ATPases;D8.586.913.696.650.150.500.500;D8.811.913.696.650.150.500.500
 Chloroplasts;A11.284.195.190.875.700.140;A11.284.430.214.190.875.700.140
 Chlortetracycline;D4.615.638.638.900.146;
 CHO Cells;;A11.436.155
@@ -1283,8 +1268,7 @@ Chondroitinsulfatases;D8.586.277.352.827.180.175;D8.811.277.352.827.180.175
 Chordata, Nonvertebrate;B1.272;B1.150.200
 Chordata, Nonvertebrate;;B1.500.272
 Chorionic Gonadotropin;D6.472.785.400;
-Chorionic Gonadotropin;;Chorionic Gonadotropin, beta Subunit, Human
-Chorionic Gonadotropin;D6.472.785.400.125;
+Chorionic Gonadotropin, beta Subunit, Human;D6.472.785.400.125;
 Chorismate Mutase;D8.586.399.520.250;D8.811.399.520.250
 Chromaffin Granules;A11.284.195.190.500.207;A11.284.430.214.190.500.207
 Chromaffin Granules;A11.284.195.190.875.190.190.207;A11.284.430.214.190.875.190.190.207
@@ -1307,8 +1291,7 @@ Chromosomes, Artificial;D13.444.308.460.320.165;G14.337.249
 Chromosomes, Artificial, Bacterial;D13.444.308.460.320.165.170;G14.337.249.170
 Chromosomes, Artificial, Human;D13.444.308.460.320.165.190.117;G14.337.249.190.117
 Chromosomes, Artificial, Mammalian;D13.444.308.460.320.165.190;G14.337.249.190
-Chromosomes, Artificial, Mammalian;;Chromosomes, Artificial, P1 Bacteriophage
-Chromosomes, Artificial, Mammalian;D13.444.308.460.320.165.195;G14.337.249.195
+Chromosomes, Artificial, P1 Bacteriophage;D13.444.308.460.320.165.195;G14.337.249.195
 Chromosomes, Artificial, Yeast;D13.444.308.460.320.165.200;G14.337.249.200
 Chrysosporium;B5.354.381.170;B5.381.170
 Chyle;A12.207.630.350;A12.207.270.606.350
@@ -1327,6 +1310,7 @@ Cimicidae;B1.131.617.412.420.150;B1.500.131.617.412.420.150
 Ciona intestinalis;B1.272.727.300;B1.150.200.727.300
 Ciona intestinalis;;B1.500.272.727.300
 cis-trans-Isomerases;D8.586.399.325;D8.811.399.325
+Citrate (si)-Synthase;D8.586.520.224.600.400;D8.811.520.224.600.400
 Cladocera;B1.131.365.150;B1.500.131.365.150
 Cladosporium;B5.354.381.200;B5.381.200
 Clams;B1.644.173;B1.500.644.173
@@ -1432,10 +1416,9 @@ Color Perception;G11.697.911.860.231;G11.697.716.877.231
 Colorectal Neoplasms;C6.240.476.411.307;C6.301.371.411.307
 Colorectal Neoplasms;C6.405.282.411.307;C6.405.249.411.307
 Colorectal Neoplasms;C6.405.469.505.307;C6.405.469.491.307
-Colorectal Neoplasms;;Colorectal Neoplasms, Hereditary Nonpolyposis
-Colorectal Neoplasms;C6.240.476.411.307.190;C6.301.371.411.307.190
-Colorectal Neoplasms;C6.405.282.411.307.190;C6.405.249.411.307.190
-Colorectal Neoplasms;C6.405.469.505.307.190;C6.405.469.491.307.190
+Colorectal Neoplasms, Hereditary Nonpolyposis;C6.240.476.411.307.190;C6.301.371.411.307.190
+Colorectal Neoplasms, Hereditary Nonpolyposis;C6.405.282.411.307.190;C6.405.249.411.307.190
+Colorectal Neoplasms, Hereditary Nonpolyposis;C6.405.469.505.307.190;C6.405.469.491.307.190
 Colubridae;B2.833.672.280;B1.150.900.833.672.280
 Comamonas;B3.440.400.425.295;B3.440.400.425.292.150
 Comamonas;B3.660.75.105;B3.660.75.102.150
@@ -1592,8 +1575,7 @@ Cyclacillin;D3.605.84.725.125;D3.605.84.737.249
 Cyclamates;D26.456.609.204;
 Cyclic AMP-Dependent Protein Kinases;D8.586.913.696.620.682.700.150.125;D8.811.913.696.620.682.700.150.125
 Cyclic GMP-Dependent Protein Kinases;D8.586.913.696.620.682.700.150.150;D8.811.913.696.620.682.700.150.150
-Cyclic GMP-Dependent Protein Kinases;;Cyclic Nucleotide-Regulated Protein Kinases
-Cyclic GMP-Dependent Protein Kinases;D8.586.913.696.620.682.700.150;D8.811.913.696.620.682.700.150
+Cyclic Nucleotide-Regulated Protein Kinases;D8.586.913.696.620.682.700.150;D8.811.913.696.620.682.700.150
 Cyclin-Dependent Kinases;D8.586.913.696.620.682.700.200;D8.811.913.696.620.682.700.200
 Cyclin-Dependent Kinases;D8.586.913.696.620.682.700.646.500;D8.811.913.696.620.682.700.646.500
 Cyclooxygenase Inhibitors;D8.373.310;D27.505.519.389.310
@@ -1666,6 +1648,7 @@ Dark Adaptation;G11.697.154.371;G11.697.716.154.371
 DCMP Deaminase;D8.586.277.151.653.200;D8.811.277.151.653.200
 Decanoates;D10.516.251.175.200;D10.251.175.200
 Decanoic Acids;D10.516.251.175;D10.251.175
+Decapoda (Crustacea);B1.131.365.190;B1.500.131.365.190
 Deer;B2.649.77.380.373;B1.150.900.649.77.380.373
 Deficiency Diseases;C18.654.223;C18.654.521.500
 Defoliants, Chemical;D5.723.366.181;D27.888.723.366.181
@@ -1713,18 +1696,15 @@ Deoxyribonuclease HpaII;D8.586.277.352.335.350.300.260.300;D8.811.277.352.335.35
 Deoxyribonuclease HpaII;D8.586.277.352.355.325.300.260.300;D8.811.277.352.355.325.300.260.300
 Deoxyribonuclease I;D8.586.277.352.335.350.250;D8.811.277.352.335.350.250
 Deoxyribonucleases;D8.586.277.352.335;D8.811.277.352.335
-Deoxyribonucleases;;Deoxyribonucleases, Type I Site-Specific
-Deoxyribonucleases;D8.586.150.280.250;D8.811.150.280.250
-Deoxyribonucleases;D8.586.277.352.335.350.300.250;D8.811.277.352.335.350.300.250
-Deoxyribonucleases;D8.586.277.352.355.325.300.250;D8.811.277.352.355.325.300.250
-Deoxyribonucleases;;Deoxyribonucleases, Type II Site-Specific
-Deoxyribonucleases;D8.586.150.280.260;D8.811.150.280.260
-Deoxyribonucleases;D8.586.277.352.335.350.300.260;D8.811.277.352.335.350.300.260
-Deoxyribonucleases;D8.586.277.352.355.325.300.260;D8.811.277.352.355.325.300.260
-Deoxyribonucleases;;Deoxyribonucleases, Type III Site-Specific
-Deoxyribonucleases;D8.586.150.280.270;D8.811.150.280.270
-Deoxyribonucleases;D8.586.277.352.335.350.300.270;D8.811.277.352.335.350.300.270
-Deoxyribonucleases;D8.586.277.352.355.325.300.270;D8.811.277.352.355.325.300.270
+Deoxyribonucleases, Type I Site-Specific;D8.586.150.280.250;D8.811.150.280.250
+Deoxyribonucleases, Type I Site-Specific;D8.586.277.352.335.350.300.250;D8.811.277.352.335.350.300.250
+Deoxyribonucleases, Type I Site-Specific;D8.586.277.352.355.325.300.250;D8.811.277.352.355.325.300.250
+Deoxyribonucleases, Type II Site-Specific;D8.586.150.280.260;D8.811.150.280.260
+Deoxyribonucleases, Type II Site-Specific;D8.586.277.352.335.350.300.260;D8.811.277.352.335.350.300.260
+Deoxyribonucleases, Type II Site-Specific;D8.586.277.352.355.325.300.260;D8.811.277.352.355.325.300.260
+Deoxyribonucleases, Type III Site-Specific;D8.586.150.280.270;D8.811.150.280.270
+Deoxyribonucleases, Type III Site-Specific;D8.586.277.352.335.350.300.270;D8.811.277.352.335.350.300.270
+Deoxyribonucleases, Type III Site-Specific;D8.586.277.352.355.325.300.270;D8.811.277.352.355.325.300.270
 Depth Perception;G11.697.911.860.317;G11.697.716.877.317
 Dermacentor;B1.131.166.132.832.400.200;B1.500.131.166.132.832.400.200
 Dermatoglyphics;I1.198.560.343;I1.198.780.937.343
@@ -1748,8 +1728,7 @@ Diabetes Mellitus;C18.452.297;C18.452.394.750
 Diabetes Mellitus, Experimental;C18.452.297.240;C18.452.394.750.49
 Diabetes Mellitus, Insulin-Dependent;C18.452.297.267;C18.452.394.750.99
 Diabetes Mellitus, Lipoatrophic;C18.452.297.280;C18.452.394.750.74
-Diabetes Mellitus, Lipoatrophic;;Diabetes Mellitus, Non-Insulin-Dependent
-Diabetes Mellitus, Lipoatrophic;C18.452.297.300;C18.452.394.750.149
+Diabetes Mellitus, Non-Insulin-Dependent;C18.452.297.300;C18.452.394.750.149
 Diabetes, Gestational;C18.452.297.200;C18.452.394.750.362
 Diabetic Angiopathies;C18.452.297.312;
 Diabetic Coma;C18.452.297.357;
@@ -1760,8 +1739,7 @@ Diabetic Ketoacidosis;C18.452.297.390;C18.452.394.750.535
 Diabetic Nephropathies;C18.452.297.402;
 Diabetic Neuropathies;C18.452.297.447;
 Diabetic Retinopathy;C18.452.297.312.382;
-Diabetic Retinopathy;;Diacylglycerol Cholinephosphotransferase
-Diabetic Retinopathy;D8.586.913.696.900.200;D8.811.913.696.900.200
+Diacylglycerol Cholinephosphotransferase;D8.586.913.696.900.200;D8.811.913.696.900.200
 Diacylglycerol Kinase;D8.586.913.696.620.200;D8.811.913.696.620.200
 Dialysis Solutions;D26.821.220;D26.776.220
 Diaphragmatic Eventration;C6.175.244;C6.198.257
@@ -1854,6 +1832,7 @@ Diverticulum, Esophageal;C6.273.250;
 Diverticulum, Esophageal;C6.306.354;
 Diverticulum, Stomach;C6.273.500;
 Diverticulum, Stomach;C6.405.748.753;
+DNA (Cytosine-5-)-Methyltransferase;D8.586.913.555.500.350.500;D8.811.913.555.500.350.500
 DNA Fingerprinting;I1.198.560.375;I1.198.780.937.375
 DNA Fragmentation;G5.185;G5.180.185
 DNA Gyrase;D8.586.399.403.741.300.500;D8.811.399.403.741.300.500
@@ -1886,8 +1865,7 @@ DNA Topoisomerases, Type I, Eukaryotic;D8.586.399.403.483.500;D8.811.399.403.483
 DNA Topoisomerases, Type II;D8.586.399.403.741;D8.811.399.403.741
 DNA Topoisomerases, Type II, Archaeal;D8.586.399.403.741.249;D8.811.399.403.741.249
 DNA Topoisomerases, Type II, Bacterial;D8.586.399.403.741.300;D8.811.399.403.741.300
-DNA Topoisomerases, Type II, Bacterial;;DNA Topoisomerases, Type II, Eukaryotic
-DNA Topoisomerases, Type II, Bacterial;D8.586.399.403.741.500;D8.811.399.403.741.500
+DNA Topoisomerases, Type II, Eukaryotic;D8.586.399.403.741.500;D8.811.399.403.741.500
 DNA, Antisense;D26.600.530.600.150.200;D27.720.470.530.600.150.200
 DNA, Catalytic;D8.586.165;D8.811.165
 DNA, Catalytic;D8.586.913.696.445.735.265;D8.811.913.696.445.735.265
@@ -2040,6 +2018,8 @@ Endothelin-2;D24.185.170.235;
 Endothelin-3;D24.185.170.245;
 Endothelins;D24.185.170;
 Endothelium, Lymphatic;A15.382.520.332;A15.382.520.301.500
+Enkephalin, Ala(2)-MePhe(4)-Gly(5)-;;D12.644.400.575.281.75
+Enkephalin, D-Penicillamine (2,5)-;;D12.644.400.575.281.153
 Enkephalin, Leucine;;D12.644.400.575.281.231
 Enkephalin, Methionine;;D12.644.400.575.281.381
 Enkephalins;;D12.644.400.575.281
@@ -2071,8 +2051,7 @@ Entomophthorales;B5.354.975.325;B5.975.325
 Environmental Health;G3.300;
 Environmental Pollutants;D5.284;D27.888.284
 Environmental Pollutants;D27.505.349;
-Environmental Pollutants;;Environmental Pollutants, Noxae, and Pesticides
-Environmental Pollutants;D5;D27.888
+Environmental Pollutants, Noxae, and Pesticides;D5;D27.888
 Enzyme Activators;D27.505.361;D27.505.519.374
 Enzyme Inhibitors;D8.373;D27.505.519.389
 Enzyme Inhibitors;D27.505.373;
@@ -2188,8 +2167,7 @@ Estrone;D6.472.866.540.565;
 Ethanolamine Ammonia-Lyase;D8.586.520.232.400.350;D8.811.520.232.400.350
 Ethanolaminephosphotransferase;D8.586.913.696.900.250;D8.811.913.696.900.250
 Ethinyl Estradiol;;D6.472.334.851.437.968.500
-Ethinyl Estradiol;;Ethinyl Estradiol-Norgestrel Combination
-Ethinyl Estradiol;;D6.472.334.851.437.968.500.250
+Ethinyl Estradiol-Norgestrel Combination;;D6.472.334.851.437.968.500.250
 Ethiodized Oil;D10.516.627.700.550.300;D10.627.700.550.300
 Ethiodized Oil;D26.674.750.550.300;D20.666.750.550.300
 Ethnic Groups;I1.76.201.450.416;M1.686.754
@@ -2367,8 +2345,7 @@ Fructokinases;D8.586.913.696.620.225;D8.811.913.696.620.225
 Fructose-Bisphosphatase;D8.586.277.352.650.200;D8.811.277.352.650.200
 Fructose-Bisphosphate Aldolase;D8.586.520.224.62.400;D8.811.520.224.62.400
 Fructuronate Reductase;D8.586.682.47.150.225;D8.811.682.47.150.225
-Fructuronate Reductase;;Fucosyl Galactose alpha-N-Acetylgalactosaminyltransferase
-Fructuronate Reductase;D8.586.913.400.100.200.300;D8.811.913.400.100.200.300
+Fucosyl Galactose alpha-N-Acetylgalactosaminyltransferase;D8.586.913.400.100.200.300;D8.811.913.400.100.200.300
 Fucosyltransferases;D8.586.913.400.450.300;D8.811.913.400.450.300
 Fumarate Hydratase;D8.586.520.241.300.300;D8.811.520.241.300.300
 Functional Residual Capacity;G9.772.521.700.810.390;G9.772.765.850.390
@@ -2386,9 +2363,12 @@ Fusobacterium necrophorum;;B3.440.425.410.420.400
 Fusobacterium nucleatum;B3.440.425.410.194.389.500;B3.370.250.500
 Fusobacterium nucleatum;;B3.440.425.410.420.500
 G Cells;A3.492.766.440.300;A3.556.875.875.440.300
-G Cells;D10.516.570.877.360.25.475.390;D10.570.877.360.25.475.390
-G Cells;D10.516.570.877.360.25.475.400;D10.570.877.360.25.475.400
-G Cells;D10.516.570.877.360.25.475.510;D10.570.877.360.25.475.510
+G(M1) Ganglioside;D10.516.390.470.25.475.390;D10.390.470.25.475.390
+G(M1) Ganglioside;D10.516.570.877.360.25.475.390;D10.570.877.360.25.475.390
+G(M2) Ganglioside;D10.516.390.470.25.475.400;D10.390.470.25.475.400
+G(M2) Ganglioside;D10.516.570.877.360.25.475.400;D10.570.877.360.25.475.400
+G(M3) Ganglioside;D10.516.390.470.25.475.510;D10.390.470.25.475.510
+G(M3) Ganglioside;D10.516.570.877.360.25.475.510;D10.570.877.360.25.475.510
 G-Protein, Inhibitory Gi;D8.586.277.40.330.300.200.445;D8.811.277.40.330.300.200.100.200
 G-Protein, Inhibitory Gi;D12.776.157.325.332.445;D12.776.157.325.332.100.200
 G-Protein, Inhibitory Gi;D12.776.543.325.445;D12.776.543.325.100.200
@@ -2412,7 +2392,6 @@ Galactose Oxidase;D8.586.682.47.210;D8.811.682.47.210
 Galactosidases;D8.586.277.450.410;D8.811.277.450.410
 Galactosylceramidase;D8.586.277.450.410.400;D8.811.277.450.410.400
 Galactosylceramides;D10.516.390.470.675.200.250.450;D10.390.470.675.200.250.450
-Galactosylceramides;D10.516.570.877.360.612.200.250.450 D10.570.877.360.612.200.250.450;
 Galactosyltransferases;D8.586.913.400.450.400;D8.811.913.400.450.400
 Galago;B2.649.801.700.572.408;B1.150.900.649.801.700.572.408
 Galanin;D12.644.216;D12.644.400.250
@@ -2535,29 +2514,28 @@ Glucosephosphate Dehydrogenase;D8.586.682.47.150.300;D8.811.682.47.150.300
 Glucosidases;D8.586.277.450.420;D8.811.277.450.420
 Glucosylceramidase;D8.586.277.450.420.475.400;D8.811.277.450.420.475.400
 Glucosylceramides;D10.516.390.470.675.200.250.490;D10.390.470.675.200.250.490
-Glucosylceramides;D10.516.570.877.360.612.200.250.490 D10.570.877.360.612.200.250.490;
 Glucosyltransferases;D8.586.913.400.450.460;D8.811.913.400.450.460
 Glucuronidase;D8.586.277.450.426;D8.811.277.450.426
 Glucuronosyltransferase;D8.586.913.400.450.480;D8.811.913.400.450.480
 Glutamate Decarboxylase;D8.586.520.224.125.250;D8.811.520.224.125.250
 Glutamate Dehydrogenase;D8.586.682.135.398;D8.811.682.135.398
+Glutamate Dehydrogenase (NADP+);D8.586.682.135.410;D8.811.682.135.410
 Glutamate Synthase;D8.586.682.135.470;D8.811.682.135.470
 Glutamate Synthase;D8.586.913.477.700.470;D8.811.913.477.700.470
 Glutamate-Ammonia Ligase;D8.586.464.259.200.600;D8.811.464.259.200.600
 Glutamate-Cysteine Ligase;D8.586.464.259.850.400;D8.811.464.259.850.400
 Glutamate-tRNA Ligase;D8.586.464.263.200.250;D8.811.464.263.200.250
 Glutaminase;D8.586.277.87.483;D8.811.277.87.483
-Glutaminase;D8.586.913.477.700.500;D8.811.913.477.700.500
+Glutamine-Fructose-6-Phosphate Transaminase (Isomerizing);D8.586.913.477.700.500;D8.811.913.477.700.500
 Glutathione Peroxidase;D8.586.682.732.500;D8.811.682.732.500
 Glutathione Reductase;D8.586.682.608.341;D8.811.682.608.341
 Glutathione Synthase;D8.586.464.259.850.500;D8.811.464.259.850.500
 Glutathione Transferase;D8.586.913.225.500;D8.811.913.225.500
-Glutathione Transferase;D8.586.682.75.532.374;D8.811.682.75.532.374
-Glutathione Transferase;D8.586.682.75.100.500;D8.811.682.75.100.500
-Glutathione Transferase;D8.586.682.75.532.249;D8.811.682.75.532.249
-Glutathione Transferase;;Glyceraldehyde-3-Phosphate Dehydrogenases
-Glutathione Transferase;D8.586.682.75.532;D8.811.682.75.532
-Glutathione Transferase;D8.586.682.75.532.500;D8.811.682.75.532.500
+Glyceraldehyde 3 Phosphate-Dehydrogenase (NADP+)(Phosphorylating);D8.586.682.75.532.374;D8.811.682.75.532.374
+Glyceraldehyde 3-Phosphate Dehydrogenase (NADP+);D8.586.682.75.100.500;D8.811.682.75.100.500
+Glyceraldehyde 3-Phosphate Dehydrogenase (NADP+);D8.586.682.75.532.249;D8.811.682.75.532.249
+Glyceraldehyde-3-Phosphate Dehydrogenases;D8.586.682.75.532;D8.811.682.75.532
+Glyceraldehyde-3-Phosphate-Dehydrogenase (Phosphorylating);D8.586.682.75.532.500;D8.811.682.75.532.500
 Glycerides;D10.516.351;D10.351
 Glycerol Kinase;D8.586.913.696.620.275;D8.811.913.696.620.275
 Glycerol-3-Phosphate O-Acyltransferase;D8.586.913.50.425;D8.811.913.50.425
@@ -2591,10 +2569,8 @@ Glycosuria;C18.452.398;C18.452.394.937
 Glycosuria, Renal;C18.452.398.450;C18.452.394.937.450
 Glycosylceramidase;D8.586.277.450.420.475;D8.811.277.450.420.475
 Glycosylphosphatidylinositols;D10.516.390.475;D10.390.475
-Glycosylphosphatidylinositols;D10.516.570.755.375.760.400.942.250 D10.570.755.375.760.400.942.250;
 Glycosyltransferases;D8.586.913.400;D8.811.913.400
 Glyoxysomes;A11.284.195.190.500.585.250;A11.284.430.214.190.500.585.250
-Glyoxysomes;A11.284.195.190.875.190.190.755.250 A11.284.430.214.190.875.190.190.755.250;
 Gnathostoma;B1.500.294.700.750.700.722.375;B1.500.500.294.700.750.700.722.375
 Goats;B2.649.77.380.513;B1.150.900.649.77.380.513
 Goblet Cells;A3.492.411.369.320;A3.556.124.369.320
@@ -2619,8 +2595,7 @@ Growth Substances;D27.505.507.348;D27.505.696.444.348
 Gryllidae;B1.131.617.678.410;B1.500.131.617.678.410
 GTP Cyclohydrolase;D8.586.277.151.300;D8.811.277.151.300
 GTP Phosphohydrolase Activators;D27.505.361.200;D27.505.519.374.200
-GTP Phosphohydrolase Activators;;GTP Phosphohydrolase-Linked Elongation Factors
-GTP Phosphohydrolase Activators;D8.586.277.40.330.300.100;D8.811.277.40.330.300.100
+GTP Phosphohydrolase-Linked Elongation Factors;D8.586.277.40.330.300.100;D8.811.277.40.330.300.100
 GTP Phosphohydrolases;D8.586.277.40.330;D8.811.277.40.330
 GTP Pyrophosphokinase;D8.586.913.696.175.300;D8.811.913.696.175.300
 GTP-Binding Proteins;D8.586.277.40.330.300;D8.811.277.40.330.300
@@ -2633,6 +2608,7 @@ Gymnotiformes;B2.493.378.430;B1.150.900.493.378.430
 Gypsies;I1.76.201.450.416.280;M1.686.754.283
 Gypsies;I1.880.143.522.282;
 Gypsies;M1.194.265;
+H(+)-K(+)-Exchanging ATPase;D8.586.277.40.25.300;D8.811.277.40.25.300
 Haemonchus;B1.500.294.700.775.746.410;B1.500.500.294.700.775.746.410
 Haemophilus;B3.440.450.600.400;B3.440.450.600.450
 Haemophilus ducreyi;B3.440.450.600.400.350;B3.440.450.600.450.125
@@ -2679,6 +2655,7 @@ Helicobacter heilmannii;B3.660.150.280.274;B3.660.150.280.400
 Helicobacter heilmannii;B3.825.400.274;
 Helicobacter pylori;B3.825.400.550;
 Heligmosomatoidea;B1.500.294.700.775.400;B1.500.500.294.700.775.400
+Helix (Snails);B1.644.776.450;B1.500.644.776.450
 Helminthosporium;B5.354.381.420;B5.381.420
 Helminths;;B1.500.500
 Hematemesis;C6.405.270.336;C23.888.821.937.19
@@ -2686,8 +2663,7 @@ Hematemesis;C6.405.937.378;
 Hematinics;D27.505.435.461.543;D27.505.954.522.461.543
 Hematocrit;;G9.188.250.400
 Hematologic Agents;D27.505.435.461;D27.505.954.522.461
-Hematologic Agents;;Hematologic, Gastrointestinal, and Renal Agents
-Hematologic Agents;D27.505.435;D27.505.954.522
+Hematologic, Gastrointestinal, and Renal Agents;D27.505.435;D27.505.954.522
 Hematopoiesis;G9.188.544;G9.188.261.544
 Hematopoiesis, Extramedullary;G9.188.544.463;G9.188.261.544.463
 Hematoporphyrin Derivative;;D3.383.757.840.500.462.400
@@ -2696,6 +2672,7 @@ Hematoporphyrins;;D3.383.757.840.500.462
 Hematoporphyrins;;D3.549.909.500.462
 Heme;;D3.383.757.840.500.640.587
 Heme;;D3.549.909.500.640.587
+Heme Oxygenase (Decyclizing);D8.586.682.580.410;D8.811.682.580.410
 Hemin;;D3.383.757.840.500.640.587.462
 Hemin;;D3.549.909.500.640.587.462
 Hemiptera;B1.131.617.412;B1.500.131.617.412
@@ -2804,8 +2781,7 @@ Homosexuality, Male;F1.145.792.975.500.600;F1.145.802.975.500.600
 Homosexuality, Male;;G8.520.902.975.500.600
 Hormone Antagonists;D27.505.440.450;D27.505.696.399.450
 Hormones;D27.505.440.472;D27.505.696.399.472
-Hormones;;Hormones, Hormone Substitutes, and Hormone Antagonists
-Hormones;D27.505.440;D27.505.696.399
+Hormones, Hormone Substitutes, and Hormone Antagonists;D27.505.440;D27.505.696.399
 Horseradish Peroxidase;D8.586.682.732.512;D8.811.682.732.512
 Horses;B2.649.709.235.472;B1.150.900.649.709.235.472
 Horseshoe Crabs;B1.131.450;B1.500.131.450
@@ -2850,16 +2826,13 @@ Hydroxyl Radical;D5.569.540.815.61;
 Hydroxymethyl and Formyl Transferases;D8.586.913.555.400;D8.811.913.555.400
 Hydroxymethylbilane Synthase;D8.586.520.232.400.550;D8.811.520.232.400.550
 Hydroxymethylglutaryl CoA Reductases;D8.586.682.47.385.415;D8.811.682.47.385.415
-Hydroxymethylglutaryl CoA Reductases;;Hydroxymethylglutaryl-CoA Reductase Inhibitors
-Hydroxymethylglutaryl CoA Reductases;D8.373.370;D27.505.519.186.71.202.370
-Hydroxymethylglutaryl CoA Reductases;D10.162.202.370;D27.505.519.389.370
-Hydroxymethylglutaryl CoA Reductases;D27.505.373.370;D27.505.954.230.202.370
-Hydroxymethylglutaryl CoA Reductases;D27.505.519.162.202.370;
-Hydroxymethylglutaryl CoA Reductases;;Hydroxymethylglutaryl-CoA Reductases, NAD-Dependent
-Hydroxymethylglutaryl CoA Reductases;D8.586.682.47.385.415.250;D8.811.682.47.385.415.250
+Hydroxymethylglutaryl-CoA Reductase Inhibitors;D8.373.370;D27.505.519.186.71.202.370
+Hydroxymethylglutaryl-CoA Reductase Inhibitors;D10.162.202.370;D27.505.519.389.370
+Hydroxymethylglutaryl-CoA Reductase Inhibitors;D27.505.373.370;D27.505.954.230.202.370
+Hydroxymethylglutaryl-CoA Reductase Inhibitors;D27.505.519.162.202.370;
+Hydroxymethylglutaryl-CoA Reductases, NAD-Dependent;D8.586.682.47.385.415.250;D8.811.682.47.385.415.250
 Hydroxymethylglutaryl-CoA Synthase;D8.586.520.224.600.600;D8.811.520.224.600.600
-Hydroxymethylglutaryl-CoA Synthase;;Hydroxymethylglutaryl-CoA-Reductases, NADP-dependent
-Hydroxymethylglutaryl-CoA Synthase;D8.586.682.47.385.415.750;D8.811.682.47.385.415.750
+Hydroxymethylglutaryl-CoA-Reductases, NADP-dependent;D8.586.682.47.385.415.750;D8.811.682.47.385.415.750
 Hydroxypregnenolone;D6.472.40.322.478.478.477;D6.472.40.585.745.500
 Hydroxypregnenolone;;D6.472.334.851.687.500.500
 Hydroxyprogesterones;D6.472.798.773.478;D6.472.334.851.687.750.478
@@ -2874,8 +2847,7 @@ Hymenostomatida;B1.841.185.650.375;B1.500.841.185.650.375
 Hyperemesis Gravidarum;C6.405.937.562;C13.703.370
 Hyperemesis Gravidarum;C13.703.799.562;C23.888.821.937.39
 Hyperglycemia;C18.452.460;C18.452.394.952
-Hyperglycemia;;Hyperglycemic Hyperosmolar Nonketotic Coma
-Hyperglycemia;C18.452.297.357.490;
+Hyperglycemic Hyperosmolar Nonketotic Coma;C18.452.297.357.490;
 Hyperinsulinism;;C18.452.394.968
 Hyperotreti;B1.272.400;B1.150.200.400
 Hyperotreti;;B1.500.272.400
@@ -2922,10 +2894,9 @@ Immunologic and Biological Factors;D27.505.507;D27.505.696.444
 Immunologic Factors;D27.505.507.611;D27.505.696.444.611
 Immunophilins;D8.586.399.325.500.400;D8.811.399.325.500.400
 Immunophilins;D24.611.834.400;
-Immunophilins;;Immunoproliferative Small Intestinal Disease
-Immunophilins;C6.405.469.436;C6.301.371.411.512
-Immunophilins;;C6.405.249.411.512
-Immunophilins;;C6.405.469.491.505
+Immunoproliferative Small Intestinal Disease;C6.405.469.436;C6.301.371.411.512
+Immunoproliferative Small Intestinal Disease;;C6.405.249.411.512
+Immunoproliferative Small Intestinal Disease;;C6.405.469.491.505
 Immunosorbents;D26.866.501;D27.720.877.501
 Immunosuppressive Agents;D27.505.130.569;D27.505.954.266.569
 IMP Dehydrogenase;D8.586.682.47.485;D8.811.682.47.485
@@ -3148,7 +3119,6 @@ Lanatosides;;D4.808.155.580.261.657
 Lanolin;D10.516.945.507;D10.945.507
 Lanosterol;D10.516.570.938.590;D10.570.938.590
 Large Neutral Amino Acid-Transporter 1;D12.776.157.530.200.500.500.500.500 D12.776.157.530.200.500.500.500.300.500;
-Large Neutral Amino Acid-Transporter 1;D12.776.543.585.200.500.500.500.875 D12.776.543.585.200.500.500.500.500.500;
 Larix;B6.388.400.122.666.875;B6.388.400.122.666.444
 Laurates;D10.516.251.500.410;D10.251.500.410
 Lauric Acids;D10.516.251.500;D10.251.500
@@ -3219,6 +3189,7 @@ Lipoamide Dehydrogenase;;D12.776.331.192
 Lipofuscin;D10.516.460;D10.460
 Lipopolysaccharides;D10.516.494;D10.494
 Lipoprotein Lipase;D8.586.277.352.100.430;D8.811.277.352.100.430
+Lipoprotein(a);D10.516.532.350;D10.532.350
 Lipoprotein-X;D10.516.532.400;D10.532.400
 Lipoproteins;D10.516.532;D10.532
 Lipoproteins, HDL;D10.516.532.432;D10.532.432
@@ -3271,10 +3242,9 @@ Lymphangiectasis, Intestinal;C18.452.805.521;C15.604.451.500
 Lymphangiectasis, Intestinal;;C16.131.482.500
 Lymphocyte Count;;G4.335.130.107.595.500
 Lymphocyte Count;;G9.188.250.161.595.500
-Lymphocyte Count;;Lymphocyte Function-Associated Antigen-1
-Lymphocyte Count;D24.611.834.408.600.400;
-Lymphocyte Count;D24.611.834.877.550;
-Lymphocyte Count;D8.586.913.696.620.682.725.800.315;D8.811.913.696.620.682.725.800.315
+Lymphocyte Function-Associated Antigen-1;D24.611.834.408.600.400;
+Lymphocyte Function-Associated Antigen-1;D24.611.834.877.550;
+Lymphocyte Specific Protein Tyrosine Kinase p56(lck);D8.586.913.696.620.682.725.800.315;D8.811.913.696.620.682.725.800.315
 Lymphocyte Subsets;A15.382.520.520.430;
 Lymphocytes;A15.382.520.520;
 Lymphocytes, Null;A15.382.520.520.615;
@@ -3323,8 +3293,7 @@ Mannosidosis;C16.320.565.202.625;C16.320.565.202.607.500
 Mannosidosis;C16.320.565.580.625;C16.320.565.580.577.500
 Mannosidosis;C18.452.648.202.625;C18.452.648.202.607.500
 Mannosidosis;C18.452.648.595.625;C18.452.648.595.577.500
-Mannosidosis;;Mannosyl-Glycoprotein Endo-beta-N-Acetylglucosaminidase
-Mannosidosis;D8.586.277.450.483.531.80.500;D8.811.277.450.483.531.80.500
+Mannosyl-Glycoprotein Endo-beta-N-Acetylglucosaminidase;D8.586.277.450.483.531.80.500;D8.811.277.450.483.531.80.500
 Mannosyltransferases;D8.586.913.400.450.560;D8.811.913.400.450.560
 Mansonella;B1.500.294.700.750.700.300.438;B1.500.500.294.700.750.700.300.438
 Mantodea;B1.131.617.590;B1.500.131.617.590
@@ -3412,8 +3381,7 @@ Methicillin;D3.438.260.650.500;D3.438.260.825.500
 Methicillin;D3.605.84.725.490;D3.605.84.737.500
 Methionine Adenosyltransferase;D8.586.913.225.650;D8.811.913.225.650
 Methionine-tRNA Ligase;D8.586.464.263.200.600;D8.811.464.263.200.600
-Methionine-tRNA Ligase;;Methylenetetrahydrofolate Dehydrogenase
-Methionine-tRNA Ligase;D8.586.682.545;D8.811.682.545
+Methylenetetrahydrofolate Dehydrogenase;D8.586.682.545;D8.811.682.545
 Methylmalonyl-CoA Mutase;D8.586.399.520.625;D8.811.399.520.625
 Methylobacillus;B3.440.400.425.485;B3.660.75.495.500
 Methylobacillus;B3.660.75.490;
@@ -3517,11 +3485,9 @@ Mitochondria;A11.284.195.190.875.564;A11.284.430.214.190.875.564
 Mitochondria, Heart;A11.284.195.190.875.564.627.603;A11.284.430.214.190.875.564.627.603
 Mitochondria, Liver;A11.284.195.190.875.564.461;A11.284.430.214.190.875.564.461
 Mitochondria, Muscle;A11.284.195.190.875.564.627;A11.284.430.214.190.875.564.627
-Mitochondria, Muscle;;Mitochondrial Proton-Translocating ATPases
-Mitochondria, Muscle;D8.586.277.40.25.325.750;D8.811.277.40.25.325.750
-Mitochondria, Muscle;D8.586.913.696.650.150.500.750;D8.811.913.696.650.150.500.750
-Mitochondria, Muscle;;Mitogen-Activated Protein Kinase Kinases
-Mitochondria, Muscle;D8.586.913.696.620.682.700.565;D8.811.913.696.620.682.700.565
+Mitochondrial Proton-Translocating ATPases;D8.586.277.40.25.325.750;D8.811.277.40.25.325.750
+Mitochondrial Proton-Translocating ATPases;D8.586.913.696.650.150.500.750;D8.811.913.696.650.150.500.750
+Mitogen-Activated Protein Kinase Kinases;D8.586.913.696.620.682.700.565;D8.811.913.696.620.682.700.565
 Mitogen-Activated Protein Kinases;D8.586.913.696.620.682.700.567;D8.811.913.696.620.682.700.567
 Mitogen-Activated Protein Kinases;D8.586.913.696.620.682.700.646.750;D8.811.913.696.620.682.700.646.750
 Mitosporic Fungi;B5.354.381;B5.381
@@ -3564,8 +3530,10 @@ Monosomy;;G13.700.131.500
 Monotremata;B2.649.627;B1.150.900.649.627
 Moraxella;B3.660.250.510;B3.440.400.425.537.525
 Moraxella;;B3.660.250.530.525
-Moraxella;;B3.660.250.530.525.200
-Moraxella;;B3.660.250.530.525.500
+Moraxella (Branhamella) catarrhalis;B3.660.250.510.200;B3.440.400.425.537.525.200
+Moraxella (Branhamella) catarrhalis;;B3.660.250.530.525.200
+Moraxella (Moraxella) bovis;B3.660.250.510.500;B3.440.400.425.537.525.500
+Moraxella (Moraxella) bovis;;B3.660.250.530.525.500
 Mortierella;B5.354.975.550.480;B5.975.550.480
 Mosses;B6.388.650;B6.388.137.500
 Moths;B1.131.617.561.650;B1.500.131.617.561.650
@@ -3648,7 +3616,10 @@ N-Acetyllactosamine Synthase;D8.586.913.400.450.400.500.100;D8.811.913.400.450.4
 N-Acetylmuramoyl-L-alanine Amidase;D8.586.277.87.30;D8.811.277.87.30
 N-Acylneuraminate Cytidylyltransferase;D8.586.913.696.445.35;D8.811.913.696.445.35
 N-glycosyl Hydrolases;D8.586.277.450.737;D8.811.277.450.737
+Na(+)-K(+)-Exchanging ATPase;D8.586.277.40.25.600;D8.811.277.40.25.600
 NAD;D8.176.589;D8.211.589
+NAD(P)H Dehydrogenase (Quinone);D8.586.682.608.800.500;D8.811.682.608.800.500
+NAD(P)H-Flavin Oxidoreductase;D8.586.682.608.320;D8.811.682.608.320
 NAD+ Nucleosidase;D8.586.277.450.737.400;D8.811.277.450.737.400
 NAD+ Nucleosidase;D8.586.913.400.725.115.660;D8.811.913.400.725.115.660
 NADH Dehydrogenase;D8.586.682.608.191.475;D8.811.682.608.504.500
@@ -3744,8 +3715,7 @@ Newcastle Disease;C2.782.580.600.680.630;C2.782.580.600.80.600
 Newcastle disease virus;B4.820.455.600.650.750.720.600;B4.820.455.600.650.70.600
 Newcastle disease virus;B4.909.777.455.600.650.750.720.600;B4.909.777.455.600.650.70.600
 Nicotinamidase;D8.586.277.87.610;D8.811.277.87.610
-Nicotinamidase;;Nicotinamide-Nucleotide Adenylyltransferase
-Nicotinamidase;D8.586.913.696.445.600;D8.811.913.696.445.600
+Nicotinamide-Nucleotide Adenylyltransferase;D8.586.913.696.445.600;D8.811.913.696.445.600
 Nicotinic Agonists;D27.505.583.120.140.700;D27.505.519.625.120.140.700
 Nicotinic Agonists;;D27.505.696.577.120.140.700
 Nicotinic Antagonists;D27.505.583.120.200.700;D27.505.519.625.120.200.700
@@ -3754,7 +3724,6 @@ Nipples;A10.336.153.500;
 Nippostrongylus;B1.500.294.700.775.400.575;B1.500.500.294.700.775.400.575
 Nissl Bodies;A11.284.195.190.500.610;A11.284.430.214.190.500.610
 Nissl Bodies;A11.284.195.190.875.248.300.610;A11.284.430.214.190.875.248.300.610
-Nissl Bodies;A11.284.195.190.875.811.740.300.610 A11.284.430.214.190.875.811.740.300.610;
 Nitrate Reductases;D8.586.682.608.600;D8.811.682.608.600
 Nitric Oxide Donors;D27.505.250.590;D27.505.519.656
 Nitric Oxide Donors;;D27.505.954.411.590
@@ -3799,7 +3768,7 @@ Nutritional Support;E2.707;E2.642.500
 Nystagmus, Optokinetic;G11.697.384.378.500;G11.697.716.260.378.500
 Nystagmus, Physiologic;G11.697.384.378;G11.697.716.260.378
 O Antigens;D10.516.494.600;D10.494.600
-O Antigens;D8.586.913.555.500.800.650;D8.811.913.555.500.800.650
+O(6)-Methylguanine-DNA Methyltransferase;D8.586.913.555.500.800.650;D8.811.913.555.500.800.650
 Obesity;C18.654.621;C18.654.726.500
 Obesity, Morbid;C18.654.621.495;C18.654.726.500.495
 Ochrobactrum anthropi;B3.440.400.425.580;B3.440.400.425.575.650
@@ -3833,6 +3802,8 @@ omega-Conotoxins;;D20.888.590.162.720
 omega-Crystallins;D8.586.682.75.100.750;D8.811.682.75.100.750
 Onchocerca;B1.500.294.700.750.700.300.510;B1.500.500.294.700.750.700.300.510
 Onchocerca volvulus;B1.500.294.700.750.700.300.510.850;B1.500.500.294.700.750.700.300.510.850
+Oncogene Protein p21(ras);D8.586.277.40.330.300.400.500.300;D8.811.277.40.330.300.400.500.300
+Oncogene Protein pp60(v-src);D8.586.913.696.620.682.725.800.472;D8.811.913.696.620.682.725.800.472
 Oncorhynchus;B2.493.817.750.705.580;B1.150.900.493.817.750.705.580
 Oncorhynchus;B2.493.817.750.825.580;B1.150.900.493.817.750.825.580
 Oncorhynchus keta;B2.493.817.750.705.580.400;B1.150.900.493.817.750.705.580.400
@@ -4046,7 +4017,6 @@ Peroxides;D5.569.540.815.249;
 Peroxisome Proliferators;D5.569.100.675;D27.888.569.100.675
 Peroxisome Proliferators;D27.505.235.675;
 Peroxisomes;A11.284.195.190.500.585.600;A11.284.430.214.190.500.585.600
-Peroxisomes;A11.284.195.190.875.190.190.755.600 A11.284.430.214.190.875.190.190.755.600;
 Pertussis Toxin;D8.586.913.400.725.115.680;D8.811.913.400.725.115.680
 Pesticide Residues;D5.723.697;D27.888.723.697
 Pesticide Synergists;D5.723.748;D27.888.723.748
@@ -4082,8 +4052,7 @@ Phonation;G9.772.862.793;G9.772.770.680
 Phosphate Acetyltransferase;D8.586.913.50.134.700;D8.811.913.50.134.700
 Phosphatidate Phosphatase;D8.586.277.352.650.620;D8.811.277.352.650.620
 Phosphatidic Acids;D10.516.570.755.375.760;D10.570.755.375.760
-Phosphatidic Acids;;Phosphatidylcholine-Sterol O-Acyltransferase
-Phosphatidic Acids;D8.586.913.50.625;D8.811.913.50.625
+Phosphatidylcholine-Sterol O-Acyltransferase;D8.586.913.50.625;D8.811.913.50.625
 Phosphatidylcholines;D10.516.570.755.375.760.400.800;D10.570.755.375.760.400.800
 Phosphatidylethanolamines;D10.516.570.755.375.760.400.840;D10.570.755.375.760.400.840
 Phosphatidylglycerols;D10.516.570.755.375.760.400.885;D10.570.755.375.760.400.885
@@ -4094,12 +4063,11 @@ Phosphatidylserines;D10.516.570.755.375.760.400.971;D10.570.755.375.760.400.971
 Phosphenes;G11.697.911.500;G11.697.677.911.500
 Phosphodiesterase Inhibitors;D8.373.735;D27.505.519.389.735
 Phosphodiesterase Inhibitors;D27.505.373.735;
-Phosphodiesterase Inhibitors;D8.586.520.224.125.500;D8.811.520.224.125.500
-Phosphodiesterase Inhibitors;D8.586.520.224.125.550;D8.811.520.224.125.550
+Phosphoenolpyruvate Carboxykinase (ATP);D8.586.520.224.125.500;D8.811.520.224.125.500
+Phosphoenolpyruvate Carboxykinase (GTP);D8.586.520.224.125.550;D8.811.520.224.125.550
 Phosphoenolpyruvate Carboxylase;D8.586.520.224.125.650;D8.811.520.224.125.650
-Phosphoenolpyruvate Carboxylase;;Phosphoenolpyruvate Sugar Phosphotransferase System
-Phosphoenolpyruvate Carboxylase;D8.586.600.700;D8.811.600.700
-Phosphoenolpyruvate Carboxylase;D8.586.913.696.620.650;D8.811.913.696.620.650
+Phosphoenolpyruvate Sugar Phosphotransferase System;D8.586.600.700;D8.811.600.700
+Phosphoenolpyruvate Sugar Phosphotransferase System;D8.586.913.696.620.650;D8.811.913.696.620.650
 Phosphofructokinase-1;D8.586.913.696.620.225.850.500;D8.811.913.696.620.225.850.500
 Phosphofructokinase-1, Liver Type;D8.586.913.696.620.225.850.500.249;D8.811.913.696.620.225.850.500.249
 Phosphofructokinase-1, Type C;D8.586.913.696.620.225.850.500.750;D8.811.913.696.620.225.850.500.750
@@ -4129,10 +4097,12 @@ Phosphorylase Kinase;D8.586.913.696.620.682.650;D8.811.913.696.620.682.650
 Phosphorylase Phosphatase;D8.586.277.352.650.625.650;D8.811.277.352.650.625.650
 Phosphorylases;D8.586.913.400.450.460.400;D8.811.913.400.450.460.400
 Phosphotransferases;D8.586.913.696;D8.811.913.696
-Phosphotransferases;D8.586.913.696.620;D8.811.913.696.620
-Phosphotransferases;D8.586.913.696.630;D8.811.913.696.630
-Phosphotransferases;D8.586.913.696.640;D8.811.913.696.640
-Phosphotransferases;D8.586.913.696.650;D8.811.913.696.650
+Phosphotransferases (Alcohol Group Acceptor);D8.586.913.696.620;D8.811.913.696.620
+Phosphotransferases (Carboxyl Group Acceptor);D8.586.913.696.630;D8.811.913.696.630
+Phosphotransferases (Nitrogenous Group Acceptor);D8.586.913.696.640;D8.811.913.696.640
+Phosphotransferases (Paired Acceptors);D8.586.913.696.645;D8.811.913.696.645
+Phosphotransferases (Phosphate Group Acceptor);D8.586.913.696.650;D8.811.913.696.650
+Phosphotransferases (Phosphomutases);D8.586.399.520.750;D8.811.399.520.750
 Photoaffinity Labels;D26.600.410.80.600;D27.720.470.410.80.600
 Photorhabdus;B3.440.600;B3.440.450.425.590
 Photorhabdus;B3.660.250.560;B3.660.250.150.545
@@ -4174,8 +4144,7 @@ Pipidae;B2.90.180.610;B1.150.900.90.180.610
 Piromyces;B5.354.283.600.675;B5.283.600.675
 Piroplasmia;B1.841.75.600;B1.500.841.75.600
 Piroplasmida;B1.841.75.600.580;B1.500.841.75.600.580
-Piroplasmida;;Pituitary Hormone Release Inhibiting Hormones
-Piroplasmida;;D12.644.400.640
+Pituitary Hormone Release Inhibiting Hormones;;D12.644.400.640
 Pituitary Hormone-Releasing Hormones;;D12.644.400.645
 Pivampicillin;D2.65.589.750.750.50.700;D2.65.589.875.750.50.700
 Pivampicillin;D3.438.260.650.750.50.700;D3.438.260.825.750.50.700
@@ -4229,9 +4198,8 @@ Platelet Count;;G4.335.130.107.740
 Platelet Count;;G9.188.250.161.700
 Platelet Factor 3;D10.516.532.760;D10.532.760
 Platelet Glycoprotein GPIb-IX Complex;D24.611.834.675.568;
-Platelet Glycoprotein GPIb-IX Complex;;Platelet Glycoprotein GPIIb-IIIa Complex
-Platelet Glycoprotein GPIb-IX Complex;D24.611.834.408.460.700;
-Platelet Glycoprotein GPIb-IX Complex;D24.611.834.675.784;
+Platelet Glycoprotein GPIIb-IIIa Complex;D24.611.834.408.460.700;
+Platelet Glycoprotein GPIIb-IIIa Complex;D24.611.834.675.784;
 Platelet Membrane Glycoprotein IIb;D24.611.834.408.229.950;
 Platelet Membrane Glycoproteins;D24.611.834.675;
 Platyhelminths;B1.500.736;B1.500.500.736
@@ -4249,12 +4217,11 @@ Podophyllin;D26.674.500.675;D20.666.500.675
 Poecilia;B2.493.850.280.680;B1.150.900.493.850.280.680
 Poisons;D5.569.612;D27.720.777
 Poisons;D27.720.792;D27.888.569.612
+Poly(ADP-ribose) Polymerases;D8.586.913.400.725.115.690;D8.811.913.400.725.115.690
 Polychaeta;B1.91.700;B1.500.91.700
 Polygalacturonase;D8.586.277.450.800;D8.811.277.450.800
-Polygalacturonase;;Polyisoprenyl Phosphate Monosaccharides
-Polygalacturonase;D10.516.390.700.700;D10.390.700.700
-Polygalacturonase;;Polyisoprenyl Phosphate Oligosaccharides
-Polygalacturonase;D10.516.390.700.710;D10.390.700.710
+Polyisoprenyl Phosphate Monosaccharides;D10.516.390.700.700;D10.390.700.700
+Polyisoprenyl Phosphate Oligosaccharides;D10.516.390.700.710;D10.390.700.710
 Polyisoprenyl Phosphate Sugars;D10.516.390.700;D10.390.700
 Polymenophorea;B1.841.185.700;B1.500.841.185.700
 Polynucleotide 5'-Hydroxyl-Kinase;D8.586.913.696.620.680;D8.811.74.875
@@ -4263,8 +4230,7 @@ Polynucleotide Adenylyltransferase;D8.586.913.696.445.650;D8.811.913.696.445.650
 Polynucleotide Ligases;D8.586.464.754;D8.811.464.754
 Polyporaceae;B5.354.179.120.760;B5.179.120.760
 Polyps;C4.799;C23.300.825
-Polyps;;Polyribonucleotide Nucleotidyltransferase
-Polyps;D8.586.913.696.445.735.532;D8.811.913.696.445.735.532
+Polyribonucleotide Nucleotidyltransferase;D8.586.913.696.445.735.532;D8.811.913.696.445.735.532
 Polyribosomes;A11.284.195.190.875.811.740;A11.284.430.214.190.875.811.740
 Polysaccharide-Lyases;D8.586.520.241.700;D8.811.520.241.700
 Pongidae;B2.649.801.400.650;B1.150.900.649.801.400.650
@@ -4301,9 +4267,8 @@ Pregnancy Rate;;G3.850.505.400.975.775
 Pregnancy Rate;;G3.850.520.308.985.775
 Pregnancy Rate;;L1.280.975.775
 Pregnancy Rate;;N1.224.935.849
-Pregnancy Rate;;Pregnancy-Associated alpha-Plasma Protein
-Pregnancy Rate;D6.472.785.700;D8.811.277.656.300.480.632
-Pregnancy Rate;;D8.811.277.656.675.374.632
+Pregnancy-Associated alpha-Plasma Protein;D6.472.785.700;D8.811.277.656.300.480.632
+Pregnancy-Associated alpha-Plasma Protein;;D8.811.277.656.675.374.632
 Pregnancy-Specific beta 1-Glycoprotein;D6.472.699.649.730;
 Pregnancy-Specific beta 1-Glycoprotein;D6.472.759.730;
 Pregnancy-Specific beta 1-Glycoprotein;D6.472.785.730;
@@ -4330,8 +4295,7 @@ Primary Prevention;G3.770.670;N2.421.726.758
 Primates;B2.649.801;B1.150.900.649.801
 Procollagen N-Endopeptidase;D8.586.277.656.300.480.664;D8.811.277.656.300.480.664
 Procollagen N-Endopeptidase;;D8.811.277.656.675.374.664
-Procollagen N-Endopeptidase;;Procollagen-Lysine, 2-Oxoglutarate 5-Dioxygenase
-Procollagen N-Endopeptidase;D8.586.682.580.660;D8.811.682.580.660
+Procollagen-Lysine, 2-Oxoglutarate 5-Dioxygenase;D8.586.682.580.660;D8.811.682.580.660
 Procollagen-Proline Dioxygenase;D8.586.682.580.673;D8.811.682.580.673
 Proctitis;;C6.405.205.865
 Proctocolitis;;C6.405.205.265.767
@@ -4396,10 +4360,9 @@ Protective Agents;D26.684;D27.505.696.706
 Protective Agents;D27.505.707;D27.720.799
 Proteidae;B2.90.608.630;B1.150.900.90.608.630
 Protein C;D8.444.705;D8.622.705
-Protein C;;Protein D-Aspartate-L-Isoaspartate Methyltransferase
-Protein C;D8.586.913.555.500.800.800.700;D8.811.913.555.500.800.800.700
+Protein D-Aspartate-L-Isoaspartate Methyltransferase;D8.586.913.555.500.800.800.700;D8.811.913.555.500.800.800.700
 Protein Deficiency;C18.654.223.708;C18.654.521.500.708
-Protein Deficiency;D8.586.682.790;D8.811.682.790
+Protein Disulfide Reductase (Glutathione);D8.586.682.790;D8.811.682.790
 Protein Disulfide-Isomerase;D8.586.399.475.800.550;D8.811.399.475.800.550
 Protein Kinase C;D8.586.913.696.620.682.700.725;D8.811.913.696.620.682.700.725
 Protein Kinases;D8.586.913.696.620.682;D8.811.913.696.620.682
@@ -4425,6 +4388,8 @@ Protirelin;;D12.644.400.702
 Proto-Oncogene Protein c-kit;D8.586.913.696.620.682.725.400.50;D8.811.913.696.620.682.725.400.50
 Proto-Oncogene Protein c-kit;D24.611.834.852.150.100;
 Proto-Oncogene Protein c-met;D8.586.913.696.620.682.725.400.75;D8.811.913.696.620.682.725.400.75
+Proto-Oncogene Protein p21(ras);D8.586.277.40.330.300.400.500.600;D8.811.277.40.330.300.400.500.600
+Proto-Oncogene Protein pp60(c-src);D8.586.913.696.620.682.725.800.630;D8.811.913.696.620.682.725.800.630
 Proto-Oncogene Proteins c-abl;D8.586.913.696.620.682.725.500;D8.811.913.696.620.682.725.500
 Proto-Oncogene Proteins c-mos;D8.586.913.696.620.682.700.559.680;D8.811.913.696.620.682.700.559.680
 Proto-Oncogene Proteins c-raf;D8.586.913.696.620.682.700.559.685;D8.811.913.696.620.682.700.559.685
@@ -4482,8 +4447,9 @@ Pyrroline Carboxylate Reductases;D8.586.682.107.695;D8.811.682.107.695
 Pyrrolizidine Alkaloids;;D3.438.772
 Pyruvate Carboxylase;D8.586.464.257.500;D8.811.464.257.500
 Pyruvate Decarboxylase;D8.586.520.224.125.750;D8.811.520.224.125.750
-Pyruvate Decarboxylase;D8.586.682.75.725;D8.811.682.75.725
-Pyruvate Decarboxylase;D8.586.277.352.650.625.725;D8.811.277.352.650.625.725
+Pyruvate Dehydrogenase (Lipoamide);D8.586.600.741.725;D8.811.600.741.725
+Pyruvate Dehydrogenase (Lipoamide);D8.586.682.75.725;D8.811.682.75.725
+Pyruvate Dehydrogenase (Lipoamide)-Phosphatase;D8.586.277.352.650.625.725;D8.811.277.352.650.625.725
 Pyruvate Dehydrogenase Complex;D8.586.600.741;D8.811.600.741
 Pyruvate Kinase;D8.586.913.696.620.695;D8.811.913.696.620.695
 Pyruvate Oxidase;D8.586.682.472.636;D8.811.682.472.636
@@ -4596,13 +4562,10 @@ Receptor, erbB-2;D8.586.913.696.620.682.725.400.150;D8.811.913.696.620.682.725.4
 Receptor, erbB-3;D8.586.913.696.620.682.725.400.175;D8.811.913.696.620.682.725.400.175
 Receptor, IGF Type 1;D8.586.913.696.620.682.725.400.185;D8.811.913.696.620.682.725.400.185
 Receptor, Insulin;D8.586.913.696.620.682.725.400.200;D8.811.913.696.620.682.725.400.200
-Receptor, Insulin;;Receptor, Macrophage Colony-Stimulating Factor
-Receptor, Insulin;D8.586.913.696.620.682.725.400.500;D8.811.913.696.620.682.725.400.500
-Receptor, Insulin;D24.611.834.852.150.150;
-Receptor, Insulin;;Receptor, Platelet-Derived Growth Factor alpha
-Receptor, Insulin;D8.586.913.696.620.682.725.400.610;D8.811.913.696.620.682.725.400.900.500
-Receptor, Insulin;;Receptor, Platelet-Derived-Growth Factor beta
-Receptor, Insulin;D8.586.913.696.620.682.725.400.620;D8.811.913.696.620.682.725.400.900.750
+Receptor, Macrophage Colony-Stimulating Factor;D8.586.913.696.620.682.725.400.500;D8.811.913.696.620.682.725.400.500
+Receptor, Macrophage Colony-Stimulating Factor;D24.611.834.852.150.150;
+Receptor, Platelet-Derived Growth Factor alpha;D8.586.913.696.620.682.725.400.610;D8.811.913.696.620.682.725.400.900.500
+Receptor, Platelet-Derived-Growth Factor beta;D8.586.913.696.620.682.725.400.620;D8.811.913.696.620.682.725.400.900.750
 Receptor, trkA;D8.586.913.696.620.682.725.400.660;D8.811.913.696.620.682.725.400.660
 Receptor, trkB;D8.586.913.696.620.682.725.400.700;D8.811.913.696.620.682.725.400.700
 Receptor, trkC;D8.586.913.696.620.682.725.400.800;D8.811.913.696.620.682.725.400.800
@@ -4625,13 +4588,11 @@ Receptors, Antigen;D24.611.834.816;
 Receptors, Antigen, B-Cell;D24.611.834.816.821;
 Receptors, Antigen, T-Cell;D24.611.834.816.824;
 Receptors, Antigen, T-Cell, alpha-beta;D24.611.834.816.824.825;
-Receptors, Antigen, T-Cell, alpha-beta;;Receptors, Antigen, T-Cell, gamma-delta
-Receptors, Antigen, T-Cell, alpha-beta;D24.611.834.816.824.830;
+Receptors, Antigen, T-Cell, gamma-delta;D24.611.834.816.824.830;
 Receptors, Bombesin;;D12.776.543.750.100.70
 Receptors, Bradykinin;;D12.776.543.750.100.80
 Receptors, Calcitonin;;D12.776.543.750.100.100
-Receptors, Calcitonin;;Receptors, Calcitonin Gene-Related Peptide
-Receptors, Calcitonin;;D12.776.543.750.100.105
+Receptors, Calcitonin Gene-Related Peptide;;D12.776.543.750.100.105
 Receptors, Catecholamine;;D12.776.543.750.100.150
 Receptors, CCR5;D24.611.834.852.125.605;D12.776.543.750.100.160.605
 Receptors, Chemokine;D24.611.834.852.125;D12.776.543.750.100.160
@@ -4641,8 +4602,7 @@ Receptors, Complement;D24.611.834.833;
 Receptors, Complement 3b;D24.611.834.833.600;
 Receptors, Complement 3d;D24.611.834.833.610;
 Receptors, Concanavalin A;D24.611.834.880.600;
-Receptors, Concanavalin A;;Receptors, Corticotropin-Releasing Hormone
-Receptors, Concanavalin A;;D12.776.543.750.100.180
+Receptors, Corticotropin-Releasing Hormone;;D12.776.543.750.100.180
 Receptors, CXCR4;D24.611.834.852.125.650;D12.776.543.750.100.160.650
 Receptors, Cyclic AMP;;D12.776.543.750.100.700.150
 Receptors, Cytoadhesin;D24.611.834.408.460;
@@ -4661,10 +4621,8 @@ Receptors, Fibronectin;D24.611.834.408.530;
 Receptors, FSH;;D12.776.543.750.100.250
 Receptors, GABA-B;;D12.776.543.750.100.300
 Receptors, Glucagon;;D12.776.543.750.100.330
-Receptors, Glucagon;;Receptors, Granulocyte Colony-Stimulating Factor
-Receptors, Glucagon;D24.611.834.852.150.280;
-Receptors, Glucagon;;Receptors, Granulocyte-Macrophage Colony-Stimulating Factor
-Receptors, Glucagon;D24.611.834.852.150.310;
+Receptors, Granulocyte Colony-Stimulating Factor;D24.611.834.852.150.280;
+Receptors, Granulocyte-Macrophage Colony-Stimulating Factor;D24.611.834.852.150.310;
 Receptors, Histamine H1;D12.776.543.750.600.450.300;D12.776.543.750.100.350
 Receptors, Histamine H1;;D12.776.543.750.600.450.100
 Receptors, Histamine H2;;D12.776.543.750.100.355
@@ -4705,8 +4663,7 @@ Receptors, Opioid, kappa;;D12.776.543.750.100.620.400
 Receptors, Opioid, mu;;D12.776.543.750.100.620.550
 Receptors, Oxytocin;;D12.776.543.750.100.630
 Receptors, Parathyroid Hormone;;D12.776.543.750.100.650
-Receptors, Parathyroid Hormone;;Receptors, Platelet-Derived Growth Factor
-Receptors, Parathyroid Hormone;D8.586.913.696.620.682.725.400.900;D8.811.913.696.620.682.725.400.900
+Receptors, Platelet-Derived Growth Factor;D8.586.913.696.620.682.725.400.900;D8.811.913.696.620.682.725.400.900
 Receptors, Polymeric Immunoglobulin;D24.611.834.871.700;
 Receptors, Prostaglandin;D12.776.543.750.662.700;D12.776.543.750.75.700
 Receptors, Prostaglandin;;D12.776.543.750.100.200.700
@@ -4723,13 +4680,10 @@ Receptors, Thrombin;;D12.776.543.750.100.875
 Receptors, Thrombin;;D12.776.543.750.792.500
 Receptors, Thromboxane;D12.776.543.750.662.800;D12.776.543.750.75.800
 Receptors, Thromboxane;;D12.776.543.750.100.200.800
-Receptors, Thromboxane;;Receptors, Transforming Growth Factor beta
-Receptors, Thromboxane;D24.611.834.852.720;
+Receptors, Transforming Growth Factor beta;D24.611.834.852.720;
 Receptors, Tumor Necrosis Factor;D24.611.834.852.760;
-Receptors, Tumor Necrosis Factor;;Receptors, Vascular Endothelial Growth Factor
-Receptors, Tumor Necrosis Factor;D8.586.913.696.620.682.725.400.950;D8.811.913.696.620.682.725.400.950
-Receptors, Tumor Necrosis Factor;;Receptors, Vasoactive Intestinal Peptide
-Receptors, Tumor Necrosis Factor;;D12.776.543.750.100.900
+Receptors, Vascular Endothelial Growth Factor;D8.586.913.696.620.682.725.400.950;D8.811.913.696.620.682.725.400.950
+Receptors, Vasoactive Intestinal Peptide;;D12.776.543.750.100.900
 Receptors, Vasopressin;;D12.776.543.750.100.910
 Receptors, Very Late Antigen;D24.611.834.408.850;
 Receptors, Vitronectin;D24.611.834.408.460.870;
@@ -4871,6 +4825,7 @@ Rioprostil;D10.516.251.355.255.550.700.450.750 D10.251.355.255.550.700.450.750;
 Riot Control Agents, Chemical;D5.569.734;D27.720.821
 Riot Control Agents, Chemical;D27.720.861;D27.888.569.734
 RNA Helicases;D8.586.913.696.445.735.720;D8.811.913.696.445.735.720
+RNA Ligase (ATP);D8.586.464.754.720;D8.811.464.754.720
 RNA Nucleotidyltransferases;D8.586.913.696.445.735;D8.811.913.696.445.735
 RNA Polymerase I;D8.586.913.696.445.735.270.750;D8.811.913.696.445.735.270.750
 RNA Polymerase II;D8.586.913.696.445.735.270.762;D8.811.913.696.445.735.270.762
@@ -5000,6 +4955,7 @@ Sex Behavior;F1.145.792;F1.145.802
 Sex Behavior;;G8.520.902
 Sex Chromatin;A11.284.170.279.190.160.180.383.800 A11.284.430.106.279.345.190.160.180.383.800;
 Sex Counseling;;F4.96.837.249
+Sex Determination (Genetics);G5.805;G5.865
 Sex Education;;F4.96.837.500
 Sex Hormones;D6.472.866;D6.472.334.851
 Sex Hormones;D27.505.440.472.866;
@@ -5032,9 +4988,10 @@ Sinorhizobium meliloti;B3.660.50.705.500;B3.660.50.730.835.800
 Sirenia;B2.649.879;B1.150.900.649.879
 Sirtuins;D8.586.277.87.831;D8.811.277.87.831
 Sirtuins;D8.586.913.400.725.115.845;D8.811.913.400.725.115.845
-Sirtuins;D8.586.913.555.500.350.850;D8.811.913.555.500.350.850
-Sirtuins;D8.586.913.555.500.350.700;D8.811.913.555.500.350.700
-Sirtuins;B2.493.378.682;B1.150.900.493.378.682
+Site-Specific DNA Methyltransferase (Cytosine-Specific);D8.586.913.555.500.350.850;D8.811.913.555.500.350.850
+Site-Specific DNA-Methyltransferase (Adenine-Specific);D8.586.913.555.500.350.700;D8.811.913.555.500.350.700
+Skates (Fish);B2.493.370.870;B1.150.900.493.370.870
+Skates (Fish);B2.493.378.682;B1.150.900.493.378.682
 Skeletal Muscle Myosins;D8.586.277.40.25.525.750.750;D8.811.277.40.25.525.750.750
 Skunks;B2.649.147.875;B1.150.900.649.147.875
 Sloths;B2.649.900.750;B1.150.900.649.900.750
@@ -5172,6 +5129,7 @@ Sterols;D10.516.570.938;D10.570.938
 Sterols;D10.516.851;D10.851
 Stigmatella;B3.350.638.710;
 Stigmatella aurantiaca;B3.350.638.710.50;
+Stimulants (Historical);D26.851;D27.505.954.888
 Stomach;A3.492.766;A3.556.875.875
 Stomach Neoplasms;C6.240.476.767;C6.301.371.767
 Stomach Neoplasms;C6.405.282.767;C6.405.249.767
@@ -5364,14 +5322,14 @@ Thienamycins;D20.85.99.120.300;
 Thiobacillus;B3.660.75.750;B3.660.75.400.800
 Thiobacillus thiooxidans;B3.440.400.450.800.800;B3.440.400.425.103.800
 Thiobacillus thiooxidans;B3.660.75.750.750;B3.660.250.15.800
-Thiobacillus thiooxidans;;Thiobarbituric Acid Reactive Substances
-Thiobacillus thiooxidans;D26.600.410.750;D27.720.470.410.750
+Thiobarbituric Acid Reactive Substances;D26.600.410.750;D27.720.470.410.750
 Thiocapsa;B3.650.700.300.750;B3.440.425.400.750
 Thiocapsa;B3.660.250.100.750;B3.660.250.110.750
 Thiocapsa roseopersicina;B3.650.700.300.750.660;B3.440.425.400.750.660
 Thiocapsa roseopersicina;B3.660.250.100.750.660;B3.660.250.110.750.660
 Thioctic Acid;D8.176.906;D8.211.906
 Thiolester Hydrolases;D8.586.277.352.897;D8.811.277.352.897
+Thioredoxin Reductase (NADPH);D8.586.682.608.900;D8.811.682.608.900
 Thiorphan;D12.125.166.650.900;D12.125.166.893
 Thiorphan;D12.125.481.600.900;D12.125.481.700.750
 Thiosulfate Sulfurtransferase;D8.586.913.817.500.500;D8.811.913.817.500.500
@@ -5403,14 +5361,11 @@ Tidal Volume;G9.772.521.700.810.970.500.700;G9.772.765.850.970.500.700
 Tilapia;B2.493.602.200.800;B1.150.900.493.602.200.800
 Tissue Extracts;;D20.777
 Tissue Inhibitor of Metalloproteinases;D8.373.745.850;D12.776.926
-Tissue Inhibitor of Metalloproteinases;;Tissue Inhibitor of-Metalloproteinase-3
-Tissue Inhibitor of Metalloproteinases;D8.373.745.850.550;D12.776.926.550
-Tissue Inhibitor of Metalloproteinases;;Tissue Inhibitor-of Metalloproteinase-2
-Tissue Inhibitor of Metalloproteinases;D8.373.745.850.500;D12.776.926.500
+Tissue Inhibitor of-Metalloproteinase-3;D8.373.745.850.550;D12.776.926.550
+Tissue Inhibitor-of Metalloproteinase-2;D8.373.745.850.500;D12.776.926.500
 Tissue Kallikreins;D8.586.277.656.300.760.442.875;D8.811.277.656.300.760.442.875
 Tissue Plasminogen Activator;D8.586.277.656.300.760.875;D8.811.277.656.300.760.875
-Tissue Plasminogen Activator;;Tissue-Inhibitor of Metalloproteinase-1
-Tissue Plasminogen Activator;D8.373.745.850.450;D12.776.926.450
+Tissue-Inhibitor of Metalloproteinase-1;D8.373.745.850.450;D12.776.926.450
 Tocolytic Agents;D27.505.730.825;D27.505.696.875.825
 Tocolytic Agents;;D27.505.954.705.825
 Tongue;;A3.556.500.885
@@ -5451,7 +5406,7 @@ Transducin;D8.586.277.40.330.300.200.800;D8.811.277.40.330.300.200.800
 Transduction, Genetic;G5.760.390.850;G5.760.850
 Transfection;G5.760.390.855;G5.760.860
 Transferases;D8.586.913;D8.811.913
-Transferases;D8.586.913.696.900;D8.811.913.696.900
+Transferases (Other Substituted Phosphate Groups);D8.586.913.696.900;D8.811.913.696.900
 Transformation, Bacterial;G5.760.390.927.820;G5.760.860.500
 Transformation, Bacterial;;G5.760.865.820
 Transformation, Genetic;G5.760.390.927;G5.760.865
@@ -5568,8 +5523,7 @@ Ubiquinol-Cytochrome-c Reductase;;D12.776.543.585.450.250.875.468
 Ubiquinol-Cytochrome-c Reductase;;D12.776.556.579.374.375.954
 Ubiquinone;D8.176.935;D8.211.935
 UDPglucose 4-Epimerase;D8.586.399.894.500.700;D8.811.399.894.500.700
-UDPglucose 4-Epimerase;;UDPglucose-Hexose-1-Phosphate Uridylyltransferase
-UDPglucose 4-Epimerase;D8.586.913.696.445.850;D8.811.913.696.445.850
+UDPglucose-Hexose-1-Phosphate Uridylyltransferase;D8.586.913.696.445.850;D8.811.913.696.445.850
 Umbridae;B2.493.385.850;B1.150.900.493.385.850
 Uncoupling Agents;D8.373.936;D27.505.519.389.936
 Uncoupling Agents;D27.505.373.936;
@@ -5579,8 +5533,7 @@ Urease;D8.586.277.87.902;D8.811.277.87.902
 Ureohydrolases;D8.586.277.913;D8.811.277.913
 Uricosuric Agents;D27.505.104.50.337.900;D27.505.954.194.50.337.900
 Uricosuric Agents;D27.505.435.770.860;D27.505.954.522.770.860
-Uricosuric Agents;;Uridine Diphosphate Glucose Dehydrogenase
-Uricosuric Agents;D8.586.682.47.150.900;D8.811.682.47.150.900
+Uridine Diphosphate Glucose Dehydrogenase;D8.586.682.47.150.900;D8.811.682.47.150.900
 Uridine Kinase;D8.586.913.696.620.800;D8.811.913.696.620.800
 Uridine Phosphorylase;D8.586.913.400.725.950;D8.811.913.400.725.950
 Urinary Plasminogen Activator;D8.586.277.656.300.760.910;D8.811.277.656.300.760.910
@@ -5603,10 +5556,8 @@ Ustilaginales;B5.354.179.853;B5.179.853
 Ustilago;B5.354.179.853.800;B5.179.853.800
 Uterine Contraction;;G11.427.792.540.890
 Uterine Prolapse;C23.300.842.875;
-Uterine Prolapse;;UTP-Glucose-1-Phosphate Uridylyltransferase
-Uterine Prolapse;D8.586.913.696.445.875;D8.811.913.696.445.875
-Uterine Prolapse;;UTP-Hexose-1-Phosphate Uridylyltransferase
-Uterine Prolapse;D8.586.913.696.445.900;D8.811.913.696.445.900
+UTP-Glucose-1-Phosphate Uridylyltransferase;D8.586.913.696.445.875;D8.811.913.696.445.875
+UTP-Hexose-1-Phosphate Uridylyltransferase;D8.586.913.696.445.900;D8.811.913.696.445.900
 Vaccination;G3.770.670.310.890;G3.850.780.680.310.890
 Vaccination;;N2.421.726.758.310.890
 Vacuolar Proton-Translocating ATPases;D8.586.277.40.25.325.875;D8.811.277.40.25.325.875
@@ -5622,12 +5573,9 @@ Valproic Acid;D10.516.251.400.895.593.900;D10.251.400.895.593.900
 Valsalva's Maneuver;G9.330.612.925;G9.330.553.400.925
 Valsalva's Maneuver;G9.772.521.700.875;G9.772.765.910
 Vascular Capacitance;G9.330.612.928;G9.330.553.400.928
-Vascular Capacitance;;Vascular Endothelial Growth Factor Receptor-1
-Vascular Capacitance;D8.586.913.696.620.682.725.400.975;D8.811.913.696.620.682.725.400.950.100
-Vascular Capacitance;;Vascular Endothelial Growth Factor Receptor-2
-Vascular Capacitance;D8.586.913.696.620.682.725.400.987;D8.811.913.696.620.682.725.400.950.200
-Vascular Capacitance;;Vascular Endothelial Growth Factor Receptor-3
-Vascular Capacitance;D8.586.913.696.620.682.725.400.993;D8.811.913.696.620.682.725.400.950.300
+Vascular Endothelial Growth Factor Receptor-1;D8.586.913.696.620.682.725.400.975;D8.811.913.696.620.682.725.400.950.100
+Vascular Endothelial Growth Factor Receptor-2;D8.586.913.696.620.682.725.400.987;D8.811.913.696.620.682.725.400.950.200
+Vascular Endothelial Growth Factor Receptor-3;D8.586.913.696.620.682.725.400.993;D8.811.913.696.620.682.725.400.950.300
 Vascular Patency;G9.330.950;G9.330.553.920
 Vascular Resistance;G9.330.612.931;G9.330.553.400.931
 Vasoactive Intestinal Peptide;;D12.644.400.875
@@ -5729,8 +5677,7 @@ Weight-Bearing;G11.427.50.925;
 Wernicke Encephalopathy;C18.654.223.133.699.827.822;C18.654.521.500.133.699.827.822
 Wetting Agents;D26.866.974;D27.720.877.974
 Whales;B2.649.189.865;B1.150.900.649.189.865
-Whales;;Wheat Germ Agglutinin-Horseradish Peroxidase Conjugate
-Whales;D8.586.682.732.512.900;D8.811.682.732.512.900
+Wheat Germ Agglutinin-Horseradish Peroxidase Conjugate;D8.586.682.732.512.900;D8.811.682.732.512.900
 Whipple's Disease;;C1.252.410.40.137.631
 Whole Blood Coagulation Time;;G9.188.250.960
 Wolbachia;B3.440.650.650.825;B3.440.647.825

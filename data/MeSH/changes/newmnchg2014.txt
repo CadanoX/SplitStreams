@@ -1,16 +1,14 @@
 1-Carboxyglutamic Acid;D12.125.67.750.150;D12.125.67.625.174
 1-Carboxyglutamic Acid;D12.125.119.450.150;D12.125.119.409.174
-1-Carboxyglutamic Acid;;11-beta-Hydroxysteroid Dehydrogenase Type 1
-1-Carboxyglutamic Acid;;D8.811.682.47.820.100.300
-1-Carboxyglutamic Acid;;11-beta-Hydroxysteroid Dehydrogenase Type 2
-1-Carboxyglutamic Acid;;D8.811.682.47.820.100.600
+11-beta-Hydroxysteroid Dehydrogenase Type 1;;D8.811.682.47.820.100.300
+11-beta-Hydroxysteroid Dehydrogenase Type 2;;D8.811.682.47.820.100.600
 11-beta-Hydroxysteroid Dehydrogenases;;D8.811.682.47.820.100
 14-3-3 Proteins;D12.644.360.24.313;D12.644.360.24.50
 14-3-3 Proteins;D12.776.157.57.126;D12.776.476.24.50
 14-3-3 Proteins;D12.776.476.24.406;
 20-alpha-Hydroxysteroid Dehydrogenase;D8.811.682.47.436.400.74;D8.811.682.47.820.125.74
 20-Hydroxysteroid Dehydrogenases;D8.811.682.47.436.400;D8.811.682.47.820.125
-20-Hydroxysteroid Dehydrogenases;;D8.811.682.47.820.186
+3-alpha-Hydroxysteroid Dehydrogenase (B-Specific);;D8.811.682.47.820.186
 3-Hydroxyacyl CoA Dehydrogenases;D8.811.682.47.385;D8.811.682.47.820.150
 3-Hydroxybutyric Acid;D2.241.511.400;D2.241.511.429.349
 3-Isopropylmalate Dehydrogenase;D8.811.682.47.500;D8.811.682.47.820.193
@@ -30,10 +28,9 @@ Actinobacillus actinomycetemcomitans;B3.440.450.09.50;B3.440.450.600.224.500
 Actinobacillus actinomycetemcomitans;B3.660.250.550.50.50;B3.660.250.550.170.500
 Acupressure;E2.190.599.92;E2.190.599.750.500
 Acupressure;E2.779.867.171;E2.779.867.880.500
-Acupressure;;Acute Generalized Exanthematous Pustulosis
-Acupressure;C17.800.33;C17.800.174.600.174
-Acupressure;;C20.543.206.380.174
-Acupressure;;C25.100.468.380.174
+Acute Generalized Exanthematous Pustulosis;C17.800.33;C17.800.174.600.174
+Acute Generalized Exanthematous Pustulosis;;C20.543.206.380.174
+Acute Generalized Exanthematous Pustulosis;;C25.100.468.380.174
 Adiantum;B1.650.940.800.575.250.750.44;B1.650.940.900.500.750.750.44
 Adrenergic Neurons;A11.671.761;A11.671.50
 Adrenoleukodystrophy;C10.228.518.625.250;
@@ -45,8 +42,7 @@ Alcohol Withdrawal Delirium;C25.835.250;C25.775.835.250
 Alcohol Withdrawal Seizures;C25.100.87.193.300;C25.775.100.87.193.300
 Alcohol Withdrawal Seizures;C25.835.500;C25.775.835.500
 Alcohol-Induced Disorders;C25.100.87;C25.775.100.87
-Alcohol-Induced Disorders;;Alcohol-Induced Disorders, Nervous System
-Alcohol-Induced Disorders;C25.100.87.193;C25.775.100.87.193
+Alcohol-Induced Disorders, Nervous System;C25.100.87.193;C25.775.100.87.193
 Alcohol-Related Disorders;;C25.775.100
 Alcoholic Intoxication;C25.100.175;C25.775.100.175
 Alcoholic Neuropathy;C25.100.87.193.400;C25.775.100.87.193.400
@@ -232,8 +228,7 @@ Dual-Specificity Phosphatases;;D8.811.641.755
 Durapatite;;D1.29.260.700.675.374.75.25.300.150
 Dyskinesia, Drug-Induced;C25.723.276.612;C25.100.750
 Encephalomyelitis, Acute Disseminated;C10.228.518.562.225;
-Encephalomyelitis, Acute Disseminated;;Encephalomyelitis, Autoimmune, Experimental
-Encephalomyelitis, Acute Disseminated;C10.228.518.562.250;
+Encephalomyelitis, Autoimmune, Experimental;C10.228.518.562.250;
 Endocrine Disruptors;D27.888.284.295;D27.888.141
 Erythema Nodosum;C25.723.276.505.375;C25.100.468.380.375
 Estivation;G7.700.62.415;G7.110.232.889.249
@@ -357,7 +352,7 @@ Glutamates;D12.125.67.750.400;D12.125.67.625
 Glutamates;D12.125.119.450.400;D12.125.119.409
 Glutamic Acid;D12.125.67.750;D12.125.67.625.349
 Glutamic Acid;D12.125.119.450;D12.125.119.409.349
-Glutamic Acid;;D8.811.682.47.820.293
+Glycerol-3-Phosphate Dehydrogenase (NAD+);;D8.811.682.47.820.293
 Glycosylceramidase;;D8.811.277.450.410.100.500.500
 Glycosylceramidase;;D8.811.641.761
 Hand-Foot Syndrome;C25.723.276.505.587;C25.100.468.380.587
@@ -369,8 +364,7 @@ Helsinki Declaration;K1.316.80.249;K1.559.411.80.249
 Helsinki Declaration;K1.316.366.400;K1.559.411.366.400
 Hemodialysis Solutions;;D27.505.954.578.483.651
 Hepatitis, Alcoholic;C25.100.87.645.490;C25.775.100.87.645.490
-Hepatitis, Alcoholic;;Hereditary Central Nervous System Demyelinating Diseases
-Hepatitis, Alcoholic;C10.228.518.625;
+Hereditary Central Nervous System Demyelinating Diseases;C10.228.518.625;
 Heroin;D3.132.577.249.547.547.445;D3.132.577.249.562.445
 Heroin;D3.549.686.575.547.490;D3.549.686.607.490
 Heroin;D3.605.497.575.547.490;D3.605.497.607.490
@@ -406,19 +400,16 @@ Hydroxybutyrate Dehydrogenase;D8.811.682.47.393;D8.811.682.47.820.350
 Hydroxybutyrates;D2.241.511.400.410;D2.241.511.429
 Hydroxylamine;D1.625.75.525;D1.625.62.437
 Hydroxymethylglutaryl CoA Reductases;D8.811.682.47.385.415;D8.811.682.47.820.150.415
-Hydroxymethylglutaryl CoA Reductases;;Hydroxymethylglutaryl-CoA Reductases, NAD-Dependent
-Hydroxymethylglutaryl CoA Reductases;D8.811.682.47.385.415.250;D8.811.682.47.820.150.415.250
-Hydroxymethylglutaryl CoA Reductases;;Hydroxymethylglutaryl-CoA-Reductases, NADP-dependent
-Hydroxymethylglutaryl CoA Reductases;D8.811.682.47.385.415.750;D8.811.682.47.820.150.415.750
+Hydroxymethylglutaryl-CoA Reductases, NAD-Dependent;D8.811.682.47.385.415.250;D8.811.682.47.820.150.415.250
+Hydroxymethylglutaryl-CoA-Reductases, NADP-dependent;D8.811.682.47.385.415.750;D8.811.682.47.820.150.415.750
 Hydroxyprostaglandin Dehydrogenases;D8.811.682.47.428;D8.811.682.47.820.375
 Hydroxypyruvate Reductase;D8.811.682.47.432;D8.811.682.47.820.400
 Hyper-IgM Immunodeficiency Syndrome;;C16.320.413
-Hyper-IgM Immunodeficiency Syndrome;;Hypophosphatemic Rickets, X-Linked Dominant
-Hyper-IgM Immunodeficiency Syndrome;C5.116.198.816.500;C5.116.198.816.875.500
-Hyper-IgM Immunodeficiency Syndrome;C16.320.322.239;C18.452.174.845.875.500
-Hyper-IgM Immunodeficiency Syndrome;C18.452.174.845.500;C18.452.750.400.500.500
-Hyper-IgM Immunodeficiency Syndrome;C18.654.521.500.133.770.734.500;C18.452.750.400.750.500
-Hyper-IgM Immunodeficiency Syndrome;;C18.654.521.500.133.770.734.875.500
+Hypophosphatemic Rickets, X-Linked Dominant;C5.116.198.816.500;C5.116.198.816.875.500
+Hypophosphatemic Rickets, X-Linked Dominant;C16.320.322.239;C18.452.174.845.875.500
+Hypophosphatemic Rickets, X-Linked Dominant;C18.452.174.845.500;C18.452.750.400.500.500
+Hypophosphatemic Rickets, X-Linked Dominant;C18.654.521.500.133.770.734.500;C18.452.750.400.750.500
+Hypophosphatemic Rickets, X-Linked Dominant;;C18.654.521.500.133.770.734.875.500
 Imidocarb;D2.948.684.202.400;D2.455.426.559.389.703.202.400
 Imidocarb;;D2.948.681.202.400
 Immunity, Herd;G12.450.562;G12.450.400
@@ -457,8 +448,7 @@ Leukodystrophy, Globoid Cell;C10.228.518.625.500;
 Leukodystrophy, Metachromatic;C10.228.518.625.550;
 Leukoencephalitis, Acute Hemorrhagic;C10.228.518.562.375;
 Leukoencephalopathies;C10.228.518;
-Leukoencephalopathies;;Leukoencephalopathy, Progressive Multifocal
-Leukoencephalopathies;C10.228.518.750;
+Leukoencephalopathy, Progressive Multifocal;C10.228.518.750;
 Levobunolol;D2.33.100.624.500;D2.33.100.624.698.115.500
 Levobunolol;D2.33.100.624.698.512;D2.33.755.624.698.115.500
 Levobunolol;D2.33.755.624.500;D2.92.63.624.698.115.500
@@ -474,6 +464,7 @@ Liver Diseases, Alcoholic;C25.100.87.645;C25.775.100.87.645
 Lung, Hyperlucent;C8.381.748.500;C8.381.570
 Lymphangiogenesis;G7.700.320.500.325.377.500;G7.700.320.500.325.377.437
 Malate Dehydrogenase;D8.811.682.47.605;D8.811.682.47.820.496
+Malate Dehydrogenase (NADP+);D8.811.682.47.748;D8.811.682.47.820.498
 Malignant Hyperthermia;;C23.550.505.700
 Manual Communication;E2.831.671.609;E2.831.200.609
 Marijuana Abuse;C25.635;C25.775.635
@@ -585,8 +576,7 @@ Pick Disease of the Brain;C10.228.140.380.615;C10.228.140.380.266.299.500
 Pick Disease of the Brain;F3.87.400.675;F3.87.400.380.299.500
 Pindolol;D2.33.100.624.748;
 Pindolol;D2.33.755.624.748;
-Pindolol;;pol Gene Products, Human Immunodeficiency Virus
-Pindolol;D12.776.964.775.562.875;D12.776.964.775.562.764
+pol Gene Products, Human Immunodeficiency Virus;D12.776.964.775.562.875;D12.776.964.775.562.764
 Polyglutamic Acid;D12.125.67.750.400.700;D12.125.67.625.700
 Polyglutamic Acid;D12.125.119.450.400.700;D12.125.119.409.700
 Polyphosphates;;D1.29.260.700.675.374.775
@@ -630,10 +620,8 @@ Respite Care;N2.421.585.611.470.610;
 Restless Legs Syndrome;;C10.803
 Retrospective Moral Judgment;K1.316.163.750;K1.559.411.163.750
 Retrospective Moral Judgment;K1.752.256.113.750;K1.752.566.479.113.750
-Retrospective Moral Judgment;;rev Gene Products, Human Immunodeficiency Virus
-Retrospective Moral Judgment;D12.776.964.775.562.765;D12.776.964.775.562.770
-Retrospective Moral Judgment;;Ribonuclease H, Human Immunodeficiency Virus
-Retrospective Moral Judgment;D12.776.964.775.562.875.875.500;D12.776.964.775.562.764.875.500
+rev Gene Products, Human Immunodeficiency Virus;D12.776.964.775.562.765;D12.776.964.775.562.770
+Ribonuclease H, Human Immunodeficiency Virus;D12.776.964.775.562.875.875.500;D12.776.964.775.562.764.875.500
 RNA Probes;;D27.505.259.750.600.825
 rRNA Operon;G5.360.340.300.500.817;G5.360.340.358.207.500.817
 Russia;;Z1.252.122.500

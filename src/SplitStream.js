@@ -57,6 +57,8 @@ export default class SplitStream {
     this._xSpacing = this.xSpacingFixed;
     this._ySpacing = this.ySpacingFixed;
 
+    this._onMouseOver;
+
     this._color = d3.scaleSequential(d3.interpolateBlues);
     this._colorRandom = false;
 
@@ -164,6 +166,11 @@ export default class SplitStream {
   set ySpacing(callback) {
     this._ySpacing = callback;
     this._update();
+  }
+
+  set onMouseOver(callback) {
+    this._onMouseOver = callback;
+    this.render();
   }
 
   get splits() {
@@ -425,10 +432,7 @@ export default class SplitStream {
       ? getRandomColor
       : this._color.domain([this._maxDepth, 0]);
 
-    let onMouseOver = d => {
-      // console.log('id: ' + d.id);
-      // console.log(d.data);
-    };
+    let onMouseOver = this._onMouseOver;
     let onMouseOut = d => {
       //console.log("mouse out")
     };

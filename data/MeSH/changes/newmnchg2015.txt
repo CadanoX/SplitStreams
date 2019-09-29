@@ -37,8 +37,7 @@ Angioscopy;E4.800.250.35;E4.502.250.35
 Angioscopy;E4.800.382.500;E4.502.382.500
 Anomie;I1.880.578.283;I1.880.853.450.283
 Antacids;;D27.505.954.483.80
-Antacids;;Anterior Cruciate Ligament Reconstruction
-Antacids;E4.680.51;E4.680.101.26
+Anterior Cruciate Ligament Reconstruction;E4.680.51;E4.680.101.26
 Anterior Horn Cells;A8.186.854.80;A8.186.854.729.500
 Anterior Horn Cells;A8.663.655.500.50;A8.675.655.500.50
 Anterior Hypothalamic Nucleus;;A8.186.211.464.497.342.63
@@ -131,19 +130,16 @@ Chemical Industry;J1.576.207;J1.576.655.437
 Chemoreceptor Cells;A8.663.650.915.500;A8.675.650.915.500
 Child Abuse;I1.880.787.293.292;
 Child Abuse, Sexual;I1.880.787.293.292.325;
-Child Abuse, Sexual;;Cholangiopancreatography, Endoscopic Retrograde
-Child Abuse, Sexual;E4.800.250.250.160;E4.502.250.250.160
-Child Abuse, Sexual;;Cholangiopancreatography, Magnetic Resonance
-Child Abuse, Sexual;E1.370.350.500.100;
+Cholangiopancreatography, Endoscopic Retrograde;E4.800.250.250.160;E4.502.250.250.160
+Cholangiopancreatography, Magnetic Resonance;E1.370.350.500.100;
 Cholecystectomy, Laparoscopic;E4.800.250.520.160;E4.502.250.520.160
 Cholinergic Fibers;A8.663.542.234;A8.675.542.234
 Cholinergic Fibers;;A11.671.501.234
 Cholinergic Neurons;A8.663.127;A8.675.127
-Cholinergic Neurons;;Classical Lissencephalies and Subcortical Band Heterotopias
-Cholinergic Neurons;C10.500.507.249.230;C10.500.507.450.230
-Cholinergic Neurons;C10.500.507.750.230;C10.500.507.450.499.230
-Cholinergic Neurons;C16.131.666.507.186.230;C16.131.666.507.450.230
-Cholinergic Neurons;C16.131.666.507.812.230;C16.131.666.507.450.499.230
+Classical Lissencephalies and Subcortical Band Heterotopias;C10.500.507.249.230;C10.500.507.450.230
+Classical Lissencephalies and Subcortical Band Heterotopias;C10.500.507.750.230;C10.500.507.450.499.230
+Classical Lissencephalies and Subcortical Band Heterotopias;C16.131.666.507.186.230;C16.131.666.507.450.230
+Classical Lissencephalies and Subcortical Band Heterotopias;C16.131.666.507.812.230;C16.131.666.507.450.499.230
 Clergy;M1.526.213;M1.526.799.500
 Coal Mining;J1.576.370.500.500;J1.576.655.875.500.500
 Cobblestone Lissencephaly;C10.500.507.249.249;C10.500.507.450.249
@@ -218,8 +214,7 @@ Drug Packaging;J1.576.318.321;J1.576.655.750.321
 Duodenoscopy;E4.800.250.250.250.200;E4.502.250.250.250.200
 Echo-Planar Imaging;E1.370.350.500.200;
 Embryo Culture Techniques;E5.240.468;E5.481.500.468
-Embryo Culture Techniques;;Endoscopic Ultrasound-Guided Fine Needle Aspiration
-Embryo Culture Techniques;E4.800.890.500;E4.502.890.500
+Endoscopic Ultrasound-Guided Fine Needle Aspiration;E4.800.890.500;E4.502.890.500
 Endoscopy;E4.800.250;E4.502.250
 Endoscopy, Digestive System;E4.800.250.250;E4.502.250.250
 Endoscopy, Gastrointestinal;E4.800.250.250.250;E4.502.250.250.250
@@ -233,7 +228,8 @@ Environmental Remediation;;J1.256.282
 Environmental Remediation;;N6.230.80.600
 Eosine I Bluish;D2.455.426.559.847.885.347.300;D2.455.426.779.347.300
 Eosine I Bluish;D4.615.885.347.300;D4.711.347.300
-Eosine I Bluish;D4.615.885.347.325;D4.711.347.325
+Eosine Yellowish-(YS);D2.455.426.559.847.885.347.325;D2.455.426.779.347.325
+Eosine Yellowish-(YS);D4.615.885.347.325;D4.711.347.325
 Epidermal Growth Factor;D12.644.276.561;D12.644.276.382.500
 Epidermal Growth Factor;D12.776.467.561;D12.776.467.382.500
 Epidermal Growth Factor;D23.529.561;D23.529.382.500
@@ -358,9 +354,8 @@ Macrocephaly;C16.131.666.507.343;C16.131.666.507.400.249
 Magnetic Resonance Angiography;E1.370.350.500.500;
 Magnetic Resonance Imaging;E1.370.350.500;
 Magnetic Resonance Imaging, Cine;E1.370.350.500.510;
-Magnetic Resonance Imaging, Cine;;Magnetic Resonance Imaging, Interventional
-Magnetic Resonance Imaging, Cine;E1.370.350.500.755;E4.502.515
-Magnetic Resonance Imaging, Cine;E4.800.515;
+Magnetic Resonance Imaging, Interventional;E1.370.350.500.755;E4.502.515
+Magnetic Resonance Imaging, Interventional;E4.800.515;
 Mamillary Bodies;;A8.186.211.464.497.362.500
 Marijuana Smoking;F1.145.466.349.750.488;F1.145.588
 Marijuana Smoking;F1.145.466.451;
@@ -564,12 +559,10 @@ Retinal Cone Photoreceptor Cells;A8.663.650.915.937.670.100;A8.675.650.915.937.6
 Retinal Ganglion Cells;A8.663.650.850.875;A8.675.650.850.875
 Retinal Horizontal Cells;A8.663.650.850.937;A8.675.650.850.937
 Retinal Neurons;A8.663.650.850;A8.675.650.850
-Retinal Neurons;;Retinal Photoreceptor Cell Inner Segment
-Retinal Neurons;A8.663.650.850.625.670.237;A8.675.650.850.625.670.237
-Retinal Neurons;A8.663.650.915.937.670.237;A8.675.650.915.937.670.237
-Retinal Neurons;;Retinal Photoreceptor Cell Outer Segment
-Retinal Neurons;A8.663.650.850.625.670.375;A8.675.650.850.625.670.375
-Retinal Neurons;A8.663.650.915.937.670.375;A8.675.650.915.937.670.375
+Retinal Photoreceptor Cell Inner Segment;A8.663.650.850.625.670.237;A8.675.650.850.625.670.237
+Retinal Photoreceptor Cell Inner Segment;A8.663.650.915.937.670.237;A8.675.650.915.937.670.237
+Retinal Photoreceptor Cell Outer Segment;A8.663.650.850.625.670.375;A8.675.650.850.625.670.375
+Retinal Photoreceptor Cell Outer Segment;A8.663.650.915.937.670.375;A8.675.650.915.937.670.375
 Retinal Rod Photoreceptor Cells;A8.663.650.850.625.670.650;A8.675.650.850.625.670.650
 Retinal Rod Photoreceptor Cells;A8.663.650.915.937.670.650;A8.675.650.915.937.670.650
 Retrognathia;;C5.500.460.827
@@ -659,8 +652,7 @@ Suppositories;D27.720.280.785;
 Suprachiasmatic Nucleus;;A8.186.211.464.497.342.625
 Supraoptic Nucleus;;A8.186.211.464.497.342.650
 Surgical Procedures, Elective;E4.772;E4.249
-Surgical Procedures, Elective;;Surgical Procedures, Minimally Invasive
-Surgical Procedures, Elective;E4.800;E4.502
+Surgical Procedures, Minimally Invasive;E4.800;E4.502
 Surgical Procedures, Minor;E4.806;E4.506
 Surrogate Mothers;I1.880.225.500.340.892;I1.880.853.150.500.340.892
 Suspensions;D27.720.280.165.810;

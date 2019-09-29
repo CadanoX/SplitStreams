@@ -87,9 +87,8 @@ Alcohol Withdrawal Seizures;C21.613.705.150.300;C25.100.87.193.300
 Alcohol Withdrawal Seizures;C21.739.100.87.193.300;C25.723.705.150.300
 Alcohol Withdrawal Seizures;C21.739.835.500;C25.835.500
 Alcohol-Induced Disorders;C21.739.100.87;C25.100.87
-Alcohol-Induced Disorders;;Alcohol-Induced Disorders, Nervous System
-Alcohol-Induced Disorders;C21.613.705.150;C25.100.87.193
-Alcohol-Induced Disorders;C21.739.100.87.193;C25.723.705.150
+Alcohol-Induced Disorders, Nervous System;C21.613.705.150;C25.100.87.193
+Alcohol-Induced Disorders, Nervous System;C21.739.100.87.193;C25.723.705.150
 Alcohol-Related Disorders;C21.739.100;C25.100
 Alcoholic Intoxication;C21.739.100.175;C25.100.175
 Alcoholic Neuropathy;C21.613.705.150.400;C25.100.87.193.400
@@ -177,14 +176,12 @@ Angioplasty, Balloon, Laser-Assisted;;E4.800.382.124.60.105
 Angioplasty, Balloon, Laser-Assisted;;E4.800.382.124.75.80
 Angioplasty, Laser;E4.100.814.50.75;E4.100.814.529.124.75
 Angioplasty, Laser;;E4.800.382.124.75
-Angioplasty, Laser;;Angioplasty, Transluminal, Percutaneous Coronary
-Angioplasty, Laser;E4.100.814.50.60.100;E4.100.814.529.124.60.100
-Angioplasty, Laser;;E4.800.382.124.60.100
+Angioplasty, Transluminal, Percutaneous Coronary;E4.100.814.50.60.100;E4.100.814.529.124.60.100
+Angioplasty, Transluminal, Percutaneous Coronary;;E4.800.382.124.60.100
 Angioscopy;E4.100.814.55;E4.100.814.529.500
 Angioscopy;;E4.800.382.500
 Angiosperms;B1.650.388.100;B1.650.940.800.575.100
-Angiosperms;;Angiotensin II Type 1 Receptor Blockers
-Angiosperms;D27.505.519.155;D27.505.519.162.500
+Angiotensin II Type 1 Receptor Blockers;D27.505.519.155;D27.505.519.162.500
 Animal Experimentation;;H1.770.644.53
 Animals, Genetically Modified;B1.50.50.680.136;B1.50.50.136
 Animals, Genetically Modified;;B5.620.136
@@ -477,8 +474,7 @@ Carbonic Anhydrase IV;;D12.776.543.550.418.160
 Cardamine;B1.650.388.100.157.255;B1.650.940.800.575.100.157.255
 Cardiac Pacing, Artificial;E2.145;E2.342.124
 Cardiac-Gated Imaging Techniques;E1.370.350.174;E1.370.350.130.500
-Cardiac-Gated Imaging Techniques;;Cardiac-Gated Single-Photon Emission Computer-Assisted Tomography
-Cardiac-Gated Imaging Techniques;E1.370.350.174.500;E1.370.350.130.500.500
+Cardiac-Gated Single-Photon Emission Computer-Assisted Tomography;E1.370.350.174.500;E1.370.350.130.500.500
 Cardiomyopathy, Alcoholic;C21.739.100.87.250;C25.100.87.250
 Carduus;B1.650.388.100.100.168;B1.650.940.800.575.100.100.168
 Carex Plant;B1.650.388.100.312.99;B1.650.940.800.575.100.312.99
@@ -573,10 +569,9 @@ Chrysobalanaceae;B1.650.388.100.842.110;B1.650.940.800.575.100.842.110
 Cicer;B1.650.388.100.401.150;B1.650.940.800.575.100.401.150
 Cicuta;B1.650.388.100.75.388.155;B1.650.940.800.575.100.75.388.155
 Ciguatera Poisoning;C21.613.415.246;C25.723.415.246
-Ciguatera Poisoning;;Ciliary Neurotrophic Factor Receptor alpha Subunit
-Ciguatera Poisoning;;D12.776.395.550.448.200
-Ciguatera Poisoning;;D12.776.543.484.500.200
-Ciguatera Poisoning;;D12.776.543.550.418.200
+Ciliary Neurotrophic Factor Receptor alpha Subunit;;D12.776.395.550.448.200
+Ciliary Neurotrophic Factor Receptor alpha Subunit;;D12.776.543.484.500.200
+Ciliary Neurotrophic Factor Receptor alpha Subunit;;D12.776.543.550.418.200
 Cimicifuga;B1.650.388.100.838.182;B1.650.940.800.575.100.838.182
 Cinchona;B1.650.388.100.850.250;B1.650.940.800.575.100.850.250
 Cinnamomum;B1.650.388.100.590.149;B1.650.940.800.575.100.590.149
@@ -849,9 +844,8 @@ Emulsions;D27.720.280.165.260;
 Encephalocele;;C23.300.707.186
 Encephalomyelitis, Acute Disseminated;;C10.228.140.695.562.225
 Encephalomyelitis, Acute Disseminated;;C10.228.518.562.225
-Encephalomyelitis, Acute Disseminated;;Encephalomyelitis, Autoimmune, Experimental
-Encephalomyelitis, Acute Disseminated;;C10.228.140.695.562.250
-Encephalomyelitis, Acute Disseminated;;C10.228.518.562.250
+Encephalomyelitis, Autoimmune, Experimental;;C10.228.140.695.562.250
+Encephalomyelitis, Autoimmune, Experimental;;C10.228.518.562.250
 Endangered Species;G16.500.249.49.250;G16.500.275.157.49.250
 Endophthalmitis;C1.252.354.900.350;C1.539.375.265
 Endophthalmitis;C1.539.375.354.900.350;C11.294.265
@@ -924,8 +918,7 @@ Evolution, Molecular;G5.355.265.250;G5.355.44.250
 Evolution, Molecular;G16.100.275.250;G16.100.178.250
 Excipients;D26.650.931.419;D26.650.700.419
 Excipients;D27.720.744.931.419;D27.720.744.770.419
-Excipients;;Extravasation of Diagnostic and Therapeutic Materials
-Excipients;C21.866.371;C26.371
+Extravasation of Diagnostic and Therapeutic Materials;C21.866.371;C26.371
 Eye Burns;C21.866.200.503;C26.200.503
 Eye Burns;C21.866.260.275.250.250;C26.260.275.250.250
 Eye Foreign Bodies;C21.866.260.275.250.260;C26.260.275.250.260
@@ -1069,10 +1062,9 @@ Geum;B1.650.388.100.842.500.288;B1.650.940.800.575.100.842.500.288
 Ginger;B1.650.388.100.975.900.444;B1.650.940.800.575.100.975.900.444
 Ginkgo biloba;B1.650.388.400.300;B1.650.940.800.575.400.300
 Gleditsia;B1.650.388.100.401.275;B1.650.940.800.575.100.401.275
-Gleditsia;;Glial Cell Line-Derived Neurotrophic Factor Receptors
-Gleditsia;;D12.776.395.550.448.400
-Gleditsia;;D12.776.543.484.500.400
-Gleditsia;;D12.776.543.550.418.400
+Glial Cell Line-Derived Neurotrophic Factor Receptors;;D12.776.395.550.448.400
+Glial Cell Line-Derived Neurotrophic Factor Receptors;;D12.776.543.484.500.400
+Glial Cell Line-Derived Neurotrophic Factor Receptors;;D12.776.543.550.418.400
 Gloves, Surgical;;E7.858.594.500
 Glycyrrhiza;B1.650.388.100.401.300;B1.650.940.800.575.100.401.300
 Glycyrrhiza uralensis;B1.650.388.100.401.300.500;B1.650.940.800.575.100.401.300.500
@@ -1169,8 +1161,7 @@ Heliconiaceae;B1.650.388.100.975.323;B1.650.940.800.575.100.975.323
 Heliotropium;B1.650.388.100.150.444;B1.650.940.800.575.100.150.444
 Helleborus;B1.650.388.100.838.337;B1.650.940.800.575.100.838.337
 Hemangioma, Cavernous;C15.378.463.835.385;C15.378.463.515.385
-Hemangioma, Cavernous;;Hemangioma, Cavernous, Central Nervous System
-Hemangioma, Cavernous;C15.378.463.835.385.500;C15.378.463.515.385.500
+Hemangioma, Cavernous, Central Nervous System;C15.378.463.835.385.500;C15.378.463.515.385.500
 Hematoma, Epidural, Cranial;C21.866.260.616.300;C26.260.616.300
 Hematoma, Epidural, Cranial;C21.866.915.300.490.400;C26.915.300.490.400
 Hematoma, Subdural;C21.866.260.616.600;C26.260.616.600
@@ -1192,13 +1183,12 @@ Heparin Cofactor II;D12.776.872.60.380;D12.776.872.60.750
 Hepatitis, Alcoholic;C21.739.100.87.645.490;C25.100.87.645.490
 Hepatophyta;B1.650.388.462;B1.650.940.800.575.462
 Heracleum;B1.650.388.100.75.411;B1.650.940.800.575.100.75.411
-Heracleum;;Hereditary Central Nervous System Demyelinating Diseases
-Heracleum;;C10.228.140.163.100.362
-Heracleum;;C10.228.140.695.625
-Heracleum;;C10.228.518.625
-Heracleum;;C16.320.565.189.362
-Heracleum;;C18.452.132.100.362
-Heracleum;;C18.452.648.189.362
+Hereditary Central Nervous System Demyelinating Diseases;;C10.228.140.163.100.362
+Hereditary Central Nervous System Demyelinating Diseases;;C10.228.140.695.625
+Hereditary Central Nervous System Demyelinating Diseases;;C10.228.518.625
+Hereditary Central Nervous System Demyelinating Diseases;;C16.320.565.189.362
+Hereditary Central Nervous System Demyelinating Diseases;;C18.452.132.100.362
+Hereditary Central Nervous System Demyelinating Diseases;;C18.452.648.189.362
 Hermaphroditism, True;C12.706.842.316.313;C12.706.316.343
 Hermaphroditism, True;C13.351.875.842.316.313;C13.351.875.253.343
 Hermaphroditism, True;C16.131.939.842.316.313;C16.131.939.316.343
@@ -1250,8 +1240,7 @@ Hydrastis;B1.650.388.100.838.397;B1.650.940.800.575.100.838.397
 Hydrocephalus;C16.614.414;
 Hydrocharitaceae;B1.650.388.100.25.399;B1.650.940.800.575.100.25.399
 Hydrophyllaceae;B1.650.388.100.531;B1.650.940.800.575.100.531
-Hydrophyllaceae;;Hydroxymethylglutaryl-CoA Reductase Inhibitors
-Hydrophyllaceae;D27.505.954.230.202.370;D27.505.954.557.500.202.370
+Hydroxymethylglutaryl-CoA Reductase Inhibitors;D27.505.954.230.202.370;D27.505.954.557.500.202.370
 Hymenaea;B1.650.388.100.401.327;B1.650.940.800.575.100.401.327
 Hyoscyamus;B1.650.388.100.905.274;B1.650.940.800.575.100.905.274
 Hyperandrogenism;C19.391.775.370;C12.706.316.64.500
@@ -1286,12 +1275,9 @@ Insect Bites and Stings;C21.613.127.441;C25.723.127.441
 Instruction;;V1.255.500.500
 Integration Host Factors;;D23.297.500
 Interactive Tutorial;V2.600.500.500;V1.255.500.625
-Interactive Tutorial;;Intermittent Positive-Pressure Breathing
-Interactive Tutorial;;E2.41.625.790.520
-Interactive Tutorial;;Intermittent Positive-Pressure Ventilation
-Interactive Tutorial;;E2.41.625.790.550
-Interactive Tutorial;;Internal Mammary-Coronary Artery Anastomosis
-Interactive Tutorial;;E4.100.814.868.750.400
+Intermittent Positive-Pressure Breathing;;E2.41.625.790.520
+Intermittent Positive-Pressure Ventilation;;E2.41.625.790.550
+Internal Mammary-Coronary Artery Anastomosis;;E4.100.814.868.750.400
 Intervertebral Disk Displacement;;C23.300.707.952
 Intra-Articular Fractures;C21.866.404.505;C26.404.505
 Intracranial Hemorrhage, Traumatic;C21.866.260.616;C26.260.616
@@ -1383,8 +1369,7 @@ Lawsonia Plant;B1.650.388.100.665.437;B1.650.940.800.575.100.665.437
 Lead Poisoning;C21.613.589;C25.723.589
 Lead Poisoning, Nervous System;C21.613.589.500;C25.723.589.500
 Lead Poisoning, Nervous System, Adult;C21.613.589.500.400;C25.723.589.500.400
-Lead Poisoning, Nervous System, Adult;;Lead Poisoning, Nervous System, Childhood
-Lead Poisoning, Nervous System, Adult;C21.613.589.500.700;C25.723.589.500.700
+Lead Poisoning, Nervous System, Childhood;C21.613.589.500.700;C25.723.589.500.700
 Lecythidaceae;B1.650.388.100.600;B1.650.940.800.575.100.600
 Ledum;B1.650.388.100.343.324;B1.650.940.800.575.100.343.324
 Leg Injuries;C21.866.558;C26.558
@@ -1412,8 +1397,7 @@ Leukodystrophy, Metachromatic;;C18.452.648.189.362.550
 Leukoencephalitis, Acute Hemorrhagic;;C10.228.140.695.562.375
 Leukoencephalitis, Acute Hemorrhagic;;C10.228.518.562.375
 Leukoencephalopathies;;C10.228.518
-Leukoencephalopathies;;Leukoencephalopathy, Progressive Multifocal
-Leukoencephalopathies;;C10.228.518.750
+Leukoencephalopathy, Progressive Multifocal;;C10.228.518.750
 Leuzea;B1.650.388.100.100.506;B1.650.940.800.575.100.100.506
 Levisticum;B1.650.388.100.75.488;B1.650.940.800.575.100.75.488
 Libocedrus;B1.650.388.400.122.188.599;B1.650.940.800.575.400.122.188.599
@@ -1428,8 +1412,7 @@ Lilium;B1.650.388.100.610.500;B1.650.940.800.575.100.610.500
 Linaceae;B1.650.388.100.620;B1.650.940.800.575.100.620
 Linaria;B1.650.388.100.892.555;B1.650.940.800.575.100.892.555
 Lindera;B1.650.388.100.590.524;B1.650.940.800.575.100.590.524
-Lindera;;Lipoid Proteinosis of Urbach and Wiethe
-Lindera;C17.800.454;
+Lipoid Proteinosis of Urbach and Wiethe;C17.800.454;
 Lipotropic Agents;D27.505.954.230.601;D27.505.954.557.500.601
 Lipoxygenase;D8.811.682.690.416.444;D8.811.682.690.416.583.625
 Lipoxygenase;D12.776.556.579.374.450;D12.776.556.579.374.568.750
@@ -1467,8 +1450,7 @@ Macadamia;B1.650.388.100.831.500;B1.650.940.800.575.100.831.500
 Maclura;B1.650.388.100.750.599;B1.650.940.800.575.100.750.599
 Macrocystis;B1.40.50.480;B1.750.600.480
 Madhuca;B1.650.388.100.886.500;B1.650.940.800.575.100.886.500
-Madhuca;;Magnetic Resonance Imaging, Interventional
-Madhuca;;E4.800.515
+Magnetic Resonance Imaging, Interventional;;E4.800.515
 Magnolia;B1.650.388.100.680.500;B1.650.940.800.575.100.680.500
 Magnoliaceae;B1.650.388.100.680;B1.650.940.800.575.100.680
 Mahonia;B1.650.388.100.125.374;B1.650.940.800.575.100.125.374
@@ -1542,6 +1524,7 @@ Millettia;B1.650.388.100.401.594;B1.650.940.800.575.100.401.594
 Mimosa;B1.650.388.100.401.596;B1.650.940.800.575.100.401.596
 Mimulus;B1.650.388.100.892.599;B1.650.940.800.575.100.892.599
 Mimusops;B1.650.388.100.886.577;B1.650.940.800.575.100.886.577
+Mind-Body Relations (Metaphysics);E2.190.525.750;
 Mirabilis;B1.650.388.100.775.500;B1.650.940.800.575.100.775.500
 Mistletoe;B1.650.388.100.735;B1.650.940.800.575.100.735
 Mite Infestations;C3.858.211.394;C3.858.211.480
@@ -1707,6 +1690,7 @@ Orthosiphon;B1.650.388.100.575.729;B1.650.940.800.575.100.575.729
 Oryza sativa;B1.650.388.100.822.616;B1.650.940.800.575.100.822.616
 Osteopontin;;D12.776.395.700.837
 Osteoradionecrosis;C21.866.733.579;C26.733.579
+Outcome Assessment (Health Care);;H1.770.644.145.431
 Ovarian Failure, Premature;C13.351.500.56.630.611;C13.351.500.56.630.750
 Ovarian Failure, Premature;C19.391.630.611;C19.391.630.750
 Overdose;C21.613.730;C25.723.730
@@ -1721,11 +1705,10 @@ Panax notoginseng;B1.650.388.100.87.500.500;B1.650.940.800.575.100.87.500.500
 Pancreatitis, Alcoholic;C21.739.100.87.730;C25.100.87.730
 Pandanaceae;B1.650.388.100.792;B1.650.940.800.575.100.792
 Panicum;B1.650.388.100.822.680;B1.650.940.800.575.100.822.680
-Panicum;;Pantothenate Kinase-Associated Neurodegeneration
-Panicum;C10.228.140.79.501;C10.228.140.79.800
-Panicum;C10.228.662.425;C10.228.662.575
-Panicum;C10.574.500.492;C10.574.500.700
-Panicum;C16.320.400.400;C16.320.400.650
+Pantothenate Kinase-Associated Neurodegeneration;C10.228.140.79.501;C10.228.140.79.800
+Pantothenate Kinase-Associated Neurodegeneration;C10.228.662.425;C10.228.662.575
+Pantothenate Kinase-Associated Neurodegeneration;C10.574.500.492;C10.574.500.700
+Pantothenate Kinase-Associated Neurodegeneration;C16.320.400.400;C16.320.400.650
 Papaver;B1.650.388.100.795.500;B1.650.940.800.575.100.795.500
 Papaveraceae;B1.650.388.100.795;B1.650.940.800.575.100.795
 Paralysis, Obstetric;C21.866.141.587;C26.141.587
@@ -1862,8 +1845,7 @@ Porphyridium;B1.40.100.610;B1.650.700.610
 Porphyrinogens;D23.767.727.700;
 Portacaval Shunt, Surgical;E4.100.814.790.790;E4.100.814.868.937.790
 Portasystemic Shunt, Surgical;E4.100.814.790;E4.100.814.868.937
-Portasystemic Shunt, Surgical;;Portasystemic Shunt, Transjugular Intrahepatic
-Portasystemic Shunt, Surgical;E4.100.814.790.830;E4.100.814.868.937.830
+Portasystemic Shunt, Transjugular Intrahepatic;E4.100.814.790.830;E4.100.814.868.937.830
 Portulaca;B1.650.388.100.827.500;B1.650.940.800.575.100.827.500
 Portulacaceae;B1.650.388.100.827;B1.650.940.800.575.100.827
 Positive-Pressure Respiration;;E2.41.625.790
@@ -2015,12 +1997,10 @@ Receptors, Serotonin, 5-HT3;;D12.776.543.585.400.500.100.700
 Receptors, Serotonin, 5-HT3;;D12.776.543.750.51.750
 Regulatory Sequences, Ribonucleic Acid;D13.444.735.790.149;D13.444.735.790.878.942
 Rehmannia;B1.650.388.100.892.833;B1.650.940.800.575.100.892.833
-Rehmannia;;Research Support, American Recovery and Reinvestment Act
-Rehmannia;V4.500.249;V4.750.124
+Research Support, American Recovery and Reinvestment Act;V4.500.249;V4.750.124
 Research Support, N.I.H., Extramural;V4.500.500;V4.750.500.500
 Research Support, N.I.H., Intramural;V4.500.750;V4.750.500.750
-Research Support, N.I.H., Intramural;;Research Support, U.S. Gov't, Non-P.H.S.
-Research Support, N.I.H., Intramural;V4.249;V4.750.249
+Research Support, U.S. Gov't, Non-P.H.S.;V4.249;V4.750.249
 Research Support, U.S. Gov't, P.H.S.;V4.500;V4.750.500
 Resedaceae;B1.650.388.100.839;B1.650.940.800.575.100.839
 Respiration, Artificial;;E2.41.625
@@ -2133,8 +2113,9 @@ Sesbania;B1.650.388.100.401.726;B1.650.940.800.575.100.401.726
 Setaria Plant;B1.650.388.100.822.871;B1.650.940.800.575.100.822.871
 Sex Chromosome Disorders;C16.131.260.800;C16.131.260.830
 Sex Chromosome Disorders;C16.320.180.800;C16.320.180.830
-Sex Chromosome Disorders;;G7.700.320.750.437
-Sex Chromosome Disorders;;G8.686.785.880.437
+Sex Determination (Genetics);;G7.700.320.500.325.377.812
+Sex Determination (Genetics);;G7.700.320.750.437
+Sex Determination (Genetics);;G8.686.785.880.437
 Sex Differentiation;G7.700.320.500.325.520;G7.700.320.500.325.377.843
 Sex Differentiation;G8.686.785.760.170.520;G7.700.320.750.500
 Sex Differentiation;G8.686.785.760.960.500;G8.686.785.880.500
@@ -2172,8 +2153,7 @@ Simaroubaceae;B1.650.388.100.898;B1.650.940.800.575.100.898
 Sinapis;B1.650.388.100.157.811;B1.650.940.800.575.100.157.811
 Single-Chain Antibodies;;D12.644.541.500.650.500.800
 Single-Chain Antibodies;;D12.776.124.486.485.114.224.785
-Single-Chain Antibodies;;Single-Strand Specific DNA and RNA Endonucleases
-Single-Chain Antibodies;D8.811.277.352.700.350.25;D8.811.277.352.700.350.850
+Single-Strand Specific DNA and RNA Endonucleases;D8.811.277.352.700.350.25;D8.811.277.352.700.350.850
 Sinomenium;B1.650.388.100.725.625;B1.650.940.800.575.100.725.625
 Skin Manifestations;C17.800.871;
 Skull Fracture, Basilar;C21.866.260.836.150;C26.260.836.150

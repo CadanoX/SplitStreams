@@ -532,5 +532,9 @@ document.addEventListener('DOMContentLoaded', async function(event) {
   await loadDataset(app.dataset.value);
   stream = new SplitStream(wrapper).data(datasets[app.dataset.value]);
 
+  let tooltip = document.querySelector('.tooltip');
+  stream.onMouseOver = d => {
+    tooltip.innerText = JSON.stringify(d.data);
+  };
   stream.addSplitsAtTimepoints();
 });

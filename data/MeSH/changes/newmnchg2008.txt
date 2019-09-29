@@ -1,13 +1,11 @@
-;;1-Alkyl-2-acetylglycerophosphocholine Esterase
-;D8.811.277.352.100.680.750.500;D8.811.277.352.100.680.750.937.249
+1-Alkyl-2-acetylglycerophosphocholine Esterase;D8.811.277.352.100.680.750.500;D8.811.277.352.100.680.750.937.249
 1-Deoxynojirimycin;D9.477.500.33;D3.132.14
 1-Deoxynojirimycin;;D9.546.412.500.33
 3',5'-Cyclic-GMP Phosphodiesterase;D8.811.277.352.640.125;D8.811.277.352.640.155
 3',5'-Cyclic-GMP Phosphodiesterase;;D12.644.360.09
 3',5'-Cyclic-GMP Phosphodiesterase;;D12.776.476.09
-3',5'-Cyclic-GMP Phosphodiesterase;;3',5'-Cyclic-Nucleotide Phosphodiesterase
-3',5'-Cyclic-GMP Phosphodiesterase;;D12.644.360.08
-3',5'-Cyclic-GMP Phosphodiesterase;;D12.776.476.08
+3',5'-Cyclic-Nucleotide Phosphodiesterase;;D12.644.360.08
+3',5'-Cyclic-Nucleotide Phosphodiesterase;;D12.776.476.08
 Abrin;D12.776.765.678.249;D8.811.277.450.430.700.750.111
 Abrin;;D12.776.765.678.906.111
 Absorptiometry, Photon;E1.370.350.710.50;E1.370.350.700.24
@@ -55,10 +53,9 @@ Amnion;A16.254.403.277;A16.254.750.277
 Amniotic Fluid;A16.254.72;A16.378.149
 Amoxicillin;D2.886.675.966.500.750.750.50.50;D2.886.108.750.750.50.50
 Amoxicillin;;D4.75.80.875.99.221.750.750.50.50
-Amoxicillin;;Amoxicillin-Potassium Clavulanate Combination
-Amoxicillin;D2.886.675.966.500.750.750.50.50.60;D2.886.108.750.750.50.50.60
-Amoxicillin;;D4.75.80.875.99.221.374.160.60
-Amoxicillin;;D4.75.80.875.99.221.750.750.50.50.500
+Amoxicillin-Potassium Clavulanate Combination;D2.886.675.966.500.750.750.50.50.60;D2.886.108.750.750.50.50.60
+Amoxicillin-Potassium Clavulanate Combination;;D4.75.80.875.99.221.374.160.60
+Amoxicillin-Potassium Clavulanate Combination;;D4.75.80.875.99.221.750.750.50.50.500
 Ampicillin;D2.886.675.966.500.750.750.50;D2.886.108.750.750.50
 Ampicillin;;D4.75.80.875.99.221.750.750.50
 Amygdala;A8.186.211.577.90;A8.186.211.464.90
@@ -107,8 +104,7 @@ Aortic Stenosis, Supravalvular;;C14.280.955.249.535
 Aortic Valve Stenosis;;C14.280.955.249
 Arcuate Nucleus;A8.186.211.730.385.357.352.81;A8.186.211.730.317.357.352.81
 Area Postrema;;A8.186.211.865.467.500.286
-Area Postrema;;Arrhythmogenic Right Ventricular Dysplasia
-Area Postrema;C14.280.67.845.940.350;C14.280.238.28
+Arrhythmogenic Right Ventricular Dysplasia;C14.280.67.845.940.350;C14.280.238.28
 Arterio-Arterial Fistula;C14.240.110;C14.240.850.984.500
 Arterio-Arterial Fistula;C16.131.240.110;C16.131.240.850.500
 Arteriovenous Fistula;C14.240.150.125;C14.240.850.750.147
@@ -268,11 +264,10 @@ Cefuroxime;D2.886.675.966.500.249.190.190.165;D2.886.665.74.190.190.165
 Cefuroxime;;D4.75.80.875.99.221.249.190.190.165
 Cell Migration Inhibition;E1.450.495.150;G4.335.283.337
 Cell Migration Inhibition;E5.478.150;
-Cell Migration Inhibition;I1.409.275.300.650.225;I1.409.137.500.600.650.225
-Cell Migration Inhibition;N3.540.427.300.650.225;N3.540.348.500.500.600.650.225
-Cell Migration Inhibition;;Central Nervous System Vascular Malformations
-Cell Migration Inhibition;C14.240.275;C14.240.850.875
-Cell Migration Inhibition;C16.131.240.275;C16.131.240.850.875
+Centers for Disease Control and Prevention (U.S.);I1.409.275.300.650.225;I1.409.137.500.600.650.225
+Centers for Disease Control and Prevention (U.S.);N3.540.427.300.650.225;N3.540.348.500.500.600.650.225
+Central Nervous System Vascular Malformations;C14.240.275;C14.240.850.875
+Central Nervous System Vascular Malformations;C16.131.240.275;C16.131.240.850.875
 Central Nervous System Venous Angioma;;C14.240.850.875.124
 Central Venous Pressure;G9.330.553.400.114.732.336;G9.330.553.660.76.732.336
 Cephacetrile;D2.886.675.966.500.249.190;D2.886.665.74.190
@@ -319,9 +314,8 @@ Chemosterilants;;D27.720.31.700.141
 Chick Embryo;A16.254.300.200;A16.331.200
 Chlorisondamine;D3.438.473.193;D3.438.513.249
 Chlorthalidone;;D3.438.513.750.500
-Chlorthalidone;;Cholangiopancreatography, Magnetic Resonance
-Chlorthalidone;E1.370.350.700.715.200.215;E1.370.372.207
-Chlorthalidone;E1.370.372.200.215;
+Cholangiopancreatography, Magnetic Resonance;E1.370.350.700.715.200.215;E1.370.372.207
+Cholangiopancreatography, Magnetic Resonance;E1.370.372.200.215;
 Cholesterol Esterase;D8.811.277.352.100.150;D8.811.277.352.100.700
 Chorea;;C10.228.662.262.249
 Chorea Gravidarum;C10.228.662.150.500;C10.228.662.262.249.500
@@ -345,9 +339,8 @@ Cochlear Nucleus;;A8.186.211.865.428.600.135
 Coffee;;D20.215.784.249
 Colistin;;D12.776.543.695.54.600.110
 Colitis, Ischemic;C14.907.553.180;C14.907.286
-Colitis, Ischemic;;Commission on Professional and Hospital Activities
-Colitis, Ischemic;N4.761.380.100;N4.761.700.250.500.100
-Colitis, Ischemic;N5.700.500.200;N5.700.175.500.200
+Commission on Professional and Hospital Activities;N4.761.380.100;N4.761.700.250.500.100
+Commission on Professional and Hospital Activities;N5.700.500.200;N5.700.175.500.200
 Compartment Syndromes;C14.907.553.241;C14.907.303
 Complement C1 Inhibitor Protein;;D12.776.872.140.500
 Complement Fixation Tests;;E5.478.594.760.150
@@ -374,8 +367,7 @@ Corticotrophs;A6.407.747.608.500;A6.407.747.500.500
 Corticotrophs;A6.688.357.750.700.500;A6.688.357.750.500.500
 Corticotrophs;A8.186.211.730.385.357.352.435.500.700.500;A8.186.211.730.317.357.352.435.500.500.500
 Corticotrophs;A8.713.357.750.700.500;A8.713.357.750.500.500
-Corticotrophs;;Corticotropin-Like Intermediate Lobe Peptide
-Corticotrophs;D6.472.699.631.525.475.498;D6.472.699.631.525.600.498
+Corticotropin-Like Intermediate Lobe Peptide;D6.472.699.631.525.475.498;D6.472.699.631.525.600.498
 Cosyntropin;D6.472.699.631.525.475.531.500.200;D6.472.699.631.525.600.531.500.200
 Cotyledon;;B6.413.24.500.750.333
 Counterimmunoelectrophoresis;;E5.478.594.760.645.350.350.150
@@ -444,10 +436,9 @@ Enterobactin;;D12.644.641.352
 Entopeduncular Nucleus;A8.186.211.730.385.800.240;A8.186.211.730.317.800.240
 Entorhinal Cortex;A8.186.211.577.710.225;A8.186.211.464.710.225
 Entorhinal Cortex;A8.186.211.730.885.213.863.648.225;A8.186.211.730.885.287.500.863.648.225
-Entorhinal Cortex;;Enzyme Multiplied Immunoassay Technique
-Entorhinal Cortex;E5.478.567.350.180;E1.450.495.435.400.180
-Entorhinal Cortex;E5.478.588.400.180;E5.478.594.410.350.180
-Entorhinal Cortex;;E5.478.594.430.400.180
+Enzyme Multiplied Immunoassay Technique;E5.478.567.350.180;E1.450.495.435.400.180
+Enzyme Multiplied Immunoassay Technique;E5.478.588.400.180;E5.478.594.410.350.180
+Enzyme Multiplied Immunoassay Technique;;E5.478.594.430.400.180
 Enzyme-Linked Immunosorbent Assay;E5.478.567.350.170;E1.450.495.435.400.170
 Enzyme-Linked Immunosorbent Assay;E5.478.567.380.360;E5.478.594.410.350.170
 Enzyme-Linked Immunosorbent Assay;E5.478.588.400.170;E5.478.594.410.380.360
@@ -485,15 +476,14 @@ Fluorescent Antibody Technique;E1.450.495.225;E1.450.495.435.375
 Fluorescent Antibody Technique;E5.478.588.375;E5.478.594.430.375
 Fluorescent Antibody Technique, Direct;E1.450.495.225.225;E1.450.495.435.375.300
 Fluorescent Antibody Technique, Direct;E5.478.588.375.300;E5.478.594.430.375.300
-Fluorescent Antibody Technique, Direct;;Fluorescent Antibody Technique, Indirect
-Fluorescent Antibody Technique, Direct;E1.450.495.225.230;E1.450.495.435.375.310
-Fluorescent Antibody Technique, Direct;E5.478.588.375.310;E5.478.594.430.375.310
-Fluorescent Antibody Technique, Direct;;Fluorescent Treponemal Antibody-Absorption Test
-Fluorescent Antibody Technique, Direct;;E5.478.594.760.850.200
+Fluorescent Antibody Technique, Indirect;E1.450.495.225.230;E1.450.495.435.375.310
+Fluorescent Antibody Technique, Indirect;E5.478.588.375.310;E5.478.594.430.375.310
+Fluorescent Treponemal Antibody-Absorption Test;;E5.478.594.760.850.200
 Fluoroimmunoassay;E1.450.495.225.240;E1.450.495.435.375.341
 Fluoroimmunoassay;E5.478.588.375.341;E5.478.594.430.375.341
 Flurbiprofen;;D2.455.426.559.389.185.350
 Foam Cells;A11.627.624.480.368;A11.627.482.368
+Fornix (Brain);A8.186.211.577.265;A8.186.211.464.265
 Foster Home Care;;I1.880.787.416
 Frameshift Mutation;G13.920.590.300;G13.920.590.265
 Frontal Lobe;A8.186.211.730.885.213.270;A8.186.211.730.885.287.500.270
@@ -557,9 +547,8 @@ Hemadsorption Inhibition Tests;;E5.478.594.760.360
 Hemagglutination Inhibition Tests;;E5.478.594.760.370
 Hemagglutination Tests;;E5.478.594.760.50.375
 Hemangioma, Cavernous;C14.907.934.385;C14.907.454.385
-Hemangioma, Cavernous;;Hemangioma, Cavernous, Central Nervous System
-Hemangioma, Cavernous;C14.907.934.385.500;C14.240.850.875.249
-Hemangioma, Cavernous;;C14.907.454.385.500
+Hemangioma, Cavernous, Central Nervous System;C14.907.934.385.500;C14.240.850.875.249
+Hemangioma, Cavernous, Central Nervous System;;C14.907.454.385.500
 Hematocrit;G9.188.250.400;G9.188.250.520.374
 Hemodynamic Processes;;G9.330.553.660
 Hemolytic Plaque Technique;E5.478.421;E5.478.594.375
@@ -569,8 +558,7 @@ Hemorheology;H1.671.799.193;G9.330.553.660.630
 Hemorheology;;G9.330.582.400.295
 Hepatolenticular Degeneration;C16.320.400.387;C16.320.400.361
 Herbicides;;D27.720.31.700.366
-Herbicides;;Hereditary Central Nervous System Demyelinating Diseases
-Herbicides;C16.320.400.393;C16.320.400.367
+Hereditary Central Nervous System Demyelinating Diseases;C16.320.400.393;C16.320.400.367
 Herpes Simplex Virus Protein Vmw65;D12.776.260.900.800.400;D12.776.260.755.400
 Herpes Simplex Virus Protein Vmw65;D12.776.964.950.800.445;D12.776.964.925.984.445
 Herpes Zoster Vaccine;D20.215.894.899.290.420;D20.215.894.899.290.130.400
@@ -664,13 +652,12 @@ Intracranial Aneurysm;C10.228.140.300.510.200.450;C10.228.140.300.510.600
 Intracranial Aneurysm;C14.907.253.560.200.450;C14.907.253.560.300
 Intracranial Arteriosclerosis;C10.228.140.300.510.200.475;C10.228.140.300.510.800
 Intracranial Arteriosclerosis;C14.907.253.560.200.475;C14.907.253.560.350
-Intracranial Arteriosclerosis;;Intracranial Arteriovenous Malformations
-Intracranial Arteriosclerosis;C10.228.140.300.510.400;C10.500.190.500
-Intracranial Arteriosclerosis;C10.500.460;C14.240.850.750.295
-Intracranial Arteriosclerosis;C14.240.150.295;C14.240.850.875.500
-Intracranial Arteriosclerosis;C14.907.253.563;C16.131.240.850.750.295
-Intracranial Arteriosclerosis;C16.131.240.150.295;C16.131.240.850.875.500
-Intracranial Arteriosclerosis;C16.131.666.460;C16.131.666.190.500
+Intracranial Arteriovenous Malformations;C10.228.140.300.510.400;C10.500.190.500
+Intracranial Arteriovenous Malformations;C10.500.460;C14.240.850.750.295
+Intracranial Arteriovenous Malformations;C14.240.150.295;C14.240.850.875.500
+Intracranial Arteriovenous Malformations;C14.907.253.563;C16.131.240.850.750.295
+Intracranial Arteriovenous Malformations;C16.131.240.150.295;C16.131.240.850.875.500
+Intracranial Arteriovenous Malformations;C16.131.666.460;C16.131.666.190.500
 Intracranial Embolism;C14.907.355.350.850.213.300;C14.907.355.590.213.300
 Intracranial Embolism and Thrombosis;C14.907.355.350.850.213;C14.907.355.590.213
 Intracranial Thrombosis;C14.907.355.350.850.213.350;C14.907.355.590.213.350
@@ -689,14 +676,12 @@ Jervell-Lange Nielsen Syndrome;;C23.550.73.547.440
 Keratectomy, Laser;E4.416.237;E2.594.480
 Keratectomy, Laser;;E4.416.480
 Keratectomy, Laser;;E4.540.825.437
-Keratectomy, Laser;;Keratectomy, Photorefractive, Excimer Laser
-Keratectomy, Laser;E4.416.237.500;E2.594.480.875
-Keratectomy, Laser;E4.540.492;E4.416.480.875
-Keratectomy, Laser;;E4.540.825.437.500
-Keratectomy, Laser;;Keratectomy, Subepithelial, Laser-Assisted
-Keratectomy, Laser;E4.416.237.875;E2.594.480.500
-Keratectomy, Laser;;E4.416.480.500
-Keratectomy, Laser;;E4.540.825.437.249
+Keratectomy, Photorefractive, Excimer Laser;E4.416.237.500;E2.594.480.875
+Keratectomy, Photorefractive, Excimer Laser;E4.540.492;E4.416.480.875
+Keratectomy, Photorefractive, Excimer Laser;;E4.540.825.437.500
+Keratectomy, Subepithelial, Laser-Assisted;E4.416.237.875;E2.594.480.500
+Keratectomy, Subepithelial, Laser-Assisted;;E4.416.480.500
+Keratectomy, Subepithelial, Laser-Assisted;;E4.540.825.437.249
 Keratomileusis, Laser In Situ;E4.416.237.750;E2.594.480.750
 Keratomileusis, Laser In Situ;E4.540.590;E4.416.480.750
 Keratomileusis, Laser In Situ;;E4.540.825.437.374
@@ -787,12 +772,12 @@ Locus Coeruleus;;A8.186.211.653.473
 Locus Coeruleus;;A8.186.211.865.428.600.500
 Long QT Syndrome;;C16.131.240.400.715
 Long QT Syndrome;;C23.550.73.547
-Long QT Syndrome;;Lupus Vasculitis, Central Nervous System
-Long QT Syndrome;C10.114.875.350;C10.114.875.850
-Long QT Syndrome;C10.228.140.300.850.250;C10.228.140.300.850.750
-Long QT Syndrome;C14.907.253.946.350;C14.907.253.946.850
-Long QT Syndrome;C14.907.940.907.350;C14.907.940.907.850
-Long QT Syndrome;C20.111.258.962.400;C20.111.258.962.900
+Long-Term Depression (Physiology);G11.561.531.635.340;G11.561.531.635.355
+Lupus Vasculitis, Central Nervous System;C10.114.875.350;C10.114.875.850
+Lupus Vasculitis, Central Nervous System;C10.228.140.300.850.250;C10.228.140.300.850.750
+Lupus Vasculitis, Central Nervous System;C14.907.253.946.350;C14.907.253.946.850
+Lupus Vasculitis, Central Nervous System;C14.907.940.907.350;C14.907.940.907.850
+Lupus Vasculitis, Central Nervous System;C20.111.258.962.400;C20.111.258.962.900
 Lymphocyte Activation;E5.478.680;E1.450.495.482
 Lymphocyte Activation;;E5.478.594.530
 Lymphocyte Culture Test, Mixed;E5.478.468.429;E5.478.594.385.429
@@ -834,10 +819,9 @@ Lymphoma, Mantle-Cell;C15.604.515.569.480.700.725.500;
 Lymphoma, Mantle-Cell;C20.683.515.761.480.300.725.500;
 Lymphoma, Mantle-Cell;C20.683.515.761.480.450.725.500;
 Lymphoma, Mantle-Cell;C20.683.515.761.480.700.725.500;
-Lymphoma, Mantle-Cell;;Lymphoma, Mucosa-Associated Lymphoid Tissue
-Lymphoma, Mantle-Cell;C4.557.386.480.500.570;
-Lymphoma, Mantle-Cell;C15.604.515.569.480.500.570;
-Lymphoma, Mantle-Cell;C20.683.515.761.480.500.570;
+Lymphoma, Mucosa-Associated Lymphoid Tissue;C4.557.386.480.500.570;
+Lymphoma, Mucosa-Associated Lymphoid Tissue;C15.604.515.569.480.500.570;
+Lymphoma, Mucosa-Associated Lymphoid Tissue;C20.683.515.761.480.500.570;
 Lymphomatoid Granulomatosis;C15.604.515.571;C4.557.386.480.150.600
 Lymphomatoid Granulomatosis;;C15.604.515.569.480.150.600
 Lymphomatoid Granulomatosis;;C20.683.515.761.480.150.600
@@ -845,8 +829,7 @@ Lymphomatoid Papulosis;C4.834.580;C4.557.386.480.750.800.528
 Lymphomatoid Papulosis;C17.800.859.475.650.580;C15.604.515.569.480.750.800.528
 Lymphomatoid Papulosis;C17.800.859.575.650.580;C20.683.515.761.480.750.800.528
 Lymphomatoid Papulosis;C17.800.859.600.650.580;
-Lymphomatoid Papulosis;;Macrophage Migration-Inhibitory Factors
-Lymphomatoid Papulosis;;D23.125.477.500
+Macrophage Migration-Inhibitory Factors;;D23.125.477.500
 Macrophages;A11.627.624.480;A11.627.482
 Macrophages, Alveolar;A11.627.624.480.600;A11.627.482.600
 Macrophages, Peritoneal;A11.627.624.480.630;A11.627.482.630
@@ -929,27 +912,27 @@ Myocardium;A10.690.637;A10.690.552.750
 Myocytes, Cardiac;A10.690.637.570;A10.690.552.750.570
 N-Methylscopolamine;;D2.145.74.722.900.700.550
 N-Methylscopolamine;;D4.75.80.875.99.722.900.700.550
-N-Methylscopolamine;D12.776.157.530.450.250.750;D12.776.157.530.450.162.780
-N-Methylscopolamine;D12.776.543.585.450.250.750;D12.776.157.530.450.250.880
-N-Methylscopolamine;;D12.776.543.585.450.162.800
-N-Methylscopolamine;;D12.776.543.585.450.250.890
+Na(+)-K(+)-Exchanging ATPase;D8.811.277.40.25.600;D8.811.277.40.25.810
+Na(+)-K(+)-Exchanging ATPase;D12.776.157.530.450.250.750;D12.776.157.530.450.162.780
+Na(+)-K(+)-Exchanging ATPase;D12.776.543.585.450.250.750;D12.776.157.530.450.250.880
+Na(+)-K(+)-Exchanging ATPase;;D12.776.543.585.450.162.800
+Na(+)-K(+)-Exchanging ATPase;;D12.776.543.585.450.250.890
 Nafcillin;D2.886.675.966.500.750.562;D2.886.108.750.562
 Nafcillin;;D4.75.80.875.99.221.750.562
-Nafcillin;;National Center for Health Care Technology
-Nafcillin;I1.409.275.300.650.400;I1.409.137.500.600.650.400
-Nafcillin;N3.540.427.300.650.400;N3.540.348.500.500.600.650.400
-Nafcillin;I1.409.275.300.650.425;I1.409.137.500.600.650.425
-Nafcillin;N3.540.427.300.650.425;N3.540.348.500.500.600.650.425
-Nafcillin;;National Health Planning Information Center
-Nafcillin;I1.409.275.300.650.790.525;I1.409.137.500.600.650.790.525
-Nafcillin;N3.540.427.300.650.790.525;N3.540.348.500.500.600.650.790.525
-Nafcillin;;National Institute for Occupational Safety and Health
-Nafcillin;I1.409.275.300.650.225.520;I1.409.137.500.600.650.225.520
-Nafcillin;N3.540.427.300.650.225.520;N3.540.348.500.500.600.650.225.520
-Nafcillin;I1.409.275.300.650.450.450;I1.409.137.500.600.480.460
-Nafcillin;N3.540.427.300.650.450.450;N3.540.348.500.500.600.480.460
-Nafcillin;N3.540.427.300.650.450;N3.540.348.500.500.600.480
-Nafcillin;N3.540.427.300.650.450.475;N3.540.348.500.500.600.480.490
+National Center for Health Care Technology;I1.409.275.300.650.400;I1.409.137.500.600.650.400
+National Center for Health Care Technology;N3.540.427.300.650.400;N3.540.348.500.500.600.650.400
+National Center for Health Statistics (U.S.);I1.409.275.300.650.425;I1.409.137.500.600.650.425
+National Center for Health Statistics (U.S.);N3.540.427.300.650.425;N3.540.348.500.500.600.650.425
+National Health Planning Information Center;I1.409.275.300.650.790.525;I1.409.137.500.600.650.790.525
+National Health Planning Information Center;N3.540.427.300.650.790.525;N3.540.348.500.500.600.650.790.525
+National Institute for Occupational Safety and Health;I1.409.275.300.650.225.520;I1.409.137.500.600.650.225.520
+National Institute for Occupational Safety and Health;N3.540.427.300.650.225.520;N3.540.348.500.500.600.650.225.520
+National Institute of Mental Health (U.S.);I1.409.275.300.650.450.450;I1.409.137.500.600.480.460
+National Institute of Mental Health (U.S.);N3.540.427.300.650.450.450;N3.540.348.500.500.600.480.460
+National Institutes of Health (U.S.);I1.409.275.300.650.450;I1.409.137.500.600.480
+National Institutes of Health (U.S.);N3.540.427.300.650.450;N3.540.348.500.500.600.480
+National Library of Medicine (U.S.);I1.409.275.300.650.450.475;I1.409.137.500.600.480.490
+National Library of Medicine (U.S.);N3.540.427.300.650.450.475;N3.540.348.500.500.600.480.490
 Neocortex;A8.186.211.730.885.213.420;A8.186.211.730.885.287.500.420
 Neostriatum;A8.186.211.730.885.105.487.550;A8.186.211.730.885.287.249.487.550
 Neural Analyzers;A8.186.667;A8.663.575
@@ -1007,8 +990,7 @@ Pesticides;;D27.720.31.700
 Phacoemulsification;E4.540.208.704;E4.540.825.249.704
 Phlebitis;C14.907.681;C14.907.617.718
 Phosmet;;D3.438.513.750.625
-Phosmet;;Phosphatidylethanolamine Binding Protein
-Phosmet;D12.776.476.562;D12.776.476.555
+Phosphatidylethanolamine Binding Protein;D12.776.476.562;D12.776.476.555
 Phospholipase C gamma;D8.811.277.352.640.700.700.750;D8.811.277.352.640.700.700.562.750
 Phospholipase C gamma;D12.776.476.563;D12.644.360.571.750
 Phospholipase C gamma;;D12.776.476.556.750
@@ -1262,9 +1244,8 @@ Supraoptic Nucleus;A8.186.211.730.385.357.342.650;A8.186.211.730.317.357.342.650
 Syphilis Serodiagnosis;;E5.478.594.760.850
 T-Lymphocytes, Regulatory;;A11.118.637.555.567.569.200.700
 T-Lymphocytes, Regulatory;;A15.145.229.637.555.567.569.200.700
-T-Lymphocytes, Regulatory;;Tachycardia, Atrioventricular Nodal Reentry
-T-Lymphocytes, Regulatory;C14.280.67.845.880.95;C14.280.67.845.787.249
-T-Lymphocytes, Regulatory;C23.550.73.845.880.95;C23.550.73.845.787.500
+Tachycardia, Atrioventricular Nodal Reentry;C14.280.67.845.880.95;C14.280.67.845.787.249
+Tachycardia, Atrioventricular Nodal Reentry;C23.550.73.845.880.95;C23.550.73.845.787.500
 Tachycardia, Sinoatrial Nodal Reentry;C14.280.67.845.880.840;C14.280.67.845.787.500
 Tachycardia, Sinoatrial Nodal Reentry;C23.550.73.845.880.840;C23.550.73.845.787.750
 Talampicillin;D2.886.675.966.500.750.750.50.900;D2.886.108.750.750.50.900
@@ -1331,60 +1312,45 @@ Tumor Stem Cells;A11.872.910;A11.872.650
 Umbilical Arteries;A16.254.789.641;A16.378.693.641
 Umbilical Cord;A16.254.789;A16.378.693
 Umbilical Veins;A16.254.789.807;A16.378.693.807
-Umbilical Veins;;United States Agency for Healthcare Research and Quality
-Umbilical Veins;I1.409.275.300.650.700;I1.409.137.500.600.650.592
-Umbilical Veins;N3.540.427.300.650.700;N3.540.348.500.500.600.650.592
-Umbilical Veins;;United States Centers for Medicare and Medicaid Services
-Umbilical Veins;I1.409.275.300.310;I1.409.137.500.600.310
-Umbilical Veins;N3.540.427.300.310;N3.540.348.500.500.600.310
-Umbilical Veins;;United States Department of Agriculture
-Umbilical Veins;I1.409.275.125;I1.409.137.500.400
-Umbilical Veins;N3.540.427.125;N3.540.348.500.500.400
-Umbilical Veins;;United States Department of Veterans Affairs
-Umbilical Veins;I1.409.275.250;I1.409.137.500.700
-Umbilical Veins;N3.540.427.250;N3.540.348.500.500.700
-Umbilical Veins;;United States Dept. of Health and Human Services
-Umbilical Veins;I1.409.275.300;I1.409.137.500.600
-Umbilical Veins;N3.540.427.300;N3.540.348.500.500.600
-Umbilical Veins;;United States Environmental Protection Agency
-Umbilical Veins;I1.409.275.340;I1.409.137.500.937
-Umbilical Veins;N3.540.427.340;N3.540.348.500.500.937
+United States Agency for Healthcare Research and Quality;I1.409.275.300.650.700;I1.409.137.500.600.650.592
+United States Agency for Healthcare Research and Quality;N3.540.427.300.650.700;N3.540.348.500.500.600.650.592
+United States Centers for Medicare and Medicaid Services;I1.409.275.300.310;I1.409.137.500.600.310
+United States Centers for Medicare and Medicaid Services;N3.540.427.300.310;N3.540.348.500.500.600.310
+United States Department of Agriculture;I1.409.275.125;I1.409.137.500.400
+United States Department of Agriculture;N3.540.427.125;N3.540.348.500.500.400
+United States Department of Veterans Affairs;I1.409.275.250;I1.409.137.500.700
+United States Department of Veterans Affairs;N3.540.427.250;N3.540.348.500.500.700
+United States Dept. of Health and Human Services;I1.409.275.300;I1.409.137.500.600
+United States Dept. of Health and Human Services;N3.540.427.300;N3.540.348.500.500.600
+United States Environmental Protection Agency;I1.409.275.340;I1.409.137.500.937
+United States Environmental Protection Agency;N3.540.427.340;N3.540.348.500.500.937
 United States Federal Trade Commission;I1.409.275.380;I1.409.137.500.968
 United States Federal Trade Commission;N3.540.427.380;N3.540.348.500.500.968
-United States Federal Trade Commission;;United States Food and Drug Administration
-United States Federal Trade Commission;I1.409.275.300.650.760;I1.409.137.500.600.650.760
-United States Federal Trade Commission;N3.540.427.300.650.760;N3.540.348.500.500.600.650.760
+United States Food and Drug Administration;I1.409.275.300.650.760;I1.409.137.500.600.650.760
+United States Food and Drug Administration;N3.540.427.300.650.760;N3.540.348.500.500.600.650.760
 United States Government Agencies;I1.409.275.405;N3.540.348.500.500
 United States Government Agencies;I1.409.850;
 United States Government Agencies;N3.540.427.405;
-United States Government Agencies;;United States Health Resources and Services Administration
-United States Government Agencies;I1.409.275.300.650.790;I1.409.137.500.600.650.790
-United States Government Agencies;N3.540.427.300.650.790;N3.540.348.500.500.600.650.790
+United States Health Resources and Services Administration;I1.409.275.300.650.790;I1.409.137.500.600.650.790
+United States Health Resources and Services Administration;N3.540.427.300.650.790;N3.540.348.500.500.600.650.790
 United States Indian Health Service;I1.409.275.300.650.825;I1.409.137.500.600.650.825
 United States Indian Health Service;N3.540.427.300.650.825;N3.540.348.500.500.600.650.825
-United States Indian Health Service;;United States National Aeronautics and Space Administration
-United States Indian Health Service;I1.409.275.430;I1.409.137.500.984
-United States Indian Health Service;N3.540.427.430;N3.540.348.500.500.984
-United States Indian Health Service;;United States Occupational Safety and Health Administration
-United States Indian Health Service;I1.409.275.480;I1.409.137.500.992
-United States Indian Health Service;N3.540.427.480;N3.540.348.500.500.992
-United States Indian Health Service;;United States Office of Economic Opportunity
-United States Indian Health Service;I1.409.275.500;I1.409.137.500.996
-United States Indian Health Service;N3.540.427.500;N3.540.348.500.500.996
-United States Indian Health Service;;United States Office of Research Integrity
-United States Indian Health Service;I1.409.275.300.650.912;I1.409.137.500.600.650.912
-United States Indian Health Service;N3.540.427.300.650.912;N3.540.348.500.500.600.650.912
-United States Indian Health Service;;United States Office of Technology Assessment
-United States Indian Health Service;I1.409.275.550;I1.409.137.500.998
-United States Indian Health Service;N3.540.427.550;N3.540.348.500.500.998
+United States National Aeronautics and Space Administration;I1.409.275.430;I1.409.137.500.984
+United States National Aeronautics and Space Administration;N3.540.427.430;N3.540.348.500.500.984
+United States Occupational Safety and Health Administration;I1.409.275.480;I1.409.137.500.992
+United States Occupational Safety and Health Administration;N3.540.427.480;N3.540.348.500.500.992
+United States Office of Economic Opportunity;I1.409.275.500;I1.409.137.500.996
+United States Office of Economic Opportunity;N3.540.427.500;N3.540.348.500.500.996
+United States Office of Research Integrity;I1.409.275.300.650.912;I1.409.137.500.600.650.912
+United States Office of Research Integrity;N3.540.427.300.650.912;N3.540.348.500.500.600.650.912
+United States Office of Technology Assessment;I1.409.275.550;I1.409.137.500.998
+United States Office of Technology Assessment;N3.540.427.550;N3.540.348.500.500.998
 United States Public Health Service;I1.409.275.300.650;I1.409.137.500.600.650
 United States Public Health Service;N3.540.427.300.650;N3.540.348.500.500.600.650
-United States Public Health Service;;United States Social Security Administration
-United States Public Health Service;I1.409.275.775;I1.409.137.500.999
-United States Public Health Service;N3.540.427.775;N3.540.348.500.500.999
-United States Public Health Service;;United States Substance Abuse and Mental Health Services Administration
-United States Public Health Service;I1.409.275.300.650.920;I1.409.137.500.600.650.920
-United States Public Health Service;N3.540.427.300.650.920;N3.540.348.500.500.600.650.920
+United States Social Security Administration;I1.409.275.775;I1.409.137.500.999
+United States Social Security Administration;N3.540.427.775;N3.540.348.500.500.999
+United States Substance Abuse and Mental Health Services Administration;I1.409.275.300.650.920;I1.409.137.500.600.650.920
+United States Substance Abuse and Mental Health Services Administration;N3.540.427.300.650.920;N3.540.348.500.500.600.650.920
 Urachus;A16.254.835;A16.890
 Uric Acid;;D3.132.960.877
 Urticaria Pigmentosa;;C4.557.450.565.465.500.850

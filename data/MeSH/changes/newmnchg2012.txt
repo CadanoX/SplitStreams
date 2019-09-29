@@ -80,11 +80,10 @@ Aspergillosis;C1.703.78;C1.539.800.200.383.249
 Aspergillosis;;C1.703.295.328.249
 Aspergillosis;;C1.703.513.249
 Aspergillosis;;C17.800.838.208.416.249
-Aspergillosis;;Aspergillosis, Allergic Bronchopulmonary
-Aspergillosis;C1.703.78.74;C1.539.800.200.383.249.74
-Aspergillosis;;C1.703.295.328.249.74
-Aspergillosis;;C1.703.513.249.74
-Aspergillosis;;C17.800.838.208.416.249.74
+Aspergillosis, Allergic Bronchopulmonary;C1.703.78.74;C1.539.800.200.383.249.74
+Aspergillosis, Allergic Bronchopulmonary;;C1.703.295.328.249.74
+Aspergillosis, Allergic Bronchopulmonary;;C1.703.513.249.74
+Aspergillosis, Allergic Bronchopulmonary;;C17.800.838.208.416.249.74
 Atenolol;;D2.33.100.624.698.70
 Atenolol;;D2.33.755.624.698.70
 Auranofin;D1.632.675.249.150;
@@ -253,10 +252,9 @@ Chemoembolization, Therapeutic;;E2.926.500.150
 Chlormerodrin;D1.632.750.100.229;
 Chloromercuribenzoates;D1.632.750.740.644.261;
 Chloromercurinitrophenols;D1.632.750.740.225;
-Chloromercurinitrophenols;;Chloroplast Proton-Translocating ATPases
-Chloromercurinitrophenols;;D12.776.183.750.500
-Chloromercurinitrophenols;;D12.776.543.983.249
-Chloromercurinitrophenols;;D12.776.765.199.750.374
+Chloroplast Proton-Translocating ATPases;;D12.776.183.750.500
+Chloroplast Proton-Translocating ATPases;;D12.776.543.983.249
+Chloroplast Proton-Translocating ATPases;;D12.776.765.199.750.374
 Chloroplast Thioredoxins;;D12.776.183.186
 Chloroplast Thioredoxins;;D12.776.765.199.186
 Chorionic Villi Sampling;E1.450.230.100.150;E1.370.225.500.384.100.149
@@ -427,8 +425,7 @@ Electrochemotherapy;E5.200.500.410.500;E5.242.448.500
 Electromagnetic Fields;G1.201.260;G1.358.500.260
 Electromagnetic Fields;G1.201.875.240;G1.358.750.500
 Electromagnetic Phenomena;G1.201;G1.358.500
-Electromagnetic Phenomena;;Electron Transport Chain Complex Proteins
-Electromagnetic Phenomena;;D12.776.543.277
+Electron Transport Chain Complex Proteins;;D12.776.543.277
 Electron Transport Complex I;;D12.776.543.277.500.500
 Electron Transport Complex II;;D12.776.543.277.500.750
 Electron Transport Complex II;;D12.776.543.277.875.249
@@ -448,11 +445,10 @@ Endopeptidase Clp;;D12.776.765.199.249
 Enterobacter sakazakii;B3.440.450.425.275.700;B3.440.450.425.198.150
 Enterobacter sakazakii;B3.660.250.150.170.700;B3.660.250.150.98.150
 Entomoplasmataceae;B3.440.860.112;B3.440.860.300.250
-Entomoplasmataceae;;Enzyme Multiplied Immunoassay Technique
-Entomoplasmataceae;E1.450.495.410.350.210;E5.478.566.350.180
-Entomoplasmataceae;E1.450.495.435.400.180;E5.478.583.400.180
-Entomoplasmataceae;E5.478.594.410.350.180;
-Entomoplasmataceae;E5.478.594.430.400.180;
+Enzyme Multiplied Immunoassay Technique;E1.450.495.410.350.210;E5.478.566.350.180
+Enzyme Multiplied Immunoassay Technique;E1.450.495.435.400.180;E5.478.583.400.180
+Enzyme Multiplied Immunoassay Technique;E5.478.594.410.350.180;
+Enzyme Multiplied Immunoassay Technique;E5.478.594.430.400.180;
 Enzyme-Linked Immunosorbent Assay;E1.450.495.410.350.200;E5.478.566.350.170
 Enzyme-Linked Immunosorbent Assay;E1.450.495.410.380.200;E5.478.566.380.360
 Enzyme-Linked Immunosorbent Assay;E1.450.495.435.400.170;E5.478.583.400.170
@@ -536,15 +532,13 @@ Fluorescent Antibody Technique, Direct;E5.478.594.430.375.300;E1.370.225.750.551
 Fluorescent Antibody Technique, Direct;;E5.200.500.607.512.240.300
 Fluorescent Antibody Technique, Direct;;E5.478.412.300
 Fluorescent Antibody Technique, Direct;;E5.478.583.375.300
-Fluorescent Antibody Technique, Direct;;Fluorescent Antibody Technique, Indirect
-Fluorescent Antibody Technique, Direct;E1.450.495.435.375.310;E1.370.225.500.607.512.240.310
-Fluorescent Antibody Technique, Direct;E5.478.594.430.375.310;E1.370.225.750.551.512.240.310
-Fluorescent Antibody Technique, Direct;;E5.200.500.607.512.240.310
-Fluorescent Antibody Technique, Direct;;E5.478.412.310
-Fluorescent Antibody Technique, Direct;;E5.478.583.375.310
-Fluorescent Antibody Technique, Direct;;Fluorescent Treponemal Antibody-Absorption Test
-Fluorescent Antibody Technique, Direct;E1.450.495.735.850.200;E1.370.225.812.735.850.200
-Fluorescent Antibody Technique, Direct;;E5.200.812.735.850.200
+Fluorescent Antibody Technique, Indirect;E1.450.495.435.375.310;E1.370.225.500.607.512.240.310
+Fluorescent Antibody Technique, Indirect;E5.478.594.430.375.310;E1.370.225.750.551.512.240.310
+Fluorescent Antibody Technique, Indirect;;E5.200.500.607.512.240.310
+Fluorescent Antibody Technique, Indirect;;E5.478.412.310
+Fluorescent Antibody Technique, Indirect;;E5.478.583.375.310
+Fluorescent Treponemal Antibody-Absorption Test;E1.450.495.735.850.200;E1.370.225.812.735.850.200
+Fluorescent Treponemal Antibody-Absorption Test;;E5.200.812.735.850.200
 Fluoroimmunoassay;E1.450.495.435.375.341;E5.478.412.341
 Fluoroimmunoassay;E5.478.594.430.375.341;E5.478.566.159
 fms-Like Tyrosine Kinase 3;;D23.101.100.110.284
@@ -623,9 +617,8 @@ Histocompatibility Testing;E1.450.495.385;E1.370.225.812.385
 Histocompatibility Testing;;E5.200.812.385
 Histocytochemistry;;E1.370.225.500.607
 Histocytochemistry;;E1.370.225.750.551
-Histocytochemistry;;Histocytological Preparation Techniques
-Histocytochemistry;;E1.370.225.500.620
-Histocytochemistry;;E1.370.225.750.600
+Histocytological Preparation Techniques;;E1.370.225.500.620
+Histocytological Preparation Techniques;;E1.370.225.750.600
 Histological Techniques;;E1.370.225.750
 HLA-A Antigens;D23.50.301.500.400.370;D12.776.395.550.489.400
 HLA-A Antigens;D23.50.705.552.400.370;D12.776.543.550.421.400
@@ -794,10 +787,8 @@ Insulin, NPH;D12.644.548.586.740.625.408;D12.644.548.586.200.300.200
 Integrin alpha1;;D23.50.301.264.35.286
 Integrin alpha1;;D23.101.100.110.286
 Interferon-Stimulated Gene Factor 3;D12.776.476.24.387;D12.776.476.24.386
-Interferon-Stimulated Gene Factor 3;;Interferon-Stimulated Gene Factor 3, alpha Subunit
-Interferon-Stimulated Gene Factor 3;D12.776.476.24.387.500;D12.776.476.24.386.500
-Interferon-Stimulated Gene Factor 3;;Interferon-Stimulated Gene Factor 3, gamma Subunit
-Interferon-Stimulated Gene Factor 3;D12.776.476.24.387.750;D12.776.476.24.386.750
+Interferon-Stimulated Gene Factor 3, alpha Subunit;D12.776.476.24.387.500;D12.776.476.24.386.500
+Interferon-Stimulated Gene Factor 3, gamma Subunit;D12.776.476.24.387.750;D12.776.476.24.386.750
 International Normalized Ratio;E1.450.375.115.320;E1.370.225.625.115.320
 International Normalized Ratio;;E5.200.625.115.320
 Intradermal Tests;E1.370.750.300;E1.370.225.812.871.300
@@ -956,9 +947,8 @@ Mineral Waters;;D1.650.550.925.600
 Miocamycin;D4.345.349.500;
 Miocamycin;D9.408.477.500;
 Mitochondrial ADP, ATP Translocases;;D12.776.543.585.475.500
-Mitochondrial ADP, ATP Translocases;;Mitochondrial Proton-Translocating ATPases
-Mitochondrial ADP, ATP Translocases;;D12.776.543.585.475.625
-Mitochondrial ADP, ATP Translocases;;D12.776.575.750.625
+Mitochondrial Proton-Translocating ATPases;;D12.776.543.585.475.625
+Mitochondrial Proton-Translocating ATPases;;D12.776.575.750.625
 Mitotic Index;;E1.370.225.500.385.500
 Mitotic Index;;E5.242.385.500
 Molecular Diagnostic Techniques;;E1.370.225.880
@@ -1002,9 +992,8 @@ Negative Staining;;E1.370.225.750.600.670.520
 Neonatal Screening;E1.450.560;E1.370.225.910
 Neonatal Screening;;E5.200.910
 Neoplasm Staging;E1.370.550;E1.789.625
-Neoplasm Staging;;Neuroanatomical Tract-Tracing Techniques
-Neoplasm Staging;;E1.370.225.500.620.670.570
-Neoplasm Staging;;E1.370.225.750.600.670.570
+Neuroanatomical Tract-Tracing Techniques;;E1.370.225.500.620.670.570
+Neuroanatomical Tract-Tracing Techniques;;E1.370.225.750.600.670.570
 Neuroaspergillosis;C1.703.78.537;C1.703.513.249.537
 Neurofibromatosis 2;C4.588.614.525.500;
 Neurofibromatosis 2;C10.551.525.500;
@@ -1111,11 +1100,10 @@ Photons;G1.201.875.770.578.782;G1.358.500.505.650.782
 Photons;;G1.750.250.650.782
 Photons;;G1.750.770.578.782
 Photosensitizing Agents;D27.505.696.750.710;D27.505.954.600.710
-Photosensitizing Agents;;Photosynthetic Reaction Center Complex Proteins
-Photosensitizing Agents;D12.776.758;D5.500.562.488
-Photosensitizing Agents;;D12.776.183.750.750
-Photosensitizing Agents;;D12.776.543.983.500
-Photosensitizing Agents;;D12.776.765.199.750.750
+Photosynthetic Reaction Center Complex Proteins;D12.776.758;D5.500.562.488
+Photosynthetic Reaction Center Complex Proteins;;D12.776.183.750.750
+Photosynthetic Reaction Center Complex Proteins;;D12.776.543.983.500
+Photosynthetic Reaction Center Complex Proteins;;D12.776.765.199.750.750
 Photosystem I Protein Complex;D5.500.562.492;D5.500.562.488.500
 Photosystem I Protein Complex;D12.776.758.500;D12.776.183.750.750.500
 Photosystem I Protein Complex;;D12.776.543.983.500.500
@@ -1288,7 +1276,8 @@ Sex Determination Analysis;E1.450.855;E1.370.225.996
 Sex Determination Analysis;;E1.370.701
 Sex Determination Analysis;;E5.200.996
 Sex Determination by Skeleton;E1.450.860;E1.370.701.500
-Sex Determination by Skeleton;;E1.370.225.750.600.670.770
+Shadowing (Histology);;E1.370.225.500.620.670.770
+Shadowing (Histology);;E1.370.225.750.600.670.770
 Silk;D12.776.878;D12.776.92.500.809
 Silk;;D12.776.92.750
 Silver Staining;;E1.370.225.500.620.670.780
@@ -1376,10 +1365,8 @@ T-Lymphocytes, Regulatory;;A15.382.490.555.567.550.500.700
 T-Lymphocytes, Regulatory;;A15.382.490.555.567.569.500.700
 Tacrolimus;D4.345.349.810;
 Technetium Tc 99m Aggregated Albumin;D1.632.825.375;
-Technetium Tc 99m Aggregated Albumin;;Technetium Tc 99m Diethyl-iminodiacetic Acid
-Technetium Tc 99m Aggregated Albumin;D1.632.825.445;
-Technetium Tc 99m Aggregated Albumin;;Technetium Tc 99m Dimercaptosuccinic Acid
-Technetium Tc 99m Aggregated Albumin;D1.632.825.468;
+Technetium Tc 99m Diethyl-iminodiacetic Acid;D1.632.825.445;
+Technetium Tc 99m Dimercaptosuccinic Acid;D1.632.825.468;
 Technetium Tc 99m Disofenin;D1.632.825.475;
 Technetium Tc 99m Exametazime;D1.632.825.562;
 Technetium Tc 99m Lidofenin;D1.632.825.710;
@@ -1534,4 +1521,3 @@ XYY Karyotype;;C23.550.210.24.500
 XYY Karyotype;;G5.360.162.679.500.500
 XYY Karyotype;;G5.365.590.175.24.500
 Zineb;D1.632.975;
-Zineb;;SQL> spool off

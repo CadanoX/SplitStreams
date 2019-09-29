@@ -165,9 +165,21 @@ const TransformData = {
 
     for (let session of data.sessions) {
       for (let t = session.start; t < session.end; t++) {
-        format.addNode(t, locations[session.location]);
+        format.addNode(
+          t,
+          locations[session.location],
+          undefined,
+          undefined,
+          locations[session.location]
+        );
         for (let member of session.members) {
-          format.addNode(t, characters[member]);
+          format.addNode(
+            t,
+            characters[member],
+            undefined,
+            undefined,
+            characters[member]
+          );
           format.addParent(t, characters[member], locations[session.location]);
         }
       }
@@ -188,61 +200,6 @@ const TransformData = {
           format.addNode(t, id, entry[t]);
           format.addNode(t, parentId);
           format.addParent(t, id, parentId);
-        }
-      }
-    }
-    format._buildTimeConnections();
-    format.finalize();
-    return format;
-  },
-
-  /*
-  Every node has a name and an ID
-  Some nodes change their name and keep the same ID
-  Some nodes keep the same name and change their ID
-  Nodes that change both name and ID can not be tracked
-  */
-  MeSH: function(data) {
-    let format = new SplitStreamInputData();
-    let idMap = new Map();
-    let nameMap = new Map();
-
-    for (let t = 0; t < data.length; t++) {
-      console.log('start timestep ' + t);
-      for (let entry of data[t]) {
-        let name = entry[0];
-        let id = entry[1];
-        if (name == '') continue;
-
-        // add node to data
-        format.addNode(t, name);
-
-        // If a node changes its name
-        let storedName = idMap.get(id);
-        let nameChanged = !!storedName && storedName != name;
-        // if (nameChanged)
-        //   format.addNext(t - 1, storedName, name);
-        idMap.set(id, name);
-
-        // if two nodes have the same name
-        let storedId = nameMap.get(name);
-        if (storedId) {
-          // if (storedId != id)
-          console.log(`${name}
-          t${t} ${id} != ${storedId}`);
-        }
-        nameMap.set(name, id);
-
-        // the id looks like 1.12.5.123, where 1 is the parent of 1.12 is the parent of 1.12.5 is the parent of 1.12.5.123
-        let parts = id.split('.');
-        parts.pop(); // remove the last part of the id
-        let parentId = parts.join('.'); // reconnect all parts into the parent's id
-
-        format.addNode(t, id);
-        if (parentId != '') {
-          //format.addNode(t, parentId);
-          let parentName = idMap.get(parentId);
-          format.addParent(t, name, parentName);
         }
       }
     }

@@ -294,8 +294,7 @@ Flagella;A11.368.702.298;A11.284.180.290
 Flow Cytometry;E5.909.262.386.350;E5.200.500.386.350
 Fluorescent Antibody Technique;E5.909.432.551.512.240;E5.200.750.551.512.240
 Fluorescent Antibody Technique, Direct;E5.909.432.551.512.240.300;E5.200.750.551.512.240.300
-Fluorescent Antibody Technique, Direct;;Fluorescent Antibody Technique, Indirect
-Fluorescent Antibody Technique, Direct;E5.909.432.551.512.240.310;E5.200.750.551.512.240.310
+Fluorescent Antibody Technique, Indirect;E5.909.432.551.512.240.310;E5.200.750.551.512.240.310
 Freemartinism;G5.148.630.437;C13.371.820.700.842.260
 Freemartinism;;C16.131.939.842.260
 Freemartinism;;C19.391.775.260
@@ -316,26 +315,20 @@ Gastrospirillum hominis;B3.825.380.375;B3.825.400.274
 Gene Amplification;E5.393.330;E5.393.620.249
 Gene Rearrangement;G4.610.626.321;
 Gene Rearrangement;G5.511.321;
-Gene Rearrangement;;Gene Rearrangement, alpha-Chain T-Cell Antigen Receptor
-Gene Rearrangement;G4.610.626.321.801.111;G4.610.626.325.111
-Gene Rearrangement;G5.511.321.801.111;G5.511.325.111
+Gene Rearrangement, alpha-Chain T-Cell Antigen Receptor;G4.610.626.321.801.111;G4.610.626.325.111
+Gene Rearrangement, alpha-Chain T-Cell Antigen Receptor;G5.511.321.801.111;G5.511.325.111
 Gene Rearrangement, B-Lymphocyte;G4.610.626.321.401;G4.610.626.320
 Gene Rearrangement, B-Lymphocyte;G5.511.321.401;G5.511.320
-Gene Rearrangement, B-Lymphocyte;;Gene Rearrangement, B-Lymphocyte, Heavy Chain
-Gene Rearrangement, B-Lymphocyte;G4.610.626.321.401.501;G4.610.626.320.501
-Gene Rearrangement, B-Lymphocyte;G5.511.321.401.501;G5.511.320.501
-Gene Rearrangement, B-Lymphocyte;;Gene Rearrangement, B-Lymphocyte, Light Chain
-Gene Rearrangement, B-Lymphocyte;G4.610.626.321.401.601;G4.610.626.320.601
-Gene Rearrangement, B-Lymphocyte;G5.511.321.401.601;G5.511.320.601
-Gene Rearrangement, B-Lymphocyte;;Gene Rearrangement, beta-Chain T-Cell Antigen Receptor
-Gene Rearrangement, B-Lymphocyte;G4.610.626.321.801.211;G4.610.626.325.211
-Gene Rearrangement, B-Lymphocyte;G5.511.321.801.211;G5.511.325.211
-Gene Rearrangement, B-Lymphocyte;;Gene Rearrangement, delta-Chain T-Cell Antigen Receptor
-Gene Rearrangement, B-Lymphocyte;G4.610.626.321.801.261;G4.610.626.325.261
-Gene Rearrangement, B-Lymphocyte;G5.511.321.801.261;G5.511.325.261
-Gene Rearrangement, B-Lymphocyte;;Gene Rearrangement, gamma-Chain T-Cell Antigen Receptor
-Gene Rearrangement, B-Lymphocyte;G4.610.626.321.801.311;G4.610.626.325.311
-Gene Rearrangement, B-Lymphocyte;G5.511.321.801.311;G5.511.325.311
+Gene Rearrangement, B-Lymphocyte, Heavy Chain;G4.610.626.321.401.501;G4.610.626.320.501
+Gene Rearrangement, B-Lymphocyte, Heavy Chain;G5.511.321.401.501;G5.511.320.501
+Gene Rearrangement, B-Lymphocyte, Light Chain;G4.610.626.321.401.601;G4.610.626.320.601
+Gene Rearrangement, B-Lymphocyte, Light Chain;G5.511.321.401.601;G5.511.320.601
+Gene Rearrangement, beta-Chain T-Cell Antigen Receptor;G4.610.626.321.801.211;G4.610.626.325.211
+Gene Rearrangement, beta-Chain T-Cell Antigen Receptor;G5.511.321.801.211;G5.511.325.211
+Gene Rearrangement, delta-Chain T-Cell Antigen Receptor;G4.610.626.321.801.261;G4.610.626.325.261
+Gene Rearrangement, delta-Chain T-Cell Antigen Receptor;G5.511.321.801.261;G5.511.325.261
+Gene Rearrangement, gamma-Chain T-Cell Antigen Receptor;G4.610.626.321.801.311;G4.610.626.325.311
+Gene Rearrangement, gamma-Chain T-Cell Antigen Receptor;G5.511.321.801.311;G5.511.325.311
 Gene Rearrangement, T-Lymphocyte;G4.610.626.321.801;G4.610.626.325
 Gene Rearrangement, T-Lymphocyte;G5.511.321.801;G5.511.325
 Gentamicins;D27.505.93.374;
@@ -377,16 +370,13 @@ Hindlimb Suspension;;E5.977.400
 Hindlimb Suspension;;G3.230.150.440.950.400
 Histocytochemistry;E5.909.262.607;E5.200.500.607
 Histocytochemistry;E5.909.432.551;E5.200.750.551
-Histocytochemistry;;Histocytological Preparation Techniques
-Histocytochemistry;E5.909.262.620;E5.200.500.620
-Histocytochemistry;E5.909.432.600;E5.200.750.600
+Histocytological Preparation Techniques;E5.909.262.620;E5.200.500.620
+Histocytological Preparation Techniques;E5.909.432.600;E5.200.750.600
 Histological Techniques;E5.909.432;E5.200.750
 Holography;;E1.370.350.400.500
-Holography;;25-Hydroxycholecalciferol 1-Hydroxylase
-Holography;;D8.262.453.400
-Holography;;Hydroxymethylglutaryl-CoA Reductase Inhibitors
-Holography;;D10.162.202.370
-Holography;;D27.505.519.162.202.370
+25-Hydroxycholecalciferol 1-Hydroxylase;;D8.262.453.400
+Hydroxymethylglutaryl-CoA Reductase Inhibitors;;D10.162.202.370
+Hydroxymethylglutaryl-CoA Reductase Inhibitors;;D27.505.519.162.202.370
 Image Cytometry;E5.909.262.386.400;E5.200.500.386.400
 Immunoglobulin Allotypes;G4.610.626.500;G4.610.626.398.300
 Immunoglobulin Allotypes;G5.275.77.500;G5.275.351.300
@@ -415,6 +405,7 @@ Intracellular Membranes;;A11.284.835.514
 Introns;G5.331.599.110.505;G5.331.599.110.275.400
 Introns;G6.184.599.110.505;G6.184.599.110.220.410
 Inulin;;D9.203.698.365.855.750
+Inversion (Genetics);;C23.550.210.445
 Iris Neoplasms;C4.588.443.363.978.400;
 ISCOMs;D12.776.828.868.400;D24.310.894.860.449
 ISCOMs;D24.310.894.865.400;
@@ -437,12 +428,11 @@ Kidney, Polycystic, Autosomal Dominant;C12.740.700.608.500;C12.740.700.800.500
 Kidney, Polycystic, Autosomal Dominant;C12.777.419.413.420.500;C12.777.419.413.600.500
 Kidney, Polycystic, Autosomal Dominant;C13.371.820.700.608.500;C13.371.820.700.800.500
 Kidney, Polycystic, Autosomal Dominant;C16.131.939.608.500;C16.131.939.800.500
-Kidney, Polycystic, Autosomal Dominant;;Kidney, Polycystic, Autosomal Recessive
-Kidney, Polycystic, Autosomal Dominant;C4.182.394.420.510;C4.182.394.600.510
-Kidney, Polycystic, Autosomal Dominant;C12.740.700.608.510;C12.740.700.800.510
-Kidney, Polycystic, Autosomal Dominant;C12.777.419.413.420.510;C12.777.419.413.600.510
-Kidney, Polycystic, Autosomal Dominant;C13.371.820.700.608.510;C13.371.820.700.800.510
-Kidney, Polycystic, Autosomal Dominant;C16.131.939.608.510;C16.131.939.800.510
+Kidney, Polycystic, Autosomal Recessive;C4.182.394.420.510;C4.182.394.600.510
+Kidney, Polycystic, Autosomal Recessive;C12.740.700.608.510;C12.740.700.800.510
+Kidney, Polycystic, Autosomal Recessive;C12.777.419.413.420.510;C12.777.419.413.600.510
+Kidney, Polycystic, Autosomal Recessive;C13.371.820.700.608.510;C13.371.820.700.800.510
+Kidney, Polycystic, Autosomal Recessive;C16.131.939.608.510;C16.131.939.800.510
 Kidney, Sponge;C12.777.419.413.586;C12.777.419.413.200
 Kinetics;;G12.561
 Kinetochores;A11.223.475.135.500;A11.284.170.279.190.160.165.500
@@ -613,9 +603,8 @@ Periodic Acid-Schiff Reaction;E5.909.432.600.670.620;E5.200.750.600.670.620
 Periplasm;A11.195.620;A11.284.295.680
 Peritoneal Dialysis;E2.870.700;E2.870.300.650
 Peritoneal Dialysis;E2.912.650;E2.912.800.650
-Peritoneal Dialysis;;Peritoneal Dialysis, Continuous Ambulatory
-Peritoneal Dialysis;E2.870.700.500;E2.870.300.650.500
-Peritoneal Dialysis;E2.912.650.500;E2.912.800.650.500
+Peritoneal Dialysis, Continuous Ambulatory;E2.870.700.500;E2.870.300.650.500
+Peritoneal Dialysis, Continuous Ambulatory;E2.912.650.500;E2.912.800.650.500
 Peroxisomes;A11.368.702.515.600;A11.284.195.190.500.585.600
 Peroxisomes;;A11.284.195.190.875.190.190.755.600
 Phagosomes;A11.368.702.677;A11.284.195.190.875.190.700
@@ -648,6 +637,7 @@ Poliovirus Vaccine;D24.310.894.899.614;D24.310.894.830.614
 Poliovirus Vaccine;;D24.310.894.899.623.500
 Poliovirus Vaccine, Oral;D24.310.894.899.614.614;D24.310.894.899.623.750
 Polymerase Chain Reaction;E5.393.330.500;E5.393.620.500
+Polymorphism (Genetics);;G5.632.690
 Polymorphism, Single Nucleotide;;G5.632.690.800
 Polyribosomes;A11.368.702.248.300.651.740;A11.284.195.190.875.811.740
 Polyribosomes;A11.368.702.811.740;
@@ -698,8 +688,7 @@ Reticulocytes;;A15.378.316.378.590.249.760
 Retinal Neoplasms;C4.588.443.363.818;
 Retinoblastoma;;C4.588.364.818.760
 Retinoblastoma;;C11.319.475.760
-Retinoblastoma;;Reverse Transcriptase Polymerase Chain Reaction
-Retinoblastoma;E5.393.330.500.725;E5.393.620.500.725
+Reverse Transcriptase Polymerase Chain Reaction;E5.393.330.500.725;E5.393.620.500.725
 Ribosomes;A11.368.702.248.300.651;A11.284.195.190.875.811
 Ribosomes;A11.368.702.811;
 Ring Chromosomes;;C23.550.210.751
@@ -733,7 +722,8 @@ Serum Bactericidal Test;;E5.337.550.400.800
 Sex Chromatin;A11.223.349.748;A11.284.170.279.190.160.180.383.800
 Sex Chromatin;;A11.284.187.865.800
 Sex Chromosomes;A11.223.475.865;A11.284.187.865
-Sex Chromosomes;E5.909.432.600.670.770;E5.200.750.600.670.770
+Shadowing (Histology);E5.909.262.620.670.770;E5.200.500.620.670.770
+Shadowing (Histology);E5.909.432.600.670.770;E5.200.750.600.670.770
 Shivering;G7.315.232.542;G7.315.232.778.500
 Silver Staining;E5.909.262.620.670.780;E5.200.500.620.670.780
 Silver Staining;E5.909.432.600.670.780;E5.200.750.600.670.780
@@ -813,6 +803,7 @@ Transformation, Bacterial;G5.825.700.820;E5.393.350.810.500
 Transformation, Bacterial;;G4.185.515.870
 Transformation, Bacterial;;G5.825.390.927.820
 Transformation, Genetic;G5.825.700;G5.825.390.927
+Translocation (Genetics);;C23.550.210.764
 Transplantation Chimera;G5.148.630.218.750;B1.30.530.750
 Transplantation Chimera;;B2.158.530.750
 Tretinoin;D2.455.849.291.700.780;D2.455.849.291.700.818.800

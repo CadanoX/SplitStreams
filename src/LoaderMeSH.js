@@ -101,7 +101,7 @@ export default class LoaderMeSH {
 
         if (currentBranchName == branchName) {
           // add node to data
-          this._data.addNode(t, id);
+          this._data.addNode(t, id, undefined, undefined, name);
 
           if (parentId != '') {
             //this._data.addNode(t, parentId);
