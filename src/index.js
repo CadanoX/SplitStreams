@@ -5,6 +5,7 @@ import Vue from 'vue';
 import VueResize from 'vue-resize';
 import * as d3 from 'd3';
 import Papa from 'papaparse';
+import * as svg from 'save-svg-as-png';
 
 import SplitStream from './SplitStream';
 import SplitStreamFilter from './SplitStreamFilter';
@@ -270,6 +271,13 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       download: function() {
         saveSvg(document.querySelector('svg'), 'secstream');
         saveJson(generator.get(), 'data');
+      },
+      downloadPNG: function() {
+        svg.saveSvgAsPng(document.querySelector('svg'), 'secstream.png', {
+          backgroundColor: 'white',
+          encoderOptions: 1,
+          scale: 4
+        });
       },
       render() {
         let data;

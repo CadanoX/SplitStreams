@@ -20,7 +20,8 @@
   "homepage": "https://github.com/cadanox/secstreams#readme",
   "dependencies": {
     "flatted": "^2.0.1",
-    "n3": "^1.2.0"
+    "n3": "^1.2.0",
+    "save-svg-as-png": "^1.4.14"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.4",
