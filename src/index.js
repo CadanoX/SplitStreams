@@ -5,7 +5,6 @@ import Vue from 'vue';
 import VueResize from 'vue-resize';
 import * as d3 from 'd3';
 import Papa from 'papaparse';
-import * as svg from 'save-svg-as-png';
 
 import SplitStream from './SplitStream';
 import SplitStreamFilter from './SplitStreamFilter';
@@ -17,6 +16,7 @@ import {
   loadJSON,
   getRandomColor,
   saveSvg,
+  savePng,
   saveJson,
   addLoadingSpinner,
   removeLoadingSpinner
@@ -51,7 +51,7 @@ const meshList = [
   { tree: 'mtrees2015.bin', changes: 'newmnchg2015.txt' },
   { tree: 'mtrees2016.bin', changes: 'newmnchg2016.txt' },
   { tree: 'mtrees2017.bin', changes: 'newmnchg2017.txt' }
-  // { tree: "mtrees2018.bin", changes: 'newmnchg2018.txt' },
+  // { tree: "mtrees2018.bin", changes: 'newmnchg2018.txt' }, // no changes defined
   // { tree: "mtrees2019.bin", changes: 'newmnchg2019.txt' }
 ];
 
@@ -80,7 +80,7 @@ async function loadDataset(name) {
     // load data
     mesh = new LoaderMeSH();
     for (let meshEntry of meshList) {
-      await mesh.loadFile('/data/MeSH/trees/' + meshEntry.tree);
+      await mesh.loadFile('./data/MeSH/trees/' + meshEntry.tree);
     }
     // load changes
     // each file defines changes from the previous to the current timestep
@@ -88,7 +88,7 @@ async function loadDataset(name) {
     for (let i = 1; i < meshList.length; i++) {
       // ignore first timestep
       await mesh.loadFileChanges(
-        '/data/MeSH/changes/' + meshList[i].changes,
+        './data/MeSH/changes/' + meshList[i].changes,
         i
       );
     }
@@ -129,12 +129,12 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       split: 'at',
       randomSplits: [],
       xSpacing: 'Fixed',
-      xMargin: 0,
+      xMargin: 0.5,
       ySpacing: 'Fixed',
       yMargin: 0,
-      yPadding: 0,
+      yPadding: 0.75,
       sizeThreshold: 0,
-      proportion: 1,
+      proportion: 0.5,
       zoomTime: 1,
       limitDepth: false,
       depthLimit: 2,
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         ]
       },
       dataset: {
-        value: 'viscousMin',
+        value: 'viscousMin', //'viscousMin',
         options: [] // options are dynamically added from ./_datasets.json
       },
       offset: {
@@ -222,10 +222,10 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       },
       filters: [
         { type: 'double-inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
-        { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0 }
+        { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0.6 }
       ],
       filterMode: {
-        value: 'fast',
+        value: 'accurate',
         options: [
           { value: 'fast', text: 'fast' },
           { value: 'accurate', text: 'accurate' }
@@ -272,12 +272,8 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         saveSvg(document.querySelector('svg'), 'secstream');
         saveJson(generator.get(), 'data');
       },
-      downloadPNG: function() {
-        svg.saveSvgAsPng(document.querySelector('svg'), 'secstream.png', {
-          backgroundColor: 'white',
-          encoderOptions: 1,
-          scale: 4
-        });
+      downloadPng: function() {
+        savePng(document.querySelector('svg'), 'secstream');
       },
       render() {
         let data;
@@ -291,7 +287,6 @@ document.addEventListener('DOMContentLoaded', async function(event) {
 
         stream.automaticUpdate = false;
         stream.data(data);
-        stream.filters(this.filters);
         this.applySplits(this.split);
         stream.automaticUpdate = true;
         stream.update();
@@ -538,11 +533,20 @@ document.addEventListener('DOMContentLoaded', async function(event) {
   app.dataset.options = datasetListArray;
 
   await loadDataset(app.dataset.value);
-  stream = new SplitStream(wrapper).data(datasets[app.dataset.value]);
+
+  stream = new SplitStream(wrapper, {
+    xMargin: app.xMargin,
+    yPadding: app.yPadding,
+    filtermode: app.filtermode
+  }).data(datasets[app.dataset.value]);
+
+  stream.proportion = app.proportion;
 
   let tooltip = document.querySelector('.tooltip');
   stream.onMouseOver = d => {
     tooltip.innerText = JSON.stringify(d.data);
   };
   stream.addSplitsAtTimepoints();
+
+  stream.filters(app.filters);
 });

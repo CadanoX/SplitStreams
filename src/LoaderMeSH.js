@@ -42,20 +42,21 @@ export default class LoaderMeSH {
       return false;
     }
 
-    this._meshChanges[t] = parse.data;
+    this._meshChanges[t] = [];
+    // remove additions and deletes from changes, because they are automatically covered
+    for (let change of parse.data) {
+      if (change[1] != '' && change[2] != '') this._meshChanges[t].push(change);
+    }
   }
 
   applyChanges() {
-    for (let t in this._meshChanges) {
-      let changes = this._meshChanges[t];
-      for (let change of changes) {
-        let oldId = change[1];
-        let newId = change[2];
-        if (oldId != '' || newId != '')
-          // move
-          this._data.addNext(t - 1, oldId, newId);
+    let numChanges = 0;
+    for (let t in this._meshChanges)
+      for (let change of this._meshChanges[t]) {
+        let changeIsInBranch = this._data.addNext(t - 1, change[1], change[2]);
+        if (changeIsInBranch) numChanges++;
       }
-    }
+    console.log(`Changes in branch: ${numChanges}`);
   }
 
   // Branch is only a workaround before filters are accurately implemented

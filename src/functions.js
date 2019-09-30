@@ -1,3 +1,5 @@
+import * as svg from 'save-svg-as-png';
+
 export function loadJSON(file, callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType('application/json');
@@ -35,6 +37,19 @@ export function saveSvg(svgEl, name) {
   document.body.appendChild(downloadLink);
   downloadLink.click();
   document.body.removeChild(downloadLink);
+}
+
+export async function savePng(svgEl, name) {
+  // store image in 16K+ res
+  // this can take a lot of time
+  addLoadingSpinner(document.querySelector('#wrapper'));
+  let scaleFactor = Math.ceil(15360 / svgEl.clientWidth);
+  await svg.saveSvgAsPng(svgEl, name + '.png', {
+    backgroundColor: 'white',
+    encoderOptions: 1,
+    scale: scaleFactor
+  });
+  removeLoadingSpinner(document.querySelector('#wrapper'));
 }
 
 /* Modified from https://stackoverflow.com/questions/19721439/download-json-object-as-a-file-from-browser */

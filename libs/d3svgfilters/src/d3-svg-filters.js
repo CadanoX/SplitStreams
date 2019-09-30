@@ -310,11 +310,14 @@ d3.selection.prototype.svgFilter = function(...filters) {
   const filterManager = defs.node()._svgFilterManager;
   const filterID = filterManager.createFilter(...filters);
 
-  if (filterID === this.getFilterID()) return;
-  this.clearFilter();
+  this.each(function(d) {
+    const sel = d3.select(this);
+    if (filterID === sel.getFilterID()) return;
+    sel.clearFilter();
 
-  this.attr('filter', `url(#${filterID})`);
-  filterManager._bind(this, filterID);
+    sel.attr('filter', `url(#${filterID})`);
+    filterManager._bind(sel, filterID);
+  });
 
   // 3. Generate a filter manager if not existing
 

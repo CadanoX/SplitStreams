@@ -4,13 +4,25 @@
     {
       "root": {
         "length": "10",
-        "pos": "0"
+        "pos": "0",
+        "children": [
+          {
+            "length": "8",
+            "pos": "1"
+          }
+        ]
       }
     },
     {
       "root": {
         "length": "5",
-        "pos": "0"
+        "pos": "0",
+        "children": [
+          {
+            "length": "3",
+            "pos": "1"
+          }
+        ]
       }
     }
   ],
@@ -20,6 +32,10 @@
         {
           "src": 0,
           "dest": 0
+        },
+        {
+          "src": 1,
+          "dest": 1
         }
       ]
     }

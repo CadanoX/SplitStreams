@@ -58,23 +58,25 @@ export default class SplitStreamInputData {
   addNext(t, id, nextId) {
     if (!this._timesteps[+t + 1]) {
       // console.log(`Error 'addNext': Timestep '${+t + 1}' does not exist.`);
-      return;
+      return false;
     }
     let node = this._timesteps[t].references[id];
     if (!node) {
       // console.log(`Error 'addNext': Node '${id}' does not exist.`);
-      return;
+      return false;
     }
     let nextNode = this._timesteps[+t + 1].references[nextId];
-    if (!nextNode);
-    else {
+    if (!nextNode) {
       // console.log(`Error 'addNext': Next node  '${nextId}' does not exist.`);
-      console.log(`Change timestep ${t}: ${id} to ${nextId}`);
-      if (!node.next) node.next = [];
-      node.next.push(nextNode);
-      if (!nextNode.prev) nextNode.prev = [];
-      nextNode.prev.push(node);
+      return false;
     }
+
+    // console.log(`Change timestep ${t}: ${id} to ${nextId}`);
+    if (!node.next) node.next = [];
+    node.next.push(nextNode);
+    if (!nextNode.prev) nextNode.prev = [];
+    nextNode.prev.push(node);
+    return true;
   }
 
   finalize() {

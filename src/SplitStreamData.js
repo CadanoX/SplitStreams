@@ -183,7 +183,7 @@ export default class SplitStreamData {
   }
 
   _findClosestNode(stream, x) {
-    let traverseTime = function(node) {
+    let traverseTime = function (node) {
       let distance = Math.abs(node.x - x);
       if (distance < minDistance) {
         minDistance = distance;
@@ -679,10 +679,9 @@ export default class SplitStreamData {
       };
 
       this._streams.push(streamObj);
-      /*if (!this._streams[stream.depth])
-          this._streams[stream.depth] = [];
-      this._streams[stream.depth].push(streamObj);
-      */
+      // if (!this._streams[stream.depth])
+      //     this._streams[stream.depth] = [];
+      // this._streams[stream.depth].push(streamObj);
     }
 
     // WARNING: This was a fix for: "if stream IDs are strings, the clipPath array has an empty value in the beginning --> remove"

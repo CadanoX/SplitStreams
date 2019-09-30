@@ -23,7 +23,6 @@ export default class SplitStream {
       yMargin: 0,
       yPadding: 0,
       zoomTimeFactor: 1,
-      proportion: 1,
       unifySize: false,
       unifyPosition: false,
       drawStroke: false,
@@ -106,10 +105,6 @@ export default class SplitStream {
     this._opts.minSizeThreshold = +threshold / 100;
     this._update();
   }
-  set proportion(value) {
-    this._opts.proportion = this._streamData.proportion = +value;
-    this._update();
-  }
   set zoomTime(factor) {
     this._opts.zoomTimeFactor = +factor;
     this._update();
@@ -146,6 +141,10 @@ export default class SplitStream {
   set colorRandom(random) {
     this._colorRandom = random;
     this.render();
+  }
+  set proportion(value) {
+    this._streamData.proportion = this._opts.proportion = +value;
+    this._update();
   }
   set startEndEncoding(encoding) {
     this._streamData.startEndEncoding = encoding;
@@ -500,6 +499,8 @@ export default class SplitStream {
       .html(d => '<path d="' + d.path + '">');
 
     splitData.exit().remove();
+
+    this._applyFilters();
   }
 
   showLabels(show = true) {
@@ -530,6 +531,8 @@ export default class SplitStream {
   }
 
   _applyFilters() {
+    if (!this._filters) return;
+
     let filters = [];
     for (let filter of this._filters)
       filters.push(filter.type, {
