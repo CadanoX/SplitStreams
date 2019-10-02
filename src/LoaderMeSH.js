@@ -1,5 +1,4 @@
 import Papa from 'papaparse';
-
 import SplitStreamInputData from '../src/SplitStreamInputData';
 
 export default class LoaderMeSH {
@@ -49,44 +48,31 @@ export default class LoaderMeSH {
     }
   }
 
-  applyChanges() {
-    let numChanges = 0;
-    for (let t in this._meshChanges)
-      for (let change of this._meshChanges[t]) {
-        let changeIsInBranch = this._data.addNext(t - 1, change[1], change[2]);
-        if (changeIsInBranch) numChanges++;
-      }
-    console.log(`Changes in branch: ${numChanges}`);
-  }
-
-  // Branch is only a workaround before filters are accurately implemented
-  transformToTree(branch) {
-    this._data = new SplitStreamInputData();
-    let t = 0;
+  _findBranchName(branch) {
     let currentBranch = 0;
-    let branchName = '';
-
-    // find name of the branch
     for (let entry of this._meshData[0]) {
       if (entry[1]) {
         let path = entry[1].split('.');
         if (path.length == 1) {
           // node has no parent --> is main branch
-          if (currentBranch == branch) {
-            branchName = path[0];
-            break;
-          }
+          if (currentBranch == branch)
+            return path[0];
           currentBranch++;
         }
       }
     }
+    return undefined;
+  }
+  // Branch is only a workaround before filters are accurately implemented
+  transformToTree(branch) {
+    this._data = new SplitStreamInputData();
+    let t = 0;
+    let branchName = this._findBranchName(branch);
 
-    if (branchName == '') {
+    if (!branchName) {
       console.error('Selected branch does not exist.');
       return;
     }
-
-    console.log(branchName);
 
     for (let tree of this._meshData) {
       for (let entry of tree) {
@@ -112,6 +98,16 @@ export default class LoaderMeSH {
       }
       t++;
     }
+  }
+
+  applyChanges() {
+    let numChanges = 0;
+    for (let t in this._meshChanges)
+      for (let change of this._meshChanges[t]) {
+        let changeIsInBranch = this._data.addNext(t - 1, change[1], change[2]);
+        if (changeIsInBranch) numChanges++;
+      }
+    console.log(`Changes in branch: ${numChanges}`);
   }
 
   done() {

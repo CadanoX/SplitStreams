@@ -183,7 +183,7 @@ export default class SplitStreamData {
   }
 
   _findClosestNode(stream, x) {
-    let traverseTime = function (node) {
+    let traverseTime = function(node) {
       let distance = Math.abs(node.x - x);
       if (distance < minDistance) {
         minDistance = distance;
