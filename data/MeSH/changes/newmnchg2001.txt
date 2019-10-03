@@ -1,132 +1,132 @@
 Acanthocytes;A11.118.413.330.100;A11.118.290.330.100
 Acanthocytes;A15.145.229.413.330.100;A15.145.229.334.330.100
-Acidulated Phosphate Fluoride;;D25.223.15
-Acrosome;;A11.284.195.190.875.190.550.40
-Adenoma, Adrenal Cortical;;C4.588.322.78.265.500
-Adenoma, Adrenal Cortical;;C19.53.98.265.500
-Adenoma, Adrenal Cortical;;C19.344.78.265.500
-Ampicillin Resistance;G5.386.310.100.600.50;
-Ampicillin Resistance;G5.706.310.100.600.50;
-Anaplasia;C23.550.66;C23.550.727.45
-Androblastoma;;C4.588.322.455.265
-Androblastoma;;C4.588.945.418.685.148
-Androblastoma;;C13.371.56.630.705.132
+Acidulated Phosphate Fluoride;;D25.223.015
+Acrosome;;A11.284.195.190.875.190.550.040
+Adenoma, Adrenal Cortical;;C04.588.322.078.265.500
+Adenoma, Adrenal Cortical;;C19.053.098.265.500
+Adenoma, Adrenal Cortical;;C19.344.078.265.500
+Ampicillin Resistance;G05.386.310.100.600.050;
+Ampicillin Resistance;G05.706.310.100.600.050;
+Anaplasia;C23.550.066;C23.550.727.045
+Androblastoma;;C04.588.322.455.265
+Androblastoma;;C04.588.945.418.685.148
+Androblastoma;;C13.371.056.630.705.132
 Androblastoma;;C13.371.270.750.124
 Androblastoma;;C13.371.820.800.418.685.132
 Androblastoma;;C19.344.455.265
 Androblastoma;;C19.391.630.705.132
 Aneuploidy;;C23.550.210.131
-Animal Testing Alternatives;H1.770.644.45;H1.770.644.67.50
-Animals;;B1.30
-Animals, Congenic;;B1.30.157.40
-Animals, Congenic;;B1.30.199.40
-Animals, Domestic;;B1.30.116
-Animals, Inbred Strains;;B1.30.157
-Animals, Laboratory;;B1.30.199
-Animals, Newborn;;B1.30.282
-Animals, Poisonous;;B1.30.286
-Animals, Suckling;;B1.30.291
-Animals, Transgenic;;B1.30.199.85
-Animals, Transgenic;;B1.30.296
-Animals, Transgenic;;B1.30.724.500
-Animals, Wild;;B1.30.300
-Animals, Zoo;;B1.30.448
-Anticodon;;G5.331.508.60
-Anticodon;;G5.331.599.110.30
-Anticodon;;G6.184.599.110.30
-Aortic Subvalvular Stenosis;C14.280.600.100.95;C14.280.484.150.70
-Aprocarb;D2.241.81.251.93;D2.241.81.251.650
-Asparagine;;D12.125.154.49
-Autoradiography;E5.909.262.105;E5.200.500.105
-Autoradiography;E5.909.432.132;E5.200.750.132
-Axons;;A11.284.180.75
-Babesia;B1.841.75.762.580.580.70;B1.841.75.600.580.70
-Babesia bovis;B1.841.75.762.580.580.70.100;B1.841.75.600.580.70.100
-Babesiosis;C3.752.750.113;
-Bacterial Chromatophores;A11.368.702.80;A11.284.195.190.875.80
-Bacterial Typing Techniques;E5.909.560.150.125;E5.200.875.150.125
-Bacteriological Techniques;E5.909.560.150;E5.200.875.150
-Bacteriophage Typing;E5.909.560.150.125.150;E5.200.875.150.125.150
-beta-Lactam Resistance;G5.386.310.100;
-beta-Lactam Resistance;G5.706.310.100;
-beta-N-Acetylhexosaminidase;D8.586.348.150;
-Blackwater Fever;C3.752.750.259.552.650.228;C3.752.250.552.650.228
+Animal Testing Alternatives;H01.770.644.045;H01.770.644.067.050
+Animals;;B01.030
+Animals, Congenic;;B01.030.157.040
+Animals, Congenic;;B01.030.199.040
+Animals, Domestic;;B01.030.116
+Animals, Inbred Strains;;B01.030.157
+Animals, Laboratory;;B01.030.199
+Animals, Newborn;;B01.030.282
+Animals, Poisonous;;B01.030.286
+Animals, Suckling;;B01.030.291
+Animals, Transgenic;;B01.030.199.085
+Animals, Transgenic;;B01.030.296
+Animals, Transgenic;;B01.030.724.500
+Animals, Wild;;B01.030.300
+Animals, Zoo;;B01.030.448
+Anticodon;;G05.331.508.060
+Anticodon;;G05.331.599.110.030
+Anticodon;;G06.184.599.110.030
+Aortic Subvalvular Stenosis;C14.280.600.100.095;C14.280.484.150.070
+Aprocarb;D02.241.081.251.093;D02.241.081.251.650
+Asparagine;;D12.125.154.049
+Autoradiography;E05.909.262.105;E05.200.500.105
+Autoradiography;E05.909.432.132;E05.200.750.132
+Axons;;A11.284.180.075
+Babesia;B01.841.075.762.580.580.070;B01.841.075.600.580.070
+Babesia bovis;B01.841.075.762.580.580.070.100;B01.841.075.600.580.070.100
+Babesiosis;C03.752.750.113;
+Bacterial Chromatophores;A11.368.702.080;A11.284.195.190.875.080
+Bacterial Typing Techniques;E05.909.560.150.125;E05.200.875.150.125
+Bacteriological Techniques;E05.909.560.150;E05.200.875.150
+Bacteriophage Typing;E05.909.560.150.125.150;E05.200.875.150.125.150
+beta-Lactam Resistance;G05.386.310.100;
+beta-Lactam Resistance;G05.706.310.100;
+beta-N-Acetylhexosaminidase;D08.586.348.150;
+Blackwater Fever;C03.752.750.259.552.650.228;C03.752.250.552.650.228
 Blast Crisis;;C23.550.727.152.110
 Blister;;C23.300.122
-Blood Cell Count;E5.909.262.195.107;E5.200.500.195.107
-Blood-Air Barrier;A11.195.443.25;
-Blood-Aqueous Barrier;A11.195.443.37;
-Blood-Brain Barrier;A11.195.443.50;
-Blood-Retinal Barrier;A11.195.443.60;
+Blood Cell Count;E05.909.262.195.107;E05.200.500.195.107
+Blood-Air Barrier;A11.195.443.025;
+Blood-Aqueous Barrier;A11.195.443.037;
+Blood-Brain Barrier;A11.195.443.050;
+Blood-Retinal Barrier;A11.195.443.060;
 Blood-Testis Barrier;A11.195.443.100;
-Body Height;E5.118.176;E5.118.90.87
-Body Weight;E5.118.287;E5.118.90.287
-Bone Demineralization Technique;E5.909.432.210;E5.200.750.210
-Brenner Tumor;;C4.588.945.418.685.297
-Brenner Tumor;;C13.371.56.630.705.265
+Body Height;E05.118.176;E05.118.090.087
+Body Weight;E05.118.287;E05.118.090.287
+Bone Demineralization Technique;E05.909.432.210;E05.200.750.210
+Brenner Tumor;;C04.588.945.418.685.297
+Brenner Tumor;;C13.371.056.630.705.265
 Brenner Tumor;;C13.371.270.750.249
 Brenner Tumor;;C13.371.820.800.418.685.265
 Brenner Tumor;;C19.391.630.705.265
-Bronchi;A4.125;A4.411.125
+Bronchi;A04.125;A04.411.125
 Calsequestrin;;D12.776.157.125.155
 Cancer Vaccines;D12.776.828.868.200;
 Cancer Vaccines;D24.310.894.865.200;
 Cancer Vaccines;D24.611.216.865.200;
-Carcinoma, Adrenal Cortical;;C4.588.322.78.265.750
-Carcinoma, Adrenal Cortical;;C19.53.98.265.750
-Carcinoma, Adrenal Cortical;;C19.344.78.265.750
-Carcinoma, Islet Cell;;C4.588.274.761.500
-Carcinoma, Islet Cell;;C6.240.761.500
-Carcinoma, Islet Cell;;C6.689.667.500
-Cardiomyopathy, Hypertrophic;;C14.280.484.150.70.160
-CD4 Lymphocyte Count;E5.909.262.195.107.595.500.150;E5.200.500.195.107.595.500.150
-CD4-CD8 Ratio;E5.909.262.195.107.595.500.150.160;E5.200.500.195.107.595.500.150.160
-Cell Count;E5.909.262.195;E5.200.500.195
-Cell Culture;E5.909.813.225;E5.200.937.225
-Cell Degranulation;G4.335.143;G4.335.532.160
-Cell Fractionation;E5.909.262.251;E5.200.500.251
-Cell Fusion;E5.909.262.307;E5.200.500.307
+Carcinoma, Adrenal Cortical;;C04.588.322.078.265.750
+Carcinoma, Adrenal Cortical;;C19.053.098.265.750
+Carcinoma, Adrenal Cortical;;C19.344.078.265.750
+Carcinoma, Islet Cell;;C04.588.274.761.500
+Carcinoma, Islet Cell;;C06.240.761.500
+Carcinoma, Islet Cell;;C06.689.667.500
+Cardiomyopathy, Hypertrophic;;C14.280.484.150.070.160
+CD4 Lymphocyte Count;E05.909.262.195.107.595.500.150;E05.200.500.195.107.595.500.150
+CD4-CD8 Ratio;E05.909.262.195.107.595.500.150.160;E05.200.500.195.107.595.500.150.160
+Cell Count;E05.909.262.195;E05.200.500.195
+Cell Culture;E05.909.813.225;E05.200.937.225
+Cell Degranulation;G04.335.143;G04.335.532.160
+Cell Fractionation;E05.909.262.251;E05.200.500.251
+Cell Fusion;E05.909.262.307;E05.200.500.307
 Cell Membrane;A11.195;A11.284.149
 Cell Nucleolus;A11.223.210;A11.284.170.279.175
 Cell Nucleus;A11.223;A11.284.170
 Cell Nucleus;;A11.284.195.190.875.117
-Cell Separation;E5.909.262.363;E5.200.500.363
-Cell Transformation, Neoplastic;G4.335.349;C23.550.727.152
-Cell Transformation, Viral;G5.386.185;C4.697.152.160
-Cell Transformation, Viral;G5.825.700.210;C23.550.727.152.160
+Cell Separation;E05.909.262.363;E05.200.500.363
+Cell Transformation, Neoplastic;G04.335.349;C23.550.727.152
+Cell Transformation, Viral;G05.386.185;C04.697.152.160
+Cell Transformation, Viral;G05.825.700.210;C23.550.727.152.160
 Cell Wall;A11.195.185;A11.284.295.154
 Cell Wall Skeleton;A11.195.185.200;A11.284.295.154.200
 Cell-Free System;A11.904.168;A11.284.835.168
 Centrioles;A11.368.702.150.130;A11.284.195.190.750.585.160.130
 Centromere;A11.223.475.135;A11.284.170.279.190.160.165
 Centrosome;A11.368.702.150;A11.284.195.190.750.585.160
-Cephalosporin Resistance;G5.386.310.100.175;
-Cephalosporin Resistance;G5.706.310.100.175;
+Cephalosporin Resistance;G05.386.310.100.175;
+Cephalosporin Resistance;G05.706.310.100.175;
 Chickenpox Vaccine;D24.310.894.899.130;D24.310.894.899.290.130
-Chimera;G5.148.630.218;B1.30.530
-Chimera;;B2.158.530
-Chimera;;B6.85
-Chlamydia pneumoniae;B3.440.190.190.190.600;B3.440.190.190.230.249
-Chlamydia psittaci;B3.440.190.190.190.610;B3.440.190.190.230.500
-Chloramphenicol Resistance;G5.386.310.202;
-Chloramphenicol Resistance;G5.706.310.202;
-Chloroform;;D2.455.526.913.810
+Chimera;G05.148.630.218;B01.030.530
+Chimera;;B02.158.530
+Chimera;;B06.085
+Chlamydia pneumoniae;B03.440.190.190.190.600;B03.440.190.190.230.249
+Chlamydia psittaci;B03.440.190.190.190.610;B03.440.190.190.230.500
+Chloramphenicol Resistance;G05.386.310.202;
+Chloramphenicol Resistance;G05.706.310.202;
+Chloroform;;D02.455.526.913.810
 Chloroplasts;A11.368.702.700.140;A11.284.195.190.875.700.140
-Choroid Neoplasms;C4.588.443.363.978.223;
+Choroid Neoplasms;C04.588.443.363.978.223;
 Chromaffin Granules;A11.368.246.207;A11.284.195.190.500.207
 Chromaffin Granules;;A11.284.195.190.875.190.190.207
 Chromatids;A11.223.475.144;A11.284.170.279.190.160.175
 Chromatin;A11.223.349;A11.284.170.279.190.160.180
 Chromatin;D12.776.660.224;
 Chromosome Aberrations;;C23.550.210
-Chromosome Banding;E5.909.262.385.130;E5.200.500.385.130
-Chromosome Banding;E5.909.262.620.670.130;E5.200.500.620.670.130
-Chromosome Banding;E5.909.432.600.670.130;E5.200.750.600.670.130
+Chromosome Banding;E05.909.262.385.130;E05.200.500.385.130
+Chromosome Banding;E05.909.262.620.670.130;E05.200.500.620.670.130
+Chromosome Banding;E05.909.432.600.670.130;E05.200.750.600.670.130
 Chromosome Breakage;;C23.550.210.280
 Chromosome Deletion;;C23.550.210.300
 Chromosome Fragility;;C23.550.210.312
-Chromosome Painting;;E5.200.500.620.670.325.350.125
-Chromosome Painting;;E5.200.750.600.670.325.350.125
+Chromosome Painting;;E05.200.500.620.670.325.350.125
+Chromosome Painting;;E05.200.750.600.670.325.350.125
 Chromosomes;A11.223.475;A11.284.170.279.190
 Chromosomes;;A11.284.187
 Chromosomes, Archaeal;A11.223.475.167;A11.284.187.167
@@ -166,103 +166,103 @@ Chromosomes, Yeast Artificial;A11.223.475.360.800;A11.284.187.178.200
 Chromosomes, Yeast Artificial;;A11.284.187.360.800
 Chromosomes, Yeast Artificial;;D13.444.308.460.320.165.200
 Cilia;A11.368.702.155;A11.284.180.165
-Cloning, Molecular;G5.331.120;
+Cloning, Molecular;G05.331.120;
 Coated Pits, Cell-Membrane;A11.195.190;A11.284.149.165.175
 Coated Vesicles;A11.368.702.160;A11.284.195.190.875.190.880.180
 Cocarcinogenesis;C23.550.225;C23.550.727.160
-Coccidia;B1.841.75.762.167;B1.841.75.189
-Coccidiosis;C3.752.750.259;C3.752.250
-Coculture;E5.909.813.250;E5.200.937.250
-Codon;;G5.331.508.355
-Codon;;G5.331.599.110.355
-Codon;;G6.184.599.110.355
-Codon, Initiator;;G5.331.508.355.225
-Codon, Initiator;;G5.331.599.110.355.225
-Codon, Initiator;;G6.184.599.110.355.225
+Coccidia;B01.841.075.762.167;B01.841.075.189
+Coccidiosis;C03.752.750.259;C03.752.250
+Coculture;E05.909.813.250;E05.200.937.250
+Codon;;G05.331.508.355
+Codon;;G05.331.599.110.355
+Codon;;G06.184.599.110.355
+Codon, Initiator;;G05.331.508.355.225
+Codon, Initiator;;G05.331.599.110.355.225
+Codon, Initiator;;G06.184.599.110.355.225
 Codon, Nonsense;D13.444.735.544.355.235;D13.444.735.544.355.250.235
-Codon, Nonsense;;G5.331.508.355.250.235
-Codon, Nonsense;;G5.331.599.110.355.250.235
-Codon, Nonsense;;G5.632.120
-Codon, Nonsense;;G6.184.599.110.355.250.235
-Codon, Terminator;;G5.331.508.355.250
-Codon, Terminator;;G5.331.599.110.355.250
-Codon, Terminator;;G6.184.599.110.355.250
+Codon, Nonsense;;G05.331.508.355.250.235
+Codon, Nonsense;;G05.331.599.110.355.250.235
+Codon, Nonsense;;G05.632.120
+Codon, Nonsense;;G06.184.599.110.355.250.235
+Codon, Terminator;;G05.331.508.355.250
+Codon, Terminator;;G05.331.599.110.355.250
+Codon, Terminator;;G06.184.599.110.355.250
 Coiled Bodies;A11.223.480;A11.284.170.279.195
-Colony Count, Microbial;E5.909.560.220;E5.200.875.220
-Colony-Forming Units Assay;E5.909.262.383;E5.200.500.383
-Conjugation, Genetic;G5.825.192;G5.825.390.249
-Conjunctival Neoplasms;C4.588.443.363.235;
-Consensus Sequence;G5.331.599.56.160;G5.331.599.250.175
-Consensus Sequence;G5.331.599.110.200;G6.184.599.250.175
-Consensus Sequence;G6.184.599.56.160;
-Consensus Sequence;G6.184.599.110.200;
-Corrosion Casting;E5.909.262.620.620.150;E5.200.500.620.620.150
-Corrosion Casting;E5.909.432.600.620.150;E5.200.750.600.620.150
-Cryopreservation;E5.909.262.620.760.160;E5.200.500.620.760.160
-Cryopreservation;E5.909.432.600.760.160;E5.200.750.600.760.160
-Cryoultramicrotomy;E5.909.262.620.530.160;E5.200.500.620.530.160
-Cryoultramicrotomy;E5.909.432.600.530.160;E5.200.750.600.530.160
-Cryptosporidiosis;C3.752.750.259.269;C3.752.250.269
-Cryptosporidium;B1.841.75.762.167.275.250.87;B1.841.75.189.250.150.160
-Cryptosporidium parvum;B1.841.75.762.167.275.250.87.500;B1.841.75.189.250.150.160.170
+Colony Count, Microbial;E05.909.560.220;E05.200.875.220
+Colony-Forming Units Assay;E05.909.262.383;E05.200.500.383
+Conjugation, Genetic;G05.825.192;G05.825.390.249
+Conjunctival Neoplasms;C04.588.443.363.235;
+Consensus Sequence;G05.331.599.056.160;G05.331.599.250.175
+Consensus Sequence;G05.331.599.110.200;G06.184.599.250.175
+Consensus Sequence;G06.184.599.056.160;
+Consensus Sequence;G06.184.599.110.200;
+Corrosion Casting;E05.909.262.620.620.150;E05.200.500.620.620.150
+Corrosion Casting;E05.909.432.600.620.150;E05.200.750.600.620.150
+Cryopreservation;E05.909.262.620.760.160;E05.200.500.620.760.160
+Cryopreservation;E05.909.432.600.760.160;E05.200.750.600.760.160
+Cryoultramicrotomy;E05.909.262.620.530.160;E05.200.500.620.530.160
+Cryoultramicrotomy;E05.909.432.600.530.160;E05.200.750.600.530.160
+Cryptosporidiosis;C03.752.750.259.269;C03.752.250.269
+Cryptosporidium;B01.841.075.762.167.275.250.087;B01.841.075.189.250.150.160
+Cryptosporidium parvum;B01.841.075.762.167.275.250.087.500;B01.841.075.189.250.150.160.170
 Cysteine;;D12.125.154.299
-Cytapheresis;E5.909.262.363.285;E5.200.500.363.285
-Cytogenetic Analysis;E5.909.262.385;E5.200.500.385
-Cytological Techniques;E5.909.262;E5.200.500
-Cytophotometry;E5.909.262.386;E5.200.500.386
+Cytapheresis;E05.909.262.363.285;E05.200.500.363.285
+Cytogenetic Analysis;E05.909.262.385;E05.200.500.385
+Cytological Techniques;E05.909.262;E05.200.500
+Cytophotometry;E05.909.262.386;E05.200.500.386
 Cytoplasm;A11.368;A11.284.195
 Cytoplasmic Granules;A11.368.246;A11.284.195.190.500
 Cytoplasmic Granules;A11.515.246;A11.284.195.190.875.190.190
 Cytoskeleton;A11.368.250;A11.284.195.190.750
 Cytosol;A11.904.287;A11.284.195.200
 Cytosol;;A11.284.835.287
-Decalcification Technique;E5.909.432.288;E5.200.750.288
+Decalcification Technique;E05.909.432.288;E05.200.750.288
 Dendrites;;A11.284.180.225
 Desmosomes;A11.195.443.297;A11.284.149.165.420.297
 Diabetes, Gestational;C13.703.766.285;C13.703.170
 Diabetes, Gestational;C18.452.297.820.285;C18.452.297.200
 Diabetes, Gestational;C19.246.820.285;C19.246.200
-DIDS;D2.455.426.559.389.150.700.150;D2.455.426.559.389.150.700.200
-Diffusion Chambers, Culture;E5.909.262.387;E5.200.500.387
-Diffusion Chambers, Culture;E5.909.813.387;E5.200.937.387
+DIDS;D02.455.426.559.389.150.700.150;D02.455.426.559.389.150.700.200
+Diffusion Chambers, Culture;E05.909.262.387;E05.200.500.387
+Diffusion Chambers, Culture;E05.909.813.387;E05.200.937.387
 Diphtheria Toxoid;D24.310.794.263;D24.310.894.691.263
 Diphtheria-Tetanus-Pertussis Vaccine;D24.310.794.263.300;D24.310.894.135.300
 Diphtheria-Tetanus-Pertussis Vaccine;D24.310.794.824.300;D24.310.894.691.263.300
 Diphtheria-Tetanus-Pertussis Vaccine;D24.310.894.135.378;D24.310.894.691.824.300
-Diverticulosis, Colonic;;C6.273.124
+Diverticulosis, Colonic;;C06.273.124
 Diverticulosis, Colonic;;C23.300.415.124
-Diverticulum;C6.405.748.142;C6.273
-DNA Footprinting;;E5.393.600.300
+Diverticulum;C06.405.748.142;C06.273
+DNA Footprinting;;E05.393.600.300
 DNA, Chloroplast;D13.444.308.275;D13.444.308.283.170
 DNA, Kinetoplast;D13.444.308.283.200;D13.444.308.283.225.200
 DNA, Kinetoplast;D13.444.308.354.200;
 DNA, Kinetoplast;D13.444.600.223.520;
 DNA, Kinetoplast;D26.600.530.600.223.490;
 DNA, Mitochondrial;D13.444.308.354;D13.444.308.283.225
-Drug Evaluation;E5.337.300.200;E5.337.425
-Drug Resistance, Microbial;G5.386.310;
-Drug Resistance, Microbial;G5.706.310;
-Drug Screening;E5.337.300.250;E5.337.550
-Drug Screening Assays, Antitumor;E5.337.300.250.200;E5.200.500.388
-Drug Screening Assays, Antitumor;E5.909.262.388;E5.337.550.200
-Echocardiography, Four-Dimensional;;E1.370.350.400.200.230
-Echocardiography, Three-Dimensional;;E1.370.350.400.200
-Eimeria;B1.841.75.762.167.275.250.276;B1.841.75.189.250.250.250
-Eimeria tenella;B1.841.75.762.167.275.250.276.650;B1.841.75.189.250.250.250.250
-Electron Spin Resonance Spectroscopy;E5.196.867.303;E5.196.867.519.274
-Electron Spin Resonance Spectroscopy;H1.671.579.340;H1.671.579.631.240
-Electroporation;E5.909.262.410;E5.200.500.410
+Drug Evaluation;E05.337.300.200;E05.337.425
+Drug Resistance, Microbial;G05.386.310;
+Drug Resistance, Microbial;G05.706.310;
+Drug Screening;E05.337.300.250;E05.337.550
+Drug Screening Assays, Antitumor;E05.337.300.250.200;E05.200.500.388
+Drug Screening Assays, Antitumor;E05.909.262.388;E05.337.550.200
+Echocardiography, Four-Dimensional;;E01.370.350.400.200.230
+Echocardiography, Three-Dimensional;;E01.370.350.400.200
+Eimeria;B01.841.075.762.167.275.250.276;B01.841.075.189.250.250.250
+Eimeria tenella;B01.841.075.762.167.275.250.276.650;B01.841.075.189.250.250.250.250
+Electron Spin Resonance Spectroscopy;E05.196.867.303;E05.196.867.519.274
+Electron Spin Resonance Spectroscopy;H01.671.579.340;H01.671.579.631.240
+Electroporation;E05.909.262.410;E05.200.500.410
 Endoplasmic Reticulum;A11.368.702.248;A11.284.195.190.875.248
 Endoplasmic Reticulum, Rough;A11.368.702.248.300;A11.284.195.190.875.248.300
 Endoplasmic Reticulum, Rough;;A11.284.195.190.875.811.740.300
 Endoplasmic Reticulum, Smooth;A11.368.702.248.310;A11.284.195.190.875.248.310
 Endosomes;A11.368.702.160.260;A11.284.195.190.875.190.250
-EPN;D2.719.376;D2.719.750
+EPN;D02.719.376;D02.719.750
 Erythroblasts;A11.118.413.350.200;A11.118.290.350.200
 Erythroblasts;A11.148.378.350.200;A11.148.378.590.249.200
 Erythroblasts;A15.145.229.413.350.200;A15.145.229.334.665.200
 Erythroblasts;A15.378.316.378.350.200;A15.378.316.378.590.249.200
-Erythrocyte Count;E5.909.262.195.107.330;E5.200.500.195.107.330
+Erythrocyte Count;E05.909.262.195.107.330;E05.200.500.195.107.330
 Erythrocyte Inclusions;A11.118.413.330.340;A11.118.290.330.315
 Erythrocyte Inclusions;A15.145.229.413.330.340;A11.284.420.204
 Erythrocyte Inclusions;;A15.145.229.334.330.340
@@ -278,61 +278,61 @@ Erythroid Progenitor Cells;A11.148.378.350;A11.148.378.590.249
 Erythroid Progenitor Cells;A11.872.378.350;A11.872.378.590.270
 Erythroid Progenitor Cells;A15.145.229.413.350;A15.145.229.334.665
 Erythroid Progenitor Cells;A15.378.316.378.350;A15.378.316.378.590.249
-Esophageal Diverticulum;;C6.273.250
-Eucoccidiida;B1.841.75.762.167.275;B1.841.75.189.275
+Esophageal Diverticulum;;C06.273.250
+Eucoccidiida;B01.841.075.762.167.275;B01.841.075.189.275
 Extracellular Matrix;A11.470.310;A11.284.295.310
 Extracellular Space;A11.470;A11.284.295
-Eye Neoplasms;C4.588.443.363;
-Eyelid Neoplasms;C4.588.364.421;C4.588.443.392.500
-Eyelid Neoplasms;C4.588.443.363.421;
+Eye Neoplasms;C04.588.443.363;
+Eyelid Neoplasms;C04.588.364.421;C04.588.443.392.500
+Eyelid Neoplasms;C04.588.443.363.421;
 Fetal Macrosomia;C13.703.766.570;C18.452.297.200.250
 Fetal Macrosomia;;C19.246.200.250
-Fetal Weight;E5.118.287.300;E5.118.90.287.300
+Fetal Weight;E05.118.287.300;E05.118.090.287.300
 Fimbriae, Bacterial;A11.368.702.292;A11.284.180.285
-Fishes, Poisonous;;B1.30.286.400
+Fishes, Poisonous;;B01.030.286.400
 Flagella;A11.368.702.298;A11.284.180.290
-Flow Cytometry;E5.909.262.386.350;E5.200.500.386.350
-Fluorescent Antibody Technique;E5.909.432.551.512.240;E5.200.750.551.512.240
-Fluorescent Antibody Technique, Direct;E5.909.432.551.512.240.300;E5.200.750.551.512.240.300
-Fluorescent Antibody Technique, Indirect;E5.909.432.551.512.240.310;E5.200.750.551.512.240.310
-Freemartinism;G5.148.630.437;C13.371.820.700.842.260
+Flow Cytometry;E05.909.262.386.350;E05.200.500.386.350
+Fluorescent Antibody Technique;E05.909.432.551.512.240;E05.200.750.551.512.240
+Fluorescent Antibody Technique, Direct;E05.909.432.551.512.240.300;E05.200.750.551.512.240.300
+Fluorescent Antibody Technique, Indirect;E05.909.432.551.512.240.310;E05.200.750.551.512.240.310
+Freemartinism;G05.148.630.437;C13.371.820.700.842.260
 Freemartinism;;C16.131.939.842.260
 Freemartinism;;C19.391.775.260
-Freeze Drying;E5.909.262.620.760.160.260;E5.200.500.620.760.160.260
-Freeze Drying;E5.909.432.600.760.160.260;E5.200.750.600.760.160.260
-Freeze Etching;E5.909.262.620.620.260.400;E5.200.500.620.620.260.400
-Freeze Etching;E5.909.432.600.620.260.400;E5.200.750.600.620.260.400
-Freeze Fracturing;E5.909.262.620.620.260;E5.200.500.620.620.260
-Freeze Fracturing;E5.909.432.600.620.260;E5.200.750.600.620.260
-Freeze Substitution;E5.909.262.620.760.160.260.270;E5.200.500.620.760.160.260.270
-Freeze Substitution;E5.909.432.600.760.160.260.270;E5.200.750.600.760.160.260.270
-Frozen Sections;E5.909.262.620.530.160.260;E5.200.500.620.530.160.260
-Frozen Sections;E5.909.432.600.530.160.260;E5.200.750.600.530.160.260
+Freeze Drying;E05.909.262.620.760.160.260;E05.200.500.620.760.160.260
+Freeze Drying;E05.909.432.600.760.160.260;E05.200.750.600.760.160.260
+Freeze Etching;E05.909.262.620.620.260.400;E05.200.500.620.620.260.400
+Freeze Etching;E05.909.432.600.620.260.400;E05.200.750.600.620.260.400
+Freeze Fracturing;E05.909.262.620.620.260;E05.200.500.620.620.260
+Freeze Fracturing;E05.909.432.600.620.260;E05.200.750.600.620.260
+Freeze Substitution;E05.909.262.620.760.160.260.270;E05.200.500.620.760.160.260.270
+Freeze Substitution;E05.909.432.600.760.160.260.270;E05.200.750.600.760.160.260.270
+Frozen Sections;E05.909.262.620.530.160.260;E05.200.500.620.530.160.260
+Frozen Sections;E05.909.432.600.530.160.260;E05.200.750.600.530.160.260
 Gap Junctions;A11.195.443.471;A11.284.149.165.420.471
-Gastrospirillum hominis;B3.440.375.375;B3.440.500.274
-Gastrospirillum hominis;B3.660.150.250.280;B3.660.150.280.274
-Gastrospirillum hominis;B3.825.380.375;B3.825.400.274
-Gene Amplification;E5.393.330;E5.393.620.249
-Gene Rearrangement;G4.610.626.321;
-Gene Rearrangement;G5.511.321;
-Gene Rearrangement, alpha-Chain T-Cell Antigen Receptor;G4.610.626.321.801.111;G4.610.626.325.111
-Gene Rearrangement, alpha-Chain T-Cell Antigen Receptor;G5.511.321.801.111;G5.511.325.111
-Gene Rearrangement, B-Lymphocyte;G4.610.626.321.401;G4.610.626.320
-Gene Rearrangement, B-Lymphocyte;G5.511.321.401;G5.511.320
-Gene Rearrangement, B-Lymphocyte, Heavy Chain;G4.610.626.321.401.501;G4.610.626.320.501
-Gene Rearrangement, B-Lymphocyte, Heavy Chain;G5.511.321.401.501;G5.511.320.501
-Gene Rearrangement, B-Lymphocyte, Light Chain;G4.610.626.321.401.601;G4.610.626.320.601
-Gene Rearrangement, B-Lymphocyte, Light Chain;G5.511.321.401.601;G5.511.320.601
-Gene Rearrangement, beta-Chain T-Cell Antigen Receptor;G4.610.626.321.801.211;G4.610.626.325.211
-Gene Rearrangement, beta-Chain T-Cell Antigen Receptor;G5.511.321.801.211;G5.511.325.211
-Gene Rearrangement, delta-Chain T-Cell Antigen Receptor;G4.610.626.321.801.261;G4.610.626.325.261
-Gene Rearrangement, delta-Chain T-Cell Antigen Receptor;G5.511.321.801.261;G5.511.325.261
-Gene Rearrangement, gamma-Chain T-Cell Antigen Receptor;G4.610.626.321.801.311;G4.610.626.325.311
-Gene Rearrangement, gamma-Chain T-Cell Antigen Receptor;G5.511.321.801.311;G5.511.325.311
-Gene Rearrangement, T-Lymphocyte;G4.610.626.321.801;G4.610.626.325
-Gene Rearrangement, T-Lymphocyte;G5.511.321.801;G5.511.325
-Gentamicins;D27.505.93.374;
-Glutamate Synthase;;D8.586.682.135.470
+Gastrospirillum hominis;B03.440.375.375;B03.440.500.274
+Gastrospirillum hominis;B03.660.150.250.280;B03.660.150.280.274
+Gastrospirillum hominis;B03.825.380.375;B03.825.400.274
+Gene Amplification;E05.393.330;E05.393.620.249
+Gene Rearrangement;G04.610.626.321;
+Gene Rearrangement;G05.511.321;
+Gene Rearrangement, alpha-Chain T-Cell Antigen Receptor;G04.610.626.321.801.111;G04.610.626.325.111
+Gene Rearrangement, alpha-Chain T-Cell Antigen Receptor;G05.511.321.801.111;G05.511.325.111
+Gene Rearrangement, B-Lymphocyte;G04.610.626.321.401;G04.610.626.320
+Gene Rearrangement, B-Lymphocyte;G05.511.321.401;G05.511.320
+Gene Rearrangement, B-Lymphocyte, Heavy Chain;G04.610.626.321.401.501;G04.610.626.320.501
+Gene Rearrangement, B-Lymphocyte, Heavy Chain;G05.511.321.401.501;G05.511.320.501
+Gene Rearrangement, B-Lymphocyte, Light Chain;G04.610.626.321.401.601;G04.610.626.320.601
+Gene Rearrangement, B-Lymphocyte, Light Chain;G05.511.321.401.601;G05.511.320.601
+Gene Rearrangement, beta-Chain T-Cell Antigen Receptor;G04.610.626.321.801.211;G04.610.626.325.211
+Gene Rearrangement, beta-Chain T-Cell Antigen Receptor;G05.511.321.801.211;G05.511.325.211
+Gene Rearrangement, delta-Chain T-Cell Antigen Receptor;G04.610.626.321.801.261;G04.610.626.325.261
+Gene Rearrangement, delta-Chain T-Cell Antigen Receptor;G05.511.321.801.261;G05.511.325.261
+Gene Rearrangement, gamma-Chain T-Cell Antigen Receptor;G04.610.626.321.801.311;G04.610.626.325.311
+Gene Rearrangement, gamma-Chain T-Cell Antigen Receptor;G05.511.321.801.311;G05.511.325.311
+Gene Rearrangement, T-Lymphocyte;G04.610.626.321.801;G04.610.626.325
+Gene Rearrangement, T-Lymphocyte;G05.511.321.801;G05.511.325
+Gentamicins;D27.505.093.374;
+Glutamate Synthase;;D08.586.682.135.470
 Glutamine;;D12.125.154.424
 Glycocalyx;A11.195.399;A11.284.149.165.355
 Glyoxysomes;A11.368.702.515.250;A11.284.195.190.500.585.250
@@ -342,93 +342,93 @@ Granulocytes;;A11.118.835.249
 Granulocytes;;A11.148.378.590.590.500
 Granulocytes;;A15.145.229.698.249
 Granulocytes;;A15.378.316.378.590.590.500
-Granulosa Cell Tumor;;C4.588.322.455.398
-Granulosa Cell Tumor;;C4.588.945.418.685.446
-Granulosa Cell Tumor;;C13.371.56.630.705.398
+Granulosa Cell Tumor;;C04.588.322.455.398
+Granulosa Cell Tumor;;C04.588.945.418.685.446
+Granulosa Cell Tumor;;C13.371.056.630.705.398
 Granulosa Cell Tumor;;C13.371.270.750.374
 Granulosa Cell Tumor;;C13.371.820.800.418.685.398
 Granulosa Cell Tumor;;C19.344.455.398
 Granulosa Cell Tumor;;C19.391.630.705.398
-Growth Cones;;A11.284.180.75.249
+Growth Cones;;A11.284.180.075.249
 Growth Cones;;A11.284.180.225.340
 Growth Cones;;A11.284.180.610.345
 Growth Cones;;A11.671.137.340
 Growth Cones;;A11.671.240.340
-Haemosporina;B1.841.75.762.167.275.400;B1.841.75.380
-Haplotypes;G5.470;G5.441.360
+Haemosporina;B01.841.075.762.167.275.400;B01.841.075.380
+Haplotypes;G05.470;G05.441.360
 Heinz Bodies;A11.118.413.330.340.335;A11.118.290.330.315.335
 Heinz Bodies;A15.145.229.413.330.340.335;A11.284.420.204.335
 Heinz Bodies;;A15.145.229.334.330.340.335
 Hela Cells;A11.251.353.460;
-Hemodiafiltration;E2.912.390.200;E2.912.800.200
-Hemodialysis;E2.912.390;E2.912.800
-Hemodialysis, Home;E2.912.390.300;E2.912.800.300
+Hemodiafiltration;E02.912.390.200;E02.912.800.200
+Hemodialysis;E02.912.390;E02.912.800
+Hemodialysis, Home;E02.912.390.300;E02.912.800.300
 Hemolysis;;C23.550.403
 Heterochromatin;A11.223.349.383;A11.284.170.279.190.160.180.383
 Heterochromatin;D12.776.660.224.460;
-Hindlimb Suspension;;E5.977.400
-Hindlimb Suspension;;G3.230.150.440.950.400
-Histocytochemistry;E5.909.262.607;E5.200.500.607
-Histocytochemistry;E5.909.432.551;E5.200.750.551
-Histocytological Preparation Techniques;E5.909.262.620;E5.200.500.620
-Histocytological Preparation Techniques;E5.909.432.600;E5.200.750.600
-Histological Techniques;E5.909.432;E5.200.750
-Holography;;E1.370.350.400.500
-25-Hydroxycholecalciferol 1-Hydroxylase;;D8.262.453.400
+Hindlimb Suspension;;E05.977.400
+Hindlimb Suspension;;G03.230.150.440.950.400
+Histocytochemistry;E05.909.262.607;E05.200.500.607
+Histocytochemistry;E05.909.432.551;E05.200.750.551
+Histocytological Preparation Techniques;E05.909.262.620;E05.200.500.620
+Histocytological Preparation Techniques;E05.909.432.600;E05.200.750.600
+Histological Techniques;E05.909.432;E05.200.750
+Holography;;E01.370.350.400.500
+25-Hydroxycholecalciferol 1-Hydroxylase;;D08.262.453.400
 Hydroxymethylglutaryl-CoA Reductase Inhibitors;;D10.162.202.370
 Hydroxymethylglutaryl-CoA Reductase Inhibitors;;D27.505.519.162.202.370
-Image Cytometry;E5.909.262.386.400;E5.200.500.386.400
-Immunoglobulin Allotypes;G4.610.626.500;G4.610.626.398.300
-Immunoglobulin Allotypes;G5.275.77.500;G5.275.351.300
-Immunoglobulin Class Switching;G4.610.626.321.900;G4.610.626.320.501.450
-Immunoglobulin Class Switching;G5.331.390.900;G5.331.390.401.501.450
-Immunoglobulin Class Switching;G5.511.321.900;G5.511.320.501.450
-Immunoglobulin Gm Allotypes;G4.610.626.500.504;G4.610.626.398.300.504
-Immunoglobulin Gm Allotypes;G5.275.77.500.495;G5.275.351.300.495
-Immunoglobulin Inv Allotypes;G4.610.626.500.507;G4.610.626.398.300.507
-Immunoglobulin Inv Allotypes;G5.275.77.500.505;G5.275.351.300.505
-Immunohistochemistry;E5.909.262.607.512;E5.200.500.607.512
-Immunohistochemistry;E5.909.432.551.512;E5.200.750.551.512
-Immunomagnetic Separation;E2.110.142.400;E5.200.500.363.400
-Immunomagnetic Separation;E5.909.262.363.400;
-In Situ Hybridization;;E5.200.500.620.670.325
-In Situ Hybridization;;E5.200.750.600.670.325
-In Situ Hybridization, Fluorescence;;E5.200.500.620.670.325.350
-In Situ Hybridization, Fluorescence;;E5.200.750.600.670.325.350
+Image Cytometry;E05.909.262.386.400;E05.200.500.386.400
+Immunoglobulin Allotypes;G04.610.626.500;G04.610.626.398.300
+Immunoglobulin Allotypes;G05.275.077.500;G05.275.351.300
+Immunoglobulin Class Switching;G04.610.626.321.900;G04.610.626.320.501.450
+Immunoglobulin Class Switching;G05.331.390.900;G05.331.390.401.501.450
+Immunoglobulin Class Switching;G05.511.321.900;G05.511.320.501.450
+Immunoglobulin Gm Allotypes;G04.610.626.500.504;G04.610.626.398.300.504
+Immunoglobulin Gm Allotypes;G05.275.077.500.495;G05.275.351.300.495
+Immunoglobulin Inv Allotypes;G04.610.626.500.507;G04.610.626.398.300.507
+Immunoglobulin Inv Allotypes;G05.275.077.500.505;G05.275.351.300.505
+Immunohistochemistry;E05.909.262.607.512;E05.200.500.607.512
+Immunohistochemistry;E05.909.432.551.512;E05.200.750.551.512
+Immunomagnetic Separation;E02.110.142.400;E05.200.500.363.400
+Immunomagnetic Separation;E05.909.262.363.400;
+In Situ Hybridization;;E05.200.500.620.670.325
+In Situ Hybridization;;E05.200.750.600.670.325
+In Situ Hybridization, Fluorescence;;E05.200.500.620.670.325.350
+In Situ Hybridization, Fluorescence;;E05.200.750.600.670.325.350
 Inclusion Bodies;A11.515;A11.284.420
 Inclusion Bodies, Viral;A11.515.410;A11.284.420.410
-Insecticide Resistance;G5.706.574;
+Insecticide Resistance;G05.706.574;
 Intercellular Junctions;A11.195.443;A11.284.149.165.420
 Intermediate Filaments;A11.368.250.410;A11.284.195.190.750.410
 Intracellular Membranes;A11.904.514;A11.284.149.450
 Intracellular Membranes;;A11.284.835.514
-Introns;G5.331.599.110.505;G5.331.599.110.275.400
-Introns;G6.184.599.110.505;G6.184.599.110.220.410
-Inulin;;D9.203.698.365.855.750
+Introns;G05.331.599.110.505;G05.331.599.110.275.400
+Introns;G06.184.599.110.505;G06.184.599.110.220.410
+Inulin;;D09.203.698.365.855.750
 Inversion (Genetics);;C23.550.210.445
-Iris Neoplasms;C4.588.443.363.978.400;
+Iris Neoplasms;C04.588.443.363.978.400;
 ISCOMs;D12.776.828.868.400;D24.310.894.860.449
 ISCOMs;D24.310.894.865.400;
 ISCOMs;D24.611.216.865.400;
 Isochromosomes;;C23.550.210.460
-Isospora;B1.841.75.762.167.275.250.467;B1.841.75.189.250.250.400
-Jaw Neoplasms;C4.588.443.840.450;
+Isospora;B01.841.075.762.167.275.250.467;B01.841.075.189.250.250.400
+Jaw Neoplasms;C04.588.443.840.450;
 Jet Lag Syndrome;;C10.281.440
-Kanamycin Resistance;G5.386.310.493;
-Kanamycin Resistance;G5.706.310.493;
-Karyometry;E5.909.262.695;E5.200.500.695
+Kanamycin Resistance;G05.386.310.493;
+Kanamycin Resistance;G05.706.310.493;
+Karyometry;E05.909.262.695;E05.200.500.695
 KB Cells;A11.251.353.501;
-Kidney, Polycystic;C4.182.394.420;C4.182.394.600
+Kidney, Polycystic;C04.182.394.420;C04.182.394.600
 Kidney, Polycystic;C12.740.700.608;C12.740.700.800
 Kidney, Polycystic;C12.777.419.413.420;C12.777.419.413.600
 Kidney, Polycystic;C13.371.820.700.608;C13.371.820.700.800
 Kidney, Polycystic;C16.131.939.608;C16.131.939.800
-Kidney, Polycystic, Autosomal Dominant;C4.182.394.420.500;C4.182.394.600.500
+Kidney, Polycystic, Autosomal Dominant;C04.182.394.420.500;C04.182.394.600.500
 Kidney, Polycystic, Autosomal Dominant;C12.740.700.608.500;C12.740.700.800.500
 Kidney, Polycystic, Autosomal Dominant;C12.777.419.413.420.500;C12.777.419.413.600.500
 Kidney, Polycystic, Autosomal Dominant;C13.371.820.700.608.500;C13.371.820.700.800.500
 Kidney, Polycystic, Autosomal Dominant;C16.131.939.608.500;C16.131.939.800.500
-Kidney, Polycystic, Autosomal Recessive;C4.182.394.420.510;C4.182.394.600.510
+Kidney, Polycystic, Autosomal Recessive;C04.182.394.420.510;C04.182.394.600.510
 Kidney, Polycystic, Autosomal Recessive;C12.740.700.608.510;C12.740.700.800.510
 Kidney, Polycystic, Autosomal Recessive;C12.777.419.413.420.510;C12.777.419.413.600.510
 Kidney, Polycystic, Autosomal Recessive;C13.371.820.700.608.510;C13.371.820.700.800.510
@@ -436,79 +436,79 @@ Kidney, Polycystic, Autosomal Recessive;C16.131.939.608.510;C16.131.939.800.510
 Kidney, Sponge;C12.777.419.413.586;C12.777.419.413.200
 Kinetics;;G12.561
 Kinetochores;A11.223.475.135.500;A11.284.170.279.190.160.165.500
-Leukapheresis;E5.909.262.363.285.570;E5.200.500.363.285.570
+Leukapheresis;E05.909.262.363.285.570;E05.200.500.363.285.570
 Leukemic Infiltration;;C23.550.727.645.500
-Leukocyte Count;E5.909.262.195.107.595;E5.200.500.195.107.595
+Leukocyte Count;E05.909.262.195.107.595;E05.200.500.195.107.595
 Lewy Bodies;A11.368.600;A11.284.420.460
 Lewy Bodies;A11.515.460;
-Limulus Test;E5.909.560.150.570;E5.200.875.150.570
+Limulus Test;E05.909.560.150.570;E05.200.875.150.570
 Liposomes;;D26.664.255.260.517
 Liposomes;;D27.720.280.260.517
-Lipoxygenase;D8.586.348.600;
-Loss of Heterozygosity;G5.632.490;C23.550.210.300.520
-Loss of Heterozygosity;;G5.632.40.530
-Luteoma;;C4.588.322.455.464
-Luteoma;;C4.588.945.418.685.520
-Luteoma;;C13.371.56.630.705.464
+Lipoxygenase;D08.586.348.600;
+Loss of Heterozygosity;G05.632.490;C23.550.210.300.520
+Loss of Heterozygosity;;G05.632.040.530
+Luteoma;;C04.588.322.455.464
+Luteoma;;C04.588.945.418.685.520
+Luteoma;;C13.371.056.630.705.464
 Luteoma;;C13.371.270.750.437
 Luteoma;;C13.371.820.800.418.685.464
 Luteoma;;C19.344.455.464
 Luteoma;;C19.391.630.705.464
 Lymphatic Metastasis;;C23.550.727.650.560
-Lymphocyte Count;E5.909.262.195.107.595.500;E5.200.500.195.107.595.500
+Lymphocyte Count;E05.909.262.195.107.595.500;E05.200.500.195.107.595.500
 Lysosomes;A11.368.702.452;A11.284.195.190.875.190.550
-Malaria;C3.752.750.259.552;C3.752.250.552
+Malaria;C03.752.750.259.552;C03.752.250.552
 Malaria Vaccines;D12.776.828.868.500;
 Malaria Vaccines;D24.310.894.865.500;
 Malaria Vaccines;D24.611.216.865.500;
-Malaria, Avian;C3.752.750.259.552.606;C3.752.250.552.606
-Malaria, Falciparum;C3.752.750.259.552.650;C3.752.250.552.650
-Malaria, Vivax;C3.752.750.259.552.700;C3.752.250.552.700
-Mandibular Neoplasms;C4.588.443.840.450.550;
-Maxillary Neoplasms;C4.588.443.840.450.560;
-Meckel's Diverticulum;;C6.273.250.455
+Malaria, Avian;C03.752.750.259.552.606;C03.752.250.552.606
+Malaria, Falciparum;C03.752.750.259.552.650;C03.752.250.552.650
+Malaria, Vivax;C03.752.750.259.552.700;C03.752.250.552.700
+Mandibular Neoplasms;C04.588.443.840.450.550;
+Maxillary Neoplasms;C04.588.443.840.450.560;
+Meckel's Diverticulum;;C06.273.250.455
 Megakaryocytes;A11.148.614;A11.148.378.590.249.480
 Megakaryocytes;A15.378.316.614;A15.378.316.378.590.249.480
 Megaloblasts;A11.118.413.330.531;A11.118.290.330.531
 Megaloblasts;A15.145.229.413.330.531;A15.145.229.334.330.531
 Melanosomes;A11.368.246.560;A11.284.195.190.500.560
 Melanosomes;A11.368.702.500;A11.284.195.190.875.190.190.560
-Methicillin Resistance;G5.386.310.100.600.525;
-Methicillin Resistance;G5.706.310.100.600.525;
+Methicillin Resistance;G05.386.310.100.600.525;
+Methicillin Resistance;G05.706.310.100.600.525;
 Methionine;;D12.125.154.549
-Mice, Congenic;;B1.30.199.40.500
-Mice, Inbred A;;B1.30.157.250.300
-Mice, Inbred AKR;;B1.30.157.250.318
-Mice, Inbred BALB C;;B1.30.157.250.338
-Mice, Inbred C3H;;B1.30.157.250.388
-Mice, Inbred C57BL;;B1.30.157.250.420
-Mice, Inbred CBA;;B1.30.157.250.440
-Mice, Inbred CFTR;;B1.30.157.250.445
-Mice, Inbred DBA;;B1.30.157.250.460
-Mice, Inbred HRS;;B1.30.157.250.480
-Mice, Inbred ICR;;B1.30.157.250.510
-Mice, Inbred mdx;;B1.30.157.250.420.500
-Mice, Inbred MRL lpr;;B1.30.157.250.555
-Mice, Inbred NZB;;B1.30.157.250.580
-Mice, Inbred SENCAR;;B1.30.157.250.600
-Mice, Inbred Strains;;B1.30.157.250
-Mice, Transgenic;;B1.30.199.85.600
-Mice, Transgenic;;B1.30.296.600
-Mice, Transgenic;;B1.30.724.500.600
-Microbial Sensitivity Tests;E5.909.560.595;E5.200.875.595
-Microbial Sensitivity Tests;;E5.337.550.400
-Microbiological Techniques;E5.909.560;E5.200.875
+Mice, Congenic;;B01.030.199.040.500
+Mice, Inbred A;;B01.030.157.250.300
+Mice, Inbred AKR;;B01.030.157.250.318
+Mice, Inbred BALB C;;B01.030.157.250.338
+Mice, Inbred C3H;;B01.030.157.250.388
+Mice, Inbred C57BL;;B01.030.157.250.420
+Mice, Inbred CBA;;B01.030.157.250.440
+Mice, Inbred CFTR;;B01.030.157.250.445
+Mice, Inbred DBA;;B01.030.157.250.460
+Mice, Inbred HRS;;B01.030.157.250.480
+Mice, Inbred ICR;;B01.030.157.250.510
+Mice, Inbred mdx;;B01.030.157.250.420.500
+Mice, Inbred MRL lpr;;B01.030.157.250.555
+Mice, Inbred NZB;;B01.030.157.250.580
+Mice, Inbred SENCAR;;B01.030.157.250.600
+Mice, Inbred Strains;;B01.030.157.250
+Mice, Transgenic;;B01.030.199.085.600
+Mice, Transgenic;;B01.030.296.600
+Mice, Transgenic;;B01.030.724.500.600
+Microbial Sensitivity Tests;E05.909.560.595;E05.200.875.595
+Microbial Sensitivity Tests;;E05.337.550.400
+Microbiological Techniques;E05.909.560;E05.200.875
 Microbodies;A11.368.702.515;A11.284.195.190.500.585
 Microbodies;;A11.284.195.190.875.190.190.755
 Microfibrils;A11.470.310.500;A11.284.295.310.560
 Microfilaments;A11.368.250.510;A11.284.195.190.750.510
 Micronuclei;A11.630;A11.284.170.555
 Micronuclei;;A11.284.195.190.875.117.555
-Micronutrients;J2.500.625;D11.430
+Micronutrients;J02.500.625;D11.430
 Microsomes;A11.904.540;A11.284.835.540
 Microsomes, Liver;A11.904.540.541;A11.284.835.540.541
-Microtomy;E5.909.262.620.530;E5.200.500.620.530
-Microtomy;E5.909.432.600.530;E5.200.750.600.530
+Microtomy;E05.909.262.620.530;E05.200.500.620.530
+Microtomy;E05.909.432.600.530;E05.200.750.600.530
 Microtubules;A11.368.250.602;A11.284.195.190.750.602
 Microvilli;A11.195.590;A11.284.180.565
 Mitochondria;A11.368.702.564;A11.284.195.190.875.564
@@ -519,7 +519,7 @@ Mitochondria, Liver;A11.368.702.564.461;A11.284.195.190.875.564.461
 Mitochondria, Liver;A11.904.626.461;A11.284.835.626.461
 Mitochondria, Muscle;A11.368.702.564.627;A11.284.195.190.875.564.627
 Mitochondria, Muscle;A11.904.626.627;A11.284.835.626.627
-Mitotic Index;E5.909.262.385.500;E5.200.500.385.500
+Mitotic Index;E05.909.262.385.500;E05.200.500.385.500
 Mitotic Spindle Apparatus;A11.368.702.581;A11.284.195.190.750.610
 Monocytes;;A11.118.835.624
 Monocytes;;A11.148.378.590.590.750
@@ -531,11 +531,11 @@ Monosomy;;C23.550.210.131.500
 Mossy Fibers, Hippocampal;A11.195.443.780.700.500;A11.671.137.560
 Mossy Fibers, Hippocampal;A11.671.137.750.500;
 Motor Endplate;A11.195.443.780.550.550.500;A11.284.149.165.420.780.550.550.500
-Mycological Typing Techniques;E5.909.560.610;E5.200.875.610
+Mycological Typing Techniques;E05.909.560.610;E05.200.875.610
 Myelin Sheath;;A11.284.149.165.600
 Myofibrils;A11.368.702.619;A11.284.195.190.750.620
-Negative Staining;E5.909.262.620.670.520;E5.200.500.620.670.520
-Negative Staining;E5.909.432.600.670.520;E5.200.750.600.670.520
+Negative Staining;E05.909.262.620.670.520;E05.200.500.620.670.520
+Negative Staining;E05.909.432.600.670.520;E05.200.750.600.670.520
 Neoplasm Circulating Cells;;C23.550.727.650.645
 Neoplasm Invasiveness;;C23.550.727.645
 Neoplasm Metastasis;;C23.550.727.650
@@ -545,14 +545,14 @@ Neoplasm Seeding;;C23.550.727.650.830
 Neoplasm, Residual;;C23.550.727.700
 Neoplasms, Unknown Primary;;C23.550.727.650.895
 Neoplastic Processes;;C23.550.727
-Neospora;B1.841.75.762.167.275.250.560;B1.841.75.189.250.750.550
-Nephroma, Mesoblastic;;C4.588.945.947.535.790
+Neospora;B01.841.075.762.167.275.250.560;B01.841.075.189.250.750.550
+Nephroma, Mesoblastic;;C04.588.945.947.535.790
 Nephroma, Mesoblastic;;C12.740.800.820.750.790
 Nephroma, Mesoblastic;;C12.777.419.473.790
 Nephroma, Mesoblastic;;C13.371.820.800.820.535.790
 Neurites;A11.671.137.500;A11.284.180.610
 Neurites;A11.671.240.500;A11.671.543
-Neurocytoma;;C4.588.614.250.195.648
+Neurocytoma;;C04.588.614.250.195.648
 Neurocytoma;;C10.228.140.211.692
 Neurocytoma;;C10.551.240.250.550
 Neuroeffector Junction;A11.195.443.780.550;A11.284.149.165.420.780.550
@@ -563,12 +563,12 @@ Neuropil Threads;;A11.284.195.190.750.602.620
 Nissl Bodies;A11.368.702.248.441;A11.284.195.190.500.610
 Nissl Bodies;;A11.284.195.190.875.248.300.610
 Nissl Bodies;;A11.284.195.190.875.811.740.300.610
-Nitric-Oxide Synthase;;D8.586.682.608.550.772
+Nitric-Oxide Synthase;;D08.586.682.608.550.772
 Nondisjunction, Genetic;;C23.550.210.645
-Nose Neoplasms;C4.588.443.840.620;
-Nuclear Localization Signal;G5.331.599.56.540;D12.644.770.610
-Nuclear Localization Signal;G6.184.599.56.540;G5.331.599.56.670.610
-Nuclear Localization Signal;;G6.184.599.56.670.610
+Nose Neoplasms;C04.588.443.840.620;
+Nuclear Localization Signal;G05.331.599.056.540;D12.644.770.610
+Nuclear Localization Signal;G06.184.599.056.540;G05.331.599.056.670.610
+Nuclear Localization Signal;;G06.184.599.056.670.610
 Nuclear Matrix;A11.223.630;A11.284.170.279.700
 Nuclear Membrane;A11.223.650;A11.284.149.165.630
 Nuclear Membrane;A11.904.514.700;A11.284.149.450.700
@@ -577,118 +577,118 @@ Nuclear Membrane;;A11.284.835.514.700
 Nucleolus Organizer Region;A11.223.475.658;A11.284.170.279.190.160.650
 Nucleosomes;A11.223.349.625;A11.284.170.279.190.160.180.625
 Nucleosomes;D12.776.660.224.550;
-Orbital Neoplasms;C4.588.443.363.659;
-Orbital Neoplasms;C4.588.443.840.660;
-Organ Culture;E5.909.813.576;E5.200.937.576
+Orbital Neoplasms;C04.588.443.363.659;
+Orbital Neoplasms;C04.588.443.840.660;
+Organ Culture;E05.909.813.576;E05.200.937.576
 Organelles;A11.368.702;A11.284.195.190.875
-Organisms, Transgenic;;B1.30.724
+Organisms, Transgenic;;B01.030.724
 Organoids;A11.700;A10.802
-Ornithosis;C1.252.400.210.210.575;C1.252.400.210.250.600
-Palatal Neoplasms;C4.588.443.840.450.690;
-Palate;A2.835.232.781.324.502.658;
-Papillary Muscles;;A2.633.580.680
-Papillary Muscles;;A7.541.749
-Paraffin Embedding;E5.909.262.620.720.610;E5.200.500.620.720.610
-Paraffin Embedding;E5.909.432.600.720.610;E5.200.750.600.720.610
-Patch-Clamp Techniques;E5.909.262.800;E5.200.500.800
-Patch-Clamp Techniques;G7.453.774;
+Ornithosis;C01.252.400.210.210.575;C01.252.400.210.250.600
+Palatal Neoplasms;C04.588.443.840.450.690;
+Palate;A02.835.232.781.324.502.658;
+Papillary Muscles;;A02.633.580.680
+Papillary Muscles;;A07.541.749
+Paraffin Embedding;E05.909.262.620.720.610;E05.200.500.620.720.610
+Paraffin Embedding;E05.909.432.600.720.610;E05.200.750.600.720.610
+Patch-Clamp Techniques;E05.909.262.800;E05.200.500.800
+Patch-Clamp Techniques;G07.453.774;
 PC12 Cells;A11.251.353.750;A11.299.500
-Penicillin Resistance;G5.386.310.100.600;
-Penicillin Resistance;G5.706.310.100.600;
-Peptide Mapping;;E5.393.760.705.685
-Periodic Acid-Schiff Reaction;E5.909.262.607.790;E5.200.500.607.790
-Periodic Acid-Schiff Reaction;E5.909.262.620.670.620;E5.200.500.620.670.620
-Periodic Acid-Schiff Reaction;E5.909.432.551.790;E5.200.750.551.790
-Periodic Acid-Schiff Reaction;E5.909.432.600.670.620;E5.200.750.600.670.620
+Penicillin Resistance;G05.386.310.100.600;
+Penicillin Resistance;G05.706.310.100.600;
+Peptide Mapping;;E05.393.760.705.685
+Periodic Acid-Schiff Reaction;E05.909.262.607.790;E05.200.500.607.790
+Periodic Acid-Schiff Reaction;E05.909.262.620.670.620;E05.200.500.620.670.620
+Periodic Acid-Schiff Reaction;E05.909.432.551.790;E05.200.750.551.790
+Periodic Acid-Schiff Reaction;E05.909.432.600.670.620;E05.200.750.600.670.620
 Periplasm;A11.195.620;A11.284.295.680
-Peritoneal Dialysis;E2.870.700;E2.870.300.650
-Peritoneal Dialysis;E2.912.650;E2.912.800.650
-Peritoneal Dialysis, Continuous Ambulatory;E2.870.700.500;E2.870.300.650.500
-Peritoneal Dialysis, Continuous Ambulatory;E2.912.650.500;E2.912.800.650.500
+Peritoneal Dialysis;E02.870.700;E02.870.300.650
+Peritoneal Dialysis;E02.912.650;E02.912.800.650
+Peritoneal Dialysis, Continuous Ambulatory;E02.870.700.500;E02.870.300.650.500
+Peritoneal Dialysis, Continuous Ambulatory;E02.912.650.500;E02.912.800.650.500
 Peroxisomes;A11.368.702.515.600;A11.284.195.190.500.585.600
 Peroxisomes;;A11.284.195.190.875.190.190.755.600
 Phagosomes;A11.368.702.677;A11.284.195.190.875.190.700
 Philadelphia Chromosome;;C23.550.210.764.680
-Phyllodes Tumor;;C4.588.180.762
+Phyllodes Tumor;;C04.588.180.762
 Phyllodes Tumor;;C19.146.170.630
 Pili, Sex;A11.368.702.679;A11.284.180.690
-Pinealoma;;C4.588.614.250.195.766
+Pinealoma;;C04.588.614.250.195.766
 Pinealoma;;C10.228.140.211.788
 Pinealoma;;C10.551.240.250.625
-Piroplasmia;B1.841.75.762.580;B1.841.75.600
-Piroplasmida;B1.841.75.762.580.580;B1.841.75.600.580
-Plaque Assay;E5.909.560.970.790;E5.200.875.970.790
-Plasmodium;B1.841.75.762.167.275.400.611;B1.841.75.380.611
-Plasmodium berghei;B1.841.75.762.167.275.400.611.461;B1.841.75.380.611.461
-Plasmodium chabaudi;B1.841.75.762.167.275.400.611.490;B1.841.75.380.611.490
-Plasmodium cynomolgi;B1.841.75.762.167.275.400.611.505;B1.841.75.380.611.505
-Plasmodium falciparum;B1.841.75.762.167.275.400.611.561;B1.841.75.380.611.561
-Plasmodium gallinaceum;B1.841.75.762.167.275.400.611.576;B1.841.75.380.611.576
-Plasmodium knowlesi;B1.841.75.762.167.275.400.611.610;B1.841.75.380.611.610
-Plasmodium malariae;B1.841.75.762.167.275.400.611.661;B1.841.75.380.611.661
-Plasmodium vivax;B1.841.75.762.167.275.400.611.761;B1.841.75.380.611.761
-Plasmodium yoelii;B1.841.75.762.167.275.400.611.780;B1.841.75.380.611.780
-Plastic Embedding;E5.909.262.620.720.640;E5.200.500.620.720.640
-Plastic Embedding;E5.909.432.600.720.640;E5.200.750.600.720.640
+Piroplasmia;B01.841.075.762.580;B01.841.075.600
+Piroplasmida;B01.841.075.762.580.580;B01.841.075.600.580
+Plaque Assay;E05.909.560.970.790;E05.200.875.970.790
+Plasmodium;B01.841.075.762.167.275.400.611;B01.841.075.380.611
+Plasmodium berghei;B01.841.075.762.167.275.400.611.461;B01.841.075.380.611.461
+Plasmodium chabaudi;B01.841.075.762.167.275.400.611.490;B01.841.075.380.611.490
+Plasmodium cynomolgi;B01.841.075.762.167.275.400.611.505;B01.841.075.380.611.505
+Plasmodium falciparum;B01.841.075.762.167.275.400.611.561;B01.841.075.380.611.561
+Plasmodium gallinaceum;B01.841.075.762.167.275.400.611.576;B01.841.075.380.611.576
+Plasmodium knowlesi;B01.841.075.762.167.275.400.611.610;B01.841.075.380.611.610
+Plasmodium malariae;B01.841.075.762.167.275.400.611.661;B01.841.075.380.611.661
+Plasmodium vivax;B01.841.075.762.167.275.400.611.761;B01.841.075.380.611.761
+Plasmodium yoelii;B01.841.075.762.167.275.400.611.780;B01.841.075.380.611.780
+Plastic Embedding;E05.909.262.620.720.640;E05.200.500.620.720.640
+Plastic Embedding;E05.909.432.600.720.640;E05.200.750.600.720.640
 Plastids;A11.368.702.700;A11.284.195.190.875.700
-Platelet Count;E5.909.262.195.107.740;E5.200.500.195.107.740
-Plateletpheresis;E5.909.262.363.285.790;E5.200.500.363.285.790
+Platelet Count;E05.909.262.195.107.740;E05.200.500.195.107.740
+Plateletpheresis;E05.909.262.363.285.790;E05.200.500.363.285.790
 Poliovirus Vaccine;D24.310.894.899.614;D24.310.894.830.614
 Poliovirus Vaccine;;D24.310.894.899.623.500
 Poliovirus Vaccine, Oral;D24.310.894.899.614.614;D24.310.894.899.623.750
-Polymerase Chain Reaction;E5.393.330.500;E5.393.620.500
-Polymorphism (Genetics);;G5.632.690
-Polymorphism, Single Nucleotide;;G5.632.690.800
+Polymerase Chain Reaction;E05.393.330.500;E05.393.620.500
+Polymorphism (Genetics);;G05.632.690
+Polymorphism, Single Nucleotide;;G05.632.690.800
 Polyribosomes;A11.368.702.248.300.651.740;A11.284.195.190.875.811.740
 Polyribosomes;A11.368.702.811.740;
 Presynaptic Terminals;A11.195.443.780.700;A11.284.149.165.420.780.700
-Primed In Situ Labeling;E5.393.330.500.650;E5.200.500.620.670.325.680
-Primed In Situ Labeling;;E5.200.750.600.670.325.680
-Primed In Situ Labeling;;E5.393.620.500.650
-Prussian Blue Reaction;E5.909.262.607.810;E5.200.500.607.810
-Prussian Blue Reaction;E5.909.262.620.670.660;E5.200.500.620.670.660
-Prussian Blue Reaction;E5.909.432.551.810;E5.200.750.551.810
-Prussian Blue Reaction;E5.909.432.600.670.660;E5.200.750.600.670.660
+Primed In Situ Labeling;E05.393.330.500.650;E05.200.500.620.670.325.680
+Primed In Situ Labeling;;E05.200.750.600.670.325.680
+Primed In Situ Labeling;;E05.393.620.500.650
+Prussian Blue Reaction;E05.909.262.607.810;E05.200.500.607.810
+Prussian Blue Reaction;E05.909.262.620.670.660;E05.200.500.620.670.660
+Prussian Blue Reaction;E05.909.432.551.810;E05.200.750.551.810
+Prussian Blue Reaction;E05.909.432.600.670.660;E05.200.750.600.670.660
 Pseudopodia;A11.368.702.783;A11.284.180.700
-Psychiatric Nursing;F4.96.544.628;
-Pulmonary Adenomatosis, Ovine;C2.256.466.838;C2.782.815.725
-Pulmonary Adenomatosis, Ovine;;C4.557.470.200.25.715
-Pulmonary Blastoma;;C4.588.894.797.520.867
+Psychiatric Nursing;F04.096.544.628;
+Pulmonary Adenomatosis, Ovine;C02.256.466.838;C02.782.815.725
+Pulmonary Adenomatosis, Ovine;;C04.557.470.200.025.715
+Pulmonary Blastoma;;C04.588.894.797.520.867
 Pulmonary Subvalvular Stenosis;C14.280.600.100.715;C14.280.484.716.700
 Purple Membrane;A11.195.648;A11.284.149.648
-Radiation Chimera;G5.148.630.763;B1.30.530.750.760
-Radiation Chimera;G5.800.638;B2.158.530.750.760
-Randomized Controlled Trials;E5.318.760.535.750;E5.318.760.535.365.500
-Randomized Controlled Trials;E5.337.250.750;E5.337.250.365.500
-Randomized Controlled Trials;G3.850.520.835.535.750;G3.850.520.835.535.365.500
-Randomized Controlled Trials;N5.715.360.775.235.700;N5.715.360.775.235.387.500
+Radiation Chimera;G05.148.630.763;B01.030.530.750.760
+Radiation Chimera;G05.800.638;B02.158.530.750.760
+Randomized Controlled Trials;E05.318.760.535.750;E05.318.760.535.365.500
+Randomized Controlled Trials;E05.337.250.750;E05.337.250.365.500
+Randomized Controlled Trials;G03.850.520.835.535.750;G03.850.520.835.535.365.500
+Randomized Controlled Trials;N05.715.360.775.235.700;N05.715.360.775.235.387.500
 Ranvier's Nodes;;A11.284.149.165.760
-Rats, Inbred ACI;;B1.30.157.500.80
-Rats, Inbred BB;;B1.30.157.500.90
-Rats, Inbred BN;;B1.30.157.500.110
-Rats, Inbred BUF;;B1.30.157.500.130
-Rats, Inbred Dahl;;B1.30.157.500.165
-Rats, Inbred F344;;B1.30.157.500.200
-Rats, Inbred LEC;;B1.30.157.500.275
-Rats, Inbred Lew;;B1.30.157.500.280
-Rats, Inbred OLETF;;B1.30.157.500.290
-Rats, Inbred SHR;;B1.30.157.500.300
-Rats, Inbred Strains;;B1.30.157.500
-Rats, Inbred WF;;B1.30.157.500.360
-Rats, Inbred WKY;;B1.30.157.500.390
-Replica Techniques;E5.909.262.620.620;E5.200.500.620.620
-Replica Techniques;E5.909.432.600.620;E5.200.750.600.620
-Replication Origin;;G5.331.599.110.275.760
-Replication Origin;;G6.184.599.110.220.760
-Reticulocyte Count;E5.909.262.195.107.330.725;E5.200.500.195.107.330.725
+Rats, Inbred ACI;;B01.030.157.500.080
+Rats, Inbred BB;;B01.030.157.500.090
+Rats, Inbred BN;;B01.030.157.500.110
+Rats, Inbred BUF;;B01.030.157.500.130
+Rats, Inbred Dahl;;B01.030.157.500.165
+Rats, Inbred F344;;B01.030.157.500.200
+Rats, Inbred LEC;;B01.030.157.500.275
+Rats, Inbred Lew;;B01.030.157.500.280
+Rats, Inbred OLETF;;B01.030.157.500.290
+Rats, Inbred SHR;;B01.030.157.500.300
+Rats, Inbred Strains;;B01.030.157.500
+Rats, Inbred WF;;B01.030.157.500.360
+Rats, Inbred WKY;;B01.030.157.500.390
+Replica Techniques;E05.909.262.620.620;E05.200.500.620.620
+Replica Techniques;E05.909.432.600.620;E05.200.750.600.620
+Replication Origin;;G05.331.599.110.275.760
+Replication Origin;;G06.184.599.110.220.760
+Reticulocyte Count;E05.909.262.195.107.330.725;E05.200.500.195.107.330.725
 Reticulocytes;A11.118.413.730;A11.118.290.350.760
 Reticulocytes;A15.145.229.413.730;A11.148.378.590.249.760
 Reticulocytes;;A15.145.229.334.665.760
 Reticulocytes;;A15.378.316.378.590.249.760
-Retinal Neoplasms;C4.588.443.363.818;
-Retinoblastoma;;C4.588.364.818.760
+Retinal Neoplasms;C04.588.443.363.818;
+Retinoblastoma;;C04.588.364.818.760
 Retinoblastoma;;C11.319.475.760
-Reverse Transcriptase Polymerase Chain Reaction;E5.393.330.500.725;E5.393.620.500.725
+Reverse Transcriptase Polymerase Chain Reaction;E05.393.330.500.725;E05.393.620.500.725
 Ribosomes;A11.368.702.248.300.651;A11.284.195.190.875.811
 Ribosomes;A11.368.702.811;
 Ring Chromosomes;;C23.550.210.751
@@ -698,149 +698,149 @@ RNA, Small Cytoplasmic;D13.444.735.725;D13.444.735.790.530
 RNA, Small Nuclear;;D13.444.735.790.545
 RNA, Small Nucleolar;;D13.444.735.790.545.800
 RNA, Spliced Leader;D13.444.735.730;D13.444.735.790.560
-Sarcocystis;B1.841.75.762.167.275.250.600;B1.841.75.189.250.750.750
-Sarcocystosis;C3.752.750.259.634;C3.752.250.634
+Sarcocystis;B01.841.075.762.167.275.250.600;B01.841.075.189.250.750.750
+Sarcocystosis;C03.752.750.259.634;C03.752.250.634
 Sarcolemma;A11.195.707;A11.284.149.707
-Sarcoma, Endometrial Stromal;;C4.588.945.418.948.585.500
+Sarcoma, Endometrial Stromal;;C04.588.945.418.948.585.500
 Sarcoma, Endometrial Stromal;;C13.371.270.875.750.500
 Sarcoma, Endometrial Stromal;;C13.371.820.800.418.875.200.500
 Sarcoma, Endometrial Stromal;;C13.371.852.762.200.500
 Sarcomeres;A11.368.702.619.827;A11.284.195.190.875.800
 Sarcoplasmic Reticulum;A11.368.702.248.310.800;A11.284.195.190.875.248.310.800
-Serial Passage;E5.909.560.837;E5.200.875.837
+Serial Passage;E05.909.560.837;E05.200.875.837
 Serine;;D12.125.154.800
-Serotyping;E5.909.560.150.125.890;E5.200.875.150.125.890
-Sertoli-Leydig Cell Tumor;;C4.588.322.455.265.500
-Sertoli-Leydig Cell Tumor;;C4.588.945.418.685.148.500
-Sertoli-Leydig Cell Tumor;;C13.371.56.630.705.132.500
+Serotyping;E05.909.560.150.125.890;E05.200.875.150.125.890
+Sertoli-Leydig Cell Tumor;;C04.588.322.455.265.500
+Sertoli-Leydig Cell Tumor;;C04.588.945.418.685.148.500
+Sertoli-Leydig Cell Tumor;;C13.371.056.630.705.132.500
 Sertoli-Leydig Cell Tumor;;C13.371.270.750.124.500
 Sertoli-Leydig Cell Tumor;;C13.371.820.800.418.685.132.500
 Sertoli-Leydig Cell Tumor;;C19.344.455.265.500
 Sertoli-Leydig Cell Tumor;;C19.391.630.705.132.500
-Serum Bactericidal Test;E5.909.560.595.800;E5.200.875.595.800
-Serum Bactericidal Test;;E5.337.550.400.800
+Serum Bactericidal Test;E05.909.560.595.800;E05.200.875.595.800
+Serum Bactericidal Test;;E05.337.550.400.800
 Sex Chromatin;A11.223.349.748;A11.284.170.279.190.160.180.383.800
 Sex Chromatin;;A11.284.187.865.800
 Sex Chromosomes;A11.223.475.865;A11.284.187.865
-Shadowing (Histology);E5.909.262.620.670.770;E5.200.500.620.670.770
-Shadowing (Histology);E5.909.432.600.670.770;E5.200.750.600.670.770
-Shivering;G7.315.232.542;G7.315.232.778.500
-Silver Staining;E5.909.262.620.670.780;E5.200.500.620.670.780
-Silver Staining;E5.909.432.600.670.780;E5.200.750.600.670.780
-SITS;D2.455.426.559.389.150.700.850;D2.455.426.559.389.150.700.50
-SITS;D2.500.375.850;D2.500.375.50
-SITS;D2.886.250.850;D2.886.250.50
-Skull Base Neoplasms;C4.588.443.840.830;
-Skull Neoplasms;C4.588.443.840;
+Shadowing (Histology);E05.909.262.620.670.770;E05.200.500.620.670.770
+Shadowing (Histology);E05.909.432.600.670.770;E05.200.750.600.670.770
+Shivering;G07.315.232.542;G07.315.232.778.500
+Silver Staining;E05.909.262.620.670.780;E05.200.500.620.670.780
+Silver Staining;E05.909.432.600.670.780;E05.200.750.600.670.780
+SITS;D02.455.426.559.389.150.700.850;D02.455.426.559.389.150.700.050
+SITS;D02.500.375.850;D02.500.375.050
+SITS;D02.886.250.850;D02.886.250.050
+Skull Base Neoplasms;C04.588.443.840.830;
+Skull Neoplasms;C04.588.443.840;
 Sleep Disorders, Circadian Rhythm;;C10.281.800
 Sleep Disorders, Circadian Rhythm;;C21.447.900
 Sodium Fluoride;;D25.223.716
-Sperm Count;E5.909.262.195.870;E5.200.500.195.870
+Sperm Count;E05.909.262.195.870;E05.200.500.195.870
 Sperm Tail;A11.368.702.298.835;A11.284.180.290.835
 Spherocytes;A11.118.413.330.802;A11.118.290.330.802
 Spherocytes;A15.145.229.413.330.802;A15.145.229.334.330.802
 Spliceosomes;A11.368.702.840;A11.284.170.279.830
-Staining;E5.909.262.620.670;E5.200.500.620.670
-Staining;E5.909.432.600.670;E5.200.750.600.670
+Staining;E05.909.262.620.670;E05.200.500.620.670
+Staining;E05.909.432.600.670;E05.200.750.600.670
 Staphylococcal Toxoid;D24.310.794.681;D24.310.894.691.681
-Stomach Diverticulum;;C6.273.500
+Stomach Diverticulum;;C06.273.500
 Subcellular Fractions;A11.904;A11.284.835
 Submitochondrial Particles;A11.368.702.564.882;A11.284.195.190.875.564.882
 Submitochondrial Particles;A11.904.626.882;A11.284.835.626.882
-Subrenal Capsule Assay;E5.337.300.250.200.700;E5.337.550.200.900.830
-Subrenal Capsule Assay;E5.909.262.388.875;E5.624.850.830
+Subrenal Capsule Assay;E05.337.300.250.200.700;E05.337.550.200.900.830
+Subrenal Capsule Assay;E05.909.262.388.875;E05.624.850.830
 Synapses;A11.195.443.780;A11.284.149.165.420.780
 Synaptic Membranes;A11.195.443.780.800;A11.284.149.165.420.780.800
 Synaptic Membranes;A11.195.844;A11.284.149.844
 Synaptic Vesicles;A11.195.443.780.840;A11.284.195.190.875.190.880.830
 Synaptonemal Complex;;A11.284.170.279.190.160.830
 Synaptosomes;A11.904.859;A11.284.835.859
-Technology, Medical;E5.909;
-Teleradiology;;N4.452.515.825.500
+Technology, Medical;E05.909;
+Teleradiology;;N04.452.515.825.500
 Telomere;A11.223.475.910;A11.284.170.279.190.160.845
 Tetanus Toxoid;D24.310.794.824;D24.310.894.691.824
-Tetracycline Resistance;G5.386.310.898;
-Tetracycline Resistance;G5.706.310.898;
-Thecoma;;C4.588.322.455.765
-Thecoma;;C4.588.945.418.685.797
-Thecoma;;C13.371.56.630.705.765
+Tetracycline Resistance;G05.386.310.898;
+Tetracycline Resistance;G05.706.310.898;
+Thecoma;;C04.588.322.455.765
+Thecoma;;C04.588.945.418.685.797
+Thecoma;;C13.371.056.630.705.765
 Thecoma;;C13.371.270.750.750
 Thecoma;;C13.371.820.800.418.685.765
 Thecoma;;C19.344.455.765
 Thecoma;;C19.391.630.705.765
-Theileria;B1.841.75.762.580.580.700;B1.841.75.600.580.700
-Theileria annulata;B1.841.75.762.580.580.700.100;B1.841.75.600.580.700.100
-Theileria parva;B1.841.75.762.580.580.700.500;B1.841.75.600.580.700.500
-Theileriasis;C3.752.750.823;
+Theileria;B01.841.075.762.580.580.700;B01.841.075.600.580.700
+Theileria annulata;B01.841.075.762.580.580.700.100;B01.841.075.600.580.700.100
+Theileria parva;B01.841.075.762.580.580.700.500;B01.841.075.600.580.700.500
+Theileriasis;C03.752.750.823;
 Threonine;;D12.125.154.900
 Thylakoids;A11.368.702.700.140.800;A11.284.195.190.875.700.140.800
-Thymoma;;C4.588.894.949.500
-Thymus Neoplasms;;C4.588.894.949
+Thymoma;;C04.588.894.949.500
+Thymus Neoplasms;;C04.588.894.949
 Tight Junctions;A11.195.443.820;A11.284.149.165.420.820
 Tin Fluorides;;D25.223.800
-Tissue Culture;E5.909.813;E5.200.937
-Tissue Embedding;E5.909.262.620.720;E5.200.500.620.720
-Tissue Embedding;E5.909.432.600.720;E5.200.750.600.720
-Tissue Fixation;E5.909.262.620.760.720;E5.200.500.620.760.720
-Tissue Fixation;E5.909.432.600.760.720;E5.200.750.600.760.720
-Tissue Preservation;E5.909.262.620.760;E5.200.500.620.760
-Tissue Preservation;E5.909.432.600.760;E5.200.750.600.760
-Torture;I1.198.240.856.675;I1.198.240.856.825
-Torture;I1.880.735.900.675;I1.880.735.900.825
+Tissue Culture;E05.909.813;E05.200.937
+Tissue Embedding;E05.909.262.620.720;E05.200.500.620.720
+Tissue Embedding;E05.909.432.600.720;E05.200.750.600.720
+Tissue Fixation;E05.909.262.620.760.720;E05.200.500.620.760.720
+Tissue Fixation;E05.909.432.600.760.720;E05.200.750.600.760.720
+Tissue Preservation;E05.909.262.620.760;E05.200.500.620.760
+Tissue Preservation;E05.909.432.600.760;E05.200.750.600.760
+Torture;I01.198.240.856.675;I01.198.240.856.825
+Torture;I01.880.735.900.675;I01.880.735.900.825
 Toxoids;D24.310.794;D24.310.894.691
-Toxoplasma;B1.841.75.762.167.275.250.650;B1.841.75.189.250.750.800
-Toxoplasmosis;C3.752.750.259.800;C3.752.250.800
-Toxoplasmosis, Animal;C3.752.750.259.800.110;C3.752.250.800.110
-Toxoplasmosis, Cerebral;C3.752.750.259.800.250;C3.752.250.800.250
-Toxoplasmosis, Congenital;C3.752.750.259.800.445;C3.752.250.800.445
-Toxoplasmosis, Ocular;C3.752.750.259.800.640;C3.752.250.800.640
-Transduction, Genetic;G5.825.700.795;E5.393.350.800
-Transduction, Genetic;;G5.825.390.850
-Transfection;G4.185.515.860;G5.825.390.855
-Transfection;G5.386.860;
-Transfection;G5.825.700.810;
-Transformation, Bacterial;G5.825.700.820;E5.393.350.810.500
-Transformation, Bacterial;;G4.185.515.870
-Transformation, Bacterial;;G5.825.390.927.820
-Transformation, Genetic;G5.825.700;G5.825.390.927
+Toxoplasma;B01.841.075.762.167.275.250.650;B01.841.075.189.250.750.800
+Toxoplasmosis;C03.752.750.259.800;C03.752.250.800
+Toxoplasmosis, Animal;C03.752.750.259.800.110;C03.752.250.800.110
+Toxoplasmosis, Cerebral;C03.752.750.259.800.250;C03.752.250.800.250
+Toxoplasmosis, Congenital;C03.752.750.259.800.445;C03.752.250.800.445
+Toxoplasmosis, Ocular;C03.752.750.259.800.640;C03.752.250.800.640
+Transduction, Genetic;G05.825.700.795;E05.393.350.800
+Transduction, Genetic;;G05.825.390.850
+Transfection;G04.185.515.860;G05.825.390.855
+Transfection;G05.386.860;
+Transfection;G05.825.700.810;
+Transformation, Bacterial;G05.825.700.820;E05.393.350.810.500
+Transformation, Bacterial;;G04.185.515.870
+Transformation, Bacterial;;G05.825.390.927.820
+Transformation, Genetic;G05.825.700;G05.825.390.927
 Translocation (Genetics);;C23.550.210.764
-Transplantation Chimera;G5.148.630.218.750;B1.30.530.750
-Transplantation Chimera;;B2.158.530.750
-Tretinoin;D2.455.849.291.700.780;D2.455.849.291.700.818.800
-Trimethoprim Resistance;G5.386.310.925;
-Trimethoprim Resistance;G5.706.310.925;
-Trinucleotide Repeat Expansion;;G5.632.900
+Transplantation Chimera;G05.148.630.218.750;B01.030.530.750
+Transplantation Chimera;;B02.158.530.750
+Tretinoin;D02.455.849.291.700.780;D02.455.849.291.700.818.800
+Trimethoprim Resistance;G05.386.310.925;
+Trimethoprim Resistance;G05.706.310.925;
+Trinucleotide Repeat Expansion;;G05.632.900
 Trisomy;;C23.550.210.131.750
 Tuberculosis, Lymph Node;;C15.604.315.809
-Tumor Stem Cell Assay;E5.337.300.250.200.800;E5.200.500.383.910
-Tumor Stem Cell Assay;E5.909.262.383.910;E5.200.500.388.930
-Tumor Stem Cell Assay;E5.909.262.388.930;E5.337.550.200.800
-Two-Hybrid System Techniques;G5.331.120.870;
+Tumor Stem Cell Assay;E05.337.300.250.200.800;E05.200.500.383.910
+Tumor Stem Cell Assay;E05.909.262.383.910;E05.200.500.388.930
+Tumor Stem Cell Assay;E05.909.262.388.930;E05.337.550.200.800
+Two-Hybrid System Techniques;G05.331.120.870;
 Typhoid-Paratyphoid Vaccines;D24.310.894.135.910;D24.310.894.135.685.910
-Untranslated Regions;G5.331.599.110.875;D13.444.735.790.878
-Untranslated Regions;G6.184.599.110.875;G5.331.599.110.275.880
-Untranslated Regions;;G6.184.599.110.220.880
-3' Untranslated Regions;G5.331.599.110.875.880;D13.444.735.790.878.880
-3' Untranslated Regions;G6.184.599.110.875.880;G5.331.599.110.275.880.880
-3' Untranslated Regions;;G6.184.599.110.220.880.880
-5' Untranslated Regions;G5.331.599.110.875.885;D13.444.735.790.878.885
-5' Untranslated Regions;G6.184.599.110.875.885;G5.331.599.110.275.880.885
-5' Untranslated Regions;;G6.184.599.110.220.880.885
-Uveal Neoplasms;C4.588.443.363.978;
+Untranslated Regions;G05.331.599.110.875;D13.444.735.790.878
+Untranslated Regions;G06.184.599.110.875;G05.331.599.110.275.880
+Untranslated Regions;;G06.184.599.110.220.880
+3' Untranslated Regions;G05.331.599.110.875.880;D13.444.735.790.878.880
+3' Untranslated Regions;G06.184.599.110.875.880;G05.331.599.110.275.880.880
+3' Untranslated Regions;;G06.184.599.110.220.880.880
+5' Untranslated Regions;G05.331.599.110.875.885;D13.444.735.790.878.885
+5' Untranslated Regions;G06.184.599.110.875.885;G05.331.599.110.275.880.885
+5' Untranslated Regions;;G06.184.599.110.220.880.885
+Uveal Neoplasms;C04.588.443.363.978;
 Vacuoles;A11.368.702.929;A11.284.195.190.875.190.920
-Vancomycin Resistance;G5.386.310.960;
-Vancomycin Resistance;G5.706.310.960;
+Vancomycin Resistance;G05.386.310.960;
+Vancomycin Resistance;G05.706.310.960;
 Vault Ribonucleoprotein Particles;A11.368.702.930;A11.284.195.190.875.930
-Viral Load;E5.909.560.950;E5.200.875.950
-Virus Cultivation;E5.909.560.970;E5.200.875.970
-Vitamin E;;D3.438.150.819
-Water Loss, Insensible;G7.315.232.863;G6.184.963.750
-Water Loss, Insensible;G10.795.869.821;G7.621.888.750
+Viral Load;E05.909.560.950;E05.200.875.950
+Virus Cultivation;E05.909.560.970;E05.200.875.970
+Vitamin E;;D03.438.150.819
+Water Loss, Insensible;G07.315.232.863;G06.184.963.750
+Water Loss, Insensible;G10.795.869.821;G07.621.888.750
 Weibel-Palade Bodies;A11.368.246.950;A11.284.195.190.500.950
 Weibel-Palade Bodies;A11.515.246.950;A11.284.195.190.875.190.190.950
-Williams Syndrome;C14.280.484.150.800;C14.280.484.150.60.960
+Williams Syndrome;C14.280.484.150.800;C14.280.484.150.060.960
 X Chromosome;A11.223.475.865.982;A11.284.187.865.982
-Xenodiagnosis;E5.909.560.985;E5.200.875.985
+Xenodiagnosis;E05.909.560.985;E05.200.875.985
 Y Chromosome;A11.223.475.865.983;A11.284.187.865.983
-Zenker Diverticulum;;C6.273.250.900
+Zenker Diverticulum;;C06.273.250.900
 Zona Pellucida;;A11.284.295.310.990

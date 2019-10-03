@@ -57,6 +57,7 @@ export default class SplitStream {
     this._ySpacing = this.ySpacingFixed;
 
     this._onMouseOver;
+    this._onMouseOut;
 
     this._color = d3.scaleSequential(d3.interpolateBlues);
     this._colorRandom = false;
@@ -169,6 +170,11 @@ export default class SplitStream {
 
   set onMouseOver(callback) {
     this._onMouseOver = callback;
+    this.render();
+  }
+
+  set onMouseOut(callback) {
+    this._onMouseOut = callback;
     this.render();
   }
 
@@ -431,11 +437,6 @@ export default class SplitStream {
       ? getRandomColor
       : this._color.domain([this._maxDepth, 0]);
 
-    let onMouseOver = this._onMouseOver;
-    let onMouseOut = d => {
-      //console.log("mouse out")
-    };
-
     let streamsByDepth = d3
       .nest()
       .key(d => d.depth)
@@ -464,8 +465,8 @@ export default class SplitStream {
         enter
           .append('path')
           .classed('stream', true)
-          .on('mouseover', onMouseOver)
-          .on('mouseout', onMouseOut)
+          .on('mouseover', this._onMouseOver)
+          .on('mouseout', this._onMouseOut)
           .attr('clip-path', d => 'url(#clip' + d.id + this._name + ')')
           .attr('id', d => 'stream' + d.id + this._name)
           //.attr('stroke-width', 3)
@@ -473,7 +474,7 @@ export default class SplitStream {
       )
       .attr('d', d => d.path)
       .attr('shape-rendering', this._opts.shapeRendering)
-      .style(
+      .attr(
         'fill',
         d => (!!d.data ? d.data.color : null) || color(d.deepestDepth)
         // remove empty streams (they do not include a single bezier curve)

@@ -4,8 +4,10 @@ import SplitStreamInputData from '../src/SplitStreamInputData';
 export default class LoaderMeSH {
   constructor() {
     this._meshData = [];
-    this._meshChanges = {};
+    this._meshChanges = [];
     this._data = new SplitStreamInputData();
+
+    this._branchList = []; // only stores branches of first tree
   }
 
   get data() {
@@ -26,6 +28,8 @@ export default class LoaderMeSH {
     }
 
     this._meshData.push(parse.data);
+
+    if (this._meshData.length === 1) this._storeBranchNames();
   }
 
   async loadFileChanges(filename, t) {
@@ -41,35 +45,65 @@ export default class LoaderMeSH {
       return false;
     }
 
-    this._meshChanges[t] = [];
     // remove additions and deletes from changes, because they are automatically covered
+    this._meshChanges.push([]);
     for (let change of parse.data) {
-      if (change[1] != '' && change[2] != '') this._meshChanges[t].push(change);
+      if (change[1] != '' && change[2] != '')
+        this._meshChanges[t - 1].push(change);
     }
   }
 
-  _findBranchName(branch) {
-    let currentBranch = 0;
+  _storeBranchNames() {
+    let currentBranch = -1;
     for (let entry of this._meshData[0]) {
       if (entry[1]) {
         let path = entry[1].split('.');
         if (path.length == 1) {
           // node has no parent --> is main branch
-          if (currentBranch == branch)
-            return path[0];
+          this._branchList.push({ name: path[0], children: [] });
           currentBranch++;
+        } else if (path.length == 2) {
+          if (path[0] == this._branchList[currentBranch].name)
+            this._branchList[currentBranch].children.push(path[1]);
         }
       }
     }
-    return undefined;
   }
+
+  getNumBranches(branchIndex) {
+    if (!branchIndex)
+      // return # main branches
+      return this._branchList.length;
+    else {
+      let subBranch = this._branchList[branchIndex];
+      if (subBranch) return subBranch.length;
+      else return -1;
+    }
+  }
+
+  // _findBranchName(branch) {
+  //   let currentBranch = 0;
+  //   for (let entry of this._meshData[0]) {
+  //     if (entry[1]) {
+  //       let path = entry[1].split('.');
+  //       if (path.length == 1) {
+  //         // node has no parent --> is main branch
+  //         if (currentBranch == branch)
+  //           return path[0];
+  //         currentBranch++;
+  //       }
+  //     }
+  //   }
+  //   return undefined;
+  // }
+
   // Branch is only a workaround before filters are accurately implemented
-  transformToTree(branch) {
+  transformToTree(branchIndex) {
     this._data = new SplitStreamInputData();
     let t = 0;
-    let branchName = this._findBranchName(branch);
+    let branch = this._branchList[branchIndex];
 
-    if (!branchName) {
+    if (!branch) {
       console.error('Selected branch does not exist.');
       return;
     }
@@ -86,7 +120,7 @@ export default class LoaderMeSH {
         parts.pop(); // remove the last part of the id
         let parentId = parts.join('.'); // reconnect all parts into the parent's id
 
-        if (currentBranchName == branchName) {
+        if (currentBranchName == branch.name) {
           // add node to data
           this._data.addNode(t, id, undefined, undefined, name);
 
@@ -102,9 +136,9 @@ export default class LoaderMeSH {
 
   applyChanges() {
     let numChanges = 0;
-    for (let t in this._meshChanges)
+    for (let t = 0; t < this._meshChanges.length; t++)
       for (let change of this._meshChanges[t]) {
-        let changeIsInBranch = this._data.addNext(t - 1, change[1], change[2]);
+        let changeIsInBranch = this._data.addNext(t, change[1], change[2]);
         if (changeIsInBranch) numChanges++;
       }
     console.log(`Changes in branch: ${numChanges}`);

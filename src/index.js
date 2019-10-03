@@ -92,6 +92,7 @@ async function loadDataset(name) {
         i
       );
     }
+
     loadMeSH(0);
     return true;
   } else {
@@ -139,7 +140,8 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       limitDepth: false,
       depthLimit: 2,
       selectBranch: true,
-      branchSelected: 0,
+      branchSelected: 93,
+      branchMax: 0,
       unifySize: false,
       unifyPosition: false,
       drawStroke: false,
@@ -387,7 +389,11 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       dataset: {
         handler: function(dataset) {
           loadDataset(dataset.value).then(loaded => {
-            if (loaded) this.render();
+            if (loaded) {
+              this.render();
+              if (dataset.value == 'MeSH')
+                this.branchMax = mesh.getNumBranches() - 1;
+            }
             removeLoadingSpinner(wrapper);
           });
         },
@@ -543,8 +549,13 @@ document.addEventListener('DOMContentLoaded', async function(event) {
   stream.proportion = app.proportion;
 
   let tooltip = document.querySelector('.tooltip');
-  stream.onMouseOver = d => {
+  stream.onMouseOver = function(d) {
     tooltip.innerText = JSON.stringify(d.data);
+    this.classList.add('active');
+  };
+  stream.onMouseOut = function(d) {
+    tooltip.innerText = '';
+    this.classList.remove('active');
   };
   stream.addSplitsAtTimepoints();
 

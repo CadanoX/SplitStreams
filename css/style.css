@@ -48,6 +48,10 @@ body {
   margin: 0px 5px 0px 5px;
 }
 
+.stream.active {
+  fill: orange;
+}
+
 .loader {
   align-items: center;
   background-color: black;
