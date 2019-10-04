@@ -63,6 +63,15 @@ function loadMeSH(branch, subBranch) {
   datasets['MeSH'] = new SplitStreamFilter(mesh.data);
 }
 
+function checkNumChangesPerBranch() {
+  let numBranches = mesh.getNumBranches();
+  for (let i = 0; i < numBranches; i++) {
+    let numSubBranches = mesh.getNumBranches(i);
+    for (let j = 0; j < numSubBranches; j++) {
+      loadMeSH(i, j);
+    }
+  }
+}
 async function loadDataset(name) {
   if (datasets[name]) return true;
 
@@ -344,10 +353,12 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       },
       selectBranch() {
         // this.render();
+        //checkNumChangesPerBranch();
       },
       branchSelected() {
         this.branchSubSelected = -1;
         this.branchSubMax = mesh.getNumBranches(this.branchSelected) - 1;
+
         loadMeSH(this.branchSelected, this.branchSubSelected);
         this.render();
       },

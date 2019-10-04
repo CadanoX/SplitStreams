@@ -78,12 +78,12 @@ export default class LoaderMeSH {
   }
 
   getNumBranches(branchIndex) {
-    if (!branchIndex)
+    if (typeof branchIndex === 'undefined')
       // return # main branches
       return this._branchList.length;
     else {
-      let subBranch = this._branchList[branchIndex];
-      if (subBranch) return subBranch.children.length;
+      let branch = this._branchList[branchIndex];
+      if (branch) return branch.children.length;
       else return -1;
     }
   }
@@ -126,6 +126,8 @@ export default class LoaderMeSH {
 
   // Branch is only a workaround before filters are accurately implemented
   transformToTree(branchId) {
+    console.log(branchId);
+
     this._data = new SplitStreamInputData();
     let t = 0;
 
@@ -157,7 +159,7 @@ export default class LoaderMeSH {
         let changeIsInBranch = this._data.addNext(t, change[1], change[2]);
         if (changeIsInBranch) numChanges++;
       }
-    console.log(`Changes in branch: ${numChanges}`);
+    console.log(`changes: ${numChanges}`);
   }
 
   done() {
