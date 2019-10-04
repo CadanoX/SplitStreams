@@ -170,7 +170,7 @@ export default class SplitStreamInputData {
   }
 
   __forEachNodeDepthFirst(callback) {
-    let traverse = function (node, depth) {
+    let traverse = function(node, depth) {
       if (!!node.children)
         node.children.forEach(child => traverse(child, depth + 1));
       callback(node, depth);

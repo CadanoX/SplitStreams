@@ -55,8 +55,9 @@ const meshList = [
   // { tree: "mtrees2019.bin", changes: 'newmnchg2019.txt' }
 ];
 
-function loadMeSH(branch) {
-  mesh.transformToTree(branch);
+function loadMeSH(branch, subBranch) {
+  let branchId = mesh.getBranchIdFromIndex(branch, subBranch);
+  mesh.transformToTree(branchId);
   mesh.applyChanges();
   mesh.done();
   datasets['MeSH'] = new SplitStreamFilter(mesh.data);
@@ -92,8 +93,6 @@ async function loadDataset(name) {
         i
       );
     }
-
-    loadMeSH(0);
     return true;
   } else {
     try {
@@ -141,7 +140,9 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       depthLimit: 2,
       selectBranch: true,
       branchSelected: 93,
+      branchSubSelected: -1,
       branchMax: 0,
+      branchSubMax: 0,
       unifySize: false,
       unifyPosition: false,
       drawStroke: false,
@@ -342,10 +343,16 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         this.render();
       },
       selectBranch() {
-        this.render();
+        // this.render();
       },
       branchSelected() {
-        loadMeSH(this.branchSelected);
+        this.branchSubSelected = -1;
+        this.branchSubMax = mesh.getNumBranches(this.branchSelected) - 1;
+        loadMeSH(this.branchSelected, this.branchSubSelected);
+        this.render();
+      },
+      branchSubSelected() {
+        loadMeSH(this.branchSelected, this.branchSubSelected);
         this.render();
       },
       unifySize() {
@@ -390,9 +397,13 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         handler: function(dataset) {
           loadDataset(dataset.value).then(loaded => {
             if (loaded) {
-              this.render();
-              if (dataset.value == 'MeSH')
+              if (dataset.value == 'MeSH') {
+                loadMeSH(this.branchSelected);
                 this.branchMax = mesh.getNumBranches() - 1;
+                this.branchSubMax =
+                  mesh.getNumBranches(this.branchSelected) - 1;
+              }
+              this.render();
             }
             removeLoadingSpinner(wrapper);
           });

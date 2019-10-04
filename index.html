@@ -39,10 +39,10 @@
       </div>
       <div v-if="dataset.value == 'MeSH'">
         <!-- <input type="checkbox" id="selectBranch" v-model="selectBranch"> -->
-        <label for="selectBranch">select branch: {{ branchSelected }}</label>
+        <label for="selectBranch">branch: {{ branchSelected }} - {{ branchSubSelected }}</label>
         <div v-if="selectBranch">
-          <br>
           <input type="range" v-model="branchSelected" step="1" min="0" v-bind:max="branchMax" />
+          <input type="range" v-model="branchSubSelected" step="1" min="-1" v-bind:max="branchSubMax" />
         </div>
       </div>
       <div>

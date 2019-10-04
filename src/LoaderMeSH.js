@@ -53,6 +53,13 @@ export default class LoaderMeSH {
     }
   }
 
+  _getParentId(id) {
+    // the id looks like 1.12.5.123, where 1 is the parent of 1.12 is the parent of 1.12.5 is the parent of 1.12.5.123
+    let parts = id.split('.');
+    parts.pop(); // remove the last part of the id
+    return parts.join('.'); // reconnect all parts into the parent's id
+  }
+
   _storeBranchNames() {
     let currentBranch = -1;
     for (let entry of this._meshData[0]) {
@@ -64,7 +71,7 @@ export default class LoaderMeSH {
           currentBranch++;
         } else if (path.length == 2) {
           if (path[0] == this._branchList[currentBranch].name)
-            this._branchList[currentBranch].children.push(path[1]);
+            this._branchList[currentBranch].children.push({ name: path[1] });
         }
       }
     }
@@ -76,9 +83,29 @@ export default class LoaderMeSH {
       return this._branchList.length;
     else {
       let subBranch = this._branchList[branchIndex];
-      if (subBranch) return subBranch.length;
+      if (subBranch) return subBranch.children.length;
       else return -1;
     }
+  }
+
+  getBranchIdFromIndex(branchIndex, subBranchIndex) {
+    let branch = this._branchList[branchIndex];
+    if (!branch) {
+      console.error('Selected branch does not exist.');
+      return;
+    }
+    let branchName = branch.name;
+
+    if (!!subBranchIndex && subBranchIndex != -1) {
+      let subBranch = branch.children[subBranchIndex];
+      if (!subBranch) {
+        console.error('Selected sub branch does not exist.');
+        return;
+      }
+      branchName += '.' + subBranch.name;
+    }
+
+    return branchName;
   }
 
   // _findBranchName(branch) {
@@ -98,15 +125,9 @@ export default class LoaderMeSH {
   // }
 
   // Branch is only a workaround before filters are accurately implemented
-  transformToTree(branchIndex) {
+  transformToTree(branchId) {
     this._data = new SplitStreamInputData();
     let t = 0;
-    let branch = this._branchList[branchIndex];
-
-    if (!branch) {
-      console.error('Selected branch does not exist.');
-      return;
-    }
 
     for (let tree of this._meshData) {
       for (let entry of tree) {
@@ -114,16 +135,11 @@ export default class LoaderMeSH {
         let id = entry[1];
         if (name == '') continue;
 
-        // the id looks like 1.12.5.123, where 1 is the parent of 1.12 is the parent of 1.12.5 is the parent of 1.12.5.123
-        let parts = id.split('.');
-        let currentBranchName = parts[0];
-        parts.pop(); // remove the last part of the id
-        let parentId = parts.join('.'); // reconnect all parts into the parent's id
-
-        if (currentBranchName == branch.name) {
+        if (id.startsWith(branchId)) {
           // add node to data
           this._data.addNode(t, id, undefined, undefined, name);
 
+          let parentId = this._getParentId(id);
           if (parentId != '') {
             //this._data.addNode(t, parentId);
             this._data.addParent(t, id, parentId);
