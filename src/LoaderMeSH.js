@@ -163,7 +163,7 @@ export default class LoaderMeSH {
   }
 
   done() {
-    this._data._buildTimeConnections();
+    this._data.buildTimeConnections();
     this._data.finalize();
   }
 }

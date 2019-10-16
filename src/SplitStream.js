@@ -277,11 +277,16 @@ export default class SplitStream {
           checkSizes(child);
           aggregate += child.size;
         }
-        let padding = this._opts.yPadding * (node.children.length + 1);
         if (aggregate > node.dataSize || this._opts.unifySize)
-          node.size = aggregate + padding;
-        else node.size = node.dataSize + padding;
-      } else node.size = this._opts.unifySize ? 1 : node.dataSize;
+          node.size = aggregate;
+        else node.size = node.dataSize;
+
+        let padding = (node.children.length + 1) * this._opts.yPadding; // * (1 / (node.depth + 1));
+        node.size += padding;
+      } else
+        node.size = this._opts.unifySize
+          ? 1
+          : node.dataSize + this._opts.yPadding;
     };
 
     // TODO: This version is better with positions but doesn't work properly in general
@@ -439,7 +444,7 @@ export default class SplitStream {
 
     let streamsByDepth = d3
       .nest()
-      .key(d => d.depth)
+      .key(d => d.deepestDepth)
       .entries(this._streamData.streams);
 
     let depthLayers = this._pathContainer
@@ -477,8 +482,9 @@ export default class SplitStream {
       .attr(
         'fill',
         d => (!!d.data ? d.data.color : null) || color(d.deepestDepth)
-        // remove empty streams (they do not include a single bezier curve)
+        // 'white'
       )
+      // remove empty streams (they do not include a single bezier curve)
       .filter(d => d.path.indexOf('C') == -1)
       .remove();
 
@@ -558,6 +564,7 @@ export default class SplitStream {
     if (!this._opts.automaticUpdate) if (!manuallyTriggered) return;
 
     console.log('update');
+    let startTime = Date.now();
 
     this._normalizeData();
     this._applyOrdering();
@@ -566,6 +573,10 @@ export default class SplitStream {
     // this._streamData.preprocess();
     this._streamData.calculatePaths();
     this.render();
+
+    console.log(
+      'TIMING: ' + this._data.numNodes + ',' + (Date.now() - startTime)
+    );
   }
 
   resize(

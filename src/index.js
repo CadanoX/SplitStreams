@@ -31,6 +31,8 @@ var datasets = {};
 const datasetList = require('../_datasets.json');
 
 var mesh;
+var app;
+
 const meshList = [
   // { tree: "mtrees1997.bin", changes: 'newmnchg1997.txt' },
   // { tree: "mtrees1998.bin", changes: 'newmnchg1998.txt' },
@@ -63,15 +65,28 @@ function loadMeSH(branch, subBranch) {
   datasets['MeSH'] = new SplitStreamFilter(mesh.data);
 }
 
+// test to measure the mesh dataset
 function checkNumChangesPerBranch() {
   let numBranches = mesh.getNumBranches();
   for (let i = 0; i < numBranches; i++) {
     let numSubBranches = mesh.getNumBranches(i);
     for (let j = 0; j < numSubBranches; j++) {
       loadMeSH(i, j);
+      app.render();
     }
   }
 }
+
+// test to calculate timings
+async function checkTimings() {
+  for (let dataset in datasetList) {
+    let name = datasetList[dataset].value;
+    await loadDataset(name);
+    app.dataset.value = name;
+    app.render();
+  }
+}
+
 async function loadDataset(name) {
   if (datasets[name]) return true;
 
@@ -132,7 +147,7 @@ async function loadDataset(name) {
 }
 
 document.addEventListener('DOMContentLoaded', async function(event) {
-  let app = new Vue({
+  app = new Vue({
     el: '#app',
     data: {
       split: 'at',
@@ -193,6 +208,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         value: 'interpolateBlues',
         options: [
           { value: 'random', text: 'random' },
+          { value: 'white', text: 'white' },
           { value: 'schemeCategory10', text: 'schemeCategory10' },
           { value: 'schemeAccent', text: 'schemeAccent' },
           { value: 'schemeDark2', text: 'schemeDark2' },
@@ -233,11 +249,11 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         ]
       },
       filters: [
-        { type: 'double-inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
+        { type: 'double-inner-shadow', dx: 0, dy: 0, stdDeviation: 0.2 },
         { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0.6 }
       ],
       filterMode: {
-        value: 'accurate',
+        value: 'fast',
         options: [
           { value: 'fast', text: 'fast' },
           { value: 'accurate', text: 'accurate' }
@@ -353,7 +369,6 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       },
       selectBranch() {
         // this.render();
-        //checkNumChangesPerBranch();
       },
       branchSelected() {
         this.branchSubSelected = -1;
@@ -380,6 +395,9 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       },
       mirror() {
         stream.mirror = this.mirror;
+
+        // checkNumChangesPerBranch();
+        checkTimings();
       },
       splitRoot() {
         stream.splitRoot = this.splitRoot;
@@ -439,6 +457,9 @@ document.addEventListener('DOMContentLoaded', async function(event) {
           switch (color.value) {
             case 'random':
               stream.colorRandom = true;
+              break;
+            case 'white':
+              stream.color = d3.scaleQuantize().range(['white', 'white']);
               break;
             case 'schemeCategory10':
               stream.color = d3.scaleOrdinal(d3.schemeCategory10);
@@ -564,11 +585,12 @@ document.addEventListener('DOMContentLoaded', async function(event) {
 
   stream = new SplitStream(wrapper, {
     xMargin: app.xMargin,
-    yPadding: app.yPadding,
-    filtermode: app.filtermode
+    yPadding: app.yPadding
   }).data(datasets[app.dataset.value]);
 
   stream.proportion = app.proportion;
+  stream.addSplitsAtTimepoints();
+  stream.filters(app.filters);
 
   let tooltip = document.querySelector('.tooltip');
   stream.onMouseOver = function(d) {
@@ -579,7 +601,4 @@ document.addEventListener('DOMContentLoaded', async function(event) {
     tooltip.innerText = '';
     this.classList.remove('active');
   };
-  stream.addSplitsAtTimepoints();
-
-  stream.filters(app.filters);
 });

@@ -49,7 +49,7 @@ body {
 }
 
 .stream.active {
-  fill: orange;
+  fill: #eeb66d;
 }
 
 .loader {

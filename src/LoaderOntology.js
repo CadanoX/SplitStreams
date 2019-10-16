@@ -36,7 +36,7 @@ export default class LoaderOntology {
         this._addQuadToTree(quad, i);
       }
     }
-    this._data._buildTimeConnections();
+    this._data.buildTimeConnections();
     this._data.finalize();
   }
 

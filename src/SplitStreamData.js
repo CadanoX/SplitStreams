@@ -556,7 +556,7 @@ export default class SplitStreamData {
     const prop = this._proportion,
       x = this._xScale,
       y = this._yScale;
-    let d, lastTimepoint, deepestDepth; // find the deepest depth each stream has over the whole timeseries
+    let d, lastTimepoint, deepestDepth, largestSize; // find the deepest depth each stream has over the whole timeseries
 
     let drawLine = (t1, t2, t3, ySource, yDest) => {
       let t12 = 0.5 * (t1 + t2); // mid between t1 and t2
@@ -573,6 +573,7 @@ export default class SplitStreamData {
       if (node.x > lastTimepoint) lastTimepoint = node.x;
 
       if (node.depth > deepestDepth) deepestDepth = node.depth;
+      if (node.size > largestSize) largestSize = node.size;
 
       if (!!node.next) {
         let dt = node.next[0].x - node.x;
@@ -605,6 +606,7 @@ export default class SplitStreamData {
       // reset before new values are found by traverse
       lastTimepoint = 0;
       deepestDepth = 0;
+      largestSize = 0;
 
       this._drawStart(d, stream);
       traverse(stream);
@@ -670,6 +672,7 @@ export default class SplitStreamData {
         path: d.get(),
         depth: stream.depth,
         deepestDepth: deepestDepth,
+        largestSize: largestSize,
         id: stream.streamId,
         data: stream.data,
         textPos: {

@@ -7,10 +7,11 @@ export default class SplitStreamInputData {
     // hold a tree (root node) for each timestep
     // hold a reference array which includes all nodes present in a single timestep
     this._timesteps = [];
+    this._numNodes = 0;
   }
 
   get data() {
-    return { timesteps: this._timesteps };
+    return { timesteps: this._timesteps, numNodes: this._numNodes };
   }
 
   addNode(t, id, size = undefined, pos = undefined, data = undefined) {
@@ -30,11 +31,8 @@ export default class SplitStreamInputData {
         pos,
         data
       };
-    } else
-      console
-        .log
-        // `Warning AddNode: Node ${id} at timestep ${t} exists already.`
-        ();
+      this._numNodes++;
+    } else; // console.log(`Warning AddNode: Node ${id} at timestep ${t} exists already.`);
   }
 
   addParent(t, id, pId) {
@@ -186,7 +184,7 @@ export default class SplitStreamInputData {
   }
 
   // connect nodes which have the same ID in consecutive timesteps
-  _buildTimeConnections() {
+  buildTimeConnections() {
     for (let t in this._timesteps) {
       if (!!this._timesteps[+t + 1]) {
         let nodes = this._timesteps[t].references;
