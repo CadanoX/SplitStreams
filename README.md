@@ -24,15 +24,18 @@ We utilize [D3.js](https://d3js.org) to draw SVG elements.
 To run the demo in this repository, use `npm install` and start a development server via `npm run dev`.
 To utilize the library in your own project, load the library and create a stream by providing it with a div and data to render.
 
-```import SplitStream from './SplitStream';
+```js
+import SplitStream from './SplitStream';
 let div = document.createElement("div");
 document.body.appendChild(div);
+
 let stream = new SplitStream(div);
 stream.data(myJson);
 ```
 
 Our input data format looks like the following:
-```let myJson = {
+```js
+let myJson = {
   timesteps: [
     0: {
       references: [
@@ -44,7 +47,7 @@ Our input data format looks like the following:
     1: {
       references: [
         'A': { id: 'A', size: 2, parent: null, prev: [prev(0)] },
-        'B': { id: 'B'', size: 1, parent: parent(A), prev: [prev(1)] }
+        'B': { id: 'B', size: 1, parent: parent(A), prev: [prev(1)] }
       ],
       tree: root (A)
     }
@@ -55,13 +58,13 @@ Our input data format looks like the following:
 If your data format already looks like the previous example, you can use it like `stream.data(myJson)`.
 In case your data is using a different format, we provide convenience functions to transform your data:
 
-```
+```js
 import SplitStreamInputData from './SplitStreamInputData.js';
 let format = new SplitStreamInputData();
 for (every node of the data)
   for (every timestep the node is active in)
       format.addNode(timestep, id, weight);
-      
+
 for (every parent-child relation)
   for (every timestep the relation is active in)
     format.addParent(timestep, child_id, parent_id);
@@ -84,7 +87,7 @@ If d is null, returns the current data.
 # stream.filters(d)
 
 Takes an array of SVG filters as defined in /libs/d3svgfilters. Currently supported options are
-```
+```js
 [
   { type: 'double-inner-shadow', dx: 0, dy: 0, stdDeviation: 0 },
   { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0 }

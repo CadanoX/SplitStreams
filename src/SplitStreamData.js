@@ -57,12 +57,15 @@ export default class SplitStreamData {
     this._streamNodes.push(node);
   }
 
+  // extract special operations (splits, merges, parentSwap) from the data and treat it extra
   preprocess() {
     let mergeNodes = [];
     let splitNodes = [];
     let parentSwaps = [];
+    let newStreams = [];
 
-    let endPrevious = node => {
+    // cut connection between node and previous nodes
+    let cutPrevious = node => {
       if (!!node.prev) {
         for (let prev of node.prev) {
           if (prev.next.length == 1) prev.next = undefined;
@@ -71,12 +74,12 @@ export default class SplitStreamData {
       }
     };
 
-    let addFollowing = node => {
+    // cut connection between node and next nodes
+    let cutNext = node => {
       if (!!node.next) {
         for (let next of node.next) {
           if (next.prev.length == 1) next.prev = undefined;
           else next.prev.splice(next.prev.indexOf(node), 1);
-          this._streamNodes.push(next);
         }
       }
     };
@@ -86,10 +89,10 @@ export default class SplitStreamData {
 
       // split nodes
       if (!!node.next && node.next.length > 1) {
-        // create a new stream from here
-        splitNodes.push({ ...node });
-
-        addFollowing(node);
+        splitNodes.push(node);
+        cutNext(node);
+        // create new streams from here
+        newStreams.push({ ...node.next });
 
         // end stream here
         node.next = undefined;
@@ -97,53 +100,50 @@ export default class SplitStreamData {
 
       // merge nodes
       if (!!node.prev && node.prev.length > 1) {
-        mergeNodes.push({ ...node });
-
-        // end previous streams
+        mergeNodes.push(node);
         endPrevious(node);
 
         node.prev = undefined;
-        this._streamNodes.push(node);
+        this.newStreams.push(node);
       }
 
       // parent swap
       if (!!node.next) {
         for (let next of node.next) {
-          // only check cases of changing parents
+          // only consider nodes whos parents change
+          // 1. node becomes root node (parent changes from defined to undefined)
+          // 2. parent id changes (TODO: make sure that this case is not handled twice, because both node's parents change)
           if (
-            (!!next.parent && !node.parent) ||
+            (!node.parent && !!next.parent) ||
             (!!node.parent && !!next.parent && node.parent.id != next.parent.id)
           ) {
             // check if next.parent had node as an ancestor in the previous step
-            let isAncestor = false;
+
             if (!!next.parent.prev) {
-              let p;
               for (let prev of next.parent.prev) {
-                if (isAncestor == false) {
-                  p = prev;
-                  while (p && !isAncestor) {
-                    if (p.id == node.id) {
-                      isAncestor = true;
-                      endPrevious(prev);
-                      if (!!prev.next) addFollowing(prev.next);
-                      parentSwaps.push({
-                        node: { ...prev },
-                        next: { ...next.parent }
-                      });
-                      prev.next = undefined;
-                      break;
-                    }
-                    p = p.parent;
-                  }
+                let isAncestor = false;
+                let p = prev;
+                while (p && !isAncestor) {
+                  if (p.id == node.id) isAncestor = true;
+                  else p = p.parent;
+                }
+                if (isAncestor) {
+                  endPrevious(prev);
+                  if (!!prev.next) addFollowing(prev.next);
+                  parentSwaps.push({
+                    node: { ...prev },
+                    next: { ...next.parent }
+                  });
+                  prev.next = undefined;
                 }
               }
-
-              // draw special case for node "p" and all its children, as well as node
             }
           }
         }
       }
     };
+
+    // draw special case for node "p" and all its children, as well as node
 
     // loop in reverse, because elements are added and deleted
     for (let i = this._streamNodes.length - 1; i >= 0; i--) {

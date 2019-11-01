@@ -6,11 +6,9 @@ import VueResize from 'vue-resize';
 import * as d3 from 'd3';
 import Papa from 'papaparse';
 
-import SplitStream from './SplitStream';
-import SplitStreamFilter from './SplitStreamFilter';
+import { SplitStream, SplitStreamFilter, TransformData } from './lib';
 import LoaderOntology from './LoaderOntology';
 import LoaderMeSH from './LoaderMeSH';
-import TransformData from './TransformData';
 
 import {
   loadJSON,

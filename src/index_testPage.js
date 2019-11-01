@@ -2,20 +2,27 @@ import SplitStream from './SplitStream';
 import TransformData from './TransformData';
 
 import { loadJSON, getRandomColor, saveSvg, saveJson } from './functions';
+import { merge } from 'd3-array';
+
+const path = './data/tests/';
+const filenames = [
+  'add',
+  'delete',
+  'merge',
+  'moveAcross',
+  'moveAlong',
+  'nesting',
+  'parentSwap',
+  'posChange',
+  'split',
+  'valueChange',
+  'split-merge'
+];
 
 async function getData(tests) {
-  tests.add = await (await fetch('./data/test_add.json')).json();
-  tests.delete = await (await fetch('./data/test_delete.json')).json();
-  tests.merge = await (await fetch('./data/test_merge.json')).json();
-  tests.moveAcross = await (await fetch('./data/test_moveAcross.json')).json();
-  tests.moveAlong = await (await fetch('./data/test_moveAlong.json')).json();
-  tests.nesting = await (await fetch('./data/test_nesting.json')).json();
-  tests.parentSwap = await (await fetch('./data/test_parentSwap.json')).json();
-  tests.posChange = await (await fetch('./data/test_posChange.json')).json();
-  tests.split = await (await fetch('./data/test_split.json')).json();
-  tests.valueChange = await (await fetch(
-    './data/test_valueChange.json'
-  )).json();
+  for (let filename of filenames) {
+    tests[filename] = await (await fetch(path + filename + '.json')).json();
+  }
 }
 
 let tests = {};
