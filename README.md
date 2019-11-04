@@ -25,7 +25,9 @@ To run the demo in this repository, use `npm install` and start a development se
 To utilize the library in your own project, load the library and create a stream by providing it with a div and data to render.
 
 ```js
-import SplitStream from './SplitStream';
+import * as d3 from 'd3';
+import { SplitStream } from './SplitStreams.js';
+
 let div = document.createElement("div");
 document.body.appendChild(div);
 
@@ -33,7 +35,7 @@ let stream = new SplitStream(div);
 stream.data(myJson);
 ```
 
-Our input data format looks like the following:
+The input data format looks like the following:
 ```js
 let myJson = {
   timesteps: [
@@ -59,7 +61,7 @@ If your data format already looks like the previous example, you can use it like
 In case your data is using a different format, we provide convenience functions to transform your data:
 
 ```js
-import SplitStreamInputData from './SplitStreamInputData.js';
+import { SplitStreamInputData } from './SplitStreams.js';
 let format = new SplitStreamInputData();
 for (every node of the data)
   for (every timestep the node is active in)
@@ -75,7 +77,7 @@ return format.data;
 ```
 
 Several examples of how different data can be converted to our format, are demonstrated in `TransformData.js`.
-`format.buildTimeConnections()` connects the nodes of continuous timesteps, if they have the same ID. If IDs are not consistent along timesteps, or when the data includes splits (from one node into multiple nodes), or merges (from multiple nodes into one), we need to utilize the function `format.addNext(timestep, id, nextId)`.
+`format.buildTimeConnections()` connects the nodes of continuous timesteps, if they have the same ID. If IDs are not consistent along timesteps, or when the data includes splits (from one node into multiple nodes) or merges (from multiple nodes into one), we need to utilize the function `format.addNext(timestep, id, nextId)`.
 
 
 # stream.data(d)

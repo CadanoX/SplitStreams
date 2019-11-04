@@ -10,7 +10,9 @@ module.exports = {
   devtool: "eval-source-map",
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    library: 'SplitStreams',
+    libraryTarget: 'umd'
   },
   // optimization: {
   //   splitChunks: {

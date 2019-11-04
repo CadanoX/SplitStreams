@@ -192,6 +192,7 @@ export default class SplitStream {
     this._datasetsLoaded++;
     this._data = d.data;
     this._normalizeData();
+    this._update();
   }
 
   _setFilters(d) {
