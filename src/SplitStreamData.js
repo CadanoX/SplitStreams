@@ -582,11 +582,11 @@ export default class SplitStreamData {
         let t2 = x(node.next[0].x - 0.5 * (1 - prop) * dt);
         let t3 = x(node.next[0].x);
 
-        for (let i = 0; i < node.next.length; i++) {
-          let y0 = node.y0;
-          let y1 = node.y1;
-          let dest = node.next[i];
+        let y0 = node.y0;
+        let y1 = node.y1;
 
+        for (let i = 0; i < node.next.length; i++) {
+          let dest = node.next[i];
           // don't draw anything for streams with zero height
           if (y1 - y0 <= 0 && dest.y1 - dest.y0 <= 0) {
             d.move(t3, y(dest.y0));
@@ -597,6 +597,9 @@ export default class SplitStreamData {
             traverse(dest);
             drawLine(t2, t1, t0, dest.y1, y1); // top line (backwards)
           }
+          // if dest is one of the nodes where the split occured, we need to draw a line back to our starting point
+          if (node.next.length > 1 && i < node.next.length - 1)
+            d.vertical(y(y0));
         }
       } else this._drawEnd(d, node);
     };

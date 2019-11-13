@@ -71,13 +71,13 @@ for (every parent-child relation)
   for (every timestep the relation is active in)
     format.addParent(timestep, child_id, parent_id);
 
-format.buildTimeConnections();
+format.connectEqualIds();
 format.finalize();
 return format.data;
 ```
 
 Several examples of how different data can be converted to our format, are demonstrated in `TransformData.js`.
-`format.buildTimeConnections()` connects the nodes of continuous timesteps, if they have the same ID. If IDs are not consistent along timesteps, or when the data includes splits (from one node into multiple nodes) or merges (from multiple nodes into one), we need to utilize the function `format.addNext(timestep, id, nextId)`.
+`format.connectEqualIds()` connects the nodes of continuous timesteps, if they have the same ID. If IDs are not consistent along timesteps, or when the data includes splits (from one node into multiple nodes) or merges (from multiple nodes into one), we need to utilize the function `format.addNext(timestep, id, nextId)`.
 
 
 # stream.data(d)

@@ -13,6 +13,13 @@
     "filetype": "json",
     "file": "./data/viscousMin.json"
   },
+  "sugiyamaTest": {
+    "value": "sugiyamaTest",
+    "format": "viscous",
+    "text": "sugiyamaTest",
+    "filetype": "json",
+    "file": "./data/sugiyamaTest.json"
+  },
   "gumtree": {
     "value": "gumtree",
     "format": "gumtree",

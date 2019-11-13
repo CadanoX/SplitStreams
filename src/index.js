@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         ]
       },
       dataset: {
-        value: 'viscousMin', //'viscousMin',
+        value: 'sugiyamaTest', //'viscousMin',
         options: [] // options are dynamically added from ./_datasets.json
       },
       offset: {

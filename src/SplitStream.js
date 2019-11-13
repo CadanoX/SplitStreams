@@ -12,6 +12,7 @@ export default class SplitStream {
   constructor(container, opts = {}) {
     this._opts = {
       animDuration: 1000,
+      transparentRoot: false,
       margin: { top: 20, right: 20, bottom: 20, left: 20 },
       height: container.clientHeight,
       width: container.clientWidth,
@@ -81,6 +82,10 @@ export default class SplitStream {
 
   set automaticUpdate(auto) {
     this._opts.automaticUpdate = auto;
+  }
+  set transparentRoot(transparent) {
+    this._opts.transparentRoot = transparent;
+    this._render();
   }
   set unifySize(unify) {
     this._opts.unifySize = unify;
@@ -191,7 +196,6 @@ export default class SplitStream {
 
     this._datasetsLoaded++;
     this._data = d.data;
-    this._normalizeData();
     this._update();
   }
 
@@ -267,10 +271,10 @@ export default class SplitStream {
   }
 
   _normalizeData() {
-    // if node does not have a size, set it's size to the sum of the sizes of its children
-    // if a node does not have a size and does not have children, give it size 1
-
-    // TODO: this padding interferes with positions
+    // we add a padding and therefore need to recalculate the aggregate of each node
+    // if a node's size is bigger than its aggregate, it will use the aggregate as size
+    // TODO: padding interferes with positions
+    // TODO: padded aggregate can probably be calculated from the size of the subtree
     let checkSizes = node => {
       if (!!node.children) {
         let aggregate = 0;
@@ -305,13 +309,14 @@ export default class SplitStream {
     //   } else node.size = this._opts.unifySize ? 1 : node.dataSize;
     // };
 
+    // if nodes don't have a set position, spread them out equally
     // positions must be unified, if sizes are unified
     let checkPositions = (node, pos = 0) => {
       if (
         this._opts.unifySize ||
         this._opts.unifyPosition ||
-        !node.dataPos ||
-        (!!node.parent && node.parent.id == 'fakeRoot')
+        !node.dataPos
+        // (!!node.parent && node.parent.id == 'fakeRoot')
       )
         node.pos = pos;
       else node.pos = node.dataPos;
@@ -379,9 +384,8 @@ export default class SplitStream {
       if (!p) {
         node.marginX = this._opts.splitRoot ? this._xSpacing(node) : 0;
       } else {
-        node.x = p.x;
-        let numMargins = p.children.length + 1;
-        let space = p.y1 - p.y0 - numMargins * p.marginY;
+        let space = p.y1 - p.y0 - (p.children.length + 1) * p.marginY;
+        // if the parent is too small, draw children as a zero line in the center of the parent stream
         if (space <= 0) {
           node.y0 = 0.5 * (p.y0 + p.y1);
           node.y1 = 0.5 * (p.y0 + p.y1);
@@ -392,6 +396,7 @@ export default class SplitStream {
           node.y0 = p.y0 + (childX + 1) * p.marginY + space * node.rpos;
           node.y1 = node.y0 + space * node.rsize;
 
+          // if a node is too small, draw it as a zero line
           let size = node.y1 - node.y0;
           if (size <= minSizeThreshold) {
             node.y0 = 0.5 * (node.y0 + node.y1);
@@ -410,12 +415,11 @@ export default class SplitStream {
 
     let time = this._data.timesteps;
     for (let i in time) {
-      time[i].tree.x = +i;
       setOffset(time[i].tree);
       traverse(time[i].tree);
     }
 
-    // treemaps require 0.5 time space to the left and right of the timestep
+    // treemaps require 0.5 space on the time axis to the left and right of each timestep
     this._streamData.xScale = d3
       .scaleLinear()
       .domain([this._minTime - 0.5, this._maxTime + 0.5])
@@ -439,9 +443,10 @@ export default class SplitStream {
   }
 
   render() {
+    let minColoredDepth = this._opts.transparentRoot ? 1 : 0;
     let color = this._colorRandom
       ? getRandomColor
-      : this._color.domain([this._maxDepth, 0]);
+      : this._color.domain([this._maxDepth, minColoredDepth]);
 
     let streamsByDepth = d3
       .nest()
@@ -484,6 +489,10 @@ export default class SplitStream {
         'fill',
         d => (!!d.data ? d.data.color : null) || color(d.deepestDepth)
         // 'white'
+      )
+      .attr(
+        'fill-opacity',
+        this._opts.transparentRoot ? d => (d.id == 'fakeRoot' ? 0 : 1) : 1
       )
       // remove empty streams (they do not include a single bezier curve)
       .filter(d => d.path.indexOf('C') == -1)
@@ -564,7 +573,7 @@ export default class SplitStream {
 
     if (!this._opts.automaticUpdate) if (!manuallyTriggered) return;
 
-    console.log('update');
+    // console.log('update');
     let startTime = Date.now();
 
     this._normalizeData();
@@ -575,9 +584,9 @@ export default class SplitStream {
     this._streamData.calculatePaths();
     this.render();
 
-    console.log(
-      'TIMING: ' + this._data.numNodes + ',' + (Date.now() - startTime)
-    );
+    // console.log(
+    //   'TIMING: ' + this._data.numNodes + ',' + (Date.now() - startTime)
+    // );
   }
 
   resize(

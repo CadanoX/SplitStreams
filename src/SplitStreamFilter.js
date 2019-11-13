@@ -22,7 +22,7 @@ export default class SplitStreamFilter {
   _reset() {
     let json = stringify(this.__inputData.data);
     this._filteredData = parse(json);
-    this._filteredData.timesteps = this._filteredData.timesteps.filter(d => d);
+    //this._filteredData.timesteps = this._filteredData.timesteps.filter(d => d);
     return this;
   }
 

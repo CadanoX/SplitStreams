@@ -149,7 +149,7 @@ const TransformData = {
       }
     }
 
-    format.buildTimeConnections();
+    format.connectEqualIds();
     format.finalize();
     return format;
   },
@@ -185,7 +185,7 @@ const TransformData = {
       }
     }
 
-    format.buildTimeConnections();
+    format.connectEqualIds();
     format.finalize();
     return format;
   },
@@ -203,7 +203,7 @@ const TransformData = {
         }
       }
     }
-    format.buildTimeConnections();
+    format.connectEqualIds();
     format.finalize();
     return format;
   }
