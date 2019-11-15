@@ -2,7 +2,12 @@ export default class SplitStreamInputData {
   constructor(options = {}) {
     this._opts = {
       forceFakeRoot: false,
-      order: 'minimizeEdgeCrossings',
+      order: {
+        name: 'minimizeEdgeCrossings',
+        options: {
+          iterations: 20
+        }
+      },
       ...options // overwrite default settings with user settings
     };
     // hold a tree (root node) for each timestep
@@ -92,8 +97,12 @@ export default class SplitStreamInputData {
       this._checkPositions(node);
     });
 
-    if (this._opts.order == 'minimizeEdgeCrossings')
-      this.minimizeEdgeCrossings();
+    if (this._opts.order)
+      if (this._opts.order.name == 'minimizeEdgeCrossings') {
+        if (this._opts.order.options)
+          this.minimizeEdgeCrossings(this._opts.order.options.iterations);
+        else this.minimizeEdgeCrossings();
+      }
   }
 
   // check if all nodes except the root have a parent
@@ -216,7 +225,7 @@ export default class SplitStreamInputData {
 
   // following the algorithm by Shixia Liu et al. in StoryFlow, based on
   // Methods for Visual Understanding of Hierarchical System Structures by Sugiyama et al.
-  minimizeEdgeCrossings(iterations = 100) {
+  minimizeEdgeCrossings(iterations = 20) {
     // create t-1 adjacency matrices for leave nodes
     let leaves = this.__getLeafNodes();
     let M = this.__getAdjacencyMatrices(leaves);
