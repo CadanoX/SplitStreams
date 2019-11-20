@@ -393,9 +393,6 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       },
       mirror() {
         stream.mirror = this.mirror;
-
-        // checkNumChangesPerBranch();
-        checkTimings();
       },
       splitRoot() {
         stream.splitRoot = this.splitRoot;

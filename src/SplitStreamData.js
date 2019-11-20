@@ -40,6 +40,13 @@ export default class SplitStreamData {
   set yScale(callback) {
     this._yScale = callback;
   }
+  get xScale() {
+    return this._xScale;
+  }
+  get yScale() {
+    return this._yScale;
+  }
+
   set startEndEncoding(encoding) {
     this._startEnd.encoding = encoding;
   }

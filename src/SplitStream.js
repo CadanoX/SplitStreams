@@ -11,7 +11,23 @@ import '../css/SplitStream.css';
 export default class SplitStream {
   constructor(container, opts = {}) {
     this._opts = {
-      animDuration: 1000,
+      axes: [
+        // {
+        //   position: 'left',
+        //   ticks: 10,
+        //   subticks: 2,
+        //   size: 30
+        // },
+        {
+          position: 'bottom',
+          ticks: 5,
+          tickSize: 'full',
+          textPos: [0, 0],
+          textSize: '2em',
+          textAnchor: 'middle',
+          textBase: 'none' // dominant-baseline
+        }
+      ],
       transparentRoot: false,
       margin: { top: 20, right: 20, bottom: 20, left: 20 },
       height: container.clientHeight,
@@ -40,6 +56,8 @@ export default class SplitStream {
     this._name = container.id;
     this._container = container;
     this._data;
+    this._zoomContainer;
+    this._axesContainer;
     this._pathContainer;
     this._textContainer;
     this._svg;
@@ -216,8 +234,7 @@ export default class SplitStream {
       .attr('width', this._container.clientWidth)
       .call(
         d3.zoom().on('zoom', () => {
-          this._pathContainer.attr('transform', d3.event.transform);
-          this._textContainer.attr('transform', d3.event.transform);
+          this._zoomContainer.attr('transform', d3.event.transform);
         })
       );
     //.on("contextmenu", () => d3.event.preventDefault());
@@ -226,8 +243,16 @@ export default class SplitStream {
     //.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
     this._svgFilters = this._svg.append('defs');
-    this._pathContainer = this._svg.append('g').classed('pathContainer', true);
-    this._textContainer = this._svg.append('g').classed('textContainer', true);
+    this._zoomContainer = this._svg.append('g').classed('zoom', true);
+    this._axesContainer = this._zoomContainer
+      .append('g')
+      .classed('axisContainer', true);
+    this._pathContainer = this._zoomContainer
+      .append('g')
+      .classed('pathContainer', true);
+    this._textContainer = this._zoomContainer
+      .append('g')
+      .classed('textContainer', true);
   }
 
   _applyOrdering() {
@@ -315,7 +340,7 @@ export default class SplitStream {
       if (
         this._opts.unifySize ||
         this._opts.unifyPosition ||
-        !node.dataPos
+        Number.isNaN(node.dataPos)
         // (!!node.parent && node.parent.id == 'fakeRoot')
       )
         node.pos = pos;
@@ -364,7 +389,7 @@ export default class SplitStream {
   }
 
   _calculatePositions() {
-    let { height, width, margin, minSizeThreshold, offset } = this._opts;
+    let { minSizeThreshold, offset } = this._opts;
 
     let setOffset = root => {
       if (offset == 'zero') {
@@ -419,6 +444,11 @@ export default class SplitStream {
       traverse(time[i].tree);
     }
 
+    this._setScales();
+  }
+
+  _setScales() {
+    let { height, width, margin, mirror, zoomTimeFactor } = this._opts;
     // treemaps require 0.5 space on the time axis to the left and right of each timestep
     this._streamData.xScale = d3
       .scaleLinear()
@@ -427,15 +457,17 @@ export default class SplitStream {
       //   this._minTime - 0.5 * (1 - this._opts.proportion),
       //   this._maxTime + 0.5 * (1 - this._opts.proportion)
       // ])
-      .range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
+      .range([margin.left, width * zoomTimeFactor - margin.right]);
 
-    let domain = this._opts.mirror ? [1, 0] : [0, 1];
+    let domain = mirror ? [1, 0] : [0, 1];
     this._streamData.yScale = d3
       .scaleLinear()
       .domain(domain)
       .nice()
       .range([height - margin.bottom, margin.top]);
     //.range(margin.top, height - margin.bottom);
+
+    this._drawAxes();
   }
 
   setRootNodeById(Id) {
@@ -518,6 +550,56 @@ export default class SplitStream {
     splitData.exit().remove();
 
     this._applyFilters();
+  }
+
+  _drawAxes() {
+    this._axesContainer.selectAll('*').remove();
+    let { axes, height, width } = this._opts;
+    if (axes) {
+      for (let axis of axes) {
+        axis.subticks = axis.subticks || 0;
+        axis.name = 'axis' + axis.position;
+        let totalTicks = axis.ticks * (1 + axis.subticks);
+        let dirY = axis.position == 'left' || axis.position == 'right';
+
+        let axisCon = this._axesContainer.append('g').classed(axis.name, true);
+
+        let d3axis;
+        if (axis.position == 'left') {
+          d3axis = d3.axisLeft(this._streamData.yScale);
+        } else if (axis.position == 'right') {
+          d3axis = d3.axisRight(this._streamData.yScale);
+        } else if (axis.position == 'top') {
+          d3axis = d3.axisTop(this._streamData.xScale);
+        } else if (axis.position == 'bottom') {
+          d3axis = d3.axisBottom(this._streamData.xScale);
+        }
+
+        if (totalTicks) d3axis.ticks(totalTicks);
+        // do not label subticks
+        d3axis.tickFormat((d, i) => (!(i % (1 + axis.subticks)) ? d : null));
+
+        if (axis.tickSize == 'full') {
+          let tickSize = dirY ? width : height;
+          d3axis.tickSize(tickSize);
+        }
+
+        axisCon.call(d3axis);
+
+        // move labels
+        let text = axisCon.selectAll('.tick text');
+        if (axis.textPos)
+          text.attr('x', axis.textPos[0]).attr('y', axis.textPos[1]);
+
+        if (axis.textSize) text.attr('font-size', axis.textSize);
+
+        if (axis.textAnchor) text.attr('text-anchor', axis.textAnchor);
+
+        if (axis.textBase) text.attr('dominant-baseline', axis.textBase);
+
+        axisCon.select('.domain').remove();
+      }
+    }
   }
 
   showLabels(show = true) {
