@@ -158,6 +158,10 @@ export default class SplitStream {
     this._applyFilters();
   }
 
+  set showLabels(value) {
+    this._opts.showLabels = value;
+    this.render();
+  }
   set color(colorFunction) {
     this._color = colorFunction;
     this.render();
@@ -253,6 +257,9 @@ export default class SplitStream {
     this._textContainer = this._zoomContainer
       .append('g')
       .classed('textContainer', true);
+    this._tooltipContainer = this._zoomContainer
+      .append('g')
+      .classed('tooltipContainer', true);
   }
 
   _applyOrdering() {
@@ -264,7 +271,9 @@ export default class SplitStream {
   _findStreamId(node) {
     if (!!node.prev) {
       // use id of prev node
-      node.streamId = node.prev[0].streamId;
+      let idx = node.prev.findIndex(prev => prev.id == node.id);
+      if (idx == -1) idx = 0;
+      node.streamId = node.prev[idx].streamId;
       return false;
     } else {
       // new node
@@ -340,7 +349,9 @@ export default class SplitStream {
       if (
         this._opts.unifySize ||
         this._opts.unifyPosition ||
-        Number.isNaN(node.dataPos)
+        Number.isNaN(node.dataPos) ||
+        node.dataPos == null
+        // !node.dataPos
         // (!!node.parent && node.parent.id == 'fakeRoot')
       )
         node.pos = pos;
@@ -485,35 +496,51 @@ export default class SplitStream {
       .key(d => d.deepestDepth)
       .entries(this._streamData.streams);
 
+    // add depth groups
     let depthLayers = this._pathContainer
       .selectAll('g.depthLayer > g.clipLayer')
-      .data(streamsByDepth, d => this._name + this._datasetsLoaded + d.key)
-      .join(enter =>
-        enter
-          .append('g')
-          .classed('depthLayer', true)
-          .each(function(d) {
-            this.classList.add('depth-' + d.key);
-          })
-          .append('g')
-          .classed('clipLayer', true)
+      .data(streamsByDepth, d => d.key)
+      .join(
+        enter =>
+          enter
+            .append('g')
+            .attr('class', d => 'depthLayer depth-' + d.key)
+            .append('g')
+            .classed('clipLayer', true),
+        update => update,
+        exit => exit.remove()
       );
 
-    // .attr('clip-path', d => 'url(#clip' + d.key + 'wrapper)');
+    let streamLayers = depthLayers
+      .selectAll('g.streamLayer')
+      .data(d => d.values, d => d.id)
+      .join(
+        enter => enter.append('g').classed('streamLayer', true),
+        update => update,
+        exit => exit.remove()
+      );
 
-    depthLayers
+    // add streams
+    let self = this;
+    streamLayers
       .selectAll('path.stream')
-      .data(d => d.values, d => this._name + this._datasetsLoaded + d.id)
-      .join(enter =>
-        enter
-          .append('path')
-          .classed('stream', true)
-          .on('mouseover', this._onMouseOver)
-          .on('mouseout', this._onMouseOut)
-          .attr('clip-path', d => 'url(#clip' + d.id + this._name + ')')
-          .attr('id', d => 'stream' + d.id + this._name)
-          //.attr('stroke-width', 3)
-          .attr('paint-order', 'stroke')
+      .data(d => [d])
+      .join(
+        function(enter) {
+          return (
+            enter
+              .append('path')
+              .classed('stream', true)
+              .on('mouseover', self._onMouseOver)
+              .on('mouseout', self._onMouseOut)
+              .attr('clip-path', d => 'url(#clip' + d.id + self._name + ')')
+              .attr('id', d => 'stream' + d.id + self._name)
+              //.attr('stroke-width', 3)
+              .attr('paint-order', 'stroke')
+          );
+        },
+        update => update,
+        exit => exit.remove()
       )
       .attr('d', d => d.path)
       .attr('shape-rendering', this._opts.shapeRendering)
@@ -530,24 +557,50 @@ export default class SplitStream {
       .filter(d => d.path.indexOf('C') == -1)
       .remove();
 
-    this.showLabels(this._opts.showLabels);
     this.drawStroke(this._opts.drawStroke);
 
-    let splitData = this._svgFilters
+    // add labels
+    if (!this._opts.showLabels) streamLayers.selectAll('text').remove();
+    else {
+      let mirror = this._opts.mirror;
+      streamLayers
+        .selectAll('text')
+        .data(d => (d.data && d.data.labels ? d.data.labels : []))
+        .join('text')
+        .each(function(d, i) {
+          let stream = this.parentElement.firstElementChild;
+          let numLabels = stream.__data__.data.labels.length;
+          let fontSize = stream.__data__.data.fontSize;
+          let offset = stream.__data__.textPos.offset;
+          let space = stream.__data__.textPos.height;
+          let y = (space / numLabels) * i;
+          if (!mirror) y *= -1;
+          d3.select(this)
+            .html(null)
+            .attr('transform', `translate(0,${y})`)
+            .attr('dominant-baseline', mirror ? 'hanging' : 'baseline')
+            .attr('font-size', fontSize)
+            .append('textPath')
+            .attr('href', '#' + stream.id)
+            .text(d => d)
+            .attr('startOffset', offset);
+        });
+    }
+
+    // add splits
+    this._svgFilters
       .selectAll('clipPath')
       .data(
         this._streamData.clipPaths,
         d => this._name + this._datasetsLoaded + d.id
-      );
-
-    splitData
-      .enter()
-      .append('clipPath')
-      .attr('id', d => 'clip' + d.id + this._name)
-      .merge(splitData)
+      )
+      .join(
+        enter =>
+          enter.append('clipPath').attr('id', d => 'clip' + d.id + this._name),
+        update => update,
+        exit => exit.remove()
+      )
       .html(d => '<path d="' + d.path + '">');
-
-    splitData.exit().remove();
 
     this._applyFilters();
   }
@@ -602,25 +655,6 @@ export default class SplitStream {
     }
   }
 
-  showLabels(show = true) {
-    this._opts.showLabels = show;
-    let labelData = this._opts.showLabels ? this._streamData.streams : [];
-
-    let labels = this._textContainer
-      .selectAll('text')
-      .data(labelData, d => d.id);
-
-    labels
-      .enter()
-      .append('text')
-      .text(d => (!!d.data ? d.data.typeLabel : d.id))
-      .merge(labels)
-      .attr('x', d => d.textPos.x)
-      .attr('y', d => d.textPos.y);
-
-    labels.exit().remove();
-  }
-
   drawStroke(draw = true) {
     this._opts.drawStroke = draw;
     let color = this._opts.drawStroke ? 'black' : null;
@@ -641,10 +675,12 @@ export default class SplitStream {
         blur: filter.stdDeviation
       });
 
-    if (this._opts.filterMode == 'fast')
-      d3.selectAll('.depthLayer').svgFilter(...filters);
+    let elements;
+    if (this._opts.filterMode == 'fast') elements = d3.selectAll('.depthLayer');
     else if (this._opts.filterMode == 'accurate')
-      d3.selectAll('path.stream').svgFilter(...filters);
+      elements = d3.selectAll('path.stream');
+
+    if (elements.size() > 0) elements.svgFilter(...filters);
   }
 
   update() {

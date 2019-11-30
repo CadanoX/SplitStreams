@@ -6,7 +6,7 @@ const TransformData = {
     // add nodes
     for (let id in data.N) {
       let node = data.N[id];
-      format.addNode(node.t, id, node.w);
+      format.addNode(node.t, id, node.w, undefined, { labels: [id] });
     }
     // add tree structure
     for (let t in data.EN) {
@@ -45,7 +45,7 @@ const TransformData = {
       format.addNode(t, node.id, node.length, node.pos, {
         label: node.label,
         type: node.type,
-        typeLabel: node.typeLabel
+        labels: [node.typeLabel]
       });
 
       // children need to be added in a second step, becaues ID is not known beforehand

@@ -110,38 +110,14 @@ Lib.addFilter('inner-shadow', {
     this.defs.html(
       this.defs.html() +
         `
-            <feGaussianBlur
-                in='SourceAlpha'
-                stdDeviation='${blur}'
-                result='blur${id}' />
-
-            <feOffset dx=${dx} dy=${dy} />
-
-            <feComposite
-                in2='SourceAlpha'
-                operator='arithmetic'
-                k2=-1
-                k3=1
-                result='shadowDiff${id}' />
-
-            <feFlood flood-color=${color} />
-
-            <feComposite
-                in2='shadowDiff${id}'
-                operator='in' />
-
-            <feComposite
-                in2='SourceGraphic'
-                operator='over'
-                result='firstFilter${id}' />
-
-            <feComposite
-                in2='shadowDiff${id}'
-                operator='in' />
-
-            <feComposite
-                in2='firstFilter${id}'
-                operator='over' />
+            <feGaussianBlur in='SourceAlpha' stdDeviation='${blur}' result='blur${id}'/>
+            <feOffset dx=${dx} dy=${dy}/>
+            <feComposite in2='SourceAlpha' operator='arithmetic' k2=-1 k3=1 result='shadowDiff${id}'/>
+            <feFlood flood-color=${color}/>
+            <feComposite in2='shadowDiff${id}' operator='in'/> 
+            <feComposite in2='SourceGraphic' operator='over' result='firstFilter${id}'/>
+            <feComposite in2='shadowDiff${id}' operator='in'/>
+            <feComposite in2='firstFilter${id}' operator='over'/>
         `
     );
   },
@@ -159,7 +135,7 @@ Lib.addFilter('double-inner-shadow', {
       this.defs.html() +
         `
             <feComponentTransfer in=SourceAlpha result="invert${id}">
-                <feFuncA type="table" tableValues="1 0" />
+                <feFuncA type="table" tableValues="1 0"/>
             </feComponentTransfer>
             <feGaussianBlur in="invert${id}" stdDeviation="${blur}" result="blur${id}"/>
             <feOffset in="blur${id}" dx="${dx}" dy="${dy}" result="offsetblur1${id}"/>
@@ -173,11 +149,114 @@ Lib.addFilter('double-inner-shadow', {
                 <feMergeNode in="offsetblur1${id}" />
                 <feMergeNode in="offsetblur2${id}" />
             </feMerge>
-            <feComposite in2="SourceAlpha" operator="in" />
+            <feComposite in2="SourceAlpha" operator="in"/>
         `
     );
   },
   signature: ({ color, dx, dy, blur }) => `dids_${color}_${blur}_${dx}_${dy}`
+});
+
+Lib.addFilter('art', {
+  generate: function({ id }) {
+    const key = this.signature;
+    const existing = this.defs.select(`#${key}`);
+
+    if (!existing.empty()) return existing;
+
+    this.defs.html(
+      this.defs.html() +
+        `
+        <!-- stripy noise -->
+        <feTurbulence type="fractalNoise" baseFrequency="0.005 0.05" numOctaves="10" result="noisy" />
+        <feColorMatrix type="saturate" values="0" result="noisyGrey"/>
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.5"></feFuncA>
+        </feComponentTransfer>
+        <feComposite in2="SourceGraphic" operator="in" />
+        <!-- limit noise to paths -->
+        <!-- <feComposite in2="SourceGraphic" operator="over" /> -->
+
+        <!-- <feBlend in2="SourceGraphic" mode="color-dodge" /> -->
+        <!-- <feBlend in2="SourceGraphic" mode="color-burn" /> -->
+        <feBlend in2="SourceGraphic" mode="luminosity" />
+        <feColorMatrix type="saturate" values="1.3" result="handDrawn"/>
+
+        
+        <!-- paper noise -->
+        <!-- <feTurbulence type="turbulence" baseFrequency='0.01 0.1' numOctaves="2" result='noise' />
+        <feDiffuseLighting in='noise' lighting-color='white' surfaceScale='2' result="light">
+              <feDistantLight azimuth='45' elevation='60' />
+        </feDiffuseLighting>
+        <feComposite in2="SourceGraphic" operator="in" />
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.5"></feFuncA>
+        </feComponentTransfer>
+        <feBlend in2="SourceGraphic" mode="multiply" />
+        <feColorMatrix type="saturate" values="1.3" result="handDrawn"/> -->
+
+        <!-- inner shadow test (not working)-->
+        <feMorphology operator='erode' radius=7 result="inner"></feMorphology>
+        <feComposite in="SourceGraphic" in2="inner" operator="out" result="outer"/>
+        <feFlood flood-color="black"></feFlood>
+        <feComposite in2="outer" operator="in"></feComposite>
+        <feMorphology operator='dilate' radius=1 result="outer2"></feMorphology>
+        <feGaussianBlur stdDeviation="5" result="innerShadow"></feGaussianBlur>
+
+        <!-- top shadow -->
+        <feFlood flood-color="black"></feFlood>
+        <feComposite in2="SourceGraphic" operator="in"></feComposite>
+        <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+        <feOffset dy="3" dx="3"></feOffset>
+        <feComposite in2="SourceGraphic" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
+        <feFlood flood-color="#000" flood-opacity="0.75"></feFlood>
+        <feComposite in2="shadowDiff" operator="in" result="innerShadowTop"></feComposite>
+        <!-- bottom shadow -->
+        <feFlood flood-color="black"></feFlood>
+        <feComposite in2="SourceGraphic" operator="in"></feComposite>
+        <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+        <feOffset dy="-5" dx="3"></feOffset>
+        <feComposite in2="SourceGraphic" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
+        <feFlood flood-color="#000" flood-opacity="1"></feFlood>
+        <feComposite in2="shadowDiff" operator="in" result="innerShadowBottom"></feComposite>
+
+        <!-- original top/bottom mix -->
+        <feFlood flood-color="black"></feFlood>
+        <feComposite in2="SourceGraphic" operator="in"></feComposite>
+        <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+        <feOffset dy="7" dx="3"></feOffset>
+        <feComposite in2="handDrawn" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
+        <feFlood flood-color="#000" flood-opacity="1"></feFlood>
+        <feComposite in2="shadowDiff" operator="in" result="firstFilter"></feComposite>
+        <feComposite in2="handDrawn" operator="over" result="firstFilter"/>
+        <feGaussianBlur in="firstFilter" stdDeviation="3" result="blur2"></feGaussianBlur>
+        <feOffset dy="-7" dx="-3"></feOffset>
+        <feComposite in2="firstFilter" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
+        <feFlood flood-color="#000" flood-opacity="0.75"></feFlood>
+        <feComposite in2="shadowDiff" operator="in"></feComposite>
+        <feComposite in2="firstFilter" operator="over" result="innerShadow"></feComposite>
+
+        <!-- stroke -->
+        <feFlood in="SourceGraphic" flood-color="black"></feFlood>
+        <feComposite in2="SourceGraphic" operator="in"></feComposite>
+        <feMorphology operator='dilate' radius=3></feMorphology>
+        <feComposite in2="SourceGraphic" operator="out" result="stroke"></feComposite>
+
+        <!-- outer shadow -->
+        <feFlood flood-color="black"></feFlood>
+        <feComposite in2="SourceGraphic" operator="in"></feComposite>
+        <feMorphology operator='dilate' radius=3></feMorphology>
+        <feGaussianBlur stdDeviation="5" result="shadow"></feGaussianBlur>
+
+        <!-- combine all filters -->
+        <feBlend in="handDrawn" in2="shadow"/>
+        <!-- <feBlend in="innerShadow"/> -->
+        <!-- <feBlend in="innerShadowTop"/> -->
+        <feBlend in="innerShadowBottom"/>
+        <feBlend in="stroke"/>
+        `
+    );
+  },
+  signature: ({ color, dx, dy, blur }) => `art_`
 });
 
 class SVGFilterManager {

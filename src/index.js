@@ -144,7 +144,7 @@ async function loadDataset(name) {
   return true;
 }
 
-document.addEventListener('DOMContentLoaded', async function(event) {
+document.addEventListener('DOMContentLoaded', async function (event) {
   app = new Vue({
     el: '#app',
     data: {
@@ -271,12 +271,12 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       }
     },
     methods: {
-      randomizeSplits: function() {
+      randomizeSplits: function () {
         stream.removeSplits();
         stream.addSplitsRandomly(10);
         this.randomSplits = stream.splits;
       },
-      applySplits: function(option) {
+      applySplits: function (option) {
         if (option == 'at') {
           stream.removeSplits();
           stream.addSplitsAtTimepoints();
@@ -294,11 +294,11 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       wrapperResize(...args) {
         stream.resize();
       },
-      download: function() {
+      download: function () {
         saveSvg(document.querySelector('svg'), 'secstream');
         saveJson(generator.get(), 'data');
       },
-      downloadPng: function() {
+      downloadPng: function () {
         savePng(document.querySelector('svg'), 'secstream');
       },
       render() {
@@ -313,9 +313,8 @@ document.addEventListener('DOMContentLoaded', async function(event) {
 
         stream.automaticUpdate = false;
         stream.data(data);
-        this.applySplits(this.split);
         stream.automaticUpdate = true;
-        stream.update();
+        this.applySplits(this.split);
       }
     },
     watch: {
@@ -389,7 +388,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         stream.drawStroke(this.drawStroke);
       },
       showLabels() {
-        stream.showLabels(this.showLabels);
+        stream.showLabels = this.showLabels;
       },
       mirror() {
         stream.mirror = this.mirror;
@@ -398,19 +397,19 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         stream.splitRoot = this.splitRoot;
       },
       filters: {
-        handler: function(filters) {
+        handler: function (filters) {
           stream.filters(this.filters);
         },
         deep: true
       },
       filterMode: {
-        handler: function() {
+        handler: function () {
           stream.filterMode = this.filterMode.value;
         },
         deep: true
       },
       startEndEncoding: {
-        handler: function(encoding) {
+        handler: function (encoding) {
           stream.startEndEncoding = encoding.value;
           stream.startEndEncodingX = encoding.x;
           stream.startEndEncodingY = encoding.y;
@@ -418,7 +417,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         deep: true
       },
       dataset: {
-        handler: function(dataset) {
+        handler: function (dataset) {
           loadDataset(dataset.value).then(loaded => {
             if (loaded) {
               if (dataset.value == 'MeSH') {
@@ -435,19 +434,19 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         deep: true
       },
       shapeRendering: {
-        handler: function(shapeRendering) {
+        handler: function (shapeRendering) {
           stream.shapeRendering = shapeRendering.value;
         },
         deep: true
       },
       offset: {
-        handler: function(offset) {
+        handler: function (offset) {
           stream.offset = offset.value;
         },
         deep: true
       },
       color: {
-        handler: function(color) {
+        handler: function (color) {
           stream.colorRandom = false;
           switch (color.value) {
             case 'random':
@@ -564,7 +563,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         },
         deep: true
       },
-      split: function(option) {
+      split: function (option) {
         this.applySplits(option);
       }
     }
@@ -588,11 +587,11 @@ document.addEventListener('DOMContentLoaded', async function(event) {
   stream.filters(app.filters);
 
   let tooltip = document.querySelector('.tooltip');
-  stream.onMouseOver = function(d) {
+  stream.onMouseOver = function (d) {
     tooltip.innerText = JSON.stringify(d.data);
     this.classList.add('active');
   };
-  stream.onMouseOut = function(d) {
+  stream.onMouseOut = function (d) {
     tooltip.innerText = '';
     this.classList.remove('active');
   };
