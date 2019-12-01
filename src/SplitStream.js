@@ -572,8 +572,15 @@ export default class SplitStream {
           let numLabels = stream.__data__.data.labels.length;
           let fontSize = stream.__data__.data.fontSize;
           let offset = stream.__data__.textPos.offset;
+          // calculate offset percentage to position in top center
+          let l = stream.getTotalLength();
+          let h = stream.__data__.textPos.height;
+          let centerOffset = (h / 2 + l / 4) / l;
+          centerOffset = Math.floor(centerOffset * 100);
+
           let space = stream.__data__.textPos.height;
           let y = (space / numLabels) * i;
+          y = fontSize * i;
           if (!mirror) y *= -1;
           d3.select(this)
             .html(null)
@@ -583,7 +590,9 @@ export default class SplitStream {
             .append('textPath')
             .attr('href', '#' + stream.id)
             .text(d => d)
-            .attr('startOffset', offset);
+            // .attr('startOffset', offset);
+            .attr('startOffset', centerOffset + '%')
+            .attr('text-anchor', 'middle');
         });
     }
 
