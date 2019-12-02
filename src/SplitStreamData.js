@@ -1,3 +1,4 @@
+import * as d3 from 'd3-shape';
 import SvgPath from './SvgPath.js';
 
 export default class SplitStreamData {
@@ -190,7 +191,7 @@ export default class SplitStreamData {
   }
 
   _findClosestNode(stream, x) {
-    let traverseTime = function(node) {
+    let traverseTime = function (node) {
       let distance = Math.abs(node.x - x);
       if (distance < minDistance) {
         minDistance = distance;
@@ -236,12 +237,13 @@ export default class SplitStreamData {
       x = this._xScale,
       y = this._yScale;
 
-    // extend to left
+    // start path
     d.move(x(node.x), y(node.y1));
 
     // don't draw start for zero values
     if (node.y1 - node.y0 <= 0) return;
 
+    // extend to left
     let t = node.x - 0.5 * (1 - prop);
     d.horizontal(x(t));
 
@@ -564,6 +566,7 @@ export default class SplitStreamData {
       x = this._xScale,
       y = this._yScale;
     let d, lastTimepoint, deepestDepth, largestSize; // find the deepest depth each stream has over the whole timeseries
+    let currentLineNodes = [];
 
     let drawLine = (t1, t2, t3, ySource, yDest) => {
       let t12 = 0.5 * (t1 + t2); // mid between t1 and t2
@@ -576,46 +579,103 @@ export default class SplitStreamData {
       d.horizontal(t3);
     };
 
-    let traverse = (node, origin) => {
-      if (node.x > lastTimepoint) lastTimepoint = node.x;
+    let line = d3
+      .line()
+      .x(d => x(d.x))
+      .y(d => y(d.y))
+      .curve(d3.curveBasis);
+    let drawCurve = nodes => {
+      let path = line(nodes);
+      let idx = path.indexOf('C');
+      if (idx != -1) {
+        path = path.substring(idx); // remove the M move in the beginning of the string
+        d.add(path);
+      }
+      currentLineNodes = [];
+    };
 
+    let traverse = (node, isStreamStart = true) => {
+      if (node.x > lastTimepoint) lastTimepoint = node.x;
       if (node.depth > deepestDepth) deepestDepth = node.depth;
       if (node.size > largestSize) largestSize = node.size;
 
       // check if the node is reached from its true predecessor
+      // TODO: only works if IDs are the same throughout time
       let isSameStream = true;
       if (node.prev) {
-        let trueOrigin = node.prev.find(d => d.id == node.id);
-        isSameStream = trueOrigin === undefined || trueOrigin === origin;
+        isSameStream = node.prev.find(prev => prev.id == node.id) !== undefined;
       }
 
-      if (!!node.next && isSameStream) {
-        let dt = node.next[0].x - node.x;
-        let t0 = x(node.x);
-        let t1 = x(node.x + 0.5 * (1 - prop) * dt);
-        let t2 = x(node.next[0].x - 0.5 * (1 - prop) * dt);
-        let t3 = x(node.next[0].x);
+      let t0 = node.x;
+      let y0 = node.y0;
+      let y1 = node.y1;
 
-        let y0 = node.y0;
-        let y1 = node.y1;
+      currentLineNodes.push({ x: t0, y: y0 });
+
+      if (!isStreamStart && !isSameStream && node.next) {
+        drawCurve(currentLineNodes);
+        d.vertical(y(node.y1));
+        currentLineNodes.push({ x: t0, y: y1 });
+      }
+      else if (node.next) {
+        let dt = node.next[0].x - node.x;
+        let t1 = node.x + 0.5 * (1 - prop) * dt;
+        let t2 = node.next[0].x - 0.5 * (1 - prop) * dt;
+        let t3 = node.next[0].x;
+        let tMid = (node.x + node.next[0].x) / 2;
 
         for (let i = 0; i < node.next.length; i++) {
           let dest = node.next[i];
-          // don't draw anything for streams with zero height
-          if (y1 - y0 <= 0 && dest.y1 - dest.y0 <= 0) {
-            d.move(t3, y(dest.y0));
-            traverse(dest, node);
-            d.move(t0, y(y0));
-          } else {
-            drawLine(t1, t2, t3, y0, dest.y0); // bottom line (forwards)
-            traverse(dest, node);
-            drawLine(t2, t1, t0, dest.y1, y1); // top line (backwards)
+          currentLineNodes.push({ x: t1, y: y0 });
+          currentLineNodes.push({ x: t2, y: dest.y0 });
+          // currentLineNodes.push({ x: tMid, y: (node.y0 + dest.y0) / 2 });
+          traverse(dest, false);
+          currentLineNodes.push({ x: t2, y: dest.y1 });
+          currentLineNodes.push({ x: t1, y: y1 });
+          // currentLineNodes.push({ x: tMid, y: (node.y1 + dest.y1) / 2 });
+          currentLineNodes.push({ x: t0, y: y1 });
+          if (i < node.next.length - 1) {
+            drawCurve(currentLineNodes);
+            d.vertical(y(node.y0));
+            currentLineNodes.push({ x: t0, y: y0 });
           }
-          // if dest is one of the nodes where the split occured, we need to draw a line back to our starting point
-          if (node.next.length > 1 && i < node.next.length - 1)
-            d.vertical(y(y0));
         }
-      } else this._drawEnd(d, node);
+        if (isStreamStart) {
+          drawCurve(currentLineNodes);
+        }
+      } else {
+        drawCurve(currentLineNodes);
+        this._drawEnd(d, node);
+        if (!isStreamStart)
+          currentLineNodes.push({ x: t0, y: y1 });
+      }
+
+      //   let dt = node.next[0].x - node.x;
+      //   let t0 = x(node.x);
+      //   let t1 = x(node.x + 0.5 * (1 - prop) * dt);
+      //   let t2 = x(node.next[0].x - 0.5 * (1 - prop) * dt);
+      //   let t3 = x(node.next[0].x);
+
+      //   let y0 = node.y0;
+      //   let y1 = node.y1;
+
+      //   for (let i = 0; i < node.next.length; i++) {
+      //     let dest = node.next[i];
+      //     // don't draw anything for streams with zero height
+      //     if (y1 - y0 <= 0 && dest.y1 - dest.y0 <= 0) {
+      //       d.move(t3, y(dest.y0));
+      //       traverse(dest, node);
+      //       d.move(t0, y(y0));
+      //     } else {
+      //       drawLine(t1, t2, t3, y0, dest.y0); // bottom line (forwards)
+      //       traverse(dest, node);
+      //       drawLine(t2, t1, t0, dest.y1, y1); // top line (backwards)
+      //     }
+      //     // when node splits, we need to start each individual split from y0
+      //     if (i < node.next.length - 1)
+      //       d.vertical(y(y0));
+      //   }
+      // } else this._drawEnd(d, node);
     };
 
     for (let stream of this._streamNodes) {
@@ -625,7 +685,12 @@ export default class SplitStreamData {
       deepestDepth = 0;
       largestSize = 0;
 
-      this._drawStart(d, stream);
+      if (stream.prev) {
+        d.move(x(stream.x), y(stream.y1));
+        d.vertical(y(stream.y0));
+      }
+      else
+        this._drawStart(d, stream, true);
       traverse(stream);
       //d.close();
 
@@ -686,6 +751,9 @@ export default class SplitStreamData {
         else textPos = y(stream.y1) + 15;
       }
 
+      let offset =
+        (1 - this._proportion + 0.5 * stream.marginX) * (x(1) - x(0)) +
+        streamHeight;
       let streamObj = {
         path: d.get(),
         depth: stream.depth,
@@ -696,9 +764,7 @@ export default class SplitStreamData {
         textPos: {
           x: x(stream.x - 0.5 * (1 - this._proportion + stream.marginX)),
           y: textPos,
-          offset:
-            (1 - this._proportion + 0.5 * stream.marginX) * (x(1) - x(0)) +
-            streamHeight,
+          offset,
           height: streamHeight
         }
       };

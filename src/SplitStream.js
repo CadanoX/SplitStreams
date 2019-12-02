@@ -84,7 +84,7 @@ export default class SplitStream {
     this._init();
   }
 
-  static get a() {}
+  static get a() { }
 
   data(d) {
     return d == null ? this._data : (this._setData(d), this);
@@ -269,34 +269,35 @@ export default class SplitStream {
 
   // returns true if node id did not exist before
   _findStreamId(node) {
-    if (!!node.prev) {
+    if (node.prev) {
       // use id of prev node
       let idx = node.prev.findIndex(prev => prev.id == node.id);
-      if (idx == -1) idx = 0;
-      node.streamId = node.prev[idx].streamId;
-      return false;
-    } else {
-      // new node
-      // check if id is already in use
-      if (!this._indices[node.id]) {
-        // if not, use this id for the stream
-        this._indices[node.id] = true;
-        node.streamId = node.id;
-      } else {
-        // find a new ID
-        let count = 0;
-        let id;
-        do {
-          count++;
-          id = node.id + '_' + count;
-        } while (!!this._indices[id]);
-        // console.log(`ID '${node.id}' is already in use. Use '${id}' instead.`);
-        // ID is now in use
-        this._indices[id] = true;
-        node.streamId = id;
+      if (idx != -1) {
+        node.streamId = node.prev[idx].streamId;
+        return false;
       }
-      return true;
     }
+
+    // new node
+    // check if id is already in use
+    if (!this._indices[node.id]) {
+      // if not, use this id for the stream
+      this._indices[node.id] = true;
+      node.streamId = node.id;
+    } else {
+      // find a new ID
+      let count = 0;
+      let id;
+      do {
+        count++;
+        id = node.id + '_' + count;
+      } while (!!this._indices[id]);
+      // console.log(`ID '${node.id}' is already in use. Use '${id}' instead.`);
+      // ID is now in use
+      this._indices[id] = true;
+      node.streamId = id;
+    }
+    return true;
   }
 
   _clearStreamIds() {
@@ -526,7 +527,7 @@ export default class SplitStream {
       .selectAll('path.stream')
       .data(d => [d])
       .join(
-        function(enter) {
+        function (enter) {
           return (
             enter
               .append('path')
@@ -552,10 +553,10 @@ export default class SplitStream {
       .attr(
         'fill-opacity',
         this._opts.transparentRoot ? d => (d.id == 'fakeRoot' ? 0 : 1) : 1
-      )
-      // remove empty streams (they do not include a single bezier curve)
-      .filter(d => d.path.indexOf('C') == -1)
-      .remove();
+      );
+    // remove empty streams (they do not include a single bezier curve)
+    // .filter(d => d.path.indexOf('C') == -1)
+    // .remove();
 
     this.drawStroke(this._opts.drawStroke);
 
@@ -567,7 +568,7 @@ export default class SplitStream {
         .selectAll('text')
         .data(d => (d.data && d.data.labels ? d.data.labels : []))
         .join('text')
-        .each(function(d, i) {
+        .each(function (d, i) {
           let stream = this.parentElement.firstElementChild;
           let numLabels = stream.__data__.data.labels.length;
           let fontSize = stream.__data__.data.fontSize;

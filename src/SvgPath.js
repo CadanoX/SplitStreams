@@ -9,7 +9,8 @@ const ACTION = {
   VERTICAL_D: 7,
   BEZIER: 8,
   BEZIER_D: 9,
-  ARC: 10
+  ARC: 10,
+  ADD: 10
 };
 
 export default class SvgPath {
@@ -183,5 +184,10 @@ export default class SvgPath {
 
   close() {
     this._path += 'Z';
+  }
+
+  add(string) {
+    this._path += string;
+    this._lastAction = ACTION.ADD;
   }
 }

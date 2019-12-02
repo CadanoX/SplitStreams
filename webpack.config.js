@@ -13,7 +13,8 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
-    hot: true
+    hot: true,
+    port: 8081
   },
   devtool: "eval-source-map",
   output: {
@@ -68,9 +69,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new PrettierPlugin({
-      singleQuote: true
-    }),
+    // new PrettierPlugin({
+    //   singleQuote: true
+    // }),
     new CopyWebpackPlugin([
       './*.html',
       { from: 'data', to: 'data' },
