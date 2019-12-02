@@ -594,7 +594,7 @@ export default class SplitStreamData {
       currentLineNodes = [];
     };
 
-    let traverse = (node, isStreamStart = true) => {
+    let traverse = (node, previous, isStreamStart = true) => {
       if (node.x > lastTimepoint) lastTimepoint = node.x;
       if (node.depth > deepestDepth) deepestDepth = node.depth;
       if (node.size > largestSize) largestSize = node.size;
@@ -610,44 +610,136 @@ export default class SplitStreamData {
       let y0 = node.y0;
       let y1 = node.y1;
 
-      currentLineNodes.push({ x: t0, y: y0 });
+      //postpone if the last node
+      //currentLineNodes.push({ x: t0, y: y0 });
 
-      if (!isStreamStart && !isSameStream && node.next) {
-        drawCurve(currentLineNodes);
-        d.vertical(y(node.y1));
-        currentLineNodes.push({ x: t0, y: y1 });
-      }
-      else if (node.next) {
-        let dt = node.next[0].x - node.x;
-        let t1 = node.x + 0.5 * (1 - prop) * dt;
-        let t2 = node.next[0].x - 0.5 * (1 - prop) * dt;
-        let t3 = node.next[0].x;
-        let tMid = (node.x + node.next[0].x) / 2;
 
-        for (let i = 0; i < node.next.length; i++) {
-          let dest = node.next[i];
-          currentLineNodes.push({ x: t1, y: y0 });
-          currentLineNodes.push({ x: t2, y: dest.y0 });
-          // currentLineNodes.push({ x: tMid, y: (node.y0 + dest.y0) / 2 });
-          traverse(dest, false);
-          currentLineNodes.push({ x: t2, y: dest.y1 });
-          currentLineNodes.push({ x: t1, y: y1 });
-          // currentLineNodes.push({ x: tMid, y: (node.y1 + dest.y1) / 2 });
-          currentLineNodes.push({ x: t0, y: y1 });
-          if (i < node.next.length - 1) {
-            drawCurve(currentLineNodes);
-            d.vertical(y(node.y0));
+      if (node.next) {
+        // Last node, changing stream, has next
+
+        if (!isStreamStart && !isSameStream) {
+          if (previous) {
+            let dt = node.x - previous.x;
+            let t2 = node.x - 0.5 * (1 - prop) * dt;
+            currentLineNodes.push({ x: t2, y: node.y0 });
+          }
+          currentLineNodes.push({ x: t0, y: y0 });
+
+          drawCurve(currentLineNodes); // draw lower part
+          d.vertical(y(node.y1)); // draw up
+          currentLineNodes.push({ x: t0, y: y1 }); // push firs for the backtrack
+          if (previous) {
+            let dt = node.x - previous.x;
+            let t2 = node.x - 0.5 * (1 - prop) * dt;
+            currentLineNodes.push({ x: t2, y: node.y1 });
+          }
+
+        } else if (isStreamStart) { // first one
+          let dt = node.next[0].x - node.x;
+          let t1 = node.x + 0.5 * (1 - prop) * dt;
+          let t2 = node.next[0].x - 0.5 * (1 - prop) * dt;
+          let t3 = node.next[0].x;
+          let tMid = (node.x + node.next[0].x) / 2;
+
+          // first node do shit
+          for (let i = 0; i < node.next.length; i++) {
+            let dest = node.next[i];
+            // myself
             currentLineNodes.push({ x: t0, y: y0 });
+
+            //control points
+            currentLineNodes.push({ x: t1, y: y0 });
+            //if (!dest.next) // todo if next changes Id
+            //currentLineNodes.push({ x: t2, y: dest.y0 });
+            // currentLineNodes.push({ x: tMid, y: (node.y0 + dest.y0) / 2 });
+
+            traverse(dest, node, false);
+
+            //control points back
+            currentLineNodes.push({ x: t1, y: node.y1 });
+            //if (!dest.next) // todo if next changes Id
+            //currentLineNodes.push({ x: t1, y: y1 });
+            // currentLineNodes.push({ x: tMid, y: (node.y1 + dest.y1) / 2 });
+
+            //myself back
+            currentLineNodes.push({ x: t0, y: y1 });
+
+            drawCurve(currentLineNodes);
+
+            // special case not last from branching
+            if (i < node.next.length - 1) {
+              d.vertical(y(node.y0));
+              //currentLineNodes.push({ x: t0, y: y0 });
+            }
           }
         }
-        if (isStreamStart) {
-          drawCurve(currentLineNodes);
+
+        else { // not the last node, not the first
+          let dt = node.next[0].x - node.x;
+          let t1 = node.x + 0.5 * (1 - prop) * dt;
+          let t2 = node.next[0].x - 0.5 * (1 - prop) * dt;
+          let t3 = node.next[0].x;
+          let tMid = (node.x + node.next[0].x) / 2;
+
+          for (let i = 0; i < node.next.length; i++) {
+
+            let dest = node.next[i];
+            //currentLineNodes.push({ x: t1, y: y0 });
+            //currentLineNodes.push({ x: t2, y: dest.y0 });
+            // currentLineNodes.push({ x: tMid, y: (node.y0 + dest.y0) / 2 });
+
+            //myself first pass
+            currentLineNodes.push({ x: t0, y: y0 });
+
+            //if (!dest.next) // todo if next changes Id
+            //currentLineNodes.push({ x: t2, y: dest.y0 });
+
+            traverse(dest, node, false);
+
+            //if (!dest.next) // todo if next changes Id
+            //currentLineNodes.push({ x: t1, y: y1 });
+
+            //currentLineNodes.push({ x: t2, y: dest.y1 });
+            //currentLineNodes.push({ x: t1, y: y1 });
+            // currentLineNodes.push({ x: tMid, y: (node.y1 + dest.y1) / 2 });
+
+            // myself backwards
+            currentLineNodes.push({ x: t0, y: y1 });
+
+            if (i < node.next.length - 1) {
+              drawCurve(currentLineNodes);
+              d.vertical(y(node.y0));
+              currentLineNodes.push({ x: t0, y: y0 });
+            }
+          }
+          //if (isStreamStart) { // This is the first node
+          //  drawCurve(currentLineNodes); // drawing the backtrack
+          //}
         }
-      } else {
+      } else { // last node 
+
+        if (previous) {
+          let dt = node.x - previous.x;
+          let t2 = node.x - 0.5 * (1 - prop) * dt;
+          currentLineNodes.push({ x: t2, y: node.y0 });
+        }
+        // myself first pass
+        currentLineNodes.push({ x: t0, y: y0 });
+
+        // draw bottom part
         drawCurve(currentLineNodes);
         this._drawEnd(d, node);
-        if (!isStreamStart)
+
+        if (!isStreamStart) { // last but not first
           currentLineNodes.push({ x: t0, y: y1 });
+
+          if (previous) {
+            let dt = node.x - previous.x;
+            let t2 = node.x - 0.5 * (1 - prop) * dt;
+            currentLineNodes.push({ x: t2, y: node.y1 });
+          }
+
+        }
       }
 
       //   let dt = node.next[0].x - node.x;
