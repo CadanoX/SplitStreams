@@ -212,15 +212,16 @@ Lib.addFilter('art', {
         <feComposite in2="SourceGraphic" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"/>
         <feFlood flood-color="#333" flood-opacity="1"/>
         <feComposite in2="shadowDiff" operator="in" result="innerShadowTop"/>
+
         <!-- bottom shadow -->
         <feGaussianBlur in="blackMask" stdDeviation="3" result="blur"/>
-        <feOffset dy="-5" dx="0"/>
+        <feOffset dy="-2" dx="0"/>
         <feComposite in2="SourceGraphic" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"/>
-        <feFlood flood-color="#333" flood-opacity="1"/>
+        <feFlood flood-color="#555" flood-opacity="1"/>
         <feComposite in2="shadowDiff" operator="in" result="innerShadowBottom"/>
 
         <!-- stroke -->
-        <feFlood flood-color="#222"/>
+        <feFlood flood-color="#444"/>
         <feComposite in2="SourceGraphic" operator="in"/>
         <feMorphology operator='dilate' radius="2"/>
         <feComposite in2="SourceGraphic" operator="out" result="stroke"/>
@@ -230,9 +231,9 @@ Lib.addFilter('art', {
         <feBlend in2="stroke" mode="multiply" result="strokeFiltered"/>
 
         <!-- outer shadow -->
-        <feFlood flood-color="#2228"/>
+        <feFlood flood-color="#555"  flood-opacity="0.5"/>
         <feComposite in2="SourceGraphic" operator="in"/>
-        <feMorphology operator='dilate' radius="5"/>
+        <feMorphology operator='dilate' radius="3"/>
         <feOffset dy="2" dx="-2"/>
         <feGaussianBlur stdDeviation="2" result="shadow"/>
 

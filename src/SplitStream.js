@@ -22,7 +22,7 @@ export default class SplitStream {
           position: 'bottom',
           ticks: 5,
           tickSize: 'full',
-          textPos: [0, 0],
+          textPos: [2, 5],
           textSize: '2em',
           textAnchor: 'middle',
           textBase: 'none' // dominant-baseline
@@ -60,6 +60,7 @@ export default class SplitStream {
     this._axesContainer;
     this._pathContainer;
     this._textContainer;
+    this._tooltipContainer;
     this._svg;
     this._svgFilters;
     this._filters;
@@ -84,7 +85,7 @@ export default class SplitStream {
     this._init();
   }
 
-  static get a() { }
+  static get a() {}
 
   data(d) {
     return d == null ? this._data : (this._setData(d), this);
@@ -527,7 +528,7 @@ export default class SplitStream {
       .selectAll('path.stream')
       .data(d => [d])
       .join(
-        function (enter) {
+        function(enter) {
           return (
             enter
               .append('path')
@@ -568,7 +569,7 @@ export default class SplitStream {
         .selectAll('text')
         .data(d => (d.data && d.data.labels ? d.data.labels : []))
         .join('text')
-        .each(function (d, i) {
+        .each(function(d, i) {
           let stream = this.parentElement.firstElementChild;
           let numLabels = stream.__data__.data.labels.length;
           let fontSize = stream.__data__.data.fontSize;

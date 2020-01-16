@@ -15,7 +15,7 @@ export default class SplitStreamData {
     this._splits = {};
     this._xScale = d => d;
     this._yScale = d => d;
-    this._proportion = 1;
+    this._proportion = 0.99;
 
     this._xCurve = 'bezier'; // linear, bezier
     this._startEnd = {
@@ -191,7 +191,7 @@ export default class SplitStreamData {
   }
 
   _findClosestNode(stream, x) {
-    let traverseTime = function (node) {
+    let traverseTime = function(node) {
       let distance = Math.abs(node.x - x);
       if (distance < minDistance) {
         minDistance = distance;
@@ -583,7 +583,7 @@ export default class SplitStreamData {
       .line()
       .x(d => x(d.x))
       .y(d => y(d.y))
-      .curve(d3.curveBasis);
+      .curve(d3.curveMonotoneX);
     let drawCurve = nodes => {
       let path = line(nodes);
       let idx = path.indexOf('C');
@@ -602,8 +602,8 @@ export default class SplitStreamData {
       // check if the node is reached from its true predecessor
       // TODO: only works if IDs are the same throughout time
       let isSameStream = true;
-      if (node.prev) {
-        isSameStream = node.prev.find(prev => prev.id == node.id) !== undefined;
+      if (previous) {
+        isSameStream = previous.id == node.id;
       }
 
       let t0 = node.x;
@@ -612,7 +612,6 @@ export default class SplitStreamData {
 
       //postpone if the last node
       //currentLineNodes.push({ x: t0, y: y0 });
-
 
       if (node.next) {
         // Last node, changing stream, has next
@@ -633,13 +632,10 @@ export default class SplitStreamData {
             let t2 = node.x - 0.5 * (1 - prop) * dt;
             currentLineNodes.push({ x: t2, y: node.y1 });
           }
-
-        } else if (isStreamStart) { // first one
+        } else if (isStreamStart) {
+          // first one
           let dt = node.next[0].x - node.x;
           let t1 = node.x + 0.5 * (1 - prop) * dt;
-          let t2 = node.next[0].x - 0.5 * (1 - prop) * dt;
-          let t3 = node.next[0].x;
-          let tMid = (node.x + node.next[0].x) / 2;
 
           // first node do shit
           for (let i = 0; i < node.next.length; i++) {
@@ -649,17 +645,11 @@ export default class SplitStreamData {
 
             //control points
             currentLineNodes.push({ x: t1, y: y0 });
-            //if (!dest.next) // todo if next changes Id
-            //currentLineNodes.push({ x: t2, y: dest.y0 });
-            // currentLineNodes.push({ x: tMid, y: (node.y0 + dest.y0) / 2 });
 
             traverse(dest, node, false);
 
             //control points back
             currentLineNodes.push({ x: t1, y: node.y1 });
-            //if (!dest.next) // todo if next changes Id
-            //currentLineNodes.push({ x: t1, y: y1 });
-            // currentLineNodes.push({ x: tMid, y: (node.y1 + dest.y1) / 2 });
 
             //myself back
             currentLineNodes.push({ x: t0, y: y1 });
@@ -672,38 +662,21 @@ export default class SplitStreamData {
               //currentLineNodes.push({ x: t0, y: y0 });
             }
           }
-        }
-
-        else { // not the last node, not the first
-          let dt = node.next[0].x - node.x;
-          let t1 = node.x + 0.5 * (1 - prop) * dt;
-          let t2 = node.next[0].x - 0.5 * (1 - prop) * dt;
-          let t3 = node.next[0].x;
-          let tMid = (node.x + node.next[0].x) / 2;
-
+        } else {
+          // not the last node, not the first
           for (let i = 0; i < node.next.length; i++) {
-
             let dest = node.next[i];
-            //currentLineNodes.push({ x: t1, y: y0 });
-            //currentLineNodes.push({ x: t2, y: dest.y0 });
-            // currentLineNodes.push({ x: tMid, y: (node.y0 + dest.y0) / 2 });
+            let dt = dest.x - node.x;
+            let t1 = node.x + 0.5 * (1 - prop) * dt;
 
             //myself first pass
             currentLineNodes.push({ x: t0, y: y0 });
 
-            //if (!dest.next) // todo if next changes Id
-            //currentLineNodes.push({ x: t2, y: dest.y0 });
-
             traverse(dest, node, false);
 
-            //if (!dest.next) // todo if next changes Id
-            //currentLineNodes.push({ x: t1, y: y1 });
-
-            //currentLineNodes.push({ x: t2, y: dest.y1 });
-            //currentLineNodes.push({ x: t1, y: y1 });
-            // currentLineNodes.push({ x: tMid, y: (node.y1 + dest.y1) / 2 });
-
             // myself backwards
+            // TODO: push control point only if the next node was the last
+            currentLineNodes.push({ x: t1, y: y1 });
             currentLineNodes.push({ x: t0, y: y1 });
 
             if (i < node.next.length - 1) {
@@ -712,12 +685,9 @@ export default class SplitStreamData {
               currentLineNodes.push({ x: t0, y: y0 });
             }
           }
-          //if (isStreamStart) { // This is the first node
-          //  drawCurve(currentLineNodes); // drawing the backtrack
-          //}
         }
-      } else { // last node 
-
+      } else {
+        // last node
         if (previous) {
           let dt = node.x - previous.x;
           let t2 = node.x - 0.5 * (1 - prop) * dt;
@@ -730,7 +700,8 @@ export default class SplitStreamData {
         drawCurve(currentLineNodes);
         this._drawEnd(d, node);
 
-        if (!isStreamStart) { // last but not first
+        if (!isStreamStart) {
+          // last but not first
           currentLineNodes.push({ x: t0, y: y1 });
 
           if (previous) {
@@ -738,36 +709,8 @@ export default class SplitStreamData {
             let t2 = node.x - 0.5 * (1 - prop) * dt;
             currentLineNodes.push({ x: t2, y: node.y1 });
           }
-
         }
       }
-
-      //   let dt = node.next[0].x - node.x;
-      //   let t0 = x(node.x);
-      //   let t1 = x(node.x + 0.5 * (1 - prop) * dt);
-      //   let t2 = x(node.next[0].x - 0.5 * (1 - prop) * dt);
-      //   let t3 = x(node.next[0].x);
-
-      //   let y0 = node.y0;
-      //   let y1 = node.y1;
-
-      //   for (let i = 0; i < node.next.length; i++) {
-      //     let dest = node.next[i];
-      //     // don't draw anything for streams with zero height
-      //     if (y1 - y0 <= 0 && dest.y1 - dest.y0 <= 0) {
-      //       d.move(t3, y(dest.y0));
-      //       traverse(dest, node);
-      //       d.move(t0, y(y0));
-      //     } else {
-      //       drawLine(t1, t2, t3, y0, dest.y0); // bottom line (forwards)
-      //       traverse(dest, node);
-      //       drawLine(t2, t1, t0, dest.y1, y1); // top line (backwards)
-      //     }
-      //     // when node splits, we need to start each individual split from y0
-      //     if (i < node.next.length - 1)
-      //       d.vertical(y(y0));
-      //   }
-      // } else this._drawEnd(d, node);
     };
 
     for (let stream of this._streamNodes) {
@@ -780,9 +723,7 @@ export default class SplitStreamData {
       if (stream.prev) {
         d.move(x(stream.x), y(stream.y1));
         d.vertical(y(stream.y0));
-      }
-      else
-        this._drawStart(d, stream, true);
+      } else this._drawStart(d, stream, true);
       traverse(stream);
       //d.close();
 
