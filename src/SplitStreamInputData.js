@@ -103,10 +103,12 @@ export default class SplitStreamInputData {
     for (let t in this._timesteps) {
       let nodes = this._timesteps[t].references;
       for (let id in nodes) {
-        let node = nodes[id];
-        if (!node.parent) {
-          if (!nodesWithoutParents[t]) nodesWithoutParents[t] = [];
-          nodesWithoutParents[t].push(node);
+        if (id != "fakeRoot") {
+          let node = nodes[id];
+          if (!node.parent) {
+            if (!nodesWithoutParents[t]) nodesWithoutParents[t] = [];
+            nodesWithoutParents[t].push(node);
+          }
         }
       }
     }
