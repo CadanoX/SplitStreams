@@ -2,8 +2,8 @@ export default class SplitStreamInputData {
   constructor(options = {}) {
     this._opts = {
       forceFakeRoot: false,
-      order: 'minimizeEdgeCrossings',
-      ...options // overwrite default settings with user settings
+      order: "minimizeEdgeCrossings",
+      ...options, // overwrite default settings with user settings
     };
     // hold a tree (root node) for each timestep
     // hold a reference array which includes all nodes present in a single timestep
@@ -35,7 +35,7 @@ export default class SplitStreamInputData {
         dataPos,
         size,
         pos,
-        data
+        data,
       };
       this._numNodes++;
     } else; // console.log(`Warning AddNode: Node ${id} at timestep ${t} exists already.`);
@@ -92,7 +92,7 @@ export default class SplitStreamInputData {
       this._checkPositions(node);
     });
 
-    if (this._opts.order == 'minimizeEdgeCrossings')
+    if (this._opts.order == "minimizeEdgeCrossings")
       this.minimizeEdgeCrossings();
   }
 
@@ -122,14 +122,14 @@ export default class SplitStreamInputData {
     if (fakeRootNeeded || this._opts.forceFakeRoot) {
       let prevT;
       for (let t in nodesWithoutParents) {
-        this.addNode(t, 'fakeRoot');
-        nodesWithoutParents[t].forEach(node => {
-          this.addParent(t, node.id, 'fakeRoot');
-          this._timesteps[t].tree = this._timesteps[t].references['fakeRoot'];
+        this.addNode(t, "fakeRoot");
+        nodesWithoutParents[t].forEach((node) => {
+          this.addParent(t, node.id, "fakeRoot");
+          this._timesteps[t].tree = this._timesteps[t].references["fakeRoot"];
         });
         // connect fake roots
         if (!!prevT) {
-          this.addNext(prevT, 'fakeRoot', 'fakeRoot');
+          this.addNext(prevT, "fakeRoot", "fakeRoot");
         }
         prevT = t;
       }
@@ -180,7 +180,7 @@ export default class SplitStreamInputData {
   __forEachNodeDepthFirst(callback) {
     let traverse = function(node, depth, t) {
       if (!!node.children)
-        node.children.forEach(child => traverse(child, depth + 1, t));
+        node.children.forEach((child) => traverse(child, depth + 1, t));
       callback(node, depth, t);
     };
 
@@ -190,7 +190,7 @@ export default class SplitStreamInputData {
   _createTimestep(t) {
     this._timesteps[t] = {
       references: {},
-      tree: null
+      tree: null,
     };
   }
 
@@ -222,17 +222,17 @@ export default class SplitStreamInputData {
     let M = this.__getAdjacencyMatrices(leaves);
     let timesteps = Object.keys(this._timesteps);
 
-    let calculateBarycenterCols = t => {
+    let calculateBarycenterCols = (t) => {
       for (let l in leaves[t])
         leaves[t][l].barycenter = this.__getBarycenterCol(M[t - 1], l);
     };
 
-    let calculateBarycenterRows = t => {
+    let calculateBarycenterRows = (t) => {
       for (let l in leaves[t])
         leaves[t][l].barycenter = this.__getBarycenterRow(M[t], l);
     };
 
-    let reorder = t => {
+    let reorder = (t) => {
       this.__orderByBarycenter(this._timesteps[t].tree);
       let newOrder = this.__getNewOrder(this._timesteps[t].tree);
       applyOrder(t, newOrder);
@@ -240,12 +240,12 @@ export default class SplitStreamInputData {
 
     let applyOrder = (t, order) => {
       // reorder matrix rows
-      if (M[t]) M[t] = order.map(i => M[t][i]);
+      if (M[t]) M[t] = order.map((i) => M[t][i]);
       // reorder same nodes in previous matrix columns
       if (M[t - 1])
-        M[t - 1].forEach((row, i) => (M[t - 1][i] = order.map(i => row[i])));
+        M[t - 1].forEach((row, i) => (M[t - 1][i] = order.map((i) => row[i])));
       // reorder leaf array
-      leaves[t] = order.map(i => leaves[t][i]);
+      leaves[t] = order.map((i) => leaves[t][i]);
     };
 
     //sweep right, reorder columns based on barycenters
@@ -325,16 +325,16 @@ export default class SplitStreamInputData {
 
   __reverseEqualBarycenters(tree) {
     let numLeaves = 0;
-    let traverse = node => {
+    let traverse = (node) => {
       if (!node.children) node.bcMatrixPosition = numLeaves++;
       else {
-        node.children.forEach(child => traverse(child));
+        node.children.forEach((child) => traverse(child));
         // extract an array of barycenters in order
-        let barycenterArray = node.children.map(d => d.barycenter);
+        let barycenterArray = node.children.map((d) => d.barycenter);
         // reverse the order of equal barycenters
         let newOrder = this.__reverseIndicesOfEqualValues(barycenterArray);
         // reorder children
-        node.children = newOrder.map(idx => node.children[idx]);
+        node.children = newOrder.map((idx) => node.children[idx]);
       }
     };
     traverse(tree);
@@ -342,8 +342,8 @@ export default class SplitStreamInputData {
 
   __getNewOrder(tree) {
     let order = [];
-    let newLeafOrder = node => {
-      if (node.children) node.children.forEach(child => newLeafOrder(child));
+    let newLeafOrder = (node) => {
+      if (node.children) node.children.forEach((child) => newLeafOrder(child));
       else order.push(node.bcMatrixPosition);
     };
     newLeafOrder(tree);
@@ -354,7 +354,7 @@ export default class SplitStreamInputData {
   // this is necesasry because of hierarchy nodes that span a wider range
   __orderByBarycenter(tree) {
     let numLeaves = 0;
-    let traverse = node => {
+    let traverse = (node) => {
       if (!node.children) node.bcMatrixPosition = numLeaves++;
       else {
         node.barycenter = 0; // hierarchy nodes get the average of their childrens' barycenter
@@ -414,7 +414,7 @@ export default class SplitStreamInputData {
       if (left[i].next)
         for (let next of left[i].next) {
           // only if the edge goes to one of the leaf nodes
-          if (typeof M[i][targetLookup[next.id]] !== 'undefined')
+          if (typeof M[i][targetLookup[next.id]] !== "undefined")
             M[i][targetLookup[next.id]] = 1;
         }
     }

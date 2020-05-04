@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         stream.mirror = this.mirror;
 
         // checkNumChangesPerBranch();
-        checkTimings();
+        // checkTimings();
       },
       splitRoot() {
         stream.splitRoot = this.splitRoot;

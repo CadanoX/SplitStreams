@@ -34,6 +34,13 @@
     "filetype": "json",
     "file": "./data/gumtreeMin.json"
   },
+  "flowVisCode": {
+    "value": "flowVisCode",
+    "format": "gumtree",
+    "text": "FlowVis Code",
+    "filetype": "json",
+    "file": "./data/flowvis.json"
+  },
   "filetree": {
     "value": "filetree",
     "format": "viscous",

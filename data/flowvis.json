@@ -1,0 +1,361 @@
+{
+  "format": "gumtree",
+  "timesteps": [
+    {
+      "root": {
+        "length": "22",
+        "children": [
+          {
+            "length": "16",
+            "children": [
+              {
+                "length": "5"
+              },
+              {
+                "length": "4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "root": {
+        "length": "47",
+        "children": [
+          {
+            "length": "24",
+            "children": [
+              {
+                "length": "10",
+                "children": [
+                  {
+                    "length": "4"
+                  }
+                ]
+              },
+              {
+                "length": "4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "root": {
+        "length": "59",
+        "children": [
+          {
+            "length": "30",
+            "children": [
+              {
+                "length": "16",
+                "children": [
+                  {
+                    "length": "9",
+                    "children": [
+                      {
+                        "length": "4"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "length": "4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "root": {
+        "length": "59",
+        "children": [
+          {
+            "length": "30",
+            "children": [
+              {
+                "length": "16",
+                "children": [
+                  {
+                    "length": "9",
+                    "children": [
+                      {
+                        "length": "4"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "length": "4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "root": {
+        "length": "73",
+        "children": [
+          {
+            "length": "38",
+            "children": [
+              {
+                "length": "22",
+                "children": [
+                  {
+                    "length": "13",
+                    "children": [
+                      {
+                        "length": "7"
+                      }
+                    ]
+                  },
+                  {
+                    "length": "4"
+                  }
+                ]
+              },
+              {
+                "length": "4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "root": {
+        "length": "73",
+        "children": [
+          {
+            "length": "38",
+            "children": [
+              {
+                "length": "22",
+                "children": [
+                  {
+                    "length": "13",
+                    "children": [
+                      {
+                        "length": "7"
+                      }
+                    ]
+                  },
+                  {
+                    "length": "4"
+                  }
+                ]
+              },
+              {
+                "length": "4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "root": {
+        "length": "73",
+        "children": [
+          {
+            "length": "38",
+            "children": [
+              {
+                "length": "22",
+                "children": [
+                  {
+                    "length": "13",
+                    "children": [
+                      {
+                        "length": "7"
+                      }
+                    ]
+                  },
+                  {
+                    "length": "4"
+                  }
+                ]
+              },
+              {
+                "length": "4"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "changes": [
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 1
+        },
+        {
+          "src": 1,
+          "dest": 2
+        },
+        {
+          "src": 2,
+          "dest": 3
+        },
+        {
+          "src": 3,
+          "dest": 4
+        }
+      ]
+    },
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 1
+        },
+        {
+          "src": 1,
+          "dest": 2
+        },
+        {
+          "src": 2,
+          "dest": 3
+        },
+        {
+          "src": 3,
+          "dest": 4
+        },
+        {
+          "src": 4,
+          "dest": 5
+        }
+      ]
+    },
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 0
+        },
+        {
+          "src": 1,
+          "dest": 1
+        },
+        {
+          "src": 2,
+          "dest": 2
+        },
+        {
+          "src": 3,
+          "dest": 3
+        },
+        {
+          "src": 4,
+          "dest": 4
+        },
+        {
+          "src": 5,
+          "dest": 5
+        }
+      ]
+    },
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 0
+        },
+        {
+          "src": 1,
+          "dest": 1
+        },
+        {
+          "src": 2,
+          "dest": 3
+        },
+        {
+          "src": 3,
+          "dest": 4
+        },
+        {
+          "src": 4,
+          "dest": 5
+        },
+        {
+          "src": 5,
+          "dest": 6
+        }
+      ]
+    },
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 0
+        },
+        {
+          "src": 1,
+          "dest": 1
+        },
+        {
+          "src": 2,
+          "dest": 2
+        },
+        {
+          "src": 3,
+          "dest": 3
+        },
+        {
+          "src": 4,
+          "dest": 4
+        },
+        {
+          "src": 5,
+          "dest": 5
+        },
+        {
+          "src": 6,
+          "dest": 6
+        }
+      ]
+    },
+    {
+      "matches": [
+        {
+          "src": 0,
+          "dest": 0
+        },
+        {
+          "src": 1,
+          "dest": 1
+        },
+        {
+          "src": 2,
+          "dest": 2
+        },
+        {
+          "src": 3,
+          "dest": 3
+        },
+        {
+          "src": 4,
+          "dest": 4
+        },
+        {
+          "src": 5,
+          "dest": 5
+        },
+        {
+          "src": 6,
+          "dest": 6
+        }
+      ]
+    }
+  ]
+}
