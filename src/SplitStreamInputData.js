@@ -2,8 +2,8 @@ export default class SplitStreamInputData {
   constructor(options = {}) {
     this._opts = {
       forceFakeRoot: false,
-      order: "minimizeEdgeCrossings",
-      ...options, // overwrite default settings with user settings
+      // order: "minimizeEdgeCrossings",
+      ...options // overwrite default settings with user settings
     };
     // hold a tree (root node) for each timestep
     // hold a reference array which includes all nodes present in a single timestep
@@ -35,7 +35,7 @@ export default class SplitStreamInputData {
         dataPos,
         size,
         pos,
-        data,
+        data
       };
       this._numNodes++;
     } else; // console.log(`Warning AddNode: Node ${id} at timestep ${t} exists already.`);
@@ -192,7 +192,7 @@ export default class SplitStreamInputData {
   _createTimestep(t) {
     this._timesteps[t] = {
       references: {},
-      tree: null,
+      tree: null
     };
   }
 
