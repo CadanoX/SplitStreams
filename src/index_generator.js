@@ -319,17 +319,19 @@ document.addEventListener('DOMContentLoaded', function(event) {
         saveJson(generator.get(), 'data');
       },
       wrapperResize(...args) {
-        stream.resize();
-        treemap.resize();
-        secstream.resize();
+        if (stream && treemap && secstream) {
+          stream.resize();
+          treemap.resize();
+          secstream.resize();
+        }
       }
     }
   });
 
   treemap = new SplitStream(document.querySelector('#treemap'));
   treemap.proportion = 0;
-  treemap.separationXFunction = treemap.marginXFixed;
-  treemap.separationXValue = 1;
+  treemap.xSpacing = treemap.xSpacingFixed;
+  treemap.xMargin = 1;
   treemap.splitRoot = true;
 
   stream = new SplitStream(document.querySelector('#stream'));
@@ -337,8 +339,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   secstream = new SplitStream(document.querySelector('#secstream'));
   secstream.proportion = 1;
-  secstream.separationXFunction = secstream.marginXFixed;
-  secstream.separationXValue = 1;
+  secstream.xSpacing = secstream.xSpacingFixed;
+  secstream.xMargin = 1;
 
   document.querySelector('#generate').click();
 });
