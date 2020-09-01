@@ -493,10 +493,12 @@ export default class SplitStream {
       .attr(
         'fill-opacity',
         this._opts.transparentRoot ? d => (d.id == 'fakeRoot' ? 0 : 1) : 1
-      )
-      // remove empty streams (they do not include a single bezier curve)
-      .filter(d => d.path.indexOf('C') == -1)
-      .remove();
+      );
+    // remove empty streams (they do not include a single bezier curve)
+    // WARNING: This can lead to treemaps not being properly displayed
+    // (somehow only when yPadding is active)
+    // .filter(d => d.path.indexOf('C') == -1)
+    // .remove();
 
     this.showLabels(this._opts.showLabels);
     this.drawStroke(this._opts.drawStroke);
