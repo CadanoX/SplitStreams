@@ -6,10 +6,12 @@
 - Nested Tracking Graphs (Nested Streamgraphs)
 - Storylines, and
 - SplitStreams.
-  
-|||||
-|:-:|:-:|:-:|:-:|
-![Treemaps](demo/treemap.png)|![Streamgraph](demo/streamgraph.png)|![SplitStream](demo/streams.png)|![Organic Narrative Chart](demo/orcha.jpg)
+
+|||
+|:-:|:-:|
+![Treemaps](demo/treemap.png)|![Streamgraph](demo/streamgraph.png)
+![SplitStream](demo/streams.png)|![Organic Narrative Chart](demo/OrCha.jpg)
+
 ![Nested Streamgraph](demo/viscous.png)
 ![Storyline](demo/starwars.png)
 
