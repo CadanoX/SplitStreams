@@ -18,15 +18,15 @@ export default class SplitStream {
         //   subticks: 2,
         //   size: 30
         // },
-        {
-          position: 'bottom',
-          ticks: 5,
-          tickSize: 'full',
-          textPos: [0, 0],
-          textSize: '2em',
-          textAnchor: 'middle',
-          textBase: 'none' // dominant-baseline
-        }
+        // {
+        //   position: 'bottom',
+        //   ticks: 5,
+        //   tickSize: 'full',
+        //   textPos: [0, 0],
+        //   textSize: '2em',
+        //   textAnchor: 'middle',
+        //   textBase: 'none' // dominant-baseline
+        // }
       ],
       transparentRoot: false,
       margin: { top: 20, right: 20, bottom: 20, left: 20 },
