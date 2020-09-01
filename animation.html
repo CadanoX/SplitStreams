@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>SplitStream Animation Page</title>
+
+  <script type="text/javascript" src="bundle_animation.js"></script>
+
+  <style>
+    html,
+    body {
+      /* background-color: #222222; */
+      font-family: monospace;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    #app {
+      align-content: flex-start;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    #wrapper {
+      height: 100%;
+      flex: 1 1 auto;
+      overflow: hidden;
+    }
+
+    path.stream {
+      /* stroke: black; */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="wrapper">
+    </div>
+  </div>
+</body>
+
+</html>

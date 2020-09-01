@@ -9,6 +9,7 @@ module.exports = {
     bundle: './src/index.js',
     bundle_testPage: './src/index_testPage.js',
     bundle_generator: './src/index_generator.js',
+    bundle_animation: './src/index_animation.js',
     // transformData: './transformData.js'
   },
   devServer: {
