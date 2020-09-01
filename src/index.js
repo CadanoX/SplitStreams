@@ -1,14 +1,14 @@
-import 'vue-resize/dist/vue-resize.css';
-import '../css/style.css';
+import "vue-resize/dist/vue-resize.css";
+import "../css/style.css";
 
-import Vue from 'vue';
-import VueResize from 'vue-resize';
-import * as d3 from 'd3';
-import Papa from 'papaparse';
+import Vue from "vue";
+import VueResize from "vue-resize";
+import * as d3 from "d3";
+import Papa from "papaparse";
 
-import { SplitStream, SplitStreamFilter, TransformData } from './lib';
-import LoaderOntology from './LoaderOntology';
-import LoaderMeSH from './LoaderMeSH';
+import { SplitStream, SplitStreamFilter, TransformData } from "./lib";
+import LoaderOntology from "./LoaderOntology";
+import LoaderMeSH from "./LoaderMeSH";
 
 import {
   loadJSON,
@@ -18,7 +18,7 @@ import {
   saveJson,
   addLoadingSpinner,
   removeLoadingSpinner
-} from './functions';
+} from "./functions";
 
 Vue.use(VueResize);
 
@@ -26,7 +26,7 @@ var stream;
 var wrapper;
 
 var datasets = {};
-const datasetList = require('../_datasets.json');
+const datasetList = require("../_datasets.json");
 
 var mesh;
 var app;
@@ -34,23 +34,23 @@ var app;
 const meshList = [
   // { tree: "mtrees1997.bin", changes: 'newmnchg1997.txt' },
   // { tree: "mtrees1998.bin", changes: 'newmnchg1998.txt' },
-  { tree: 'mtrees2001.bin', changes: 'newmnchg2001.txt' },
-  { tree: 'mtrees2002.bin', changes: 'newmnchg2002.txt' },
-  { tree: 'mtrees2003.bin', changes: 'newmnchg2003.txt' },
-  { tree: 'mtrees2004.bin', changes: 'newmnchg2004.txt' },
-  { tree: 'mtrees2005.bin', changes: 'newmnchg2005.txt' },
-  { tree: 'mtrees2006.bin', changes: 'newmnchg2006.txt' },
-  { tree: 'mtrees2007.bin', changes: 'newmnchg2007.txt' },
-  { tree: 'mtrees2008.bin', changes: 'newmnchg2008.txt' },
-  { tree: 'mtrees2009.bin', changes: 'newmnchg2009.txt' },
-  { tree: 'mtrees2010.bin', changes: 'newmnchg2010.txt' },
-  { tree: 'mtrees2011.bin', changes: 'newmnchg2011.txt' },
-  { tree: 'mtrees2012.bin', changes: 'newmnchg2012.txt' },
-  { tree: 'mtrees2013.bin', changes: 'newmnchg2013.txt' },
-  { tree: 'mtrees2014.bin', changes: 'newmnchg2014.txt' },
-  { tree: 'mtrees2015.bin', changes: 'newmnchg2015.txt' },
-  { tree: 'mtrees2016.bin', changes: 'newmnchg2016.txt' },
-  { tree: 'mtrees2017.bin', changes: 'newmnchg2017.txt' }
+  { tree: "mtrees2001.bin", changes: "newmnchg2001.txt" },
+  { tree: "mtrees2002.bin", changes: "newmnchg2002.txt" },
+  { tree: "mtrees2003.bin", changes: "newmnchg2003.txt" },
+  { tree: "mtrees2004.bin", changes: "newmnchg2004.txt" },
+  { tree: "mtrees2005.bin", changes: "newmnchg2005.txt" },
+  { tree: "mtrees2006.bin", changes: "newmnchg2006.txt" },
+  { tree: "mtrees2007.bin", changes: "newmnchg2007.txt" },
+  { tree: "mtrees2008.bin", changes: "newmnchg2008.txt" },
+  { tree: "mtrees2009.bin", changes: "newmnchg2009.txt" },
+  { tree: "mtrees2010.bin", changes: "newmnchg2010.txt" },
+  { tree: "mtrees2011.bin", changes: "newmnchg2011.txt" },
+  { tree: "mtrees2012.bin", changes: "newmnchg2012.txt" },
+  { tree: "mtrees2013.bin", changes: "newmnchg2013.txt" },
+  { tree: "mtrees2014.bin", changes: "newmnchg2014.txt" },
+  { tree: "mtrees2015.bin", changes: "newmnchg2015.txt" },
+  { tree: "mtrees2016.bin", changes: "newmnchg2016.txt" },
+  { tree: "mtrees2017.bin", changes: "newmnchg2017.txt" }
   // { tree: "mtrees2018.bin", changes: 'newmnchg2018.txt' }, // no changes defined
   // { tree: "mtrees2019.bin", changes: 'newmnchg2019.txt' }
 ];
@@ -60,7 +60,7 @@ function loadMeSH(branch, subBranch) {
   mesh.transformToTree(branchId);
   mesh.applyChanges();
   mesh.done();
-  datasets['MeSH'] = new SplitStreamFilter(mesh.data);
+  datasets["MeSH"] = new SplitStreamFilter(mesh.data);
 }
 
 // test to measure the mesh dataset
@@ -93,17 +93,17 @@ async function loadDataset(name) {
   let data;
   let response;
 
-  if (entry.format == 'ontology') {
+  if (entry.format == "ontology") {
     let ont = new LoaderOntology();
     ont.loadOntology(examples.ontologies.ICD9CM_2013AB);
     ont.loadOntology(examples.ontologies.ICD9CM_2014AB);
     ont.transformOntologiesToTree();
     data = ont.data;
-  } else if (entry.format == 'MeSH') {
+  } else if (entry.format == "MeSH") {
     // load data
     mesh = new LoaderMeSH();
     for (let meshEntry of meshList) {
-      await mesh.loadFile('./data/MeSH/trees/' + meshEntry.tree);
+      await mesh.loadFile("./data/MeSH/trees/" + meshEntry.tree);
     }
     // load changes
     // each file defines changes from the previous to the current timestep
@@ -111,7 +111,7 @@ async function loadDataset(name) {
     for (let i = 1; i < meshList.length; i++) {
       // ignore first timestep
       await mesh.loadFileChanges(
-        './data/MeSH/changes/' + meshList[i].changes,
+        "./data/MeSH/changes/" + meshList[i].changes,
         i
       );
     }
@@ -125,34 +125,34 @@ async function loadDataset(name) {
     }
 
     try {
-      if (entry.filetype == 'json') data = await response.json();
-      else if (entry.filetype == 'csv')
+      if (entry.filetype == "json") data = await response.json();
+      else if (entry.filetype == "csv")
         data = Papa.parse(await response.text(), { header: true }).data;
-      else if (entry.filetype == 'data')
+      else if (entry.filetype == "data")
         data = Papa.parse(await response.text()).data;
-      else throw Exception('File format not supported.');
+      else throw Exception("File format not supported.");
     } catch (e) {
       alert(e);
       return false;
     }
   }
 
-  if (entry.format == 'storyline')
+  if (entry.format == "storyline")
     datasets[name] = TransformData[entry.format](data);
   else
     datasets[name] = new SplitStreamFilter(TransformData[entry.format](data));
   return true;
 }
 
-document.addEventListener('DOMContentLoaded', async function(event) {
+document.addEventListener("DOMContentLoaded", async function(event) {
   app = new Vue({
-    el: '#app',
+    el: "#app",
     data: {
-      split: 'at',
+      split: "at",
       randomSplits: [],
-      xSpacing: 'Fixed',
+      xSpacing: "Fixed",
       xMargin: 0.5,
-      ySpacing: 'Fixed',
+      ySpacing: "Fixed",
       yMargin: 0,
       yPadding: 0.75,
       sizeThreshold: 0,
@@ -169,104 +169,104 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       unifyPosition: false,
       drawStroke: false,
       shapeRendering: {
-        value: 'geometricPrecision',
+        value: "geometricPrecision",
         options: [
-          { value: 'geometricPrecision', text: 'geometricPrecision' },
-          { value: 'optimizeSpeed', text: 'optimizeSpeed' },
-          { value: 'crispEdges', text: 'crispEdges' }
+          { value: "geometricPrecision", text: "geometricPrecision" },
+          { value: "optimizeSpeed", text: "optimizeSpeed" },
+          { value: "crispEdges", text: "crispEdges" }
         ]
       },
       showLabels: false,
       splitRoot: false,
       mirror: false,
       startEndEncoding: {
-        value: 'plug',
+        value: "plug",
         x: 0.85,
         y: 0,
         options: [
-          { value: 'circle', text: 'Circle' },
-          { value: 'plug', text: 'Plug' },
-          { value: 'default', text: 'Default' }
+          { value: "circle", text: "Circle" },
+          { value: "plug", text: "Plug" },
+          { value: "default", text: "Default" }
         ]
       },
       dataset: {
-        value: 'sugiyamaTest', //'viscousMin',
+        value: "sugiyamaTest", //'viscousMin',
         options: [] // options are dynamically added from ./_datasets.json
       },
       offset: {
-        value: 'silhouette',
+        value: "silhouette",
         options: [
-          { value: 'zero', text: 'Zero' },
-          { value: 'expand', text: 'Expand' },
-          { value: 'silhouette', text: 'Silhouette' }
+          { value: "zero", text: "Zero" },
+          { value: "expand", text: "Expand" },
+          { value: "silhouette", text: "Silhouette" }
           // wiggle
         ]
       },
       color: {
-        value: 'interpolateBlues',
+        value: "interpolateBlues",
         options: [
-          { value: 'random', text: 'random' },
-          { value: 'white', text: 'white' },
-          { value: 'schemeCategory10', text: 'schemeCategory10' },
-          { value: 'schemeAccent', text: 'schemeAccent' },
-          { value: 'schemeDark2', text: 'schemeDark2' },
-          { value: 'schemePaired', text: 'schemePaired' },
-          { value: 'schemePastel1', text: 'schemePastel1' },
-          { value: 'schemePastel2', text: 'schemePastel2' },
-          { value: 'schemeSet1', text: 'schemeSet1' },
-          { value: 'schemeSet2', text: 'schemeSet2' },
-          { value: 'schemeSet3', text: 'schemeSet3' },
-          { value: 'interpolateBlues', text: 'interpolateBlues' },
-          { value: 'interpolateGreens', text: 'interpolateGreens' },
-          { value: 'interpolateGreys', text: 'interpolateGreys' },
-          { value: 'interpolateOranges', text: 'interpolateOranges' },
-          { value: 'interpolatePurples', text: 'interpolatePurples' },
-          { value: 'interpolateReds', text: 'interpolateReds' },
-          { value: 'interpolateViridis', text: 'interpolateViridis' },
-          { value: 'interpolateInferno', text: 'interpolateInferno' },
-          { value: 'interpolateMagma', text: 'interpolateMagma' },
-          { value: 'interpolatePlasma', text: 'interpolatePlasma' },
-          { value: 'interpolateWarm', text: 'interpolateWarm' },
-          { value: 'interpolateCool', text: 'interpolateCool' },
+          { value: "random", text: "random" },
+          { value: "white", text: "white" },
+          { value: "schemeCategory10", text: "schemeCategory10" },
+          { value: "schemeAccent", text: "schemeAccent" },
+          { value: "schemeDark2", text: "schemeDark2" },
+          { value: "schemePaired", text: "schemePaired" },
+          { value: "schemePastel1", text: "schemePastel1" },
+          { value: "schemePastel2", text: "schemePastel2" },
+          { value: "schemeSet1", text: "schemeSet1" },
+          { value: "schemeSet2", text: "schemeSet2" },
+          { value: "schemeSet3", text: "schemeSet3" },
+          { value: "interpolateBlues", text: "interpolateBlues" },
+          { value: "interpolateGreens", text: "interpolateGreens" },
+          { value: "interpolateGreys", text: "interpolateGreys" },
+          { value: "interpolateOranges", text: "interpolateOranges" },
+          { value: "interpolatePurples", text: "interpolatePurples" },
+          { value: "interpolateReds", text: "interpolateReds" },
+          { value: "interpolateViridis", text: "interpolateViridis" },
+          { value: "interpolateInferno", text: "interpolateInferno" },
+          { value: "interpolateMagma", text: "interpolateMagma" },
+          { value: "interpolatePlasma", text: "interpolatePlasma" },
+          { value: "interpolateWarm", text: "interpolateWarm" },
+          { value: "interpolateCool", text: "interpolateCool" },
           {
-            value: 'interpolateCubehelixDefault',
-            text: 'interpolateCubehelixDefault'
+            value: "interpolateCubehelixDefault",
+            text: "interpolateCubehelixDefault"
           },
-          { value: 'interpolateBuGn', text: 'interpolateBuGn' },
-          { value: 'interpolateBuPu', text: 'interpolateBuPu' },
-          { value: 'interpolateGnBu', text: 'interpolateGnBu' },
-          { value: 'interpolateOrRd', text: 'interpolateOrRd' },
-          { value: 'interpolatePuBuGn', text: 'interpolatePuBuGn' },
-          { value: 'interpolatePuBu', text: 'interpolatePuBu' },
-          { value: 'interpolatePuRd', text: 'interpolatePuRd' },
-          { value: 'interpolateRdPu', text: 'interpolateRdPu' },
-          { value: 'interpolateYlGnBu', text: 'interpolateYlGnBu' },
-          { value: 'interpolateYlGn', text: 'interpolateYlGn' },
-          { value: 'interpolateYlOrBr', text: 'interpolateYlOrBr' },
-          { value: 'interpolateYlOrRd', text: 'interpolateYlOrRd' }
+          { value: "interpolateBuGn", text: "interpolateBuGn" },
+          { value: "interpolateBuPu", text: "interpolateBuPu" },
+          { value: "interpolateGnBu", text: "interpolateGnBu" },
+          { value: "interpolateOrRd", text: "interpolateOrRd" },
+          { value: "interpolatePuBuGn", text: "interpolatePuBuGn" },
+          { value: "interpolatePuBu", text: "interpolatePuBu" },
+          { value: "interpolatePuRd", text: "interpolatePuRd" },
+          { value: "interpolateRdPu", text: "interpolateRdPu" },
+          { value: "interpolateYlGnBu", text: "interpolateYlGnBu" },
+          { value: "interpolateYlGn", text: "interpolateYlGn" },
+          { value: "interpolateYlOrBr", text: "interpolateYlOrBr" },
+          { value: "interpolateYlOrRd", text: "interpolateYlOrRd" }
         ]
       },
       filters: [
-        { type: 'double-inner-shadow', dx: 0, dy: 0, stdDeviation: 0.2 },
-        { type: 'drop-shadow', dx: 0, dy: 0, stdDeviation: 0.6 }
+        { type: "double-inner-shadow", dx: 0, dy: 0, stdDeviation: 0.2 },
+        { type: "drop-shadow", dx: 0, dy: 0, stdDeviation: 0.6 }
       ],
       filterMode: {
-        value: 'fast',
+        value: "fast",
         options: [
-          { value: 'fast', text: 'fast' },
-          { value: 'accurate', text: 'accurate' }
+          { value: "fast", text: "fast" },
+          { value: "accurate", text: "accurate" }
         ]
       }
     },
     computed: {
       disableNormSizeButton() {
-        return this.dataset.value == 'viscousMin';
+        return this.dataset.value == "viscousMin";
       },
       disableNormPosButton() {
         return (
           this.unifySize ||
-          (this.dataset.value != 'gumtree' &&
-            this.dataset.value != 'gumtreeMin')
+          (this.dataset.value != "gumtree" &&
+            this.dataset.value != "gumtreeMin")
         );
       }
     },
@@ -277,13 +277,13 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         this.randomSplits = stream.splits;
       },
       applySplits: function(option) {
-        if (option == 'at') {
+        if (option == "at") {
           stream.removeSplits();
           stream.addSplitsAtTimepoints();
-        } else if (option == 'between') {
+        } else if (option == "between") {
           stream.removeSplits();
           stream.addSplitsBetweenTimepoints();
-        } else if (option == 'random') {
+        } else if (option == "random") {
           if (this.randomSplits.length == 0) this.randomizeSplits();
           else {
             stream.removeSplits();
@@ -295,11 +295,11 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         if (stream) stream.resize();
       },
       download: function() {
-        saveSvg(document.querySelector('svg'), 'secstream');
-        saveJson(generator.get(), 'data');
+        saveSvg(document.querySelector("svg"), "secstream");
+        saveJson(generator.get(), "data");
       },
       downloadPng: function() {
-        savePng(document.querySelector('svg'), 'secstream');
+        savePng(document.querySelector("svg"), "secstream");
       },
       render() {
         let data;
@@ -313,9 +313,8 @@ document.addEventListener('DOMContentLoaded', async function(event) {
 
         stream.automaticUpdate = false;
         stream.data(data);
-        this.applySplits(this.split);
         stream.automaticUpdate = true;
-        stream.update();
+        this.applySplits(this.split);
       }
     },
     watch: {
@@ -326,12 +325,12 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         stream.resize(this.settings.width, this.settings.height);
       },
       ySpacing() {
-        if (this.ySpacing == 'Fixed') stream.ySpacing = stream.ySpacingFixed;
-        else if (this.ySpacing == 'Percentage')
+        if (this.ySpacing == "Fixed") stream.ySpacing = stream.ySpacingFixed;
+        else if (this.ySpacing == "Percentage")
           stream.ySpacing = stream.ySpacingPercentage;
-        else if (this.ySpacing == 'Hierarchical')
+        else if (this.ySpacing == "Hierarchical")
           stream.ySpacing = stream.ySpacingHierarchical;
-        else if (this.ySpacing == 'HierarchicalReverse')
+        else if (this.ySpacing == "HierarchicalReverse")
           stream.ySpacing = stream.ySpacingHierarchicalReverse;
       },
       yMargin() {
@@ -341,10 +340,10 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         stream.yPadding = this.yPadding;
       },
       xSpacing() {
-        if (this.xSpacing == 'Fixed') stream.xSpacing = stream.xSpacingFixed;
-        else if (this.xSpacing == 'Hierarchical')
+        if (this.xSpacing == "Fixed") stream.xSpacing = stream.xSpacingFixed;
+        else if (this.xSpacing == "Hierarchical")
           stream.xSpacing = stream.xSpacingHierarchical;
-        else if (this.xSpacing == 'HierarchicalReverse')
+        else if (this.xSpacing == "HierarchicalReverse")
           stream.xSpacing = stream.xSpacingHierarchicalReverse;
       },
       xMargin() {
@@ -389,13 +388,10 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         stream.drawStroke(this.drawStroke);
       },
       showLabels() {
-        stream.showLabels(this.showLabels);
+        stream.showLabels = this.showLabels;
       },
       mirror() {
         stream.mirror = this.mirror;
-
-        // checkNumChangesPerBranch();
-        // checkTimings();
       },
       splitRoot() {
         stream.splitRoot = this.splitRoot;
@@ -422,9 +418,9 @@ document.addEventListener('DOMContentLoaded', async function(event) {
       },
       dataset: {
         handler: function(dataset) {
-          loadDataset(dataset.value).then(loaded => {
+          loadDataset(dataset.value).then((loaded) => {
             if (loaded) {
-              if (dataset.value == 'MeSH') {
+              if (dataset.value == "MeSH") {
                 loadMeSH(this.branchSelected);
                 this.branchMax = mesh.getNumBranches() - 1;
                 this.branchSubMax =
@@ -453,112 +449,112 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         handler: function(color) {
           stream.colorRandom = false;
           switch (color.value) {
-            case 'random':
+            case "random":
               stream.colorRandom = true;
               break;
-            case 'white':
-              stream.color = d3.scaleQuantize().range(['white', 'white']);
+            case "white":
+              stream.color = d3.scaleQuantize().range(["white", "white"]);
               break;
-            case 'schemeCategory10':
+            case "schemeCategory10":
               stream.color = d3.scaleOrdinal(d3.schemeCategory10);
               break;
-            case 'schemeAccent':
+            case "schemeAccent":
               stream.color = d3.scaleOrdinal(d3.schemeAccent);
               break;
-            case 'schemeDark2':
+            case "schemeDark2":
               stream.color = d3.scaleOrdinal(d3.schemeDark2);
               break;
-            case 'schemePaired':
+            case "schemePaired":
               stream.color = d3.scaleOrdinal(d3.schemePaired);
               break;
-            case 'schemePastel1':
+            case "schemePastel1":
               stream.color = d3.scaleOrdinal(d3.schemePastel1);
               break;
-            case 'schemePastel2':
+            case "schemePastel2":
               stream.color = d3.scaleOrdinal(d3.schemePastel2);
               break;
-            case 'schemeSet1':
+            case "schemeSet1":
               stream.color = d3.scaleOrdinal(d3.schemeSet1);
               break;
-            case 'schemeSet2':
+            case "schemeSet2":
               stream.color = d3.scaleOrdinal(d3.schemeSet2);
               break;
-            case 'schemeSet3':
+            case "schemeSet3":
               stream.color = d3.scaleOrdinal(d3.schemeSet3);
               break;
-            case 'interpolateBlues':
+            case "interpolateBlues":
               stream.color = d3.scaleSequential(d3.interpolateBlues);
               break;
-            case 'interpolateGreens':
+            case "interpolateGreens":
               stream.color = d3.scaleSequential(d3.interpolateGreens);
               break;
-            case 'interpolateGreys':
+            case "interpolateGreys":
               stream.color = d3.scaleSequential(d3.interpolateGreys);
               break;
-            case 'interpolateOranges':
+            case "interpolateOranges":
               stream.color = d3.scaleSequential(d3.interpolateOranges);
               break;
-            case 'interpolatePurples':
+            case "interpolatePurples":
               stream.color = d3.scaleSequential(d3.interpolatePurples);
               break;
-            case 'interpolateReds':
+            case "interpolateReds":
               stream.color = d3.scaleSequential(d3.interpolateReds);
               break;
-            case 'interpolateViridis':
+            case "interpolateViridis":
               stream.color = d3.scaleSequential(d3.interpolateViridis);
               break;
-            case 'interpolateInferno':
+            case "interpolateInferno":
               stream.color = d3.scaleSequential(d3.interpolateInferno);
               break;
-            case 'interpolateMagma':
+            case "interpolateMagma":
               stream.color = d3.scaleSequential(d3.interpolateMagma);
               break;
-            case 'interpolatePlasma':
+            case "interpolatePlasma":
               stream.color = d3.scaleSequential(d3.interpolatePlasma);
               break;
-            case 'interpolateWarm':
+            case "interpolateWarm":
               stream.color = d3.scaleSequential(d3.interpolateWarm);
               break;
-            case 'interpolateCool':
+            case "interpolateCool":
               stream.color = d3.scaleSequential(d3.interpolateCool);
               break;
-            case 'interpolateCubehelixDefault':
+            case "interpolateCubehelixDefault":
               stream.color = d3.scaleSequential(d3.interpolateCubehelixDefault);
               break;
-            case 'interpolateBuGn':
+            case "interpolateBuGn":
               stream.color = d3.scaleSequential(d3.interpolateBuGn);
               break;
-            case 'interpolateBuPu':
+            case "interpolateBuPu":
               stream.color = d3.scaleSequential(d3.interpolateBuPu);
               break;
-            case 'interpolateGnBu':
+            case "interpolateGnBu":
               stream.color = d3.scaleSequential(d3.interpolateGnBu);
               break;
-            case 'interpolateOrRd':
+            case "interpolateOrRd":
               stream.color = d3.scaleSequential(d3.interpolateOrRd);
               break;
-            case 'interpolatePuBuGn':
+            case "interpolatePuBuGn":
               stream.color = d3.scaleSequential(d3.interpolatePuBuGn);
               break;
-            case 'interpolatePuBu':
+            case "interpolatePuBu":
               stream.color = d3.scaleSequential(d3.interpolatePuBu);
               break;
-            case 'interpolatePuRd':
+            case "interpolatePuRd":
               stream.color = d3.scaleSequential(d3.interpolatePuRd);
               break;
-            case 'interpolateRdPu':
+            case "interpolateRdPu":
               stream.color = d3.scaleSequential(d3.interpolateRdPu);
               break;
-            case 'interpolateYlGnBu':
+            case "interpolateYlGnBu":
               stream.color = d3.scaleSequential(d3.interpolateYlGnBu);
               break;
-            case 'interpolateYlGn':
+            case "interpolateYlGn":
               stream.color = d3.scaleSequential(d3.interpolateYlGn);
               break;
-            case 'interpolateYlOrBr':
+            case "interpolateYlOrBr":
               stream.color = d3.scaleSequential(d3.interpolateYlOrBr);
               break;
-            case 'interpolateYlOrRd':
+            case "interpolateYlOrRd":
               stream.color = d3.scaleSequential(d3.interpolateYlOrRd);
               break;
             default:
@@ -573,10 +569,10 @@ document.addEventListener('DOMContentLoaded', async function(event) {
     }
   });
 
-  wrapper = document.querySelector('#wrapper');
+  wrapper = document.querySelector("#wrapper");
 
   // Add all datasets to the dataset selector
-  let datasetListArray = Object.keys(datasetList).map(k => datasetList[k]);
+  let datasetListArray = Object.keys(datasetList).map((k) => datasetList[k]);
   app.dataset.options = datasetListArray;
 
   await loadDataset(app.dataset.value);
@@ -590,13 +586,13 @@ document.addEventListener('DOMContentLoaded', async function(event) {
   stream.addSplitsAtTimepoints();
   stream.filters(app.filters);
 
-  let tooltip = document.querySelector('.tooltip');
+  let tooltip = document.querySelector(".tooltip");
   stream.onMouseOver = function(d) {
     tooltip.innerText = JSON.stringify(d.data);
-    this.classList.add('active');
+    this.classList.add("active");
   };
   stream.onMouseOut = function(d) {
-    tooltip.innerText = '';
-    this.classList.remove('active');
+    tooltip.innerText = "";
+    this.classList.remove("active");
   };
 });

@@ -40,6 +40,13 @@ export default class SplitStreamData {
   set yScale(callback) {
     this._yScale = callback;
   }
+  get xScale() {
+    return this._xScale;
+  }
+  get yScale() {
+    return this._yScale;
+  }
+
   set startEndEncoding(encoding) {
     this._startEnd.encoding = encoding;
   }
@@ -569,13 +576,20 @@ export default class SplitStreamData {
       d.horizontal(t3);
     };
 
-    let traverse = node => {
+    let traverse = (node, origin) => {
       if (node.x > lastTimepoint) lastTimepoint = node.x;
 
       if (node.depth > deepestDepth) deepestDepth = node.depth;
       if (node.size > largestSize) largestSize = node.size;
 
-      if (!!node.next) {
+      // check if the node is reached from its true predecessor
+      let isSameStream = true;
+      if (node.prev) {
+        let trueOrigin = node.prev.find(d => d.id == node.id);
+        isSameStream = trueOrigin === undefined || trueOrigin === origin;
+      }
+
+      if (!!node.next && isSameStream) {
         let dt = node.next[0].x - node.x;
         let t0 = x(node.x);
         let t1 = x(node.x + 0.5 * (1 - prop) * dt);
@@ -590,11 +604,11 @@ export default class SplitStreamData {
           // don't draw anything for streams with zero height
           if (y1 - y0 <= 0 && dest.y1 - dest.y0 <= 0) {
             d.move(t3, y(dest.y0));
-            traverse(dest);
+            traverse(dest, node);
             d.move(t0, y(y0));
           } else {
             drawLine(t1, t2, t3, y0, dest.y0); // bottom line (forwards)
-            traverse(dest);
+            traverse(dest, node);
             drawLine(t2, t1, t0, dest.y1, y1); // top line (backwards)
           }
           // if dest is one of the nodes where the split occured, we need to draw a line back to our starting point
@@ -665,7 +679,8 @@ export default class SplitStreamData {
 
       // find position to put a text label
       let textPos;
-      if (Math.abs(y(stream.y1) - y(stream.y0)) < 25) textPos = -1;
+      let streamHeight = Math.abs(y(stream.y1) - y(stream.y0));
+      if (streamHeight < 25) textPos = -1;
       else {
         if (y(stream.y1) > y(stream.y0)) textPos = y(stream.y0) + 15;
         else textPos = y(stream.y1) + 15;
@@ -679,8 +694,12 @@ export default class SplitStreamData {
         id: stream.streamId,
         data: stream.data,
         textPos: {
-          x: x(stream.x - 0.5 * (1 - this._proportion) + 0.5 * stream.marginX),
-          y: textPos
+          x: x(stream.x - 0.5 * (1 - this._proportion + stream.marginX)),
+          y: textPos,
+          offset:
+            (1 - this._proportion + 0.5 * stream.marginX) * (x(1) - x(0)) +
+            streamHeight,
+          height: streamHeight
         }
       };
 

@@ -11,7 +11,23 @@ import '../css/SplitStream.css';
 export default class SplitStream {
   constructor(container, opts = {}) {
     this._opts = {
-      animDuration: 1000,
+      axes: [
+        // {
+        //   position: 'left',
+        //   ticks: 10,
+        //   subticks: 2,
+        //   size: 30
+        // },
+        {
+          position: 'bottom',
+          ticks: 5,
+          tickSize: 'full',
+          textPos: [0, 0],
+          textSize: '2em',
+          textAnchor: 'middle',
+          textBase: 'none' // dominant-baseline
+        }
+      ],
       transparentRoot: false,
       margin: { top: 20, right: 20, bottom: 20, left: 20 },
       height: container.clientHeight,
@@ -40,6 +56,8 @@ export default class SplitStream {
     this._name = container.id;
     this._container = container;
     this._data;
+    this._zoomContainer;
+    this._axesContainer;
     this._pathContainer;
     this._textContainer;
     this._svg;
@@ -140,6 +158,10 @@ export default class SplitStream {
     this._applyFilters();
   }
 
+  set showLabels(value) {
+    this._opts.showLabels = value;
+    this.render();
+  }
   set color(colorFunction) {
     this._color = colorFunction;
     this.render();
@@ -216,8 +238,7 @@ export default class SplitStream {
       .attr('width', this._container.clientWidth)
       .call(
         d3.zoom().on('zoom', () => {
-          this._pathContainer.attr('transform', d3.event.transform);
-          this._textContainer.attr('transform', d3.event.transform);
+          this._zoomContainer.attr('transform', d3.event.transform);
         })
       );
     //.on("contextmenu", () => d3.event.preventDefault());
@@ -226,8 +247,19 @@ export default class SplitStream {
     //.attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
     this._svgFilters = this._svg.append('defs');
-    this._pathContainer = this._svg.append('g').classed('pathContainer', true);
-    this._textContainer = this._svg.append('g').classed('textContainer', true);
+    this._zoomContainer = this._svg.append('g').classed('zoom', true);
+    this._axesContainer = this._zoomContainer
+      .append('g')
+      .classed('axisContainer', true);
+    this._pathContainer = this._zoomContainer
+      .append('g')
+      .classed('pathContainer', true);
+    this._textContainer = this._zoomContainer
+      .append('g')
+      .classed('textContainer', true);
+    this._tooltipContainer = this._zoomContainer
+      .append('g')
+      .classed('tooltipContainer', true);
   }
 
   _applyOrdering() {
@@ -239,7 +271,9 @@ export default class SplitStream {
   _findStreamId(node) {
     if (!!node.prev) {
       // use id of prev node
-      node.streamId = node.prev[0].streamId;
+      let idx = node.prev.findIndex(prev => prev.id == node.id);
+      if (idx == -1) idx = 0;
+      node.streamId = node.prev[idx].streamId;
       return false;
     } else {
       // new node
@@ -315,7 +349,9 @@ export default class SplitStream {
       if (
         this._opts.unifySize ||
         this._opts.unifyPosition ||
-        !node.dataPos
+        Number.isNaN(node.dataPos) ||
+        node.dataPos == null
+        // !node.dataPos
         // (!!node.parent && node.parent.id == 'fakeRoot')
       )
         node.pos = pos;
@@ -364,7 +400,7 @@ export default class SplitStream {
   }
 
   _calculatePositions() {
-    let { height, width, margin, minSizeThreshold, offset } = this._opts;
+    let { minSizeThreshold, offset } = this._opts;
 
     let setOffset = root => {
       if (offset == 'zero') {
@@ -419,6 +455,11 @@ export default class SplitStream {
       traverse(time[i].tree);
     }
 
+    this._setScales();
+  }
+
+  _setScales() {
+    let { height, width, margin, mirror, zoomTimeFactor } = this._opts;
     // treemaps require 0.5 space on the time axis to the left and right of each timestep
     this._streamData.xScale = d3
       .scaleLinear()
@@ -427,15 +468,17 @@ export default class SplitStream {
       //   this._minTime - 0.5 * (1 - this._opts.proportion),
       //   this._maxTime + 0.5 * (1 - this._opts.proportion)
       // ])
-      .range([margin.left, width * this._opts.zoomTimeFactor - margin.right]);
+      .range([margin.left, width * zoomTimeFactor - margin.right]);
 
-    let domain = this._opts.mirror ? [1, 0] : [0, 1];
+    let domain = mirror ? [1, 0] : [0, 1];
     this._streamData.yScale = d3
       .scaleLinear()
       .domain(domain)
       .nice()
       .range([height - margin.bottom, margin.top]);
     //.range(margin.top, height - margin.bottom);
+
+    this._drawAxes();
   }
 
   setRootNodeById(Id) {
@@ -453,35 +496,51 @@ export default class SplitStream {
       .key(d => d.deepestDepth)
       .entries(this._streamData.streams);
 
+    // add depth groups
     let depthLayers = this._pathContainer
       .selectAll('g.depthLayer > g.clipLayer')
-      .data(streamsByDepth, d => this._name + this._datasetsLoaded + d.key)
-      .join(enter =>
-        enter
-          .append('g')
-          .classed('depthLayer', true)
-          .each(function(d) {
-            this.classList.add('depth-' + d.key);
-          })
-          .append('g')
-          .classed('clipLayer', true)
+      .data(streamsByDepth, d => d.key)
+      .join(
+        enter =>
+          enter
+            .append('g')
+            .attr('class', d => 'depthLayer depth-' + d.key)
+            .append('g')
+            .classed('clipLayer', true),
+        update => update,
+        exit => exit.remove()
       );
 
-    // .attr('clip-path', d => 'url(#clip' + d.key + 'wrapper)');
+    let streamLayers = depthLayers
+      .selectAll('g.streamLayer')
+      .data(d => d.values, d => d.id)
+      .join(
+        enter => enter.append('g').classed('streamLayer', true),
+        update => update,
+        exit => exit.remove()
+      );
 
-    depthLayers
+    // add streams
+    let self = this;
+    streamLayers
       .selectAll('path.stream')
-      .data(d => d.values, d => this._name + this._datasetsLoaded + d.id)
-      .join(enter =>
-        enter
-          .append('path')
-          .classed('stream', true)
-          .on('mouseover', this._onMouseOver)
-          .on('mouseout', this._onMouseOut)
-          .attr('clip-path', d => 'url(#clip' + d.id + this._name + ')')
-          .attr('id', d => 'stream' + d.id + this._name)
-          //.attr('stroke-width', 3)
-          .attr('paint-order', 'stroke')
+      .data(d => [d])
+      .join(
+        function(enter) {
+          return (
+            enter
+              .append('path')
+              .classed('stream', true)
+              .on('mouseover', self._onMouseOver)
+              .on('mouseout', self._onMouseOut)
+              .attr('clip-path', d => 'url(#clip' + d.id + self._name + ')')
+              .attr('id', d => 'stream' + d.id + self._name)
+              //.attr('stroke-width', 3)
+              .attr('paint-order', 'stroke')
+          );
+        },
+        update => update,
+        exit => exit.remove()
       )
       .attr('d', d => d.path)
       .attr('shape-rendering', this._opts.shapeRendering)
@@ -500,45 +559,111 @@ export default class SplitStream {
     // .filter(d => d.path.indexOf('C') == -1)
     // .remove();
 
-    this.showLabels(this._opts.showLabels);
     this.drawStroke(this._opts.drawStroke);
 
-    let splitData = this._svgFilters
+    // add labels
+    if (!this._opts.showLabels) streamLayers.selectAll('text').remove();
+    else {
+      let mirror = this._opts.mirror;
+      streamLayers
+        .selectAll('text')
+        .data(d => (d.data && d.data.labels ? d.data.labels : []))
+        .join('text')
+        .each(function(d, i) {
+          let stream = this.parentElement.firstElementChild;
+          let numLabels = stream.__data__.data.labels.length;
+          let fontSize = stream.__data__.data.fontSize;
+          let offset = stream.__data__.textPos.offset;
+          // calculate offset percentage to position in top center
+          let l = stream.getTotalLength();
+          let h = stream.__data__.textPos.height;
+          let centerOffset = (h / 2 + l / 4) / l;
+          centerOffset = Math.floor(centerOffset * 100);
+
+          let space = stream.__data__.textPos.height;
+          let y = (space / numLabels) * i;
+          y = fontSize * i;
+          if (!mirror) y *= -1;
+          d3.select(this)
+            .html(null)
+            .attr('transform', `translate(0,${y})`)
+            .attr('dominant-baseline', mirror ? 'hanging' : 'baseline')
+            .attr('font-size', fontSize)
+            .append('textPath')
+            .attr('href', '#' + stream.id)
+            .text(d => d)
+            // .attr('startOffset', offset);
+            .attr('startOffset', centerOffset + '%')
+            .attr('text-anchor', 'middle');
+        });
+    }
+
+    // add splits
+    this._svgFilters
       .selectAll('clipPath')
       .data(
         this._streamData.clipPaths,
         d => this._name + this._datasetsLoaded + d.id
-      );
-
-    splitData
-      .enter()
-      .append('clipPath')
-      .attr('id', d => 'clip' + d.id + this._name)
-      .merge(splitData)
+      )
+      .join(
+        enter =>
+          enter.append('clipPath').attr('id', d => 'clip' + d.id + this._name),
+        update => update,
+        exit => exit.remove()
+      )
       .html(d => '<path d="' + d.path + '">');
-
-    splitData.exit().remove();
 
     this._applyFilters();
   }
 
-  showLabels(show = true) {
-    this._opts.showLabels = show;
-    let labelData = this._opts.showLabels ? this._streamData.streams : [];
+  _drawAxes() {
+    this._axesContainer.selectAll('*').remove();
+    let { axes, height, width } = this._opts;
+    if (axes) {
+      for (let axis of axes) {
+        axis.subticks = axis.subticks || 0;
+        axis.name = 'axis' + axis.position;
+        let totalTicks = axis.ticks * (1 + axis.subticks);
+        let dirY = axis.position == 'left' || axis.position == 'right';
 
-    let labels = this._textContainer
-      .selectAll('text')
-      .data(labelData, d => d.id);
+        let axisCon = this._axesContainer.append('g').classed(axis.name, true);
 
-    labels
-      .enter()
-      .append('text')
-      .text(d => (!!d.data ? d.data.typeLabel : d.id))
-      .merge(labels)
-      .attr('x', d => d.textPos.x)
-      .attr('y', d => d.textPos.y);
+        let d3axis;
+        if (axis.position == 'left') {
+          d3axis = d3.axisLeft(this._streamData.yScale);
+        } else if (axis.position == 'right') {
+          d3axis = d3.axisRight(this._streamData.yScale);
+        } else if (axis.position == 'top') {
+          d3axis = d3.axisTop(this._streamData.xScale);
+        } else if (axis.position == 'bottom') {
+          d3axis = d3.axisBottom(this._streamData.xScale);
+        }
 
-    labels.exit().remove();
+        if (totalTicks) d3axis.ticks(totalTicks);
+        // do not label subticks
+        d3axis.tickFormat((d, i) => (!(i % (1 + axis.subticks)) ? d : null));
+
+        if (axis.tickSize == 'full') {
+          let tickSize = dirY ? width : height;
+          d3axis.tickSize(tickSize);
+        }
+
+        axisCon.call(d3axis);
+
+        // move labels
+        let text = axisCon.selectAll('.tick text');
+        if (axis.textPos)
+          text.attr('x', axis.textPos[0]).attr('y', axis.textPos[1]);
+
+        if (axis.textSize) text.attr('font-size', axis.textSize);
+
+        if (axis.textAnchor) text.attr('text-anchor', axis.textAnchor);
+
+        if (axis.textBase) text.attr('dominant-baseline', axis.textBase);
+
+        axisCon.select('.domain').remove();
+      }
+    }
   }
 
   drawStroke(draw = true) {
@@ -561,10 +686,12 @@ export default class SplitStream {
         blur: filter.stdDeviation
       });
 
-    if (this._opts.filterMode == 'fast')
-      d3.selectAll('.depthLayer').svgFilter(...filters);
+    let elements;
+    if (this._opts.filterMode == 'fast') elements = d3.selectAll('.depthLayer');
     else if (this._opts.filterMode == 'accurate')
-      d3.selectAll('path.stream').svgFilter(...filters);
+      elements = d3.selectAll('path.stream');
+
+    if (elements.size() > 0) elements.svgFilter(...filters);
   }
 
   update() {
