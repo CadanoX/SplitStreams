@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', async function(event) {
         }
       },
       wrapperResize(...args) {
-        stream.resize();
+        if (stream) stream.resize();
       },
       download: function() {
         saveSvg(document.querySelector('svg'), 'secstream');
