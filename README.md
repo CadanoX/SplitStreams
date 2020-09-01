@@ -1,10 +1,17 @@
 # SplitStreams
+
 **SplitStreams** is a JavaScript library, that allows for the visualization of hierarchically structured data over time. Visualization types include:
 - Streamgraphs
 - One-dimensional treemaps
 - Nested Tracking Graphs (Nested Streamgraphs)
 - Storylines, and
 - SplitStreams.
+  
+|||||
+|:-:|:-:|:-:|:-:|
+![Treemaps](demo/treemap.png)|![Streamgraph](demo/streamgraph.png)|![SplitStream](demo/streams.png)|![Organic Narrative Chart](demo/orcha.jpg)
+![Nested Streamgraph](demo/viscous.png)
+![Storyline](demo/starwars.png)
 
 We utilize [D3.js](https://d3js.org) to draw SVG elements.
 
